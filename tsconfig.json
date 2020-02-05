@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["esnext", "dom"],
+    "allowJs": true,
+    "jsx": "react",
+    "strict": true,
+    "types": [],
+    "declaration": true,
+    "declarationDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitReturns": true,
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}

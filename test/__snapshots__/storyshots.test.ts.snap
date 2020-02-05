@@ -1,0 +1,1248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Box Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      Box
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button As 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <a
+      className="button"
+    >
+      As a tag
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Buttons Sizes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons are-medium"
+    >
+      <button
+        className="button"
+      >
+        All
+      </button>
+      <button
+        className="button"
+      >
+        Medium
+      </button>
+      <button
+        className="button"
+      >
+        Size
+      </button>
+    </div>
+    <div
+      className="buttons are-small"
+    >
+      <button
+        className="button"
+      >
+        Small
+      </button>
+      <button
+        className="button"
+      >
+        Small
+      </button>
+      <button
+        className="button"
+      >
+        Small
+      </button>
+      <button
+        className="button is-normal"
+      >
+        Normal
+      </button>
+      <button
+        className="button"
+      >
+        Small
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Colors 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-white"
+      >
+        White
+      </button>
+      <button
+        className="button"
+      >
+        Light
+      </button>
+      <button
+        className="button is-dark"
+      >
+        Dark
+      </button>
+      <button
+        className="button is-black"
+      >
+        Black
+      </button>
+      <button
+        className="button is-primary"
+      >
+        Primary
+      </button>
+      <button
+        className="button is-link"
+      >
+        Link
+      </button>
+      <button
+        className="button is-info"
+      >
+        Info
+      </button>
+      <button
+        className="button is-warning"
+      >
+        Warning
+      </button>
+      <button
+        className="button is-danger"
+      >
+        Danger
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <button
+      className="button"
+    >
+      Button
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Fullwidth 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-small is-fullwidth"
+      >
+        Small
+      </button>
+      <button
+        className="button is-normal is-fullwidth"
+      >
+        Normal
+      </button>
+      <button
+        className="button is-medium is-fullwidth"
+      >
+        Medium
+      </button>
+      <button
+        className="button is-large is-fullwidth"
+      >
+        Large
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Invert Outlined 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box has-background-primary"
+    >
+      <div
+        className="buttons"
+      >
+        <button
+          className="button is-primary is-outlined is-inverted"
+        >
+          Primary
+        </button>
+        <button
+          className="button is-link is-outlined is-inverted"
+        >
+          Link
+        </button>
+        <button
+          className="button is-info is-outlined is-inverted"
+        >
+          Info
+        </button>
+        <button
+          className="button is-warning is-outlined is-inverted"
+        >
+          Warning
+        </button>
+        <button
+          className="button is-danger is-outlined is-inverted"
+        >
+          Danger
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Inverted 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-primary is-inverted"
+      >
+        Primary
+      </button>
+      <button
+        className="button is-link is-inverted"
+      >
+        Link
+      </button>
+      <button
+        className="button is-info is-inverted"
+      >
+        Info
+      </button>
+      <button
+        className="button is-warning is-inverted"
+      >
+        Warning
+      </button>
+      <button
+        className="button is-danger is-inverted"
+      >
+        Danger
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Light Colors 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-primary is-light"
+      >
+        Primary
+      </button>
+      <button
+        className="button is-link is-light"
+      >
+        Link
+      </button>
+      <button
+        className="button is-info is-light"
+      >
+        Info
+      </button>
+      <button
+        className="button is-warning is-light"
+      >
+        Warning
+      </button>
+      <button
+        className="button is-danger is-light"
+      >
+        Danger
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Outlined 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-primary is-outlined"
+      >
+        Primary
+      </button>
+      <button
+        className="button is-link is-outlined"
+      >
+        Link
+      </button>
+      <button
+        className="button is-info is-outlined"
+      >
+        Info
+      </button>
+      <button
+        className="button is-warning is-outlined"
+      >
+        Warning
+      </button>
+      <button
+        className="button is-danger is-outlined"
+      >
+        Danger
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Sizes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-small"
+      >
+        Small
+      </button>
+      <button
+        className="button"
+      >
+        Default
+      </button>
+      <button
+        className="button is-normal"
+      >
+        Normal
+      </button>
+      <button
+        className="button is-medium"
+      >
+        Medium
+      </button>
+      <button
+        className="button is-large"
+      >
+        Large
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withColorHelpers Has Background 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box has-background-primary"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      has-background-primary
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withColorHelpers Has Text 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box has-text-primary"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      has-text-primary
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Clearfix 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-clearfix"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-clearfix
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Clipped 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-clipped"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-overlay
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Hidden 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-hidden"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-hidden
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Invisible 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-invisible"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-invisible
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Marginless 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-marginless"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-marginless
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Overlay 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-overlay"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-overlay
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Paddingless 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-paddingless"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-paddingless
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Pulled Left 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-pulled-left"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-pulled-left
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Pulled Right 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-pulled-right"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-pulled-right
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Radiusless 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-radiusless"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-radiusless
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Relative 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-relative"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-relative
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Shadowless 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-shadowless"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-shadowless
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Sr Only 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-sr-only"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-sr-only
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withNormalHelpers Unselectable 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-unselectable"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-unselectable
+    </div>
+  </div>
+</div>
+`;
