@@ -13,6 +13,12 @@ export interface ButtonProps extends Omit<CommonProps, 'size'> {
   fullwidth?: boolean
   outlined?: boolean
   inverted?: boolean
+  rounded?: boolean
+  hovered?: boolean
+  focused?: boolean
+  active?: boolean
+  loading?: boolean
+  static?: boolean
 }
 
 const Button: React.FC<ButtonProps> = ({ children, className, ...props }) => {
@@ -25,6 +31,12 @@ const Button: React.FC<ButtonProps> = ({ children, className, ...props }) => {
     'is-fullwidth': props.fullwidth,
     'is-outlined': props.outlined,
     'is-inverted': props.inverted,
+    'is-rounded': props.rounded,
+    'is-hovered': props.hovered,
+    'is-focused': props.focused,
+    'is-active': props.active,
+    'is-loading': props.loading,
+    'is-static': props.static,
   })
 
   return (
@@ -43,6 +55,12 @@ Button.defaultProps = {
   fullwidth: undefined,
   outlined: undefined,
   inverted: undefined,
+  rounded: undefined,
+  hovered: undefined,
+  focused: undefined,
+  active: undefined,
+  loading: undefined,
+  static: undefined,
 }
 
 export default Button

@@ -153,3 +153,83 @@ export const InvertOutlined = () => (
     </Buttons>
   </ColorBox>
 )
+
+export const Rounded = () => (
+  <Buttons>
+    <Button rounded>Rounded</Button>
+    <Button color="primary" rounded>
+      Rounded
+    </Button>
+    <Button color="link" rounded>
+      Rounded
+    </Button>
+    <Button color="info" rounded>
+      Rounded
+    </Button>
+    <Button color="success" rounded>
+      Rounded
+    </Button>
+    <Button color="danger" rounded>
+      Rounded
+    </Button>
+  </Buttons>
+)
+
+export const States = () => (
+  <Buttons>
+    <Button>Normal</Button>
+    <Button hovered>Hovered</Button>
+    <Button focused>Focused</Button>
+    <Button active>Active</Button>
+  </Buttons>
+)
+
+export const Loading = () => (
+  <Buttons>
+    <Button loading>Loading</Button>
+    <Button color="primary" loading>
+      Loading
+    </Button>
+    <Button color="link" loading>
+      Loading
+    </Button>
+    <Button color="info" loading>
+      Loading
+    </Button>
+    <Button color="success" loading>
+      Loading
+    </Button>
+    <Button color="warning" loading>
+      Loading
+    </Button>
+    <Button color="danger" loading>
+      Loading
+    </Button>
+  </Buttons>
+)
+
+export const Static = () => <Button static>Static</Button>
+
+export const Disabled = () => (
+  <Buttons>
+    <Button disabled>Disabled</Button>
+    <Button color="primary" disabled>
+      Disabled
+    </Button>
+    <Button color="link" disabled>
+      Disabled
+    </Button>
+    <Button color="info" disabled>
+      Disabled
+    </Button>
+    <Button color="success" disabled>
+      Disabled
+    </Button>
+    <Button color="warning" disabled>
+      Disabled
+    </Button>
+    <Button color="danger" disabled>
+      Disabled
+    </Button>
+  </Buttons>
+)
