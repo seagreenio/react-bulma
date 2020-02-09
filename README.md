@@ -13,4 +13,4 @@
 
 MIT @ seagreenio.
 
-Thanks to [Jeremy Thomas](https://github.com/jgthms) for making such a awesome css framework.
+Thanks to [Jeremy Thomas](https://github.com/jgthms) for making such an awesome CSS framework.
