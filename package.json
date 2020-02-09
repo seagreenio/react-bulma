@@ -1,6 +1,6 @@
 {
   "name": "@seagreenio/react-bulma",
-  "version": "0.1.0-beta.0",
+  "version": "0.1.0-beta.1",
   "description": "Bulma in React",
   "private": false,
   "main": "dist/index.js",
