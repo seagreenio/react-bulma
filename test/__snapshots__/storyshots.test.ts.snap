@@ -256,6 +256,79 @@ exports[`Storyshots Button Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button Disabled 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-primary"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-link"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-info"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-success"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-warning"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-danger"
+        disabled={true}
+      >
+        Disabled
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Button Fullwidth 1`] = `
 <div
   style={
@@ -479,6 +552,72 @@ exports[`Storyshots Button Light Colors 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button Loading 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-primary is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-link is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-info is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-success is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-warning is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-danger is-loading"
+      >
+        Loading
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Button Outlined 1`] = `
 <div
   style={
@@ -529,6 +668,67 @@ exports[`Storyshots Button Outlined 1`] = `
         className="button is-danger is-outlined"
       >
         Danger
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Rounded 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-rounded"
+      >
+        Rounded
+      </button>
+      <button
+        className="button is-primary is-rounded"
+      >
+        Rounded
+      </button>
+      <button
+        className="button is-link is-rounded"
+      >
+        Rounded
+      </button>
+      <button
+        className="button is-info is-rounded"
+      >
+        Rounded
+      </button>
+      <button
+        className="button is-success is-rounded"
+      >
+        Rounded
+      </button>
+      <button
+        className="button is-danger is-rounded"
+      >
+        Rounded
       </button>
     </div>
   </div>
@@ -587,6 +787,89 @@ exports[`Storyshots Button Sizes 1`] = `
         Large
       </button>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button States 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button"
+      >
+        Normal
+      </button>
+      <button
+        className="button is-hovered"
+      >
+        Hovered
+      </button>
+      <button
+        className="button is-focused"
+      >
+        Focused
+      </button>
+      <button
+        className="button is-active"
+      >
+        Active
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Static 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <button
+      className="button is-static"
+    >
+      Static
+    </button>
   </div>
 </div>
 `;
