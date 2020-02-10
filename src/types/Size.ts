@@ -5,4 +5,6 @@ enum Size {
   Large = 'large',
 }
 
+export type SizeType = 'small' | 'normal' | 'medium' | 'large'
+
 export default Size

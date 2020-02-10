@@ -1,12 +1,13 @@
+import Color, { ColorType, ExtendColor, ExtendColorType } from '../types/Color'
+
+import CommonProps from '../types/CommonProps'
 import React from 'react'
 import cx from 'classnames'
 import { differenceObject } from 'lib/utils'
-import CommonProps from '../types/CommonProps'
-import Color, { ExtendColor } from '../types/Color'
 
-interface ColorProps extends Omit<CommonProps, 'unselectable'> {
-  hasText?: Color | ExtendColor | string
-  hasBackground?: Color | ExtendColor | string
+interface ColorProps extends CommonProps {
+  hasText?: Color | ExtendColor | ColorType | ExtendColorType
+  hasBackground?: Color | ExtendColor | ColorType | ExtendColorType
 }
 
 const defaultProps = {

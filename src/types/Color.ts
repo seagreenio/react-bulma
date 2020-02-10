@@ -11,7 +11,19 @@ enum Color {
   Danger = 'danger',
 }
 
-export enum ExtendColor {
+type ColorType =
+  | 'white'
+  | 'black'
+  | 'light'
+  | 'dark'
+  | 'primary'
+  | 'link'
+  | 'info'
+  | 'success'
+  | 'warning'
+  | 'danger'
+
+enum ExtendColor {
   BlackBis = 'black-bis',
   BlackTer = 'black-ter',
   GreyDarker = 'grey-darker',
@@ -23,4 +35,16 @@ export enum ExtendColor {
   WhiteBis = 'white-bis',
 }
 
+type ExtendColorType =
+  | 'black-bis'
+  | 'black-ter'
+  | 'grey-darker'
+  | 'grey-dark'
+  | 'grey'
+  | 'grey-light'
+  | 'grey-lighter'
+  | 'white-ter'
+  | 'white-bis'
+
+export { ColorType, ExtendColor, ExtendColorType }
 export default Color
