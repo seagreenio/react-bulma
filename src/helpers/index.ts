@@ -1,4 +1,5 @@
-import withNormalHelpers from './withNormal'
 import withColorHelpers from './withColor'
+import withNormalHelpers from './withNormal'
+import withResponsiveHelpers from './withResponsive'
 
-export { withNormalHelpers, withColorHelpers }
+export { withNormalHelpers, withResponsiveHelpers, withColorHelpers }

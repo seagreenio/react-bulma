@@ -1,11 +1,12 @@
+import Size, { SizeType } from '../types/Size'
+
 import CommonProps from '../types/CommonProps'
 import React from 'react'
-import Size from '../types/Size'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 
 export interface ButtonsProps extends Omit<CommonProps, 'size'> {
-  size?: Exclude<Size, Size.Normal> | string
+  size?: Exclude<Size, Size.Normal> | Exclude<SizeType, 'normal'>
 }
 
 const Buttons: React.FC<ButtonsProps> = ({ children, className, ...props }) => {

@@ -1,15 +1,16 @@
-import Color from '../types/Color'
+import Color, { ColorType } from '../types/Color'
+import Size, { SizeType } from '../types/Size'
+
 import CommonProps from '../types/CommonProps'
 import React from 'react'
-import Size from '../types/Size'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
 export interface ButtonProps extends Omit<CommonProps, 'size'> {
-  color?: Color | string
+  color?: Color | ColorType
   light?: boolean
-  size?: Size | string
+  size?: Size | SizeType
   fullwidth?: boolean
   outlined?: boolean
   inverted?: boolean

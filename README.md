@@ -7,7 +7,7 @@
 <p align="center">Another & Another React Bulma Components.</p>
 <p align="center">Covers everything from Bulma. Built-in TS support.</p>
 
-## Current WIP
+## Currently WIP
 
 ## License
 
