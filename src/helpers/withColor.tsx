@@ -11,6 +11,7 @@ interface ColorProps extends CommonProps {
 }
 
 const defaultProps = {
+  className: undefined,
   hasText: undefined,
   hasBackground: undefined,
 }
@@ -22,10 +23,13 @@ function withColor<P>(
     const { hasText, hasBackground } = props
     const unHandledProps = differenceObject(props, defaultProps)
 
-    const classes = cx({
-      [`has-text-${hasText}`]: hasText,
-      [`has-background-${hasBackground}`]: hasBackground,
-    })
+    const classes = cx(
+      {
+        [`has-text-${hasText}`]: hasText,
+        [`has-background-${hasBackground}`]: hasBackground,
+      },
+      props.className
+    )
 
     return <Component className={classes} {...unHandledProps} />
   }

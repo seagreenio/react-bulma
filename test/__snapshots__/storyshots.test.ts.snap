@@ -1529,3 +1529,85 @@ exports[`Storyshots withNormalHelpers Unselectable 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots withResponsiveHelpers Is Flex 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-flex"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-flex
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots withResponsiveHelpers Is Flex Mobile 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box is-flex-mobile"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      is-flex-mobile
+    </div>
+  </div>
+</div>
+`;
