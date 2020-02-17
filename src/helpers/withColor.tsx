@@ -23,13 +23,10 @@ function withColor<P>(
     const { hasText, hasBackground } = props
     const unHandledProps = differenceObject(props, defaultProps)
 
-    const classes = cx(
-      {
-        [`has-text-${hasText}`]: hasText,
-        [`has-background-${hasBackground}`]: hasBackground,
-      },
-      props.className
-    )
+    const classes = cx(props.className, {
+      [`has-text-${hasText}`]: hasText,
+      [`has-background-${hasBackground}`]: hasBackground,
+    })
 
     return <Component className={classes} {...unHandledProps} />
   }
