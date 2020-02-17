@@ -57,24 +57,21 @@ function withNormal<P>(
     } = props
     const unHandledProps = differenceObject(props, defaultProps)
 
-    const classes = cx(
-      {
-        'is-clearfix': clearfix,
-        [`is-pulled-${pulled}`]: pulled,
-        'is-paddingless': paddingless,
-        'is-marginless': marginless,
-        'is-overlay': overlay,
-        'is-clipped': clipped,
-        'is-radiusless': radiusless,
-        'is-shadowless': shadowless,
-        'is-unselectable': bulmaUnselectable,
-        'is-invisible': invisible,
-        'is-hidden': hidden,
-        'is-sr-only': srOnly,
-        'is-relative': relative,
-      },
-      props.className
-    )
+    const classes = cx(props.className, {
+      'is-clearfix': clearfix,
+      [`is-pulled-${pulled}`]: pulled,
+      'is-paddingless': paddingless,
+      'is-marginless': marginless,
+      'is-overlay': overlay,
+      'is-clipped': clipped,
+      'is-radiusless': radiusless,
+      'is-shadowless': shadowless,
+      'is-unselectable': bulmaUnselectable,
+      'is-invisible': invisible,
+      'is-hidden': hidden,
+      'is-sr-only': srOnly,
+      'is-relative': relative,
+    })
 
     return <Component className={classes} {...unHandledProps} />
   }
