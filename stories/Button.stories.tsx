@@ -1,8 +1,9 @@
+import { Box, BoxProps, Button, Buttons, withColor } from '..'
+
 import React from 'react'
-import { Box, BoxProps, Button, Buttons, withColorHelpers } from '..'
 import centered from '@storybook/addon-centered/react'
 
-const ColorBox = withColorHelpers<BoxProps>(Box)
+const ColorBox = withColor<BoxProps>(Box)
 
 export default {
   title: 'Button',

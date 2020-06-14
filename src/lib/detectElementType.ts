@@ -1,12 +1,10 @@
-import React from 'react'
-
 interface Props {
   as?: string
   href?: string
 }
 
 // Reference: https://github.com/Semantic-Org/Semantic-UI-React/blob/master/src/lib/getElementType.js
-function detectElementType(
+export default function detectElementType(
   Component: React.FunctionComponent<any> | React.ComponentClass<any>,
   props: Props
 ) {
@@ -22,5 +20,3 @@ function detectElementType(
 
   return ((defaultProps.as || 'div') as unknown) as keyof JSX.IntrinsicElements
 }
-
-export default detectElementType

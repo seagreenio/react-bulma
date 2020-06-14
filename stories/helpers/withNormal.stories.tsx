@@ -1,12 +1,12 @@
-import { Box, BoxProps, withNormalHelpers } from '../..'
+import { Box, BoxProps, withNormal } from '../..'
 
 import React from 'react'
 import centered from '@storybook/addon-centered/react'
 
-const NormalBox = withNormalHelpers<BoxProps>(Box)
+const NormalBox = withNormal<BoxProps>(Box)
 
 export default {
-  title: 'withNormalHelpers',
+  title: 'withNormal',
   component: NormalBox,
   decorators: [centered],
 }
