@@ -1,15 +1,14 @@
-import babel from 'rollup-plugin-babel'
+import babel from '@rollup/plugin-babel'
 import pkg from './package.json'
 import resolve from '@rollup/plugin-node-resolve'
 
-const dependencies = pkg.dependencies
 const peerDependencies = pkg.peerDependencies
-// // For UMD
-// const globals = peerDependencies
+const dependencies = pkg.dependencies
+
 const external = Object.keys({
-  ...dependencies,
   ...peerDependencies,
-})
+  ...dependencies,
+}).concat(['@babel/runtime/helpers/extends'])
 const extensions = ['.ts', '.tsx']
 
 const plugins = [
@@ -19,6 +18,7 @@ const plugins = [
   babel({
     extensions,
     exclude: 'node_modules/**',
+    babelHelpers: 'runtime',
     plugins: [
       [
         'module-resolver',
@@ -29,6 +29,7 @@ const plugins = [
           },
         },
       ],
+      '@babel/plugin-transform-runtime',
       [
         'transform-react-handled-props',
         {

@@ -7,7 +7,15 @@
 <p align="center">Another & Another React Bulma Components.</p>
 <p align="center">Covers everything from Bulma. Built-in TS support.</p>
 
-## Currently WIP
+> Note: Currently WIP
+
+## Notices
+
+### `.babelrc`
+
+The `.babelrc` will be used in two places. One for storybook and another is rollup.
+
+So, it's needed to put the `plugins` configuration into `rollup.config.js` to avoid mutual conflict.
 
 ## License
 
