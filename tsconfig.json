@@ -7,7 +7,7 @@
     "allowJs": true,
     "jsx": "react",
     "strict": true,
-    "types": [],
+    "isolatedModules": true,
     "declaration": true,
     "declarationDir": "dist",
     "allowSyntheticDefaultImports": true,
