@@ -1,9 +1,6 @@
-import Box, { BoxProps as BoxPropsExported } from './Box'
-import Button, { ButtonProps as ButtonPropsExported } from './Button'
-import Buttons, { ButtonsProps as ButtonsPropsExported } from './Buttons'
-
-type BoxProps = BoxPropsExported
-type ButtonProps = ButtonPropsExported
-type ButtonsProps = ButtonsPropsExported
-
-export { Box, BoxProps, Button, ButtonProps, Buttons, ButtonsProps }
+export { default as Box } from './Box'
+export type { BoxProps } from './Box'
+export { default as Button } from './Button'
+export type { ButtonProps } from './Button'
+export { default as Buttons } from './Buttons'
+export type { ButtonsProps } from './Buttons'

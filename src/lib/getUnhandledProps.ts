@@ -1,5 +1,5 @@
 // Reference: https://github.com/Semantic-Org/Semantic-UI-React/blob/master/src/lib/getUnhandledProps.js
-function getUnhandledProps(
+export default function getUnhandledProps(
   Component: React.FunctionComponent<any> | React.ComponentClass<any>,
   props: any
 ) {
@@ -14,5 +14,3 @@ function getUnhandledProps(
     return acc
   }, {} as { [key: string]: any })
 }
-
-export default getUnhandledProps
