@@ -16,7 +16,7 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:all": "yarn build && yarn build:types",
     "clean": "rimraf dist",
-    "test": "jest",
+    "test": "jest -u",
     "prepublishOnly": "yarn test && yarn build:all"
   },
   "repository": {
