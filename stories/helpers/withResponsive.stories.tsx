@@ -30,3 +30,20 @@ export const IsFlexMobile = () => (
     is-flex-mobile
   </ResponsiveBox>
 )
+
+export const Invisible = () => (
+  <ResponsiveBox style={style} invisible>
+    is-invisible
+  </ResponsiveBox>
+)
+
+export const Hidden = () => (
+  <ResponsiveBox style={style} hidden>
+    is-hidden
+  </ResponsiveBox>
+)
+export const SrOnly = () => (
+  <ResponsiveBox style={style} srOnly>
+    is-sr-only
+  </ResponsiveBox>
+)

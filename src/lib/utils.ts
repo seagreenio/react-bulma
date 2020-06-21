@@ -1,3 +1,5 @@
+import { Unit as SizeUnit } from 'types/Size'
+import { Unit as SpacingUnit } from 'types/Spacing'
 import difference from 'lodash.difference'
 
 export function differenceObject(a: object, b: object) {
@@ -8,4 +10,25 @@ export function differenceObject(a: object, b: object) {
 
     return acc
   }, {} as { [key: string]: any })
+}
+
+export function properRange(
+  s: SpacingUnit | SizeUnit,
+  bound: [number, number]
+) {
+  let result = s
+
+  if (typeof s === 'string') {
+    result = parseInt(s, 10)
+  }
+
+  if (result < bound[0]) {
+    result = bound[0]
+  }
+
+  if (result > bound[1]) {
+    result = bound[1]
+  }
+
+  return result
 }
