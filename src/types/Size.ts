@@ -7,4 +7,6 @@ enum Size {
 
 export type SizeType = 'small' | 'normal' | 'medium' | 'large'
 
+export type Unit = number | string
+
 export default Size

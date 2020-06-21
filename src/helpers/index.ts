@@ -1,3 +1,5 @@
 export { default as withColor } from './withColor'
-export { default as withNormal } from './withNormal'
+export { default as withSpacing } from './withSpacing'
+export { default as withTypography } from './withTypography'
 export { default as withResponsive } from './withResponsive'
+export { default as withOther } from './withOther'

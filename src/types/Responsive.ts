@@ -1,8 +1,5 @@
-enum Responsive {
+export enum Viewport {
   Mobile = 'mobile',
-  TabletOnly = 'tablet-only',
-  DesktopOnly = 'desktop-only',
-  WidescreenOnly = 'widescrenn-only',
   Touch = 'touch',
   Tablet = 'tablet',
   Desktop = 'desktop',
@@ -10,15 +7,27 @@ enum Responsive {
   FullHD = 'fullhd',
 }
 
-export type ResponsiveType =
+export type ViewportType =
   | 'mobile'
-  | 'tablet-only'
-  | 'desktop-only'
-  | 'widescrenn-only'
   | 'touch'
   | 'tablet'
   | 'desktop'
   | 'widescreen'
   | 'fullhd'
+
+export enum ViewportOnly {
+  TabletOnly = 'tablet-only',
+  DesktopOnly = 'desktop-only',
+  WidescreenOnly = 'widescrenn-only',
+}
+
+export type ViewportOnlyType =
+  | 'tablet-only'
+  | 'desktop-only'
+  | 'widescrenn-only'
+
+type Responsive = Viewport | ViewportOnly
+
+export type ResponsiveType = ViewportType | ViewportOnlyType
 
 export default Responsive
