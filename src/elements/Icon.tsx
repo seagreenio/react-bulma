@@ -6,14 +6,14 @@ import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
-export interface DeleteProps extends Omit<CommonProps, 'size'> {
+export interface IconProps extends Omit<CommonProps, 'size'> {
   size?: Exclude<Size, Size.Normal> | Exclude<SizeType, 'normal'>
 }
 
-const Delete: React.FC<DeleteProps> = ({ children, className, ...props }) => {
-  const rest = getUnhandledProps(Delete, props)
-  const ElementType = detectElementType(Delete, props)
-  const classes = cx('delete', className, {
+const Icon: React.FC<IconProps> = ({ children, className, ...props }) => {
+  const rest = getUnhandledProps(Icon, props)
+  const ElementType = detectElementType(Icon, props)
+  const classes = cx('icon', className, {
     [`is-${props.size}`]: props.size,
   })
 
@@ -24,10 +24,10 @@ const Delete: React.FC<DeleteProps> = ({ children, className, ...props }) => {
   )
 }
 
-Delete.defaultProps = {
-  as: 'button',
+Icon.defaultProps = {
+  as: 'span',
   className: undefined,
   size: undefined,
 }
 
-export default Delete
+export default Icon
