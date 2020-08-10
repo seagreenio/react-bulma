@@ -26,7 +26,7 @@ export const HasText = () => (
 )
 
 export const HasBackground = () => (
-  <ColorBox style={style} hasBackground="primary">
+  <ColorBox style={style} hasText="white" hasBackground="primary">
     has-background-primary
   </ColorBox>
 )
