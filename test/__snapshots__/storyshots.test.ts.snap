@@ -968,7 +968,7 @@ exports[`Storyshots Container Default 1`] = `
 
 exports[`Storyshots Footer Default 1`] = `
 <footer
-  className="footer has-background-grey has-text-white"
+  className="footer"
   style={
     Object {
       "alignItems": "center",
