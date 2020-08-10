@@ -1,4 +1,4 @@
-import { Box, BoxProps, Button, Buttons, withColor } from '..'
+import { Box, BoxProps, Button, Buttons, withColor } from '../..'
 
 import React from 'react'
 import centered from '@storybook/addon-centered/react'
