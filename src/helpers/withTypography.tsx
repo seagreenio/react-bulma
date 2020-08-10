@@ -5,7 +5,7 @@ import Responsive, {
 } from 'types/Responsive'
 import { differenceObject, properRange } from 'lib/utils'
 
-import CommonProps from '../types/CommonProps'
+import CommonProps from 'types/CommonProps'
 import React from 'react'
 import { Unit } from 'types/Size'
 import cx from 'classnames'
