@@ -15,9 +15,9 @@ interface TypographyProps extends CommonProps {
   viewport?: Viewport | ViewportType
   hasText?: 'centered' | 'justified' | 'left' | 'right'
   responsive?: Responsive | ResponsiveType
-  textTransformation: 'capitalized' | 'lowercase' | 'uppercase' | 'italic'
-  hasTextWeight: 'light' | 'normal' | 'medium' | 'semibold' | 'bold'
-  fontFamily: 'sans-serif' | 'monospace' | 'primary' | 'secondary' | 'code'
+  textTransformation?: 'capitalized' | 'lowercase' | 'uppercase' | 'italic'
+  hasTextWeight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold'
+  fontFamily?: 'sans-serif' | 'monospace' | 'primary' | 'secondary' | 'code'
 }
 
 const defaultProps = {
