@@ -1,9 +1,9 @@
 import { Unit as SizeUnit } from 'types/Size'
 import { Unit as SpacingUnit } from 'types/Spacing'
-import difference from 'lodash.difference'
+import _difference from 'lodash.difference'
 
 export function differenceObject(a: object, b: object) {
-  const diff = difference(Object.keys(a), Object.keys(b))
+  const diff = _difference(Object.keys(a), Object.keys(b))
 
   return diff.reduce((acc, prop: string) => {
     acc[prop] = (a as any)[prop]
