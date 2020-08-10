@@ -966,11 +966,26 @@ exports[`Storyshots Container Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Footer Default 1`] = `
+<footer
+  className="footer has-background-grey has-text-white"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  This is a Footer
+</footer>
+`;
+
 exports[`Storyshots Hero Default 1`] = `
-<section
+<div
   className="hero is-primary is-bold is-fullheight"
 >
-  <section
+  <div
     className="hero-body"
   >
     <div
@@ -987,8 +1002,8 @@ exports[`Storyshots Hero Default 1`] = `
         Primary bold subtitle
       </h2>
     </div>
-  </section>
-</section>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Level Default 1`] = `
