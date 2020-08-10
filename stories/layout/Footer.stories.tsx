@@ -1,8 +1,5 @@
-import { Footer, FooterProps, withColor } from '../..'
-
+import { Footer } from '../..'
 import React from 'react'
-
-const ColorFooter = withColor<FooterProps>(Footer)
 
 const style = {
   display: 'flex',
@@ -15,8 +12,4 @@ export default {
   component: Footer,
 }
 
-export const Default = () => (
-  <ColorFooter style={style} hasText="white" hasBackground="grey">
-    This is a Footer
-  </ColorFooter>
-)
+export const Default = () => <Footer style={style}>This is a Footer</Footer>
