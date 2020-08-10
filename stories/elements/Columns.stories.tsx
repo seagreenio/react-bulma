@@ -1,4 +1,4 @@
-import { Column, Columns, withColor } from '..'
+import { Column, Columns, withColor } from '../..'
 
 import React from 'react'
 import centered from '@storybook/addon-centered/react'

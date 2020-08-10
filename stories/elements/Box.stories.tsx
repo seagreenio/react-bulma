@@ -1,4 +1,4 @@
-import { Box } from '..'
+import { Box } from '../..'
 import React from 'react'
 import centered from '@storybook/addon-centered/react'
 
