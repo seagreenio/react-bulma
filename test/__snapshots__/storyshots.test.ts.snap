@@ -24,7 +24,6 @@ exports[`Storyshots Box Default 1`] = `
     }
   >
     <div
-      as="div"
       className="box"
       style={
         Object {
@@ -66,7 +65,6 @@ exports[`Storyshots Button As 1`] = `
     }
   >
     <a
-      as="a"
       className="button"
     >
       As a tag
@@ -102,19 +100,16 @@ exports[`Storyshots Button Buttons Sizes 1`] = `
       className="buttons are-medium"
     >
       <button
-        as="button"
         className="button"
       >
         All
       </button>
       <button
-        as="button"
         className="button"
       >
         Medium
       </button>
       <button
-        as="button"
         className="button"
       >
         Size
@@ -124,32 +119,26 @@ exports[`Storyshots Button Buttons Sizes 1`] = `
       className="buttons are-small"
     >
       <button
-        as="button"
         className="button"
       >
         Small
       </button>
       <button
-        as="button"
         className="button"
       >
         Small
       </button>
       <button
-        as="button"
         className="button"
       >
         Small
       </button>
       <button
-        as="button"
         className="button is-normal"
-        size="normal"
       >
         Normal
       </button>
       <button
-        as="button"
         className="button"
       >
         Small
@@ -186,65 +175,47 @@ exports[`Storyshots Button Colors 1`] = `
       className="buttons"
     >
       <button
-        as="button"
         className="button is-white"
-        color="white"
       >
         White
       </button>
       <button
-        as="button"
         className="button"
-        color="light"
       >
         Light
       </button>
       <button
-        as="button"
         className="button is-dark"
-        color="dark"
       >
         Dark
       </button>
       <button
-        as="button"
         className="button is-black"
-        color="black"
       >
         Black
       </button>
       <button
-        as="button"
         className="button is-primary"
-        color="primary"
       >
         Primary
       </button>
       <button
-        as="button"
         className="button is-link"
-        color="link"
       >
         Link
       </button>
       <button
-        as="button"
         className="button is-info"
-        color="info"
       >
         Info
       </button>
       <button
-        as="button"
         className="button is-warning"
-        color="warning"
       >
         Warning
       </button>
       <button
-        as="button"
         className="button is-danger"
-        color="danger"
       >
         Danger
       </button>
@@ -277,7 +248,6 @@ exports[`Storyshots Button Default 1`] = `
     }
   >
     <button
-      as="button"
       className="button"
     >
       Button
@@ -313,56 +283,43 @@ exports[`Storyshots Button Disabled 1`] = `
       className="buttons"
     >
       <button
-        as="button"
         className="button"
         disabled={true}
       >
         Disabled
       </button>
       <button
-        as="button"
         className="button is-primary"
-        color="primary"
         disabled={true}
       >
         Disabled
       </button>
       <button
-        as="button"
         className="button is-link"
-        color="link"
         disabled={true}
       >
         Disabled
       </button>
       <button
-        as="button"
         className="button is-info"
-        color="info"
         disabled={true}
       >
         Disabled
       </button>
       <button
-        as="button"
         className="button is-success"
-        color="success"
         disabled={true}
       >
         Disabled
       </button>
       <button
-        as="button"
         className="button is-warning"
-        color="warning"
         disabled={true}
       >
         Disabled
       </button>
       <button
-        as="button"
         className="button is-danger"
-        color="danger"
         disabled={true}
       >
         Disabled
@@ -399,34 +356,22 @@ exports[`Storyshots Button Fullwidth 1`] = `
       className="buttons"
     >
       <button
-        as="button"
         className="button is-small is-fullwidth"
-        fullwidth={true}
-        size="small"
       >
         Small
       </button>
       <button
-        as="button"
         className="button is-normal is-fullwidth"
-        fullwidth={true}
-        size="normal"
       >
         Normal
       </button>
       <button
-        as="button"
         className="button is-medium is-fullwidth"
-        fullwidth={true}
-        size="medium"
       >
         Medium
       </button>
       <button
-        as="button"
         className="button is-large is-fullwidth"
-        fullwidth={true}
-        size="large"
       >
         Large
       </button>
@@ -459,54 +404,33 @@ exports[`Storyshots Button Invert Outlined 1`] = `
     }
   >
     <div
-      as="div"
       className="box has-background-primary"
     >
       <div
         className="buttons"
       >
         <button
-          as="button"
           className="button is-primary is-outlined is-inverted"
-          color="primary"
-          inverted={true}
-          outlined={true}
         >
           Primary
         </button>
         <button
-          as="button"
           className="button is-link is-outlined is-inverted"
-          color="link"
-          inverted={true}
-          outlined={true}
         >
           Link
         </button>
         <button
-          as="button"
           className="button is-info is-outlined is-inverted"
-          color="info"
-          inverted={true}
-          outlined={true}
         >
           Info
         </button>
         <button
-          as="button"
           className="button is-warning is-outlined is-inverted"
-          color="warning"
-          inverted={true}
-          outlined={true}
         >
           Warning
         </button>
         <button
-          as="button"
           className="button is-danger is-outlined is-inverted"
-          color="danger"
-          inverted={true}
-          outlined={true}
         >
           Danger
         </button>
@@ -543,42 +467,27 @@ exports[`Storyshots Button Inverted 1`] = `
       className="buttons"
     >
       <button
-        as="button"
         className="button is-primary is-inverted"
-        color="primary"
-        inverted={true}
       >
         Primary
       </button>
       <button
-        as="button"
         className="button is-link is-inverted"
-        color="link"
-        inverted={true}
       >
         Link
       </button>
       <button
-        as="button"
         className="button is-info is-inverted"
-        color="info"
-        inverted={true}
       >
         Info
       </button>
       <button
-        as="button"
         className="button is-warning is-inverted"
-        color="warning"
-        inverted={true}
       >
         Warning
       </button>
       <button
-        as="button"
         className="button is-danger is-inverted"
-        color="danger"
-        inverted={true}
       >
         Danger
       </button>
@@ -614,42 +523,27 @@ exports[`Storyshots Button Light Colors 1`] = `
       className="buttons"
     >
       <button
-        as="button"
         className="button is-primary is-light"
-        color="primary"
-        light={true}
       >
         Primary
       </button>
       <button
-        as="button"
         className="button is-link is-light"
-        color="link"
-        light={true}
       >
         Link
       </button>
       <button
-        as="button"
         className="button is-info is-light"
-        color="info"
-        light={true}
       >
         Info
       </button>
       <button
-        as="button"
         className="button is-warning is-light"
-        color="warning"
-        light={true}
       >
         Warning
       </button>
       <button
-        as="button"
         className="button is-danger is-light"
-        color="danger"
-        light={true}
       >
         Danger
       </button>
@@ -685,57 +579,37 @@ exports[`Storyshots Button Loading 1`] = `
       className="buttons"
     >
       <button
-        as="button"
         className="button is-loading"
-        loading={true}
       >
         Loading
       </button>
       <button
-        as="button"
         className="button is-primary is-loading"
-        color="primary"
-        loading={true}
       >
         Loading
       </button>
       <button
-        as="button"
         className="button is-link is-loading"
-        color="link"
-        loading={true}
       >
         Loading
       </button>
       <button
-        as="button"
         className="button is-info is-loading"
-        color="info"
-        loading={true}
       >
         Loading
       </button>
       <button
-        as="button"
         className="button is-success is-loading"
-        color="success"
-        loading={true}
       >
         Loading
       </button>
       <button
-        as="button"
         className="button is-warning is-loading"
-        color="warning"
-        loading={true}
       >
         Loading
       </button>
       <button
-        as="button"
         className="button is-danger is-loading"
-        color="danger"
-        loading={true}
       >
         Loading
       </button>
@@ -771,42 +645,27 @@ exports[`Storyshots Button Outlined 1`] = `
       className="buttons"
     >
       <button
-        as="button"
         className="button is-primary is-outlined"
-        color="primary"
-        outlined={true}
       >
         Primary
       </button>
       <button
-        as="button"
         className="button is-link is-outlined"
-        color="link"
-        outlined={true}
       >
         Link
       </button>
       <button
-        as="button"
         className="button is-info is-outlined"
-        color="info"
-        outlined={true}
       >
         Info
       </button>
       <button
-        as="button"
         className="button is-warning is-outlined"
-        color="warning"
-        outlined={true}
       >
         Warning
       </button>
       <button
-        as="button"
         className="button is-danger is-outlined"
-        color="danger"
-        outlined={true}
       >
         Danger
       </button>
@@ -842,49 +701,32 @@ exports[`Storyshots Button Rounded 1`] = `
       className="buttons"
     >
       <button
-        as="button"
         className="button is-rounded"
-        rounded={true}
       >
         Rounded
       </button>
       <button
-        as="button"
         className="button is-primary is-rounded"
-        color="primary"
-        rounded={true}
       >
         Rounded
       </button>
       <button
-        as="button"
         className="button is-link is-rounded"
-        color="link"
-        rounded={true}
       >
         Rounded
       </button>
       <button
-        as="button"
         className="button is-info is-rounded"
-        color="info"
-        rounded={true}
       >
         Rounded
       </button>
       <button
-        as="button"
         className="button is-success is-rounded"
-        color="success"
-        rounded={true}
       >
         Rounded
       </button>
       <button
-        as="button"
         className="button is-danger is-rounded"
-        color="danger"
-        rounded={true}
       >
         Rounded
       </button>
@@ -920,36 +762,27 @@ exports[`Storyshots Button Sizes 1`] = `
       className="buttons"
     >
       <button
-        as="button"
         className="button is-small"
-        size="small"
       >
         Small
       </button>
       <button
-        as="button"
         className="button"
       >
         Default
       </button>
       <button
-        as="button"
         className="button is-normal"
-        size="normal"
       >
         Normal
       </button>
       <button
-        as="button"
         className="button is-medium"
-        size="medium"
       >
         Medium
       </button>
       <button
-        as="button"
         className="button is-large"
-        size="large"
       >
         Large
       </button>
@@ -985,28 +818,21 @@ exports[`Storyshots Button States 1`] = `
       className="buttons"
     >
       <button
-        as="button"
         className="button"
       >
         Normal
       </button>
       <button
-        as="button"
         className="button is-hovered"
-        hovered={true}
       >
         Hovered
       </button>
       <button
-        as="button"
         className="button is-focused"
-        focused={true}
       >
         Focused
       </button>
       <button
-        active={true}
-        as="button"
         className="button is-active"
       >
         Active
@@ -1040,9 +866,7 @@ exports[`Storyshots Button Static 1`] = `
     }
   >
     <button
-      as="button"
       className="button is-static"
-      static={true}
     >
       Static
     </button>
@@ -1052,99 +876,208 @@ exports[`Storyshots Button Static 1`] = `
 
 exports[`Storyshots Columns Default 1`] = `
 <div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
+  className="section"
 >
   <div
+    className="columns"
     style={
       Object {
-        "margin": "auto",
-        "maxHeight": "100%",
+        "textAlign": "center",
       }
     }
   >
     <div
-      as="div"
-      className="columns"
-      style={
-        Object {
-          "textAlign": "center",
-          "width": "60vw",
-        }
-      }
+      className="column"
     >
-      <div
-        as="div"
-        className="column"
-      >
-        <p
-          className="has-background-primary has-text-white"
-          style={
-            Object {
-              "padding": "0.5rem 1rem",
-            }
+      <p
+        className="has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
           }
+        }
+      >
+        First column
+      </p>
+    </div>
+    <div
+      className="column"
+    >
+      <p
+        className="has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        Second column
+      </p>
+    </div>
+    <div
+      className="column"
+    >
+      <p
+        className="has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        Third column
+      </p>
+    </div>
+    <div
+      className="column"
+    >
+      <p
+        className="has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        Fourth column
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Container Default 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="container has-background-info has-text-white"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "height": "64px",
+        "justifyContent": "center",
+      }
+    }
+  >
+    This is a Container
+  </div>
+</div>
+`;
+
+exports[`Storyshots Hero Default 1`] = `
+<section
+  className="hero is-primary is-bold is-fullheight"
+>
+  <section
+    className="hero-body"
+  >
+    <div
+      className="container"
+    >
+      <h1
+        className="title"
+      >
+        Primary bold title
+      </h1>
+      <h2
+        className="subtitle"
+      >
+        Primary bold subtitle
+      </h2>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Level Default 1`] = `
+<div
+  className="section"
+>
+  <nav
+    className="level"
+  >
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
         >
-          First column
+          Tweets
         </p>
-      </div>
-      <div
-        as="div"
-        className="column"
-      >
         <p
-          className="has-background-primary has-text-white"
-          style={
-            Object {
-              "padding": "0.5rem 1rem",
-            }
-          }
+          className="title"
         >
-          Second column
-        </p>
-      </div>
-      <div
-        as="div"
-        className="column"
-      >
-        <p
-          className="has-background-primary has-text-white"
-          style={
-            Object {
-              "padding": "0.5rem 1rem",
-            }
-          }
-        >
-          Third column
-        </p>
-      </div>
-      <div
-        as="div"
-        className="column"
-      >
-        <p
-          className="has-background-primary has-text-white"
-          style={
-            Object {
-              "padding": "0.5rem 1rem",
-            }
-          }
-        >
-          Fourth column
+          3,456
         </p>
       </div>
     </div>
-  </div>
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Following
+        </p>
+        <p
+          className="title"
+        >
+          123
+        </p>
+      </div>
+    </div>
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Followers
+        </p>
+        <p
+          className="title"
+        >
+          456K
+        </p>
+      </div>
+    </div>
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Likes
+        </p>
+        <p
+          className="title"
+        >
+          789
+        </p>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Section Default 1`] = `
+<div
+  className="section has-background-info has-text-white"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  This is a Section
 </div>
 `;
 
@@ -1172,8 +1105,7 @@ exports[`Storyshots withColor Has Background 1`] = `
     }
   >
     <div
-      as="div"
-      className="box has-background-primary"
+      className="box has-background-primary has-text-white"
       style={
         Object {
           "alignItems": "center",
@@ -1214,7 +1146,6 @@ exports[`Storyshots withColor Has Text 1`] = `
     }
   >
     <div
-      as="div"
       className="box has-text-primary"
       style={
         Object {
@@ -1256,7 +1187,6 @@ exports[`Storyshots withOther Clearfix 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-clearfix"
       style={
         Object {
@@ -1298,7 +1228,6 @@ exports[`Storyshots withOther Clipped 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-clipped"
       style={
         Object {
@@ -1340,7 +1269,6 @@ exports[`Storyshots withOther Overlay 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-overlay"
       style={
         Object {
@@ -1382,7 +1310,6 @@ exports[`Storyshots withOther Pulled Left 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-pulled-left"
       style={
         Object {
@@ -1424,7 +1351,6 @@ exports[`Storyshots withOther Pulled Right 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-pulled-right"
       style={
         Object {
@@ -1466,7 +1392,6 @@ exports[`Storyshots withOther Radiusless 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-radiusless"
       style={
         Object {
@@ -1508,7 +1433,6 @@ exports[`Storyshots withOther Relative 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-relative"
       style={
         Object {
@@ -1550,7 +1474,6 @@ exports[`Storyshots withOther Shadowless 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-shadowless"
       style={
         Object {
@@ -1592,7 +1515,6 @@ exports[`Storyshots withOther Unselectable 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-unselectable"
       style={
         Object {
@@ -1634,7 +1556,6 @@ exports[`Storyshots withResponsive Hidden 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-hidden"
       style={
         Object {
@@ -1676,7 +1597,6 @@ exports[`Storyshots withResponsive Invisible 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-invisible"
       style={
         Object {
@@ -1718,7 +1638,6 @@ exports[`Storyshots withResponsive Is Flex 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-flex"
       style={
         Object {
@@ -1760,7 +1679,6 @@ exports[`Storyshots withResponsive Is Flex Mobile 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-flex-mobile"
       style={
         Object {
@@ -1802,7 +1720,6 @@ exports[`Storyshots withResponsive Sr Only 1`] = `
     }
   >
     <div
-      as="div"
       className="box is-sr-only"
       style={
         Object {
@@ -1844,7 +1761,6 @@ exports[`Storyshots withSpacing Margin Top 6 1`] = `
     }
   >
     <div
-      as="div"
       className="box mt-6"
       style={
         Object {
@@ -1886,7 +1802,6 @@ exports[`Storyshots withSpacing Padding Top 6 1`] = `
     }
   >
     <div
-      as="div"
       className="box pt-6"
       style={
         Object {
