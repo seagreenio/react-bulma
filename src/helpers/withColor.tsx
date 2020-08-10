@@ -2,11 +2,11 @@ import Color, {
   ColorType,
   DarkColor,
   DarkColorType,
-  ShadesOfGrey,
-  ShadesOfGreyType,
   LightColor,
   LightColorType,
-} from '../types/Color'
+  ShadesOfGrey,
+  ShadesOfGreyType,
+} from 'types/Color'
 
 import CommonProps from '../types/CommonProps'
 import React from 'react'
