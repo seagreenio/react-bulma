@@ -1,12 +1,25 @@
-import { Container } from '../..'
+import { Container, ContainerProps, Section, withColor } from '../..'
 
 import React from 'react'
-import centered from '@storybook/addon-centered/react'
+
+const ColorContainer = withColor<ContainerProps>(Container)
+
+const style = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: '64px',
+}
 
 export default {
   title: 'Container',
   component: Container,
-  decorators: [centered],
 }
 
-export const Default = () => <Container>Container</Container>
+export const Default = () => (
+  <Section>
+    <ColorContainer style={style} hasText="white" hasBackground="info">
+      This is a Container
+    </ColorContainer>
+  </Section>
+)
