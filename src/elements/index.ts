@@ -18,3 +18,6 @@ export type { IconProps } from './Icon'
 
 export { default as Image } from './Image'
 export type { ImageProps } from './Image'
+
+export { default as Notification } from './Notification'
+export type { NotificationProps } from './Notification'
