@@ -1,4 +1,4 @@
-import CommonProps from 'types/CommonProps'
+import CommonProps from '../types/CommonProps'
 import React from 'react'
 import cx from 'classnames'
 import { differenceObject } from 'lib/utils'

@@ -1,16 +1,17 @@
-import Size, { SizeType } from 'types/Size'
+import Size, { SizeType } from '../types/Size'
 
-import CommonProps from 'types/CommonProps'
+import CommonProps from '../types/CommonProps'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
 export interface IconProps extends Omit<CommonProps, 'size'> {
+  name?: string
   size?: Exclude<Size, Size.Normal> | Exclude<SizeType, 'normal'>
 }
 
-const Icon: React.FC<IconProps> = ({ children, className, ...props }) => {
+const Icon: React.FC<IconProps> = ({ className, ...props }) => {
   const rest = getUnhandledProps(Icon, props)
   const ElementType = detectElementType(Icon, props)
   const classes = cx('icon', className, {
@@ -19,7 +20,7 @@ const Icon: React.FC<IconProps> = ({ children, className, ...props }) => {
 
   return (
     <ElementType {...rest} className={classes}>
-      {children}
+      <i className={props.name} />
     </ElementType>
   )
 }
@@ -27,6 +28,7 @@ const Icon: React.FC<IconProps> = ({ children, className, ...props }) => {
 Icon.defaultProps = {
   as: 'span',
   className: undefined,
+  name: undefined,
   size: undefined,
 }
 

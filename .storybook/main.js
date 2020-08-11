@@ -1,7 +1,7 @@
 module.exports = {
   stories: ['../stories/**/*.stories.ts[x]'],
   addons: ['@storybook/addon-storysource'],
-  webpackFinal: async config => {
+  webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.tsx?$/,
       loader: require.resolve('babel-loader'),

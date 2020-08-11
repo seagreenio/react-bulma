@@ -1,5 +1,5 @@
-import { Unit as SizeUnit } from 'types/Size'
-import { Unit as SpacingUnit } from 'types/Spacing'
+import { Unit as SizeUnit } from '../types/Size'
+import { Unit as SpacingUnit } from '../types/Spacing'
 import _difference from 'lodash.difference'
 
 export function differenceObject(a: object, b: object) {

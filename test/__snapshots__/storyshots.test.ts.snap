@@ -67,7 +67,7 @@ exports[`Storyshots Button As 1`] = `
     <a
       className="button"
     >
-      As a tag
+      As an anchor
     </a>
   </div>
 </div>
@@ -966,6 +966,109 @@ exports[`Storyshots Container Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Content Default 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="content"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Content Sizes 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="content is-small"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  <div
+    className="content is-medium"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  <div
+    className="content is-large"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Delete Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <button
+      className="delete"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Delete Sizes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <button
+      className="delete is-small"
+    />
+    <button
+      className="delete"
+    />
+    <button
+      className="delete is-medium"
+    />
+    <button
+      className="delete is-large"
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Footer Default 1`] = `
 <footer
   className="footer"
@@ -1002,6 +1105,150 @@ exports[`Storyshots Hero Default 1`] = `
         Primary bold subtitle
       </h2>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Icon Colors 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <span
+      className="icon has-text-info"
+    >
+      <i
+        className="fa fa-info-circle"
+      />
+    </span>
+    <span
+      className="icon has-text-success"
+    >
+      <i
+        className="fa fa-check-square"
+      />
+    </span>
+    <span
+      className="icon has-text-warning"
+    >
+      <i
+        className="fa fa-exclamation-triangle"
+      />
+    </span>
+    <span
+      className="icon has-text-danger"
+    >
+      <i
+        className="fa fa-ban"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Icon Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <span
+      className="icon"
+    >
+      <i
+        className="fab fa-react"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Icon Sizes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <span
+      className="icon is-small"
+    >
+      <i
+        className="fab fa-react"
+      />
+    </span>
+    <span
+      className="icon"
+    >
+      <i
+        className="fab fa-lg fa-react"
+      />
+    </span>
+    <span
+      className="icon is-medium"
+    >
+      <i
+        className="fab fa-2x fa-react"
+      />
+    </span>
+    <span
+      className="icon is-large"
+    >
+      <i
+        className="fab fa-3x fa-react"
+      />
+    </span>
   </div>
 </div>
 `;

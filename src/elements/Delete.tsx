@@ -1,6 +1,6 @@
-import Size, { SizeType } from 'types/Size'
+import Size, { SizeType } from '../types/Size'
 
-import CommonProps from 'types/CommonProps'
+import CommonProps from '../types/CommonProps'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -10,18 +10,14 @@ export interface DeleteProps extends Omit<CommonProps, 'size'> {
   size?: Exclude<Size, Size.Normal> | Exclude<SizeType, 'normal'>
 }
 
-const Delete: React.FC<DeleteProps> = ({ children, className, ...props }) => {
+const Delete: React.FC<DeleteProps> = ({ className, ...props }) => {
   const rest = getUnhandledProps(Delete, props)
   const ElementType = detectElementType(Delete, props)
   const classes = cx('delete', className, {
     [`is-${props.size}`]: props.size,
   })
 
-  return (
-    <ElementType {...rest} className={classes}>
-      {children}
-    </ElementType>
-  )
+  return <ElementType {...rest} className={classes} />
 }
 
 Delete.defaultProps = {
