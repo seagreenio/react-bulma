@@ -11,9 +11,7 @@ export interface HeroProps extends Omit<CommonProps, 'size'> {
   head?: boolean
   body?: boolean
   foot?: boolean
-  color?:
-    | Exclude<Color, Color.Black | Color.White>
-    | Exclude<ColorType, 'black' | 'white'>
+  color?: Color | ColorType
   bold?: boolean
   size?: Extract<SizeType, 'medium' | 'large'> | 'fullheight'
   fullheightWithNavbar?: boolean
