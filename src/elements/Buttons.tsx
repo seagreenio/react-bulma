@@ -6,7 +6,7 @@ import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 
 export interface ButtonsProps extends Omit<CommonProps, 'size'> {
-  size?: Exclude<Size, Size.Normal> | Exclude<SizeType, 'normal'>
+  size?: Size | SizeType
 }
 
 const Buttons: React.FC<ButtonsProps> = ({ children, className, ...props }) => {

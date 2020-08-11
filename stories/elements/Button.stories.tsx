@@ -21,6 +21,7 @@ export const Colors = () => (
     <Button color="light">Light</Button>
     <Button color="dark">Dark</Button>
     <Button color="black">Black</Button>
+    <Button color="text">Black</Button>
     <Button color="primary">Primary</Button>
     <Button color="link">Link</Button>
     <Button color="info">Info</Button>

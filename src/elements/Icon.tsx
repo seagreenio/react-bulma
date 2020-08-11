@@ -8,7 +8,7 @@ import getUnhandledProps from 'lib/getUnhandledProps'
 
 export interface IconProps extends Omit<CommonProps, 'size'> {
   name?: string
-  size?: Exclude<Size, Size.Normal> | Exclude<SizeType, 'normal'>
+  size?: Size | SizeType
 }
 
 const Icon: React.FC<IconProps> = ({ className, ...props }) => {

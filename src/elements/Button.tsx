@@ -8,7 +8,7 @@ import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
 export interface ButtonProps extends Omit<CommonProps, 'size'> {
-  color?: Color | ColorType
+  color?: Color | ColorType | 'text'
   light?: boolean
   size?: Size | SizeType
   fullwidth?: boolean
@@ -27,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({ children, className, ...props }) => {
   const ElementType = detectElementType(Button, props)
   const classes = cx('button', className, {
     [`is-${props.color}`]: props.color,
-    'is-light': props.light,
+    'is-light': props.color === 'light' || props.light,
     [`is-${props.size}`]: props.size,
     'is-fullwidth': props.fullwidth,
     'is-outlined': props.outlined,

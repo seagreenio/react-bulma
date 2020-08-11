@@ -1,4 +1,4 @@
-import Color, { ColorType } from 'types/Color'
+import Color, { ColorType } from '../types/Color'
 
 import CommonProps from '../types/CommonProps'
 import React from 'react'

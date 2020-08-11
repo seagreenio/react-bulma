@@ -7,7 +7,7 @@ import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
 export interface ContentProps extends Omit<CommonProps, 'size'> {
-  size?: Exclude<Size, Size.Normal> | Exclude<SizeType, 'normal'>
+  size?: Size | SizeType
 }
 
 const Content: React.FC<ContentProps> = ({ children, className, ...props }) => {
