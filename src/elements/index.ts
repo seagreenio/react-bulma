@@ -30,3 +30,15 @@ export type { TableProps } from './Table'
 
 export { default as TableContainer } from './TableContainer'
 export type { TableContainerProps } from './TableContainer'
+
+export { default as Tag } from './Tag'
+export type { TagProps } from './Tag'
+
+export { default as Tags } from './Tags'
+export type { TagsProps } from './Tags'
+
+export { default as Title } from './Title'
+export type { TitleProps } from './Title'
+
+export { default as Subtitle } from './Subtitle'
+export type { SubtitleProps } from './Subtitle'
