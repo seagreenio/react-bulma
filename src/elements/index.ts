@@ -24,3 +24,9 @@ export type { NotificationProps } from './Notification'
 
 export { default as Progress } from './Progress'
 export type { ProgressProps } from './Progress'
+
+export { default as Table } from './Table'
+export type { TableProps } from './Table'
+
+export { default as TableContainer } from './TableContainer'
+export type { TableContainerProps } from './TableContainer'
