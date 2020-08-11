@@ -51,17 +51,14 @@ export const LightColors = () => (
 )
 
 export const Sizes = () => (
-  <Buttons>
-    <Button size="small">Small</Button>
-    <Button>Default</Button>
-    <Button size="normal">Normal</Button>
-    <Button size="medium">Medium</Button>
-    <Button size="large">Large</Button>
-  </Buttons>
-)
-
-export const ButtonsSizes = () => (
   <>
+    <Buttons>
+      <Button size="small">Small</Button>
+      <Button>Default</Button>
+      <Button size="normal">Normal</Button>
+      <Button size="medium">Medium</Button>
+      <Button size="large">Large</Button>
+    </Buttons>
     <Buttons size="medium">
       <Button>All</Button>
       <Button>Medium</Button>

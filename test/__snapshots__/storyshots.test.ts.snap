@@ -73,81 +73,6 @@ exports[`Storyshots Button As 1`] = `
 </div>
 `;
 
-exports[`Storyshots Button Buttons Sizes 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons are-medium"
-    >
-      <button
-        className="button"
-      >
-        All
-      </button>
-      <button
-        className="button"
-      >
-        Medium
-      </button>
-      <button
-        className="button"
-      >
-        Size
-      </button>
-    </div>
-    <div
-      className="buttons are-small"
-    >
-      <button
-        className="button"
-      >
-        Small
-      </button>
-      <button
-        className="button"
-      >
-        Small
-      </button>
-      <button
-        className="button"
-      >
-        Small
-      </button>
-      <button
-        className="button is-normal"
-      >
-        Normal
-      </button>
-      <button
-        className="button"
-      >
-        Small
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Button Colors 1`] = `
 <div
   style={
@@ -180,7 +105,7 @@ exports[`Storyshots Button Colors 1`] = `
         White
       </button>
       <button
-        className="button"
+        className="button is-light"
       >
         Light
       </button>
@@ -191,6 +116,11 @@ exports[`Storyshots Button Colors 1`] = `
       </button>
       <button
         className="button is-black"
+      >
+        Black
+      </button>
+      <button
+        className="button is-text"
       >
         Black
       </button>
@@ -787,6 +717,54 @@ exports[`Storyshots Button Sizes 1`] = `
         Large
       </button>
     </div>
+    <div
+      className="buttons are-medium"
+    >
+      <button
+        className="button"
+      >
+        All
+      </button>
+      <button
+        className="button"
+      >
+        Medium
+      </button>
+      <button
+        className="button"
+      >
+        Size
+      </button>
+    </div>
+    <div
+      className="buttons are-small"
+    >
+      <button
+        className="button"
+      >
+        Small
+      </button>
+      <button
+        className="button"
+      >
+        Small
+      </button>
+      <button
+        className="button"
+      >
+        Small
+      </button>
+      <button
+        className="button is-normal"
+      >
+        Normal
+      </button>
+      <button
+        className="button"
+      >
+        Small
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -973,7 +951,15 @@ exports[`Storyshots Content Default 1`] = `
   <div
     className="content"
   >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
   </div>
 </div>
 `;
@@ -985,17 +971,41 @@ exports[`Storyshots Content Sizes 1`] = `
   <div
     className="content is-small"
   >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
   </div>
   <div
     className="content is-medium"
   >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
   </div>
   <div
     className="content is-large"
   >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
   </div>
 </div>
 `;
@@ -1253,6 +1263,256 @@ exports[`Storyshots Icon Sizes 1`] = `
 </div>
 `;
 
+exports[`Storyshots Image Arbitrary Ratios With Any Element 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box"
+      style={
+        Object {
+          "width": 640,
+        }
+      }
+    >
+      <figure
+        className="image is-16by9"
+      >
+        <iframe
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          className="has-ratio"
+          frameBorder="0"
+          height="360"
+          src="https://www.youtube.com/embed/yI-8QHpGIP4"
+          width="640"
+        />
+      </figure>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <figure
+      className="image"
+    >
+      <img
+        src="https://fakeimg.pl/256/"
+      />
+    </figure>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image Fixed Square Images 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <figure
+      className="image is-16x16"
+    >
+      <img
+        src="https://fakeimg.pl/16/"
+      />
+    </figure>
+    <figure
+      className="image is-24x24"
+    >
+      <img
+        src="https://fakeimg.pl/24/"
+      />
+    </figure>
+    <figure
+      className="image is-32x32"
+    >
+      <img
+        src="https://fakeimg.pl/32/"
+      />
+    </figure>
+    <figure
+      className="image is-48x48"
+    >
+      <img
+        src="https://fakeimg.pl/48/"
+      />
+    </figure>
+    <figure
+      className="image is-64x64"
+    >
+      <img
+        src="https://fakeimg.pl/64/"
+      />
+    </figure>
+    <figure
+      className="image is-96x96"
+    >
+      <img
+        src="https://fakeimg.pl/96/"
+      />
+    </figure>
+    <figure
+      className="image is-128x128"
+    >
+      <img
+        src="https://fakeimg.pl/128/"
+      />
+    </figure>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image Responsive Images With Ratios 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box"
+      style={
+        Object {
+          "width": 256,
+        }
+      }
+    >
+      <figure
+        className="image is-square"
+      >
+        <img
+          src="https://fakeimg.pl/256/"
+        />
+      </figure>
+      <figure
+        className="image is-1by1"
+      >
+        <img
+          src="https://fakeimg.pl/256/"
+        />
+      </figure>
+      <figure
+        className="image is-5by4"
+      >
+        <img
+          src="https://fakeimg.pl/600x480/"
+        />
+      </figure>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image Rounded 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <figure
+      className="image"
+    >
+      <img
+        className="is-rounded"
+        src="https://fakeimg.pl/256/"
+      />
+    </figure>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Level Default 1`] = `
 <div
   className="section"
@@ -1328,6 +1588,607 @@ exports[`Storyshots Level Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Notification Colors 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box"
+      style={
+        Object {
+          "width": 540,
+        }
+      }
+    >
+      <div
+        className="notification is-white"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-light"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-dark"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-black"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-primary"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-link"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-info"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-warning"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-danger"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Notification Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box"
+      style={
+        Object {
+          "width": 540,
+        }
+      }
+    >
+      <div
+        className="notification"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Notification Light Colors 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box"
+      style={
+        Object {
+          "width": 540,
+        }
+      }
+    >
+      <div
+        className="notification is-white is-light"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-light"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-dark is-light"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-black is-light"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-primary is-light"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-link is-light"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-info is-light"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-warning is-light"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+      <div
+        className="notification is-danger is-light"
+      >
+        <button
+          className="delete"
+        />
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est laborum.
+
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Progress Colors 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <progress
+      className="progress is-primary"
+      max={100}
+      value={15}
+    >
+      15%
+    </progress>
+    <progress
+      className="progress is-link"
+      max={100}
+      value={30}
+    >
+      30%
+    </progress>
+    <progress
+      className="progress is-info"
+      max={100}
+      value={45}
+    >
+      45%
+    </progress>
+    <progress
+      className="progress is-success"
+      max={100}
+      value={60}
+    >
+      60%
+    </progress>
+    <progress
+      className="progress is-warning"
+      max={100}
+      value={75}
+    >
+      75%
+    </progress>
+    <progress
+      className="progress is-danger"
+      max={100}
+      value={90}
+    >
+      90%
+    </progress>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Progress Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <progress
+      className="progress"
+      max={100}
+      value={15}
+    >
+      15%
+    </progress>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Progress Indeterminate 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <progress
+      className="progress is-primary"
+      max={100}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Progress Sizes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <progress
+      className="progress is-small"
+      max={100}
+      value={15}
+    >
+      15%
+    </progress>
+    <progress
+      className="progress"
+      max={100}
+      value={30}
+    >
+      30%
+    </progress>
+    <progress
+      className="progress is-medium"
+      max={100}
+      value={45}
+    >
+      45%
+    </progress>
+    <progress
+      className="progress is-large"
+      max={100}
+      value={60}
+    >
+      60%
+    </progress>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Section Default 1`] = `
 <div
   className="section has-background-info has-text-white"
@@ -1340,6 +2201,1421 @@ exports[`Storyshots Section Default 1`] = `
   }
 >
   This is a Section
+</div>
+`;
+
+exports[`Storyshots Table Bordered 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <table
+      className="table is-bordered"
+    >
+      <thead>
+        <tr>
+          <th>
+            One
+          </th>
+          <th>
+            Two
+          </th>
+          <th>
+            Three
+          </th>
+          <th>
+            Four
+          </th>
+          <th>
+            Five
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Six
+          </td>
+          <td>
+            Seven
+          </td>
+          <td>
+            Eight
+          </td>
+          <td>
+            Nine
+          </td>
+          <td>
+            Ten
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Eleven
+          </td>
+          <td>
+            Twelve
+          </td>
+          <td>
+            Thirteen
+          </td>
+          <td>
+            Fourteen
+          </td>
+          <td>
+            Fifteen
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table Combine 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <table
+      className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
+    >
+      <thead>
+        <tr>
+          <th>
+            One
+          </th>
+          <th>
+            Two
+          </th>
+          <th>
+            Three
+          </th>
+          <th>
+            Four
+          </th>
+          <th>
+            Five
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Six
+          </td>
+          <td>
+            Seven
+          </td>
+          <td>
+            Eight
+          </td>
+          <td>
+            Nine
+          </td>
+          <td>
+            Ten
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Eleven
+          </td>
+          <td>
+            Twelve
+          </td>
+          <td>
+            Thirteen
+          </td>
+          <td>
+            Fourteen
+          </td>
+          <td>
+            Fifteen
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            One
+          </th>
+          <th>
+            Two
+          </th>
+          <th>
+            Three
+          </th>
+          <th>
+            Four
+          </th>
+          <th>
+            Five
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Six
+          </td>
+          <td>
+            Seven
+          </td>
+          <td>
+            Eight
+          </td>
+          <td>
+            Nine
+          </td>
+          <td>
+            Ten
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Eleven
+          </td>
+          <td>
+            Twelve
+          </td>
+          <td>
+            Thirteen
+          </td>
+          <td>
+            Fourteen
+          </td>
+          <td>
+            Fifteen
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table Fullwidth 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <table
+      className="table is-fullwidth"
+    >
+      <thead>
+        <tr>
+          <th>
+            One
+          </th>
+          <th>
+            Two
+          </th>
+          <th>
+            Three
+          </th>
+          <th>
+            Four
+          </th>
+          <th>
+            Five
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Six
+          </td>
+          <td>
+            Seven
+          </td>
+          <td>
+            Eight
+          </td>
+          <td>
+            Nine
+          </td>
+          <td>
+            Ten
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Eleven
+          </td>
+          <td>
+            Twelve
+          </td>
+          <td>
+            Thirteen
+          </td>
+          <td>
+            Fourteen
+          </td>
+          <td>
+            Fifteen
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table Hoverable 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <table
+      className="table is-hoverable"
+    >
+      <thead>
+        <tr>
+          <th>
+            One
+          </th>
+          <th>
+            Two
+          </th>
+          <th>
+            Three
+          </th>
+          <th>
+            Four
+          </th>
+          <th>
+            Five
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Six
+          </td>
+          <td>
+            Seven
+          </td>
+          <td>
+            Eight
+          </td>
+          <td>
+            Nine
+          </td>
+          <td>
+            Ten
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Eleven
+          </td>
+          <td>
+            Twelve
+          </td>
+          <td>
+            Thirteen
+          </td>
+          <td>
+            Fourteen
+          </td>
+          <td>
+            Fifteen
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table Narrow 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <table
+      className="table is-narrow"
+    >
+      <thead>
+        <tr>
+          <th>
+            One
+          </th>
+          <th>
+            Two
+          </th>
+          <th>
+            Three
+          </th>
+          <th>
+            Four
+          </th>
+          <th>
+            Five
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Six
+          </td>
+          <td>
+            Seven
+          </td>
+          <td>
+            Eight
+          </td>
+          <td>
+            Nine
+          </td>
+          <td>
+            Ten
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Eleven
+          </td>
+          <td>
+            Twelve
+          </td>
+          <td>
+            Thirteen
+          </td>
+          <td>
+            Fourteen
+          </td>
+          <td>
+            Fifteen
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table Scrollable 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box"
+      style={
+        Object {
+          "width": 380,
+        }
+      }
+    >
+      <div
+        className="table-container"
+      >
+        <table
+          className="table"
+        >
+          <thead>
+            <tr>
+              <th>
+                One
+              </th>
+              <th>
+                Two
+              </th>
+              <th>
+                Three
+              </th>
+              <th>
+                Four
+              </th>
+              <th>
+                Five
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Six
+              </td>
+              <td>
+                Seven
+              </td>
+              <td>
+                Eight
+              </td>
+              <td>
+                Nine
+              </td>
+              <td>
+                Ten
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Eleven
+              </td>
+              <td>
+                Twelve
+              </td>
+              <td>
+                Thirteen
+              </td>
+              <td>
+                Fourteen
+              </td>
+              <td>
+                Fifteen
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table Striped 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <table
+      className="table is-striped"
+    >
+      <thead>
+        <tr>
+          <th>
+            One
+          </th>
+          <th>
+            Two
+          </th>
+          <th>
+            Three
+          </th>
+          <th>
+            Four
+          </th>
+          <th>
+            Five
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Six
+          </td>
+          <td>
+            Seven
+          </td>
+          <td>
+            Eight
+          </td>
+          <td>
+            Nine
+          </td>
+          <td>
+            Ten
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Eleven
+          </td>
+          <td>
+            Twelve
+          </td>
+          <td>
+            Thirteen
+          </td>
+          <td>
+            Fourteen
+          </td>
+          <td>
+            Fifteen
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Addons 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="tags has-addons"
+    >
+      <span
+        className="tag"
+      >
+        Package
+      </span>
+      <span
+        className="tag is-primary"
+      >
+        Bulma
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag As 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <a
+      className="tag"
+    >
+      As an anchor
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Colors 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="tags"
+    >
+      <span
+        className="tag is-white"
+      >
+        White
+      </span>
+      <span
+        className="tag is-light"
+      >
+        Light
+      </span>
+      <span
+        className="tag is-dark"
+      >
+        Dark
+      </span>
+      <span
+        className="tag is-black"
+      >
+        Black
+      </span>
+      <span
+        className="tag is-text"
+      >
+        Black
+      </span>
+      <span
+        className="tag is-primary"
+      >
+        Primary
+      </span>
+      <span
+        className="tag is-link"
+      >
+        Link
+      </span>
+      <span
+        className="tag is-info"
+      >
+        Info
+      </span>
+      <span
+        className="tag is-warning"
+      >
+        Warning
+      </span>
+      <span
+        className="tag is-danger"
+      >
+        Danger
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <span
+      className="tag"
+    >
+      Tag
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Delete 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="tags"
+    >
+      <span
+        className="tag is-delete"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Light Colors 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="tags"
+    >
+      <span
+        className="tag is-primary is-light"
+      >
+        Primary
+      </span>
+      <span
+        className="tag is-link is-light"
+      >
+        Link
+      </span>
+      <span
+        className="tag is-info is-light"
+      >
+        Info
+      </span>
+      <span
+        className="tag is-warning is-light"
+      >
+        Warning
+      </span>
+      <span
+        className="tag is-danger is-light"
+      >
+        Danger
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag List Of Tags 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box"
+      style={
+        Object {
+          "width": 540,
+        }
+      }
+    >
+      <div
+        className="tags"
+      >
+        <span
+          className="tag"
+        >
+          One
+        </span>
+        <span
+          className="tag"
+        >
+          Two
+        </span>
+        <span
+          className="tag"
+        >
+          Three
+        </span>
+        <span
+          className="tag"
+        >
+          Four
+        </span>
+        <span
+          className="tag"
+        >
+          Five
+        </span>
+        <span
+          className="tag"
+        >
+          Six
+        </span>
+        <span
+          className="tag"
+        >
+          Seven
+        </span>
+        <span
+          className="tag"
+        >
+          Eight
+        </span>
+        <span
+          className="tag"
+        >
+          Nine
+        </span>
+        <span
+          className="tag"
+        >
+          Ten
+        </span>
+        <span
+          className="tag"
+        >
+          Eleven
+        </span>
+        <span
+          className="tag"
+        >
+          Twelve
+        </span>
+        <span
+          className="tag"
+        >
+          Thirteen
+        </span>
+        <span
+          className="tag"
+        >
+          Fourteen
+        </span>
+        <span
+          className="tag"
+        >
+          Fifteen
+        </span>
+        <span
+          className="tag"
+        >
+          Sixteen
+        </span>
+        <span
+          className="tag"
+        >
+          Seventeen
+        </span>
+        <span
+          className="tag"
+        >
+          Eighteen
+        </span>
+        <span
+          className="tag"
+        >
+          Nineteen
+        </span>
+        <span
+          className="tag"
+        >
+          Twenty
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Rounded 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="tags"
+    >
+      <span
+        className="tag is-rounded"
+      >
+        Rounded
+      </span>
+      <span
+        className="tag is-primary is-rounded"
+      >
+        Rounded
+      </span>
+      <span
+        className="tag is-link is-rounded"
+      >
+        Rounded
+      </span>
+      <span
+        className="tag is-info is-rounded"
+      >
+        Rounded
+      </span>
+      <span
+        className="tag is-success is-rounded"
+      >
+        Rounded
+      </span>
+      <span
+        className="tag is-danger is-rounded"
+      >
+        Rounded
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Sizes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="tags"
+    >
+      <span
+        className="tag is-link is-normal"
+      >
+        Normal
+      </span>
+      <span
+        className="tag is-primary is-medium"
+      >
+        Medium
+      </span>
+      <span
+        className="tag is-info is-large"
+      >
+        Large
+      </span>
+    </div>
+    <div
+      className="tags are-medium"
+    >
+      <span
+        className="tag"
+      >
+        All
+      </span>
+      <span
+        className="tag"
+      >
+        Medium
+      </span>
+      <span
+        className="tag"
+      >
+        Size
+      </span>
+    </div>
+    <div
+      className="tags are-large"
+    >
+      <span
+        className="tag"
+      >
+        All
+      </span>
+      <span
+        className="tag"
+      >
+        Large
+      </span>
+      <span
+        className="tag"
+      >
+        Size
+      </span>
+    </div>
+    <div
+      className="tags"
+    >
+      <span
+        className="tag"
+      >
+        Normal
+      </span>
+      <span
+        className="tag is-medium"
+      >
+        Medium
+      </span>
+      <span
+        className="tag"
+      >
+        Normal
+      </span>
+      <span
+        className="tag is-large"
+      >
+        Large
+      </span>
+      <span
+        className="tag"
+      >
+        Normal
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Title Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <h1
+      className="title is-1"
+    >
+      Title 1
+    </h1>
+    <h2
+      className="title is-2"
+    >
+      Title 2
+    </h2>
+    <h3
+      className="title is-3"
+    >
+      Title 3 (default size)
+    </h3>
+    <h4
+      className="title is-4"
+    >
+      Title 4
+    </h4>
+    <h5
+      className="title is-5"
+    >
+      Title 5
+    </h5>
+    <h6
+      className="title is-6"
+    >
+      Title 6
+    </h6>
+    <h1
+      className="subtitle is-1"
+    >
+      Subtitle 1
+    </h1>
+    <h2
+      className="subtitle is-2"
+    >
+      Subtitle 2
+    </h2>
+    <h3
+      className="subtitle is-3"
+    >
+      Subtitle 3
+    </h3>
+    <h4
+      className="subtitle is-4"
+    >
+      Subtitle 4
+    </h4>
+    <h5
+      className="subtitle is-5"
+    >
+      Subtitle 5 (default size)
+    </h5>
+    <h6
+      className="subtitle is-6"
+    >
+      Subtitle 6
+    </h6>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Title Spaced 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="title is-spaced"
+    >
+      Title 3
+    </div>
+    <div
+      className="subtitle"
+    >
+      Subtitle 5
+    </div>
+  </div>
 </div>
 `;
 
