@@ -21,3 +21,6 @@ export type { ImageProps } from './Image'
 
 export { default as Notification } from './Notification'
 export type { NotificationProps } from './Notification'
+
+export { default as Progress } from './Progress'
+export type { ProgressProps } from './Progress'
