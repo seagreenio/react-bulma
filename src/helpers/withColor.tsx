@@ -6,7 +6,7 @@ import Color, {
   LightColorType,
   ShadesOfGrey,
   ShadesOfGreyType,
-} from 'types/Color'
+} from '../types/Color'
 
 import CommonProps from '../types/CommonProps'
 import React from 'react'

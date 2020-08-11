@@ -13,7 +13,7 @@ export default {
 
 export const Default = () => <Button>Button</Button>
 
-export const As = () => <Button as="a">As a tag</Button>
+export const As = () => <Button as="a">As an anchor</Button>
 
 export const Colors = () => (
   <Buttons>

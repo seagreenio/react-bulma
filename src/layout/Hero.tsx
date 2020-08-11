@@ -1,8 +1,8 @@
-import Color, { ColorType } from 'types/Color'
+import Color, { ColorType } from '../types/Color'
 
-import CommonProps from 'types/CommonProps'
+import CommonProps from '../types/CommonProps'
 import React from 'react'
-import { SizeType } from 'types/Size'
+import { SizeType } from '../types/Size'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'

@@ -1,6 +1,6 @@
-import Responsive, { ResponsiveType } from 'types/Responsive'
+import Responsive, { ResponsiveType } from '../types/Responsive'
 
-import CommonProps from 'types/CommonProps'
+import CommonProps from '../types/CommonProps'
 import React from 'react'
 import cx from 'classnames'
 import { differenceObject } from 'lib/utils'

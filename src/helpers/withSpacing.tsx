@@ -1,8 +1,8 @@
 import { differenceObject, properRange } from 'lib/utils'
 
-import CommonProps from 'types/CommonProps'
+import CommonProps from '../types/CommonProps'
 import React from 'react'
-import { Unit } from 'types/Spacing'
+import { Unit } from '../types/Spacing'
 import cx from 'classnames'
 
 interface SpacingProps extends CommonProps {
