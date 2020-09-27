@@ -1,6 +1,7 @@
 import Size, { SizeType } from '../types/Size'
 
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -24,10 +25,10 @@ const Content: React.FC<ContentProps> = ({ children, className, ...props }) => {
   )
 }
 
-Content.defaultProps = {
-  as: 'div',
-  className: undefined,
-  size: undefined,
+Content.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  size: PropTypes.string as any,
 }
 
 export default Content

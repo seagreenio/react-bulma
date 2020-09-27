@@ -1,6 +1,7 @@
 import Size, { SizeType } from '../types/Size'
 
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -18,10 +19,10 @@ const Buttons: React.FC<ButtonsProps> = ({ children, className, ...props }) => {
   return <ElementType className={classes}>{children}</ElementType>
 }
 
-Buttons.defaultProps = {
-  as: 'div',
-  className: undefined,
-  size: undefined,
+Buttons.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  size: PropTypes.string as any,
 }
 
 export default Buttons

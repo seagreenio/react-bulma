@@ -1,4 +1,5 @@
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -18,9 +19,9 @@ const Box: React.FC<BoxProps> = ({ children, className, ...props }) => {
   )
 }
 
-Box.defaultProps = {
-  as: 'div',
-  className: undefined,
+Box.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
 }
 
 export default Box

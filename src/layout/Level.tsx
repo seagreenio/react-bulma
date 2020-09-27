@@ -1,4 +1,5 @@
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -35,13 +36,13 @@ const Level: React.FC<LevelProps> = ({ children, className, ...props }) => {
   )
 }
 
-Level.defaultProps = {
-  as: 'div',
-  className: undefined,
-  left: undefined,
-  right: undefined,
-  item: undefined,
-  mobile: undefined,
+Level.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  left: PropTypes.bool,
+  right: PropTypes.bool,
+  item: PropTypes.bool,
+  mobile: PropTypes.bool,
 }
 
 export default Level

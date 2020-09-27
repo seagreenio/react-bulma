@@ -1,6 +1,7 @@
 import Color, { ColorType } from '../types/Color'
 
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -30,11 +31,11 @@ const Notification: React.FC<NotificationProps> = ({
   )
 }
 
-Notification.defaultProps = {
-  as: 'div',
-  className: undefined,
-  color: undefined,
-  light: undefined,
+Notification.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  color: PropTypes.string as any,
+  light: PropTypes.bool,
 }
 
 export default Notification

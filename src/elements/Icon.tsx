@@ -1,6 +1,7 @@
 import Size, { SizeType } from '../types/Size'
 
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -25,11 +26,15 @@ const Icon: React.FC<IconProps> = ({ className, ...props }) => {
   )
 }
 
+Icon.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  name: PropTypes.string,
+  size: PropTypes.string as any,
+}
+
 Icon.defaultProps = {
   as: 'span',
-  className: undefined,
-  name: undefined,
-  size: undefined,
 }
 
 export default Icon

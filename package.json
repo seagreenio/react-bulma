@@ -12,9 +12,9 @@
   "scripts": {
     "storybook": "start-storybook -p 6006 --ci",
     "build-storybook": "build-storybook",
-    "build": "rollup -c",
-    "build:types": "tsc --emitDeclarationOnly",
-    "build:all": "yarn build && yarn build:types",
+    "rollup": "rollup -c",
+    "types": "tsc --emitDeclarationOnly",
+    "build": "concurrently -c green --names 'rollup,types' 'yarn rollup' 'yarn types'",
     "clean": "rimraf dist",
     "test": "jest -u",
     "prepublishOnly": "yarn test && yarn build:all"
@@ -45,6 +45,7 @@
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
     "@rollup/plugin-babel": "^5.0.3",
+    "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@storybook/addon-centered": "^5.3.5",
     "@storybook/addon-storyshots": "^6.0.22",
@@ -58,10 +59,15 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-transform-react-handled-props": "^2.1.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "concurrently": "^5.3.0",
     "husky": "^4.2.1",
+    "import-sort-style-eslint": "^6.0.0",
     "jest": "^26.4.2",
     "lint-staged": "^10.0.7",
     "prettier": "^2.0.5",
+    "prettier-plugin-import-sort": "^0.0.5",
+    "prop-types": "^15.7.2",
     "react-test-renderer": "^16.12.0",
     "rimraf": "^3.0.0",
     "rollup": "^2.28.2",
@@ -84,6 +90,12 @@
     "hooks": {
       "pre-commit": "lint-staged",
       "pre-push": "npm test"
+    }
+  },
+  "importSort": {
+    ".js, .ts, .tsx": {
+      "style": "eslint",
+      "parser": "typescript"
     }
   }
 }

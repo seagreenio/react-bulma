@@ -1,4 +1,5 @@
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -18,9 +19,9 @@ const Column: React.FC<ColumnProps> = ({ children, className, ...props }) => {
   )
 }
 
-Column.defaultProps = {
-  as: 'div',
-  className: undefined,
+Column.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
 }
 
 export type ColumnsProps = CommonProps
@@ -37,9 +38,9 @@ const Columns: React.FC<ColumnsProps> = ({ children, className, ...props }) => {
   )
 }
 
-Columns.defaultProps = {
-  as: 'div',
-  className: undefined,
+Columns.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
 }
 
 export { Column, Columns }

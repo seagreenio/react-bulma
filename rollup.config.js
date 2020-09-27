@@ -1,4 +1,5 @@
 import babel from '@rollup/plugin-babel'
+import commonjs from '@rollup/plugin-commonjs'
 import pkg from './package.json'
 import resolve from '@rollup/plugin-node-resolve'
 
@@ -15,6 +16,7 @@ const plugins = [
   resolve({
     extensions,
   }),
+  commonjs(),
   babel({
     extensions,
     exclude: 'node_modules/**',
@@ -36,6 +38,7 @@ const plugins = [
           ignoredProps: ['children'],
         },
       ],
+      ['transform-react-remove-prop-types', { removeImport: true }],
     ],
   }),
 ]

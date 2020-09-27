@@ -1,4 +1,5 @@
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -28,9 +29,13 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
   )
 }
 
+Breadcrumb.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+}
+
 Breadcrumb.defaultProps = {
   as: 'nav',
-  className: undefined,
 }
 
 export default Breadcrumb

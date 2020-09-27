@@ -1,6 +1,7 @@
 import Size, { SizeType } from '../types/Size'
 
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -20,10 +21,14 @@ const Delete: React.FC<DeleteProps> = ({ className, ...props }) => {
   return <ElementType {...rest} className={classes} />
 }
 
+Delete.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  size: PropTypes.string as any,
+}
+
 Delete.defaultProps = {
   as: 'button',
-  className: undefined,
-  size: undefined,
 }
 
 export default Delete

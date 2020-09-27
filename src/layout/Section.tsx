@@ -1,6 +1,7 @@
 import Size, { SizeType } from '../types/Size'
 
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -24,10 +25,10 @@ const Section: React.FC<SectionProps> = ({ children, className, ...props }) => {
   )
 }
 
-Section.defaultProps = {
-  as: 'div',
-  className: undefined,
-  padding: undefined,
+Section.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  padding: PropTypes.string as any,
 }
 
 export default Section

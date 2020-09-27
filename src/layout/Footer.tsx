@@ -1,4 +1,5 @@
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -18,9 +19,13 @@ const Footer: React.FC<FooterProps> = ({ children, className, ...props }) => {
   )
 }
 
+Footer.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+}
+
 Footer.defaultProps = {
   as: 'footer',
-  className: undefined,
 }
 
 export default Footer

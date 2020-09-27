@@ -1,6 +1,7 @@
 import Color, { ColorType } from '../types/Color'
 import Size, { SizeType } from '../types/Size'
 
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import getUnhandledProps from 'lib/getUnhandledProps'
@@ -34,11 +35,11 @@ const Progress: React.FC<ProgressProps> = ({
   )
 }
 
-Progress.defaultProps = {
-  className: undefined,
-  color: undefined,
-  size: undefined,
-  indeterminate: undefined,
+Progress.propTypes = {
+  className: PropTypes.string,
+  color: PropTypes.string as any,
+  size: PropTypes.string as any,
+  indeterminate: PropTypes.bool,
 }
 
 export default Progress
