@@ -1,6 +1,7 @@
 import Size, { SizeType } from '../types/Size'
 
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -20,11 +21,11 @@ const Tags: React.FC<TagsProps> = ({ children, className, ...props }) => {
   return <ElementType className={classes}>{children}</ElementType>
 }
 
-Tags.defaultProps = {
-  as: 'div',
-  className: undefined,
-  size: undefined,
-  addons: undefined,
+Tags.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  size: PropTypes.string as any,
+  addons: PropTypes.bool,
 }
 
 export default Tags

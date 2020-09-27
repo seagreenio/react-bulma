@@ -1,6 +1,5 @@
 import CommonProps from '../types/CommonProps'
 import React from 'react'
-import { Unit } from '../types/Size'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'

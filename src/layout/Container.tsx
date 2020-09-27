@@ -1,6 +1,7 @@
 import Responsive, { ResponsiveType } from '../types/Responsive'
 
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -30,11 +31,11 @@ const Container: React.FC<ContainerProps> = ({
   )
 }
 
-Container.defaultProps = {
-  as: 'div',
-  className: undefined,
-  fluid: undefined,
-  breakpoint: undefined,
+Container.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  fluid: PropTypes.bool,
+  breakpoint: PropTypes.string as any,
 }
 
 export default Container

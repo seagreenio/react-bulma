@@ -2,6 +2,7 @@ import Color, { ColorType } from '../types/Color'
 import Size, { SizeType } from '../types/Size'
 
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -47,21 +48,25 @@ const Button: React.FC<ButtonProps> = ({ children, className, ...props }) => {
   )
 }
 
+Button.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  color: PropTypes.string as any,
+  light: PropTypes.bool,
+  size: PropTypes.string as any,
+  fullwidth: PropTypes.bool,
+  outlined: PropTypes.bool,
+  inverted: PropTypes.bool,
+  rounded: PropTypes.bool,
+  hovered: PropTypes.bool,
+  focused: PropTypes.bool,
+  active: PropTypes.bool,
+  loading: PropTypes.bool,
+  static: PropTypes.bool,
+}
+
 Button.defaultProps = {
   as: 'button',
-  className: undefined,
-  color: undefined,
-  light: undefined,
-  size: undefined,
-  fullwidth: undefined,
-  outlined: undefined,
-  inverted: undefined,
-  rounded: undefined,
-  hovered: undefined,
-  focused: undefined,
-  active: undefined,
-  loading: undefined,
-  static: undefined,
 }
 
 export default Button

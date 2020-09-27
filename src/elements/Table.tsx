@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import getUnhandledProps from 'lib/getUnhandledProps'
@@ -28,13 +29,13 @@ const Table: React.FC<TableProps> = ({ children, className, ...props }) => {
   )
 }
 
-Table.defaultProps = {
-  className: undefined,
-  bordered: undefined,
-  striped: undefined,
-  narrow: undefined,
-  hoverable: undefined,
-  fullwidth: undefined,
+Table.propTypes = {
+  className: PropTypes.string,
+  bordered: PropTypes.bool,
+  striped: PropTypes.bool,
+  narrow: PropTypes.bool,
+  hoverable: PropTypes.bool,
+  fullwidth: PropTypes.bool,
 }
 
 export default Table

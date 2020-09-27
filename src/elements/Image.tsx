@@ -1,4 +1,5 @@
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -52,16 +53,20 @@ const Image: React.FC<ImageProps> = ({ children, className, ...props }) => {
   )
 }
 
+Image.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  imgProps: PropTypes.object,
+  size: PropTypes.oneOfType([PropTypes.number, PropTypes.string]) as any,
+  rounded: PropTypes.bool,
+  square: PropTypes.bool,
+  by: PropTypes.string,
+}
+
 Image.defaultProps = {
   as: 'figure',
-  className: undefined,
-  src: undefined,
-  alt: undefined,
-  imgProps: undefined,
-  size: undefined,
-  rounded: undefined,
-  square: undefined,
-  by: undefined,
 }
 
 export default Image

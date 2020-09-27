@@ -1,9 +1,9 @@
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
-import { Unit } from 'types/Size'
 import { properRange } from 'lib/utils'
 
 export interface TileProps extends Omit<CommonProps, 'size'> {
@@ -41,14 +41,14 @@ const Tile: React.FC<TileProps> = ({ children, className, ...props }) => {
   )
 }
 
-Tile.defaultProps = {
-  as: 'div',
-  className: undefined,
-  ancestor: undefined,
-  parent: undefined,
-  child: undefined,
-  vertical: undefined,
-  size: undefined,
+Tile.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  ancestor: PropTypes.bool,
+  parent: PropTypes.bool,
+  child: PropTypes.bool,
+  vertical: PropTypes.bool,
+  size: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 }
 
 export default Tile

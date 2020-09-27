@@ -1,6 +1,7 @@
 import Color, { ColorType } from '../types/Color'
 
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import { SizeType } from '../types/Size'
 import cx from 'classnames'
@@ -44,16 +45,16 @@ const Hero: React.FC<HeroProps> = ({ children, className, ...props }) => {
   )
 }
 
-Hero.defaultProps = {
-  as: 'div',
-  className: undefined,
-  head: undefined,
-  body: undefined,
-  foot: undefined,
-  color: undefined,
-  bold: undefined,
-  size: undefined,
-  fullheightWithNavbar: undefined,
+Hero.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  head: PropTypes.bool,
+  body: PropTypes.bool,
+  foot: PropTypes.bool,
+  color: PropTypes.string as any,
+  bold: PropTypes.bool,
+  size: PropTypes.string as any,
+  fullheightWithNavbar: PropTypes.bool,
 }
 
 export default Hero
