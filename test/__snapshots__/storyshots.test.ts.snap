@@ -852,73 +852,1304 @@ exports[`Storyshots Button Static 1`] = `
 </div>
 `;
 
+exports[`Storyshots Columns Centered 1`] = `
+<div
+  className="section"
+>
+  <div
+    centered={true}
+    className="columns is-centered"
+  >
+    <div
+      className="column is-6"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-6
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Columns Default 1`] = `
 <div
   className="section"
 >
   <div
     className="columns"
-    style={
-      Object {
-        "textAlign": "center",
-      }
-    }
   >
     <div
       className="column"
     >
-      <p
-        className="has-background-primary has-text-white"
+      <div
+        className="box has-background-primary has-text-white"
         style={
           Object {
             "padding": "0.5rem 1rem",
           }
         }
       >
-        First column
-      </p>
+        <p
+          className="has-text-centered"
+        >
+          First
+           column
+        </p>
+      </div>
     </div>
     <div
       className="column"
     >
-      <p
-        className="has-background-primary has-text-white"
+      <div
+        className="box has-background-primary has-text-white"
         style={
           Object {
             "padding": "0.5rem 1rem",
           }
         }
       >
-        Second column
-      </p>
+        <p
+          className="has-text-centered"
+        >
+          Second
+           column
+        </p>
+      </div>
     </div>
     <div
       className="column"
     >
-      <p
-        className="has-background-primary has-text-white"
+      <div
+        className="box has-background-primary has-text-white"
         style={
           Object {
             "padding": "0.5rem 1rem",
           }
         }
       >
-        Third column
-      </p>
+        <p
+          className="has-text-centered"
+        >
+          Third
+           column
+        </p>
+      </div>
     </div>
     <div
       className="column"
     >
-      <p
-        className="has-background-primary has-text-white"
+      <div
+        className="box has-background-primary has-text-white"
         style={
           Object {
             "padding": "0.5rem 1rem",
           }
         }
       >
-        Fourth column
-      </p>
+        <p
+          className="has-text-centered"
+        >
+          Fourth
+           column
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Desktop 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="columns is-variable is-true-desktop"
+  >
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          1
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          2
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          3
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          4
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Different Column Sizes Per Breakpoint 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="columns is-variable is-true-mobile"
+  >
+    <div
+      className="column is-9-mobile is-8-tablet is-6-desktop is-4-widescreen is-3-mobile"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          1
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          2
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          3
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          4
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          5
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Gap 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="buttons are-small"
+  >
+    <button
+      className="button"
+      onMouseEnter={[Function]}
+    >
+      is-
+      0
+    </button>
+    <button
+      className="button"
+      onMouseEnter={[Function]}
+    >
+      is-
+      1
+    </button>
+    <button
+      className="button"
+      onMouseEnter={[Function]}
+    >
+      is-
+      2
+    </button>
+    <button
+      className="button"
+      onMouseEnter={[Function]}
+    >
+      is-
+      3
+    </button>
+    <button
+      className="button"
+      onMouseEnter={[Function]}
+    >
+      is-
+      4
+    </button>
+    <button
+      className="button"
+      onMouseEnter={[Function]}
+    >
+      is-
+      5
+    </button>
+    <button
+      className="button"
+      onMouseEnter={[Function]}
+    >
+      is-
+      6
+    </button>
+    <button
+      className="button"
+      onMouseEnter={[Function]}
+    >
+      is-
+      7
+    </button>
+    <button
+      className="button"
+      onMouseEnter={[Function]}
+    >
+      is-
+      8
+    </button>
+  </div>
+  <div
+    className="columns is-variable is-3"
+    gap={3}
+  >
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          1
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          2
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          3
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          4
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          5
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          6
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          7
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          8
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Gapless 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="columns is-gapless"
+    gapless={true}
+  >
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          No gap
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          No gap
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          No gap
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          No gap
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Mobile 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="columns is-variable is-true-mobile"
+  >
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          1
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          2
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          3
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          4
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Multiline 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="columns is-multiline"
+    multiline={true}
+  >
+    <div
+      className="column is-4"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          1
+        </p>
+      </div>
+    </div>
+    <div
+      className="column is-4"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          2
+        </p>
+      </div>
+    </div>
+    <div
+      className="column is-4"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          3
+        </p>
+      </div>
+    </div>
+    <div
+      className="column is-4"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          4
+        </p>
+      </div>
+    </div>
+    <div
+      className="column is-4"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          5
+        </p>
+      </div>
+    </div>
+    <div
+      className="column is-4"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          6
+        </p>
+      </div>
+    </div>
+    <div
+      className="column is-4"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          7
+        </p>
+      </div>
+    </div>
+    <div
+      className="column is-4"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          8
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Narrow 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-narrow"
+    >
+      <div
+        className="box"
+        style={
+          Object {
+            "width": 200,
+          }
+        }
+      >
+        <div
+          className="title is-5"
+        >
+          Narrow column
+        </div>
+        <div
+          className="subtitle"
+        >
+          This column is only 200px wide.
+        </div>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box"
+      >
+        <div
+          className="title is-5"
+        >
+          Flexible column
+        </div>
+        <div
+          className="subtitle"
+        >
+          This column will take up the remaining space available.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Offset 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-6 is-offset-3"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-6 is-offset-3
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-4 is-offset-8"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-4 is-offset-8
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-11 is-offset-1"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-11 is-offset-1
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Size 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-1"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          1
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-2"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          2
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-3"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          3
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-4"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          4
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-5"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          5
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-6"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          6
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-7"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          7
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-8"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          8
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-9"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          9
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-10"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          10
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-11"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          11
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-12"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          is-
+          12
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns V Centered 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="columns is-vcentered"
+    vcentered={true}
+  >
+    <div
+      className="column is-8"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          First column
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box has-background-primary has-text-white"
+        style={
+          Object {
+            "padding": "0.5rem 1rem",
+          }
+        }
+      >
+        <p
+          className="has-text-centered"
+        >
+          Second column with more content. This is so you can see the vertical alignment.
+        </p>
+      </div>
     </div>
   </div>
 </div>

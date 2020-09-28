@@ -1,4 +1,5 @@
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -30,11 +31,11 @@ const Title: React.FC<TitleProps> = ({ children, className, ...props }) => {
   )
 }
 
-Title.defaultProps = {
-  as: 'div',
-  className: undefined,
-  size: undefined,
-  spaced: undefined,
+Title.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  size: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  spaced: PropTypes.bool,
 }
 
 export default Title
