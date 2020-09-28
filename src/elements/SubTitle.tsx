@@ -1,4 +1,5 @@
 import CommonProps from '../types/CommonProps'
+import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
@@ -32,10 +33,10 @@ const Subtitle: React.FC<SubtitleProps> = ({
   )
 }
 
-Subtitle.defaultProps = {
-  as: 'div',
-  className: undefined,
-  size: undefined,
+Subtitle.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  size: PropTypes.oneOfType([PropTypes.number, PropTypes.string]) as any,
 }
 
 export default Subtitle

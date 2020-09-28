@@ -31,7 +31,7 @@ const Tile: React.FC<TileProps> = ({ children, className, ...props }) => {
     'is-ancestor': ancestor,
     'is-parent': parent,
     'is-child': child,
-    [`is-${size}`]: size || properRange(size!, [1, 12]),
+    [`is-${properRange(size!, [1, 12])}`]: size,
   })
 
   return (
