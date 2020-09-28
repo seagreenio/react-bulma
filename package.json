@@ -17,7 +17,7 @@
     "build": "concurrently -c green --names 'rollup,types' 'yarn rollup' 'yarn types'",
     "clean": "rimraf dist",
     "test": "jest -u",
-    "prepublishOnly": "yarn test && yarn build:all"
+    "prepublishOnly": "yarn test && yarn build"
   },
   "repository": {
     "type": "git",
