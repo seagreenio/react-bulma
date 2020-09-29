@@ -1,9 +1,10 @@
-import { Image, Box } from '../..'
+import { Box, Image } from '../..'
+
 import React from 'react'
 import centered from '@storybook/addon-centered/react'
 
 export default {
-  title: 'Image',
+  title: 'Elements/Image',
   component: Image,
   decorators: [centered],
 }

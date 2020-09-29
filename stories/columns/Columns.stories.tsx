@@ -25,7 +25,7 @@ const P = (props) => (
 )
 
 export default {
-  title: 'Columns',
+  title: 'Columns/Columns',
   component: Columns,
 }
 

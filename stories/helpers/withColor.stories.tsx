@@ -6,7 +6,7 @@ import centered from '@storybook/addon-centered/react'
 const ColorBox = withColor<BoxProps>(Box)
 
 export default {
-  title: 'withColor',
+  title: 'Helpers/withColor',
   component: ColorBox,
   decorators: [centered],
 }

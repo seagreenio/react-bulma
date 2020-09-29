@@ -1,4 +1,5 @@
 import { Box, Table, TableContainer } from '../..'
+
 import React from 'react'
 import centered from '@storybook/addon-centered/react'
 
@@ -33,7 +34,7 @@ const TableContent = () => (
 )
 
 export default {
-  title: 'Table',
+  title: 'Elements/Table',
   component: Table,
   decorators: [centered],
 }

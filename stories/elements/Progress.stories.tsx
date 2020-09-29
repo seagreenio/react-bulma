@@ -3,7 +3,7 @@ import React from 'react'
 import centered from '@storybook/addon-centered/react'
 
 export default {
-  title: 'Progress',
+  title: 'Elements/Progress',
   component: Progress,
   decorators: [centered],
 }

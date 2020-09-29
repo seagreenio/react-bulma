@@ -12,7 +12,7 @@ const style = {
 }
 
 export default {
-  title: 'Container',
+  title: 'Layout/Container',
   component: Container,
 }
 

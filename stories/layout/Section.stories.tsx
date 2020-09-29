@@ -11,7 +11,7 @@ const style = {
 }
 
 export default {
-  title: 'Section',
+  title: 'Layout/Section',
   component: Section,
 }
 

@@ -14,7 +14,7 @@ est laborum.
 `
 
 export default {
-  title: 'Notification',
+  title: 'Elements/Notification',
   component: Notification,
   decorators: [centered],
 }

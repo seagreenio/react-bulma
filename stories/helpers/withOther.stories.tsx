@@ -6,7 +6,7 @@ import centered from '@storybook/addon-centered/react'
 const OtherBox = withOther<BoxProps>(Box)
 
 export default {
-  title: 'withOther',
+  title: 'Helpers/withOther',
   component: OtherBox,
   decorators: [centered],
 }

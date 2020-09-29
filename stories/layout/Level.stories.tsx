@@ -1,11 +1,11 @@
-import { Section, Level, LevelProps, withTypography } from '../..'
+import { Level, LevelProps, Section, withTypography } from '../..'
 
 import React from 'react'
 
 const TypographyLevel = withTypography<LevelProps>(Level)
 
 export default {
-  title: 'Level',
+  title: 'Layout/Level',
   component: Level,
 }
 

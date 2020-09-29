@@ -1,9 +1,9 @@
-import { Hero, Container } from '../..'
+import { Container, Hero } from '../..'
 
 import React from 'react'
 
 export default {
-  title: 'Hero',
+  title: 'Layout/Hero',
   component: Hero,
 }
 

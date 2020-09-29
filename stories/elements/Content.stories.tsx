@@ -13,7 +13,7 @@ est laborum.
 `
 
 export default {
-  title: 'Content',
+  title: 'Elements/Content',
   component: Content,
 }
 

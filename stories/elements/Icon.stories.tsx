@@ -1,11 +1,12 @@
-import { Icon, withColor, IconProps } from '../..'
+import { Icon, IconProps, withColor } from '../..'
+
 import React from 'react'
 import centered from '@storybook/addon-centered/react'
 
 const ColorIcon = withColor<IconProps>(Icon)
 
 export default {
-  title: 'Icon',
+  title: 'Elements/Icon',
   component: Icon,
   decorators: [centered],
 }
