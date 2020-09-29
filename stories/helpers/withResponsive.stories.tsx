@@ -6,7 +6,7 @@ import centered from '@storybook/addon-centered/react'
 const ResponsiveBox = withResponsive<BoxProps>(Box)
 
 export default {
-  title: 'withResponsive',
+  title: 'Helpers/withResponsive',
   component: ResponsiveBox,
   decorators: [centered],
 }

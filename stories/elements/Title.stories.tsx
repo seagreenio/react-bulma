@@ -1,9 +1,10 @@
-import { Title, Subtitle } from '../..'
+import { Subtitle, Title } from '../..'
+
 import React from 'react'
 import centered from '@storybook/addon-centered/react'
 
 export default {
-  title: 'Title',
+  title: 'Elements/Title',
   component: Title,
   decorators: [centered],
 }

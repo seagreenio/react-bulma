@@ -4,7 +4,7 @@ import React from 'react'
 import centered from '@storybook/addon-centered/react'
 
 export default {
-  title: 'Tag',
+  title: 'Elements/Tag',
   component: Tag,
   decorators: [centered],
 }

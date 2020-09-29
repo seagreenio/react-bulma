@@ -3,7 +3,7 @@ import React from 'react'
 import centered from '@storybook/addon-centered/react'
 
 export default {
-  title: 'Delete',
+  title: 'Elements/Delete',
   component: Delete,
   decorators: [centered],
 }

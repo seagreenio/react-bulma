@@ -6,7 +6,7 @@ import centered from '@storybook/addon-centered/react'
 const SpacingBox = withSpacing<BoxProps>(Box)
 
 export default {
-  title: 'withSpacing',
+  title: 'Helpers/withSpacing',
   component: SpacingBox,
   decorators: [centered],
 }

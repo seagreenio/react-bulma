@@ -8,7 +8,7 @@ const style = {
 }
 
 export default {
-  title: 'Footer',
+  title: 'Layout/Footer',
   component: Footer,
 }
 

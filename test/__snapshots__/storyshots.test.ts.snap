@@ -1,858 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Box Default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      Box
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button As 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <a
-      className="button"
-    >
-      As an anchor
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Colors 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-white"
-      >
-        White
-      </button>
-      <button
-        className="button is-light"
-      >
-        Light
-      </button>
-      <button
-        className="button is-dark"
-      >
-        Dark
-      </button>
-      <button
-        className="button is-black"
-      >
-        Black
-      </button>
-      <button
-        className="button is-text"
-      >
-        Black
-      </button>
-      <button
-        className="button is-primary"
-      >
-        Primary
-      </button>
-      <button
-        className="button is-link"
-      >
-        Link
-      </button>
-      <button
-        className="button is-info"
-      >
-        Info
-      </button>
-      <button
-        className="button is-warning"
-      >
-        Warning
-      </button>
-      <button
-        className="button is-danger"
-      >
-        Danger
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <button
-      className="button"
-    >
-      Button
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Disabled 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-primary"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-link"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-info"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-success"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-warning"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-danger"
-        disabled={true}
-      >
-        Disabled
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Fullwidth 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-small is-fullwidth"
-      >
-        Small
-      </button>
-      <button
-        className="button is-normal is-fullwidth"
-      >
-        Normal
-      </button>
-      <button
-        className="button is-medium is-fullwidth"
-      >
-        Medium
-      </button>
-      <button
-        className="button is-large is-fullwidth"
-      >
-        Large
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Invert Outlined 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box has-background-primary"
-    >
-      <div
-        className="buttons"
-      >
-        <button
-          className="button is-primary is-outlined is-inverted"
-        >
-          Primary
-        </button>
-        <button
-          className="button is-link is-outlined is-inverted"
-        >
-          Link
-        </button>
-        <button
-          className="button is-info is-outlined is-inverted"
-        >
-          Info
-        </button>
-        <button
-          className="button is-warning is-outlined is-inverted"
-        >
-          Warning
-        </button>
-        <button
-          className="button is-danger is-outlined is-inverted"
-        >
-          Danger
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Inverted 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-primary is-inverted"
-      >
-        Primary
-      </button>
-      <button
-        className="button is-link is-inverted"
-      >
-        Link
-      </button>
-      <button
-        className="button is-info is-inverted"
-      >
-        Info
-      </button>
-      <button
-        className="button is-warning is-inverted"
-      >
-        Warning
-      </button>
-      <button
-        className="button is-danger is-inverted"
-      >
-        Danger
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Light Colors 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-primary is-light"
-      >
-        Primary
-      </button>
-      <button
-        className="button is-link is-light"
-      >
-        Link
-      </button>
-      <button
-        className="button is-info is-light"
-      >
-        Info
-      </button>
-      <button
-        className="button is-warning is-light"
-      >
-        Warning
-      </button>
-      <button
-        className="button is-danger is-light"
-      >
-        Danger
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Loading 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-primary is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-link is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-info is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-success is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-warning is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-danger is-loading"
-      >
-        Loading
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Outlined 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-primary is-outlined"
-      >
-        Primary
-      </button>
-      <button
-        className="button is-link is-outlined"
-      >
-        Link
-      </button>
-      <button
-        className="button is-info is-outlined"
-      >
-        Info
-      </button>
-      <button
-        className="button is-warning is-outlined"
-      >
-        Warning
-      </button>
-      <button
-        className="button is-danger is-outlined"
-      >
-        Danger
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Rounded 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-rounded"
-      >
-        Rounded
-      </button>
-      <button
-        className="button is-primary is-rounded"
-      >
-        Rounded
-      </button>
-      <button
-        className="button is-link is-rounded"
-      >
-        Rounded
-      </button>
-      <button
-        className="button is-info is-rounded"
-      >
-        Rounded
-      </button>
-      <button
-        className="button is-success is-rounded"
-      >
-        Rounded
-      </button>
-      <button
-        className="button is-danger is-rounded"
-      >
-        Rounded
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Sizes 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-small"
-      >
-        Small
-      </button>
-      <button
-        className="button"
-      >
-        Default
-      </button>
-      <button
-        className="button is-normal"
-      >
-        Normal
-      </button>
-      <button
-        className="button is-medium"
-      >
-        Medium
-      </button>
-      <button
-        className="button is-large"
-      >
-        Large
-      </button>
-    </div>
-    <div
-      className="buttons are-medium"
-    >
-      <button
-        className="button"
-      >
-        All
-      </button>
-      <button
-        className="button"
-      >
-        Medium
-      </button>
-      <button
-        className="button"
-      >
-        Size
-      </button>
-    </div>
-    <div
-      className="buttons are-small"
-    >
-      <button
-        className="button"
-      >
-        Small
-      </button>
-      <button
-        className="button"
-      >
-        Small
-      </button>
-      <button
-        className="button"
-      >
-        Small
-      </button>
-      <button
-        className="button is-normal"
-      >
-        Normal
-      </button>
-      <button
-        className="button"
-      >
-        Small
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button States 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button"
-      >
-        Normal
-      </button>
-      <button
-        className="button is-hovered"
-      >
-        Hovered
-      </button>
-      <button
-        className="button is-focused"
-      >
-        Focused
-      </button>
-      <button
-        className="button is-active"
-      >
-        Active
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Static 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <button
-      className="button is-static"
-    >
-      Static
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Columns Centered 1`] = `
+exports[`Storyshots Columns/Columns Centered 1`] = `
 <div
   className="section"
 >
@@ -882,7 +30,7 @@ exports[`Storyshots Columns Centered 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Default 1`] = `
+exports[`Storyshots Columns/Columns Default 1`] = `
 <div
   className="section"
 >
@@ -969,7 +117,7 @@ exports[`Storyshots Columns Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Desktop 1`] = `
+exports[`Storyshots Columns/Columns Desktop 1`] = `
 <div
   className="section"
 >
@@ -1052,7 +200,7 @@ exports[`Storyshots Columns Desktop 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Different Column Sizes Per Breakpoint 1`] = `
+exports[`Storyshots Columns/Columns Different Column Sizes Per Breakpoint 1`] = `
 <div
   className="section"
 >
@@ -1153,7 +301,7 @@ exports[`Storyshots Columns Different Column Sizes Per Breakpoint 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Gap 1`] = `
+exports[`Storyshots Columns/Columns Gap 1`] = `
 <div
   className="section"
 >
@@ -1376,7 +524,7 @@ exports[`Storyshots Columns Gap 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Gapless 1`] = `
+exports[`Storyshots Columns/Columns Gapless 1`] = `
 <div
   className="section"
 >
@@ -1460,7 +608,7 @@ exports[`Storyshots Columns Gapless 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Mobile 1`] = `
+exports[`Storyshots Columns/Columns Mobile 1`] = `
 <div
   className="section"
 >
@@ -1543,7 +691,7 @@ exports[`Storyshots Columns Mobile 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Multiline 1`] = `
+exports[`Storyshots Columns/Columns Multiline 1`] = `
 <div
   className="section"
 >
@@ -1699,7 +847,7 @@ exports[`Storyshots Columns Multiline 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Narrow 1`] = `
+exports[`Storyshots Columns/Columns Narrow 1`] = `
 <div
   className="section"
 >
@@ -1751,7 +899,7 @@ exports[`Storyshots Columns Narrow 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Offset 1`] = `
+exports[`Storyshots Columns/Columns Offset 1`] = `
 <div
   className="section"
 >
@@ -1824,7 +972,7 @@ exports[`Storyshots Columns Offset 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Size 1`] = `
+exports[`Storyshots Columns/Columns Size 1`] = `
 <div
   className="section"
 >
@@ -2107,7 +1255,7 @@ exports[`Storyshots Columns Size 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns V Centered 1`] = `
+exports[`Storyshots Columns/Columns V Centered 1`] = `
 <div
   className="section"
 >
@@ -2155,27 +1303,859 @@ exports[`Storyshots Columns V Centered 1`] = `
 </div>
 `;
 
-exports[`Storyshots Container Default 1`] = `
+exports[`Storyshots Elements/Box Default 1`] = `
 <div
-  className="section"
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
 >
   <div
-    className="container has-background-info has-text-white"
     style={
       Object {
-        "alignItems": "center",
-        "display": "flex",
-        "height": "64px",
-        "justifyContent": "center",
+        "margin": "auto",
+        "maxHeight": "100%",
       }
     }
   >
-    This is a Container
+    <div
+      className="box"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 380,
+          "justifyContent": "center",
+          "width": 540,
+        }
+      }
+    >
+      Box
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Content Default 1`] = `
+exports[`Storyshots Elements/Button As 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <a
+      className="button"
+    >
+      As an anchor
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Colors 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-white"
+      >
+        White
+      </button>
+      <button
+        className="button is-light"
+      >
+        Light
+      </button>
+      <button
+        className="button is-dark"
+      >
+        Dark
+      </button>
+      <button
+        className="button is-black"
+      >
+        Black
+      </button>
+      <button
+        className="button is-text"
+      >
+        Black
+      </button>
+      <button
+        className="button is-primary"
+      >
+        Primary
+      </button>
+      <button
+        className="button is-link"
+      >
+        Link
+      </button>
+      <button
+        className="button is-info"
+      >
+        Info
+      </button>
+      <button
+        className="button is-warning"
+      >
+        Warning
+      </button>
+      <button
+        className="button is-danger"
+      >
+        Danger
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <button
+      className="button"
+    >
+      Button
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Disabled 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-primary"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-link"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-info"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-success"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-warning"
+        disabled={true}
+      >
+        Disabled
+      </button>
+      <button
+        className="button is-danger"
+        disabled={true}
+      >
+        Disabled
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Fullwidth 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-small is-fullwidth"
+      >
+        Small
+      </button>
+      <button
+        className="button is-normal is-fullwidth"
+      >
+        Normal
+      </button>
+      <button
+        className="button is-medium is-fullwidth"
+      >
+        Medium
+      </button>
+      <button
+        className="button is-large is-fullwidth"
+      >
+        Large
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Invert Outlined 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="box has-background-primary"
+    >
+      <div
+        className="buttons"
+      >
+        <button
+          className="button is-primary is-outlined is-inverted"
+        >
+          Primary
+        </button>
+        <button
+          className="button is-link is-outlined is-inverted"
+        >
+          Link
+        </button>
+        <button
+          className="button is-info is-outlined is-inverted"
+        >
+          Info
+        </button>
+        <button
+          className="button is-warning is-outlined is-inverted"
+        >
+          Warning
+        </button>
+        <button
+          className="button is-danger is-outlined is-inverted"
+        >
+          Danger
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Inverted 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-primary is-inverted"
+      >
+        Primary
+      </button>
+      <button
+        className="button is-link is-inverted"
+      >
+        Link
+      </button>
+      <button
+        className="button is-info is-inverted"
+      >
+        Info
+      </button>
+      <button
+        className="button is-warning is-inverted"
+      >
+        Warning
+      </button>
+      <button
+        className="button is-danger is-inverted"
+      >
+        Danger
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Light Colors 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-primary is-light"
+      >
+        Primary
+      </button>
+      <button
+        className="button is-link is-light"
+      >
+        Link
+      </button>
+      <button
+        className="button is-info is-light"
+      >
+        Info
+      </button>
+      <button
+        className="button is-warning is-light"
+      >
+        Warning
+      </button>
+      <button
+        className="button is-danger is-light"
+      >
+        Danger
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Loading 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-primary is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-link is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-info is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-success is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-warning is-loading"
+      >
+        Loading
+      </button>
+      <button
+        className="button is-danger is-loading"
+      >
+        Loading
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Outlined 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-primary is-outlined"
+      >
+        Primary
+      </button>
+      <button
+        className="button is-link is-outlined"
+      >
+        Link
+      </button>
+      <button
+        className="button is-info is-outlined"
+      >
+        Info
+      </button>
+      <button
+        className="button is-warning is-outlined"
+      >
+        Warning
+      </button>
+      <button
+        className="button is-danger is-outlined"
+      >
+        Danger
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Rounded 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-rounded"
+      >
+        Rounded
+      </button>
+      <button
+        className="button is-primary is-rounded"
+      >
+        Rounded
+      </button>
+      <button
+        className="button is-link is-rounded"
+      >
+        Rounded
+      </button>
+      <button
+        className="button is-info is-rounded"
+      >
+        Rounded
+      </button>
+      <button
+        className="button is-success is-rounded"
+      >
+        Rounded
+      </button>
+      <button
+        className="button is-danger is-rounded"
+      >
+        Rounded
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Sizes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-small"
+      >
+        Small
+      </button>
+      <button
+        className="button"
+      >
+        Default
+      </button>
+      <button
+        className="button is-normal"
+      >
+        Normal
+      </button>
+      <button
+        className="button is-medium"
+      >
+        Medium
+      </button>
+      <button
+        className="button is-large"
+      >
+        Large
+      </button>
+    </div>
+    <div
+      className="buttons are-medium"
+    >
+      <button
+        className="button"
+      >
+        All
+      </button>
+      <button
+        className="button"
+      >
+        Medium
+      </button>
+      <button
+        className="button"
+      >
+        Size
+      </button>
+    </div>
+    <div
+      className="buttons are-small"
+    >
+      <button
+        className="button"
+      >
+        Small
+      </button>
+      <button
+        className="button"
+      >
+        Small
+      </button>
+      <button
+        className="button"
+      >
+        Small
+      </button>
+      <button
+        className="button is-normal"
+      >
+        Normal
+      </button>
+      <button
+        className="button"
+      >
+        Small
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button States 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button"
+      >
+        Normal
+      </button>
+      <button
+        className="button is-hovered"
+      >
+        Hovered
+      </button>
+      <button
+        className="button is-focused"
+      >
+        Focused
+      </button>
+      <button
+        className="button is-active"
+      >
+        Active
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Static 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "bottom": "0",
+      "display": "flex",
+      "left": "0",
+      "overflow": "auto",
+      "position": "fixed",
+      "right": "0",
+      "top": "0",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxHeight": "100%",
+      }
+    }
+  >
+    <button
+      className="button is-static"
+    >
+      Static
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Content Default 1`] = `
 <div
   className="section"
 >
@@ -2195,7 +2175,7 @@ est laborum.
 </div>
 `;
 
-exports[`Storyshots Content Sizes 1`] = `
+exports[`Storyshots Elements/Content Sizes 1`] = `
 <div
   className="section"
 >
@@ -2241,7 +2221,7 @@ est laborum.
 </div>
 `;
 
-exports[`Storyshots Delete Default 1`] = `
+exports[`Storyshots Elements/Delete Default 1`] = `
 <div
   style={
     Object {
@@ -2271,7 +2251,7 @@ exports[`Storyshots Delete Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Delete Sizes 1`] = `
+exports[`Storyshots Elements/Delete Sizes 1`] = `
 <div
   style={
     Object {
@@ -2310,47 +2290,7 @@ exports[`Storyshots Delete Sizes 1`] = `
 </div>
 `;
 
-exports[`Storyshots Footer Default 1`] = `
-<footer
-  className="footer"
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "justifyContent": "center",
-    }
-  }
->
-  This is a Footer
-</footer>
-`;
-
-exports[`Storyshots Hero Default 1`] = `
-<div
-  className="hero is-primary is-bold is-fullheight"
->
-  <div
-    className="hero-body"
-  >
-    <div
-      className="container"
-    >
-      <h1
-        className="title"
-      >
-        Primary bold title
-      </h1>
-      <h2
-        className="subtitle"
-      >
-        Primary bold subtitle
-      </h2>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Icon Colors 1`] = `
+exports[`Storyshots Elements/Icon Colors 1`] = `
 <div
   style={
     Object {
@@ -2405,7 +2345,7 @@ exports[`Storyshots Icon Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Icon Default 1`] = `
+exports[`Storyshots Elements/Icon Default 1`] = `
 <div
   style={
     Object {
@@ -2439,7 +2379,7 @@ exports[`Storyshots Icon Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Icon Sizes 1`] = `
+exports[`Storyshots Elements/Icon Sizes 1`] = `
 <div
   style={
     Object {
@@ -2494,7 +2434,7 @@ exports[`Storyshots Icon Sizes 1`] = `
 </div>
 `;
 
-exports[`Storyshots Image Arbitrary Ratios With Any Element 1`] = `
+exports[`Storyshots Elements/Image Arbitrary Ratios With Any Element 1`] = `
 <div
   style={
     Object {
@@ -2542,7 +2482,7 @@ exports[`Storyshots Image Arbitrary Ratios With Any Element 1`] = `
 </div>
 `;
 
-exports[`Storyshots Image Default 1`] = `
+exports[`Storyshots Elements/Image Default 1`] = `
 <div
   style={
     Object {
@@ -2576,7 +2516,7 @@ exports[`Storyshots Image Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Image Fixed Square Images 1`] = `
+exports[`Storyshots Elements/Image Fixed Square Images 1`] = `
 <div
   style={
     Object {
@@ -2652,7 +2592,7 @@ exports[`Storyshots Image Fixed Square Images 1`] = `
 </div>
 `;
 
-exports[`Storyshots Image Responsive Images With Ratios 1`] = `
+exports[`Storyshots Elements/Image Responsive Images With Ratios 1`] = `
 <div
   style={
     Object {
@@ -2709,7 +2649,7 @@ exports[`Storyshots Image Responsive Images With Ratios 1`] = `
 </div>
 `;
 
-exports[`Storyshots Image Rounded 1`] = `
+exports[`Storyshots Elements/Image Rounded 1`] = `
 <div
   style={
     Object {
@@ -2744,82 +2684,7 @@ exports[`Storyshots Image Rounded 1`] = `
 </div>
 `;
 
-exports[`Storyshots Level Default 1`] = `
-<div
-  className="section"
->
-  <nav
-    className="level"
-  >
-    <div
-      className="level-item has-text-centered"
-    >
-      <div>
-        <p
-          className="heading"
-        >
-          Tweets
-        </p>
-        <p
-          className="title"
-        >
-          3,456
-        </p>
-      </div>
-    </div>
-    <div
-      className="level-item has-text-centered"
-    >
-      <div>
-        <p
-          className="heading"
-        >
-          Following
-        </p>
-        <p
-          className="title"
-        >
-          123
-        </p>
-      </div>
-    </div>
-    <div
-      className="level-item has-text-centered"
-    >
-      <div>
-        <p
-          className="heading"
-        >
-          Followers
-        </p>
-        <p
-          className="title"
-        >
-          456K
-        </p>
-      </div>
-    </div>
-    <div
-      className="level-item has-text-centered"
-    >
-      <div>
-        <p
-          className="heading"
-        >
-          Likes
-        </p>
-        <p
-          className="title"
-        >
-          789
-        </p>
-      </div>
-    </div>
-  </nav>
-</div>
-`;
-
-exports[`Storyshots Notification Colors 1`] = `
+exports[`Storyshots Elements/Notification Colors 1`] = `
 <div
   style={
     Object {
@@ -2999,7 +2864,7 @@ est laborum.
 </div>
 `;
 
-exports[`Storyshots Notification Default 1`] = `
+exports[`Storyshots Elements/Notification Default 1`] = `
 <div
   style={
     Object {
@@ -3051,7 +2916,7 @@ est laborum.
 </div>
 `;
 
-exports[`Storyshots Notification Light Colors 1`] = `
+exports[`Storyshots Elements/Notification Light Colors 1`] = `
 <div
   style={
     Object {
@@ -3231,7 +3096,7 @@ est laborum.
 </div>
 `;
 
-exports[`Storyshots Progress Colors 1`] = `
+exports[`Storyshots Elements/Progress Colors 1`] = `
 <div
   style={
     Object {
@@ -3300,7 +3165,7 @@ exports[`Storyshots Progress Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Progress Default 1`] = `
+exports[`Storyshots Elements/Progress Default 1`] = `
 <div
   style={
     Object {
@@ -3334,7 +3199,7 @@ exports[`Storyshots Progress Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Progress Indeterminate 1`] = `
+exports[`Storyshots Elements/Progress Indeterminate 1`] = `
 <div
   style={
     Object {
@@ -3365,7 +3230,7 @@ exports[`Storyshots Progress Indeterminate 1`] = `
 </div>
 `;
 
-exports[`Storyshots Progress Sizes 1`] = `
+exports[`Storyshots Elements/Progress Sizes 1`] = `
 <div
   style={
     Object {
@@ -3420,22 +3285,7 @@ exports[`Storyshots Progress Sizes 1`] = `
 </div>
 `;
 
-exports[`Storyshots Section Default 1`] = `
-<div
-  className="section has-background-info has-text-white"
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "justifyContent": "center",
-    }
-  }
->
-  This is a Section
-</div>
-`;
-
-exports[`Storyshots Table Bordered 1`] = `
+exports[`Storyshots Elements/Table Bordered 1`] = `
 <div
   style={
     Object {
@@ -3521,7 +3371,7 @@ exports[`Storyshots Table Bordered 1`] = `
 </div>
 `;
 
-exports[`Storyshots Table Combine 1`] = `
+exports[`Storyshots Elements/Table Combine 1`] = `
 <div
   style={
     Object {
@@ -3607,7 +3457,7 @@ exports[`Storyshots Table Combine 1`] = `
 </div>
 `;
 
-exports[`Storyshots Table Default 1`] = `
+exports[`Storyshots Elements/Table Default 1`] = `
 <div
   style={
     Object {
@@ -3693,7 +3543,7 @@ exports[`Storyshots Table Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Table Fullwidth 1`] = `
+exports[`Storyshots Elements/Table Fullwidth 1`] = `
 <div
   style={
     Object {
@@ -3779,7 +3629,7 @@ exports[`Storyshots Table Fullwidth 1`] = `
 </div>
 `;
 
-exports[`Storyshots Table Hoverable 1`] = `
+exports[`Storyshots Elements/Table Hoverable 1`] = `
 <div
   style={
     Object {
@@ -3865,7 +3715,7 @@ exports[`Storyshots Table Hoverable 1`] = `
 </div>
 `;
 
-exports[`Storyshots Table Narrow 1`] = `
+exports[`Storyshots Elements/Table Narrow 1`] = `
 <div
   style={
     Object {
@@ -3951,7 +3801,7 @@ exports[`Storyshots Table Narrow 1`] = `
 </div>
 `;
 
-exports[`Storyshots Table Scrollable 1`] = `
+exports[`Storyshots Elements/Table Scrollable 1`] = `
 <div
   style={
     Object {
@@ -4050,7 +3900,7 @@ exports[`Storyshots Table Scrollable 1`] = `
 </div>
 `;
 
-exports[`Storyshots Table Striped 1`] = `
+exports[`Storyshots Elements/Table Striped 1`] = `
 <div
   style={
     Object {
@@ -4136,7 +3986,7 @@ exports[`Storyshots Table Striped 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tag Addons 1`] = `
+exports[`Storyshots Elements/Tag Addons 1`] = `
 <div
   style={
     Object {
@@ -4177,7 +4027,7 @@ exports[`Storyshots Tag Addons 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tag As 1`] = `
+exports[`Storyshots Elements/Tag As 1`] = `
 <div
   style={
     Object {
@@ -4209,7 +4059,7 @@ exports[`Storyshots Tag As 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tag Colors 1`] = `
+exports[`Storyshots Elements/Tag Colors 1`] = `
 <div
   style={
     Object {
@@ -4290,7 +4140,7 @@ exports[`Storyshots Tag Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tag Default 1`] = `
+exports[`Storyshots Elements/Tag Default 1`] = `
 <div
   style={
     Object {
@@ -4322,7 +4172,7 @@ exports[`Storyshots Tag Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tag Delete 1`] = `
+exports[`Storyshots Elements/Tag Delete 1`] = `
 <div
   style={
     Object {
@@ -4356,7 +4206,7 @@ exports[`Storyshots Tag Delete 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tag Light Colors 1`] = `
+exports[`Storyshots Elements/Tag Light Colors 1`] = `
 <div
   style={
     Object {
@@ -4412,7 +4262,7 @@ exports[`Storyshots Tag Light Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tag List Of Tags 1`] = `
+exports[`Storyshots Elements/Tag List Of Tags 1`] = `
 <div
   style={
     Object {
@@ -4552,7 +4402,7 @@ exports[`Storyshots Tag List Of Tags 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tag Rounded 1`] = `
+exports[`Storyshots Elements/Tag Rounded 1`] = `
 <div
   style={
     Object {
@@ -4613,7 +4463,7 @@ exports[`Storyshots Tag Rounded 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tag Sizes 1`] = `
+exports[`Storyshots Elements/Tag Sizes 1`] = `
 <div
   style={
     Object {
@@ -4726,7 +4576,7 @@ exports[`Storyshots Tag Sizes 1`] = `
 </div>
 `;
 
-exports[`Storyshots Title Default 1`] = `
+exports[`Storyshots Elements/Title Default 1`] = `
 <div
   style={
     Object {
@@ -4813,7 +4663,7 @@ exports[`Storyshots Title Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Title Spaced 1`] = `
+exports[`Storyshots Elements/Title Spaced 1`] = `
 <div
   style={
     Object {
@@ -4850,7 +4700,7 @@ exports[`Storyshots Title Spaced 1`] = `
 </div>
 `;
 
-exports[`Storyshots withColor Has Background 1`] = `
+exports[`Storyshots Helpers/withColor Has Background 1`] = `
 <div
   style={
     Object {
@@ -4891,7 +4741,7 @@ exports[`Storyshots withColor Has Background 1`] = `
 </div>
 `;
 
-exports[`Storyshots withColor Has Text 1`] = `
+exports[`Storyshots Helpers/withColor Has Text 1`] = `
 <div
   style={
     Object {
@@ -4932,7 +4782,7 @@ exports[`Storyshots withColor Has Text 1`] = `
 </div>
 `;
 
-exports[`Storyshots withOther Clearfix 1`] = `
+exports[`Storyshots Helpers/withOther Clearfix 1`] = `
 <div
   style={
     Object {
@@ -4973,7 +4823,7 @@ exports[`Storyshots withOther Clearfix 1`] = `
 </div>
 `;
 
-exports[`Storyshots withOther Clipped 1`] = `
+exports[`Storyshots Helpers/withOther Clipped 1`] = `
 <div
   style={
     Object {
@@ -5014,7 +4864,7 @@ exports[`Storyshots withOther Clipped 1`] = `
 </div>
 `;
 
-exports[`Storyshots withOther Overlay 1`] = `
+exports[`Storyshots Helpers/withOther Overlay 1`] = `
 <div
   style={
     Object {
@@ -5055,7 +4905,7 @@ exports[`Storyshots withOther Overlay 1`] = `
 </div>
 `;
 
-exports[`Storyshots withOther Pulled Left 1`] = `
+exports[`Storyshots Helpers/withOther Pulled Left 1`] = `
 <div
   style={
     Object {
@@ -5096,7 +4946,7 @@ exports[`Storyshots withOther Pulled Left 1`] = `
 </div>
 `;
 
-exports[`Storyshots withOther Pulled Right 1`] = `
+exports[`Storyshots Helpers/withOther Pulled Right 1`] = `
 <div
   style={
     Object {
@@ -5137,7 +4987,7 @@ exports[`Storyshots withOther Pulled Right 1`] = `
 </div>
 `;
 
-exports[`Storyshots withOther Radiusless 1`] = `
+exports[`Storyshots Helpers/withOther Radiusless 1`] = `
 <div
   style={
     Object {
@@ -5178,7 +5028,7 @@ exports[`Storyshots withOther Radiusless 1`] = `
 </div>
 `;
 
-exports[`Storyshots withOther Relative 1`] = `
+exports[`Storyshots Helpers/withOther Relative 1`] = `
 <div
   style={
     Object {
@@ -5219,7 +5069,7 @@ exports[`Storyshots withOther Relative 1`] = `
 </div>
 `;
 
-exports[`Storyshots withOther Shadowless 1`] = `
+exports[`Storyshots Helpers/withOther Shadowless 1`] = `
 <div
   style={
     Object {
@@ -5260,7 +5110,7 @@ exports[`Storyshots withOther Shadowless 1`] = `
 </div>
 `;
 
-exports[`Storyshots withOther Unselectable 1`] = `
+exports[`Storyshots Helpers/withOther Unselectable 1`] = `
 <div
   style={
     Object {
@@ -5301,7 +5151,7 @@ exports[`Storyshots withOther Unselectable 1`] = `
 </div>
 `;
 
-exports[`Storyshots withResponsive Hidden 1`] = `
+exports[`Storyshots Helpers/withResponsive Hidden 1`] = `
 <div
   style={
     Object {
@@ -5342,7 +5192,7 @@ exports[`Storyshots withResponsive Hidden 1`] = `
 </div>
 `;
 
-exports[`Storyshots withResponsive Invisible 1`] = `
+exports[`Storyshots Helpers/withResponsive Invisible 1`] = `
 <div
   style={
     Object {
@@ -5383,7 +5233,7 @@ exports[`Storyshots withResponsive Invisible 1`] = `
 </div>
 `;
 
-exports[`Storyshots withResponsive Is Flex 1`] = `
+exports[`Storyshots Helpers/withResponsive Is Flex 1`] = `
 <div
   style={
     Object {
@@ -5424,7 +5274,7 @@ exports[`Storyshots withResponsive Is Flex 1`] = `
 </div>
 `;
 
-exports[`Storyshots withResponsive Is Flex Mobile 1`] = `
+exports[`Storyshots Helpers/withResponsive Is Flex Mobile 1`] = `
 <div
   style={
     Object {
@@ -5465,7 +5315,7 @@ exports[`Storyshots withResponsive Is Flex Mobile 1`] = `
 </div>
 `;
 
-exports[`Storyshots withResponsive Sr Only 1`] = `
+exports[`Storyshots Helpers/withResponsive Sr Only 1`] = `
 <div
   style={
     Object {
@@ -5506,7 +5356,7 @@ exports[`Storyshots withResponsive Sr Only 1`] = `
 </div>
 `;
 
-exports[`Storyshots withSpacing Margin Top 6 1`] = `
+exports[`Storyshots Helpers/withSpacing Margin Top 6 1`] = `
 <div
   style={
     Object {
@@ -5547,7 +5397,7 @@ exports[`Storyshots withSpacing Margin Top 6 1`] = `
 </div>
 `;
 
-exports[`Storyshots withSpacing Padding Top 6 1`] = `
+exports[`Storyshots Helpers/withSpacing Padding Top 6 1`] = `
 <div
   style={
     Object {
@@ -5585,5 +5435,155 @@ exports[`Storyshots withSpacing Padding Top 6 1`] = `
       padding-top-6
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Layout/Container Default 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="container has-background-info has-text-white"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "height": "64px",
+        "justifyContent": "center",
+      }
+    }
+  >
+    This is a Container
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/Footer Default 1`] = `
+<footer
+  className="footer"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  This is a Footer
+</footer>
+`;
+
+exports[`Storyshots Layout/Hero Default 1`] = `
+<div
+  className="hero is-primary is-bold is-fullheight"
+>
+  <div
+    className="hero-body"
+  >
+    <div
+      className="container"
+    >
+      <h1
+        className="title"
+      >
+        Primary bold title
+      </h1>
+      <h2
+        className="subtitle"
+      >
+        Primary bold subtitle
+      </h2>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/Level Default 1`] = `
+<div
+  className="section"
+>
+  <nav
+    className="level"
+  >
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Tweets
+        </p>
+        <p
+          className="title"
+        >
+          3,456
+        </p>
+      </div>
+    </div>
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Following
+        </p>
+        <p
+          className="title"
+        >
+          123
+        </p>
+      </div>
+    </div>
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Followers
+        </p>
+        <p
+          className="title"
+        >
+          456K
+        </p>
+      </div>
+    </div>
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Likes
+        </p>
+        <p
+          className="title"
+        >
+          789
+        </p>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Layout/Section Default 1`] = `
+<div
+  className="section has-background-info has-text-white"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  This is a Section
 </div>
 `;

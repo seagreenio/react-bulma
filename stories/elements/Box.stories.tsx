@@ -3,7 +3,7 @@ import React from 'react'
 import centered from '@storybook/addon-centered/react'
 
 export default {
-  title: 'Box',
+  title: 'Elements/Box',
   component: Box,
   decorators: [centered],
 }
