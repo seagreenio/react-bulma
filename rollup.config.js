@@ -21,16 +21,6 @@ const plugins = [
     extensions,
     exclude: 'node_modules/**',
     babelHelpers: 'runtime',
-    presets: [
-      [
-        '@babel/preset-env',
-        {
-          targets: { node: 'current' },
-        },
-      ],
-      '@babel/preset-react',
-      '@babel/preset-typescript',
-    ],
     plugins: [
       [
         'module-resolver',
