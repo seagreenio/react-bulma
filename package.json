@@ -16,7 +16,8 @@
     "types": "tsc --emitDeclarationOnly",
     "build": "concurrently -c green --names 'rollup,types' 'yarn rollup' 'yarn types'",
     "clean": "rimraf dist",
-    "test": "jest -u",
+    "test": "jest",
+    "update-snapshots": "jest -u",
     "prepublishOnly": "yarn test && yarn build"
   },
   "repository": {
