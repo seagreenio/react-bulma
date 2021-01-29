@@ -101,8 +101,8 @@ const Columns: React.FC<ColumnsProps> = ({ children, className, ...props }) => {
     fullhd,
   } = props
 
-  const rest = getUnhandledProps(Column, props)
-  const ElementType = detectElementType(Column, props)
+  const rest = getUnhandledProps(Columns, props)
+  const ElementType = detectElementType(Columns, props)
   const classes = cx('columns', className, {
     'is-mobile': mobiled,
     'is-desktop': desktoped,

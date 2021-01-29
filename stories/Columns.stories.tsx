@@ -9,27 +9,23 @@ import {
   Title,
   withColor,
   withTypography,
-} from '../..'
+} from '..'
 import React, { useState } from 'react'
 
 const ColorBox = withColor(Box)
 const TypographyP = withTypography('p')
-const P = (props) => (
-  <ColorBox
-    style={{ padding: '0.5rem 1rem' }}
-    hasBackground="primary"
-    hasText="white"
-  >
+const P = (props: { children: React.ReactNode }) => (
+  <ColorBox hasBackground="primary" hasText="white">
     <TypographyP hasText="centered">{props.children}</TypographyP>
   </ColorBox>
 )
 
 export default {
-  title: 'Columns/Columns',
+  title: 'Columns',
   component: Columns,
 }
 
-export const Default = () => {
+export const Basics = () => {
   return (
     <Section>
       <Columns>
@@ -43,7 +39,7 @@ export const Default = () => {
   )
 }
 
-export const Size = () => (
+export const Sizes = () => (
   <Section>
     {[...Array(12).keys()]
       .map((d) => d + 1)
@@ -100,7 +96,7 @@ export const Narrow = () => (
 
 export const Mobile = () => (
   <Section>
-    <Columns mobile>
+    <Columns mobiled>
       {[1, 2, 3, 4].map((d) => (
         <Column key={d}>
           <P>{d}</P>
@@ -112,7 +108,7 @@ export const Mobile = () => (
 
 export const Desktop = () => (
   <Section>
-    <Columns desktop>
+    <Columns desktoped>
       {[1, 2, 3, 4].map((d) => (
         <Column key={d}>
           <P>{d}</P>
@@ -124,9 +120,19 @@ export const Desktop = () => (
 
 export const DifferentColumnSizesPerBreakpoint = () => (
   <Section>
-    <Columns mobile>
+    <Columns mobiled>
       <Column mobile={9} tablet={8} desktop={6} widescreen={4} fullhd={3}>
-        <P>1</P>
+        <P>
+          <code>is-mobile-9</code>
+          <br />
+          <code>is-tablet-8</code>
+          <br />
+          <code>is-desktop-6</code>
+          <br />
+          <code>is-widescreen-4</code>
+          <br />
+          <code>is-fullhd-3</code>
+        </P>
       </Column>
       <Column>
         <P>2</P>
@@ -156,19 +162,7 @@ export const Gapless = () => (
   </Section>
 )
 
-export const Multiline = () => (
-  <Section>
-    <Columns multiline>
-      {[1, 2, 3, 4, 5, 6, 7, 8].map((d) => (
-        <Column key={d} size={4}>
-          <P>{d}</P>
-        </Column>
-      ))}
-    </Columns>
-  </Section>
-)
-
-export const Gap = () => {
+export const VariableGap = () => {
   const [gap, setGap] = useState(3)
 
   const handleChangeGap = (d: number) => () => setGap(d)
@@ -193,7 +187,19 @@ export const Gap = () => {
   )
 }
 
-export const VCentered = () => (
+export const BreakpointBasedColumnGaps = () => (
+  <Section>
+    <Columns mobile={1} desktop={3} widescreen={8} fullhd={2}>
+      {[...Array(6).keys()].map((d) => (
+        <Column key={d}>
+          <P>Column</P>
+        </Column>
+      ))}
+    </Columns>
+  </Section>
+)
+
+export const VerticalCentered = () => (
   <Section>
     <Columns vcentered>
       <Column size={8}>
@@ -205,6 +211,18 @@ export const VCentered = () => (
           alignment.
         </P>
       </Column>
+    </Columns>
+  </Section>
+)
+
+export const Multiline = () => (
+  <Section>
+    <Columns multiline>
+      {[1, 2, 3, 4, 5, 6, 7, 8].map((d) => (
+        <Column key={d} size={4}>
+          <P>{d}</P>
+        </Column>
+      ))}
     </Columns>
   </Section>
 )
