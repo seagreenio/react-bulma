@@ -12,11 +12,7 @@ export interface NotificationProps extends CommonProps {
   light?: boolean
 }
 
-const Notification: React.FC<NotificationProps> = ({
-  children,
-  className,
-  ...props
-}) => {
+const Notification: React.FC<NotificationProps> = ({ children, className, ...props }) => {
   const rest = getUnhandledProps(Notification, props)
   const ElementType = detectElementType(Notification, props)
   const classes = cx('notification', className, {
@@ -32,8 +28,6 @@ const Notification: React.FC<NotificationProps> = ({
 }
 
 Notification.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   color: PropTypes.string as any,
   light: PropTypes.bool,
 }

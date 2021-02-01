@@ -8,7 +8,7 @@ import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
-export interface ButtonProps extends Omit<CommonProps, 'size'> {
+export interface ButtonProps extends CommonProps {
   color?: Color | ColorType | 'text'
   light?: boolean
   size?: Size | SizeType
@@ -21,6 +21,7 @@ export interface ButtonProps extends Omit<CommonProps, 'size'> {
   active?: boolean
   loading?: boolean
   static?: boolean
+  selected?: boolean
 }
 
 const Button: React.FC<ButtonProps> = ({ children, className, ...props }) => {
@@ -39,6 +40,7 @@ const Button: React.FC<ButtonProps> = ({ children, className, ...props }) => {
     'is-active': props.active,
     'is-loading': props.loading,
     'is-static': props.static,
+    'is-selected': props.selected,
   })
 
   return (
@@ -49,8 +51,6 @@ const Button: React.FC<ButtonProps> = ({ children, className, ...props }) => {
 }
 
 Button.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   color: PropTypes.string as any,
   light: PropTypes.bool,
   size: PropTypes.string as any,
@@ -63,6 +63,7 @@ Button.propTypes = {
   active: PropTypes.bool,
   loading: PropTypes.bool,
   static: PropTypes.bool,
+  selected: PropTypes.bool,
 }
 
 Button.defaultProps = {

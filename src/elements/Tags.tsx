@@ -6,7 +6,7 @@ import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 
-export interface TagsProps extends Omit<CommonProps, 'size'> {
+export interface TagsProps extends CommonProps {
   size?: Exclude<Size, Size.Small> | Exclude<SizeType, 'small'>
   addons?: boolean
 }
@@ -22,8 +22,6 @@ const Tags: React.FC<TagsProps> = ({ children, className, ...props }) => {
 }
 
 Tags.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   size: PropTypes.string as any,
   addons: PropTypes.bool,
 }

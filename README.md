@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD033 MD041 -->
 <p align="center">
-  <img src="img/react.svg" width="128 height="128" alt="React Logo" />
-  <img src="img/bulma.png" width="256" alt="Bulma Logo" />
+  <img src="https://raw.githubusercontent.com/seagreenio/react-bulma/master/img/react.svg" width="128" height="128" alt="React Logo" />
+  <img src="https://raw.githubusercontent.com/seagreenio/react-bulma/master/img/bulma.svg" width="128" height="128" alt="Bulma Logo" />
 </p>
 <h1 align="center">React + Bulma</h1>
 

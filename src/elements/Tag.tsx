@@ -8,7 +8,7 @@ import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
-export interface TagProps extends Omit<CommonProps, 'size'> {
+export interface TagProps extends CommonProps {
   color?: Color | ColorType
   light?: boolean
   size?: Exclude<Size, Size.Small> | Exclude<SizeType, 'small'>
@@ -35,8 +35,6 @@ const Tag: React.FC<TagProps> = ({ children, className, ...props }) => {
 }
 
 Tag.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   color: PropTypes.string as any,
   light: PropTypes.bool,
   size: PropTypes.string as any,

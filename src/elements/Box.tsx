@@ -19,9 +19,4 @@ const Box: React.FC<BoxProps> = ({ children, className, ...props }) => {
   )
 }
 
-Box.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
-}
-
 export default Box

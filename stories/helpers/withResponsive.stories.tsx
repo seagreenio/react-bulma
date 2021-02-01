@@ -1,14 +1,12 @@
 import { Box, BoxProps, withResponsive } from '../..'
 
 import React from 'react'
-import centered from '@storybook/addon-centered/react'
 
 const ResponsiveBox = withResponsive<BoxProps>(Box)
 
 export default {
   title: 'Helpers/withResponsive',
   component: ResponsiveBox,
-  decorators: [centered],
 }
 
 const style = {

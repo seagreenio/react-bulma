@@ -1,8 +1,8 @@
 enum Color {
   White = 'white',
-  Black = 'black',
   Light = 'light',
   Dark = 'dark',
+  Black = 'black',
   Primary = 'primary',
   Link = 'link',
   Info = 'info',
@@ -13,9 +13,9 @@ enum Color {
 
 export type ColorType =
   | 'white'
-  | 'black'
   | 'light'
   | 'dark'
+  | 'black'
   | 'primary'
   | 'link'
   | 'info'

@@ -7,7 +7,7 @@ import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
-export interface DeleteProps extends Omit<CommonProps, 'size'> {
+export interface DeleteProps extends CommonProps {
   size?: Size | SizeType
 }
 
@@ -22,8 +22,6 @@ const Delete: React.FC<DeleteProps> = ({ className, ...props }) => {
 }
 
 Delete.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   size: PropTypes.string as any,
 }
 

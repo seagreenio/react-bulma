@@ -1,11 +1,9 @@
 import { Delete } from '../..'
 import React from 'react'
-import centered from '@storybook/addon-centered/react'
 
 export default {
   title: 'Elements/Delete',
   component: Delete,
-  decorators: [centered],
 }
 
 export const Default = () => <Delete />

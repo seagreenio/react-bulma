@@ -1,7 +1,6 @@
 import { Box, Table, TableContainer } from '../..'
 
 import React from 'react'
-import centered from '@storybook/addon-centered/react'
 
 const TableContent = () => (
   <>
@@ -36,7 +35,6 @@ const TableContent = () => (
 export default {
   title: 'Elements/Table',
   component: Table,
-  decorators: [centered],
 }
 
 export const Default = () => (
@@ -45,48 +43,35 @@ export const Default = () => (
   </Table>
 )
 
-export const Bordered = () => (
-  <Table bordered>
-    <TableContent />
-  </Table>
+export const Modifiers = () => (
+  <>
+    <Table bordered>
+      <TableContent />
+    </Table>
+    <Table striped>
+      <TableContent />
+    </Table>
+    <Table narrow>
+      <TableContent />
+    </Table>
+    <Table hoverable>
+      <TableContent />
+    </Table>
+    <Table fullwidth>
+      <TableContent />
+    </Table>
+    <Table bordered striped narrow hoverable fullwidth>
+      <TableContent />
+    </Table>
+  </>
 )
 
-export const Striped = () => (
-  <Table striped>
-    <TableContent />
-  </Table>
-)
-
-export const Narrow = () => (
-  <Table narrow>
-    <TableContent />
-  </Table>
-)
-
-export const hoverable = () => (
-  <Table hoverable>
-    <TableContent />
-  </Table>
-)
-
-export const Fullwidth = () => (
-  <Table fullwidth>
-    <TableContent />
-  </Table>
-)
-
-export const Combine = () => (
-  <Table bordered striped narrow hoverable fullwidth>
-    <TableContent />
-  </Table>
-)
-
-export const Scrollable = () => (
-  <Box style={{ width: 380 }}>
+export const Container = () => (
+  <div style={{ width: 256 }}>
     <TableContainer>
       <Table>
         <TableContent />
       </Table>
     </TableContainer>
-  </Box>
+  </div>
 )

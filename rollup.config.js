@@ -33,8 +33,9 @@ const plugins = [
       ],
       '@babel/plugin-transform-runtime',
       [
-        'transform-react-handled-props',
+        '@g1eny0ung/transform-react-handled-props',
         {
+          commonProps: ['as', 'className'],
           ignoredProps: ['children'],
         },
       ],

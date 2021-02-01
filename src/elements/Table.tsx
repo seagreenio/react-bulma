@@ -3,8 +3,7 @@ import React from 'react'
 import cx from 'classnames'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
-export interface TableProps
-  extends React.TableHTMLAttributes<HTMLTableElement> {
+export interface TableProps extends React.TableHTMLAttributes<HTMLTableElement> {
   bordered?: boolean
   striped?: boolean
   narrow?: boolean
@@ -30,7 +29,6 @@ const Table: React.FC<TableProps> = ({ children, className, ...props }) => {
 }
 
 Table.propTypes = {
-  className: PropTypes.string,
   bordered: PropTypes.bool,
   striped: PropTypes.bool,
   narrow: PropTypes.bool,

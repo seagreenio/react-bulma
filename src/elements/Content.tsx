@@ -7,7 +7,7 @@ import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
-export interface ContentProps extends Omit<CommonProps, 'size'> {
+export interface ContentProps extends CommonProps {
   size?: Size | SizeType
 }
 
@@ -26,8 +26,6 @@ const Content: React.FC<ContentProps> = ({ children, className, ...props }) => {
 }
 
 Content.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   size: PropTypes.string as any,
 }
 

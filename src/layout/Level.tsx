@@ -37,8 +37,6 @@ const Level: React.FC<LevelProps> = ({ children, className, ...props }) => {
 }
 
 Level.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   left: PropTypes.bool,
   right: PropTypes.bool,
   item: PropTypes.bool,

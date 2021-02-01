@@ -1,51 +1,49 @@
-import { Box, Tag, Tags } from '../..'
+import { Delete, Tag, Tags } from '../..'
 
 import React from 'react'
-import centered from '@storybook/addon-centered/react'
 
 export default {
   title: 'Elements/Tag',
   component: Tag,
-  decorators: [centered],
 }
 
-export const Default = () => <Tag>Tag</Tag>
-
-export const As = () => <Tag as="a">As an anchor</Tag>
+export const Default = () => <Tag>Tag label</Tag>
 
 export const Colors = () => (
-  <Tags>
-    <Tag color="white">White</Tag>
-    <Tag color="light">Light</Tag>
-    <Tag color="dark">Dark</Tag>
-    <Tag color="black">Black</Tag>
-    <Tag color="text">Black</Tag>
-    <Tag color="primary">Primary</Tag>
-    <Tag color="link">Link</Tag>
-    <Tag color="info">Info</Tag>
-    <Tag color="warning">Warning</Tag>
-    <Tag color="danger">Danger</Tag>
-  </Tags>
-)
-
-export const LightColors = () => (
-  <Tags>
-    <Tag color="primary" light>
-      Primary
-    </Tag>
-    <Tag color="link" light>
-      Link
-    </Tag>
-    <Tag color="info" light>
-      Info
-    </Tag>
-    <Tag color="warning" light>
-      Warning
-    </Tag>
-    <Tag color="danger" light>
-      Danger
-    </Tag>
-  </Tags>
+  <>
+    <Tags>
+      <Tag color="black">Black</Tag>
+      <Tag color="dark">Dark</Tag>
+      <Tag color="light">Light</Tag>
+      <Tag color="white">White</Tag>
+      <Tag color="primary">Primary</Tag>
+      <Tag color="link">Link</Tag>
+      <Tag color="info">Info</Tag>
+      <Tag color="success">Success</Tag>
+      <Tag color="warning">Warning</Tag>
+      <Tag color="danger">Danger</Tag>
+    </Tags>
+    <Tags>
+      <Tag color="primary" light>
+        Primary
+      </Tag>
+      <Tag color="link" light>
+        Link
+      </Tag>
+      <Tag color="info" light>
+        Info
+      </Tag>
+      <Tag color="success" light>
+        Success
+      </Tag>
+      <Tag color="warning" light>
+        Warning
+      </Tag>
+      <Tag color="danger" light>
+        Danger
+      </Tag>
+    </Tags>
+  </>
 )
 
 export const Sizes = () => (
@@ -75,44 +73,52 @@ export const Sizes = () => (
     </Tags>
 
     <Tags>
-      <Tag>Normal</Tag>
       <Tag size="medium">Medium</Tag>
       <Tag>Normal</Tag>
+      <Tag size="medium">Medium</Tag>
       <Tag size="large">Large</Tag>
-      <Tag>Normal</Tag>
+      <Tag size="medium">Medium</Tag>
     </Tags>
   </>
 )
 
-export const Rounded = () => (
-  <Tags>
-    <Tag rounded>Rounded</Tag>
-    <Tag color="primary" rounded>
-      Rounded
-    </Tag>
-    <Tag color="link" rounded>
-      Rounded
-    </Tag>
-    <Tag color="info" rounded>
-      Rounded
-    </Tag>
-    <Tag color="success" rounded>
-      Rounded
-    </Tag>
-    <Tag color="danger" rounded>
-      Rounded
-    </Tag>
-  </Tags>
+export const Modifiers = () => (
+  <>
+    <Tags>
+      <Tag rounded>Rounded</Tag>
+    </Tags>
+    <Tags>
+      <Tag delete />
+    </Tags>
+  </>
 )
 
-export const Delete = () => (
-  <Tags>
-    <Tag delete />
-  </Tags>
+export const Combinations = () => (
+  <>
+    <Tags>
+      <Tag color="success">
+        Bar
+        <Delete size="small" />
+      </Tag>
+      <Tag color="warning" size="medium">
+        Hello
+        <Delete size="small" />
+      </Tag>
+      <Tag color="danger" size="large">
+        World
+        <Delete size="small" />
+      </Tag>
+    </Tags>
+  </>
 )
 
 export const ListOfTags = () => (
-  <Box style={{ width: 540 }}>
+  <>
+    <Tags>
+      <Tag>One</Tag>
+      <Tag>Two</Tag>
+      <Tag>Three</Tag>
+    </Tags>
     <Tags>
       <Tag>One</Tag>
       <Tag>Two</Tag>
@@ -135,12 +141,18 @@ export const ListOfTags = () => (
       <Tag>Nineteen</Tag>
       <Tag>Twenty</Tag>
     </Tags>
-  </Box>
+  </>
 )
 
 export const Addons = () => (
-  <Tags addons>
-    <Tag>Package</Tag>
-    <Tag color="primary">Bulma</Tag>
-  </Tags>
+  <>
+    <Tags addons>
+      <Tag>Package</Tag>
+      <Tag color="primary">Bulma</Tag>
+    </Tags>
+    <Tags addons>
+      <Tag color="danger">Alex Smith</Tag>
+      <Tag as="a" delete />
+    </Tags>
+  </>
 )

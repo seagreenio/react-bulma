@@ -8,7 +8,7 @@ import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 import { properRange } from 'lib/utils'
 
-export interface ColumnProps extends Omit<CommonProps, 'size'> {
+export interface ColumnProps extends CommonProps {
   size?: Unit
   offset?: Unit
   narrow?: boolean | Viewport | ViewportType
@@ -21,17 +21,7 @@ export interface ColumnProps extends Omit<CommonProps, 'size'> {
 }
 
 const Column: React.FC<ColumnProps> = ({ children, className, ...props }) => {
-  const {
-    size,
-    offset,
-    narrow,
-    mobile,
-    touch,
-    tablet,
-    desktop,
-    widescreen,
-    fullhd,
-  } = props
+  const { size, offset, narrow, mobile, touch, tablet, desktop, widescreen, fullhd } = props
 
   const rest = getUnhandledProps(Column, props)
   const ElementType = detectElementType(Column, props)
@@ -55,8 +45,6 @@ const Column: React.FC<ColumnProps> = ({ children, className, ...props }) => {
 }
 
 Column.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   offset: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   narrow: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]) as any,
@@ -111,16 +99,8 @@ const Columns: React.FC<ColumnsProps> = ({ children, className, ...props }) => {
     'is-vcentered': vcentered,
     'is-centered': centered,
     'is-variable':
-      gap ||
-      (typeof gap === 'number' && gap >= 0) ||
-      mobile ||
-      touch ||
-      tablet ||
-      desktop ||
-      widescreen ||
-      fullhd,
-    [`is-${properRange(gap!, [0, 8])}`]:
-      gap || (typeof gap === 'number' && gap >= 0),
+      gap || (typeof gap === 'number' && gap >= 0) || mobile || touch || tablet || desktop || widescreen || fullhd,
+    [`is-${properRange(gap!, [0, 8])}`]: gap || (typeof gap === 'number' && gap >= 0),
     [`is-${properRange(mobile!, [0, 8])}-mobile`]: mobile,
     [`is-${properRange(touch!, [0, 8])}-touch`]: touch,
     [`is-${properRange(tablet!, [0, 8])}-tablet`]: tablet,
@@ -137,8 +117,6 @@ const Columns: React.FC<ColumnsProps> = ({ children, className, ...props }) => {
 }
 
 Columns.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   mobiled: PropTypes.bool,
   desktoped: PropTypes.bool,
   gapless: PropTypes.bool,

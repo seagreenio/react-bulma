@@ -1,15 +1,20 @@
 import { Subtitle, Title } from '../..'
 
 import React from 'react'
-import centered from '@storybook/addon-centered/react'
 
 export default {
   title: 'Elements/Title',
   component: Title,
-  decorators: [centered],
 }
 
 export const Default = () => (
+  <>
+    <Title as="h1">Title</Title>
+    <Subtitle as="h2">SubTitle</Subtitle>
+  </>
+)
+
+export const Sizes = () => (
   <>
     <Title as="h1">Title 1</Title>
     <Title as="h2">Title 2</Title>
@@ -29,6 +34,14 @@ export const Default = () => (
 
 export const spaced = () => (
   <>
+    <Title as="h1" spaced>
+      Title 1
+    </Title>
+    <Subtitle as="h3">Subtitle 3</Subtitle>
+    <Title as="h2" spaced>
+      Title 2
+    </Title>
+    <Subtitle as="h4">Subtitle 4</Subtitle>
     <Title spaced>Title 3</Title>
     <Subtitle>Subtitle 5</Subtitle>
   </>

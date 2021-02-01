@@ -8,7 +8,7 @@ import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
-export interface HeroProps extends Omit<CommonProps, 'size'> {
+export interface HeroProps extends CommonProps {
   head?: boolean
   body?: boolean
   foot?: boolean
@@ -46,8 +46,6 @@ const Hero: React.FC<HeroProps> = ({ children, className, ...props }) => {
 }
 
 Hero.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   head: PropTypes.bool,
   body: PropTypes.bool,
   foot: PropTypes.bool,

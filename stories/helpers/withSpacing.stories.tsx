@@ -1,14 +1,12 @@
 import { Box, BoxProps, withSpacing } from '../..'
 
 import React from 'react'
-import centered from '@storybook/addon-centered/react'
 
 const SpacingBox = withSpacing<BoxProps>(Box)
 
 export default {
   title: 'Helpers/withSpacing',
   component: SpacingBox,
-  decorators: [centered],
 }
 
 const style = {

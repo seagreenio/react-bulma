@@ -26,8 +26,6 @@ const Section: React.FC<SectionProps> = ({ children, className, ...props }) => {
 }
 
 Section.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   padding: PropTypes.string as any,
 }
 

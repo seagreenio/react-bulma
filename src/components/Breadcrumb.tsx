@@ -1,3 +1,5 @@
+import Size, { SizeType } from 'types/Size'
+
 import CommonProps from '../types/CommonProps'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -6,20 +8,20 @@ import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
 export interface BreadcrumbProps extends CommonProps {
-  alignment?: 'center' | 'right'
+  alignment?: 'centered' | 'right'
+  separator?: 'arrow' | 'bullet' | 'dot' | 'succeeds'
+  size?: Size | SizeType
 }
 
-const Breadcrumb: React.FC<BreadcrumbProps> = ({
-  children,
-  className,
-  ...props
-}) => {
-  const { alignment } = props
+const Breadcrumb: React.FC<BreadcrumbProps> = ({ children, className, ...props }) => {
+  const { alignment, separator, size } = props
 
   const rest = getUnhandledProps(Breadcrumb, props)
   const ElementType = detectElementType(Breadcrumb, props)
   const classes = cx('breadcrumb', className, {
     [`is-${alignment}`]: alignment,
+    [`has-${separator}-separator`]: separator,
+    [`is-${size}`]: size,
   })
 
   return (
@@ -30,8 +32,9 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
 }
 
 Breadcrumb.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
+  alignment: PropTypes.string as any,
+  separator: PropTypes.string as any,
+  size: PropTypes.string as any,
 }
 
 Breadcrumb.defaultProps = {

@@ -199,7 +199,7 @@ export const BreakpointBasedColumnGaps = () => (
   </Section>
 )
 
-export const VerticalCentered = () => (
+export const VerticalAlignment = () => (
   <Section>
     <Columns vcentered>
       <Column size={8}>

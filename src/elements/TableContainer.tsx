@@ -7,11 +7,7 @@ import getUnhandledProps from 'lib/getUnhandledProps'
 
 export type TableContainerProps = CommonProps
 
-const TableContainer: React.FC<TableContainerProps> = ({
-  children,
-  className,
-  ...props
-}) => {
+const TableContainer: React.FC<TableContainerProps> = ({ children, className, ...props }) => {
   const rest = getUnhandledProps(TableContainer, props)
   const ElementType = detectElementType(TableContainer, props)
   const classes = cx('table-container', className)
@@ -21,11 +17,6 @@ const TableContainer: React.FC<TableContainerProps> = ({
       {children}
     </ElementType>
   )
-}
-
-TableContainer.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
 }
 
 export default TableContainer

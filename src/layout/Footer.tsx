@@ -19,11 +19,6 @@ const Footer: React.FC<FooterProps> = ({ children, className, ...props }) => {
   )
 }
 
-Footer.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
-}
-
 Footer.defaultProps = {
   as: 'footer',
 }

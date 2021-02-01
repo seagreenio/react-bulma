@@ -12,11 +12,7 @@ export interface ContainerProps extends CommonProps {
   breakpoint?: Responsive | ResponsiveType
 }
 
-const Container: React.FC<ContainerProps> = ({
-  children,
-  className,
-  ...props
-}) => {
+const Container: React.FC<ContainerProps> = ({ children, className, ...props }) => {
   const rest = getUnhandledProps(Container, props)
   const ElementType = detectElementType(Container, props)
   const classes = cx('container', className, {
@@ -32,8 +28,6 @@ const Container: React.FC<ContainerProps> = ({
 }
 
 Container.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   fluid: PropTypes.bool,
   breakpoint: PropTypes.string as any,
 }

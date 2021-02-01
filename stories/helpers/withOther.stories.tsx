@@ -1,14 +1,12 @@
 import { Box, BoxProps, withOther } from '../..'
 
 import React from 'react'
-import centered from '@storybook/addon-centered/react'
 
 const OtherBox = withOther<BoxProps>(Box)
 
 export default {
   title: 'Helpers/withOther',
   component: OtherBox,
-  decorators: [centered],
 }
 
 const style = {

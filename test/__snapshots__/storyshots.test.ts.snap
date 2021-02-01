@@ -1093,7 +1093,7 @@ exports[`Storyshots Columns Variable Gap 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Vertical Centered 1`] = `
+exports[`Storyshots Columns Vertical Alignment 1`] = `
 <div
   className="section"
 >
@@ -1130,1241 +1130,2875 @@ exports[`Storyshots Columns Vertical Centered 1`] = `
 </div>
 `;
 
-exports[`Storyshots Elements/Box Default 1`] = `
+exports[`Storyshots Components/Breadcrumb Alignment 1`] = `
+Array [
+  <nav
+    aria-label="breadcrumbs"
+    className="breadcrumb is-centered"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          Bulma
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Components
+        </a>
+      </li>
+      <li
+        className="is-active"
+      >
+        <a
+          aria-current="page"
+          href="#"
+        >
+          Breadcrumb
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="breadcrumbs"
+    className="breadcrumb is-right"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          Bulma
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Components
+        </a>
+      </li>
+      <li
+        className="is-active"
+      >
+        <a
+          aria-current="page"
+          href="#"
+        >
+          Breadcrumb
+        </a>
+      </li>
+    </ul>
+  </nav>,
+]
+`;
+
+exports[`Storyshots Components/Breadcrumb Alternative Separators 1`] = `
+Array [
+  <nav
+    aria-label="breadcrumbs"
+    className="breadcrumb has-arrow-separator"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          Bulma
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Components
+        </a>
+      </li>
+      <li
+        className="is-active"
+      >
+        <a
+          aria-current="page"
+          href="#"
+        >
+          Breadcrumb
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="breadcrumbs"
+    className="breadcrumb has-bullet-separator"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          Bulma
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Components
+        </a>
+      </li>
+      <li
+        className="is-active"
+      >
+        <a
+          aria-current="page"
+          href="#"
+        >
+          Breadcrumb
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="breadcrumbs"
+    className="breadcrumb has-dot-separator"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          Bulma
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Components
+        </a>
+      </li>
+      <li
+        className="is-active"
+      >
+        <a
+          aria-current="page"
+          href="#"
+        >
+          Breadcrumb
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="breadcrumbs"
+    className="breadcrumb has-succeeds-separator"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          Bulma
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Components
+        </a>
+      </li>
+      <li
+        className="is-active"
+      >
+        <a
+          aria-current="page"
+          href="#"
+        >
+          Breadcrumb
+        </a>
+      </li>
+    </ul>
+  </nav>,
+]
+`;
+
+exports[`Storyshots Components/Breadcrumb Default 1`] = `
+<nav
+  aria-label="breadcrumbs"
+  className="breadcrumb"
+>
+  <ul>
+    <li>
+      <a
+        href="#"
+      >
+        Bulma
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        Documentation
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        Components
+      </a>
+    </li>
+    <li
+      className="is-active"
+    >
+      <a
+        aria-current="page"
+        href="#"
+      >
+        Breadcrumb
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Storyshots Components/Breadcrumb Icons 1`] = `
+<nav
+  aria-label="breadcrumbs"
+  className="breadcrumb"
+>
+  <ul>
+    <li>
+      <a
+        href="#"
+      >
+        <span
+          aria-hidden="true"
+          className="icon is-small"
+        >
+          <i
+            className="fas fa-home"
+          />
+        </span>
+        <span>
+          Bulma
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        <span
+          aria-hidden="true"
+          className="icon is-small"
+        >
+          <i
+            className="fas fa-book"
+          />
+        </span>
+        <span>
+          Documentation
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        <span
+          aria-hidden="true"
+          className="icon is-small"
+        >
+          <i
+            className="fas fa-puzzle-piece"
+          />
+        </span>
+        <span>
+          Components
+        </span>
+      </a>
+    </li>
+    <li
+      className="is-active"
+    >
+      <a
+        href="#"
+      >
+        <span
+          aria-hidden="true"
+          className="icon is-small"
+        >
+          <i
+            className="fas fa-thumbs-up"
+          />
+        </span>
+        <span>
+          Breadcrumb
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Storyshots Components/Breadcrumb Sizes 1`] = `
+Array [
+  <nav
+    aria-label="breadcrumbs"
+    className="breadcrumb is-small"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          Bulma
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Components
+        </a>
+      </li>
+      <li
+        className="is-active"
+      >
+        <a
+          aria-current="page"
+          href="#"
+        >
+          Breadcrumb
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="breadcrumbs"
+    className="breadcrumb is-medium"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          Bulma
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Components
+        </a>
+      </li>
+      <li
+        className="is-active"
+      >
+        <a
+          aria-current="page"
+          href="#"
+        >
+          Breadcrumb
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="breadcrumbs"
+    className="breadcrumb is-large"
+  >
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          Bulma
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Documentation
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Components
+        </a>
+      </li>
+      <li
+        className="is-active"
+      >
+        <a
+          aria-current="page"
+          href="#"
+        >
+          Breadcrumb
+        </a>
+      </li>
+    </ul>
+  </nav>,
+]
+`;
+
+exports[`Storyshots Components/Card Default 1`] = `
 <div
+  className="card"
   style={
     Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "width": 540,
     }
   }
 >
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="card-image"
+  >
+    <figure
+      className="image is-4by3"
+    >
+      <img
+        alt="Placeholder image"
+        src="https://bulma.io/images/placeholders/1280x960.png"
+      />
+    </figure>
+  </div>
+  <div
+    className="card-content"
   >
     <div
-      className="box"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      Box
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Button As 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <a
-      className="button"
-    >
-      As an anchor
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Button Colors 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-white"
-      >
-        White
-      </button>
-      <button
-        className="button is-light"
-      >
-        Light
-      </button>
-      <button
-        className="button is-dark"
-      >
-        Dark
-      </button>
-      <button
-        className="button is-black"
-      >
-        Black
-      </button>
-      <button
-        className="button is-text"
-      >
-        Black
-      </button>
-      <button
-        className="button is-primary"
-      >
-        Primary
-      </button>
-      <button
-        className="button is-link"
-      >
-        Link
-      </button>
-      <button
-        className="button is-info"
-      >
-        Info
-      </button>
-      <button
-        className="button is-warning"
-      >
-        Warning
-      </button>
-      <button
-        className="button is-danger"
-      >
-        Danger
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Button Default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <button
-      className="button"
-    >
-      Button
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Button Disabled 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-primary"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-link"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-info"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-success"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-warning"
-        disabled={true}
-      >
-        Disabled
-      </button>
-      <button
-        className="button is-danger"
-        disabled={true}
-      >
-        Disabled
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Button Fullwidth 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-small is-fullwidth"
-      >
-        Small
-      </button>
-      <button
-        className="button is-normal is-fullwidth"
-      >
-        Normal
-      </button>
-      <button
-        className="button is-medium is-fullwidth"
-      >
-        Medium
-      </button>
-      <button
-        className="button is-large is-fullwidth"
-      >
-        Large
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Button Invert Outlined 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box has-background-primary"
+      className="media"
     >
       <div
-        className="buttons"
+        className="media-left"
       >
-        <button
-          className="button is-primary is-outlined is-inverted"
+        <figure
+          className="image is-48x48"
         >
-          Primary
-        </button>
-        <button
-          className="button is-link is-outlined is-inverted"
+          <img
+            alt="Placeholder image"
+            src="https://bulma.io/images/placeholders/96x96.png"
+          />
+        </figure>
+      </div>
+      <div
+        className="media-content"
+      >
+        <p
+          className="title is-4"
         >
-          Link
-        </button>
-        <button
-          className="button is-info is-outlined is-inverted"
+          John Smith
+        </p>
+        <p
+          className="subtitle is-6"
         >
-          Info
-        </button>
-        <button
-          className="button is-warning is-outlined is-inverted"
-        >
-          Warning
-        </button>
-        <button
-          className="button is-danger is-outlined is-inverted"
-        >
-          Danger
-        </button>
+          @johnsmith
+        </p>
+      </div>
+    </div>
+    <div
+      className="content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. 
+      <a>
+        @bulmaio
+      </a>
+      .
+      <a
+        href="#"
+      >
+        #css
+      </a>
+       
+      <a
+        href="#"
+      >
+        #responsive
+      </a>
+      <br />
+      <time
+        dateTime="2016-1-1"
+      >
+        11:09 PM - 1 Jan 2016
+      </time>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Dropup 1`] = `
+<div
+  className="dropdown is-hoverable is-up"
+  style={
+    Object {
+      "marginTop": "9rem",
+    }
+  }
+>
+  <div
+    className="dropdown-trigger"
+  >
+    <button
+      aria-controls="dropdown-menu"
+      aria-haspopup="true"
+      className="button"
+    >
+      <span>
+        Dropup button
+      </span>
+      <span
+        aria-hidden="true"
+        className="icon is-small"
+      >
+        <i
+          className="fas fa-angle-up"
+        />
+      </span>
+    </button>
+  </div>
+  <div
+    className="dropdown-menu"
+    id="dropdown-menu"
+    role="menu"
+  >
+    <div
+      className="dropdown-content"
+    >
+      <div
+        className="dropdown-item"
+      >
+        <p>
+          You can add the 
+          <code>
+            is-up
+          </code>
+           modifier to have a dropdown menu that appears above the dropdown button.
+        </p>
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Elements/Button Inverted 1`] = `
+exports[`Storyshots Components/Dropdown Hoverable 1`] = `
 <div
+  className="dropdown is-hoverable"
+>
+  <div
+    className="dropdown-trigger"
+  >
+    <button
+      aria-controls="dropdown-menu"
+      aria-haspopup="true"
+      className="button"
+    >
+      <span>
+        Hover me
+      </span>
+      <span
+        aria-hidden="true"
+        className="icon is-small"
+      >
+        <i
+          className="fas fa-angle-down"
+        />
+      </span>
+    </button>
+  </div>
+  <div
+    className="dropdown-menu"
+    id="dropdown-menu"
+    role="menu"
+  >
+    <div
+      className="dropdown-content"
+    >
+      <div
+        className="dropdown-item"
+      >
+        <p>
+          You can insert 
+          <strong>
+            any type of content
+          </strong>
+           within the dropdown menu.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Right Aligned 1`] = `
+<div
+  className="dropdown is-pulled-right is-hoverable is-right"
+>
+  <div
+    className="dropdown-trigger"
+  >
+    <button
+      aria-controls="dropdown-menu"
+      aria-haspopup="true"
+      className="button"
+    >
+      <span>
+        Right aligned
+      </span>
+      <span
+        aria-hidden="true"
+        className="icon is-small"
+      >
+        <i
+          className="fas fa-angle-down"
+        />
+      </span>
+    </button>
+  </div>
+  <div
+    className="dropdown-menu"
+    id="dropdown-menu"
+    role="menu"
+  >
+    <div
+      className="dropdown-content"
+    >
+      <div
+        className="dropdown-item"
+      >
+        <p>
+          Add the 
+          <code>
+            is-right
+          </code>
+           modifier for a 
+          <strong>
+            right-aligned
+          </strong>
+           dropdown.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Toggable 1`] = `
+<div
+  className="dropdown"
+  onClick={[Function]}
+>
+  <div
+    className="dropdown-trigger"
+  >
+    <button
+      aria-controls="dropdown-menu"
+      aria-haspopup="true"
+      className="button"
+    >
+      <span>
+        Click me
+      </span>
+      <span
+        aria-hidden="true"
+        className="icon is-small"
+      >
+        <i
+          className="fas fa-angle-down"
+        />
+      </span>
+    </button>
+  </div>
+  <div
+    className="dropdown-menu"
+    id="dropdown-menu"
+    role="menu"
+  >
+    <div
+      className="dropdown-content"
+    >
+      <a
+        className="dropdown-item"
+        href="#"
+      >
+        Overview
+      </a>
+      <a
+        className="dropdown-item"
+        href="#"
+      >
+        Modifiers
+      </a>
+      <a
+        className="dropdown-item"
+        href="#"
+      >
+        Grid
+      </a>
+      <a
+        className="dropdown-item"
+        href="#"
+      >
+        Form
+      </a>
+      <a
+        className="dropdown-item"
+        href="#"
+      >
+        Elements
+      </a>
+      <a
+        className="dropdown-item"
+        href="#"
+      >
+        Components
+      </a>
+      <a
+        className="dropdown-item"
+        href="#"
+      >
+        Layout
+      </a>
+      <hr
+        className="dropdown-divider"
+      />
+      <a
+        className="dropdown-item"
+        href="#"
+      >
+        More
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Menu Default 1`] = `
+<aside
+  className="menu"
   style={
     Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "width": 540,
     }
   }
 >
+  <p
+    className="menu-label"
+  >
+    General
+  </p>
+  <ul
+    className="menu-list"
+  >
+    <li>
+      <a>
+        Dashboard
+      </a>
+    </li>
+    <li>
+      <a>
+        Customers
+      </a>
+    </li>
+  </ul>
+  <p
+    className="menu-label"
+  >
+    Administration
+  </p>
+  <ul
+    className="menu-list"
+  >
+    <li>
+      <a>
+        Team Settings
+      </a>
+    </li>
+    <li>
+      <a
+        className="is-active"
+      >
+        Manage Your Team
+      </a>
+      <ul>
+        <li>
+          <a>
+            Members
+          </a>
+        </li>
+        <li>
+          <a>
+            Plugins
+          </a>
+        </li>
+        <li>
+          <a>
+            Add a member
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a>
+        Invitations
+      </a>
+    </li>
+    <li>
+      <a>
+        Cloud Storage Environment Settings
+      </a>
+    </li>
+    <li>
+      <a>
+        Authentication
+      </a>
+    </li>
+  </ul>
+  <p
+    className="menu-label"
+  >
+    Transactions
+  </p>
+  <ul
+    className="menu-list"
+  >
+    <li>
+      <a>
+        Payments
+      </a>
+    </li>
+    <li>
+      <a>
+        Transfers
+      </a>
+    </li>
+    <li>
+      <a>
+        Balance
+      </a>
+    </li>
+  </ul>
+</aside>
+`;
+
+exports[`Storyshots Components/Message Colors 1`] = `
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="message is-dark"
   >
     <div
-      className="buttons"
+      className="message-header"
     >
+      <p>
+        Dark
+      </p>
       <button
-        className="button is-primary is-inverted"
-      >
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-primary"
+  >
+    <div
+      className="message-header"
+    >
+      <p>
         Primary
-      </button>
+      </p>
       <button
-        className="button is-link is-inverted"
-      >
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-link"
+  >
+    <div
+      className="message-header"
+    >
+      <p>
         Link
-      </button>
+      </p>
       <button
-        className="button is-info is-inverted"
-      >
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-info"
+  >
+    <div
+      className="message-header"
+    >
+      <p>
         Info
-      </button>
+      </p>
       <button
-        className="button is-warning is-inverted"
-      >
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-success"
+  >
+    <div
+      className="message-header"
+    >
+      <p>
+        Success
+      </p>
+      <button
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-warning"
+  >
+    <div
+      className="message-header"
+    >
+      <p>
         Warning
-      </button>
+      </p>
       <button
-        className="button is-danger is-inverted"
-      >
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-danger"
+  >
+    <div
+      className="message-header"
+    >
+      <p>
         Danger
-      </button>
+      </p>
+      <button
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Message Default 1`] = `
+<div
+  className="message"
+>
+  <div
+    className="message-header"
+  >
+    <p>
+      Hello World
+    </p>
+    <button
+      className="delete"
+    />
+  </div>
+  <div
+    className="message-body"
+  >
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Message Message Body Only 1`] = `
+Array [
+  <div
+    className="message is-dark"
+  >
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-primary"
+  >
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-link"
+  >
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-info"
+  >
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-success"
+  >
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-warning"
+  >
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-danger"
+  >
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Message Sizes 1`] = `
+Array [
+  <div
+    className="message is-small"
+  >
+    <div
+      className="message-header"
+    >
+      <p>
+        Small Message
+      </p>
+      <button
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message"
+  >
+    <div
+      className="message-header"
+    >
+      <p>
+        Normal Message
+      </p>
+      <button
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-medium"
+  >
+    <div
+      className="message-header"
+    >
+      <p>
+        Medium Message
+      </p>
+      <button
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+  <div
+    className="message is-large"
+  >
+    <div
+      className="message-header"
+    >
+      <p>
+        Large Message
+      </p>
+      <button
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Modal Card Modal 1`] = `
+Array [
+  <button
+    className="button is-primary is-large"
+    onClick={[Function]}
+  >
+    Launch card modal
+  </button>,
+  <div
+    className="modal"
+  >
+    <div
+      className="modal-background"
+    />
+    <div
+      className="modal-card"
+    >
+      <header
+        className="modal-card-head"
+      >
+        <div
+          className="modal-card-title"
+        >
+          Modal title
+        </div>
+        <button
+          className="delete"
+          onClick={[Function]}
+        />
+      </header>
+      <section
+        className="modal-card-body"
+      >
+        
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      </section>
+      <footer
+        className="modal-card-foot"
+      >
+        <button
+          className="button is-success"
+        >
+          Save changes
+        </button>
+        <button
+          className="button"
+          onClick={[Function]}
+        >
+          Cancel
+        </button>
+      </footer>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Modal Default 1`] = `
+Array [
+  <button
+    className="button is-primary is-large"
+    onClick={[Function]}
+  >
+    Launch example modal
+  </button>,
+  <div
+    className="modal"
+  >
+    <div
+      className="modal-background"
+    />
+    <div
+      className="modal-content"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-content"
+        >
+          <div
+            className="content"
+          >
+            
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      aria-label="close"
+      className="button modal-close is-large"
+      onClick={[Function]}
+    />
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Modal Image Modal 1`] = `
+Array [
+  <button
+    className="button is-primary is-large"
+    onClick={[Function]}
+  >
+    Launch image modal
+  </button>,
+  <div
+    className="modal"
+  >
+    <div
+      className="modal-background"
+    />
+    <div
+      className="modal-content"
+    >
+      <p
+        className="image is-4by3"
+      >
+        <img
+          src="https://bulma.io/images/placeholders/1280x960.png"
+        />
+      </p>
+    </div>
+    <button
+      aria-label="close"
+      className="button modal-close is-large"
+      onClick={[Function]}
+    />
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Navbar Default 1`] = `
+<div
+  aria-label="main navigation"
+  className="navbar"
+  role="navigation"
+>
+  <div
+    className="navbar-brand"
+  >
+    <a
+      className="navbar-item"
+      href="https://bulma.io"
+    >
+      <img
+        height="28"
+        src="https://bulma.io/images/bulma-logo.png"
+        width="112"
+      />
+    </a>
+    <a
+      className="navbar-burger"
+      onClick={[Function]}
+      role="button"
+    >
+      <span
+        aria-hidden="true"
+      />
+      <span
+        aria-hidden="true"
+      />
+      <span
+        aria-hidden="true"
+      />
+    </a>
+  </div>
+  <div
+    className="navbar-menu"
+  >
+    <div
+      className="navbar-start"
+    >
+      <a
+        className="navbar-item"
+      >
+        Home
+      </a>
+      <a
+        className="navbar-item"
+      >
+        Documentation
+      </a>
+      <div
+        className="navbar-item has-dropdown is-hoverable"
+      >
+        <a
+          className="navbar-link"
+        >
+          More
+        </a>
+        <div
+          className="navbar-dropdown"
+        >
+          <a
+            className="navbar-item"
+          >
+            About
+          </a>
+          <a
+            className="navbar-item"
+          >
+            Jobs
+          </a>
+          <a
+            className="navbar-item"
+          >
+            Contact
+          </a>
+          <hr
+            className="navbar-divider"
+          />
+          <a
+            className="navbar-item"
+          >
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="navbar-end"
+    >
+      <div
+        className="navbar-item"
+      >
+        <div
+          className="buttons"
+        >
+          <a
+            className="button is-primary"
+          >
+            <strong>
+              Sign up
+            </strong>
+          </a>
+          <a
+            className="button is-light"
+          >
+            Log in
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Elements/Button Light Colors 1`] = `
+exports[`Storyshots Elements/Block Default 1`] = `
+Array [
+  <div
+    className="block"
+  >
+    This text is within a 
+    <strong>
+      block
+    </strong>
+    .
+  </div>,
+  <div
+    className="block"
+  >
+    This text is within a 
+    <strong>
+      second block
+    </strong>
+    . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+  </div>,
+  <div
+    className="block"
+  >
+    This text is within a 
+    <strong>
+      third block
+    </strong>
+    . This block has no margin at the bottom.
+  </div>,
+]
+`;
+
+exports[`Storyshots Elements/Box Default 1`] = `
 <div
+  className="box"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-primary is-light"
-      >
-        Primary
-      </button>
-      <button
-        className="button is-link is-light"
-      >
-        Link
-      </button>
-      <button
-        className="button is-info is-light"
-      >
-        Info
-      </button>
-      <button
-        className="button is-warning is-light"
-      >
-        Warning
-      </button>
-      <button
-        className="button is-danger is-light"
-      >
-        Danger
-      </button>
-    </div>
-  </div>
+  Box
 </div>
 `;
 
-exports[`Storyshots Elements/Button Loading 1`] = `
+exports[`Storyshots Elements/Button As 1`] = `
 <div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
+  className="buttons"
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+  <a
+    className="button"
   >
-    <div
-      className="buttons"
-    >
-      <button
-        className="button is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-primary is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-link is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-info is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-success is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-warning is-loading"
-      >
-        Loading
-      </button>
-      <button
-        className="button is-danger is-loading"
-      >
-        Loading
-      </button>
-    </div>
-  </div>
+    Anchor
+  </a>
+  <button
+    className="button"
+  >
+    Button
+  </button>
+  <input
+    className="button"
+    type="submit"
+    value="Submit input"
+  />
+  <input
+    className="button"
+    type="reset"
+    value="Reset input"
+  />
 </div>
 `;
 
-exports[`Storyshots Elements/Button Outlined 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+exports[`Storyshots Elements/Button Colors 1`] = `
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="buttons"
   >
-    <div
-      className="buttons"
+    <button
+      className="button is-white"
     >
-      <button
-        className="button is-primary is-outlined"
-      >
-        Primary
-      </button>
-      <button
-        className="button is-link is-outlined"
-      >
-        Link
-      </button>
-      <button
-        className="button is-info is-outlined"
-      >
-        Info
-      </button>
-      <button
-        className="button is-warning is-outlined"
-      >
-        Warning
-      </button>
-      <button
-        className="button is-danger is-outlined"
-      >
-        Danger
-      </button>
-    </div>
-  </div>
+      White
+    </button>
+    <button
+      className="button is-light"
+    >
+      Light
+    </button>
+    <button
+      className="button is-dark"
+    >
+      Dark
+    </button>
+    <button
+      className="button is-black"
+    >
+      Black
+    </button>
+    <button
+      className="button is-text"
+    >
+      Text
+    </button>
+  </div>,
+  <div
+    className="buttons"
+  >
+    <button
+      className="button is-primary"
+    >
+      Primary
+    </button>
+    <button
+      className="button is-link"
+    >
+      Link
+    </button>
+    <button
+      className="button is-info"
+    >
+      Info
+    </button>
+    <button
+      className="button is-success"
+    >
+      Success
+    </button>
+    <button
+      className="button is-warning"
+    >
+      Warning
+    </button>
+    <button
+      className="button is-danger"
+    >
+      Danger
+    </button>
+  </div>,
+  <div
+    className="buttons"
+  >
+    <button
+      className="button is-primary is-light"
+    >
+      Primary
+    </button>
+    <button
+      className="button is-link is-light"
+    >
+      Link
+    </button>
+    <button
+      className="button is-info is-light"
+    >
+      Info
+    </button>
+    <button
+      className="button is-success is-light"
+    >
+      Success
+    </button>
+    <button
+      className="button is-warning is-light"
+    >
+      Warning
+    </button>
+    <button
+      className="button is-danger is-light"
+    >
+      Danger
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots Elements/Button Default 1`] = `
+<button
+  className="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Elements/Button Displays 1`] = `
+<div
+  className="buttons"
+>
+  <button
+    className="button is-small is-fullwidth"
+  >
+    Small
+  </button>
+  <button
+    className="button is-normal is-fullwidth"
+  >
+    Normal
+  </button>
+  <button
+    className="button is-medium is-fullwidth"
+  >
+    Medium
+  </button>
+  <button
+    className="button is-large is-fullwidth"
+  >
+    Large
+  </button>
 </div>
 `;
 
-exports[`Storyshots Elements/Button Rounded 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+exports[`Storyshots Elements/Button List Of Buttons 1`] = `
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="buttons"
   >
-    <div
-      className="buttons"
+    <button
+      className="button is-success"
     >
-      <button
-        className="button is-rounded"
-      >
-        Rounded
-      </button>
-      <button
-        className="button is-primary is-rounded"
-      >
-        Rounded
-      </button>
-      <button
-        className="button is-link is-rounded"
-      >
-        Rounded
-      </button>
-      <button
-        className="button is-info is-rounded"
-      >
-        Rounded
-      </button>
-      <button
-        className="button is-success is-rounded"
-      >
-        Rounded
-      </button>
-      <button
-        className="button is-danger is-rounded"
-      >
-        Rounded
-      </button>
-    </div>
-  </div>
-</div>
+      Save changes
+    </button>
+    <button
+      className="button is-info"
+    >
+      Save and continue
+    </button>
+    <button
+      className="button is-danger"
+    >
+      Cancel
+    </button>
+  </div>,
+  <div
+    className="buttons"
+  >
+    <button
+      className="button"
+    >
+      One
+    </button>
+    <button
+      className="button"
+    >
+      Two
+    </button>
+    <button
+      className="button"
+    >
+      Three
+    </button>
+    <button
+      className="button"
+    >
+      Four
+    </button>
+    <button
+      className="button"
+    >
+      Five
+    </button>
+    <button
+      className="button"
+    >
+      Six
+    </button>
+    <button
+      className="button"
+    >
+      Seven
+    </button>
+    <button
+      className="button"
+    >
+      Eight
+    </button>
+    <button
+      className="button"
+    >
+      Nine
+    </button>
+    <button
+      className="button"
+    >
+      Ten
+    </button>
+    <button
+      className="button"
+    >
+      Eleven
+    </button>
+    <button
+      className="button"
+    >
+      Twelve
+    </button>
+    <button
+      className="button"
+    >
+      Thirteen
+    </button>
+    <button
+      className="button"
+    >
+      Fourteen
+    </button>
+    <button
+      className="button"
+    >
+      Fifteen
+    </button>
+    <button
+      className="button"
+    >
+      Sixteen
+    </button>
+    <button
+      className="button"
+    >
+      Seventeen
+    </button>
+    <button
+      className="button"
+    >
+      Eighteen
+    </button>
+    <button
+      className="button"
+    >
+      Nineteen
+    </button>
+    <button
+      className="button"
+    >
+      Twenty
+    </button>
+  </div>,
+  <div
+    className="buttons has-addons"
+  >
+    <button
+      className="button"
+    >
+      Yes
+    </button>
+    <button
+      className="button"
+    >
+      Maybe
+    </button>
+    <button
+      className="button"
+    >
+      No
+    </button>
+  </div>,
+  <div
+    className="buttons has-addons is-centered"
+  >
+    <button
+      className="button"
+    >
+      Yes
+    </button>
+    <button
+      className="button"
+    >
+      Maybe
+    </button>
+    <button
+      className="button"
+    >
+      No
+    </button>
+  </div>,
+  <div
+    className="buttons has-addons is-right"
+  >
+    <button
+      className="button"
+    >
+      Yes
+    </button>
+    <button
+      className="button"
+    >
+      Maybe
+    </button>
+    <button
+      className="button"
+    >
+      No
+    </button>
+  </div>,
+  <div
+    className="buttons has-addons"
+  >
+    <button
+      className="button is-success is-selected"
+    >
+      Yes
+    </button>
+    <button
+      className="button"
+    >
+      Maybe
+    </button>
+    <button
+      className="button"
+    >
+      No
+    </button>
+  </div>,
+  <div
+    className="buttons has-addons"
+  >
+    <button
+      className="button"
+    >
+      Yes
+    </button>
+    <button
+      className="button is-info is-selected"
+    >
+      Maybe
+    </button>
+    <button
+      className="button"
+    >
+      No
+    </button>
+  </div>,
+  <div
+    className="buttons has-addons"
+  >
+    <button
+      className="button"
+    >
+      Yes
+    </button>
+    <button
+      className="button"
+    >
+      Maybe
+    </button>
+    <button
+      className="button is-danger is-selected"
+    >
+      No
+    </button>
+  </div>,
+]
 `;
 
 exports[`Storyshots Elements/Button Sizes 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="buttons"
   >
-    <div
-      className="buttons"
+    <button
+      className="button is-small"
     >
-      <button
-        className="button is-small"
-      >
-        Small
-      </button>
-      <button
-        className="button"
-      >
-        Default
-      </button>
-      <button
-        className="button is-normal"
-      >
-        Normal
-      </button>
-      <button
-        className="button is-medium"
-      >
-        Medium
-      </button>
-      <button
-        className="button is-large"
-      >
-        Large
-      </button>
-    </div>
-    <div
-      className="buttons are-medium"
+      Small
+    </button>
+    <button
+      className="button"
     >
-      <button
-        className="button"
-      >
-        All
-      </button>
-      <button
-        className="button"
-      >
-        Medium
-      </button>
-      <button
-        className="button"
-      >
-        Size
-      </button>
-    </div>
-    <div
-      className="buttons are-small"
+      Default
+    </button>
+    <button
+      className="button is-normal"
     >
-      <button
-        className="button"
-      >
-        Small
-      </button>
-      <button
-        className="button"
-      >
-        Small
-      </button>
-      <button
-        className="button"
-      >
-        Small
-      </button>
-      <button
-        className="button is-normal"
-      >
-        Normal
-      </button>
-      <button
-        className="button"
-      >
-        Small
-      </button>
-    </div>
-  </div>
-</div>
+      Normal
+    </button>
+    <button
+      className="button is-medium"
+    >
+      Medium
+    </button>
+    <button
+      className="button is-large"
+    >
+      Large
+    </button>
+  </div>,
+  <div
+    className="buttons are-medium"
+  >
+    <button
+      className="button"
+    >
+      All
+    </button>
+    <button
+      className="button"
+    >
+      Medium
+    </button>
+    <button
+      className="button"
+    >
+      Size
+    </button>
+  </div>,
+  <div
+    className="buttons are-small"
+  >
+    <button
+      className="button"
+    >
+      Small
+    </button>
+    <button
+      className="button"
+    >
+      Small
+    </button>
+    <button
+      className="button"
+    >
+      Small
+    </button>
+    <button
+      className="button is-normal"
+    >
+      Normal
+    </button>
+    <button
+      className="button"
+    >
+      Small
+    </button>
+  </div>,
+]
 `;
 
 exports[`Storyshots Elements/Button States 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="buttons"
   >
-    <div
-      className="buttons"
+    <button
+      className="button is-primary"
     >
-      <button
-        className="button"
-      >
-        Normal
-      </button>
-      <button
-        className="button is-hovered"
-      >
-        Hovered
-      </button>
-      <button
-        className="button is-focused"
-      >
-        Focused
-      </button>
-      <button
-        className="button is-active"
-      >
-        Active
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Button Static 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+      Normal
+    </button>
+    <button
+      className="button is-link"
+    >
+      Normal
+    </button>
+    <button
+      className="button is-info"
+    >
+      Normal
+    </button>
+    <button
+      className="button is-success"
+    >
+      Normal
+    </button>
+    <button
+      className="button is-warning"
+    >
+      Normal
+    </button>
+    <button
+      className="button is-danger"
+    >
+      Normal
+    </button>
+  </div>,
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="buttons"
+  >
+    <button
+      className="button is-primary is-hovered"
+    >
+      Hover
+    </button>
+    <button
+      className="button is-link is-hovered"
+    >
+      Hover
+    </button>
+    <button
+      className="button is-info is-hovered"
+    >
+      Hover
+    </button>
+    <button
+      className="button is-success is-hovered"
+    >
+      Hover
+    </button>
+    <button
+      className="button is-warning is-hovered"
+    >
+      Hover
+    </button>
+    <button
+      className="button is-danger is-hovered"
+    >
+      Hover
+    </button>
+  </div>,
+  <div
+    className="buttons"
+  >
+    <button
+      className="button is-primary is-focused"
+    >
+      Focus
+    </button>
+    <button
+      className="button is-link is-focused"
+    >
+      Focus
+    </button>
+    <button
+      className="button is-info is-focused"
+    >
+      Focus
+    </button>
+    <button
+      className="button is-success is-focused"
+    >
+      Focus
+    </button>
+    <button
+      className="button is-warning is-focused"
+    >
+      Focus
+    </button>
+    <button
+      className="button is-danger is-focused"
+    >
+      Focus
+    </button>
+  </div>,
+  <div
+    className="buttons"
+  >
+    <button
+      className="button is-primary is-active"
+    >
+      Active
+    </button>
+    <button
+      className="button is-link is-active"
+    >
+      Active
+    </button>
+    <button
+      className="button is-info is-active"
+    >
+      Active
+    </button>
+    <button
+      className="button is-success is-active"
+    >
+      Active
+    </button>
+    <button
+      className="button is-warning is-active"
+    >
+      Active
+    </button>
+    <button
+      className="button is-danger is-active"
+    >
+      Active
+    </button>
+  </div>,
+  <div
+    className="buttons"
+  >
+    <button
+      className="button is-loading"
+    >
+      Loading
+    </button>
+    <button
+      className="button is-primary is-loading"
+    >
+      Loading
+    </button>
+    <button
+      className="button is-link is-loading"
+    >
+      Loading
+    </button>
+    <button
+      className="button is-info is-loading"
+    >
+      Loading
+    </button>
+    <button
+      className="button is-success is-loading"
+    >
+      Loading
+    </button>
+    <button
+      className="button is-warning is-loading"
+    >
+      Loading
+    </button>
+    <button
+      className="button is-danger is-loading"
+    >
+      Loading
+    </button>
+  </div>,
+  <div
+    className="buttons"
   >
     <button
       className="button is-static"
     >
       Static
     </button>
-  </div>
-</div>
+  </div>,
+  <div
+    className="buttons"
+  >
+    <button
+      className="button"
+      disabled={true}
+      title="Disabled button"
+    >
+      Disabled
+    </button>
+    <button
+      className="button is-primary"
+      disabled={true}
+      title="Disabled button"
+    >
+      Disabled
+    </button>
+    <button
+      className="button is-link"
+      disabled={true}
+      title="Disabled button"
+    >
+      Disabled
+    </button>
+    <button
+      className="button is-info"
+      disabled={true}
+      title="Disabled button"
+    >
+      Disabled
+    </button>
+    <button
+      className="button is-success"
+      disabled={true}
+      title="Disabled button"
+    >
+      Disabled
+    </button>
+    <button
+      className="button is-warning"
+      disabled={true}
+      title="Disabled button"
+    >
+      Disabled
+    </button>
+    <button
+      className="button is-danger"
+      disabled={true}
+      title="Disabled button"
+    >
+      Disabled
+    </button>
+  </div>,
+  <p
+    className="buttons"
+  >
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-bold"
+        />
+      </span>
+    </button>
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-italic"
+        />
+      </span>
+    </button>
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-underline"
+        />
+      </span>
+    </button>
+  </p>,
+  <p
+    className="buttons"
+  >
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fab fa-github"
+        />
+      </span>
+      <span>
+        GitHub
+      </span>
+    </button>
+    <button
+      className="button is-primary"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fab fa-twitter"
+        />
+      </span>
+      <span>
+        @jgthms
+      </span>
+    </button>
+    <button
+      className="button is-success"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-check"
+        />
+      </span>
+      <span>
+        Save
+      </span>
+    </button>
+    <button
+      className="button is-danger is-outlined"
+    >
+      <span>
+        Delete
+      </span>
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-times"
+        />
+      </span>
+    </button>
+  </p>,
+  <p
+    className="buttons"
+  >
+    <button
+      className="button is-small"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fab fa-github"
+        />
+      </span>
+      <span>
+        GitHub
+      </span>
+    </button>
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fab fa-github"
+        />
+      </span>
+      <span>
+        GitHub
+      </span>
+    </button>
+    <button
+      className="button is-medium"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fab fa-github"
+        />
+      </span>
+      <span>
+        GitHub
+      </span>
+    </button>
+    <button
+      className="button is-large"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fab fa-github"
+        />
+      </span>
+      <span>
+        GitHub
+      </span>
+    </button>
+  </p>,
+  <p
+    className="buttons"
+  >
+    <button
+      className="button is-small"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-heading"
+        />
+      </span>
+    </button>
+  </p>,
+  <p
+    className="buttons"
+  >
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-heading"
+        />
+      </span>
+    </button>
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-heading fa-lg"
+        />
+      </span>
+    </button>
+  </p>,
+  <p
+    className="buttons are-medium"
+  >
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-heading"
+        />
+      </span>
+    </button>
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-heading fa-lg"
+        />
+      </span>
+    </button>
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-heading fa-2x"
+        />
+      </span>
+    </button>
+  </p>,
+  <p
+    className="buttons are-large"
+  >
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-heading"
+        />
+      </span>
+    </button>
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-heading fa-lg"
+        />
+      </span>
+    </button>
+    <button
+      className="button"
+    >
+      <span
+        className="icon"
+      >
+        <i
+          className="fas fa-heading fa-2x"
+        />
+      </span>
+    </button>
+  </p>,
+]
+`;
+
+exports[`Storyshots Elements/Button Styles 1`] = `
+Array [
+  <div
+    className="buttons"
+  >
+    <button
+      className="button is-outlined"
+    >
+      Outlined
+    </button>
+    <button
+      className="button is-primary is-outlined"
+    >
+      Outlined
+    </button>
+    <button
+      className="button is-link is-outlined"
+    >
+      Outlined
+    </button>
+    <button
+      className="button is-info is-outlined"
+    >
+      Outlined
+    </button>
+    <button
+      className="button is-success is-outlined"
+    >
+      Outlined
+    </button>
+    <button
+      className="button is-danger is-outlined"
+    >
+      Outlined
+    </button>
+  </div>,
+  <div
+    className="buttons"
+  >
+    <button
+      className="button is-primary is-inverted"
+    >
+      Inverted
+    </button>
+    <button
+      className="button is-link is-inverted"
+    >
+      Inverted
+    </button>
+    <button
+      className="button is-info is-inverted"
+    >
+      Inverted
+    </button>
+    <button
+      className="button is-success is-inverted"
+    >
+      Inverted
+    </button>
+    <button
+      className="button is-danger is-inverted"
+    >
+      Inverted
+    </button>
+  </div>,
+  <div
+    className="box has-background-dark"
+  >
+    <div
+      className="buttons"
+    >
+      <button
+        className="button is-primary is-outlined is-inverted"
+      >
+        Invert Outlined
+      </button>
+      <button
+        className="button is-link is-outlined is-inverted"
+      >
+        Invert Outlined
+      </button>
+      <button
+        className="button is-info is-outlined is-inverted"
+      >
+        Invert Outlined
+      </button>
+      <button
+        className="button is-success is-outlined is-inverted"
+      >
+        Invert Outlined
+      </button>
+      <button
+        className="button is-danger is-outlined is-inverted"
+      >
+        Invert Outlined
+      </button>
+    </div>
+  </div>,
+  <div
+    className="buttons"
+  >
+    <button
+      className="button is-rounded"
+    >
+      Rounded
+    </button>
+    <button
+      className="button is-primary is-rounded"
+    >
+      Rounded
+    </button>
+    <button
+      className="button is-link is-rounded"
+    >
+      Rounded
+    </button>
+    <button
+      className="button is-info is-rounded"
+    >
+      Rounded
+    </button>
+    <button
+      className="button is-success is-rounded"
+    >
+      Rounded
+    </button>
+    <button
+      className="button is-danger is-rounded"
+    >
+      Rounded
+    </button>
+  </div>,
+]
 `;
 
 exports[`Storyshots Elements/Content Default 1`] = `
 <div
-  className="section"
+  className="content"
 >
-  <div
-    className="content"
-  >
-    
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-  </div>
 </div>
 `;
 
 exports[`Storyshots Elements/Content Sizes 1`] = `
-<div
-  className="section"
->
+Array [
   <div
     className="content is-small"
   >
     
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-  </div>
+  </div>,
+  <div
+    className="content"
+  >
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  </div>,
   <div
     className="content is-medium"
   >
     
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-  </div>
+  </div>,
   <div
     className="content is-large"
   >
     
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Elements/Delete Default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <button
-      className="delete"
-    />
-  </div>
-</div>
+<button
+  className="delete"
+/>
 `;
 
 exports[`Storyshots Elements/Delete Sizes 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <button
-      className="delete is-small"
-    />
-    <button
-      className="delete"
-    />
-    <button
-      className="delete is-medium"
-    />
-    <button
-      className="delete is-large"
-    />
-  </div>
-</div>
+Array [
+  <button
+    className="delete is-small"
+  />,
+  <button
+    className="delete"
+  />,
+  <button
+    className="delete is-medium"
+  />,
+  <button
+    className="delete is-large"
+  />,
+]
 `;
 
 exports[`Storyshots Elements/Icon Colors 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+Array [
+  <span
+    className="icon has-text-info"
   >
-    <span
-      className="icon has-text-info"
-    >
-      <i
-        className="fa fa-info-circle"
-      />
-    </span>
-    <span
-      className="icon has-text-success"
-    >
-      <i
-        className="fa fa-check-square"
-      />
-    </span>
-    <span
-      className="icon has-text-warning"
-    >
-      <i
-        className="fa fa-exclamation-triangle"
-      />
-    </span>
-    <span
-      className="icon has-text-danger"
-    >
-      <i
-        className="fa fa-ban"
-      />
-    </span>
-  </div>
-</div>
+    <i
+      className="fa fa-info-circle"
+    />
+  </span>,
+  <span
+    className="icon has-text-success"
+  >
+    <i
+      className="fa fa-check-square"
+    />
+  </span>,
+  <span
+    className="icon has-text-warning"
+  >
+    <i
+      className="fa fa-exclamation-triangle"
+    />
+  </span>,
+  <span
+    className="icon has-text-danger"
+  >
+    <i
+      className="fa fa-ban"
+    />
+  </span>,
+]
 `;
 
 exports[`Storyshots Elements/Icon Default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
+<span
+  className="icon"
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <span
-      className="icon"
-    >
-      <i
-        className="fab fa-react"
-      />
-    </span>
-  </div>
-</div>
+  <i
+    className="fas fa-home"
+  />
+</span>
 `;
 
 exports[`Storyshots Elements/Icon Sizes 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+Array [
+  <span
+    className="icon is-small"
   >
-    <span
-      className="icon is-small"
-    >
-      <i
-        className="fab fa-react"
-      />
-    </span>
-    <span
-      className="icon"
-    >
-      <i
-        className="fab fa-lg fa-react"
-      />
-    </span>
-    <span
-      className="icon is-medium"
-    >
-      <i
-        className="fab fa-2x fa-react"
-      />
-    </span>
-    <span
-      className="icon is-large"
-    >
-      <i
-        className="fab fa-3x fa-react"
-      />
-    </span>
-  </div>
-</div>
+    <i
+      className="fab fa-react"
+    />
+  </span>,
+  <span
+    className="icon"
+  >
+    <i
+      className="fab fa-lg fa-react"
+    />
+  </span>,
+  <span
+    className="icon is-medium"
+  >
+    <i
+      className="fab fa-2x fa-react"
+    />
+  </span>,
+  <span
+    className="icon is-large"
+  >
+    <i
+      className="fab fa-3x fa-react"
+    />
+  </span>,
+]
 `;
 
 exports[`Storyshots Elements/Image Arbitrary Ratios With Any Element 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
+<figure
+  className="image is-16by9"
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box"
-      style={
-        Object {
-          "width": 640,
-        }
-      }
-    >
-      <figure
-        className="image is-16by9"
-      >
-        <iframe
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-          className="has-ratio"
-          frameBorder="0"
-          height="360"
-          src="https://www.youtube.com/embed/yI-8QHpGIP4"
-          width="640"
-        />
-      </figure>
-    </div>
-  </div>
-</div>
+  <iframe
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+    className="has-ratio"
+    frameBorder="0"
+    height="360"
+    src="https://www.youtube.com/embed/yI-8QHpGIP4"
+    width="640"
+  />
+</figure>
 `;
 
 exports[`Storyshots Elements/Image Default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
+<figure
+  className="image is-128x128"
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <figure
-      className="image"
-    >
-      <img
-        src="https://fakeimg.pl/256/"
-      />
-    </figure>
-  </div>
-</div>
+  <img
+    src="https://fakeimg.pl/128/"
+  />
+</figure>
 `;
 
 exports[`Storyshots Elements/Image Fixed Square Images 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="block"
   >
     <figure
       className="image is-16x16"
@@ -2373,6 +4007,10 @@ exports[`Storyshots Elements/Image Fixed Square Images 1`] = `
         src="https://fakeimg.pl/16/"
       />
     </figure>
+  </div>,
+  <div
+    className="block"
+  >
     <figure
       className="image is-24x24"
     >
@@ -2380,6 +4018,10 @@ exports[`Storyshots Elements/Image Fixed Square Images 1`] = `
         src="https://fakeimg.pl/24/"
       />
     </figure>
+  </div>,
+  <div
+    className="block"
+  >
     <figure
       className="image is-32x32"
     >
@@ -2387,6 +4029,10 @@ exports[`Storyshots Elements/Image Fixed Square Images 1`] = `
         src="https://fakeimg.pl/32/"
       />
     </figure>
+  </div>,
+  <div
+    className="block"
+  >
     <figure
       className="image is-48x48"
     >
@@ -2394,6 +4040,10 @@ exports[`Storyshots Elements/Image Fixed Square Images 1`] = `
         src="https://fakeimg.pl/48/"
       />
     </figure>
+  </div>,
+  <div
+    className="block"
+  >
     <figure
       className="image is-64x64"
     >
@@ -2401,6 +4051,10 @@ exports[`Storyshots Elements/Image Fixed Square Images 1`] = `
         src="https://fakeimg.pl/64/"
       />
     </figure>
+  </div>,
+  <div
+    className="block"
+  >
     <figure
       className="image is-96x96"
     >
@@ -2408,6 +4062,10 @@ exports[`Storyshots Elements/Image Fixed Square Images 1`] = `
         src="https://fakeimg.pl/96/"
       />
     </figure>
+  </div>,
+  <div
+    className="block"
+  >
     <figure
       className="image is-128x128"
     >
@@ -2415,897 +4073,468 @@ exports[`Storyshots Elements/Image Fixed Square Images 1`] = `
         src="https://fakeimg.pl/128/"
       />
     </figure>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Elements/Image Responsive Images With Ratios 1`] = `
 <div
   style={
     Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "width": 128,
     }
   }
 >
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box"
-      style={
-        Object {
-          "width": 256,
-        }
-      }
-    >
-      <figure
-        className="image is-square"
-      >
-        <img
-          src="https://fakeimg.pl/256/"
-        />
-      </figure>
-      <figure
-        className="image is-1by1"
-      >
-        <img
-          src="https://fakeimg.pl/256/"
-        />
-      </figure>
-      <figure
-        className="image is-5by4"
-      >
-        <img
-          src="https://fakeimg.pl/600x480/"
-        />
-      </figure>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Image Rounded 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="block"
   >
     <figure
-      className="image"
+      className="image is-square"
     >
       <img
-        className="is-rounded"
-        src="https://fakeimg.pl/256/"
+        src="https://fakeimg.pl/480/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-1by1"
+    >
+      <img
+        src="https://fakeimg.pl/480/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-5by4"
+    >
+      <img
+        src="https://fakeimg.pl/600x480/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-4by3"
+    >
+      <img
+        src="https://fakeimg.pl/600x480/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-3by2"
+    >
+      <img
+        src="https://fakeimg.pl/480x320/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-5by3"
+    >
+      <img
+        src="https://fakeimg.pl/800x480/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-16by9"
+    >
+      <img
+        src="https://fakeimg.pl/640x360/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-2by1"
+    >
+      <img
+        src="https://fakeimg.pl/640x320/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-3by1"
+    >
+      <img
+        src="https://fakeimg.pl/720x240/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-4by5"
+    >
+      <img
+        src="https://fakeimg.pl/480x600/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-3by4"
+    >
+      <img
+        src="https://fakeimg.pl/480x640/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-2by3"
+    >
+      <img
+        src="https://fakeimg.pl/320x480/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-3by5"
+    >
+      <img
+        src="https://fakeimg.pl/480x800/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-9by16"
+    >
+      <img
+        src="https://fakeimg.pl/360x640/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-1by2"
+    >
+      <img
+        src="https://fakeimg.pl/320x640/"
+      />
+    </figure>
+  </div>
+  <div
+    className="block"
+  >
+    <figure
+      className="image is-1by3"
+    >
+      <img
+        src="https://fakeimg.pl/240x720/"
       />
     </figure>
   </div>
 </div>
 `;
 
-exports[`Storyshots Elements/Notification Colors 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
+exports[`Storyshots Elements/Image Retina Images 1`] = `
+<figure
+  className="image is-128x128"
 >
+  <img
+    src="https://fakeimg.pl/256/"
+  />
+</figure>
+`;
+
+exports[`Storyshots Elements/Image Rounded Images 1`] = `
+<figure
+  className="image is-128x128"
+>
+  <img
+    className="is-rounded"
+    src="https://fakeimg.pl/128/"
+  />
+</figure>
+`;
+
+exports[`Storyshots Elements/Notification Colors 1`] = `
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="notification is-primary"
   >
-    <div
-      className="box"
-      style={
-        Object {
-          "width": 540,
-        }
-      }
-    >
-      <div
-        className="notification is-white"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-light"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  </div>,
+  <div
+    className="notification is-link"
+  >
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-dark"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  </div>,
+  <div
+    className="notification is-info"
+  >
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-black"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  </div>,
+  <div
+    className="notification is-success"
+  >
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-primary"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  </div>,
+  <div
+    className="notification is-warning"
+  >
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-link"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  </div>,
+  <div
+    className="notification is-danger"
+  >
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-info"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
-
-      </div>
-      <div
-        className="notification is-warning"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
-
-      </div>
-      <div
-        className="notification is-danger"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
-
-      </div>
-    </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Elements/Notification Default 1`] = `
 <div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
+  className="notification"
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box"
-      style={
-        Object {
-          "width": 540,
-        }
-      }
-    >
-      <div
-        className="notification"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  <button
+    className="delete"
+  />
+  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Elements/Notification Light Colors 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="notification is-primary is-light"
   >
-    <div
-      className="box"
-      style={
-        Object {
-          "width": 540,
-        }
-      }
-    >
-      <div
-        className="notification is-white is-light"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-light"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  </div>,
+  <div
+    className="notification is-link is-light"
+  >
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-dark is-light"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  </div>,
+  <div
+    className="notification is-info is-light"
+  >
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-black is-light"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  </div>,
+  <div
+    className="notification is-success is-light"
+  >
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-primary is-light"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  </div>,
+  <div
+    className="notification is-warning is-light"
+  >
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-link is-light"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
+  </div>,
+  <div
+    className="notification is-danger is-light"
+  >
+    <button
+      className="delete"
+    />
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      </div>
-      <div
-        className="notification is-info is-light"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
-
-      </div>
-      <div
-        className="notification is-warning is-light"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
-
-      </div>
-      <div
-        className="notification is-danger is-light"
-      >
-        <button
-          className="delete"
-        />
-        
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-est laborum.
-
-      </div>
-    </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Elements/Progress Colors 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+Array [
+  <progress
+    className="progress is-primary"
+    max={100}
+    value={15}
   >
-    <progress
-      className="progress is-primary"
-      max={100}
-      value={15}
-    >
-      15%
-    </progress>
-    <progress
-      className="progress is-link"
-      max={100}
-      value={30}
-    >
-      30%
-    </progress>
-    <progress
-      className="progress is-info"
-      max={100}
-      value={45}
-    >
-      45%
-    </progress>
-    <progress
-      className="progress is-success"
-      max={100}
-      value={60}
-    >
-      60%
-    </progress>
-    <progress
-      className="progress is-warning"
-      max={100}
-      value={75}
-    >
-      75%
-    </progress>
-    <progress
-      className="progress is-danger"
-      max={100}
-      value={90}
-    >
-      90%
-    </progress>
-  </div>
-</div>
+    15%
+  </progress>,
+  <progress
+    className="progress is-link"
+    max={100}
+    value={30}
+  >
+    30%
+  </progress>,
+  <progress
+    className="progress is-info"
+    max={100}
+    value={45}
+  >
+    45%
+  </progress>,
+  <progress
+    className="progress is-success"
+    max={100}
+    value={60}
+  >
+    60%
+  </progress>,
+  <progress
+    className="progress is-warning"
+    max={100}
+    value={75}
+  >
+    75%
+  </progress>,
+  <progress
+    className="progress is-danger"
+    max={100}
+    value={90}
+  >
+    90%
+  </progress>,
+]
 `;
 
 exports[`Storyshots Elements/Progress Default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
+<progress
+  className="progress"
+  max={100}
+  value={15}
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <progress
-      className="progress"
-      max={100}
-      value={15}
-    >
-      15%
-    </progress>
-  </div>
-</div>
+  15%
+</progress>
 `;
 
 exports[`Storyshots Elements/Progress Indeterminate 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <progress
-      className="progress is-primary"
-      max={100}
-    />
-  </div>
-</div>
+<progress
+  className="progress is-primary"
+  max={100}
+/>
 `;
 
 exports[`Storyshots Elements/Progress Sizes 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+Array [
+  <progress
+    className="progress is-small"
+    max={100}
+    value={15}
   >
-    <progress
-      className="progress is-small"
-      max={100}
-      value={15}
-    >
-      15%
-    </progress>
-    <progress
-      className="progress"
-      max={100}
-      value={30}
-    >
-      30%
-    </progress>
-    <progress
-      className="progress is-medium"
-      max={100}
-      value={45}
-    >
-      45%
-    </progress>
-    <progress
-      className="progress is-large"
-      max={100}
-      value={60}
-    >
-      60%
-    </progress>
-  </div>
-</div>
+    15%
+  </progress>,
+  <progress
+    className="progress"
+    max={100}
+    value={30}
+  >
+    30%
+  </progress>,
+  <progress
+    className="progress is-medium"
+    max={100}
+    value={45}
+  >
+    45%
+  </progress>,
+  <progress
+    className="progress is-large"
+    max={100}
+    value={60}
+  >
+    60%
+  </progress>,
+]
 `;
 
-exports[`Storyshots Elements/Table Bordered 1`] = `
+exports[`Storyshots Elements/Table Container 1`] = `
 <div
   style={
     Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "width": 256,
     }
   }
 >
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <table
-      className="table is-bordered"
-    >
-      <thead>
-        <tr>
-          <th>
-            One
-          </th>
-          <th>
-            Two
-          </th>
-          <th>
-            Three
-          </th>
-          <th>
-            Four
-          </th>
-          <th>
-            Five
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            Six
-          </td>
-          <td>
-            Seven
-          </td>
-          <td>
-            Eight
-          </td>
-          <td>
-            Nine
-          </td>
-          <td>
-            Ten
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Eleven
-          </td>
-          <td>
-            Twelve
-          </td>
-          <td>
-            Thirteen
-          </td>
-          <td>
-            Fourteen
-          </td>
-          <td>
-            Fifteen
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Table Combine 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <table
-      className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
-    >
-      <thead>
-        <tr>
-          <th>
-            One
-          </th>
-          <th>
-            Two
-          </th>
-          <th>
-            Three
-          </th>
-          <th>
-            Four
-          </th>
-          <th>
-            Five
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            Six
-          </td>
-          <td>
-            Seven
-          </td>
-          <td>
-            Eight
-          </td>
-          <td>
-            Nine
-          </td>
-          <td>
-            Ten
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Eleven
-          </td>
-          <td>
-            Twelve
-          </td>
-          <td>
-            Thirteen
-          </td>
-          <td>
-            Fourteen
-          </td>
-          <td>
-            Fifteen
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Table Default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="table-container"
   >
     <table
       className="table"
@@ -3370,1898 +4599,1248 @@ exports[`Storyshots Elements/Table Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Elements/Table Fullwidth 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
+exports[`Storyshots Elements/Table Default 1`] = `
+<table
+  className="table"
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <table
-      className="table is-fullwidth"
-    >
-      <thead>
-        <tr>
-          <th>
-            One
-          </th>
-          <th>
-            Two
-          </th>
-          <th>
-            Three
-          </th>
-          <th>
-            Four
-          </th>
-          <th>
-            Five
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            Six
-          </td>
-          <td>
-            Seven
-          </td>
-          <td>
-            Eight
-          </td>
-          <td>
-            Nine
-          </td>
-          <td>
-            Ten
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Eleven
-          </td>
-          <td>
-            Twelve
-          </td>
-          <td>
-            Thirteen
-          </td>
-          <td>
-            Fourteen
-          </td>
-          <td>
-            Fifteen
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+  <thead>
+    <tr>
+      <th>
+        One
+      </th>
+      <th>
+        Two
+      </th>
+      <th>
+        Three
+      </th>
+      <th>
+        Four
+      </th>
+      <th>
+        Five
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Six
+      </td>
+      <td>
+        Seven
+      </td>
+      <td>
+        Eight
+      </td>
+      <td>
+        Nine
+      </td>
+      <td>
+        Ten
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Eleven
+      </td>
+      <td>
+        Twelve
+      </td>
+      <td>
+        Thirteen
+      </td>
+      <td>
+        Fourteen
+      </td>
+      <td>
+        Fifteen
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;
 
-exports[`Storyshots Elements/Table Hoverable 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+exports[`Storyshots Elements/Table Modifiers 1`] = `
+Array [
+  <table
+    className="table is-bordered"
   >
-    <table
-      className="table is-hoverable"
-    >
-      <thead>
-        <tr>
-          <th>
-            One
-          </th>
-          <th>
-            Two
-          </th>
-          <th>
-            Three
-          </th>
-          <th>
-            Four
-          </th>
-          <th>
-            Five
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            Six
-          </td>
-          <td>
-            Seven
-          </td>
-          <td>
-            Eight
-          </td>
-          <td>
-            Nine
-          </td>
-          <td>
-            Ten
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Eleven
-          </td>
-          <td>
-            Twelve
-          </td>
-          <td>
-            Thirteen
-          </td>
-          <td>
-            Fourteen
-          </td>
-          <td>
-            Fifteen
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Table Narrow 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    <thead>
+      <tr>
+        <th>
+          One
+        </th>
+        <th>
+          Two
+        </th>
+        <th>
+          Three
+        </th>
+        <th>
+          Four
+        </th>
+        <th>
+          Five
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Six
+        </td>
+        <td>
+          Seven
+        </td>
+        <td>
+          Eight
+        </td>
+        <td>
+          Nine
+        </td>
+        <td>
+          Ten
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Eleven
+        </td>
+        <td>
+          Twelve
+        </td>
+        <td>
+          Thirteen
+        </td>
+        <td>
+          Fourteen
+        </td>
+        <td>
+          Fifteen
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <table
+    className="table is-striped"
   >
-    <table
-      className="table is-narrow"
-    >
-      <thead>
-        <tr>
-          <th>
-            One
-          </th>
-          <th>
-            Two
-          </th>
-          <th>
-            Three
-          </th>
-          <th>
-            Four
-          </th>
-          <th>
-            Five
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            Six
-          </td>
-          <td>
-            Seven
-          </td>
-          <td>
-            Eight
-          </td>
-          <td>
-            Nine
-          </td>
-          <td>
-            Ten
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Eleven
-          </td>
-          <td>
-            Twelve
-          </td>
-          <td>
-            Thirteen
-          </td>
-          <td>
-            Fourteen
-          </td>
-          <td>
-            Fifteen
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Table Scrollable 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    <thead>
+      <tr>
+        <th>
+          One
+        </th>
+        <th>
+          Two
+        </th>
+        <th>
+          Three
+        </th>
+        <th>
+          Four
+        </th>
+        <th>
+          Five
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Six
+        </td>
+        <td>
+          Seven
+        </td>
+        <td>
+          Eight
+        </td>
+        <td>
+          Nine
+        </td>
+        <td>
+          Ten
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Eleven
+        </td>
+        <td>
+          Twelve
+        </td>
+        <td>
+          Thirteen
+        </td>
+        <td>
+          Fourteen
+        </td>
+        <td>
+          Fifteen
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <table
+    className="table is-narrow"
   >
-    <div
-      className="box"
-      style={
-        Object {
-          "width": 380,
-        }
-      }
-    >
-      <div
-        className="table-container"
-      >
-        <table
-          className="table"
-        >
-          <thead>
-            <tr>
-              <th>
-                One
-              </th>
-              <th>
-                Two
-              </th>
-              <th>
-                Three
-              </th>
-              <th>
-                Four
-              </th>
-              <th>
-                Five
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                Six
-              </td>
-              <td>
-                Seven
-              </td>
-              <td>
-                Eight
-              </td>
-              <td>
-                Nine
-              </td>
-              <td>
-                Ten
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Eleven
-              </td>
-              <td>
-                Twelve
-              </td>
-              <td>
-                Thirteen
-              </td>
-              <td>
-                Fourteen
-              </td>
-              <td>
-                Fifteen
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Table Striped 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    <thead>
+      <tr>
+        <th>
+          One
+        </th>
+        <th>
+          Two
+        </th>
+        <th>
+          Three
+        </th>
+        <th>
+          Four
+        </th>
+        <th>
+          Five
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Six
+        </td>
+        <td>
+          Seven
+        </td>
+        <td>
+          Eight
+        </td>
+        <td>
+          Nine
+        </td>
+        <td>
+          Ten
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Eleven
+        </td>
+        <td>
+          Twelve
+        </td>
+        <td>
+          Thirteen
+        </td>
+        <td>
+          Fourteen
+        </td>
+        <td>
+          Fifteen
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <table
+    className="table is-hoverable"
   >
-    <table
-      className="table is-striped"
-    >
-      <thead>
-        <tr>
-          <th>
-            One
-          </th>
-          <th>
-            Two
-          </th>
-          <th>
-            Three
-          </th>
-          <th>
-            Four
-          </th>
-          <th>
-            Five
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            Six
-          </td>
-          <td>
-            Seven
-          </td>
-          <td>
-            Eight
-          </td>
-          <td>
-            Nine
-          </td>
-          <td>
-            Ten
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Eleven
-          </td>
-          <td>
-            Twelve
-          </td>
-          <td>
-            Thirteen
-          </td>
-          <td>
-            Fourteen
-          </td>
-          <td>
-            Fifteen
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+    <thead>
+      <tr>
+        <th>
+          One
+        </th>
+        <th>
+          Two
+        </th>
+        <th>
+          Three
+        </th>
+        <th>
+          Four
+        </th>
+        <th>
+          Five
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Six
+        </td>
+        <td>
+          Seven
+        </td>
+        <td>
+          Eight
+        </td>
+        <td>
+          Nine
+        </td>
+        <td>
+          Ten
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Eleven
+        </td>
+        <td>
+          Twelve
+        </td>
+        <td>
+          Thirteen
+        </td>
+        <td>
+          Fourteen
+        </td>
+        <td>
+          Fifteen
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <table
+    className="table is-fullwidth"
+  >
+    <thead>
+      <tr>
+        <th>
+          One
+        </th>
+        <th>
+          Two
+        </th>
+        <th>
+          Three
+        </th>
+        <th>
+          Four
+        </th>
+        <th>
+          Five
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Six
+        </td>
+        <td>
+          Seven
+        </td>
+        <td>
+          Eight
+        </td>
+        <td>
+          Nine
+        </td>
+        <td>
+          Ten
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Eleven
+        </td>
+        <td>
+          Twelve
+        </td>
+        <td>
+          Thirteen
+        </td>
+        <td>
+          Fourteen
+        </td>
+        <td>
+          Fifteen
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <table
+    className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
+  >
+    <thead>
+      <tr>
+        <th>
+          One
+        </th>
+        <th>
+          Two
+        </th>
+        <th>
+          Three
+        </th>
+        <th>
+          Four
+        </th>
+        <th>
+          Five
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Six
+        </td>
+        <td>
+          Seven
+        </td>
+        <td>
+          Eight
+        </td>
+        <td>
+          Nine
+        </td>
+        <td>
+          Ten
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Eleven
+        </td>
+        <td>
+          Twelve
+        </td>
+        <td>
+          Thirteen
+        </td>
+        <td>
+          Fourteen
+        </td>
+        <td>
+          Fifteen
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+]
 `;
 
 exports[`Storyshots Elements/Tag Addons 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="tags has-addons"
-    >
-      <span
-        className="tag"
-      >
-        Package
-      </span>
-      <span
-        className="tag is-primary"
-      >
-        Bulma
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Tag As 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <a
-      className="tag"
-    >
-      As an anchor
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Tag Colors 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="tags"
-    >
-      <span
-        className="tag is-white"
-      >
-        White
-      </span>
-      <span
-        className="tag is-light"
-      >
-        Light
-      </span>
-      <span
-        className="tag is-dark"
-      >
-        Dark
-      </span>
-      <span
-        className="tag is-black"
-      >
-        Black
-      </span>
-      <span
-        className="tag is-text"
-      >
-        Black
-      </span>
-      <span
-        className="tag is-primary"
-      >
-        Primary
-      </span>
-      <span
-        className="tag is-link"
-      >
-        Link
-      </span>
-      <span
-        className="tag is-info"
-      >
-        Info
-      </span>
-      <span
-        className="tag is-warning"
-      >
-        Warning
-      </span>
-      <span
-        className="tag is-danger"
-      >
-        Danger
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Tag Default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="tags has-addons"
   >
     <span
       className="tag"
     >
-      Tag
+      Package
     </span>
-  </div>
+    <span
+      className="tag is-primary"
+    >
+      Bulma
+    </span>
+  </div>,
+  <div
+    className="tags has-addons"
+  >
+    <span
+      className="tag is-danger"
+    >
+      Alex Smith
+    </span>
+    <a
+      className="tag is-delete"
+    />
+  </div>,
+]
+`;
+
+exports[`Storyshots Elements/Tag Colors 1`] = `
+Array [
+  <div
+    className="tags"
+  >
+    <span
+      className="tag is-black"
+    >
+      Black
+    </span>
+    <span
+      className="tag is-dark"
+    >
+      Dark
+    </span>
+    <span
+      className="tag is-light"
+    >
+      Light
+    </span>
+    <span
+      className="tag is-white"
+    >
+      White
+    </span>
+    <span
+      className="tag is-primary"
+    >
+      Primary
+    </span>
+    <span
+      className="tag is-link"
+    >
+      Link
+    </span>
+    <span
+      className="tag is-info"
+    >
+      Info
+    </span>
+    <span
+      className="tag is-success"
+    >
+      Success
+    </span>
+    <span
+      className="tag is-warning"
+    >
+      Warning
+    </span>
+    <span
+      className="tag is-danger"
+    >
+      Danger
+    </span>
+  </div>,
+  <div
+    className="tags"
+  >
+    <span
+      className="tag is-primary is-light"
+    >
+      Primary
+    </span>
+    <span
+      className="tag is-link is-light"
+    >
+      Link
+    </span>
+    <span
+      className="tag is-info is-light"
+    >
+      Info
+    </span>
+    <span
+      className="tag is-success is-light"
+    >
+      Success
+    </span>
+    <span
+      className="tag is-warning is-light"
+    >
+      Warning
+    </span>
+    <span
+      className="tag is-danger is-light"
+    >
+      Danger
+    </span>
+  </div>,
+]
+`;
+
+exports[`Storyshots Elements/Tag Combinations 1`] = `
+<div
+  className="tags"
+>
+  <span
+    className="tag is-success"
+  >
+    Bar
+    <button
+      className="delete is-small"
+    />
+  </span>
+  <span
+    className="tag is-warning is-medium"
+  >
+    Hello
+    <button
+      className="delete is-small"
+    />
+  </span>
+  <span
+    className="tag is-danger is-large"
+  >
+    World
+    <button
+      className="delete is-small"
+    />
+  </span>
 </div>
 `;
 
-exports[`Storyshots Elements/Tag Delete 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
+exports[`Storyshots Elements/Tag Default 1`] = `
+<span
+  className="tag"
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="tags"
-    >
-      <span
-        className="tag is-delete"
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Elements/Tag Light Colors 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="tags"
-    >
-      <span
-        className="tag is-primary is-light"
-      >
-        Primary
-      </span>
-      <span
-        className="tag is-link is-light"
-      >
-        Link
-      </span>
-      <span
-        className="tag is-info is-light"
-      >
-        Info
-      </span>
-      <span
-        className="tag is-warning is-light"
-      >
-        Warning
-      </span>
-      <span
-        className="tag is-danger is-light"
-      >
-        Danger
-      </span>
-    </div>
-  </div>
-</div>
+  Tag label
+</span>
 `;
 
 exports[`Storyshots Elements/Tag List Of Tags 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="tags"
   >
-    <div
-      className="box"
-      style={
-        Object {
-          "width": 540,
-        }
-      }
+    <span
+      className="tag"
     >
-      <div
-        className="tags"
-      >
-        <span
-          className="tag"
-        >
-          One
-        </span>
-        <span
-          className="tag"
-        >
-          Two
-        </span>
-        <span
-          className="tag"
-        >
-          Three
-        </span>
-        <span
-          className="tag"
-        >
-          Four
-        </span>
-        <span
-          className="tag"
-        >
-          Five
-        </span>
-        <span
-          className="tag"
-        >
-          Six
-        </span>
-        <span
-          className="tag"
-        >
-          Seven
-        </span>
-        <span
-          className="tag"
-        >
-          Eight
-        </span>
-        <span
-          className="tag"
-        >
-          Nine
-        </span>
-        <span
-          className="tag"
-        >
-          Ten
-        </span>
-        <span
-          className="tag"
-        >
-          Eleven
-        </span>
-        <span
-          className="tag"
-        >
-          Twelve
-        </span>
-        <span
-          className="tag"
-        >
-          Thirteen
-        </span>
-        <span
-          className="tag"
-        >
-          Fourteen
-        </span>
-        <span
-          className="tag"
-        >
-          Fifteen
-        </span>
-        <span
-          className="tag"
-        >
-          Sixteen
-        </span>
-        <span
-          className="tag"
-        >
-          Seventeen
-        </span>
-        <span
-          className="tag"
-        >
-          Eighteen
-        </span>
-        <span
-          className="tag"
-        >
-          Nineteen
-        </span>
-        <span
-          className="tag"
-        >
-          Twenty
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
+      One
+    </span>
+    <span
+      className="tag"
+    >
+      Two
+    </span>
+    <span
+      className="tag"
+    >
+      Three
+    </span>
+  </div>,
+  <div
+    className="tags"
+  >
+    <span
+      className="tag"
+    >
+      One
+    </span>
+    <span
+      className="tag"
+    >
+      Two
+    </span>
+    <span
+      className="tag"
+    >
+      Three
+    </span>
+    <span
+      className="tag"
+    >
+      Four
+    </span>
+    <span
+      className="tag"
+    >
+      Five
+    </span>
+    <span
+      className="tag"
+    >
+      Six
+    </span>
+    <span
+      className="tag"
+    >
+      Seven
+    </span>
+    <span
+      className="tag"
+    >
+      Eight
+    </span>
+    <span
+      className="tag"
+    >
+      Nine
+    </span>
+    <span
+      className="tag"
+    >
+      Ten
+    </span>
+    <span
+      className="tag"
+    >
+      Eleven
+    </span>
+    <span
+      className="tag"
+    >
+      Twelve
+    </span>
+    <span
+      className="tag"
+    >
+      Thirteen
+    </span>
+    <span
+      className="tag"
+    >
+      Fourteen
+    </span>
+    <span
+      className="tag"
+    >
+      Fifteen
+    </span>
+    <span
+      className="tag"
+    >
+      Sixteen
+    </span>
+    <span
+      className="tag"
+    >
+      Seventeen
+    </span>
+    <span
+      className="tag"
+    >
+      Eighteen
+    </span>
+    <span
+      className="tag"
+    >
+      Nineteen
+    </span>
+    <span
+      className="tag"
+    >
+      Twenty
+    </span>
+  </div>,
+]
 `;
 
-exports[`Storyshots Elements/Tag Rounded 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+exports[`Storyshots Elements/Tag Modifiers 1`] = `
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="tags"
   >
-    <div
-      className="tags"
+    <span
+      className="tag is-rounded"
     >
-      <span
-        className="tag is-rounded"
-      >
-        Rounded
-      </span>
-      <span
-        className="tag is-primary is-rounded"
-      >
-        Rounded
-      </span>
-      <span
-        className="tag is-link is-rounded"
-      >
-        Rounded
-      </span>
-      <span
-        className="tag is-info is-rounded"
-      >
-        Rounded
-      </span>
-      <span
-        className="tag is-success is-rounded"
-      >
-        Rounded
-      </span>
-      <span
-        className="tag is-danger is-rounded"
-      >
-        Rounded
-      </span>
-    </div>
-  </div>
-</div>
+      Rounded
+    </span>
+  </div>,
+  <div
+    className="tags"
+  >
+    <span
+      className="tag is-delete"
+    />
+  </div>,
+]
 `;
 
 exports[`Storyshots Elements/Tag Sizes 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
+Array [
   <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+    className="tags"
   >
-    <div
-      className="tags"
+    <span
+      className="tag is-link is-normal"
     >
-      <span
-        className="tag is-link is-normal"
-      >
-        Normal
-      </span>
-      <span
-        className="tag is-primary is-medium"
-      >
-        Medium
-      </span>
-      <span
-        className="tag is-info is-large"
-      >
-        Large
-      </span>
-    </div>
-    <div
-      className="tags are-medium"
+      Normal
+    </span>
+    <span
+      className="tag is-primary is-medium"
     >
-      <span
-        className="tag"
-      >
-        All
-      </span>
-      <span
-        className="tag"
-      >
-        Medium
-      </span>
-      <span
-        className="tag"
-      >
-        Size
-      </span>
-    </div>
-    <div
-      className="tags are-large"
+      Medium
+    </span>
+    <span
+      className="tag is-info is-large"
     >
-      <span
-        className="tag"
-      >
-        All
-      </span>
-      <span
-        className="tag"
-      >
-        Large
-      </span>
-      <span
-        className="tag"
-      >
-        Size
-      </span>
-    </div>
-    <div
-      className="tags"
+      Large
+    </span>
+  </div>,
+  <div
+    className="tags are-medium"
+  >
+    <span
+      className="tag"
     >
-      <span
-        className="tag"
-      >
-        Normal
-      </span>
-      <span
-        className="tag is-medium"
-      >
-        Medium
-      </span>
-      <span
-        className="tag"
-      >
-        Normal
-      </span>
-      <span
-        className="tag is-large"
-      >
-        Large
-      </span>
-      <span
-        className="tag"
-      >
-        Normal
-      </span>
-    </div>
-  </div>
-</div>
+      All
+    </span>
+    <span
+      className="tag"
+    >
+      Medium
+    </span>
+    <span
+      className="tag"
+    >
+      Size
+    </span>
+  </div>,
+  <div
+    className="tags are-large"
+  >
+    <span
+      className="tag"
+    >
+      All
+    </span>
+    <span
+      className="tag"
+    >
+      Large
+    </span>
+    <span
+      className="tag"
+    >
+      Size
+    </span>
+  </div>,
+  <div
+    className="tags"
+  >
+    <span
+      className="tag is-medium"
+    >
+      Medium
+    </span>
+    <span
+      className="tag"
+    >
+      Normal
+    </span>
+    <span
+      className="tag is-medium"
+    >
+      Medium
+    </span>
+    <span
+      className="tag is-large"
+    >
+      Large
+    </span>
+    <span
+      className="tag is-medium"
+    >
+      Medium
+    </span>
+  </div>,
+]
 `;
 
 exports[`Storyshots Elements/Title Default 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+Array [
+  <h1
+    className="title is-1"
   >
-    <h1
-      className="title is-1"
-    >
-      Title 1
-    </h1>
-    <h2
-      className="title is-2"
-    >
-      Title 2
-    </h2>
-    <h3
-      className="title is-3"
-    >
-      Title 3 (default size)
-    </h3>
-    <h4
-      className="title is-4"
-    >
-      Title 4
-    </h4>
-    <h5
-      className="title is-5"
-    >
-      Title 5
-    </h5>
-    <h6
-      className="title is-6"
-    >
-      Title 6
-    </h6>
-    <h1
-      className="subtitle is-1"
-    >
-      Subtitle 1
-    </h1>
-    <h2
-      className="subtitle is-2"
-    >
-      Subtitle 2
-    </h2>
-    <h3
-      className="subtitle is-3"
-    >
-      Subtitle 3
-    </h3>
-    <h4
-      className="subtitle is-4"
-    >
-      Subtitle 4
-    </h4>
-    <h5
-      className="subtitle is-5"
-    >
-      Subtitle 5 (default size)
-    </h5>
-    <h6
-      className="subtitle is-6"
-    >
-      Subtitle 6
-    </h6>
-  </div>
-</div>
+    Title
+  </h1>,
+  <h2
+    className="subtitle is-2"
+  >
+    SubTitle
+  </h2>,
+]
+`;
+
+exports[`Storyshots Elements/Title Sizes 1`] = `
+Array [
+  <h1
+    className="title is-1"
+  >
+    Title 1
+  </h1>,
+  <h2
+    className="title is-2"
+  >
+    Title 2
+  </h2>,
+  <h3
+    className="title is-3"
+  >
+    Title 3 (default size)
+  </h3>,
+  <h4
+    className="title is-4"
+  >
+    Title 4
+  </h4>,
+  <h5
+    className="title is-5"
+  >
+    Title 5
+  </h5>,
+  <h6
+    className="title is-6"
+  >
+    Title 6
+  </h6>,
+  <h1
+    className="subtitle is-1"
+  >
+    Subtitle 1
+  </h1>,
+  <h2
+    className="subtitle is-2"
+  >
+    Subtitle 2
+  </h2>,
+  <h3
+    className="subtitle is-3"
+  >
+    Subtitle 3
+  </h3>,
+  <h4
+    className="subtitle is-4"
+  >
+    Subtitle 4
+  </h4>,
+  <h5
+    className="subtitle is-5"
+  >
+    Subtitle 5 (default size)
+  </h5>,
+  <h6
+    className="subtitle is-6"
+  >
+    Subtitle 6
+  </h6>,
+]
 `;
 
 exports[`Storyshots Elements/Title Spaced 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "bottom": "0",
-      "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
+Array [
+  <h1
+    className="title is-1 is-spaced"
   >
-    <div
-      className="title is-spaced"
-    >
-      Title 3
-    </div>
-    <div
-      className="subtitle"
-    >
-      Subtitle 5
-    </div>
-  </div>
-</div>
+    Title 1
+  </h1>,
+  <h3
+    className="subtitle is-3"
+  >
+    Subtitle 3
+  </h3>,
+  <h2
+    className="title is-2 is-spaced"
+  >
+    Title 2
+  </h2>,
+  <h4
+    className="subtitle is-4"
+  >
+    Subtitle 4
+  </h4>,
+  <div
+    className="title is-spaced"
+  >
+    Title 3
+  </div>,
+  <div
+    className="subtitle"
+  >
+    Subtitle 5
+  </div>,
+]
 `;
 
 exports[`Storyshots Helpers/withColor Has Background 1`] = `
 <div
+  className="box has-background-primary has-text-white"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box has-background-primary has-text-white"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      has-background-primary
-    </div>
-  </div>
+  has-background-primary
 </div>
 `;
 
 exports[`Storyshots Helpers/withColor Has Text 1`] = `
 <div
+  className="box has-text-primary"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box has-text-primary"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      has-text-primary
-    </div>
-  </div>
+  has-text-primary
 </div>
 `;
 
 exports[`Storyshots Helpers/withOther Clearfix 1`] = `
 <div
+  className="box is-clearfix"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-clearfix"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-clearfix
-    </div>
-  </div>
+  is-clearfix
 </div>
 `;
 
 exports[`Storyshots Helpers/withOther Clipped 1`] = `
 <div
+  className="box is-clipped"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-clipped"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-overlay
-    </div>
-  </div>
+  is-overlay
 </div>
 `;
 
 exports[`Storyshots Helpers/withOther Overlay 1`] = `
 <div
+  className="box is-overlay"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-overlay"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-overlay
-    </div>
-  </div>
+  is-overlay
 </div>
 `;
 
 exports[`Storyshots Helpers/withOther Pulled Left 1`] = `
 <div
+  className="box is-pulled-left"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-pulled-left"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-pulled-left
-    </div>
-  </div>
+  is-pulled-left
 </div>
 `;
 
 exports[`Storyshots Helpers/withOther Pulled Right 1`] = `
 <div
+  className="box is-pulled-right"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-pulled-right"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-pulled-right
-    </div>
-  </div>
+  is-pulled-right
 </div>
 `;
 
 exports[`Storyshots Helpers/withOther Radiusless 1`] = `
 <div
+  className="box is-radiusless"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-radiusless"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-radiusless
-    </div>
-  </div>
+  is-radiusless
 </div>
 `;
 
 exports[`Storyshots Helpers/withOther Relative 1`] = `
 <div
+  className="box is-relative"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-relative"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-relative
-    </div>
-  </div>
+  is-relative
 </div>
 `;
 
 exports[`Storyshots Helpers/withOther Shadowless 1`] = `
 <div
+  className="box is-shadowless"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-shadowless"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-shadowless
-    </div>
-  </div>
+  is-shadowless
 </div>
 `;
 
 exports[`Storyshots Helpers/withOther Unselectable 1`] = `
 <div
+  className="box is-unselectable"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-unselectable"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-unselectable
-    </div>
-  </div>
+  is-unselectable
 </div>
 `;
 
 exports[`Storyshots Helpers/withResponsive Hidden 1`] = `
 <div
+  className="box is-hidden"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-hidden"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-hidden
-    </div>
-  </div>
+  is-hidden
 </div>
 `;
 
 exports[`Storyshots Helpers/withResponsive Invisible 1`] = `
 <div
+  className="box is-invisible"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-invisible"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-invisible
-    </div>
-  </div>
+  is-invisible
 </div>
 `;
 
 exports[`Storyshots Helpers/withResponsive Is Flex 1`] = `
 <div
+  className="box is-flex"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-flex"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-flex
-    </div>
-  </div>
+  is-flex
 </div>
 `;
 
 exports[`Storyshots Helpers/withResponsive Is Flex Mobile 1`] = `
 <div
+  className="box is-flex-mobile"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-flex-mobile"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-flex-mobile
-    </div>
-  </div>
+  is-flex-mobile
 </div>
 `;
 
 exports[`Storyshots Helpers/withResponsive Sr Only 1`] = `
 <div
+  className="box is-sr-only"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box is-sr-only"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      is-sr-only
-    </div>
-  </div>
+  is-sr-only
 </div>
 `;
 
 exports[`Storyshots Helpers/withSpacing Margin Top 6 1`] = `
 <div
+  className="box mt-6"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box mt-6"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      margin-top-6
-    </div>
-  </div>
+  margin-top-6
 </div>
 `;
 
 exports[`Storyshots Helpers/withSpacing Padding Top 6 1`] = `
 <div
+  className="box pt-6"
   style={
     Object {
       "alignItems": "center",
-      "bottom": "0",
       "display": "flex",
-      "left": "0",
-      "overflow": "auto",
-      "position": "fixed",
-      "right": "0",
-      "top": "0",
+      "height": 380,
+      "justifyContent": "center",
+      "width": 540,
     }
   }
 >
-  <div
-    style={
-      Object {
-        "margin": "auto",
-        "maxHeight": "100%",
-      }
-    }
-  >
-    <div
-      className="box pt-6"
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "height": 380,
-          "justifyContent": "center",
-          "width": 540,
-        }
-      }
-    >
-      padding-top-6
-    </div>
-  </div>
+  padding-top-6
 </div>
 `;
 

@@ -6,7 +6,7 @@ import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 import { properRange } from 'lib/utils'
 
-export interface TileProps extends Omit<CommonProps, 'size'> {
+export interface TileProps extends CommonProps {
   ancestor?: boolean
   parent?: boolean
   child?: boolean
@@ -42,8 +42,6 @@ const Tile: React.FC<TileProps> = ({ children, className, ...props }) => {
 }
 
 Tile.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   ancestor: PropTypes.bool,
   parent: PropTypes.bool,
   child: PropTypes.bool,

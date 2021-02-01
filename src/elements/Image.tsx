@@ -5,25 +5,11 @@ import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
-export interface ImageProps extends Omit<CommonProps, 'size'> {
+export interface ImageProps extends CommonProps {
   src?: string
   alt?: string
   imgProps?: React.ImgHTMLAttributes<HTMLImageElement>
-  size?:
-    | 16
-    | '16'
-    | 24
-    | '24'
-    | 32
-    | '32'
-    | 48
-    | '48'
-    | 64
-    | '64'
-    | 96
-    | '96'
-    | 128
-    | '128'
+  size?: 16 | '16' | 24 | '24' | 32 | '32' | 48 | '48' | 64 | '64' | 96 | '96' | 128 | '128'
   rounded?: boolean
   square?: boolean
   by?: string
@@ -46,16 +32,12 @@ const Image: React.FC<ImageProps> = ({ children, className, ...props }) => {
 
   return (
     <ElementType {...rest} className={classes}>
-      {children || (
-        <img {...imgProps} className={imgClassName} src={src} alt={alt} />
-      )}
+      {children || <img {...imgProps} className={imgClassName} src={src} alt={alt} />}
     </ElementType>
   )
 }
 
 Image.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   src: PropTypes.string,
   alt: PropTypes.string,
   imgProps: PropTypes.object,

@@ -34,8 +34,6 @@ const Media: React.FC<MediaProps> = ({ children, className, ...props }) => {
 }
 
 Media.propTypes = {
-  as: PropTypes.string,
-  className: PropTypes.string,
   left: PropTypes.bool,
   right: PropTypes.bool,
   content: PropTypes.bool,
