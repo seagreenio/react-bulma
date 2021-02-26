@@ -2642,6 +2642,1075 @@ exports[`Storyshots Components/Navbar Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Pagination Default 1`] = `
+Array [
+  <nav
+    aria-label="pagination"
+    className="pagination"
+    role="navigation"
+  >
+    <a
+      className="pagination-previous"
+      role="navigation"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next"
+      role="navigation"
+    >
+      Next page
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          aria-label="Goto page 1"
+          className="pagination-link"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 45"
+          className="pagination-link"
+        >
+          45
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          aria-label="Goto page 46"
+          className="pagination-link is-current"
+        >
+          46
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 47"
+          className="pagination-link"
+        >
+          47
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 86"
+          className="pagination-link"
+        >
+          86
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="pagination"
+    className="pagination is-centered"
+    role="navigation"
+  >
+    <a
+      className="pagination-previous"
+      role="navigation"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next"
+      role="navigation"
+    >
+      Next page
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          aria-label="Goto page 1"
+          className="pagination-link"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 45"
+          className="pagination-link"
+        >
+          45
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          aria-label="Goto page 46"
+          className="pagination-link is-current"
+        >
+          46
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 47"
+          className="pagination-link"
+        >
+          47
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 86"
+          className="pagination-link"
+        >
+          86
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="pagination"
+    className="pagination is-right"
+    role="navigation"
+  >
+    <a
+      className="pagination-previous"
+      role="navigation"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next"
+      role="navigation"
+    >
+      Next page
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          aria-label="Goto page 1"
+          className="pagination-link"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 45"
+          className="pagination-link"
+        >
+          45
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          aria-label="Goto page 46"
+          className="pagination-link is-current"
+        >
+          46
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 47"
+          className="pagination-link"
+        >
+          47
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 86"
+          className="pagination-link"
+        >
+          86
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="pagination"
+    className="pagination is-rounded"
+    role="navigation"
+  >
+    <a
+      className="pagination-previous"
+      role="navigation"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next"
+      role="navigation"
+    >
+      Next page
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          aria-label="Goto page 1"
+          className="pagination-link"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 45"
+          className="pagination-link"
+        >
+          45
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          aria-label="Goto page 46"
+          className="pagination-link is-current"
+        >
+          46
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 47"
+          className="pagination-link"
+        >
+          47
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 86"
+          className="pagination-link"
+        >
+          86
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="pagination"
+    className="pagination is-small"
+    role="navigation"
+  >
+    <a
+      className="pagination-previous"
+      role="navigation"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next"
+      role="navigation"
+    >
+      Next page
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          aria-label="Goto page 1"
+          className="pagination-link"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 45"
+          className="pagination-link"
+        >
+          45
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          aria-label="Goto page 46"
+          className="pagination-link is-current"
+        >
+          46
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 47"
+          className="pagination-link"
+        >
+          47
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 86"
+          className="pagination-link"
+        >
+          86
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="pagination"
+    className="pagination is-medium"
+    role="navigation"
+  >
+    <a
+      className="pagination-previous"
+      role="navigation"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next"
+      role="navigation"
+    >
+      Next page
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          aria-label="Goto page 1"
+          className="pagination-link"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 45"
+          className="pagination-link"
+        >
+          45
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          aria-label="Goto page 46"
+          className="pagination-link is-current"
+        >
+          46
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 47"
+          className="pagination-link"
+        >
+          47
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 86"
+          className="pagination-link"
+        >
+          86
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <nav
+    aria-label="pagination"
+    className="pagination is-large"
+    role="navigation"
+  >
+    <a
+      className="pagination-previous"
+      role="navigation"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next"
+      role="navigation"
+    >
+      Next page
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          aria-label="Goto page 1"
+          className="pagination-link"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 45"
+          className="pagination-link"
+        >
+          45
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          aria-label="Goto page 46"
+          className="pagination-link is-current"
+        >
+          46
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 47"
+          className="pagination-link"
+        >
+          47
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          aria-label="Goto page 86"
+          className="pagination-link"
+        >
+          86
+        </a>
+      </li>
+    </ul>
+  </nav>,
+]
+`;
+
+exports[`Storyshots Components/Tabs Alignment 1`] = `
+Array [
+  <div
+    className="tabs is-centered"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="tabs is-right"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Tabs Default 1`] = `
+<div
+  className="tabs"
+>
+  <ul>
+    <li
+      className="is-active"
+      onClick={[Function]}
+    >
+      <a>
+        Pictures
+      </a>
+    </li>
+    <li
+      className=""
+      onClick={[Function]}
+    >
+      <a>
+        Music
+      </a>
+    </li>
+    <li
+      className=""
+      onClick={[Function]}
+    >
+      <a>
+        Videos
+      </a>
+    </li>
+    <li
+      className=""
+      onClick={[Function]}
+    >
+      <a>
+        Documents
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/Tabs Icons 1`] = `
+<div
+  className="tabs is-centered"
+>
+  <ul>
+    <li
+      className="is-active"
+    >
+      <a>
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fas fa-image"
+          />
+        </span>
+        Pictures
+      </a>
+    </li>
+    <li
+      className=""
+    >
+      <a>
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fas fa-music"
+          />
+        </span>
+        Music
+      </a>
+    </li>
+    <li
+      className=""
+    >
+      <a>
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fas fa-file"
+          />
+        </span>
+        Videos
+      </a>
+    </li>
+    <li
+      className=""
+    >
+      <a>
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fas fa-file-alt"
+          />
+        </span>
+        Documents
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/Tabs Sizes 1`] = `
+Array [
+  <div
+    className="tabs is-small"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="tabs is-medium"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="tabs is-large"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Tabs Styles 1`] = `
+Array [
+  <div
+    className="tabs is-boxed"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-image"
+            />
+          </span>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-music"
+            />
+          </span>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-file"
+            />
+          </span>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-file-alt"
+            />
+          </span>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="tabs is-toggle"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-image"
+            />
+          </span>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-music"
+            />
+          </span>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-file"
+            />
+          </span>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-file-alt"
+            />
+          </span>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="tabs is-toggle-rounded"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-image"
+            />
+          </span>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-music"
+            />
+          </span>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-file"
+            />
+          </span>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fas fa-file-alt"
+            />
+          </span>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="tabs is-fullwidth"
+  >
+    <ul>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon"
+          >
+            <i
+              className="fas fa-angle-left"
+            />
+          </span>
+          Left
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon"
+          >
+            <i
+              className="fas fa-angle-up"
+            />
+          </span>
+          Up
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          <span
+            className="icon"
+          >
+            <i
+              className="fas fa-angle-right"
+            />
+          </span>
+          Right
+        </a>
+      </li>
+    </ul>
+  </div>,
+]
+`;
+
 exports[`Storyshots Elements/Block Default 1`] = `
 Array [
   <div
@@ -5536,6 +6605,38 @@ Array [
     Subtitle 5
   </div>,
 ]
+`;
+
+exports[`Storyshots Form/Field Default 1`] = `
+<div
+  className="field"
+>
+  <div
+    0="c"
+    1="o"
+    2="n"
+    3="t"
+    4="r"
+    5="o"
+    6="l"
+  >
+    <label
+      className="label"
+    >
+      Label
+    </label>
+    <input
+      className="input"
+      placeholder="Text input"
+      type="text"
+    />
+    <p
+      className="help"
+    >
+      This is a help text
+    </p>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Helpers/withColor Has Background 1`] = `

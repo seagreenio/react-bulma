@@ -117,3 +117,24 @@ export type { NavbarDropdownProps } from './NavbarDropdown'
 
 export { default as NavbarDivider } from './NavbarDivider'
 export type { NavbarDividerProps } from './NavbarDivider'
+
+export { default as Pagination } from './Pagination'
+export type { PaginationProps } from './Pagination'
+
+export { default as PaginationDirection } from './PaginationDirection'
+export type { PaginationDirectionProps } from './PaginationDirection'
+
+export { default as PaginationList } from './PaginationList'
+export type { PaginationListProps } from './PaginationList'
+
+export { default as PaginationLink } from './PaginationLink'
+export type { PaginationLinkProps } from './PaginationLink'
+
+export { default as PaginationEllipsis } from './PaginationEllipsis'
+export type { PaginationEllipsisProps } from './PaginationEllipsis'
+
+export { default as Tabs } from './Tabs'
+export type { TabsProps } from './Tabs'
+
+export { default as Tab } from './Tab'
+export type { TabProps } from './Tab'

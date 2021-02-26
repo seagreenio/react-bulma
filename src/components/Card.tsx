@@ -1,5 +1,4 @@
 import CommonProps from '../types/CommonProps'
-import PropTypes from 'prop-types'
 import React from 'react'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'

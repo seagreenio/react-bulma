@@ -5,8 +5,9 @@ import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
-export interface PaginationDirectionProps extends CommonProps {
+export interface PaginationDirectionProps extends CommonProps<HTMLAnchorElement> {
   direction: 'previous' | 'next'
+  disabled?: boolean
 }
 
 const PaginationDirection: React.FC<PaginationDirectionProps> = ({ children, className, ...props }) => {
@@ -26,7 +27,7 @@ PaginationDirection.propTypes = {
 }
 
 PaginationDirection.defaultProps = {
-  as: 'nav',
+  as: 'a',
 }
 
 export default PaginationDirection

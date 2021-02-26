@@ -10,18 +10,22 @@ import getUnhandledProps from 'lib/getUnhandledProps'
 export interface IconProps extends CommonProps {
   name?: string
   size?: Size | SizeType
+  alignment?: 'left' | 'right'
 }
 
 const Icon: React.FC<IconProps> = ({ className, ...props }) => {
+  const { name, size, alignment } = props
+
   const rest = getUnhandledProps(Icon, props)
   const ElementType = detectElementType(Icon, props)
   const classes = cx('icon', className, {
-    [`is-${props.size}`]: props.size,
+    [`is-${size}`]: size,
+    [`is-${alignment}`]: alignment,
   })
 
   return (
     <ElementType {...rest} className={classes}>
-      <i className={props.name} />
+      <i className={name} />
     </ElementType>
   )
 }
@@ -29,6 +33,7 @@ const Icon: React.FC<IconProps> = ({ className, ...props }) => {
 Icon.propTypes = {
   name: PropTypes.string,
   size: PropTypes.string as any,
+  alignment: PropTypes.oneOf(['left', 'right']),
 }
 
 Icon.defaultProps = {
