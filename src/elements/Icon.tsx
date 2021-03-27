@@ -32,7 +32,7 @@ const Icon: React.FC<IconProps> = ({ className, ...props }) => {
 
 Icon.propTypes = {
   name: PropTypes.string,
-  size: PropTypes.string as any,
+  size: PropTypes.any,
   alignment: PropTypes.oneOf(['left', 'right']),
 }
 

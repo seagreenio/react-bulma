@@ -9,42 +9,59 @@ import getUnhandledProps from 'lib/getUnhandledProps'
 
 export interface FieldProps extends CommonProps {
   label?: React.ReactNode
+  labelSize?: Size | SizeType
   help?: React.ReactNode
-  loading?: boolean
-  size?: Size | SizeType
-  hasIcons?: 'left' | 'right' | 'all'
+  hasAddons?: boolean
+  horizontal?: boolean
+  grouped?: boolean
+  groupedMultiline?: boolean
 }
 
 const Field: React.FC<FieldProps> = ({ children, className, ...props }) => {
-  const { label, help, loading, size, hasIcons } = props
+  const { label, labelSize, help, hasAddons, horizontal, grouped, groupedMultiline } = props
 
   const rest = getUnhandledProps(Field, props)
   const ElementType = detectElementType(Field, props)
-  const classes = cx('field', className)
-  const controlClasses = cx('control', {
-    'is-loading': loading,
-    [`is-${size}`]: size,
-    'has-icons-left': hasIcons === 'left' || hasIcons === 'all',
-    'has-icons-right': hasIcons === 'right' || hasIcons === 'all',
+  const classes = cx('field', className, {
+    'has-addons': hasAddons,
+    'is-horizontal': horizontal,
+    'is-grouped': grouped,
+    'is-grouped-multiline': groupedMultiline,
+  })
+  const fieldLabelClasses = cx('field-label', {
+    [`is-${labelSize}`]: labelSize,
   })
 
   return (
     <ElementType {...rest} className={classes}>
-      <div {...controlClasses}>
-        {label && <label className="label">{label}</label>}
-        {children}
-        {help && <p className="help">{help}</p>}
-      </div>
+      {label &&
+        (horizontal ? (
+          <div className={fieldLabelClasses}>
+            <label className="label">{label}</label>
+          </div>
+        ) : (
+          <label className="label">{label}</label>
+        ))}
+      {horizontal ? (
+        <div className="field-body">
+          <div className="field">{children}</div>
+        </div>
+      ) : (
+        children
+      )}
+      {help && <p className="help">{help}</p>}
     </ElementType>
   )
 }
 
 Field.propTypes = {
   label: PropTypes.element,
+  labelSize: PropTypes.any,
   help: PropTypes.element,
-  loading: PropTypes.bool,
-  size: PropTypes.string as any,
-  hasIcons: PropTypes.oneOf(['left', 'right']),
+  hasAddons: PropTypes.bool,
+  horizontal: PropTypes.bool,
+  grouped: PropTypes.bool,
+  groupedMultiline: PropTypes.bool,
 }
 
 export default Field

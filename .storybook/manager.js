@@ -8,5 +8,4 @@ addons.setConfig({
     brandTitle: 'React ➕ Bulma',
     brandUrl: 'https://github.com/seagreenio/react-bulma',
   }),
-  panelPosition: 'right',
 })

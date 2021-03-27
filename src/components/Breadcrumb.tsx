@@ -34,7 +34,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ children, className, ...props }
 Breadcrumb.propTypes = {
   alignment: PropTypes.string as any,
   separator: PropTypes.string as any,
-  size: PropTypes.string as any,
+  size: PropTypes.any,
 }
 
 Breadcrumb.defaultProps = {

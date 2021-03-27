@@ -28,7 +28,7 @@ const Progress: React.FC<ProgressProps> = ({ children, className, ...props }) =>
 
 Progress.propTypes = {
   color: PropTypes.string as any,
-  size: PropTypes.string as any,
+  size: PropTypes.any,
   indeterminate: PropTypes.bool,
 }
 

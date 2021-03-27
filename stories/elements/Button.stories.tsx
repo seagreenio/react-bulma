@@ -1,4 +1,4 @@
-import { Button, Buttons, Icon } from '../..'
+import { Button, Buttons, Control, Field, Icon } from '../..'
 
 import ColorBox from '../utils/ColorBox'
 import React from 'react'
@@ -377,6 +377,43 @@ export const States = () => (
       </Button>
     </Buttons>
   </>
+)
+
+export const ButtonGroup = () => (
+  <Field grouped>
+    <Control>
+      <Button color="link">Save changes</Button>
+    </Control>
+    <Control>
+      <Button>Cancel</Button>
+    </Control>
+    <Control>
+      <Button color="danger">Delete post</Button>
+    </Control>
+  </Field>
+)
+
+export const ButtonAddons = () => (
+  <Field hasAddons>
+    <Control>
+      <Button>
+        <Icon name="fas fa-align-left" size="small" />
+        <span>Left</span>
+      </Button>
+    </Control>
+    <Control>
+      <Button>
+        <Icon name="fas fa-align-center" size="small" />
+        <span>Center</span>
+      </Button>
+    </Control>
+    <Control>
+      <Button>
+        <Icon name="fas fa-align-right" size="small" />
+        <span>Right</span>
+      </Button>
+    </Control>
+  </Field>
 )
 
 export const ListOfButtons = () => (

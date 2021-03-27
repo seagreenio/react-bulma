@@ -53,7 +53,7 @@ const Button: React.FC<ButtonProps> = ({ children, className, ...props }) => {
 Button.propTypes = {
   color: PropTypes.string as any,
   light: PropTypes.bool,
-  size: PropTypes.string as any,
+  size: PropTypes.any,
   fullwidth: PropTypes.bool,
   outlined: PropTypes.bool,
   inverted: PropTypes.bool,

@@ -24,7 +24,7 @@ const Buttons: React.FC<ButtonsProps> = ({ children, className, ...props }) => {
 }
 
 Buttons.propTypes = {
-  size: PropTypes.string as any,
+  size: PropTypes.any,
   addons: PropTypes.bool,
   align: PropTypes.string as any,
 }

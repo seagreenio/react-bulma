@@ -1,4 +1,4 @@
-import { Delete, Tag, Tags } from '../..'
+import { Control, Delete, Field, Tag, Tags } from '../..'
 
 import React from 'react'
 
@@ -154,5 +154,69 @@ export const Addons = () => (
       <Tag color="danger">Alex Smith</Tag>
       <Tag as="a" delete />
     </Tags>
+    <Field grouped groupedMultiline>
+      <Control>
+        <Tags addons>
+          <Tag color="dark">npm</Tag>
+          <Tag color="info">0.9.1</Tag>
+        </Tags>
+      </Control>
+      <Control>
+        <Tags addons>
+          <Tag color="dark">build</Tag>
+          <Tag color="success">passing</Tag>
+        </Tags>
+      </Control>
+      <Control>
+        <Tags addons>
+          <Tag color="dark">chat</Tag>
+          <Tag color="primary">on gitter</Tag>
+        </Tags>
+      </Control>
+    </Field>
+    <Field grouped groupedMultiline>
+      <Control>
+        <Tags addons>
+          <Tag color="link">Technology</Tag>
+          <Tag delete />
+        </Tags>
+      </Control>
+      <Control>
+        <Tags addons>
+          <Tag color="link">CSS</Tag>
+          <Tag delete />
+        </Tags>
+      </Control>
+      <Control>
+        <Tags addons>
+          <Tag color="link">Flexbox</Tag>
+          <Tag delete />
+        </Tags>
+      </Control>
+      <Control>
+        <Tags addons>
+          <Tag color="link">Web Design</Tag>
+          <Tag delete />
+        </Tags>
+      </Control>
+      <Control>
+        <Tags addons>
+          <Tag color="link">Open Source</Tag>
+          <Tag delete />
+        </Tags>
+      </Control>
+      <Control>
+        <Tags addons>
+          <Tag color="link">Community</Tag>
+          <Tag delete />
+        </Tags>
+      </Control>
+      <Control>
+        <Tags addons>
+          <Tag color="link">Documentation</Tag>
+          <Tag delete />
+        </Tags>
+      </Control>
+    </Field>
   </>
 )

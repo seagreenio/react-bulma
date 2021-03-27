@@ -39,7 +39,7 @@ const Tabs: React.FC<TabsProps> = ({ children, className, ...props }) => {
 
 Tabs.propTypes = {
   alignment: PropTypes.oneOf(['centered', 'right']),
-  size: PropTypes.string as any,
+  size: PropTypes.any,
   boxed: PropTypes.bool,
   toggle: PropTypes.bool,
   toggleRounded: PropTypes.bool,

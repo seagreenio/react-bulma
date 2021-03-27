@@ -51,7 +51,7 @@ Hero.propTypes = {
   foot: PropTypes.bool,
   color: PropTypes.string as any,
   bold: PropTypes.bool,
-  size: PropTypes.string as any,
+  size: PropTypes.any,
   fullheightWithNavbar: PropTypes.bool,
 }
 

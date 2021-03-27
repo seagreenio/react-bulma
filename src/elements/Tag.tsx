@@ -37,7 +37,7 @@ const Tag: React.FC<TagProps> = ({ children, className, ...props }) => {
 Tag.propTypes = {
   color: PropTypes.string as any,
   light: PropTypes.bool,
-  size: PropTypes.string as any,
+  size: PropTypes.any,
   rounded: PropTypes.bool,
   delete: PropTypes.bool,
 }

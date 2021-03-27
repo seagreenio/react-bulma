@@ -22,7 +22,7 @@ const Tags: React.FC<TagsProps> = ({ children, className, ...props }) => {
 }
 
 Tags.propTypes = {
-  size: PropTypes.string as any,
+  size: PropTypes.any,
   addons: PropTypes.bool,
 }
 

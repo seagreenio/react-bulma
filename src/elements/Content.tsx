@@ -26,7 +26,7 @@ const Content: React.FC<ContentProps> = ({ children, className, ...props }) => {
 }
 
 Content.propTypes = {
-  size: PropTypes.string as any,
+  size: PropTypes.any,
 }
 
 export default Content

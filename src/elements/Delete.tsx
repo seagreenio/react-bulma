@@ -22,7 +22,7 @@ const Delete: React.FC<DeleteProps> = ({ className, ...props }) => {
 }
 
 Delete.propTypes = {
-  size: PropTypes.string as any,
+  size: PropTypes.any,
 }
 
 Delete.defaultProps = {

@@ -34,7 +34,7 @@ const Pagination: React.FC<PaginationProps> = ({ children, className, ...props }
 Pagination.propTypes = {
   alignment: PropTypes.oneOf(['centered', 'right']),
   rounded: PropTypes.bool,
-  size: PropTypes.string as any,
+  size: PropTypes.any,
 }
 
 Pagination.defaultProps = {

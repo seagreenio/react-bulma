@@ -29,12 +29,12 @@ const Input: React.FC<InputProps> = ({ children, className, ...props }) => {
     'is-static': props.static,
   })
 
-  return <input {...rest} className={classes} />
+  return <input type="text" {...rest} className={classes} />
 }
 
 Input.propTypes = {
-  color: PropTypes.string as any,
-  size: PropTypes.string as any,
+  color: PropTypes.any,
+  size: PropTypes.any,
   rounded: PropTypes.bool,
   hovered: PropTypes.bool,
   focused: PropTypes.bool,

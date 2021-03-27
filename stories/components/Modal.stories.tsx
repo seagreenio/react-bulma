@@ -17,7 +17,7 @@ import {
 } from '../..'
 import React, { useState } from 'react'
 
-import text from '../utils/text'
+import { text } from '../utils/common'
 
 export default {
   title: 'Components/Modal',

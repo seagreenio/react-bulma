@@ -1,4 +1,4 @@
-import { Field, Input } from '../..'
+import { Control, Field, Input } from '../..'
 
 import React from 'react'
 
@@ -9,6 +9,8 @@ export default {
 
 export const Default = () => (
   <Field label="Label" help="This is a help text">
-    <Input type="text" placeholder="Text input" />
+    <Control>
+      <Input placeholder="Text input" />
+    </Control>
   </Field>
 )

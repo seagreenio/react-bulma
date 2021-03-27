@@ -31,7 +31,7 @@ const Message: React.FC<MessageProps> = ({ children, className, ...props }) => {
 
 Message.propTypes = {
   color: PropTypes.string as any,
-  size: PropTypes.string as any,
+  size: PropTypes.any,
 }
 
 export default Message
