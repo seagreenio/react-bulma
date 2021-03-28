@@ -10149,150 +10149,647 @@ exports[`Storyshots Helpers/withSpacing Padding Top 6 1`] = `
 
 exports[`Storyshots Layout/Container Default 1`] = `
 <div
-  className="section"
+  className="container"
 >
   <div
-    className="container has-background-info has-text-white"
-    style={
-      Object {
-        "alignItems": "center",
-        "display": "flex",
-        "height": "64px",
-        "justifyContent": "center",
-      }
-    }
+    className="notification is-primary"
   >
-    This is a Container
+    This container is 
+    <strong>
+      centered
+    </strong>
+     on desktop and larger viewports.
   </div>
 </div>
+`;
+
+exports[`Storyshots Layout/Container Desktop And Widescreen Maximum Widths 1`] = `
+Array [
+  <div
+    className="container is-max-undefined"
+  >
+    <div
+      className="notification is-primary"
+    >
+      This container has a 
+      <code>
+        max-width
+      </code>
+       of 
+      <code>
+        $desktop - $container-offset
+      </code>
+       on widescreen and fullhd.
+    </div>
+  </div>,
+  <div
+    className="block"
+  />,
+  <div
+    className="container is-max-undefined"
+  >
+    <div
+      className="notification is-primary"
+    >
+      This container has a max-width of $widescreen - $container-offset on fullhd.
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Layout/Container Fluid Container 1`] = `
+<div
+  className="container is-fluid"
+>
+  <div
+    className="notification is-primary"
+  >
+    This container is 
+    <strong>
+      fluid
+    </strong>
+    : it will have a 32px gap on either side, on any viewport size.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/Container Widescreen Or Full HD Only 1`] = `
+Array [
+  <div
+    className="container is-widescreen"
+  >
+    <div
+      className="notification is-primary"
+    >
+      This container is 
+      <strong>
+        fullwidth
+      </strong>
+       
+      <em>
+        until
+      </em>
+       the 
+      <code>
+        $widescreen
+      </code>
+       breakpoint.
+    </div>
+  </div>,
+  <div
+    className="block"
+  />,
+  <div
+    className="container is-fullhd"
+  >
+    <div
+      className="notification is-primary"
+    >
+      This container is 
+      <strong>
+        fullwidth
+      </strong>
+       
+      <em>
+        until
+      </em>
+       the 
+      <code>
+        $fullhd
+      </code>
+       breakpoint.
+    </div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Layout/Footer Default 1`] = `
 <footer
   className="footer"
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "justifyContent": "center",
-    }
-  }
 >
-  This is a Footer
+  <div
+    className="content has-text-centered"
+  >
+    <p>
+      <strong>
+        Bulma
+      </strong>
+       by 
+      <a
+        href="https://jgthms.com"
+      >
+        Jeremy Thomas
+      </a>
+      . The source code is licensed
+      <a
+        href="http://opensource.org/licenses/mit-license.php"
+      >
+        MIT
+      </a>
+      . The website content is licensed
+       
+      <a
+        href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+      >
+        CC BY NC SA 4.0
+      </a>
+      .
+    </p>
+  </div>
 </footer>
 `;
 
 exports[`Storyshots Layout/Hero Default 1`] = `
 <div
-  className="hero is-primary is-bold is-fullheight"
+  className="hero"
 >
   <div
     className="hero-body"
   >
-    <div
-      className="container"
+    <p
+      className="title"
     >
-      <h1
-        className="title"
-      >
-        Primary bold title
-      </h1>
-      <h2
-        className="subtitle"
-      >
-        Primary bold subtitle
-      </h2>
-    </div>
+      Hero title
+    </p>
+    <p
+      className="subtitle"
+    >
+      Hero subtitle
+    </p>
   </div>
 </div>
 `;
 
 exports[`Storyshots Layout/Level Default 1`] = `
 <div
-  className="section"
+  className="level"
 >
-  <nav
-    className="level"
+  <div
+    className="level-item has-text-centered"
+  >
+    <div>
+      <p
+        className="heading"
+      >
+        Tweets
+      </p>
+      <p
+        className="title"
+      >
+        3,456
+      </p>
+    </div>
+  </div>
+  <div
+    className="level-item has-text-centered"
+  >
+    <div>
+      <p
+        className="heading"
+      >
+        Following
+      </p>
+      <p
+        className="title"
+      >
+        123
+      </p>
+    </div>
+  </div>
+  <div
+    className="level-item has-text-centered"
+  >
+    <div>
+      <p
+        className="heading"
+      >
+        Followers
+      </p>
+      <p
+        className="title"
+      >
+        456K
+      </p>
+    </div>
+  </div>
+  <div
+    className="level-item has-text-centered"
+  >
+    <div>
+      <p
+        className="heading"
+      >
+        Likes
+      </p>
+      <p
+        className="title"
+      >
+        789
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/Media Default 1`] = `
+Array [
+  <article
+    className="media"
   >
     <div
-      className="level-item has-text-centered"
+      className="media-left"
     >
-      <div>
-        <p
-          className="heading"
-        >
-          Tweets
-        </p>
-        <p
-          className="title"
-        >
-          3,456
-        </p>
-      </div>
+      <figure
+        className="image is-64x64"
+      >
+        <img
+          src="https://bulma.io/images/placeholders/128x128.png"
+        />
+      </figure>
     </div>
     <div
-      className="level-item has-text-centered"
+      className="media-content"
     >
-      <div>
-        <p
-          className="heading"
-        >
-          Following
-        </p>
-        <p
-          className="title"
-        >
-          123
+      <div
+        className="content"
+      >
+        <p>
+          <strong>
+            John Smith
+          </strong>
+           
+          <small>
+            @johnsmith
+          </small>
+           
+          <small>
+            31m
+          </small>
+          <br />
+          
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
         </p>
       </div>
+      <nav
+        className="level is-mobile"
+      >
+        <div
+          className="level-left"
+        >
+          <a
+            className="level-item"
+          >
+            <span
+              className="icon is-small"
+            >
+              <i
+                className="fas fa-reply"
+              />
+            </span>
+          </a>
+          <a
+            className="level-item"
+          >
+            <span
+              className="icon is-small"
+            >
+              <i
+                className="fas fa-retweet"
+              />
+            </span>
+          </a>
+          <a
+            className="level-item"
+          >
+            <span
+              className="icon is-small"
+            >
+              <i
+                className="fas fa-heart"
+              />
+            </span>
+          </a>
+        </div>
+      </nav>
     </div>
     <div
-      className="level-item has-text-centered"
+      className="media-right"
     >
-      <div>
-        <p
-          className="heading"
-        >
-          Followers
-        </p>
-        <p
-          className="title"
-        >
-          456K
-        </p>
-      </div>
+      <button
+        className="delete"
+      />
+    </div>
+  </article>,
+  <article
+    className="media"
+  >
+    <div
+      className="media-left"
+    >
+      <figure
+        className="image is-64x64"
+      >
+        <img
+          src="https://bulma.io/images/placeholders/128x128.png"
+        />
+      </figure>
     </div>
     <div
-      className="level-item has-text-centered"
+      className="media-content"
     >
-      <div>
-        <p
-          className="heading"
+      <div
+        className="field"
+      >
+        <div
+          className="control"
         >
-          Likes
-        </p>
-        <p
-          className="title"
+          <textarea
+            className="textarea"
+            placeholder="Add a comment..."
+          />
+        </div>
+      </div>
+      <nav
+        className="level is-mobile"
+      >
+        <div
+          className="level-left"
         >
-          789
+          <button
+            className="button is-info"
+          >
+            Submit
+          </button>
+        </div>
+        <div
+          className="level-right"
+        >
+          <label
+            className="checkbox"
+          >
+            <input
+              type="checkbox"
+            />
+             Press enter to submit
+          </label>
+        </div>
+      </nav>
+    </div>
+  </article>,
+]
+`;
+
+exports[`Storyshots Layout/Media Nesting 1`] = `
+Array [
+  <article
+    className="media"
+  >
+    <div
+      className="media-left"
+    >
+      <figure
+        className="image is-64x64"
+      >
+        <img
+          src="https://bulma.io/images/placeholders/128x128.png"
+        />
+      </figure>
+    </div>
+    <div
+      className="media-content"
+    >
+      <div
+        className="content"
+      >
+        <p>
+          <strong>
+            Barbara Middleton
+          </strong>
+          <br />
+          
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          <br />
+          <small>
+            <a>
+              Like
+            </a>
+             · 
+            <a>
+              Reply
+            </a>
+             · 3 hrs
+          </small>
         </p>
+        <article
+          className="media"
+        >
+          <div
+            className="media-left"
+          >
+            <figure
+              className="image is-48x48"
+            >
+              <img
+                src="https://bulma.io/images/placeholders/96x96.png"
+              />
+            </figure>
+          </div>
+          <div
+            className="media-content"
+          >
+            <div
+              className="content"
+            >
+              <p>
+                <strong>
+                  Sean Brown
+                </strong>
+                <br />
+                
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                <br />
+                <small>
+                  <a>
+                    Like
+                  </a>
+                   · 
+                  <a>
+                    Reply
+                  </a>
+                   · 2 hrs
+                </small>
+              </p>
+            </div>
+            <article
+              className="media"
+            >
+              
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            </article>
+            <article
+              className="media"
+            >
+              
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            </article>
+          </div>
+        </article>
+        <article
+          className="media"
+        >
+          <div
+            className="media-left"
+          >
+            <figure
+              className="image is-48x48"
+            >
+              <img
+                src="https://bulma.io/images/placeholders/96x96.png"
+              />
+            </figure>
+          </div>
+          <div
+            className="media-content"
+          >
+            <div
+              className="content"
+            >
+              <p>
+                <strong>
+                  Kayli Eunice 
+                </strong>
+                <br />
+                
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                <br />
+                <small>
+                  <a>
+                    Like
+                  </a>
+                   · 
+                  <a>
+                    Reply
+                  </a>
+                   · 2 hrs
+                </small>
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
-  </nav>
-</div>
+  </article>,
+  <article
+    className="media"
+  >
+    <div
+      className="media-left"
+    >
+      <figure
+        className="image is-64x64"
+      >
+        <img
+          src="https://bulma.io/images/placeholders/128x128.png"
+        />
+      </figure>
+    </div>
+    <div
+      className="media-content"
+    >
+      <div
+        className="field"
+      >
+        <div
+          className="control"
+        >
+          <textarea
+            className="textarea"
+            placeholder="Add a comment..."
+          />
+        </div>
+      </div>
+      <div
+        className="field"
+      >
+        <div
+          className="control"
+        >
+          <button
+            className="button"
+          >
+            Post comment
+          </button>
+        </div>
+      </div>
+    </div>
+  </article>,
+]
 `;
 
 exports[`Storyshots Layout/Section Default 1`] = `
 <div
-  className="section has-background-info has-text-white"
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "justifyContent": "center",
-    }
-  }
+  className="section"
 >
-  This is a Section
+  <h1
+    className="title is-1"
+  >
+    Section
+  </h1>
+  <h2
+    className="subtitle is-2"
+  >
+    A simple container to divide your page into 
+    <strong>
+      sections
+    </strong>
+    , like the one you're currently reading.
+  </h2>
 </div>
+`;
+
+exports[`Storyshots Layout/Section Sizes 1`] = `
+Array [
+  <div
+    className="section is-medium"
+  >
+    <h1
+      className="title is-1"
+    >
+      Medium Section
+    </h1>
+    <h2
+      className="subtitle is-2"
+    >
+      A simple container to divide your page into 
+      <strong>
+        sections
+      </strong>
+      , like the one you're currently reading.
+    </h2>
+  </div>,
+  <div
+    className="section is-large"
+  >
+    <h1
+      className="title is-1"
+    >
+      Large Section
+    </h1>
+    <h2
+      className="subtitle is-2"
+    >
+      A simple container to divide your page into 
+      <strong>
+        sections
+      </strong>
+      , like the one you're currently reading.
+    </h2>
+  </div>,
+]
 `;

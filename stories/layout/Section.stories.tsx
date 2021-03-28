@@ -1,14 +1,6 @@
-import { Section, SectionProps, withColor } from '../..'
+import { Section, Subtitle, Title } from '../..'
 
 import React from 'react'
-
-const ColorSection = withColor<SectionProps>(Section)
-
-const style = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-}
 
 export default {
   title: 'Layout/Section',
@@ -16,7 +8,27 @@ export default {
 }
 
 export const Default = () => (
-  <ColorSection style={style} hasText="white" hasBackground="info">
-    This is a Section
-  </ColorSection>
+  <Section>
+    <Title as="h1">Section</Title>
+    <Subtitle as="h2">
+      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+    </Subtitle>
+  </Section>
+)
+
+export const Sizes = () => (
+  <>
+    <Section size="medium">
+      <Title as="h1">Medium Section</Title>
+      <Subtitle as="h2">
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+      </Subtitle>
+    </Section>
+    <Section size="large">
+      <Title as="h1">Large Section</Title>
+      <Subtitle as="h2">
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+      </Subtitle>
+    </Section>
+  </>
 )

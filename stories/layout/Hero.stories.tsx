@@ -1,4 +1,4 @@
-import { Container, Hero } from '../..'
+import { Hero, Subtitle, Title } from '../..'
 
 import React from 'react'
 
@@ -8,12 +8,10 @@ export default {
 }
 
 export const Default = () => (
-  <Hero color="primary" size="fullheight" bold>
+  <Hero>
     <Hero body>
-      <Container>
-        <h1 className="title">Primary bold title</h1>
-        <h2 className="subtitle">Primary bold subtitle</h2>
-      </Container>
+      <Title as="p">Hero title</Title>
+      <Subtitle as="p">Hero subtitle</Subtitle>
     </Hero>
   </Hero>
 )

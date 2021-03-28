@@ -1,9 +1,9 @@
 import Color, { ColorType } from '../types/Color'
+import Size, { SizeType } from '../types/Size'
 
 import CommonProps from '../types/CommonProps'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { SizeType } from '../types/Size'
 import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
@@ -13,8 +13,7 @@ export interface HeroProps extends CommonProps {
   body?: boolean
   foot?: boolean
   color?: Color | ColorType
-  bold?: boolean
-  size?: Extract<SizeType, 'medium' | 'large'> | 'fullheight'
+  size?: Size | SizeType | 'halfheight' | 'fullheight'
   fullheightWithNavbar?: boolean
 }
 
@@ -33,7 +32,6 @@ const Hero: React.FC<HeroProps> = ({ children, className, ...props }) => {
   const ElementType = detectElementType(Hero, props)
   const classes = cx(heroClassName, className, {
     [`is-${props.color}`]: props.color,
-    [`is-bold`]: props.bold,
     [`is-${props.size}`]: props.size,
     [`is-fullheight-with-navbar`]: props.fullheightWithNavbar,
   })
@@ -50,7 +48,6 @@ Hero.propTypes = {
   body: PropTypes.bool,
   foot: PropTypes.bool,
   color: PropTypes.string as any,
-  bold: PropTypes.bool,
   size: PropTypes.any,
   fullheightWithNavbar: PropTypes.bool,
 }

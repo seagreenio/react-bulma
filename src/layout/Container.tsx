@@ -1,4 +1,4 @@
-import Responsive, { ResponsiveType } from '../types/Responsive'
+import { Viewport, ViewportType } from '../types/Responsive'
 
 import CommonProps from '../types/CommonProps'
 import PropTypes from 'prop-types'
@@ -7,17 +7,27 @@ import cx from 'classnames'
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
 
+type Breakpoint =
+  | Viewport.Desktop
+  | Viewport.Widescreen
+  | Viewport.FullHD
+  | Extract<ViewportType, 'desktop' | 'widescreen' | 'fullhd'>
+
 export interface ContainerProps extends CommonProps {
+  breakpoint?: Breakpoint
+  max?: Breakpoint
   fluid?: boolean
-  breakpoint?: Responsive | ResponsiveType
 }
 
 const Container: React.FC<ContainerProps> = ({ children, className, ...props }) => {
+  const { breakpoint, max, fluid } = props
+
   const rest = getUnhandledProps(Container, props)
   const ElementType = detectElementType(Container, props)
   const classes = cx('container', className, {
-    [`is-fluid`]: props.fluid,
-    [`is-${props.breakpoint}`]: props.breakpoint,
+    [`is-${breakpoint}`]: breakpoint,
+    [`is-max-${breakpoint}`]: max,
+    [`is-fluid`]: fluid,
   })
 
   return (
@@ -28,8 +38,9 @@ const Container: React.FC<ContainerProps> = ({ children, className, ...props }) 
 }
 
 Container.propTypes = {
-  fluid: PropTypes.bool,
   breakpoint: PropTypes.string as any,
+  max: PropTypes.string as any,
+  fluid: PropTypes.bool,
 }
 
 export default Container
