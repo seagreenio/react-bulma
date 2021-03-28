@@ -133,6 +133,18 @@ export type { PaginationLinkProps } from './PaginationLink'
 export { default as PaginationEllipsis } from './PaginationEllipsis'
 export type { PaginationEllipsisProps } from './PaginationEllipsis'
 
+export { default as Panel } from './Panel'
+export type { PanelProps } from './Panel'
+
+export { default as PanelHeading } from './PanelHeading'
+export type { PanelHeadingProps } from './PanelHeading'
+
+export { default as PanelBlock } from './PanelBlock'
+export type { PanelBlockProps } from './PanelBlock'
+
+export { default as PanelTabs } from './PanelTabs'
+export type { PanelTabsProps } from './PanelTabs'
+
 export { default as Tabs } from './Tabs'
 export type { TabsProps } from './Tabs'
 

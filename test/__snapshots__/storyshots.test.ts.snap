@@ -3186,6 +3186,745 @@ Array [
 ]
 `;
 
+exports[`Storyshots Components/Panel Colors 1`] = `
+Array [
+  <nav
+    className="panel is-primary"
+  >
+    <p
+      className="panel-heading"
+    >
+      Repositories
+    </p>
+    <div
+      className="panel-block"
+    >
+      <p
+        className="control has-icons-left"
+      >
+        <input
+          className="input"
+          placeholder="Search"
+          type="text"
+        />
+        <span
+          className="icon is-left"
+        >
+          <i
+            className="fas fa-search"
+          />
+        </span>
+      </p>
+    </div>
+    <p
+      className="panel-tabs"
+    >
+      <a
+        className="is-active"
+      >
+        All
+      </a>
+      <a>
+        Public
+      </a>
+      <a>
+        Private
+      </a>
+      <a>
+        Sources
+      </a>
+      <a>
+        Forks
+      </a>
+    </p>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      bulma
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      marksheet
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      minireset.css
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      jgthms.github.io
+    </div>
+  </nav>,
+  <nav
+    className="panel is-link"
+  >
+    <p
+      className="panel-heading"
+    >
+      Repositories
+    </p>
+    <div
+      className="panel-block"
+    >
+      <p
+        className="control has-icons-left"
+      >
+        <input
+          className="input"
+          placeholder="Search"
+          type="text"
+        />
+        <span
+          className="icon is-left"
+        >
+          <i
+            className="fas fa-search"
+          />
+        </span>
+      </p>
+    </div>
+    <p
+      className="panel-tabs"
+    >
+      <a
+        className="is-active"
+      >
+        All
+      </a>
+      <a>
+        Public
+      </a>
+      <a>
+        Private
+      </a>
+      <a>
+        Sources
+      </a>
+      <a>
+        Forks
+      </a>
+    </p>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      bulma
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      marksheet
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      minireset.css
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      jgthms.github.io
+    </div>
+  </nav>,
+  <nav
+    className="panel is-info"
+  >
+    <p
+      className="panel-heading"
+    >
+      Repositories
+    </p>
+    <div
+      className="panel-block"
+    >
+      <p
+        className="control has-icons-left"
+      >
+        <input
+          className="input"
+          placeholder="Search"
+          type="text"
+        />
+        <span
+          className="icon is-left"
+        >
+          <i
+            className="fas fa-search"
+          />
+        </span>
+      </p>
+    </div>
+    <p
+      className="panel-tabs"
+    >
+      <a
+        className="is-active"
+      >
+        All
+      </a>
+      <a>
+        Public
+      </a>
+      <a>
+        Private
+      </a>
+      <a>
+        Sources
+      </a>
+      <a>
+        Forks
+      </a>
+    </p>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      bulma
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      marksheet
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      minireset.css
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      jgthms.github.io
+    </div>
+  </nav>,
+  <nav
+    className="panel is-success"
+  >
+    <p
+      className="panel-heading"
+    >
+      Repositories
+    </p>
+    <div
+      className="panel-block"
+    >
+      <p
+        className="control has-icons-left"
+      >
+        <input
+          className="input"
+          placeholder="Search"
+          type="text"
+        />
+        <span
+          className="icon is-left"
+        >
+          <i
+            className="fas fa-search"
+          />
+        </span>
+      </p>
+    </div>
+    <p
+      className="panel-tabs"
+    >
+      <a
+        className="is-active"
+      >
+        All
+      </a>
+      <a>
+        Public
+      </a>
+      <a>
+        Private
+      </a>
+      <a>
+        Sources
+      </a>
+      <a>
+        Forks
+      </a>
+    </p>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      bulma
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      marksheet
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      minireset.css
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      jgthms.github.io
+    </div>
+  </nav>,
+  <nav
+    className="panel is-warning"
+  >
+    <p
+      className="panel-heading"
+    >
+      Repositories
+    </p>
+    <div
+      className="panel-block"
+    >
+      <p
+        className="control has-icons-left"
+      >
+        <input
+          className="input"
+          placeholder="Search"
+          type="text"
+        />
+        <span
+          className="icon is-left"
+        >
+          <i
+            className="fas fa-search"
+          />
+        </span>
+      </p>
+    </div>
+    <p
+      className="panel-tabs"
+    >
+      <a
+        className="is-active"
+      >
+        All
+      </a>
+      <a>
+        Public
+      </a>
+      <a>
+        Private
+      </a>
+      <a>
+        Sources
+      </a>
+      <a>
+        Forks
+      </a>
+    </p>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      bulma
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      marksheet
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      minireset.css
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      jgthms.github.io
+    </div>
+  </nav>,
+  <nav
+    className="panel is-danger"
+  >
+    <p
+      className="panel-heading"
+    >
+      Repositories
+    </p>
+    <div
+      className="panel-block"
+    >
+      <p
+        className="control has-icons-left"
+      >
+        <input
+          className="input"
+          placeholder="Search"
+          type="text"
+        />
+        <span
+          className="icon is-left"
+        >
+          <i
+            className="fas fa-search"
+          />
+        </span>
+      </p>
+    </div>
+    <p
+      className="panel-tabs"
+    >
+      <a
+        className="is-active"
+      >
+        All
+      </a>
+      <a>
+        Public
+      </a>
+      <a>
+        Private
+      </a>
+      <a>
+        Sources
+      </a>
+      <a>
+        Forks
+      </a>
+    </p>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      bulma
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      marksheet
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      minireset.css
+    </div>
+    <div
+      className="panel-block"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fas fa-book"
+        />
+      </span>
+      jgthms.github.io
+    </div>
+  </nav>,
+]
+`;
+
+exports[`Storyshots Components/Panel Default 1`] = `
+<nav
+  className="panel"
+>
+  <p
+    className="panel-heading"
+  >
+    Repositories
+  </p>
+  <div
+    className="panel-block"
+  >
+    <p
+      className="control has-icons-left"
+    >
+      <input
+        className="input"
+        placeholder="Search"
+        type="text"
+      />
+      <span
+        className="icon is-left"
+      >
+        <i
+          className="fas fa-search"
+        />
+      </span>
+    </p>
+  </div>
+  <p
+    className="panel-tabs"
+  >
+    <a
+      className="is-active"
+    >
+      All
+    </a>
+    <a>
+      Public
+    </a>
+    <a>
+      Private
+    </a>
+    <a>
+      Sources
+    </a>
+    <a>
+      Forks
+    </a>
+  </p>
+  <div
+    className="panel-block"
+  >
+    <span
+      className="panel-icon"
+    >
+      <i
+        className="fas fa-book"
+      />
+    </span>
+    bulma
+  </div>
+  <div
+    className="panel-block"
+  >
+    <span
+      className="panel-icon"
+    >
+      <i
+        className="fas fa-book"
+      />
+    </span>
+    marksheet
+  </div>
+  <div
+    className="panel-block"
+  >
+    <span
+      className="panel-icon"
+    >
+      <i
+        className="fas fa-book"
+      />
+    </span>
+    minireset.css
+  </div>
+  <div
+    className="panel-block"
+  >
+    <span
+      className="panel-icon"
+    >
+      <i
+        className="fas fa-book"
+      />
+    </span>
+    jgthms.github.io
+  </div>
+  <div
+    className="panel-block"
+  >
+    <span
+      className="panel-icon"
+    >
+      <i
+        className="fas fa-code-branch"
+      />
+    </span>
+    daniellowtw/infboard
+  </div>
+  <div
+    className="panel-block"
+  >
+    <span
+      className="panel-icon"
+    >
+      <i
+        className="fas fa-code-branch"
+      />
+    </span>
+    mojs
+  </div>
+  <div
+    className="panel-block"
+  >
+    <label
+      className="checkbox"
+    >
+      <input
+        type="checkbox"
+      />
+    </label>
+    remember me
+  </div>
+  <div
+    className="panel-block"
+  >
+    <button
+      className="button is-link is-fullwidth is-outlined"
+    >
+      Reset all filters
+    </button>
+  </div>
+</nav>
+`;
+
 exports[`Storyshots Components/Tabs Alignment 1`] = `
 Array [
   <div
@@ -3784,6 +4523,101 @@ exports[`Storyshots Elements/Button As 1`] = `
     type="reset"
     value="Reset input"
   />
+</div>
+`;
+
+exports[`Storyshots Elements/Button Button Addons 1`] = `
+<div
+  className="field has-addons"
+>
+  <div
+    className="control"
+  >
+    <button
+      className="button"
+    >
+      <span
+        className="icon is-small"
+      >
+        <i
+          className="fas fa-align-left"
+        />
+      </span>
+      <span>
+        Left
+      </span>
+    </button>
+  </div>
+  <div
+    className="control"
+  >
+    <button
+      className="button"
+    >
+      <span
+        className="icon is-small"
+      >
+        <i
+          className="fas fa-align-center"
+        />
+      </span>
+      <span>
+        Center
+      </span>
+    </button>
+  </div>
+  <div
+    className="control"
+  >
+    <button
+      className="button"
+    >
+      <span
+        className="icon is-small"
+      >
+        <i
+          className="fas fa-align-right"
+        />
+      </span>
+      <span>
+        Right
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Elements/Button Button Group 1`] = `
+<div
+  className="field is-grouped"
+>
+  <div
+    className="control"
+  >
+    <button
+      className="button is-link"
+    >
+      Save changes
+    </button>
+  </div>
+  <div
+    className="control"
+  >
+    <button
+      className="button"
+    >
+      Cancel
+    </button>
+  </div>
+  <div
+    className="control"
+  >
+    <button
+      className="button is-danger"
+    >
+      Delete post
+    </button>
+  </div>
 </div>
 `;
 
@@ -6117,6 +6951,180 @@ Array [
       className="tag is-delete"
     />
   </div>,
+  <div
+    className="field is-grouped is-grouped-multiline"
+  >
+    <div
+      className="control"
+    >
+      <div
+        className="tags has-addons"
+      >
+        <span
+          className="tag is-dark"
+        >
+          npm
+        </span>
+        <span
+          className="tag is-info"
+        >
+          0.9.1
+        </span>
+      </div>
+    </div>
+    <div
+      className="control"
+    >
+      <div
+        className="tags has-addons"
+      >
+        <span
+          className="tag is-dark"
+        >
+          build
+        </span>
+        <span
+          className="tag is-success"
+        >
+          passing
+        </span>
+      </div>
+    </div>
+    <div
+      className="control"
+    >
+      <div
+        className="tags has-addons"
+      >
+        <span
+          className="tag is-dark"
+        >
+          chat
+        </span>
+        <span
+          className="tag is-primary"
+        >
+          on gitter
+        </span>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="field is-grouped is-grouped-multiline"
+  >
+    <div
+      className="control"
+    >
+      <div
+        className="tags has-addons"
+      >
+        <span
+          className="tag is-link"
+        >
+          Technology
+        </span>
+        <span
+          className="tag is-delete"
+        />
+      </div>
+    </div>
+    <div
+      className="control"
+    >
+      <div
+        className="tags has-addons"
+      >
+        <span
+          className="tag is-link"
+        >
+          CSS
+        </span>
+        <span
+          className="tag is-delete"
+        />
+      </div>
+    </div>
+    <div
+      className="control"
+    >
+      <div
+        className="tags has-addons"
+      >
+        <span
+          className="tag is-link"
+        >
+          Flexbox
+        </span>
+        <span
+          className="tag is-delete"
+        />
+      </div>
+    </div>
+    <div
+      className="control"
+    >
+      <div
+        className="tags has-addons"
+      >
+        <span
+          className="tag is-link"
+        >
+          Web Design
+        </span>
+        <span
+          className="tag is-delete"
+        />
+      </div>
+    </div>
+    <div
+      className="control"
+    >
+      <div
+        className="tags has-addons"
+      >
+        <span
+          className="tag is-link"
+        >
+          Open Source
+        </span>
+        <span
+          className="tag is-delete"
+        />
+      </div>
+    </div>
+    <div
+      className="control"
+    >
+      <div
+        className="tags has-addons"
+      >
+        <span
+          className="tag is-link"
+        >
+          Community
+        </span>
+        <span
+          className="tag is-delete"
+        />
+      </div>
+    </div>
+    <div
+      className="control"
+    >
+      <div
+        className="tags has-addons"
+      >
+        <span
+          className="tag is-link"
+        >
+          Documentation
+        </span>
+        <span
+          className="tag is-delete"
+        />
+      </div>
+    </div>
+  </div>,
 ]
 `;
 
@@ -6607,36 +7615,2230 @@ Array [
 ]
 `;
 
+exports[`Storyshots Form/Checkbox Default 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <label
+      className="checkbox"
+    >
+      <input
+        type="checkbox"
+      />
+       Remember me
+    </label>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="checkbox"
+    >
+      <input
+        type="checkbox"
+      />
+       
+      I agree to the 
+      <a
+        href="#"
+      >
+        terms and conditions
+      </a>
+    </label>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="checkbox"
+      disabled={true}
+    >
+      <input
+        disabled={true}
+        type="checkbox"
+      />
+       
+      Save my preferences
+    </label>
+  </div>,
+]
+`;
+
 exports[`Storyshots Form/Field Default 1`] = `
 <div
   className="field"
 >
-  <div
-    0="c"
-    1="o"
-    2="n"
-    3="t"
-    4="r"
-    5="o"
-    6="l"
+  <label
+    className="label"
   >
-    <label
-      className="label"
-    >
-      Label
-    </label>
+    Label
+  </label>
+  <div
+    className="control"
+  >
     <input
       className="input"
       placeholder="Text input"
       type="text"
     />
-    <p
-      className="help"
-    >
-      This is a help text
-    </p>
   </div>
+  <p
+    className="help"
+  >
+    This is a help text
+  </p>
 </div>
+`;
+
+exports[`Storyshots Form/File Alignment 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <div
+      className="file has-name is-centered is-boxed is-success"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Centered file…
+          </span>
+        </span>
+        <span
+          className="file-name"
+        >
+          Screen Shot 2017-07-29 at 15.54.25.png
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file has-name is-right is-info"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Right file…
+          </span>
+        </span>
+        <span
+          className="file-name"
+        >
+          Screen Shot 2017-07-29 at 15.54.25.png
+        </span>
+      </label>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/File Colors 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <div
+      className="file is-primary"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Primary
+             file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file is-link"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Link
+             file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file is-info"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Info
+             file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file is-success"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Success
+             file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file is-warning"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Warning
+             file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file is-danger"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Danger
+             file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/File Default 1`] = `
+<div
+  className="file"
+>
+  <label
+    className="file-label"
+  >
+    <input
+      className="file-input"
+      type="file"
+    />
+    <span
+      className="file-cta"
+    >
+      <span
+        className="file-icon"
+      >
+        <span
+          className="icon"
+        >
+          <i
+            className="fas fa-upload"
+          />
+        </span>
+      </span>
+      <span
+        className="file-label"
+      >
+        Choose a file…
+      </span>
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Form/File Java Script 1`] = `
+<div
+  className="file has-name"
+>
+  <label
+    className="file-label"
+  >
+    <input
+      className="file-input"
+      onChange={[Function]}
+      type="file"
+    />
+    <span
+      className="file-cta"
+    >
+      <span
+        className="file-icon"
+      >
+        <span
+          className="icon"
+        >
+          <i
+            className="fas fa-upload"
+          />
+        </span>
+      </span>
+      <span
+        className="file-label"
+      >
+        Choose a file…
+      </span>
+    </span>
+    <span
+      className="file-name"
+    >
+      No file uploaded
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Form/File Modifiers 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <div
+      className="file has-name"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Choose a file…
+          </span>
+        </span>
+        <span
+          className="file-name"
+        >
+          Screen Shot 2017-07-29 at 15.54.25.png
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file has-name is-fullwidth"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Choose a file…
+          </span>
+        </span>
+        <span
+          className="file-name"
+        >
+          Screen Shot 2017-07-29 at 15.54.25.png
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file is-boxed"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Choose a file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file has-name is-boxed"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Choose a file…
+          </span>
+        </span>
+        <span
+          className="file-name"
+        >
+          Screen Shot 2017-07-29 at 15.54.25.png
+        </span>
+      </label>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/File Sizes 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <div
+      className="file is-small"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Small
+             file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file is-normal"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Normal
+             file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file is-medium"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Medium
+             file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="file is-large"
+    >
+      <label
+        className="file-label"
+      >
+        <input
+          className="file-input"
+          type="file"
+        />
+        <span
+          className="file-cta"
+        >
+          <span
+            className="file-icon"
+          >
+            <span
+              className="icon"
+            >
+              <i
+                className="fas fa-upload"
+              />
+            </span>
+          </span>
+          <span
+            className="file-label"
+          >
+            Large
+             file…
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Input Colors 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <input
+      className="input is-primary"
+      placeholder="Primary input"
+      type="text"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <input
+      className="input is-link"
+      placeholder="Link input"
+      type="text"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <input
+      className="input is-info"
+      placeholder="Info input"
+      type="text"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <input
+      className="input is-success"
+      placeholder="Success input"
+      type="text"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <input
+      className="input is-warning"
+      placeholder="Warning input"
+      type="text"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <input
+      className="input is-danger"
+      placeholder="Danger input"
+      type="text"
+    />
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Input Default 1`] = `
+<input
+  className="input"
+  placeholder="Text input"
+  type="text"
+/>
+`;
+
+exports[`Storyshots Form/Input Sizes 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <input
+      className="input is-small"
+      placeholder="Small input"
+      type="text"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <input
+      className="input is-normal"
+      placeholder="Normal input"
+      type="text"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <input
+      className="input is-medium"
+      placeholder="Medium input"
+      type="text"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <input
+      className="input is-large"
+      placeholder="Large input"
+      type="text"
+    />
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Input States 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Normal
+    </label>
+    <div
+      className="control"
+    >
+      <input
+        className="input"
+        placeholder="Normal input"
+        type="text"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Hover
+    </label>
+    <div
+      className="control"
+    >
+      <input
+        className="input is-hovered"
+        placeholder="Hovered input"
+        type="text"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Focus
+    </label>
+    <div
+      className="control"
+    >
+      <input
+        className="input is-focused"
+        placeholder="Focused input"
+        type="text"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Loading
+    </label>
+    <div
+      className="control is-loading"
+    >
+      <input
+        className="input"
+        placeholder="Loading input"
+        type="text"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control is-loading is-small"
+    >
+      <input
+        className="input is-small"
+        placeholder="Small loading input"
+        type="text"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control is-loading is-normal"
+    >
+      <input
+        className="input is-normal"
+        placeholder="Normal loading input"
+        type="text"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control is-loading is-medium"
+    >
+      <input
+        className="input is-medium"
+        placeholder="Medium loading input"
+        type="text"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control is-loading is-large"
+    >
+      <input
+        className="input is-large"
+        placeholder="Large loading input"
+        type="text"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Disable
+    </label>
+    <div
+      className="control"
+    >
+      <input
+        className="input"
+        disabled={true}
+        placeholder="Disabled input"
+        type="text"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Readonly and static inputs
+    </label>
+    <div
+      className="control"
+    >
+      <input
+        className="input"
+        readOnly={true}
+        type="text"
+        value="This text is readonly"
+      />
+    </div>
+  </div>,
+  <div
+    className="field is-horizontal"
+  >
+    <div
+      className="field-label is-normal"
+    >
+      <label
+        className="label"
+      >
+        From
+      </label>
+    </div>
+    <div
+      className="field-body"
+    >
+      <div
+        className="field"
+      >
+        <div
+          className="control"
+        >
+          <input
+            className="input is-static"
+            readOnly={true}
+            type="email"
+            value="me@example.com"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="field is-horizontal"
+  >
+    <div
+      className="field-label is-normal"
+    >
+      <label
+        className="label"
+      >
+        To
+      </label>
+    </div>
+    <div
+      className="field-body"
+    >
+      <div
+        className="field"
+      >
+        <div
+          className="control"
+        >
+          <input
+            className="input"
+            placeholder="Recipient email"
+            type="email"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Input Styles 1`] = `
+<input
+  className="input is-rounded"
+  placeholder="Rounded input"
+  type="text"
+/>
+`;
+
+exports[`Storyshots Form/Input With Font Awesome 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left has-icons-right"
+    >
+      <input
+        className="input"
+        placeholder="Email"
+        type="email"
+      />
+      <span
+        className="icon is-small is-left"
+      >
+        <i
+          className="fas fa-envelope"
+        />
+      </span>
+      <span
+        className="icon is-small is-right"
+      >
+        <i
+          className="fa fa-check"
+        />
+      </span>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left"
+    >
+      <input
+        className="input"
+        placeholder="Password"
+        type="password"
+      />
+      <span
+        className="icon is-small is-left"
+      >
+        <i
+          className="fas fa-lock"
+        />
+      </span>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left has-icons-right"
+    >
+      <input
+        className="input is-small"
+        placeholder="Email"
+        type="email"
+      />
+      <span
+        className="icon is-small is-left"
+      >
+        <i
+          className="fas fa-envelope"
+        />
+      </span>
+      <span
+        className="icon is-small is-right"
+      >
+        <i
+          className="fa fa-check"
+        />
+      </span>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left has-icons-right"
+    >
+      <input
+        className="input is-normal"
+        placeholder="Email"
+        type="email"
+      />
+      <span
+        className="icon is-small is-left"
+      >
+        <i
+          className="fas fa-envelope"
+        />
+      </span>
+      <span
+        className="icon is-small is-right"
+      >
+        <i
+          className="fa fa-check"
+        />
+      </span>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left has-icons-right"
+    >
+      <input
+        className="input is-medium"
+        placeholder="Email"
+        type="email"
+      />
+      <span
+        className="icon is-small is-left"
+      >
+        <i
+          className="fas fa-envelope"
+        />
+      </span>
+      <span
+        className="icon is-small is-right"
+      >
+        <i
+          className="fa fa-check"
+        />
+      </span>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left has-icons-right"
+    >
+      <input
+        className="input is-large"
+        placeholder="Email"
+        type="email"
+      />
+      <span
+        className="icon is-small is-left"
+      >
+        <i
+          className="fas fa-envelope"
+        />
+      </span>
+      <span
+        className="icon is-small is-right"
+      >
+        <i
+          className="fa fa-check"
+        />
+      </span>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Radio Default 1`] = `
+Array [
+  <div
+    className="control"
+  >
+    <label
+      className="radio"
+    >
+      <input
+        name="answer"
+        type="radio"
+      />
+      Yes
+    </label>
+    <label
+      className="radio"
+    >
+      <input
+        name="answer"
+        type="radio"
+      />
+      No
+    </label>
+  </div>,
+  <div
+    className="control"
+  >
+    <label
+      className="radio"
+    >
+      <input
+        checked={true}
+        name="foobar"
+        type="radio"
+      />
+      Foo
+    </label>
+    <label
+      className="radio"
+    >
+      <input
+        name="foobar"
+        type="radio"
+      />
+      Bar
+    </label>
+  </div>,
+  <div
+    className="control"
+  >
+    <label
+      className="radio"
+    >
+      <input
+        name="rsvp"
+        type="radio"
+      />
+      Going
+    </label>
+    <label
+      className="radio"
+    >
+      <input
+        name="rsvp"
+        type="radio"
+      />
+      Not going
+    </label>
+    <label
+      className="radio"
+      disabled={true}
+    >
+      <input
+        disabled={true}
+        name="rsvp"
+        type="radio"
+      />
+      Maybe
+    </label>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Select Colors 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <div
+      className="select is-primary"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="select is-link"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="select is-info"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="select is-success"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="select is-warning"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="select is-danger"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Select Default 1`] = `
+<div
+  className="select"
+>
+  <select
+    className=""
+  >
+    <option>
+      Select dropdown
+    </option>
+    <option>
+      With options
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Storyshots Form/Select Multiple 1`] = `
+<div
+  className="select is-multiple"
+>
+  <select
+    className=""
+    multiple={true}
+    size={8}
+  >
+    <option
+      value="Argentina"
+    >
+      Argentina
+    </option>
+    <option
+      value="Bolivia"
+    >
+      Bolivia
+    </option>
+    <option
+      value="Brazil"
+    >
+      Brazil
+    </option>
+    <option
+      value="Chile"
+    >
+      Chile
+    </option>
+    <option
+      value="Colombia"
+    >
+      Colombia
+    </option>
+    <option
+      value="Ecuador"
+    >
+      Ecuador
+    </option>
+    <option
+      value="Guyana"
+    >
+      Guyana
+    </option>
+    <option
+      value="Paraguay"
+    >
+      Paraguay
+    </option>
+    <option
+      value="Peru"
+    >
+      Peru
+    </option>
+    <option
+      value="Suriname"
+    >
+      Suriname
+    </option>
+    <option
+      value="Uruguay"
+    >
+      Uruguay
+    </option>
+    <option
+      value="Venezuela"
+    >
+      Venezuela
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Storyshots Form/Select Sizes 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <div
+      className="select is-small"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="select is-normal"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="select is-medium"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="select is-large"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Select States 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Normal
+    </label>
+    <div
+      className="select"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Hover
+    </label>
+    <div
+      className="select"
+    >
+      <select
+        className="is-hovered"
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Focus
+    </label>
+    <div
+      className="select"
+    >
+      <select
+        className="is-focused"
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Loading
+    </label>
+    <div
+      className="select is-loading"
+    >
+      <select
+        className=""
+      >
+        <option>
+          Select dropdown
+        </option>
+        <option>
+          With options
+        </option>
+      </select>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Select Styles 1`] = `
+<div
+  className="select is-rounded"
+>
+  <select
+    className=""
+  >
+    <option>
+      Rounded dropdown
+    </option>
+    <option>
+      With options
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Storyshots Form/Select With Icons 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left"
+    >
+      <div
+        className="select"
+      >
+        <select
+          className=""
+        >
+          <option
+            selected={true}
+          >
+            Country
+          </option>
+          <option>
+            Select dropdown
+          </option>
+          <option>
+            With options
+          </option>
+        </select>
+      </div>
+      <span
+        className="icon is-left"
+      >
+        <i
+          className="fas fa-globe"
+        />
+      </span>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left"
+    >
+      <div
+        className="select is-small"
+      >
+        <select
+          className=""
+        >
+          <option
+            selected={true}
+          >
+            Country
+          </option>
+          <option>
+            Select dropdown
+          </option>
+          <option>
+            With options
+          </option>
+        </select>
+      </div>
+      <span
+        className="icon is-small is-left"
+      >
+        <i
+          className="fas fa-globe"
+        />
+      </span>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left"
+    >
+      <div
+        className="select is-normal"
+      >
+        <select
+          className=""
+        >
+          <option
+            selected={true}
+          >
+            Country
+          </option>
+          <option>
+            Select dropdown
+          </option>
+          <option>
+            With options
+          </option>
+        </select>
+      </div>
+      <span
+        className="icon is-normal is-left"
+      >
+        <i
+          className="fas fa-globe"
+        />
+      </span>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left"
+    >
+      <div
+        className="select is-medium"
+      >
+        <select
+          className=""
+        >
+          <option
+            selected={true}
+          >
+            Country
+          </option>
+          <option>
+            Select dropdown
+          </option>
+          <option>
+            With options
+          </option>
+        </select>
+      </div>
+      <span
+        className="icon is-medium is-left"
+      >
+        <i
+          className="fas fa-globe"
+        />
+      </span>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control has-icons-left"
+    >
+      <div
+        className="select is-large"
+      >
+        <select
+          className=""
+        >
+          <option
+            selected={true}
+          >
+            Country
+          </option>
+          <option>
+            Select dropdown
+          </option>
+          <option>
+            With options
+          </option>
+        </select>
+      </div>
+      <span
+        className="icon is-large is-left"
+      >
+        <i
+          className="fas fa-globe"
+        />
+      </span>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Textarea Colors 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea is-primary"
+      placeholder="Primary textarea"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea is-link"
+      placeholder="Link textarea"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea is-info"
+      placeholder="Info textarea"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea is-success"
+      placeholder="Success textarea"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea is-warning"
+      placeholder="Warning textarea"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea is-danger"
+      placeholder="Danger textarea"
+    />
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Textarea Default 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea"
+      placeholder="e.g. Hello world"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea"
+      placeholder="10 lines of textarea"
+      rows="10"
+    />
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Textarea Sizes 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea is-small"
+      placeholder="Small textarea"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea is-normal"
+      placeholder="Normal textarea"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea is-medium"
+      placeholder="Medium textarea"
+    />
+  </div>,
+  <div
+    className="field"
+  >
+    <textarea
+      className="textarea is-large"
+      placeholder="Large textarea"
+    />
+  </div>,
+]
+`;
+
+exports[`Storyshots Form/Textarea States 1`] = `
+Array [
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Normal
+    </label>
+    <div
+      className="control"
+    >
+      <textarea
+        className="textarea"
+        placeholder="Normal textarea"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Hover
+    </label>
+    <div
+      className="control"
+    >
+      <textarea
+        className="textarea is-hovered"
+        placeholder="Hovered textarea"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Focus
+    </label>
+    <div
+      className="control"
+    >
+      <textarea
+        className="textarea is-focused"
+        placeholder="Focused textarea"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Loading
+    </label>
+    <div
+      className="control is-loading"
+    >
+      <textarea
+        className="textarea"
+        placeholder="Loading textarea"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control is-loading is-small"
+    >
+      <textarea
+        className="textarea is-small"
+        placeholder="Small loading textarea"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control is-loading is-normal"
+    >
+      <textarea
+        className="textarea is-normal"
+        placeholder="Normal loading textarea"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control is-loading is-medium"
+    >
+      <textarea
+        className="textarea is-medium"
+        placeholder="Medium loading textarea"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <div
+      className="control is-loading is-large"
+    >
+      <textarea
+        className="textarea is-large"
+        placeholder="Large loading textarea"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Disable
+    </label>
+    <div
+      className="control"
+    >
+      <textarea
+        className="textarea"
+        disabled={true}
+        placeholder="Disabled Textarea"
+      />
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Readonly
+    </label>
+    <div
+      className="control"
+    >
+      <textarea
+        className="textarea"
+        readOnly={true}
+      >
+        This content is readonly
+      </textarea>
+    </div>
+  </div>,
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+    >
+      Fixed Size
+    </label>
+    <div
+      className="control"
+    >
+      <textarea
+        className="textarea has-fixed-size"
+        placeholder="Fixed size textarea"
+      />
+    </div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Helpers/withColor Has Background 1`] = `
