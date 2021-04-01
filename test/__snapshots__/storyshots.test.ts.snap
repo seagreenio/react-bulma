@@ -10793,3 +10793,169 @@ Array [
   </div>,
 ]
 `;
+
+exports[`Storyshots Layout/Tile Default 1`] = `
+<div
+  className="tile is-ancestor"
+>
+  <div
+    className="tile is-vertical is-8"
+  >
+    <div
+      className="tile"
+    >
+      <div
+        className="tile is-parent is-vertical"
+      >
+        <article
+          className="tile is-child"
+        >
+          <div
+            className="notification is-primary"
+            style={
+              Object {
+                "height": "100%",
+              }
+            }
+          >
+            <p
+              className="title"
+            >
+              Vertical...
+            </p>
+            <p
+              className="subtitle"
+            >
+              Top tile
+            </p>
+          </div>
+        </article>
+        <article
+          className="tile is-child"
+        >
+          <div
+            className="notification is-warning"
+            style={
+              Object {
+                "height": "100%",
+              }
+            }
+          >
+            <p
+              className="title"
+            >
+              ...tiles
+            </p>
+            <p
+              className="subtitle"
+            >
+              Bottom tile
+            </p>
+          </div>
+        </article>
+      </div>
+      <div
+        className="tile is-parent is-vertical"
+      >
+        <article
+          className="tile is-child"
+        >
+          <div
+            className="notification is-info"
+          >
+            <p
+              className="title"
+            >
+              Middle tile
+            </p>
+            <p
+              className="subtitle"
+            >
+              With an image
+            </p>
+            <figure
+              className="image is-4x3"
+            >
+              <img
+                src="https://bulma.io/images/placeholders/640x480.png"
+              />
+            </figure>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div
+      className="tile is-parent"
+    >
+      <article
+        className="tile is-child"
+      >
+        <div
+          className="notification is-danger"
+          style={
+            Object {
+              "height": "100%",
+            }
+          }
+        >
+          <p
+            className="title"
+          >
+            Wide tile
+          </p>
+          <p
+            className="subtitle"
+          >
+            Aligned with the right tile
+          </p>
+          <div
+            className="content"
+          >
+            
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div
+    className="tile is-parent"
+  >
+    <article
+      className="tile is-child"
+    >
+      <div
+        className="notification is-success"
+        style={
+          Object {
+            "height": "100%",
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <p
+            className="title"
+          >
+            Tail tile
+          </p>
+          <p
+            className="subtitle"
+          >
+            With even more content
+          </p>
+          <div
+            className="content"
+          >
+            
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+`;
