@@ -15,22 +15,20 @@ export interface TileProps extends CommonProps {
 }
 
 const Tile: React.FC<TileProps> = ({ children, className, ...props }) => {
-  const { ancestor, parent, child, size } = props
+  const { ancestor, parent, child, vertical, size } = props
   let tileClassName = 'tile'
   if (ancestor) {
-    tileClassName = 'is-ancestor'
+    tileClassName += ' is-ancestor'
   } else if (parent) {
-    tileClassName = 'is-parent'
+    tileClassName += ' is-parent'
   } else if (child) {
-    tileClassName = 'is-child'
+    tileClassName += ' is-child'
   }
 
   const rest = getUnhandledProps(Tile, props)
   const ElementType = detectElementType(Tile, props)
-  const classes = cx('tile', className, {
-    'is-ancestor': ancestor,
-    'is-parent': parent,
-    'is-child': child,
+  const classes = cx(tileClassName, className, {
+    'is-vertical': vertical,
     [`is-${properRange(size!, [1, 12])}`]: size,
   })
 

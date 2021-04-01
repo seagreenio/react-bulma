@@ -9,7 +9,7 @@ export const parameters = {
         'Form',
         ['Field', 'Input', 'Textarea', 'Select', 'Checkbox', 'Radio', 'File'],
         'Layout',
-        ['Container', 'Level', 'Media', 'Hero', 'Section', 'Footer'],
+        ['Container', 'Level', 'Media', 'Hero', 'Section', 'Footer', 'Tile'],
         'Helpers',
       ],
     },
