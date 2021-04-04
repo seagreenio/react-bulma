@@ -6,25 +6,9 @@ const ColorBox = withColor<BoxProps>(Box)
 
 export default {
   title: 'Helpers/withColor',
-  component: ColorBox,
+  component: withColor,
 }
 
-const style = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: 540,
-  height: 380,
-}
+export const TextColor = () => <ColorBox hasText="primary">has-text-primary</ColorBox>
 
-export const HasText = () => (
-  <ColorBox style={style} hasText="primary">
-    has-text-primary
-  </ColorBox>
-)
-
-export const HasBackground = () => (
-  <ColorBox style={style} hasText="white" hasBackground="primary">
-    has-background-primary
-  </ColorBox>
-)
+export const BackgroundColor = () => <ColorBox hasBackground="primary">has-background-primary</ColorBox>

@@ -14,23 +14,23 @@ import cx from 'classnames'
 import { differenceObject } from 'lib/utils'
 
 interface ColorProps extends CommonProps {
-  hasBackground?:
-    | Color
-    | LightColor
-    | DarkColor
-    | ShadesOfGrey
-    | ColorType
-    | LightColorType
-    | DarkColorType
-    | ShadesOfGreyType
   hasText?:
     | Color
-    | LightColor
-    | DarkColor
-    | ShadesOfGrey
     | ColorType
+    | LightColor
     | LightColorType
+    | DarkColor
     | DarkColorType
+    | ShadesOfGrey
+    | ShadesOfGreyType
+  hasBackground?:
+    | Color
+    | ColorType
+    | LightColor
+    | LightColorType
+    | DarkColor
+    | DarkColorType
+    | ShadesOfGrey
     | ShadesOfGreyType
 }
 
@@ -40,22 +40,17 @@ const defaultProps = {
   hasBackground: undefined,
 }
 
-function withColor<P>(
-  Component:
-    | React.FunctionComponent<unknown>
-    | React.ComponentClass<unknown>
-    | keyof JSX.IntrinsicElements
-) {
+function withColor<P>(Component: React.ElementType) {
   return (props: ColorProps & P) => {
     const { hasText, hasBackground } = props
-    const unHandledProps = differenceObject(props, defaultProps)
+    const rest = differenceObject(props, defaultProps)
 
     const classes = cx(props.className, {
-      [`has-background-${hasBackground}`]: hasBackground,
       [`has-text-${hasText}`]: hasText,
+      [`has-background-${hasBackground}`]: hasBackground,
     })
 
-    return <Component className={classes} {...unHandledProps} />
+    return <Component className={classes} {...rest} />
   }
 }
 

@@ -1,8 +1,4 @@
-import Responsive, {
-  ResponsiveType,
-  Viewport,
-  ViewportType,
-} from '../types/Responsive'
+import Responsive, { ResponsiveType, Viewport, ViewportType } from '../types/Responsive'
 import { differenceObject, properRange } from 'lib/utils'
 
 import CommonProps from '../types/CommonProps'
@@ -12,52 +8,37 @@ import cx from 'classnames'
 interface TypographyProps extends CommonProps {
   isSize?: Unit
   viewport?: Viewport | ViewportType
-  hasText?: 'centered' | 'justified' | 'left' | 'right'
+  textAlignment?: 'centered' | 'justified' | 'left' | 'right'
   responsive?: Responsive | ResponsiveType
   textTransformation?: 'capitalized' | 'lowercase' | 'uppercase' | 'italic'
-  hasTextWeight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold'
-  fontFamily?: 'sans-serif' | 'monospace' | 'primary' | 'secondary' | 'code'
+  textWeight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold'
+  isFamily?: 'sans-serif' | 'monospace' | 'primary' | 'secondary' | 'code'
 }
 
 const defaultProps = {
   isSize: undefined,
   viewport: undefined,
-  hasText: undefined,
+  textAlignment: undefined,
   responsive: undefined,
   textTransformation: undefined,
-  hasTextWeight: undefined,
-  fontFamily: undefined,
+  textWeight: undefined,
+  isFamily: undefined,
 }
 
-function withTypography<P>(
-  Component:
-    | React.FunctionComponent<unknown>
-    | React.ComponentClass<unknown>
-    | keyof JSX.IntrinsicElements
-) {
+function withTypography<P>(Component: React.ElementType) {
   return (props: TypographyProps & P) => {
-    const {
-      isSize,
-      viewport,
-      hasText,
-      responsive,
-      textTransformation,
-      hasTextWeight,
-      fontFamily,
-    } = props
-    const unHandledProps = differenceObject(props, defaultProps)
+    const { isSize, viewport, textAlignment, responsive, textTransformation, textWeight, isFamily } = props
+    const rest = differenceObject(props, defaultProps)
 
     const classes = cx(props.className, {
-      [`is-size-${properRange(isSize!, [1, 7])}${
-        viewport ? `-${viewport}` : ''
-      }`]: isSize,
-      [`has-text-${hasText}${responsive ? `-${responsive}` : ''}`]: hasText,
+      [`is-size-${properRange(isSize!, [1, 7])}${viewport ? `-${viewport}` : ''}`]: isSize,
+      [`has-text-${textAlignment}${responsive ? `-${responsive}` : ''}`]: textAlignment,
       [`is-${textTransformation}`]: textTransformation,
-      [`has-text-weight-${hasTextWeight}`]: hasTextWeight,
-      [`is-${fontFamily}`]: fontFamily,
+      [`has-text-weight-${textWeight}`]: textWeight,
+      [`is-family-${isFamily}`]: isFamily,
     })
 
-    return <Component className={classes} {...unHandledProps} />
+    return <Component className={classes} {...rest} />
   }
 }
 

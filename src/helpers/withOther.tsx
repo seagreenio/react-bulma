@@ -11,6 +11,7 @@ interface OtherProps extends CommonProps {
   radiusless?: boolean
   shadowless?: boolean
   bulmaUnselectable?: boolean
+  clickable?: boolean
   relative?: boolean
 }
 
@@ -23,27 +24,14 @@ const defaultProps = {
   radiusless: undefined,
   shadowless: undefined,
   bulmaUnselectable: undefined,
+  clickable: undefined,
   relative: undefined,
 }
 
-function withOther<P>(
-  Component:
-    | React.FunctionComponent<unknown>
-    | React.ComponentClass<unknown>
-    | keyof JSX.IntrinsicElements
-) {
+function withOther<P>(Component: React.ElementType) {
   return (props: OtherProps & P) => {
-    const {
-      clearfix,
-      pulled,
-      overlay,
-      clipped,
-      radiusless,
-      shadowless,
-      bulmaUnselectable,
-      relative,
-    } = props
-    const unHandledProps = differenceObject(props, defaultProps)
+    const { clearfix, pulled, overlay, clipped, radiusless, shadowless, bulmaUnselectable, clickable, relative } = props
+    const rest = differenceObject(props, defaultProps)
 
     const classes = cx(props.className, {
       'is-clearfix': clearfix,
@@ -53,10 +41,11 @@ function withOther<P>(
       'is-radiusless': radiusless,
       'is-shadowless': shadowless,
       'is-unselectable': bulmaUnselectable,
+      'is-clickable': clickable,
       'is-relative': relative,
     })
 
-    return <Component className={classes} {...unHandledProps} />
+    return <Component className={classes} {...rest} />
   }
 }
 

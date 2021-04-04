@@ -11,6 +11,7 @@ export const parameters = {
         'Layout',
         ['Container', 'Level', 'Media', 'Hero', 'Section', 'Footer', 'Tile'],
         'Helpers',
+        ['withColor', 'withSpacing', 'withTypography', 'withResponsive'],
       ],
     },
   },
