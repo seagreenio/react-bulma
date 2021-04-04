@@ -3,7 +3,7 @@ import React from 'react'
 import cx from 'classnames'
 import { differenceObject } from 'lib/utils'
 
-interface FlexboxProps extends CommonProps {
+export interface FlexboxProps extends CommonProps {
   flexDirection: 'row' | 'row-reverse' | 'column' | 'column-reverse'
   flexWrap: 'nowrap' | 'wrap' | 'wrap-reverse'
   justifyContent:

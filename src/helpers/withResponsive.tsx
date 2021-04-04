@@ -5,7 +5,7 @@ import React from 'react'
 import cx from 'classnames'
 import { differenceObject } from 'lib/utils'
 
-interface ResponsiveProps extends CommonProps {
+export interface ResponsiveProps extends CommonProps {
   isBlock?: boolean | Responsive | ResponsiveType
   isFlex?: boolean | Responsive | ResponsiveType
   isInline?: boolean | Responsive | ResponsiveType

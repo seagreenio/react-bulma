@@ -13,7 +13,7 @@ import React from 'react'
 import cx from 'classnames'
 import { differenceObject } from 'lib/utils'
 
-interface ColorProps extends CommonProps {
+export interface ColorProps extends CommonProps {
   hasText?:
     | Color
     | ColorType

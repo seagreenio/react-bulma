@@ -5,7 +5,7 @@ import CommonProps from '../types/CommonProps'
 import React from 'react'
 import cx from 'classnames'
 
-interface TypographyProps extends CommonProps {
+export interface TypographyProps extends CommonProps {
   isSize?: Unit
   viewport?: Viewport | ViewportType
   textAlignment?: 'centered' | 'justified' | 'left' | 'right'

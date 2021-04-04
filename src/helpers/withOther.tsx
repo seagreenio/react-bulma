@@ -3,7 +3,7 @@ import React from 'react'
 import cx from 'classnames'
 import { differenceObject } from 'lib/utils'
 
-interface OtherProps extends CommonProps {
+export interface OtherProps extends CommonProps {
   clearfix?: boolean
   pulled?: 'left' | 'right'
   overlay?: boolean

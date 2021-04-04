@@ -4,7 +4,7 @@ import CommonProps from '../types/CommonProps'
 import React from 'react'
 import cx from 'classnames'
 
-interface SpacingProps extends CommonProps {
+export interface SpacingProps extends CommonProps {
   m?: Unit
   mt?: Unit
   mr?: Unit

@@ -1,5 +1,6 @@
 import {
   Box,
+  BoxProps,
   Button,
   Buttons,
   Column,
@@ -8,36 +9,34 @@ import {
   Subtitle,
   Title,
   withColor,
+  withColorProps,
   withTypography,
-} from '..'
+} from '../..'
 import React, { useState } from 'react'
 
-const ColorBox = withColor(Box)
-const TypographyP = withTypography('p')
-const P = (props: { children: React.ReactNode }) => (
-  <ColorBox hasBackground="primary" hasText="white">
-    <TypographyP hasText="centered">{props.children}</TypographyP>
-  </ColorBox>
+const TypographyColorBox = withTypography<withColorProps>(withColor<BoxProps>(Box))
+const ColumnBox: React.FC = ({ children }) => (
+  <TypographyColorBox hasBackground="primary" hasText="white" textAlignment="centered" textWeight="bold">
+    {children}
+  </TypographyColorBox>
 )
 
 export default {
-  title: 'Columns',
+  title: 'Columns/Columns',
   component: Columns,
 }
 
-export const Basics = () => {
-  return (
-    <Section>
-      <Columns>
-        {['First', 'Second', 'Third', 'Fourth'].map((d) => (
-          <Column key={d}>
-            <P>{d} column</P>
-          </Column>
-        ))}
-      </Columns>
-    </Section>
-  )
-}
+export const Basics = () => (
+  <Section>
+    <Columns>
+      {['First', 'Second', 'Third', 'Fourth'].map((d) => (
+        <Column key={d}>
+          <ColumnBox>{d} column</ColumnBox>
+        </Column>
+      ))}
+    </Columns>
+  </Section>
+)
 
 export const Sizes = () => (
   <Section>
@@ -46,7 +45,7 @@ export const Sizes = () => (
       .map((d) => (
         <Columns key={d}>
           <Column size={d}>
-            <P>is-{d}</P>
+            <ColumnBox>is-{d}</ColumnBox>
           </Column>
         </Columns>
       ))}
@@ -57,17 +56,17 @@ export const Offset = () => (
   <Section>
     <Columns>
       <Column size={6} offset={3}>
-        <P>is-6 is-offset-3</P>
+        <ColumnBox>is-6 is-offset-3</ColumnBox>
       </Column>
     </Columns>
     <Columns>
       <Column size={4} offset={8}>
-        <P>is-4 is-offset-8</P>
+        <ColumnBox>is-4 is-offset-8</ColumnBox>
       </Column>
     </Columns>
     <Columns>
       <Column size={11} offset={1}>
-        <P>is-11 is-offset-1</P>
+        <ColumnBox>is-11 is-offset-1</ColumnBox>
       </Column>
     </Columns>
   </Section>
@@ -85,9 +84,7 @@ export const Narrow = () => (
       <Column>
         <Box>
           <Title size={5}>Flexible column</Title>
-          <Subtitle>
-            This column will take up the remaining space available.
-          </Subtitle>
+          <Subtitle>This column will take up the remaining space available.</Subtitle>
         </Box>
       </Column>
     </Columns>
@@ -99,7 +96,7 @@ export const Mobile = () => (
     <Columns mobiled>
       {[1, 2, 3, 4].map((d) => (
         <Column key={d}>
-          <P>{d}</P>
+          <ColumnBox>{d}</ColumnBox>
         </Column>
       ))}
     </Columns>
@@ -111,7 +108,7 @@ export const Desktop = () => (
     <Columns desktoped>
       {[1, 2, 3, 4].map((d) => (
         <Column key={d}>
-          <P>{d}</P>
+          <ColumnBox>{d}</ColumnBox>
         </Column>
       ))}
     </Columns>
@@ -122,7 +119,7 @@ export const DifferentColumnSizesPerBreakpoint = () => (
   <Section>
     <Columns mobiled>
       <Column mobile={9} tablet={8} desktop={6} widescreen={4} fullhd={3}>
-        <P>
+        <ColumnBox>
           <code>is-mobile-9</code>
           <br />
           <code>is-tablet-8</code>
@@ -132,19 +129,19 @@ export const DifferentColumnSizesPerBreakpoint = () => (
           <code>is-widescreen-4</code>
           <br />
           <code>is-fullhd-3</code>
-        </P>
+        </ColumnBox>
       </Column>
       <Column>
-        <P>2</P>
+        <ColumnBox>2</ColumnBox>
       </Column>
       <Column>
-        <P>3</P>
+        <ColumnBox>3</ColumnBox>
       </Column>
       <Column>
-        <P>4</P>
+        <ColumnBox>4</ColumnBox>
       </Column>
       <Column>
-        <P>5</P>
+        <ColumnBox>5</ColumnBox>
       </Column>
     </Columns>
   </Section>
@@ -155,7 +152,7 @@ export const Gapless = () => (
     <Columns gapless>
       {[1, 2, 3, 4].map((d) => (
         <Column key={d}>
-          <P>No gap</P>
+          <ColumnBox>No gap</ColumnBox>
         </Column>
       ))}
     </Columns>
@@ -179,7 +176,7 @@ export const VariableGap = () => {
       <Columns gap={gap}>
         {[1, 2, 3, 4, 5, 6, 7, 8].map((d) => (
           <Column key={d}>
-            <P>{d}</P>
+            <ColumnBox>{d}</ColumnBox>
           </Column>
         ))}
       </Columns>
@@ -192,7 +189,7 @@ export const BreakpointBasedColumnGaps = () => (
     <Columns mobile={1} desktop={3} widescreen={8} fullhd={2}>
       {[...Array(6).keys()].map((d) => (
         <Column key={d}>
-          <P>Column</P>
+          <ColumnBox>Column</ColumnBox>
         </Column>
       ))}
     </Columns>
@@ -203,13 +200,10 @@ export const VerticalAlignment = () => (
   <Section>
     <Columns vcentered>
       <Column size={8}>
-        <P>First column</P>
+        <ColumnBox>First column</ColumnBox>
       </Column>
       <Column>
-        <P>
-          Second column with more content. This is so you can see the vertical
-          alignment.
-        </P>
+        <ColumnBox>Second column with more content. This is so you can see the vertical alignment.</ColumnBox>
       </Column>
     </Columns>
   </Section>
@@ -220,7 +214,7 @@ export const Multiline = () => (
     <Columns multiline>
       {[1, 2, 3, 4, 5, 6, 7, 8].map((d) => (
         <Column key={d} size={4}>
-          <P>{d}</P>
+          <ColumnBox>{d}</ColumnBox>
         </Column>
       ))}
     </Columns>
@@ -231,7 +225,7 @@ export const Centered = () => (
   <Section>
     <Columns centered>
       <Column size={6}>
-        <P>is-6</P>
+        <ColumnBox>is-6</ColumnBox>
       </Column>
     </Columns>
   </Section>
