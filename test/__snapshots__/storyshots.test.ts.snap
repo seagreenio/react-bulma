@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Columns Basics 1`] = `
+exports[`Storyshots Columns/Columns Basics 1`] = `
 <div
   className="section"
 >
@@ -11,67 +11,47 @@ exports[`Storyshots Columns Basics 1`] = `
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          First
-           column
-        </p>
+        First
+         column
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          Second
-           column
-        </p>
+        Second
+         column
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          Third
-           column
-        </p>
+        Third
+         column
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          Fourth
-           column
-        </p>
+        Fourth
+         column
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Breakpoint Based Column Gaps 1`] = `
+exports[`Storyshots Columns/Columns Breakpoint Based Column Gaps 1`] = `
 <div
   className="section"
 >
@@ -82,91 +62,61 @@ exports[`Storyshots Columns Breakpoint Based Column Gaps 1`] = `
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          Column
-        </p>
+        Column
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          Column
-        </p>
+        Column
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          Column
-        </p>
+        Column
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          Column
-        </p>
+        Column
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          Column
-        </p>
+        Column
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          Column
-        </p>
+        Column
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Centered 1`] = `
+exports[`Storyshots Columns/Columns Centered 1`] = `
 <div
   className="section"
 >
@@ -177,21 +127,16 @@ exports[`Storyshots Columns Centered 1`] = `
       className="column is-6"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-6
-        </p>
+        is-6
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Desktop 1`] = `
+exports[`Storyshots Columns/Columns Desktop 1`] = `
 <div
   className="section"
 >
@@ -202,63 +147,43 @@ exports[`Storyshots Columns Desktop 1`] = `
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          1
-        </p>
+        1
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          2
-        </p>
+        2
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          3
-        </p>
+        3
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          4
-        </p>
+        4
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Different Column Sizes Per Breakpoint 1`] = `
+exports[`Storyshots Columns/Columns Different Column Sizes Per Breakpoint 1`] = `
 <div
   className="section"
 >
@@ -269,95 +194,70 @@ exports[`Storyshots Columns Different Column Sizes Per Breakpoint 1`] = `
       className="column is-9-mobile is-8-tablet is-6-desktop is-4-widescreen is-3-mobile"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          <code>
-            is-mobile-9
-          </code>
-          <br />
-          <code>
-            is-tablet-8
-          </code>
-          <br />
-          <code>
-            is-desktop-6
-          </code>
-          <br />
-          <code>
-            is-widescreen-4
-          </code>
-          <br />
-          <code>
-            is-fullhd-3
-          </code>
-        </p>
+        <code>
+          is-mobile-9
+        </code>
+        <br />
+        <code>
+          is-tablet-8
+        </code>
+        <br />
+        <code>
+          is-desktop-6
+        </code>
+        <br />
+        <code>
+          is-widescreen-4
+        </code>
+        <br />
+        <code>
+          is-fullhd-3
+        </code>
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          2
-        </p>
+        2
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          3
-        </p>
+        3
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          4
-        </p>
+        4
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          5
-        </p>
+        5
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Gapless 1`] = `
+exports[`Storyshots Columns/Columns Gapless 1`] = `
 <div
   className="section"
 >
@@ -368,63 +268,43 @@ exports[`Storyshots Columns Gapless 1`] = `
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          No gap
-        </p>
+        No gap
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          No gap
-        </p>
+        No gap
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          No gap
-        </p>
+        No gap
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          No gap
-        </p>
+        No gap
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Mobile 1`] = `
+exports[`Storyshots Columns/Columns Mobile 1`] = `
 <div
   className="section"
 >
@@ -435,63 +315,43 @@ exports[`Storyshots Columns Mobile 1`] = `
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          1
-        </p>
+        1
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          2
-        </p>
+        2
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          3
-        </p>
+        3
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          4
-        </p>
+        4
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Multiline 1`] = `
+exports[`Storyshots Columns/Columns Multiline 1`] = `
 <div
   className="section"
 >
@@ -502,119 +362,79 @@ exports[`Storyshots Columns Multiline 1`] = `
       className="column is-4"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          1
-        </p>
+        1
       </div>
     </div>
     <div
       className="column is-4"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          2
-        </p>
+        2
       </div>
     </div>
     <div
       className="column is-4"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          3
-        </p>
+        3
       </div>
     </div>
     <div
       className="column is-4"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          4
-        </p>
+        4
       </div>
     </div>
     <div
       className="column is-4"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          5
-        </p>
+        5
       </div>
     </div>
     <div
       className="column is-4"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          6
-        </p>
+        6
       </div>
     </div>
     <div
       className="column is-4"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          7
-        </p>
+        7
       </div>
     </div>
     <div
       className="column is-4"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          8
-        </p>
+        8
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Narrow 1`] = `
+exports[`Storyshots Columns/Columns Narrow 1`] = `
 <div
   className="section"
 >
@@ -666,7 +486,7 @@ exports[`Storyshots Columns Narrow 1`] = `
 </div>
 `;
 
-exports[`Storyshots Columns Offset 1`] = `
+exports[`Storyshots Columns/Columns Offset 1`] = `
 <div
   className="section"
 >
@@ -677,14 +497,9 @@ exports[`Storyshots Columns Offset 1`] = `
       className="column is-6 is-offset-3"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-6 is-offset-3
-        </p>
+        is-6 is-offset-3
       </div>
     </div>
   </div>
@@ -695,14 +510,9 @@ exports[`Storyshots Columns Offset 1`] = `
       className="column is-4 is-offset-8"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-4 is-offset-8
-        </p>
+        is-4 is-offset-8
       </div>
     </div>
   </div>
@@ -713,21 +523,16 @@ exports[`Storyshots Columns Offset 1`] = `
       className="column is-11 is-offset-1"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-11 is-offset-1
-        </p>
+        is-11 is-offset-1
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Sizes 1`] = `
+exports[`Storyshots Columns/Columns Sizes 1`] = `
 <div
   className="section"
 >
@@ -738,15 +543,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-1"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          1
-        </p>
+        is-
+        1
       </div>
     </div>
   </div>
@@ -757,15 +557,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-2"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          2
-        </p>
+        is-
+        2
       </div>
     </div>
   </div>
@@ -776,15 +571,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-3"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          3
-        </p>
+        is-
+        3
       </div>
     </div>
   </div>
@@ -795,15 +585,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-4"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          4
-        </p>
+        is-
+        4
       </div>
     </div>
   </div>
@@ -814,15 +599,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-5"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          5
-        </p>
+        is-
+        5
       </div>
     </div>
   </div>
@@ -833,15 +613,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-6"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          6
-        </p>
+        is-
+        6
       </div>
     </div>
   </div>
@@ -852,15 +627,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-7"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          7
-        </p>
+        is-
+        7
       </div>
     </div>
   </div>
@@ -871,15 +641,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-8"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          8
-        </p>
+        is-
+        8
       </div>
     </div>
   </div>
@@ -890,15 +655,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-9"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          9
-        </p>
+        is-
+        9
       </div>
     </div>
   </div>
@@ -909,15 +669,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-10"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          10
-        </p>
+        is-
+        10
       </div>
     </div>
   </div>
@@ -928,15 +683,10 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-11"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          11
-        </p>
+        is-
+        11
       </div>
     </div>
   </div>
@@ -947,22 +697,17 @@ exports[`Storyshots Columns Sizes 1`] = `
       className="column is-12"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          is-
-          12
-        </p>
+        is-
+        12
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Variable Gap 1`] = `
+exports[`Storyshots Columns/Columns Variable Gap 1`] = `
 <div
   className="section"
 >
@@ -1040,119 +785,79 @@ exports[`Storyshots Columns Variable Gap 1`] = `
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          1
-        </p>
+        1
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          2
-        </p>
+        2
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          3
-        </p>
+        3
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          4
-        </p>
+        4
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          5
-        </p>
+        5
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          6
-        </p>
+        6
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          7
-        </p>
+        7
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          8
-        </p>
+        8
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Columns Vertical Alignment 1`] = `
+exports[`Storyshots Columns/Columns Vertical Alignment 1`] = `
 <div
   className="section"
 >
@@ -1163,28 +868,18 @@ exports[`Storyshots Columns Vertical Alignment 1`] = `
       className="column is-8"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          First column
-        </p>
+        First column
       </div>
     </div>
     <div
       className="column"
     >
       <div
-        className="box has-text-white has-background-primary"
+        className="box has-text-centered has-text-weight-bold has-text-white has-background-primary"
       >
-        <p
-          className=""
-          hasText="centered"
-        >
-          Second column with more content. This is so you can see the vertical alignment.
-        </p>
+        Second column with more content. This is so you can see the vertical alignment.
       </div>
     </div>
   </div>
