@@ -6,9 +6,7 @@
 <h1 align="center">React + Bulma</h1>
 
 <p align="center">Another & Another React Bulma Components.</p>
-<p align="center">Covers everything from Bulma. Built-in TS support.</p>
-
-> Note: Currently WIP
+<p align="center">Covers everything from Bulma. With built-in TS support.</p>
 
 ## License
 
