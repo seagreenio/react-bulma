@@ -16,7 +16,7 @@ import {
 } from '../..'
 
 const TypographyColorBox = withTypography<withColorProps>(withColor<BoxProps>(Box))
-const ColumnBox: React.FC = ({ children }) => (
+const ColumnBox = ({ children }) => (
   <TypographyColorBox hasBackground="primary" hasText="white" textAlignment="centered" textWeight="bold">
     {children}
   </TypographyColorBox>
