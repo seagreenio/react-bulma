@@ -1,6 +1,6 @@
-import { Pagination, PaginationDirection, PaginationEllipsis, PaginationLink, PaginationList } from '../..'
-
 import React from 'react'
+
+import { Pagination, PaginationDirection, PaginationEllipsis, PaginationLink, PaginationList } from '../..'
 
 export default {
   title: 'Components/Pagination',

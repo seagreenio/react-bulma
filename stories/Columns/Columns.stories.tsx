@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 import {
   Box,
   BoxProps,
@@ -12,7 +14,6 @@ import {
   withColorProps,
   withTypography,
 } from '../..'
-import React, { useState } from 'react'
 
 const TypographyColorBox = withTypography<withColorProps>(withColor<BoxProps>(Box))
 const ColumnBox: React.FC = ({ children }) => (

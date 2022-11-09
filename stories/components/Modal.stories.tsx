@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 import {
   Button,
   Card,
@@ -15,8 +17,6 @@ import {
   ModalClose,
   ModalContent,
 } from '../..'
-import React, { useState } from 'react'
-
 import { text } from '../utils/common'
 
 export default {

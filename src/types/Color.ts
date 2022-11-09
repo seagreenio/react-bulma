@@ -49,13 +49,7 @@ export enum DarkColor {
   Danger = 'danger-dark',
 }
 
-export type DarkColorType =
-  | 'primary-dark'
-  | 'link-dark'
-  | 'info-dark'
-  | 'success-dark'
-  | 'warning-dark'
-  | 'danger-dark'
+export type DarkColorType = 'primary-dark' | 'link-dark' | 'info-dark' | 'success-dark' | 'warning-dark' | 'danger-dark'
 
 export enum ShadesOfGrey {
   BlackBis = 'black-bis',

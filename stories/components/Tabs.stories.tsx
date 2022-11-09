@@ -1,5 +1,6 @@
-import { Icon, Tab, Tabs } from '../..'
 import React, { useState } from 'react'
+
+import { Icon, Tab, Tabs } from '../..'
 
 export default {
   title: 'Components/Tabs',

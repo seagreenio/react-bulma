@@ -1,12 +1,13 @@
-import Color, { ColorType } from '../types/Color'
-import Size, { SizeType } from '../types/Size'
-
-import CommonProps from '../types/CommonProps'
+import cx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
-import cx from 'classnames'
+
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
+
+import Color, { ColorType } from '../types/Color'
+import CommonProps from '../types/CommonProps'
+import Size, { SizeType } from '../types/Size'
 
 export interface HeroProps extends CommonProps {
   head?: boolean

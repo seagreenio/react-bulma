@@ -1,13 +1,14 @@
-import Color, { ColorType } from '../types/Color'
-import Size, { SizeType } from 'types/Size'
-
-import CommonProps from '../types/CommonProps'
+import cx from 'clsx'
 import Icon from 'elements/Icon'
 import PropTypes from 'prop-types'
 import React from 'react'
-import cx from 'classnames'
+import Size, { SizeType } from 'types/Size'
+
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
+
+import Color, { ColorType } from '../types/Color'
+import CommonProps from '../types/CommonProps'
 
 export interface FileProps extends CommonProps<HTMLInputElement> {
   icon?: typeof Icon

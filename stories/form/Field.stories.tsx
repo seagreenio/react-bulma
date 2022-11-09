@@ -1,6 +1,6 @@
-import { Control, Field, Input } from '../..'
-
 import React from 'react'
+
+import { Control, Field, Input } from '../..'
 
 export default {
   title: 'Form/Field',

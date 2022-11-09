@@ -1,8 +1,10 @@
-import CommonProps from '../types/CommonProps'
+import cx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
-import cx from 'classnames'
+
 import getUnhandledProps from 'lib/getUnhandledProps'
+
+import CommonProps from '../types/CommonProps'
 
 export interface CheckboxProps extends CommonProps<HTMLInputElement> {
   labelProps?: JSX.IntrinsicElements['label'] & { disabled: boolean }

@@ -1,6 +1,6 @@
-import { Card, CardContent, CardImage, Content, Image, Media, Subtitle, Title } from '../..'
-
 import React from 'react'
+
+import { Card, CardContent, CardImage, Content, Image, Media, Subtitle, Title } from '../..'
 
 export default {
   title: 'Components/Card',

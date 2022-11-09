@@ -1,6 +1,6 @@
-import { Hero, Subtitle, Title } from '../..'
-
 import React from 'react'
+
+import { Hero, Subtitle, Title } from '../..'
 
 export default {
   title: 'Layout/Hero',

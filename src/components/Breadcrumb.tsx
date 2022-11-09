@@ -1,11 +1,12 @@
-import Size, { SizeType } from 'types/Size'
-
-import CommonProps from '../types/CommonProps'
+import cx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
-import cx from 'classnames'
+import Size, { SizeType } from 'types/Size'
+
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
+
+import CommonProps from '../types/CommonProps'
 
 export interface BreadcrumbProps extends CommonProps {
   alignment?: 'centered' | 'right'

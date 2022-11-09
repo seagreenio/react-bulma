@@ -1,6 +1,6 @@
-import { Button, Checkbox, Control, Icon, Input, Panel, PanelBlock, PanelHeading, PanelTabs } from '../..'
-
 import React from 'react'
+
+import { Button, Checkbox, Control, Icon, Input, Panel, PanelBlock, PanelHeading, PanelTabs } from '../..'
 import { colors } from '../utils/common'
 
 export default {

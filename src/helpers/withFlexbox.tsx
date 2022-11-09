@@ -1,7 +1,9 @@
-import CommonProps from '../types/CommonProps'
+import cx from 'clsx'
 import React from 'react'
-import cx from 'classnames'
+
 import { differenceObject } from 'lib/utils'
+
+import CommonProps from '../types/CommonProps'
 
 export interface FlexboxProps extends CommonProps {
   flexDirection: 'row' | 'row-reverse' | 'column' | 'column-reverse'

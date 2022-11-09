@@ -1,6 +1,6 @@
-import { Level, LevelProps, withTypography } from '../..'
-
 import React from 'react'
+
+import { Level, LevelProps, withTypography } from '../..'
 
 const TypographyLevel = withTypography<LevelProps>(Level)
 

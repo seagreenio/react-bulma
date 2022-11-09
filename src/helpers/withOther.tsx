@@ -1,7 +1,9 @@
-import CommonProps from '../types/CommonProps'
+import cx from 'clsx'
 import React from 'react'
-import cx from 'classnames'
+
 import { differenceObject } from 'lib/utils'
+
+import CommonProps from '../types/CommonProps'
 
 export interface OtherProps extends CommonProps {
   clearfix?: boolean

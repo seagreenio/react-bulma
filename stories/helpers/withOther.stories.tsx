@@ -1,6 +1,6 @@
-import { Box, BoxProps, withOther } from '../..'
-
 import React from 'react'
+
+import { Box, BoxProps, withOther } from '../..'
 
 const OtherBox = withOther<BoxProps>(Box)
 

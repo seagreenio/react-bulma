@@ -1,7 +1,7 @@
-import { Button, Buttons, Control, Field, Icon } from '../..'
-
-import ColorBox from '../utils/ColorBox'
 import React from 'react'
+
+import { Button, Buttons, Control, Field, Icon } from '../..'
+import ColorBox from '../utils/ColorBox'
 
 export default {
   title: 'Elements/Button',

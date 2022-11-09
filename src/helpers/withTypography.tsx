@@ -1,9 +1,10 @@
-import Responsive, { ResponsiveType, Viewport, ViewportType } from '../types/Responsive'
+import cx from 'clsx'
+import React from 'react'
+
 import { differenceObject, properRange } from 'lib/utils'
 
 import CommonProps from '../types/CommonProps'
-import React from 'react'
-import cx from 'classnames'
+import Responsive, { ResponsiveType, Viewport, ViewportType } from '../types/Responsive'
 
 export interface TypographyProps extends CommonProps {
   isSize?: Unit

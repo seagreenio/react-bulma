@@ -1,6 +1,6 @@
-import { Box, BoxProps, withResponsive } from '../..'
-
 import React from 'react'
+
+import { Box, BoxProps, withResponsive } from '../..'
 
 const ResponsiveBox = withResponsive<BoxProps>(Box)
 

@@ -1,7 +1,7 @@
+import React from 'react'
+
 import { Control, Field, Textarea } from '../..'
 import { colors, sizes, toTitleCase } from '../utils/common'
-
-import React from 'react'
 
 export default {
   title: 'Form/Textarea',

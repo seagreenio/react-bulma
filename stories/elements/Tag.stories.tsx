@@ -1,6 +1,6 @@
-import { Control, Delete, Field, Tag, Tags } from '../..'
-
 import React from 'react'
+
+import { Control, Delete, Field, Tag, Tags } from '../..'
 
 export default {
   title: 'Elements/Tag',

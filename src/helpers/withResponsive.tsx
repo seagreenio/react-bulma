@@ -1,9 +1,10 @@
-import Responsive, { ResponsiveType } from '../types/Responsive'
+import cx from 'clsx'
+import React from 'react'
+
+import { differenceObject } from 'lib/utils'
 
 import CommonProps from '../types/CommonProps'
-import React from 'react'
-import cx from 'classnames'
-import { differenceObject } from 'lib/utils'
+import Responsive, { ResponsiveType } from '../types/Responsive'
 
 export interface ResponsiveProps extends CommonProps {
   isBlock?: boolean | Responsive | ResponsiveType

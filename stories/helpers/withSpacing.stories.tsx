@@ -1,6 +1,6 @@
-import { Box, BoxProps, withSpacing } from '../..'
-
 import React from 'react'
+
+import { Box, BoxProps, withSpacing } from '../..'
 
 const SpacingBox = withSpacing<BoxProps>(Box)
 

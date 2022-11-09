@@ -1,3 +1,8 @@
+import cx from 'clsx'
+import React from 'react'
+
+import { differenceObject } from 'lib/utils'
+
 import Color, {
   ColorType,
   DarkColor,
@@ -7,11 +12,7 @@ import Color, {
   ShadesOfGrey,
   ShadesOfGreyType,
 } from '../types/Color'
-
 import CommonProps from '../types/CommonProps'
-import React from 'react'
-import cx from 'classnames'
-import { differenceObject } from 'lib/utils'
 
 export interface ColorProps extends CommonProps {
   hasText?:

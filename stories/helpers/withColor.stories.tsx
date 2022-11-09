@@ -1,6 +1,6 @@
-import { Box, BoxProps, withColor } from '../..'
-
 import React from 'react'
+
+import { Box, BoxProps, withColor } from '../..'
 
 const ColorBox = withColor<BoxProps>(Box)
 

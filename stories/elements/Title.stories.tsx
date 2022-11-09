@@ -1,6 +1,6 @@
-import { Subtitle, Title } from '../..'
-
 import React from 'react'
+
+import { Subtitle, Title } from '../..'
 
 export default {
   title: 'Elements/Title',

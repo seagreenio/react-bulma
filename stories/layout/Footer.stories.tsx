@@ -1,6 +1,6 @@
-import { Content, ContentProps, Footer, withTypography } from '../..'
-
 import React from 'react'
+
+import { Content, ContentProps, Footer, withTypography } from '../..'
 
 const TypographyContent = withTypography<ContentProps>(Content)
 

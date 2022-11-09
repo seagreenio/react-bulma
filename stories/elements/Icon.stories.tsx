@@ -1,6 +1,7 @@
-import ColorIcon from '../utils/ColorIcon'
-import { Icon } from '../..'
 import React from 'react'
+
+import { Icon } from '../..'
+import ColorIcon from '../utils/ColorIcon'
 
 export default {
   title: 'Elements/Icon',

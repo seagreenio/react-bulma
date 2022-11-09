@@ -1,6 +1,6 @@
-import { Button, Checkbox, Content, Control, Delete, Field, Icon, Image, Level, Media, Textarea } from '../..'
-
 import React from 'react'
+
+import { Button, Checkbox, Content, Control, Delete, Field, Icon, Image, Level, Media, Textarea } from '../..'
 import { text } from '../utils/common'
 
 export default {

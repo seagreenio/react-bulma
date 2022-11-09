@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 import {
   Button,
   Dropdown,
@@ -10,7 +12,6 @@ import {
   Icon,
   withOther,
 } from '../..'
-import React, { useState } from 'react'
 
 export default {
   title: 'Components/Dropdown',

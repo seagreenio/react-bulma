@@ -1,5 +1,6 @@
-import { Box } from '../..'
 import React from 'react'
+
+import { Box } from '../..'
 
 export default {
   title: 'Elements/Box',

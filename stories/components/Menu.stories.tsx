@@ -1,6 +1,6 @@
-import { Menu, MenuLabel, MenuList } from '../..'
-
 import React from 'react'
+
+import { Menu, MenuLabel, MenuList } from '../..'
 
 export default {
   title: 'Components/Menu',

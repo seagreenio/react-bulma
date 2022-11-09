@@ -1,6 +1,6 @@
-import { Checkbox, Field } from '../..'
-
 import React from 'react'
+
+import { Checkbox, Field } from '../..'
 
 export default {
   title: 'Form/Checkbox',

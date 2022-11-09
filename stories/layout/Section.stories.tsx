@@ -1,6 +1,6 @@
-import { Section, Subtitle, Title } from '../..'
-
 import React from 'react'
+
+import { Section, Subtitle, Title } from '../..'
 
 export default {
   title: 'Layout/Section',

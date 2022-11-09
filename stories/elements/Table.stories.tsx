@@ -1,6 +1,6 @@
-import { Box, Table, TableContainer } from '../..'
-
 import React from 'react'
+
+import { Box, Table, TableContainer } from '../..'
 
 const TableContent = () => (
   <>

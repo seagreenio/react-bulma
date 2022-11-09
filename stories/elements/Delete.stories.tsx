@@ -1,5 +1,6 @@
-import { Delete } from '../..'
 import React from 'react'
+
+import { Delete } from '../..'
 
 export default {
   title: 'Elements/Delete',

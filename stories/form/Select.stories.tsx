@@ -1,8 +1,8 @@
-import { Control, Field, Icon, Select } from '../..'
-import { colors, sizes } from '../utils/common'
-
 import React from 'react'
+
+import { Control, Field, Icon, Select } from '../..'
 import { SizeType } from '../../dist/types/Size'
+import { colors, sizes } from '../utils/common'
 
 export default {
   title: 'Form/Select',

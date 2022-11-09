@@ -1,11 +1,12 @@
+import cx from 'clsx'
+import PropTypes from 'prop-types'
+import React from 'react'
 import Color, { ColorType } from 'types/Color'
 import Size, { SizeType } from 'types/Size'
 
-import CommonProps from '../types/CommonProps'
-import PropTypes from 'prop-types'
-import React from 'react'
-import cx from 'classnames'
 import getUnhandledProps from 'lib/getUnhandledProps'
+
+import CommonProps from '../types/CommonProps'
 
 export interface InputProps extends CommonProps<HTMLInputElement> {
   color?: Color | ColorType

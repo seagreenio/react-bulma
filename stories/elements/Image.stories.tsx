@@ -1,6 +1,6 @@
-import { Block, Image } from '../..'
-
 import React from 'react'
+
+import { Block, Image } from '../..'
 
 export default {
   title: 'Elements/Image',
@@ -35,13 +35,9 @@ export const FixedSquareImages = () => (
   </>
 )
 
-export const RoundedImages = () => (
-  <Image src="https://fakeimg.pl/128/" size={128} rounded />
-)
+export const RoundedImages = () => <Image src="https://fakeimg.pl/128/" size={128} rounded />
 
-export const RetinaImages = () => (
-  <Image src="https://fakeimg.pl/256/" size={128} />
-)
+export const RetinaImages = () => <Image src="https://fakeimg.pl/256/" size={128} />
 
 export const ResponsiveImagesWithRatios = () => (
   <div style={{ width: 128 }}>

@@ -1,9 +1,10 @@
-import Button, { ButtonProps } from '../elements/Button'
-
+import cx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
-import cx from 'classnames'
+
 import getUnhandledProps from 'lib/getUnhandledProps'
+
+import Button, { ButtonProps } from '../elements/Button'
 
 export type ModalCloseProps = ButtonProps
 

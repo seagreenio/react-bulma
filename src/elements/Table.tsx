@@ -1,6 +1,7 @@
+import cx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
-import cx from 'classnames'
+
 import getUnhandledProps from 'lib/getUnhandledProps'
 
 export interface TableProps extends React.TableHTMLAttributes<HTMLTableElement> {

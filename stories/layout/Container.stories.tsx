@@ -1,6 +1,6 @@
-import { Block, Container, Notification } from '../..'
-
 import React from 'react'
+
+import { Block, Container, Notification } from '../..'
 
 export default {
   title: 'Layout/Container',

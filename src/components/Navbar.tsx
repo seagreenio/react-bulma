@@ -1,11 +1,12 @@
-import Color, { ColorType } from 'types/Color'
-
-import CommonProps from '../types/CommonProps'
+import cx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
-import cx from 'classnames'
+import Color, { ColorType } from 'types/Color'
+
 import detectElementType from 'lib/detectElementType'
 import getUnhandledProps from 'lib/getUnhandledProps'
+
+import CommonProps from '../types/CommonProps'
 
 export interface NavbarProps extends CommonProps {
   transparent?: boolean

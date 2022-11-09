@@ -1,10 +1,11 @@
-import Color, { ColorType } from '../types/Color'
-import Size, { SizeType } from '../types/Size'
-
+import cx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
-import cx from 'classnames'
+
 import getUnhandledProps from 'lib/getUnhandledProps'
+
+import Color, { ColorType } from '../types/Color'
+import Size, { SizeType } from '../types/Size'
 
 export interface ProgressProps extends React.ProgressHTMLAttributes<HTMLProgressElement> {
   color?: Color | ColorType

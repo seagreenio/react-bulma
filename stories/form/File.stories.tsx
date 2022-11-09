@@ -1,5 +1,6 @@
-import { Field, File, Icon } from '../..'
 import React, { useState } from 'react'
+
+import { Field, File, Icon } from '../..'
 import { colors, sizes, toTitleCase } from '../utils/common'
 
 export default {

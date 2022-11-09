@@ -1,6 +1,6 @@
-import { Control, Radio } from '../..'
-
 import React from 'react'
+
+import { Control, Radio } from '../..'
 
 export default {
   title: 'Form/Radio',

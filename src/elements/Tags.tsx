@@ -1,10 +1,11 @@
-import Size, { SizeType } from '../types/Size'
-
-import CommonProps from '../types/CommonProps'
+import cx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
-import cx from 'classnames'
+
 import detectElementType from 'lib/detectElementType'
+
+import CommonProps from '../types/CommonProps'
+import Size, { SizeType } from '../types/Size'
 
 export interface TagsProps extends CommonProps {
   size?: Exclude<Size, Size.Small> | Exclude<SizeType, 'small'>

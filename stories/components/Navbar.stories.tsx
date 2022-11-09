@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 import {
   Button,
   Buttons,
@@ -12,7 +14,6 @@ import {
   NavbarMenu,
   NavbarStart,
 } from '../..'
-import React, { useState } from 'react'
 
 export default {
   title: 'Components/Navbar',

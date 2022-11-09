@@ -1,6 +1,6 @@
-import { Box, BoxProps, withTypography } from '../..'
-
 import React from 'react'
+
+import { Box, BoxProps, withTypography } from '../..'
 
 const TypographyBox = withTypography<BoxProps>(Box)
 

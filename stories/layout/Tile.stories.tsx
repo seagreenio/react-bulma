@@ -1,6 +1,6 @@
-import { Content, Image, Notification, Subtitle, Tile, Title } from '../..'
-
 import React from 'react'
+
+import { Content, Image, Notification, Subtitle, Tile, Title } from '../..'
 import { text } from '../utils/common'
 
 export default {
