@@ -840,7 +840,7 @@ function Example003Demo() {
 }
 
 export const Example001 = {
-  name: 'Media Object 01',
+  name: 'Media object',
   parameters: {
     official: { id: 'layout-media/basic/001' },
     docs: {
@@ -855,7 +855,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'Media Object 02',
+  name: 'Media form',
   parameters: {
     official: { id: 'layout-media/basic/002' },
     docs: {
@@ -870,7 +870,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'nesting 01',
+  name: 'Nested media objects',
   parameters: {
     official: { id: 'layout-media/nesting/001' },
     docs: {

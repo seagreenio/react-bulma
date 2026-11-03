@@ -975,7 +975,7 @@ function Example007Demo() {
 }
 
 export const Example001 = {
-  name: 'default behavior 01',
+  name: 'Centered container',
   parameters: {
     official: { id: 'layout-container/default-behavior/001' },
     docs: {
@@ -990,7 +990,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'widescreen or fullhd only 01',
+  name: 'Container from widescreen',
   parameters: {
     official: { id: 'layout-container/widescreen-or-fullhd-only/001' },
     docs: {
@@ -1005,7 +1005,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'widescreen or fullhd only 02',
+  name: 'Container from full HD',
   parameters: {
     official: { id: 'layout-container/widescreen-or-fullhd-only/002' },
     docs: {
@@ -1020,7 +1020,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'tablet desktop and widescreen maximum widths 01',
+  name: 'Tablet maximum width',
   parameters: {
     official: {
       id: 'layout-container/tablet-desktop-and-widescreen-maximum-widths/001',
@@ -1037,7 +1037,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'tablet desktop and widescreen maximum widths 02',
+  name: 'Desktop maximum width',
   parameters: {
     official: {
       id: 'layout-container/tablet-desktop-and-widescreen-maximum-widths/002',
@@ -1054,7 +1054,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'tablet desktop and widescreen maximum widths 03',
+  name: 'Widescreen maximum width',
   parameters: {
     official: {
       id: 'layout-container/tablet-desktop-and-widescreen-maximum-widths/003',
@@ -1071,7 +1071,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'fluid container 01',
+  name: 'Fluid container',
   parameters: {
     official: { id: 'layout-container/fluid-container/001' },
     docs: {

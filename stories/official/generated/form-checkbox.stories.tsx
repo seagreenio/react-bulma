@@ -259,7 +259,7 @@ function Example004Demo() {
 }
 
 export const Example001 = {
-  name: 'Checkbox 01',
+  name: 'Remember-me checkbox',
   parameters: {
     official: { id: 'form-checkbox/basic/001' },
     docs: {
@@ -274,7 +274,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'Checkbox 02',
+  name: 'Checkbox with a link',
   parameters: {
     official: { id: 'form-checkbox/basic/002' },
     docs: {
@@ -289,7 +289,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'Checkbox 03',
+  name: 'Disabled checkbox',
   parameters: {
     official: { id: 'form-checkbox/basic/003' },
     docs: {
@@ -304,7 +304,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'list of checkboxes 01',
+  name: 'Checkbox list',
   parameters: {
     official: { id: 'form-checkbox/list-of-checkboxes/001' },
     docs: {

@@ -600,7 +600,7 @@ function Example001Demo() {
 }
 
 export const Example001 = {
-  name: 'Menu 01',
+  name: 'Nested navigation menu',
   parameters: {
     official: { id: 'components-menu/basic/001' },
     docs: {

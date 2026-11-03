@@ -664,7 +664,7 @@ function Example003Demo() {
 }
 
 export const Example001 = {
-  name: 'Block 01',
+  name: 'Stacked blocks',
   parameters: {
     official: { id: 'elements-block/basic/001' },
     docs: {
@@ -679,7 +679,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'Block 02',
+  name: 'Without blocks',
   parameters: {
     official: { id: 'elements-block/basic/002' },
     docs: {
@@ -694,7 +694,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'you re already using it 01',
+  name: 'Shared block spacing',
   parameters: {
     official: { id: 'elements-block/you-re-already-using-it/001' },
     docs: {

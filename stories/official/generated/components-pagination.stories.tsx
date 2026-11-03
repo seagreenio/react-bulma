@@ -1368,7 +1368,7 @@ function Example008Demo() {
 }
 
 export const Example001 = {
-  name: 'Pagination 01',
+  name: 'Default pagination',
   parameters: {
     official: { id: 'components-pagination/basic/001' },
     docs: {
@@ -1383,7 +1383,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'Pagination 02',
+  name: 'Disabled previous link',
   parameters: {
     official: { id: 'components-pagination/basic/002' },
     docs: {
@@ -1398,7 +1398,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'Pagination 03',
+  name: 'Centered pagination',
   parameters: {
     official: { id: 'components-pagination/basic/003' },
     docs: {
@@ -1413,7 +1413,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'Pagination 04',
+  name: 'Right-aligned pagination',
   parameters: {
     official: { id: 'components-pagination/basic/004' },
     docs: {
@@ -1428,7 +1428,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'styles 01',
+  name: 'Rounded pagination',
   parameters: {
     official: { id: 'components-pagination/styles/001' },
     docs: {
@@ -1443,7 +1443,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'sizes 01',
+  name: 'Small pagination',
   parameters: {
     official: { id: 'components-pagination/sizes/001' },
     docs: {
@@ -1458,7 +1458,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'sizes 02',
+  name: 'Medium pagination',
   parameters: {
     official: { id: 'components-pagination/sizes/002' },
     docs: {
@@ -1473,7 +1473,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'sizes 03',
+  name: 'Large pagination',
   parameters: {
     official: { id: 'components-pagination/sizes/003' },
     docs: {

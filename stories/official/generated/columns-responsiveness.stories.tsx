@@ -353,7 +353,7 @@ function Example003Demo() {
 }
 
 export const Example001 = {
-  name: 'mobile columns 01',
+  name: 'Columns on mobile',
   parameters: {
     official: { id: 'columns-responsiveness/mobile-columns/001' },
     docs: {
@@ -368,7 +368,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'mobile columns 02',
+  name: 'Columns from desktop',
   parameters: {
     official: { id: 'columns-responsiveness/mobile-columns/002' },
     docs: {
@@ -383,7 +383,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'different column sizes per breakpoint 01',
+  name: 'Widths at each breakpoint',
   parameters: {
     official: {
       id: 'columns-responsiveness/different-column-sizes-per-breakpoint/001',

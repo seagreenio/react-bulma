@@ -2328,7 +2328,7 @@ function Example025Demo() {
 }
 
 export const Example001 = {
-  name: 'Input 01',
+  name: 'Text input',
   parameters: {
     official: { id: 'form-input/basic/001' },
     docs: {
@@ -2343,7 +2343,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'colors 01',
+  name: 'Link input',
   parameters: {
     official: { id: 'form-input/colors/001' },
     docs: {
@@ -2358,7 +2358,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'colors 02',
+  name: 'Primary input',
   parameters: {
     official: { id: 'form-input/colors/002' },
     docs: {
@@ -2373,7 +2373,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'colors 03',
+  name: 'Info input',
   parameters: {
     official: { id: 'form-input/colors/003' },
     docs: {
@@ -2388,7 +2388,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'colors 04',
+  name: 'Success input',
   parameters: {
     official: { id: 'form-input/colors/004' },
     docs: {
@@ -2403,7 +2403,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'colors 05',
+  name: 'Warning input',
   parameters: {
     official: { id: 'form-input/colors/005' },
     docs: {
@@ -2418,7 +2418,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'colors 06',
+  name: 'Danger input',
   parameters: {
     official: { id: 'form-input/colors/006' },
     docs: {
@@ -2433,7 +2433,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'sizes 01',
+  name: 'Small input',
   parameters: {
     official: { id: 'form-input/sizes/001' },
     docs: {
@@ -2448,7 +2448,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'sizes 02',
+  name: 'Normal size input',
   parameters: {
     official: { id: 'form-input/sizes/002' },
     docs: {
@@ -2463,7 +2463,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'sizes 03',
+  name: 'Medium input',
   parameters: {
     official: { id: 'form-input/sizes/003' },
     docs: {
@@ -2478,7 +2478,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'sizes 04',
+  name: 'Large input',
   parameters: {
     official: { id: 'form-input/sizes/004' },
     docs: {
@@ -2493,7 +2493,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'styles 01',
+  name: 'Rounded input',
   parameters: {
     official: { id: 'form-input/styles/001' },
     docs: {
@@ -2508,7 +2508,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'normal 01',
+  name: 'Normal state',
   parameters: {
     official: { id: 'form-input/normal/001' },
     docs: {
@@ -2523,7 +2523,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'hover 01',
+  name: 'Hover state',
   parameters: {
     official: { id: 'form-input/hover/001' },
     docs: {
@@ -2538,7 +2538,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'focus 01',
+  name: 'Focus state',
   parameters: {
     official: { id: 'form-input/focus/001' },
     docs: {
@@ -2553,7 +2553,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'loading 01',
+  name: 'Loading input',
   parameters: {
     official: { id: 'form-input/loading/001' },
     docs: {
@@ -2568,7 +2568,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: 'loading 02',
+  name: 'Loading spinner sizes',
   parameters: {
     official: { id: 'form-input/loading/002' },
     docs: {
@@ -2583,7 +2583,7 @@ export const Example017 = {
 } satisfies StoryObj
 
 export const Example018 = {
-  name: 'disabled 01',
+  name: 'Disabled input',
   parameters: {
     official: { id: 'form-input/disabled/001' },
     docs: {
@@ -2598,7 +2598,7 @@ export const Example018 = {
 } satisfies StoryObj
 
 export const Example019 = {
-  name: 'readonly and static inputs 01',
+  name: 'Read-only input',
   parameters: {
     official: { id: 'form-input/readonly-and-static-inputs/001' },
     docs: {
@@ -2613,7 +2613,7 @@ export const Example019 = {
 } satisfies StoryObj
 
 export const Example020 = {
-  name: 'readonly and static inputs 02',
+  name: 'Static input',
   parameters: {
     official: { id: 'form-input/readonly-and-static-inputs/002' },
     docs: {
@@ -2628,7 +2628,7 @@ export const Example020 = {
 } satisfies StoryObj
 
 export const Example021 = {
-  name: 'with font awesome icons 01',
+  name: 'Inputs with icons',
   parameters: {
     official: { id: 'form-input/with-font-awesome-icons/001' },
     docs: {
@@ -2643,7 +2643,7 @@ export const Example021 = {
 } satisfies StoryObj
 
 export const Example022 = {
-  name: 'with font awesome icons 02',
+  name: 'Small input with icons',
   parameters: {
     official: { id: 'form-input/with-font-awesome-icons/002' },
     docs: {
@@ -2658,7 +2658,7 @@ export const Example022 = {
 } satisfies StoryObj
 
 export const Example023 = {
-  name: 'with font awesome icons 03',
+  name: 'Normal input with icons',
   parameters: {
     official: { id: 'form-input/with-font-awesome-icons/003' },
     docs: {
@@ -2673,7 +2673,7 @@ export const Example023 = {
 } satisfies StoryObj
 
 export const Example024 = {
-  name: 'with font awesome icons 04',
+  name: 'Medium input with icons',
   parameters: {
     official: { id: 'form-input/with-font-awesome-icons/004' },
     docs: {
@@ -2688,7 +2688,7 @@ export const Example024 = {
 } satisfies StoryObj
 
 export const Example025 = {
-  name: 'with font awesome icons 05',
+  name: 'Large input with icons',
   parameters: {
     official: { id: 'form-input/with-font-awesome-icons/005' },
     docs: {

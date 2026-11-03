@@ -1488,7 +1488,7 @@ function Example016Demo() {
 }
 
 export const Example001 = {
-  name: 'Hero 01',
+  name: 'Default hero',
   parameters: {
     official: { id: 'layout-hero/basic/001' },
     docs: {
@@ -1503,7 +1503,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'colors 01',
+  name: 'Link hero',
   parameters: {
     official: { id: 'layout-hero/colors/001' },
     docs: {
@@ -1518,7 +1518,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'colors 02',
+  name: 'Primary hero',
   parameters: {
     official: { id: 'layout-hero/colors/002' },
     docs: {
@@ -1533,7 +1533,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'colors 03',
+  name: 'Info hero',
   parameters: {
     official: { id: 'layout-hero/colors/003' },
     docs: {
@@ -1548,7 +1548,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'colors 04',
+  name: 'Success hero',
   parameters: {
     official: { id: 'layout-hero/colors/004' },
     docs: {
@@ -1563,7 +1563,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'colors 05',
+  name: 'Warning hero',
   parameters: {
     official: { id: 'layout-hero/colors/005' },
     docs: {
@@ -1578,7 +1578,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'colors 06',
+  name: 'Danger hero',
   parameters: {
     official: { id: 'layout-hero/colors/006' },
     docs: {
@@ -1593,7 +1593,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'sizes 01',
+  name: 'Small hero',
   parameters: {
     official: { id: 'layout-hero/sizes/001' },
     docs: {
@@ -1608,7 +1608,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'sizes 02',
+  name: 'Medium hero',
   parameters: {
     official: { id: 'layout-hero/sizes/002' },
     docs: {
@@ -1623,7 +1623,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'sizes 03',
+  name: 'Large hero',
   parameters: {
     official: { id: 'layout-hero/sizes/003' },
     docs: {
@@ -1638,7 +1638,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'sizes 04',
+  name: 'Half-height hero',
   parameters: {
     official: { id: 'layout-hero/sizes/004' },
     docs: {
@@ -1653,7 +1653,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'sizes 05',
+  name: 'Full-height hero',
   parameters: {
     official: { id: 'layout-hero/sizes/005' },
     docs: {
@@ -1668,7 +1668,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'fullheight with navbar 01',
+  name: 'Full-height hero below navbar',
   parameters: {
     official: { id: 'layout-hero/fullheight-with-navbar/001' },
     docs: {
@@ -1683,7 +1683,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'fullheight hero in 3 parts 01',
+  name: 'Medium three-part hero',
   parameters: {
     official: { id: 'layout-hero/fullheight-hero-in-3-parts/001' },
     docs: {
@@ -1698,7 +1698,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'fullheight hero in 3 parts 02',
+  name: 'Large three-part hero',
   parameters: {
     official: { id: 'layout-hero/fullheight-hero-in-3-parts/002' },
     docs: {
@@ -1713,7 +1713,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'fullheight hero in 3 parts 03',
+  name: 'Full-height three-part hero',
   parameters: {
     official: { id: 'layout-hero/fullheight-hero-in-3-parts/003' },
     docs: {

@@ -1686,7 +1686,7 @@ function Example007Demo() {
 }
 
 export const Example001 = {
-  name: 'Panel 01',
+  name: 'Repository panel',
   parameters: {
     official: { id: 'components-panel/basic/001' },
     docs: {
@@ -1701,7 +1701,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'colors 01',
+  name: 'Link panel',
   parameters: {
     official: { id: 'components-panel/colors/001' },
     docs: {
@@ -1716,7 +1716,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'colors 02',
+  name: 'Primary panel',
   parameters: {
     official: { id: 'components-panel/colors/002' },
     docs: {
@@ -1731,7 +1731,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'colors 03',
+  name: 'Info panel',
   parameters: {
     official: { id: 'components-panel/colors/003' },
     docs: {
@@ -1746,7 +1746,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'colors 04',
+  name: 'Success panel',
   parameters: {
     official: { id: 'components-panel/colors/004' },
     docs: {
@@ -1761,7 +1761,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'colors 05',
+  name: 'Warning panel',
   parameters: {
     official: { id: 'components-panel/colors/005' },
     docs: {
@@ -1776,7 +1776,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'colors 06',
+  name: 'Danger panel',
   parameters: {
     official: { id: 'components-panel/colors/006' },
     docs: {

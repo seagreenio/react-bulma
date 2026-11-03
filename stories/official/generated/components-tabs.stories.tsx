@@ -1937,7 +1937,7 @@ function Example015Demo() {
 }
 
 export const Example001 = {
-  name: 'Tabs 01',
+  name: 'Default tabs',
   parameters: {
     official: { id: 'components-tabs/basic/001' },
     docs: {
@@ -1952,7 +1952,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'alignment 01',
+  name: 'Centered tabs',
   parameters: {
     official: { id: 'components-tabs/alignment/001' },
     docs: {
@@ -1967,7 +1967,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'alignment 02',
+  name: 'Right-aligned tabs',
   parameters: {
     official: { id: 'components-tabs/alignment/002' },
     docs: {
@@ -1982,7 +1982,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'icons 01',
+  name: 'Tabs with icons',
   parameters: {
     official: { id: 'components-tabs/icons/001' },
     docs: {
@@ -1997,7 +1997,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'sizes 01',
+  name: 'Small tabs',
   parameters: {
     official: { id: 'components-tabs/sizes/001' },
     docs: {
@@ -2012,7 +2012,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'sizes 02',
+  name: 'Medium tabs',
   parameters: {
     official: { id: 'components-tabs/sizes/002' },
     docs: {
@@ -2027,7 +2027,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'sizes 03',
+  name: 'Large tabs',
   parameters: {
     official: { id: 'components-tabs/sizes/003' },
     docs: {
@@ -2042,7 +2042,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'styles 01',
+  name: 'Boxed tabs',
   parameters: {
     official: { id: 'components-tabs/styles/001' },
     docs: {
@@ -2057,7 +2057,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'styles 02',
+  name: 'Toggle tabs',
   parameters: {
     official: { id: 'components-tabs/styles/002' },
     docs: {
@@ -2072,7 +2072,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'styles 03',
+  name: 'Rounded toggle tabs',
   parameters: {
     official: { id: 'components-tabs/styles/003' },
     docs: {
@@ -2087,7 +2087,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'styles 04',
+  name: 'Full-width tabs',
   parameters: {
     official: { id: 'components-tabs/styles/004' },
     docs: {
@@ -2102,7 +2102,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'combining 01',
+  name: 'Centered boxed tabs',
   parameters: {
     official: { id: 'components-tabs/combining/001' },
     docs: {
@@ -2117,7 +2117,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'combining 02',
+  name: 'Full-width toggle tabs',
   parameters: {
     official: { id: 'components-tabs/combining/002' },
     docs: {
@@ -2132,7 +2132,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'combining 03',
+  name: 'Medium centered boxed tabs',
   parameters: {
     official: { id: 'components-tabs/combining/003' },
     docs: {
@@ -2147,7 +2147,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'combining 04',
+  name: 'Large full-width toggle tabs',
   parameters: {
     official: { id: 'components-tabs/combining/004' },
     docs: {

@@ -301,7 +301,7 @@ function Example001Demo() {
 }
 
 export const Example001 = {
-  name: 'Footer 01',
+  name: 'Centered footer',
   parameters: {
     official: { id: 'layout-footer/basic/001' },
     docs: {

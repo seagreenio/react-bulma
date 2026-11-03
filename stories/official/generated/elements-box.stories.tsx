@@ -583,7 +583,7 @@ function Example003Demo() {
 }
 
 export const Example001 = {
-  name: 'Box 01',
+  name: 'Default box',
   parameters: {
     official: { id: 'elements-box/basic/001' },
     docs: {
@@ -598,7 +598,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'Box 02',
+  name: 'Sign-in form',
   parameters: {
     official: { id: 'elements-box/basic/002' },
     docs: {
@@ -613,7 +613,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'Box 03',
+  name: 'Media object',
   parameters: {
     official: { id: 'elements-box/basic/003' },
     docs: {

@@ -1172,7 +1172,7 @@ function Example007Demo() {
 }
 
 export const Example001 = {
-  name: 'Card 01',
+  name: 'Profile card',
   parameters: {
     official: { id: 'components-card/basic/001' },
     docs: {
@@ -1187,7 +1187,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'card parts 01',
+  name: 'Card header',
   parameters: {
     official: { id: 'components-card/card-parts/001' },
     docs: {
@@ -1202,7 +1202,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'card parts 02',
+  name: 'Card image',
   parameters: {
     official: { id: 'components-card/card-parts/002' },
     docs: {
@@ -1217,7 +1217,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'card parts 03',
+  name: 'Card content',
   parameters: {
     official: { id: 'components-card/card-parts/003' },
     docs: {
@@ -1232,7 +1232,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'card parts 04',
+  name: 'Card footer',
   parameters: {
     official: { id: 'components-card/card-parts/004' },
     docs: {
@@ -1247,7 +1247,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'examples 01',
+  name: 'Card with header and footer',
   parameters: {
     official: { id: 'components-card/examples/001' },
     docs: {
@@ -1262,7 +1262,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'examples 02',
+  name: 'Quote card',
   parameters: {
     official: { id: 'components-card/examples/002' },
     docs: {

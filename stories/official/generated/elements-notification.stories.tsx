@@ -836,7 +836,7 @@ function Example013Demo() {
 }
 
 export const Example001 = {
-  name: 'Notification 01',
+  name: 'Default notification',
   parameters: {
     official: { id: 'elements-notification/basic/001' },
     docs: {
@@ -851,7 +851,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'colors 01',
+  name: 'Link notification',
   parameters: {
     official: { id: 'elements-notification/colors/001' },
     docs: {
@@ -866,7 +866,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'colors 02',
+  name: 'Primary notification',
   parameters: {
     official: { id: 'elements-notification/colors/002' },
     docs: {
@@ -881,7 +881,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'colors 03',
+  name: 'Info notification',
   parameters: {
     official: { id: 'elements-notification/colors/003' },
     docs: {
@@ -896,7 +896,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'colors 04',
+  name: 'Success notification',
   parameters: {
     official: { id: 'elements-notification/colors/004' },
     docs: {
@@ -911,7 +911,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'colors 05',
+  name: 'Warning notification',
   parameters: {
     official: { id: 'elements-notification/colors/005' },
     docs: {
@@ -926,7 +926,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'colors 06',
+  name: 'Danger notification',
   parameters: {
     official: { id: 'elements-notification/colors/006' },
     docs: {
@@ -941,7 +941,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'light colors 01',
+  name: 'Light link notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/001' },
     docs: {
@@ -956,7 +956,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'light colors 02',
+  name: 'Light primary notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/002' },
     docs: {
@@ -971,7 +971,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'light colors 03',
+  name: 'Light info notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/003' },
     docs: {
@@ -986,7 +986,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'light colors 04',
+  name: 'Light success notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/004' },
     docs: {
@@ -1001,7 +1001,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'light colors 05',
+  name: 'Light warning notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/005' },
     docs: {
@@ -1016,7 +1016,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'light colors 06',
+  name: 'Light danger notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/006' },
     docs: {

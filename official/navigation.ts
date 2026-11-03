@@ -3,7 +3,7 @@ import type { OfficialNavigation } from '../scripts/official/source'
 type StoryOrder = (string | StoryOrder)[]
 
 export const libraryGuide = {
-  id: 'react-bulma--docs',
+  id: 'react-bulma--usage-guide',
   title: 'React Bulma',
 } as const
 

@@ -1154,7 +1154,7 @@ function Example007Demo() {
 }
 
 export const Example001 = {
-  name: 'Dropdown 01',
+  name: 'Open dropdown',
   parameters: {
     official: { id: 'components-dropdown/basic/001' },
     docs: {
@@ -1169,7 +1169,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'dropdown content 01',
+  name: 'Rich dropdown content',
   parameters: {
     official: { id: 'components-dropdown/dropdown-content/001' },
     docs: {
@@ -1184,7 +1184,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'hoverable or toggable 01',
+  name: 'Click to toggle',
   parameters: {
     official: { id: 'components-dropdown/hoverable-or-toggable/001' },
     docs: {
@@ -1199,7 +1199,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'hoverable or toggable 02',
+  name: 'Hover to open',
   parameters: {
     official: { id: 'components-dropdown/hoverable-or-toggable/002' },
     docs: {
@@ -1214,7 +1214,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'right aligned 01',
+  name: 'Left-aligned dropdown',
   parameters: {
     official: { id: 'components-dropdown/right-aligned/001' },
     docs: {
@@ -1229,7 +1229,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'right aligned 02',
+  name: 'Right-aligned dropdown',
   parameters: {
     official: { id: 'components-dropdown/right-aligned/002' },
     docs: {
@@ -1244,7 +1244,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'dropup 01',
+  name: 'Dropup menu',
   parameters: {
     official: { id: 'components-dropdown/dropup/001' },
     docs: {

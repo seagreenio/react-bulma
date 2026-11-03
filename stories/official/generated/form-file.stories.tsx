@@ -1951,7 +1951,7 @@ function Example029Demo() {
 }
 
 export const Example001 = {
-  name: 'File upload 01',
+  name: 'Default file upload',
   parameters: {
     official: { id: 'form-file/basic/001' },
     docs: {
@@ -1966,7 +1966,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'modifiers 01',
+  name: 'Filename label',
   parameters: {
     official: { id: 'form-file/modifiers/001' },
     docs: {
@@ -1981,7 +1981,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'modifiers 02',
+  name: 'Filename with CTA on the right',
   parameters: {
     official: { id: 'form-file/modifiers/002' },
     docs: {
@@ -1996,7 +1996,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'modifiers 03',
+  name: 'Full-width filename',
   parameters: {
     official: { id: 'form-file/modifiers/003' },
     docs: {
@@ -2011,7 +2011,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'modifiers 04',
+  name: 'Boxed file upload',
   parameters: {
     official: { id: 'form-file/modifiers/004' },
     docs: {
@@ -2026,7 +2026,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'modifiers 05',
+  name: 'Boxed upload with filename',
   parameters: {
     official: { id: 'form-file/modifiers/005' },
     docs: {
@@ -2041,7 +2041,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'colors 01',
+  name: 'Primary file upload',
   parameters: {
     official: { id: 'form-file/colors/001' },
     docs: {
@@ -2056,7 +2056,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'colors 02',
+  name: 'Info upload with filename',
   parameters: {
     official: { id: 'form-file/colors/002' },
     docs: {
@@ -2071,7 +2071,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'colors 03',
+  name: 'Warning boxed upload',
   parameters: {
     official: { id: 'form-file/colors/003' },
     docs: {
@@ -2086,7 +2086,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'colors 04',
+  name: 'Danger boxed upload with filename',
   parameters: {
     official: { id: 'form-file/colors/004' },
     docs: {
@@ -2101,7 +2101,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'sizes 01',
+  name: 'Small file upload',
   parameters: {
     official: { id: 'form-file/sizes/001' },
     docs: {
@@ -2116,7 +2116,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'sizes 02',
+  name: 'Normal file upload',
   parameters: {
     official: { id: 'form-file/sizes/002' },
     docs: {
@@ -2131,7 +2131,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'sizes 03',
+  name: 'Medium file upload',
   parameters: {
     official: { id: 'form-file/sizes/003' },
     docs: {
@@ -2146,7 +2146,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'sizes 04',
+  name: 'Large file upload',
   parameters: {
     official: { id: 'form-file/sizes/004' },
     docs: {
@@ -2161,7 +2161,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'sizes 05',
+  name: 'Small upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/005' },
     docs: {
@@ -2176,7 +2176,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'sizes 06',
+  name: 'Normal upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/006' },
     docs: {
@@ -2191,7 +2191,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: 'sizes 07',
+  name: 'Medium upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/007' },
     docs: {
@@ -2206,7 +2206,7 @@ export const Example017 = {
 } satisfies StoryObj
 
 export const Example018 = {
-  name: 'sizes 08',
+  name: 'Large upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/008' },
     docs: {
@@ -2221,7 +2221,7 @@ export const Example018 = {
 } satisfies StoryObj
 
 export const Example019 = {
-  name: 'sizes 09',
+  name: 'Small boxed upload',
   parameters: {
     official: { id: 'form-file/sizes/009' },
     docs: {
@@ -2236,7 +2236,7 @@ export const Example019 = {
 } satisfies StoryObj
 
 export const Example020 = {
-  name: 'sizes 10',
+  name: 'Normal boxed upload',
   parameters: {
     official: { id: 'form-file/sizes/010' },
     docs: {
@@ -2251,7 +2251,7 @@ export const Example020 = {
 } satisfies StoryObj
 
 export const Example021 = {
-  name: 'sizes 11',
+  name: 'Medium boxed upload',
   parameters: {
     official: { id: 'form-file/sizes/011' },
     docs: {
@@ -2266,7 +2266,7 @@ export const Example021 = {
 } satisfies StoryObj
 
 export const Example022 = {
-  name: 'sizes 12',
+  name: 'Large boxed upload',
   parameters: {
     official: { id: 'form-file/sizes/012' },
     docs: {
@@ -2281,7 +2281,7 @@ export const Example022 = {
 } satisfies StoryObj
 
 export const Example023 = {
-  name: 'sizes 13',
+  name: 'Small boxed upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/013' },
     docs: {
@@ -2296,7 +2296,7 @@ export const Example023 = {
 } satisfies StoryObj
 
 export const Example024 = {
-  name: 'sizes 14',
+  name: 'Normal boxed upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/014' },
     docs: {
@@ -2311,7 +2311,7 @@ export const Example024 = {
 } satisfies StoryObj
 
 export const Example025 = {
-  name: 'sizes 15',
+  name: 'Medium boxed upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/015' },
     docs: {
@@ -2326,7 +2326,7 @@ export const Example025 = {
 } satisfies StoryObj
 
 export const Example026 = {
-  name: 'sizes 16',
+  name: 'Large boxed upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/016' },
     docs: {
@@ -2341,7 +2341,7 @@ export const Example026 = {
 } satisfies StoryObj
 
 export const Example027 = {
-  name: 'alignment 01',
+  name: 'Centered boxed upload',
   parameters: {
     official: { id: 'form-file/alignment/001' },
     docs: {
@@ -2356,7 +2356,7 @@ export const Example027 = {
 } satisfies StoryObj
 
 export const Example028 = {
-  name: 'alignment 02',
+  name: 'Right-aligned upload',
   parameters: {
     official: { id: 'form-file/alignment/002' },
     docs: {
@@ -2371,7 +2371,7 @@ export const Example028 = {
 } satisfies StoryObj
 
 export const Example029 = {
-  name: 'javascript 01',
+  name: 'Live filename update',
   parameters: {
     official: { id: 'form-file/javascript/001' },
     docs: {

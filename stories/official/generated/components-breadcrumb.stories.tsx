@@ -913,7 +913,7 @@ function Example011Demo() {
 }
 
 export const Example001 = {
-  name: 'Breadcrumb 01',
+  name: 'Default breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/basic/001' },
     docs: {
@@ -928,7 +928,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'alignment 01',
+  name: 'Centered breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/alignment/001' },
     docs: {
@@ -943,7 +943,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'alignment 02',
+  name: 'Right-aligned breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/alignment/002' },
     docs: {
@@ -958,7 +958,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'icons 01',
+  name: 'Breadcrumb with icons',
   parameters: {
     official: { id: 'components-breadcrumb/icons/001' },
     docs: {
@@ -973,7 +973,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'alternative separators 01',
+  name: 'Arrow separator',
   parameters: {
     official: { id: 'components-breadcrumb/alternative-separators/001' },
     docs: {
@@ -988,7 +988,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'alternative separators 02',
+  name: 'Bullet separator',
   parameters: {
     official: { id: 'components-breadcrumb/alternative-separators/002' },
     docs: {
@@ -1003,7 +1003,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'alternative separators 03',
+  name: 'Dot separator',
   parameters: {
     official: { id: 'components-breadcrumb/alternative-separators/003' },
     docs: {
@@ -1018,7 +1018,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'alternative separators 04',
+  name: 'Succeeds separator',
   parameters: {
     official: { id: 'components-breadcrumb/alternative-separators/004' },
     docs: {
@@ -1033,7 +1033,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'sizes 01',
+  name: 'Small breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/sizes/001' },
     docs: {
@@ -1048,7 +1048,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'sizes 02',
+  name: 'Medium breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/sizes/002' },
     docs: {
@@ -1063,7 +1063,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'sizes 03',
+  name: 'Large breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/sizes/003' },
     docs: {

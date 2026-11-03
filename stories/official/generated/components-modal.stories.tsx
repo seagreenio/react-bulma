@@ -1298,7 +1298,7 @@ function Example002Demo() {
 }
 
 export const Example001 = {
-  name: '2 add the html for the trigger 01',
+  name: 'Unstyled button trigger',
   parameters: {
     official: { id: 'components-modal/2-add-the-html-for-the-trigger/001' },
     docs: {
@@ -1313,7 +1313,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: '2 add the html for the trigger 02',
+  name: 'Primary button trigger',
   parameters: {
     official: { id: 'components-modal/2-add-the-html-for-the-trigger/002' },
     docs: {

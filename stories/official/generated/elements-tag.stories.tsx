@@ -1530,7 +1530,7 @@ function Example018Demo() {
 }
 
 export const Example001 = {
-  name: 'Tags 01',
+  name: 'Default tag',
   parameters: {
     official: { id: 'elements-tag/basic/001' },
     docs: {
@@ -1545,7 +1545,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'colors 01',
+  name: 'Tag colors',
   parameters: {
     official: { id: 'elements-tag/colors/001' },
     docs: {
@@ -1560,7 +1560,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'colors 02',
+  name: 'Light tag colors',
   parameters: {
     official: { id: 'elements-tag/colors/002' },
     docs: {
@@ -1575,7 +1575,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'sizes 01',
+  name: 'Tag sizes',
   parameters: {
     official: { id: 'elements-tag/sizes/001' },
     docs: {
@@ -1590,7 +1590,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'sizes 02',
+  name: 'Shared medium size',
   parameters: {
     official: { id: 'elements-tag/sizes/002' },
     docs: {
@@ -1605,7 +1605,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'sizes 03',
+  name: 'Shared large size',
   parameters: {
     official: { id: 'elements-tag/sizes/003' },
     docs: {
@@ -1620,7 +1620,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'sizes 04',
+  name: 'Individual size overrides',
   parameters: {
     official: { id: 'elements-tag/sizes/004' },
     docs: {
@@ -1635,7 +1635,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'hover active state 01',
+  name: 'Hoverable tags',
   parameters: {
     official: { id: 'elements-tag/hover-active-state/001' },
     docs: {
@@ -1650,7 +1650,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'modifiers 01',
+  name: 'Rounded tag',
   parameters: {
     official: { id: 'elements-tag/modifiers/001' },
     docs: {
@@ -1665,7 +1665,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'modifiers 02',
+  name: 'Delete tag',
   parameters: {
     official: { id: 'elements-tag/modifiers/002' },
     docs: {
@@ -1680,7 +1680,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'combinations 01',
+  name: 'Colored hoverable tags',
   parameters: {
     official: { id: 'elements-tag/combinations/001' },
     docs: {
@@ -1695,7 +1695,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'combinations 02',
+  name: 'Tags with delete buttons',
   parameters: {
     official: { id: 'elements-tag/combinations/002' },
     docs: {
@@ -1710,7 +1710,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'list of tags 01',
+  name: 'Tag list',
   parameters: {
     official: { id: 'elements-tag/list-of-tags/001' },
     docs: {
@@ -1725,7 +1725,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'list of tags 02',
+  name: 'Wrapping tag list',
   parameters: {
     official: { id: 'elements-tag/list-of-tags/002' },
     docs: {
@@ -1740,7 +1740,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'tag addons 01',
+  name: 'Attached tags',
   parameters: {
     official: { id: 'elements-tag/tag-addons/001' },
     docs: {
@@ -1755,7 +1755,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'tag addons 02',
+  name: 'Tag with delete addon',
   parameters: {
     official: { id: 'elements-tag/tag-addons/002' },
     docs: {
@@ -1770,7 +1770,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: 'tag addons 03',
+  name: 'Grouped tag addons',
   parameters: {
     official: { id: 'elements-tag/tag-addons/003' },
     docs: {
@@ -1785,7 +1785,7 @@ export const Example017 = {
 } satisfies StoryObj
 
 export const Example018 = {
-  name: 'tag addons 04',
+  name: 'Wrapping tag addons',
   parameters: {
     official: { id: 'elements-tag/tag-addons/004' },
     docs: {

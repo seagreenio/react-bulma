@@ -2418,7 +2418,7 @@ function Example007Demo() {
 }
 
 export const Example001 = {
-  name: 'Icon 01',
+  name: 'Basic icon',
   parameters: {
     official: { id: 'elements-icon/basic/001' },
     docs: {
@@ -2433,7 +2433,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'icon text 01',
+  name: 'Icon with text',
   parameters: {
     official: { id: 'elements-icon/icon-text/001' },
     docs: {
@@ -2448,7 +2448,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'icon text 02',
+  name: 'Multiple icons and text',
   parameters: {
     official: { id: 'elements-icon/icon-text/002' },
     docs: {
@@ -2463,7 +2463,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'icon text 03',
+  name: 'Icons in a paragraph',
   parameters: {
     official: { id: 'elements-icon/icon-text/003' },
     docs: {
@@ -2478,7 +2478,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'icon text 04',
+  name: 'Status messages with icons',
   parameters: {
     official: { id: 'elements-icon/icon-text/004' },
     docs: {
@@ -2493,7 +2493,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'colors 01',
+  name: 'Colored icons',
   parameters: {
     official: { id: 'elements-icon/colors/001' },
     docs: {
@@ -2508,7 +2508,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'colors 02',
+  name: 'Colored icon and text',
   parameters: {
     official: { id: 'elements-icon/colors/002' },
     docs: {

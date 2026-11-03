@@ -1544,7 +1544,7 @@ function Example007Demo() {
 }
 
 export const Example001 = {
-  name: 'full example 01',
+  name: 'Full typography example',
   parameters: {
     official: { id: 'elements-content/full-example/001' },
     docs: {
@@ -1559,7 +1559,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'ordered lists alternatives 01',
+  name: 'Native ordered list types',
   parameters: {
     official: { id: 'elements-content/ordered-lists-alternatives/001' },
     docs: {
@@ -1574,7 +1574,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'ordered lists alternatives 02',
+  name: 'Ordered list modifiers',
   parameters: {
     official: { id: 'elements-content/ordered-lists-alternatives/002' },
     docs: {
@@ -1589,7 +1589,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'small size content 01',
+  name: 'Small content',
   parameters: {
     official: { id: 'elements-content/small-size-content/001' },
     docs: {
@@ -1604,7 +1604,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'normal size content default 01',
+  name: 'Normal content',
   parameters: {
     official: { id: 'elements-content/normal-size-content-default/001' },
     docs: {
@@ -1619,7 +1619,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'medium size content 01',
+  name: 'Medium content',
   parameters: {
     official: { id: 'elements-content/medium-size-content/001' },
     docs: {
@@ -1634,7 +1634,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'large size content 01',
+  name: 'Large content',
   parameters: {
     official: { id: 'elements-content/large-size-content/001' },
     docs: {

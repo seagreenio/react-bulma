@@ -1087,7 +1087,7 @@ function Example004Demo() {
 }
 
 export const Example001 = {
-  name: 'Image 01',
+  name: 'Fixed-size image',
   parameters: {
     official: { id: 'elements-image/basic/001' },
     docs: {
@@ -1102,7 +1102,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'rounded images 01',
+  name: 'Rounded image',
   parameters: {
     official: { id: 'elements-image/rounded-images/001' },
     docs: {
@@ -1117,7 +1117,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'retina images 01',
+  name: 'Retina image',
   parameters: {
     official: { id: 'elements-image/retina-images/001' },
     docs: {
@@ -1132,7 +1132,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'arbitrary ratios with any element 01',
+  name: 'Responsive video',
   parameters: {
     official: { id: 'elements-image/arbitrary-ratios-with-any-element/001' },
     docs: {

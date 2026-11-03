@@ -1972,7 +1972,7 @@ function Example027Demo() {
 }
 
 export const Example001 = {
-  name: 'Column sizes 01',
+  name: 'Full-width column',
   parameters: {
     official: { id: 'columns-sizes/basic/001' },
     docs: {
@@ -1987,7 +1987,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'Column sizes 02',
+  name: 'Four-fifths column',
   parameters: {
     official: { id: 'columns-sizes/basic/002' },
     docs: {
@@ -2002,7 +2002,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'Column sizes 03',
+  name: 'Three-quarters column',
   parameters: {
     official: { id: 'columns-sizes/basic/003' },
     docs: {
@@ -2017,7 +2017,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'Column sizes 04',
+  name: 'Two-thirds column',
   parameters: {
     official: { id: 'columns-sizes/basic/004' },
     docs: {
@@ -2032,7 +2032,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'Column sizes 05',
+  name: 'Three-fifths column',
   parameters: {
     official: { id: 'columns-sizes/basic/005' },
     docs: {
@@ -2047,7 +2047,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'Column sizes 06',
+  name: 'Half-width column',
   parameters: {
     official: { id: 'columns-sizes/basic/006' },
     docs: {
@@ -2062,7 +2062,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'Column sizes 07',
+  name: 'Two-fifths column',
   parameters: {
     official: { id: 'columns-sizes/basic/007' },
     docs: {
@@ -2077,7 +2077,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'Column sizes 08',
+  name: 'One-third column',
   parameters: {
     official: { id: 'columns-sizes/basic/008' },
     docs: {
@@ -2092,7 +2092,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'Column sizes 09',
+  name: 'Quarter-width column',
   parameters: {
     official: { id: 'columns-sizes/basic/009' },
     docs: {
@@ -2107,7 +2107,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'Column sizes 10',
+  name: 'One-fifth column',
   parameters: {
     official: { id: 'columns-sizes/basic/010' },
     docs: {
@@ -2122,7 +2122,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: '12 columns system 01',
+  name: 'Width 1 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/001' },
     docs: {
@@ -2137,7 +2137,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: '12 columns system 02',
+  name: 'Width 2 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/002' },
     docs: {
@@ -2152,7 +2152,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: '12 columns system 03',
+  name: 'Width 3 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/003' },
     docs: {
@@ -2167,7 +2167,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: '12 columns system 04',
+  name: 'Width 4 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/004' },
     docs: {
@@ -2182,7 +2182,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: '12 columns system 05',
+  name: 'Width 5 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/005' },
     docs: {
@@ -2197,7 +2197,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: '12 columns system 06',
+  name: 'Width 6 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/006' },
     docs: {
@@ -2212,7 +2212,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: '12 columns system 07',
+  name: 'Width 7 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/007' },
     docs: {
@@ -2227,7 +2227,7 @@ export const Example017 = {
 } satisfies StoryObj
 
 export const Example018 = {
-  name: '12 columns system 08',
+  name: 'Width 8 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/008' },
     docs: {
@@ -2242,7 +2242,7 @@ export const Example018 = {
 } satisfies StoryObj
 
 export const Example019 = {
-  name: '12 columns system 09',
+  name: 'Width 9 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/009' },
     docs: {
@@ -2257,7 +2257,7 @@ export const Example019 = {
 } satisfies StoryObj
 
 export const Example020 = {
-  name: '12 columns system 10',
+  name: 'Width 10 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/010' },
     docs: {
@@ -2272,7 +2272,7 @@ export const Example020 = {
 } satisfies StoryObj
 
 export const Example021 = {
-  name: '12 columns system 11',
+  name: 'Width 11 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/011' },
     docs: {
@@ -2287,7 +2287,7 @@ export const Example021 = {
 } satisfies StoryObj
 
 export const Example022 = {
-  name: '12 columns system 12',
+  name: 'Width 12 of 12',
   parameters: {
     official: { id: 'columns-sizes/12-columns-system/012' },
     docs: {
@@ -2302,7 +2302,7 @@ export const Example022 = {
 } satisfies StoryObj
 
 export const Example023 = {
-  name: 'offset 01',
+  name: 'Half-width with quarter offset',
   parameters: {
     official: { id: 'columns-sizes/offset/001' },
     docs: {
@@ -2317,7 +2317,7 @@ export const Example023 = {
 } satisfies StoryObj
 
 export const Example024 = {
-  name: 'offset 02',
+  name: 'Three-fifths with fifth offset',
   parameters: {
     official: { id: 'columns-sizes/offset/002' },
     docs: {
@@ -2332,7 +2332,7 @@ export const Example024 = {
 } satisfies StoryObj
 
 export const Example025 = {
-  name: 'offset 03',
+  name: 'Width 4 with offset 8',
   parameters: {
     official: { id: 'columns-sizes/offset/003' },
     docs: {
@@ -2347,7 +2347,7 @@ export const Example025 = {
 } satisfies StoryObj
 
 export const Example026 = {
-  name: 'offset 04',
+  name: 'Width 11 with offset 1',
   parameters: {
     official: { id: 'columns-sizes/offset/004' },
     docs: {
@@ -2362,7 +2362,7 @@ export const Example026 = {
 } satisfies StoryObj
 
 export const Example027 = {
-  name: 'narrow column 01',
+  name: 'Narrow and flexible columns',
   parameters: {
     official: { id: 'columns-sizes/narrow-column/001' },
     docs: {

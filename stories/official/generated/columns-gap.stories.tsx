@@ -852,7 +852,7 @@ function Example005Demo() {
 }
 
 export const Example001 = {
-  name: 'default gap 01',
+  name: 'Default column gap',
   parameters: {
     official: { id: 'columns-gap/default-gap/001' },
     docs: {
@@ -867,7 +867,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'gapless 01',
+  name: 'Gapless columns',
   parameters: {
     official: { id: 'columns-gap/gapless/001' },
     docs: {
@@ -882,7 +882,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'gapless 02',
+  name: 'Gapless multiline columns',
   parameters: {
     official: { id: 'columns-gap/gapless/002' },
     docs: {
@@ -897,7 +897,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'variable gap 01',
+  name: 'Interactive gap selector',
   parameters: {
     official: { id: 'columns-gap/variable-gap/001' },
     docs: {
@@ -912,7 +912,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'breakpoint based column gaps 01',
+  name: 'Gaps at each breakpoint',
   parameters: {
     official: { id: 'columns-gap/breakpoint-based-column-gaps/001' },
     docs: {

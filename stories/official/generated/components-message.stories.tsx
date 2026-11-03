@@ -2044,7 +2044,7 @@ function Example020Demo() {
 }
 
 export const Example001 = {
-  name: 'Message 01',
+  name: 'Default message',
   parameters: {
     official: { id: 'components-message/basic/001' },
     docs: {
@@ -2059,7 +2059,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'colors 01',
+  name: 'Dark message',
   parameters: {
     official: { id: 'components-message/colors/001' },
     docs: {
@@ -2074,7 +2074,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'colors 02',
+  name: 'Link message',
   parameters: {
     official: { id: 'components-message/colors/002' },
     docs: {
@@ -2089,7 +2089,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'colors 03',
+  name: 'Primary message',
   parameters: {
     official: { id: 'components-message/colors/003' },
     docs: {
@@ -2104,7 +2104,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'colors 04',
+  name: 'Info message',
   parameters: {
     official: { id: 'components-message/colors/004' },
     docs: {
@@ -2119,7 +2119,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'colors 05',
+  name: 'Success message',
   parameters: {
     official: { id: 'components-message/colors/005' },
     docs: {
@@ -2134,7 +2134,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'colors 06',
+  name: 'Warning message',
   parameters: {
     official: { id: 'components-message/colors/006' },
     docs: {
@@ -2149,7 +2149,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'colors 07',
+  name: 'Danger message',
   parameters: {
     official: { id: 'components-message/colors/007' },
     docs: {
@@ -2164,7 +2164,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'message body only 01',
+  name: 'Body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/001' },
     docs: {
@@ -2179,7 +2179,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'message body only 02',
+  name: 'Dark body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/002' },
     docs: {
@@ -2194,7 +2194,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'message body only 03',
+  name: 'Link body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/003' },
     docs: {
@@ -2209,7 +2209,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'message body only 04',
+  name: 'Primary body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/004' },
     docs: {
@@ -2224,7 +2224,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'message body only 05',
+  name: 'Info body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/005' },
     docs: {
@@ -2239,7 +2239,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'message body only 06',
+  name: 'Success body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/006' },
     docs: {
@@ -2254,7 +2254,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'message body only 07',
+  name: 'Warning body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/007' },
     docs: {
@@ -2269,7 +2269,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'message body only 08',
+  name: 'Danger body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/008' },
     docs: {
@@ -2284,7 +2284,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: 'sizes 01',
+  name: 'Small message',
   parameters: {
     official: { id: 'components-message/sizes/001' },
     docs: {
@@ -2299,7 +2299,7 @@ export const Example017 = {
 } satisfies StoryObj
 
 export const Example018 = {
-  name: 'sizes 02',
+  name: 'Normal message',
   parameters: {
     official: { id: 'components-message/sizes/002' },
     docs: {
@@ -2314,7 +2314,7 @@ export const Example018 = {
 } satisfies StoryObj
 
 export const Example019 = {
-  name: 'sizes 03',
+  name: 'Medium message',
   parameters: {
     official: { id: 'components-message/sizes/003' },
     docs: {
@@ -2329,7 +2329,7 @@ export const Example019 = {
 } satisfies StoryObj
 
 export const Example020 = {
-  name: 'sizes 04',
+  name: 'Large message',
   parameters: {
     official: { id: 'components-message/sizes/004' },
     docs: {

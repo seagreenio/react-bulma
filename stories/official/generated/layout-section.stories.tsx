@@ -421,7 +421,7 @@ function Example003Demo() {
 }
 
 export const Example001 = {
-  name: 'Section 01',
+  name: 'Default section',
   parameters: {
     official: { id: 'layout-section/basic/001' },
     docs: {
@@ -436,7 +436,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'sizes 01',
+  name: 'Medium section',
   parameters: {
     official: { id: 'layout-section/sizes/001' },
     docs: {
@@ -451,7 +451,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'sizes 02',
+  name: 'Large section',
   parameters: {
     official: { id: 'layout-section/sizes/002' },
     docs: {

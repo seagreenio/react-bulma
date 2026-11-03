@@ -3848,7 +3848,7 @@ function Example030Demo() {
 }
 
 export const Example001 = {
-  name: 'Button 01',
+  name: 'Default button',
   parameters: {
     official: { id: 'elements-button/basic/001' },
     docs: {
@@ -3863,7 +3863,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'Button 02',
+  name: 'Native button elements',
   parameters: {
     official: { id: 'elements-button/basic/002' },
     docs: {
@@ -3878,7 +3878,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'colors 01',
+  name: 'Neutral and text buttons',
   parameters: {
     official: { id: 'elements-button/colors/001' },
     docs: {
@@ -3893,7 +3893,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'colors 02',
+  name: 'Semantic colors',
   parameters: {
     official: { id: 'elements-button/colors/002' },
     docs: {
@@ -3908,7 +3908,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'colors 03',
+  name: 'Light colors',
   parameters: {
     official: { id: 'elements-button/colors/003' },
     docs: {
@@ -3923,7 +3923,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'colors 04',
+  name: 'Dark colors',
   parameters: {
     official: { id: 'elements-button/colors/004' },
     docs: {
@@ -3938,7 +3938,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'sizes 01',
+  name: 'Button sizes',
   parameters: {
     official: { id: 'elements-button/sizes/001' },
     docs: {
@@ -3953,7 +3953,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'sizes 02',
+  name: 'Shared medium size',
   parameters: {
     official: { id: 'elements-button/sizes/002' },
     docs: {
@@ -3968,7 +3968,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'sizes 03',
+  name: 'Individual size override',
   parameters: {
     official: { id: 'elements-button/sizes/003' },
     docs: {
@@ -3983,7 +3983,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'displays 01',
+  name: 'Full-width buttons',
   parameters: {
     official: { id: 'elements-button/displays/001' },
     docs: {
@@ -3998,7 +3998,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'outlined 01',
+  name: 'Outlined buttons',
   parameters: {
     official: { id: 'elements-button/outlined/001' },
     docs: {
@@ -4013,7 +4013,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'inverted the text color becomes the background color and vice versa 01',
+  name: 'Inverted buttons',
   parameters: {
     official: {
       id: 'elements-button/inverted-the-text-color-becomes-the-background-color-and-vice-versa/001',
@@ -4030,7 +4030,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'rounded buttons 01',
+  name: 'Rounded buttons',
   parameters: {
     official: { id: 'elements-button/rounded-buttons/001' },
     docs: {
@@ -4045,7 +4045,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'normal 01',
+  name: 'Normal state',
   parameters: {
     official: { id: 'elements-button/normal/001' },
     docs: {
@@ -4060,7 +4060,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'hover 01',
+  name: 'Hover state',
   parameters: {
     official: { id: 'elements-button/hover/001' },
     docs: {
@@ -4075,7 +4075,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'focus 01',
+  name: 'Focus state',
   parameters: {
     official: { id: 'elements-button/focus/001' },
     docs: {
@@ -4090,7 +4090,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: 'active 01',
+  name: 'Active state',
   parameters: {
     official: { id: 'elements-button/active/001' },
     docs: {
@@ -4105,7 +4105,7 @@ export const Example017 = {
 } satisfies StoryObj
 
 export const Example018 = {
-  name: 'loading 01',
+  name: 'Loading state',
   parameters: {
     official: { id: 'elements-button/loading/001' },
     docs: {
@@ -4120,7 +4120,7 @@ export const Example018 = {
 } satisfies StoryObj
 
 export const Example019 = {
-  name: 'static button 01',
+  name: 'Static button',
   parameters: {
     official: { id: 'elements-button/static-button/001' },
     docs: {
@@ -4135,7 +4135,7 @@ export const Example019 = {
 } satisfies StoryObj
 
 export const Example020 = {
-  name: 'disabled 01',
+  name: 'Disabled buttons',
   parameters: {
     official: { id: 'elements-button/disabled/001' },
     docs: {
@@ -4150,7 +4150,7 @@ export const Example020 = {
 } satisfies StoryObj
 
 export const Example021 = {
-  name: 'with font awesome icons 01',
+  name: 'Buttons with icons',
   parameters: {
     official: { id: 'elements-button/with-font-awesome-icons/001' },
     docs: {
@@ -4165,7 +4165,7 @@ export const Example021 = {
 } satisfies StoryObj
 
 export const Example022 = {
-  name: 'with font awesome icons 02',
+  name: 'Icon-only buttons',
   parameters: {
     official: { id: 'elements-button/with-font-awesome-icons/002' },
     docs: {
@@ -4180,7 +4180,7 @@ export const Example022 = {
 } satisfies StoryObj
 
 export const Example023 = {
-  name: 'button group 01',
+  name: 'Grouped buttons',
   parameters: {
     official: { id: 'elements-button/button-group/001' },
     docs: {
@@ -4195,7 +4195,7 @@ export const Example023 = {
 } satisfies StoryObj
 
 export const Example024 = {
-  name: 'button addons 01',
+  name: 'Attached buttons',
   parameters: {
     official: { id: 'elements-button/button-addons/001' },
     docs: {
@@ -4210,7 +4210,7 @@ export const Example024 = {
 } satisfies StoryObj
 
 export const Example025 = {
-  name: 'button group with addons 01',
+  name: 'Grouped button addons',
   parameters: {
     official: { id: 'elements-button/button-group-with-addons/001' },
     docs: {
@@ -4225,7 +4225,7 @@ export const Example025 = {
 } satisfies StoryObj
 
 export const Example026 = {
-  name: 'list of buttons 01',
+  name: 'Button list',
   parameters: {
     official: { id: 'elements-button/list-of-buttons/001' },
     docs: {
@@ -4240,7 +4240,7 @@ export const Example026 = {
 } satisfies StoryObj
 
 export const Example027 = {
-  name: 'list of buttons 02',
+  name: 'Wrapping button list',
   parameters: {
     official: { id: 'elements-button/list-of-buttons/002' },
     docs: {
@@ -4255,7 +4255,7 @@ export const Example027 = {
 } satisfies StoryObj
 
 export const Example028 = {
-  name: 'list of buttons 03',
+  name: 'Attached button list',
   parameters: {
     official: { id: 'elements-button/list-of-buttons/003' },
     docs: {
@@ -4270,7 +4270,7 @@ export const Example028 = {
 } satisfies StoryObj
 
 export const Example029 = {
-  name: 'list of buttons 04',
+  name: 'Aligned button addons',
   parameters: {
     official: { id: 'elements-button/list-of-buttons/004' },
     docs: {
@@ -4285,7 +4285,7 @@ export const Example029 = {
 } satisfies StoryObj
 
 export const Example030 = {
-  name: 'list of buttons 05',
+  name: 'Selected button addons',
   parameters: {
     official: { id: 'elements-button/list-of-buttons/005' },
     docs: {

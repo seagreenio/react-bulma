@@ -1046,7 +1046,7 @@ function Example002Demo() {
 }
 
 export const Example001 = {
-  name: 'Fixed Grid 01',
+  name: 'Two-column fixed grid',
   parameters: {
     official: { id: 'grid-fixed/basic/001' },
     docs: {
@@ -1061,7 +1061,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'auto count fixed grid 01',
+  name: 'Automatic column count',
   parameters: {
     official: { id: 'grid-fixed/auto-count-fixed-grid/001' },
     docs: {

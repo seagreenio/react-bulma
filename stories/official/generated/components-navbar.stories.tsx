@@ -6342,7 +6342,7 @@ function Example026Demo() {
 }
 
 export const Example001 = {
-  name: 'basic navbar 01',
+  name: 'Complete navbar',
   parameters: {
     official: { id: 'components-navbar/basic-navbar/001' },
     docs: {
@@ -6357,7 +6357,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'navbar brand 01',
+  name: 'Navbar brand',
   parameters: {
     official: { id: 'components-navbar/navbar-brand/001' },
     docs: {
@@ -6372,7 +6372,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'navbar burger 01',
+  name: 'Closed burger',
   parameters: {
     official: { id: 'components-navbar/navbar-burger/001' },
     docs: {
@@ -6387,7 +6387,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'navbar burger 02',
+  name: 'Expanded burger',
   parameters: {
     official: { id: 'components-navbar/navbar-burger/002' },
     docs: {
@@ -6402,7 +6402,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'transparent navbar 01',
+  name: 'Transparent navbar',
   parameters: {
     official: { id: 'components-navbar/transparent-navbar/001' },
     docs: {
@@ -6417,7 +6417,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'try it out 01',
+  name: 'Toggle fixed bottom navbar',
   parameters: {
     official: { id: 'components-navbar/try-it-out/001' },
     docs: {
@@ -6432,7 +6432,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'dropdown menu 01',
+  name: 'Navbar dropdown',
   parameters: {
     official: { id: 'components-navbar/dropdown-menu/001' },
     docs: {
@@ -6447,7 +6447,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'show hide the dropdown with either css or javascript 01',
+  name: 'Hoverable dropdown',
   parameters: {
     official: {
       id: 'components-navbar/show-hide-the-dropdown-with-either-css-or-javascript/001',
@@ -6464,7 +6464,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'show hide the dropdown with either css or javascript 02',
+  name: 'Active dropdown',
   parameters: {
     official: {
       id: 'components-navbar/show-hide-the-dropdown-with-either-css-or-javascript/002',
@@ -6481,7 +6481,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'right dropdown 01',
+  name: 'Dropdown alignment',
   parameters: {
     official: { id: 'components-navbar/right-dropdown/001' },
     docs: {
@@ -6496,7 +6496,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'dropup 01',
+  name: 'Navbar dropup',
   parameters: {
     official: { id: 'components-navbar/dropup/001' },
     docs: {
@@ -6511,7 +6511,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'dropdown without arrow 01',
+  name: 'Arrowless dropdown',
   parameters: {
     official: { id: 'components-navbar/dropdown-without-arrow/001' },
     docs: {
@@ -6526,7 +6526,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'styles for the dropdown menu 01',
+  name: 'Default dropdown style',
   parameters: {
     official: { id: 'components-navbar/styles-for-the-dropdown-menu/001' },
     docs: {
@@ -6541,7 +6541,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'styles for the dropdown menu 02',
+  name: 'Boxed dropdown style',
   parameters: {
     official: { id: 'components-navbar/styles-for-the-dropdown-menu/002' },
     docs: {
@@ -6556,7 +6556,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'active dropdown navbar item 01',
+  name: 'Selected dropdown item',
   parameters: {
     official: { id: 'components-navbar/active-dropdown-navbar-item/001' },
     docs: {
@@ -6571,7 +6571,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'colors 01',
+  name: 'Default navbar color',
   parameters: {
     official: { id: 'components-navbar/colors/001' },
     docs: {
@@ -6586,7 +6586,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: 'colors 02',
+  name: 'Primary navbar',
   parameters: {
     official: { id: 'components-navbar/colors/002' },
     docs: {
@@ -6601,7 +6601,7 @@ export const Example017 = {
 } satisfies StoryObj
 
 export const Example018 = {
-  name: 'colors 03',
+  name: 'Link navbar',
   parameters: {
     official: { id: 'components-navbar/colors/003' },
     docs: {
@@ -6616,7 +6616,7 @@ export const Example018 = {
 } satisfies StoryObj
 
 export const Example019 = {
-  name: 'colors 04',
+  name: 'Info navbar',
   parameters: {
     official: { id: 'components-navbar/colors/004' },
     docs: {
@@ -6631,7 +6631,7 @@ export const Example019 = {
 } satisfies StoryObj
 
 export const Example020 = {
-  name: 'colors 05',
+  name: 'Success navbar',
   parameters: {
     official: { id: 'components-navbar/colors/005' },
     docs: {
@@ -6646,7 +6646,7 @@ export const Example020 = {
 } satisfies StoryObj
 
 export const Example021 = {
-  name: 'colors 06',
+  name: 'Warning navbar',
   parameters: {
     official: { id: 'components-navbar/colors/006' },
     docs: {
@@ -6661,7 +6661,7 @@ export const Example021 = {
 } satisfies StoryObj
 
 export const Example022 = {
-  name: 'colors 07',
+  name: 'Danger navbar',
   parameters: {
     official: { id: 'components-navbar/colors/007' },
     docs: {
@@ -6676,7 +6676,7 @@ export const Example022 = {
 } satisfies StoryObj
 
 export const Example023 = {
-  name: 'colors 08',
+  name: 'Black navbar',
   parameters: {
     official: { id: 'components-navbar/colors/008' },
     docs: {
@@ -6691,7 +6691,7 @@ export const Example023 = {
 } satisfies StoryObj
 
 export const Example024 = {
-  name: 'colors 09',
+  name: 'Dark navbar',
   parameters: {
     official: { id: 'components-navbar/colors/009' },
     docs: {
@@ -6706,7 +6706,7 @@ export const Example024 = {
 } satisfies StoryObj
 
 export const Example025 = {
-  name: 'colors 10',
+  name: 'Light navbar',
   parameters: {
     official: { id: 'components-navbar/colors/010' },
     docs: {
@@ -6721,7 +6721,7 @@ export const Example025 = {
 } satisfies StoryObj
 
 export const Example026 = {
-  name: 'colors 11',
+  name: 'White navbar',
   parameters: {
     official: { id: 'components-navbar/colors/011' },
     docs: {

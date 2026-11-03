@@ -424,7 +424,7 @@ function Example003Demo() {
 }
 
 export const Example001 = {
-  name: 'Delete 01',
+  name: 'Delete button',
   parameters: {
     official: { id: 'elements-delete/basic/001' },
     docs: {
@@ -439,7 +439,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'sizes 01',
+  name: 'Delete sizes',
   parameters: {
     official: { id: 'elements-delete/sizes/001' },
     docs: {
@@ -454,7 +454,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'combinations 01',
+  name: 'Tags, notifications and messages',
   parameters: {
     official: { id: 'elements-delete/combinations/001' },
     docs: {

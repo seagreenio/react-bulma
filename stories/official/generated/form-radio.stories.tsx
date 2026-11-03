@@ -305,7 +305,7 @@ function Example004Demo() {
 }
 
 export const Example001 = {
-  name: 'Radio button 01',
+  name: 'Radio group',
   parameters: {
     official: { id: 'form-radio/basic/001' },
     docs: {
@@ -320,7 +320,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'Radio button 02',
+  name: 'Preselected radio',
   parameters: {
     official: { id: 'form-radio/basic/002' },
     docs: {
@@ -335,7 +335,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'Radio button 03',
+  name: 'Disabled radio',
   parameters: {
     official: { id: 'form-radio/basic/003' },
     docs: {
@@ -350,7 +350,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'list of radio buttons 01',
+  name: 'Radio button list',
   parameters: {
     official: { id: 'form-radio/list-of-radio-buttons/001' },
     docs: {

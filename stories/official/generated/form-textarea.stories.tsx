@@ -996,7 +996,7 @@ function Example017Demo() {
 }
 
 export const Example001 = {
-  name: 'Textarea 01',
+  name: 'Default textarea',
   parameters: {
     official: { id: 'form-textarea/basic/001' },
     docs: {
@@ -1011,7 +1011,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'Textarea 02',
+  name: 'Textarea with ten rows',
   parameters: {
     official: { id: 'form-textarea/basic/002' },
     docs: {
@@ -1026,7 +1026,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'colors 01',
+  name: 'Link textarea',
   parameters: {
     official: { id: 'form-textarea/colors/001' },
     docs: {
@@ -1041,7 +1041,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'colors 02',
+  name: 'Primary textarea',
   parameters: {
     official: { id: 'form-textarea/colors/002' },
     docs: {
@@ -1056,7 +1056,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'colors 03',
+  name: 'Info textarea',
   parameters: {
     official: { id: 'form-textarea/colors/003' },
     docs: {
@@ -1071,7 +1071,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'colors 04',
+  name: 'Success textarea',
   parameters: {
     official: { id: 'form-textarea/colors/004' },
     docs: {
@@ -1086,7 +1086,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'colors 05',
+  name: 'Warning textarea',
   parameters: {
     official: { id: 'form-textarea/colors/005' },
     docs: {
@@ -1101,7 +1101,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'colors 06',
+  name: 'Danger textarea',
   parameters: {
     official: { id: 'form-textarea/colors/006' },
     docs: {
@@ -1116,7 +1116,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'sizes 01',
+  name: 'Textarea sizes',
   parameters: {
     official: { id: 'form-textarea/sizes/001' },
     docs: {
@@ -1131,7 +1131,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'normal 01',
+  name: 'Normal state',
   parameters: {
     official: { id: 'form-textarea/normal/001' },
     docs: {
@@ -1146,7 +1146,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'hover 01',
+  name: 'Hover state',
   parameters: {
     official: { id: 'form-textarea/hover/001' },
     docs: {
@@ -1161,7 +1161,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'focus 01',
+  name: 'Focus state',
   parameters: {
     official: { id: 'form-textarea/focus/001' },
     docs: {
@@ -1176,7 +1176,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'loading 01',
+  name: 'Loading textarea',
   parameters: {
     official: { id: 'form-textarea/loading/001' },
     docs: {
@@ -1191,7 +1191,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'loading 02',
+  name: 'Loading spinner sizes',
   parameters: {
     official: { id: 'form-textarea/loading/002' },
     docs: {
@@ -1206,7 +1206,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'disabled 01',
+  name: 'Disabled textarea',
   parameters: {
     official: { id: 'form-textarea/disabled/001' },
     docs: {
@@ -1221,7 +1221,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'readonly 01',
+  name: 'Read-only textarea',
   parameters: {
     official: { id: 'form-textarea/readonly/001' },
     docs: {
@@ -1236,7 +1236,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: 'fixed size 01',
+  name: 'Fixed-size textarea',
   parameters: {
     official: { id: 'form-textarea/fixed-size/001' },
     docs: {

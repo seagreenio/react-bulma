@@ -1014,7 +1014,7 @@ function Example018Demo() {
 }
 
 export const Example001 = {
-  name: 'skeleton block 01',
+  name: 'Empty skeleton block',
   parameters: {
     official: { id: 'features-skeletons/skeleton-block/001' },
     docs: {
@@ -1029,7 +1029,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'skeleton block 02',
+  name: 'Skeleton block with content',
   parameters: {
     official: { id: 'features-skeletons/skeleton-block/002' },
     docs: {
@@ -1044,7 +1044,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'skeleton lines 01',
+  name: 'Skeleton lines',
   parameters: {
     official: { id: 'features-skeletons/skeleton-lines/001' },
     docs: {
@@ -1059,7 +1059,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'button 01',
+  name: 'Button skeletons',
   parameters: {
     official: { id: 'features-skeletons/button/001' },
     docs: {
@@ -1074,7 +1074,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'icon 01',
+  name: 'Icon skeleton',
   parameters: {
     official: { id: 'features-skeletons/icon/001' },
     docs: {
@@ -1089,7 +1089,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'image 01',
+  name: 'Image skeleton sizes',
   parameters: {
     official: { id: 'features-skeletons/image/001' },
     docs: {
@@ -1104,7 +1104,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'media object 01',
+  name: 'Media object skeleton',
   parameters: {
     official: { id: 'features-skeletons/media-object/001' },
     docs: {
@@ -1119,7 +1119,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'media object 02',
+  name: 'Media form skeleton',
   parameters: {
     official: { id: 'features-skeletons/media-object/002' },
     docs: {
@@ -1134,7 +1134,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'notification 01',
+  name: 'Notification skeleton',
   parameters: {
     official: { id: 'features-skeletons/notification/001' },
     docs: {
@@ -1149,7 +1149,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'tag 01',
+  name: 'Tag skeletons',
   parameters: {
     official: { id: 'features-skeletons/tag/001' },
     docs: {
@@ -1164,7 +1164,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'title and subtitle 01',
+  name: 'Title with is-skeleton',
   parameters: {
     official: { id: 'features-skeletons/title-and-subtitle/001' },
     docs: {
@@ -1179,7 +1179,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'title and subtitle 02',
+  name: 'Title with has-skeleton',
   parameters: {
     official: { id: 'features-skeletons/title-and-subtitle/002' },
     docs: {
@@ -1194,7 +1194,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'title and subtitle 03',
+  name: 'Subtitle with is-skeleton',
   parameters: {
     official: { id: 'features-skeletons/title-and-subtitle/003' },
     docs: {
@@ -1209,7 +1209,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'title and subtitle 04',
+  name: 'Subtitle with has-skeleton',
   parameters: {
     official: { id: 'features-skeletons/title-and-subtitle/004' },
     docs: {
@@ -1224,7 +1224,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'title and subtitle 05',
+  name: 'Heading pair with is-skeleton',
   parameters: {
     official: { id: 'features-skeletons/title-and-subtitle/005' },
     docs: {
@@ -1239,7 +1239,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'title and subtitle 06',
+  name: 'Heading pair with has-skeleton',
   parameters: {
     official: { id: 'features-skeletons/title-and-subtitle/006' },
     docs: {
@@ -1254,7 +1254,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: 'form controls 01',
+  name: 'Input skeleton',
   parameters: {
     official: { id: 'features-skeletons/form-controls/001' },
     docs: {
@@ -1269,7 +1269,7 @@ export const Example017 = {
 } satisfies StoryObj
 
 export const Example018 = {
-  name: 'form controls 02',
+  name: 'Textarea skeleton',
   parameters: {
     official: { id: 'features-skeletons/form-controls/002' },
     docs: {

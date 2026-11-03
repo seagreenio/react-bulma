@@ -10,6 +10,7 @@ import selectorParser from 'postcss-selector-parser'
 import { helperClasses } from '../../src/helpers'
 import { homedir } from 'node:os'
 import lock from '../../official/source-lock.json'
+import { exampleNames } from '../../official/example-names'
 import type { OfficialCorpus, OfficialExample } from './types'
 import type { OfficialDocuments } from './documents'
 
@@ -353,9 +354,11 @@ export async function loadOfficialSource(
         $(node).attr('data-target', target!)
         html = $.html(node) + $.html(modal[0]!)
       }
+      const name = exampleNames[id]?.[section]?.[ordinal - 1]
+      if (!name) throw new Error(`Official example has no display name: ${key}`)
       examples.push({
         id: key,
-        name: `${section === 'basic' ? page.title : section.replace(/-/g, ' ')} ${String(ordinal).padStart(2, '0')}`,
+        name,
         section,
         kind,
         selector: `[data-source-example="${key}"]`,

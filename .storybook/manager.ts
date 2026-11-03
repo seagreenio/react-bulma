@@ -11,7 +11,7 @@ addons.setConfig({
         <span>React Bulma</span>
       </span>
     `,
-    brandUrl: './?path=/docs/react-bulma--docs',
+    brandUrl: './?path=/docs/react-bulma--usage-guide',
     brandTarget: '_self',
   }),
 })

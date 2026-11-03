@@ -550,7 +550,7 @@ function Example004Demo() {
 }
 
 export const Example001 = {
-  name: 'Level 01',
+  name: 'Toolbar with left and right items',
   parameters: {
     official: { id: 'layout-level/basic/001' },
     docs: {
@@ -565,7 +565,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'centered level 01',
+  name: 'Centered statistics',
   parameters: {
     official: { id: 'layout-level/centered-level/001' },
     docs: {
@@ -580,7 +580,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'centered level 02',
+  name: 'Centered navigation links',
   parameters: {
     official: { id: 'layout-level/centered-level/002' },
     docs: {
@@ -595,7 +595,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'mobile level 01',
+  name: 'Mobile statistics',
   parameters: {
     official: { id: 'layout-level/mobile-level/001' },
     docs: {

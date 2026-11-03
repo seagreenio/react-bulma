@@ -1094,7 +1094,7 @@ function Example006Demo() {
 }
 
 export const Example001 = {
-  name: 'column start 01',
+  name: 'Column start position',
   parameters: {
     official: { id: 'grid-cells/column-start/001' },
     docs: {
@@ -1109,7 +1109,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'column from end 01',
+  name: 'Column end position',
   parameters: {
     official: { id: 'grid-cells/column-from-end/001' },
     docs: {
@@ -1124,7 +1124,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'column span 01',
+  name: 'Column span',
   parameters: {
     official: { id: 'grid-cells/column-span/001' },
     docs: {
@@ -1139,7 +1139,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'row start 01',
+  name: 'Row start position',
   parameters: {
     official: { id: 'grid-cells/row-start/001' },
     docs: {
@@ -1154,7 +1154,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'row from end 01',
+  name: 'Row end position',
   parameters: {
     official: { id: 'grid-cells/row-from-end/001' },
     docs: {
@@ -1169,7 +1169,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'row span 01',
+  name: 'Row span',
   parameters: {
     official: { id: 'grid-cells/row-span/001' },
     docs: {

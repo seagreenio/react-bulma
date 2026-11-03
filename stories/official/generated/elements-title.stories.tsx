@@ -1081,7 +1081,7 @@ function Example005Demo() {
 }
 
 export const Example001 = {
-  name: 'Title and Subtitle 01',
+  name: 'Title and subtitle',
   parameters: {
     official: { id: 'elements-title/basic/001' },
     docs: {
@@ -1096,7 +1096,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'sizes 01',
+  name: 'Title sizes',
   parameters: {
     official: { id: 'elements-title/sizes/001' },
     docs: {
@@ -1111,7 +1111,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'sizes 02',
+  name: 'Subtitle sizes',
   parameters: {
     official: { id: 'elements-title/sizes/002' },
     docs: {
@@ -1126,7 +1126,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'sizes 03',
+  name: 'Paired headings',
   parameters: {
     official: { id: 'elements-title/sizes/003' },
     docs: {
@@ -1141,7 +1141,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'sizes 04',
+  name: 'Spaced headings',
   parameters: {
     official: { id: 'elements-title/sizes/004' },
     docs: {

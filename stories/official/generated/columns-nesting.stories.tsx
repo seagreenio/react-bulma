@@ -218,7 +218,7 @@ function Example001Demo() {
 }
 
 export const Example001 = {
-  name: 'Nesting columns 01',
+  name: 'Nested columns',
   parameters: {
     official: { id: 'columns-nesting/basic/001' },
     docs: {

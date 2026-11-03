@@ -3220,7 +3220,7 @@ function Example008Demo() {
 }
 
 export const Example001 = {
-  name: 'Table 01',
+  name: 'League standings',
   parameters: {
     official: { id: 'elements-table/basic/001' },
     docs: {
@@ -3235,7 +3235,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'colors 01',
+  name: 'Cell and row colors',
   parameters: {
     official: { id: 'elements-table/colors/001' },
     docs: {
@@ -3250,7 +3250,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'modifiers 01',
+  name: 'Bordered table',
   parameters: {
     official: { id: 'elements-table/modifiers/001' },
     docs: {
@@ -3265,7 +3265,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'modifiers 02',
+  name: 'Striped table',
   parameters: {
     official: { id: 'elements-table/modifiers/002' },
     docs: {
@@ -3280,7 +3280,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'modifiers 03',
+  name: 'Narrow table',
   parameters: {
     official: { id: 'elements-table/modifiers/003' },
     docs: {
@@ -3295,7 +3295,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'modifiers 04',
+  name: 'Hoverable rows',
   parameters: {
     official: { id: 'elements-table/modifiers/004' },
     docs: {
@@ -3310,7 +3310,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'modifiers 05',
+  name: 'Full-width table',
   parameters: {
     official: { id: 'elements-table/modifiers/005' },
     docs: {
@@ -3325,7 +3325,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'modifiers 06',
+  name: 'Combined table modifiers',
   parameters: {
     official: { id: 'elements-table/modifiers/006' },
     docs: {

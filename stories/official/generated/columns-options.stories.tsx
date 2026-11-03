@@ -430,7 +430,7 @@ function Example004Demo() {
 }
 
 export const Example001 = {
-  name: 'vertical alignment 01',
+  name: 'Vertically centered columns',
   parameters: {
     official: { id: 'columns-options/vertical-alignment/001' },
     docs: {
@@ -445,7 +445,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'multiline 01',
+  name: 'Multiline columns',
   parameters: {
     official: { id: 'columns-options/multiline/001' },
     docs: {
@@ -460,7 +460,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'centering columns 01',
+  name: 'Centered half-width column',
   parameters: {
     official: { id: 'columns-options/centering-columns/001' },
     docs: {
@@ -475,7 +475,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'centering columns 02',
+  name: 'Centered multiline columns',
   parameters: {
     official: { id: 'columns-options/centering-columns/002' },
     docs: {

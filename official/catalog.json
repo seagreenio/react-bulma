@@ -5,7 +5,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "skeleton-block",
-    "name": "skeleton block 01",
+    "name": "Empty skeleton block",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -17,7 +17,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "skeleton-block",
-    "name": "skeleton block 02",
+    "name": "Skeleton block with content",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -29,7 +29,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "skeleton-lines",
-    "name": "skeleton lines 01",
+    "name": "Skeleton lines",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -41,7 +41,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "button",
-    "name": "button 01",
+    "name": "Button skeletons",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -53,7 +53,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "icon",
-    "name": "icon 01",
+    "name": "Icon skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -65,7 +65,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "image",
-    "name": "image 01",
+    "name": "Image skeleton sizes",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -77,7 +77,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "media-object",
-    "name": "media object 01",
+    "name": "Media object skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -89,7 +89,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "media-object",
-    "name": "media object 02",
+    "name": "Media form skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -101,7 +101,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "notification",
-    "name": "notification 01",
+    "name": "Notification skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -113,7 +113,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "tag",
-    "name": "tag 01",
+    "name": "Tag skeletons",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -125,7 +125,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "title-and-subtitle",
-    "name": "title and subtitle 01",
+    "name": "Title with is-skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -137,7 +137,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "title-and-subtitle",
-    "name": "title and subtitle 02",
+    "name": "Title with has-skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -149,7 +149,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "title-and-subtitle",
-    "name": "title and subtitle 03",
+    "name": "Subtitle with is-skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -161,7 +161,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "title-and-subtitle",
-    "name": "title and subtitle 04",
+    "name": "Subtitle with has-skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -173,7 +173,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "title-and-subtitle",
-    "name": "title and subtitle 05",
+    "name": "Heading pair with is-skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -185,7 +185,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "title-and-subtitle",
-    "name": "title and subtitle 06",
+    "name": "Heading pair with has-skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -197,7 +197,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "form-controls",
-    "name": "form controls 01",
+    "name": "Input skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -209,7 +209,7 @@
     "page": "features-skeletons",
     "url": "https://bulma.io/documentation/features/skeletons/",
     "section": "form-controls",
-    "name": "form controls 02",
+    "name": "Textarea skeleton",
     "source": {
       "file": "docs/documentation/features/skeletons.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -221,7 +221,7 @@
     "page": "elements-block",
     "url": "https://bulma.io/documentation/elements/block/",
     "section": "basic",
-    "name": "Block 01",
+    "name": "Stacked blocks",
     "source": {
       "file": "docs/documentation/elements/block.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -233,7 +233,7 @@
     "page": "elements-block",
     "url": "https://bulma.io/documentation/elements/block/",
     "section": "basic",
-    "name": "Block 02",
+    "name": "Without blocks",
     "source": {
       "file": "docs/documentation/elements/block.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -245,7 +245,7 @@
     "page": "elements-block",
     "url": "https://bulma.io/documentation/elements/block/",
     "section": "you-re-already-using-it",
-    "name": "you re already using it 01",
+    "name": "Shared block spacing",
     "source": {
       "file": "docs/documentation/elements/block.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -257,7 +257,7 @@
     "page": "elements-box",
     "url": "https://bulma.io/documentation/elements/box/",
     "section": "basic",
-    "name": "Box 01",
+    "name": "Default box",
     "source": {
       "file": "docs/documentation/elements/box.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -269,7 +269,7 @@
     "page": "elements-box",
     "url": "https://bulma.io/documentation/elements/box/",
     "section": "basic",
-    "name": "Box 02",
+    "name": "Sign-in form",
     "source": {
       "file": "docs/documentation/elements/box.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -281,7 +281,7 @@
     "page": "elements-box",
     "url": "https://bulma.io/documentation/elements/box/",
     "section": "basic",
-    "name": "Box 03",
+    "name": "Media object",
     "source": {
       "file": "docs/documentation/elements/box.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -293,7 +293,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "basic",
-    "name": "Button 01",
+    "name": "Default button",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -305,7 +305,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "basic",
-    "name": "Button 02",
+    "name": "Native button elements",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -317,7 +317,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Neutral and text buttons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -329,7 +329,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Semantic colors",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -341,7 +341,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Light colors",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -353,7 +353,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Dark colors",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -365,7 +365,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Button sizes",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -377,7 +377,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Shared medium size",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -389,7 +389,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Individual size override",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -401,7 +401,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "displays",
-    "name": "displays 01",
+    "name": "Full-width buttons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -413,7 +413,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "outlined",
-    "name": "outlined 01",
+    "name": "Outlined buttons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -425,7 +425,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "inverted-the-text-color-becomes-the-background-color-and-vice-versa",
-    "name": "inverted the text color becomes the background color and vice versa 01",
+    "name": "Inverted buttons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -437,7 +437,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "rounded-buttons",
-    "name": "rounded buttons 01",
+    "name": "Rounded buttons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -449,7 +449,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "normal",
-    "name": "normal 01",
+    "name": "Normal state",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -461,7 +461,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "hover",
-    "name": "hover 01",
+    "name": "Hover state",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -473,7 +473,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "focus",
-    "name": "focus 01",
+    "name": "Focus state",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -485,7 +485,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "active",
-    "name": "active 01",
+    "name": "Active state",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -497,7 +497,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "loading",
-    "name": "loading 01",
+    "name": "Loading state",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -509,7 +509,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "static-button",
-    "name": "static button 01",
+    "name": "Static button",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -521,7 +521,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "disabled",
-    "name": "disabled 01",
+    "name": "Disabled buttons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -533,7 +533,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "with-font-awesome-icons",
-    "name": "with font awesome icons 01",
+    "name": "Buttons with icons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -545,7 +545,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "with-font-awesome-icons",
-    "name": "with font awesome icons 02",
+    "name": "Icon-only buttons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -557,7 +557,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "button-group",
-    "name": "button group 01",
+    "name": "Grouped buttons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -569,7 +569,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "button-addons",
-    "name": "button addons 01",
+    "name": "Attached buttons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -581,7 +581,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "button-group-with-addons",
-    "name": "button group with addons 01",
+    "name": "Grouped button addons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -593,7 +593,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "list-of-buttons",
-    "name": "list of buttons 01",
+    "name": "Button list",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -605,7 +605,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "list-of-buttons",
-    "name": "list of buttons 02",
+    "name": "Wrapping button list",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -617,7 +617,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "list-of-buttons",
-    "name": "list of buttons 03",
+    "name": "Attached button list",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -629,7 +629,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "list-of-buttons",
-    "name": "list of buttons 04",
+    "name": "Aligned button addons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -641,7 +641,7 @@
     "page": "elements-button",
     "url": "https://bulma.io/documentation/elements/button/",
     "section": "list-of-buttons",
-    "name": "list of buttons 05",
+    "name": "Selected button addons",
     "source": {
       "file": "docs/documentation/elements/button.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -653,7 +653,7 @@
     "page": "elements-content",
     "url": "https://bulma.io/documentation/elements/content/",
     "section": "full-example",
-    "name": "full example 01",
+    "name": "Full typography example",
     "source": {
       "file": "docs/documentation/elements/content.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -665,7 +665,7 @@
     "page": "elements-content",
     "url": "https://bulma.io/documentation/elements/content/",
     "section": "ordered-lists-alternatives",
-    "name": "ordered lists alternatives 01",
+    "name": "Native ordered list types",
     "source": {
       "file": "docs/documentation/elements/content.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -677,7 +677,7 @@
     "page": "elements-content",
     "url": "https://bulma.io/documentation/elements/content/",
     "section": "ordered-lists-alternatives",
-    "name": "ordered lists alternatives 02",
+    "name": "Ordered list modifiers",
     "source": {
       "file": "docs/documentation/elements/content.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -689,7 +689,7 @@
     "page": "elements-content",
     "url": "https://bulma.io/documentation/elements/content/",
     "section": "small-size-content",
-    "name": "small size content 01",
+    "name": "Small content",
     "source": {
       "file": "docs/documentation/elements/content.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -701,7 +701,7 @@
     "page": "elements-content",
     "url": "https://bulma.io/documentation/elements/content/",
     "section": "normal-size-content-default",
-    "name": "normal size content default 01",
+    "name": "Normal content",
     "source": {
       "file": "docs/documentation/elements/content.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -713,7 +713,7 @@
     "page": "elements-content",
     "url": "https://bulma.io/documentation/elements/content/",
     "section": "medium-size-content",
-    "name": "medium size content 01",
+    "name": "Medium content",
     "source": {
       "file": "docs/documentation/elements/content.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -725,7 +725,7 @@
     "page": "elements-content",
     "url": "https://bulma.io/documentation/elements/content/",
     "section": "large-size-content",
-    "name": "large size content 01",
+    "name": "Large content",
     "source": {
       "file": "docs/documentation/elements/content.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -737,7 +737,7 @@
     "page": "elements-delete",
     "url": "https://bulma.io/documentation/elements/delete/",
     "section": "basic",
-    "name": "Delete 01",
+    "name": "Delete button",
     "source": {
       "file": "docs/documentation/elements/delete.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -749,7 +749,7 @@
     "page": "elements-delete",
     "url": "https://bulma.io/documentation/elements/delete/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Delete sizes",
     "source": {
       "file": "docs/documentation/elements/delete.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -761,7 +761,7 @@
     "page": "elements-delete",
     "url": "https://bulma.io/documentation/elements/delete/",
     "section": "combinations",
-    "name": "combinations 01",
+    "name": "Tags, notifications and messages",
     "source": {
       "file": "docs/documentation/elements/delete.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -773,7 +773,7 @@
     "page": "elements-icon",
     "url": "https://bulma.io/documentation/elements/icon/",
     "section": "basic",
-    "name": "Icon 01",
+    "name": "Basic icon",
     "source": {
       "file": "docs/documentation/elements/icon.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -785,7 +785,7 @@
     "page": "elements-icon",
     "url": "https://bulma.io/documentation/elements/icon/",
     "section": "icon-text",
-    "name": "icon text 01",
+    "name": "Icon with text",
     "source": {
       "file": "docs/documentation/elements/icon.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -797,7 +797,7 @@
     "page": "elements-icon",
     "url": "https://bulma.io/documentation/elements/icon/",
     "section": "icon-text",
-    "name": "icon text 02",
+    "name": "Multiple icons and text",
     "source": {
       "file": "docs/documentation/elements/icon.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -809,7 +809,7 @@
     "page": "elements-icon",
     "url": "https://bulma.io/documentation/elements/icon/",
     "section": "icon-text",
-    "name": "icon text 03",
+    "name": "Icons in a paragraph",
     "source": {
       "file": "docs/documentation/elements/icon.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -821,7 +821,7 @@
     "page": "elements-icon",
     "url": "https://bulma.io/documentation/elements/icon/",
     "section": "icon-text",
-    "name": "icon text 04",
+    "name": "Status messages with icons",
     "source": {
       "file": "docs/documentation/elements/icon.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -833,7 +833,7 @@
     "page": "elements-icon",
     "url": "https://bulma.io/documentation/elements/icon/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Colored icons",
     "source": {
       "file": "docs/documentation/elements/icon.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -845,7 +845,7 @@
     "page": "elements-icon",
     "url": "https://bulma.io/documentation/elements/icon/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Colored icon and text",
     "source": {
       "file": "docs/documentation/elements/icon.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -857,7 +857,7 @@
     "page": "elements-image",
     "url": "https://bulma.io/documentation/elements/image/",
     "section": "basic",
-    "name": "Image 01",
+    "name": "Fixed-size image",
     "source": {
       "file": "docs/documentation/elements/image.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -869,7 +869,7 @@
     "page": "elements-image",
     "url": "https://bulma.io/documentation/elements/image/",
     "section": "rounded-images",
-    "name": "rounded images 01",
+    "name": "Rounded image",
     "source": {
       "file": "docs/documentation/elements/image.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -881,7 +881,7 @@
     "page": "elements-image",
     "url": "https://bulma.io/documentation/elements/image/",
     "section": "retina-images",
-    "name": "retina images 01",
+    "name": "Retina image",
     "source": {
       "file": "docs/documentation/elements/image.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -893,7 +893,7 @@
     "page": "elements-image",
     "url": "https://bulma.io/documentation/elements/image/",
     "section": "arbitrary-ratios-with-any-element",
-    "name": "arbitrary ratios with any element 01",
+    "name": "Responsive video",
     "source": {
       "file": "docs/documentation/elements/image.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -905,7 +905,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "basic",
-    "name": "Notification 01",
+    "name": "Default notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -917,7 +917,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Link notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -929,7 +929,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Primary notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -941,7 +941,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Info notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -953,7 +953,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Success notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -965,7 +965,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "colors",
-    "name": "colors 05",
+    "name": "Warning notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -977,7 +977,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "colors",
-    "name": "colors 06",
+    "name": "Danger notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -989,7 +989,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "light-colors",
-    "name": "light colors 01",
+    "name": "Light link notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1001,7 +1001,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "light-colors",
-    "name": "light colors 02",
+    "name": "Light primary notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1013,7 +1013,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "light-colors",
-    "name": "light colors 03",
+    "name": "Light info notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1025,7 +1025,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "light-colors",
-    "name": "light colors 04",
+    "name": "Light success notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1037,7 +1037,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "light-colors",
-    "name": "light colors 05",
+    "name": "Light warning notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1049,7 +1049,7 @@
     "page": "elements-notification",
     "url": "https://bulma.io/documentation/elements/notification/",
     "section": "light-colors",
-    "name": "light colors 06",
+    "name": "Light danger notification",
     "source": {
       "file": "docs/documentation/elements/notification.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1061,7 +1061,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "basic",
-    "name": "Progress Bar 01",
+    "name": "Default progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1073,7 +1073,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Link progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1085,7 +1085,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Primary progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1097,7 +1097,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Info progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1109,7 +1109,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Success progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1121,7 +1121,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "colors",
-    "name": "colors 05",
+    "name": "Warning progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1133,7 +1133,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "colors",
-    "name": "colors 06",
+    "name": "Danger progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1145,7 +1145,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Small progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1157,7 +1157,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Normal progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1169,7 +1169,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Medium progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1181,7 +1181,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "sizes",
-    "name": "sizes 04",
+    "name": "Large progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1193,7 +1193,7 @@
     "page": "elements-progress",
     "url": "https://bulma.io/documentation/elements/progress/",
     "section": "indeterminate",
-    "name": "indeterminate 01",
+    "name": "Indeterminate progress",
     "source": {
       "file": "docs/documentation/elements/progress.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1205,7 +1205,7 @@
     "page": "elements-table",
     "url": "https://bulma.io/documentation/elements/table/",
     "section": "basic",
-    "name": "Table 01",
+    "name": "League standings",
     "source": {
       "file": "docs/documentation/elements/table.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1217,7 +1217,7 @@
     "page": "elements-table",
     "url": "https://bulma.io/documentation/elements/table/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Cell and row colors",
     "source": {
       "file": "docs/documentation/elements/table.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1229,7 +1229,7 @@
     "page": "elements-table",
     "url": "https://bulma.io/documentation/elements/table/",
     "section": "modifiers",
-    "name": "modifiers 01",
+    "name": "Bordered table",
     "source": {
       "file": "docs/documentation/elements/table.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1241,7 +1241,7 @@
     "page": "elements-table",
     "url": "https://bulma.io/documentation/elements/table/",
     "section": "modifiers",
-    "name": "modifiers 02",
+    "name": "Striped table",
     "source": {
       "file": "docs/documentation/elements/table.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1253,7 +1253,7 @@
     "page": "elements-table",
     "url": "https://bulma.io/documentation/elements/table/",
     "section": "modifiers",
-    "name": "modifiers 03",
+    "name": "Narrow table",
     "source": {
       "file": "docs/documentation/elements/table.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1265,7 +1265,7 @@
     "page": "elements-table",
     "url": "https://bulma.io/documentation/elements/table/",
     "section": "modifiers",
-    "name": "modifiers 04",
+    "name": "Hoverable rows",
     "source": {
       "file": "docs/documentation/elements/table.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1277,7 +1277,7 @@
     "page": "elements-table",
     "url": "https://bulma.io/documentation/elements/table/",
     "section": "modifiers",
-    "name": "modifiers 05",
+    "name": "Full-width table",
     "source": {
       "file": "docs/documentation/elements/table.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1289,7 +1289,7 @@
     "page": "elements-table",
     "url": "https://bulma.io/documentation/elements/table/",
     "section": "modifiers",
-    "name": "modifiers 06",
+    "name": "Combined table modifiers",
     "source": {
       "file": "docs/documentation/elements/table.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1301,7 +1301,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "basic",
-    "name": "Tags 01",
+    "name": "Default tag",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1313,7 +1313,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Tag colors",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1325,7 +1325,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Light tag colors",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1337,7 +1337,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Tag sizes",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1349,7 +1349,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Shared medium size",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1361,7 +1361,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Shared large size",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1373,7 +1373,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "sizes",
-    "name": "sizes 04",
+    "name": "Individual size overrides",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1385,7 +1385,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "hover-active-state",
-    "name": "hover active state 01",
+    "name": "Hoverable tags",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1397,7 +1397,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "modifiers",
-    "name": "modifiers 01",
+    "name": "Rounded tag",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1409,7 +1409,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "modifiers",
-    "name": "modifiers 02",
+    "name": "Delete tag",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1421,7 +1421,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "combinations",
-    "name": "combinations 01",
+    "name": "Colored hoverable tags",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1433,7 +1433,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "combinations",
-    "name": "combinations 02",
+    "name": "Tags with delete buttons",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1445,7 +1445,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "list-of-tags",
-    "name": "list of tags 01",
+    "name": "Tag list",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1457,7 +1457,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "list-of-tags",
-    "name": "list of tags 02",
+    "name": "Wrapping tag list",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1469,7 +1469,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "tag-addons",
-    "name": "tag addons 01",
+    "name": "Attached tags",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1481,7 +1481,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "tag-addons",
-    "name": "tag addons 02",
+    "name": "Tag with delete addon",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1493,7 +1493,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "tag-addons",
-    "name": "tag addons 03",
+    "name": "Grouped tag addons",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1505,7 +1505,7 @@
     "page": "elements-tag",
     "url": "https://bulma.io/documentation/elements/tag/",
     "section": "tag-addons",
-    "name": "tag addons 04",
+    "name": "Wrapping tag addons",
     "source": {
       "file": "docs/documentation/elements/tag.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1517,7 +1517,7 @@
     "page": "elements-title",
     "url": "https://bulma.io/documentation/elements/title/",
     "section": "basic",
-    "name": "Title and Subtitle 01",
+    "name": "Title and subtitle",
     "source": {
       "file": "docs/documentation/elements/title.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1529,7 +1529,7 @@
     "page": "elements-title",
     "url": "https://bulma.io/documentation/elements/title/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Title sizes",
     "source": {
       "file": "docs/documentation/elements/title.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1541,7 +1541,7 @@
     "page": "elements-title",
     "url": "https://bulma.io/documentation/elements/title/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Subtitle sizes",
     "source": {
       "file": "docs/documentation/elements/title.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1553,7 +1553,7 @@
     "page": "elements-title",
     "url": "https://bulma.io/documentation/elements/title/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Paired headings",
     "source": {
       "file": "docs/documentation/elements/title.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1565,7 +1565,7 @@
     "page": "elements-title",
     "url": "https://bulma.io/documentation/elements/title/",
     "section": "sizes",
-    "name": "sizes 04",
+    "name": "Spaced headings",
     "source": {
       "file": "docs/documentation/elements/title.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1577,7 +1577,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "basic",
-    "name": "Breadcrumb 01",
+    "name": "Default breadcrumb",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1589,7 +1589,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "alignment",
-    "name": "alignment 01",
+    "name": "Centered breadcrumb",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1601,7 +1601,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "alignment",
-    "name": "alignment 02",
+    "name": "Right-aligned breadcrumb",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1613,7 +1613,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "icons",
-    "name": "icons 01",
+    "name": "Breadcrumb with icons",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1625,7 +1625,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "alternative-separators",
-    "name": "alternative separators 01",
+    "name": "Arrow separator",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1637,7 +1637,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "alternative-separators",
-    "name": "alternative separators 02",
+    "name": "Bullet separator",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1649,7 +1649,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "alternative-separators",
-    "name": "alternative separators 03",
+    "name": "Dot separator",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1661,7 +1661,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "alternative-separators",
-    "name": "alternative separators 04",
+    "name": "Succeeds separator",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1673,7 +1673,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Small breadcrumb",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1685,7 +1685,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Medium breadcrumb",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1697,7 +1697,7 @@
     "page": "components-breadcrumb",
     "url": "https://bulma.io/documentation/components/breadcrumb/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Large breadcrumb",
     "source": {
       "file": "docs/documentation/components/breadcrumb.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1709,7 +1709,7 @@
     "page": "components-card",
     "url": "https://bulma.io/documentation/components/card/",
     "section": "basic",
-    "name": "Card 01",
+    "name": "Profile card",
     "source": {
       "file": "docs/documentation/components/card.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1721,7 +1721,7 @@
     "page": "components-card",
     "url": "https://bulma.io/documentation/components/card/",
     "section": "card-parts",
-    "name": "card parts 01",
+    "name": "Card header",
     "source": {
       "file": "docs/documentation/components/card.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1733,7 +1733,7 @@
     "page": "components-card",
     "url": "https://bulma.io/documentation/components/card/",
     "section": "card-parts",
-    "name": "card parts 02",
+    "name": "Card image",
     "source": {
       "file": "docs/documentation/components/card.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1745,7 +1745,7 @@
     "page": "components-card",
     "url": "https://bulma.io/documentation/components/card/",
     "section": "card-parts",
-    "name": "card parts 03",
+    "name": "Card content",
     "source": {
       "file": "docs/documentation/components/card.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1757,7 +1757,7 @@
     "page": "components-card",
     "url": "https://bulma.io/documentation/components/card/",
     "section": "card-parts",
-    "name": "card parts 04",
+    "name": "Card footer",
     "source": {
       "file": "docs/documentation/components/card.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1769,7 +1769,7 @@
     "page": "components-card",
     "url": "https://bulma.io/documentation/components/card/",
     "section": "examples",
-    "name": "examples 01",
+    "name": "Card with header and footer",
     "source": {
       "file": "docs/documentation/components/card.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1781,7 +1781,7 @@
     "page": "components-card",
     "url": "https://bulma.io/documentation/components/card/",
     "section": "examples",
-    "name": "examples 02",
+    "name": "Quote card",
     "source": {
       "file": "docs/documentation/components/card.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1793,7 +1793,7 @@
     "page": "components-dropdown",
     "url": "https://bulma.io/documentation/components/dropdown/",
     "section": "basic",
-    "name": "Dropdown 01",
+    "name": "Open dropdown",
     "source": {
       "file": "docs/documentation/components/dropdown.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1805,7 +1805,7 @@
     "page": "components-dropdown",
     "url": "https://bulma.io/documentation/components/dropdown/",
     "section": "dropdown-content",
-    "name": "dropdown content 01",
+    "name": "Rich dropdown content",
     "source": {
       "file": "docs/documentation/components/dropdown.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1817,7 +1817,7 @@
     "page": "components-dropdown",
     "url": "https://bulma.io/documentation/components/dropdown/",
     "section": "hoverable-or-toggable",
-    "name": "hoverable or toggable 01",
+    "name": "Click to toggle",
     "source": {
       "file": "docs/documentation/components/dropdown.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1829,7 +1829,7 @@
     "page": "components-dropdown",
     "url": "https://bulma.io/documentation/components/dropdown/",
     "section": "hoverable-or-toggable",
-    "name": "hoverable or toggable 02",
+    "name": "Hover to open",
     "source": {
       "file": "docs/documentation/components/dropdown.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1841,7 +1841,7 @@
     "page": "components-dropdown",
     "url": "https://bulma.io/documentation/components/dropdown/",
     "section": "right-aligned",
-    "name": "right aligned 01",
+    "name": "Left-aligned dropdown",
     "source": {
       "file": "docs/documentation/components/dropdown.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1853,7 +1853,7 @@
     "page": "components-dropdown",
     "url": "https://bulma.io/documentation/components/dropdown/",
     "section": "right-aligned",
-    "name": "right aligned 02",
+    "name": "Right-aligned dropdown",
     "source": {
       "file": "docs/documentation/components/dropdown.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1865,7 +1865,7 @@
     "page": "components-dropdown",
     "url": "https://bulma.io/documentation/components/dropdown/",
     "section": "dropup",
-    "name": "dropup 01",
+    "name": "Dropup menu",
     "source": {
       "file": "docs/documentation/components/dropdown.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1877,7 +1877,7 @@
     "page": "components-menu",
     "url": "https://bulma.io/documentation/components/menu/",
     "section": "basic",
-    "name": "Menu 01",
+    "name": "Nested navigation menu",
     "source": {
       "file": "docs/documentation/components/menu.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1889,7 +1889,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "basic",
-    "name": "Message 01",
+    "name": "Default message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1901,7 +1901,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Dark message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1913,7 +1913,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Link message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1925,7 +1925,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Primary message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1937,7 +1937,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Info message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1949,7 +1949,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "colors",
-    "name": "colors 05",
+    "name": "Success message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1961,7 +1961,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "colors",
-    "name": "colors 06",
+    "name": "Warning message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1973,7 +1973,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "colors",
-    "name": "colors 07",
+    "name": "Danger message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1985,7 +1985,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "message-body-only",
-    "name": "message body only 01",
+    "name": "Body-only message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -1997,7 +1997,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "message-body-only",
-    "name": "message body only 02",
+    "name": "Dark body-only message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2009,7 +2009,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "message-body-only",
-    "name": "message body only 03",
+    "name": "Link body-only message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2021,7 +2021,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "message-body-only",
-    "name": "message body only 04",
+    "name": "Primary body-only message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2033,7 +2033,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "message-body-only",
-    "name": "message body only 05",
+    "name": "Info body-only message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2045,7 +2045,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "message-body-only",
-    "name": "message body only 06",
+    "name": "Success body-only message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2057,7 +2057,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "message-body-only",
-    "name": "message body only 07",
+    "name": "Warning body-only message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2069,7 +2069,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "message-body-only",
-    "name": "message body only 08",
+    "name": "Danger body-only message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2081,7 +2081,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Small message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2093,7 +2093,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Normal message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2105,7 +2105,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Medium message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2117,7 +2117,7 @@
     "page": "components-message",
     "url": "https://bulma.io/documentation/components/message/",
     "section": "sizes",
-    "name": "sizes 04",
+    "name": "Large message",
     "source": {
       "file": "docs/documentation/components/message.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2129,7 +2129,7 @@
     "page": "components-modal",
     "url": "https://bulma.io/documentation/components/modal/",
     "section": "2-add-the-html-for-the-trigger",
-    "name": "2 add the html for the trigger 01",
+    "name": "Unstyled button trigger",
     "source": {
       "file": "docs/documentation/components/modal.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2141,7 +2141,7 @@
     "page": "components-modal",
     "url": "https://bulma.io/documentation/components/modal/",
     "section": "2-add-the-html-for-the-trigger",
-    "name": "2 add the html for the trigger 02",
+    "name": "Primary button trigger",
     "source": {
       "file": "docs/documentation/components/modal.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2153,7 +2153,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "basic-navbar",
-    "name": "basic navbar 01",
+    "name": "Complete navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2165,7 +2165,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "navbar-brand",
-    "name": "navbar brand 01",
+    "name": "Navbar brand",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2177,7 +2177,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "navbar-burger",
-    "name": "navbar burger 01",
+    "name": "Closed burger",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2189,7 +2189,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "navbar-burger",
-    "name": "navbar burger 02",
+    "name": "Expanded burger",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2201,7 +2201,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "transparent-navbar",
-    "name": "transparent navbar 01",
+    "name": "Transparent navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2213,7 +2213,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "try-it-out",
-    "name": "try it out 01",
+    "name": "Toggle fixed bottom navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2225,7 +2225,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "dropdown-menu",
-    "name": "dropdown menu 01",
+    "name": "Navbar dropdown",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2237,7 +2237,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "show-hide-the-dropdown-with-either-css-or-javascript",
-    "name": "show hide the dropdown with either css or javascript 01",
+    "name": "Hoverable dropdown",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2249,7 +2249,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "show-hide-the-dropdown-with-either-css-or-javascript",
-    "name": "show hide the dropdown with either css or javascript 02",
+    "name": "Active dropdown",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2261,7 +2261,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "right-dropdown",
-    "name": "right dropdown 01",
+    "name": "Dropdown alignment",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2273,7 +2273,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "dropup",
-    "name": "dropup 01",
+    "name": "Navbar dropup",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2285,7 +2285,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "dropdown-without-arrow",
-    "name": "dropdown without arrow 01",
+    "name": "Arrowless dropdown",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2297,7 +2297,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "styles-for-the-dropdown-menu",
-    "name": "styles for the dropdown menu 01",
+    "name": "Default dropdown style",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2309,7 +2309,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "styles-for-the-dropdown-menu",
-    "name": "styles for the dropdown menu 02",
+    "name": "Boxed dropdown style",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2321,7 +2321,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "active-dropdown-navbar-item",
-    "name": "active dropdown navbar item 01",
+    "name": "Selected dropdown item",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2333,7 +2333,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Default navbar color",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2345,7 +2345,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Primary navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2357,7 +2357,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Link navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2369,7 +2369,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Info navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2381,7 +2381,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 05",
+    "name": "Success navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2393,7 +2393,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 06",
+    "name": "Warning navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2405,7 +2405,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 07",
+    "name": "Danger navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2417,7 +2417,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 08",
+    "name": "Black navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2429,7 +2429,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 09",
+    "name": "Dark navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2441,7 +2441,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 10",
+    "name": "Light navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2453,7 +2453,7 @@
     "page": "components-navbar",
     "url": "https://bulma.io/documentation/components/navbar/",
     "section": "colors",
-    "name": "colors 11",
+    "name": "White navbar",
     "source": {
       "file": "docs/documentation/components/navbar.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2465,7 +2465,7 @@
     "page": "components-pagination",
     "url": "https://bulma.io/documentation/components/pagination/",
     "section": "basic",
-    "name": "Pagination 01",
+    "name": "Default pagination",
     "source": {
       "file": "docs/documentation/components/pagination.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2477,7 +2477,7 @@
     "page": "components-pagination",
     "url": "https://bulma.io/documentation/components/pagination/",
     "section": "basic",
-    "name": "Pagination 02",
+    "name": "Disabled previous link",
     "source": {
       "file": "docs/documentation/components/pagination.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2489,7 +2489,7 @@
     "page": "components-pagination",
     "url": "https://bulma.io/documentation/components/pagination/",
     "section": "basic",
-    "name": "Pagination 03",
+    "name": "Centered pagination",
     "source": {
       "file": "docs/documentation/components/pagination.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2501,7 +2501,7 @@
     "page": "components-pagination",
     "url": "https://bulma.io/documentation/components/pagination/",
     "section": "basic",
-    "name": "Pagination 04",
+    "name": "Right-aligned pagination",
     "source": {
       "file": "docs/documentation/components/pagination.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2513,7 +2513,7 @@
     "page": "components-pagination",
     "url": "https://bulma.io/documentation/components/pagination/",
     "section": "styles",
-    "name": "styles 01",
+    "name": "Rounded pagination",
     "source": {
       "file": "docs/documentation/components/pagination.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2525,7 +2525,7 @@
     "page": "components-pagination",
     "url": "https://bulma.io/documentation/components/pagination/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Small pagination",
     "source": {
       "file": "docs/documentation/components/pagination.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2537,7 +2537,7 @@
     "page": "components-pagination",
     "url": "https://bulma.io/documentation/components/pagination/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Medium pagination",
     "source": {
       "file": "docs/documentation/components/pagination.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2549,7 +2549,7 @@
     "page": "components-pagination",
     "url": "https://bulma.io/documentation/components/pagination/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Large pagination",
     "source": {
       "file": "docs/documentation/components/pagination.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2561,7 +2561,7 @@
     "page": "components-panel",
     "url": "https://bulma.io/documentation/components/panel/",
     "section": "basic",
-    "name": "Panel 01",
+    "name": "Repository panel",
     "source": {
       "file": "docs/documentation/components/panel.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2573,7 +2573,7 @@
     "page": "components-panel",
     "url": "https://bulma.io/documentation/components/panel/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Link panel",
     "source": {
       "file": "docs/documentation/components/panel.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2585,7 +2585,7 @@
     "page": "components-panel",
     "url": "https://bulma.io/documentation/components/panel/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Primary panel",
     "source": {
       "file": "docs/documentation/components/panel.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2597,7 +2597,7 @@
     "page": "components-panel",
     "url": "https://bulma.io/documentation/components/panel/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Info panel",
     "source": {
       "file": "docs/documentation/components/panel.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2609,7 +2609,7 @@
     "page": "components-panel",
     "url": "https://bulma.io/documentation/components/panel/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Success panel",
     "source": {
       "file": "docs/documentation/components/panel.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2621,7 +2621,7 @@
     "page": "components-panel",
     "url": "https://bulma.io/documentation/components/panel/",
     "section": "colors",
-    "name": "colors 05",
+    "name": "Warning panel",
     "source": {
       "file": "docs/documentation/components/panel.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2633,7 +2633,7 @@
     "page": "components-panel",
     "url": "https://bulma.io/documentation/components/panel/",
     "section": "colors",
-    "name": "colors 06",
+    "name": "Danger panel",
     "source": {
       "file": "docs/documentation/components/panel.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2645,7 +2645,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "basic",
-    "name": "Tabs 01",
+    "name": "Default tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2657,7 +2657,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "alignment",
-    "name": "alignment 01",
+    "name": "Centered tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2669,7 +2669,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "alignment",
-    "name": "alignment 02",
+    "name": "Right-aligned tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2681,7 +2681,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "icons",
-    "name": "icons 01",
+    "name": "Tabs with icons",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2693,7 +2693,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Small tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2705,7 +2705,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Medium tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2717,7 +2717,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Large tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2729,7 +2729,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "styles",
-    "name": "styles 01",
+    "name": "Boxed tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2741,7 +2741,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "styles",
-    "name": "styles 02",
+    "name": "Toggle tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2753,7 +2753,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "styles",
-    "name": "styles 03",
+    "name": "Rounded toggle tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2765,7 +2765,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "styles",
-    "name": "styles 04",
+    "name": "Full-width tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2777,7 +2777,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "combining",
-    "name": "combining 01",
+    "name": "Centered boxed tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2789,7 +2789,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "combining",
-    "name": "combining 02",
+    "name": "Full-width toggle tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2801,7 +2801,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "combining",
-    "name": "combining 03",
+    "name": "Medium centered boxed tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2813,7 +2813,7 @@
     "page": "components-tabs",
     "url": "https://bulma.io/documentation/components/tabs/",
     "section": "combining",
-    "name": "combining 04",
+    "name": "Large full-width toggle tabs",
     "source": {
       "file": "docs/documentation/components/tabs.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2825,7 +2825,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "complete-form-example",
-    "name": "complete form example 01",
+    "name": "Complete form",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2837,7 +2837,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-field",
-    "name": "form field 01",
+    "name": "Label, control and help",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2849,7 +2849,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-field",
-    "name": "form field 02",
+    "name": "Stacked fields",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2861,7 +2861,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-control",
-    "name": "form control 01",
+    "name": "Input control",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2873,7 +2873,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-control",
-    "name": "form control 02",
+    "name": "Select control",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2885,7 +2885,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-control",
-    "name": "form control 03",
+    "name": "Button control",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2897,7 +2897,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "with-icons",
-    "name": "with icons 01",
+    "name": "Sign-in fields with icons",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2909,7 +2909,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "with-icons",
-    "name": "with icons 02",
+    "name": "Select with an icon",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2921,7 +2921,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "with-icons",
-    "name": "with icons 03",
+    "name": "Small input with icons",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2933,7 +2933,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "with-icons",
-    "name": "with icons 04",
+    "name": "Normal input with icons",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2945,7 +2945,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "with-icons",
-    "name": "with icons 05",
+    "name": "Medium input with icons",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2957,7 +2957,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "with-icons",
-    "name": "with icons 06",
+    "name": "Large input with icons",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2969,7 +2969,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-addons",
-    "name": "form addons 01",
+    "name": "Search input addon",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2981,7 +2981,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-addons",
-    "name": "form addons 02",
+    "name": "Static email addon",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -2993,7 +2993,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-addons",
-    "name": "form addons 03",
+    "name": "Currency select addon",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3005,7 +3005,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-addons",
-    "name": "form addons 04",
+    "name": "Expanded select addon",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3017,7 +3017,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-addons",
-    "name": "form addons 05",
+    "name": "Centered addons",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3029,7 +3029,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-addons",
-    "name": "form addons 06",
+    "name": "Right-aligned addons",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3041,7 +3041,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-group",
-    "name": "form group 01",
+    "name": "Grouped form actions",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3053,7 +3053,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-group",
-    "name": "form group 02",
+    "name": "Centered form actions",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3065,7 +3065,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-group",
-    "name": "form group 03",
+    "name": "Right-aligned form actions",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3077,7 +3077,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-group",
-    "name": "form group 04",
+    "name": "Expanded grouped input",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3089,7 +3089,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "form-group",
-    "name": "form group 05",
+    "name": "Multiline form group",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3101,7 +3101,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "horizontal-form",
-    "name": "horizontal form 01",
+    "name": "Horizontal form",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3113,7 +3113,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "horizontal-form",
-    "name": "horizontal form 02",
+    "name": "Horizontal label sizes",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3125,7 +3125,7 @@
     "page": "form-general",
     "url": "https://bulma.io/documentation/form/general/",
     "section": "disabled-form",
-    "name": "disabled form 01",
+    "name": "Disabled fieldset",
     "source": {
       "file": "docs/documentation/form/general.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3137,7 +3137,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "basic",
-    "name": "Input 01",
+    "name": "Text input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3149,7 +3149,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Link input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3161,7 +3161,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Primary input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3173,7 +3173,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Info input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3185,7 +3185,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Success input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3197,7 +3197,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "colors",
-    "name": "colors 05",
+    "name": "Warning input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3209,7 +3209,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "colors",
-    "name": "colors 06",
+    "name": "Danger input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3221,7 +3221,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Small input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3233,7 +3233,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Normal size input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3245,7 +3245,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Medium input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3257,7 +3257,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "sizes",
-    "name": "sizes 04",
+    "name": "Large input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3269,7 +3269,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "styles",
-    "name": "styles 01",
+    "name": "Rounded input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3281,7 +3281,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "normal",
-    "name": "normal 01",
+    "name": "Normal state",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3293,7 +3293,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "hover",
-    "name": "hover 01",
+    "name": "Hover state",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3305,7 +3305,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "focus",
-    "name": "focus 01",
+    "name": "Focus state",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3317,7 +3317,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "loading",
-    "name": "loading 01",
+    "name": "Loading input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3329,7 +3329,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "loading",
-    "name": "loading 02",
+    "name": "Loading spinner sizes",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3341,7 +3341,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "disabled",
-    "name": "disabled 01",
+    "name": "Disabled input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3353,7 +3353,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "readonly-and-static-inputs",
-    "name": "readonly and static inputs 01",
+    "name": "Read-only input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3365,7 +3365,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "readonly-and-static-inputs",
-    "name": "readonly and static inputs 02",
+    "name": "Static input",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3377,7 +3377,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "with-font-awesome-icons",
-    "name": "with font awesome icons 01",
+    "name": "Inputs with icons",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3389,7 +3389,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "with-font-awesome-icons",
-    "name": "with font awesome icons 02",
+    "name": "Small input with icons",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3401,7 +3401,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "with-font-awesome-icons",
-    "name": "with font awesome icons 03",
+    "name": "Normal input with icons",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3413,7 +3413,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "with-font-awesome-icons",
-    "name": "with font awesome icons 04",
+    "name": "Medium input with icons",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3425,7 +3425,7 @@
     "page": "form-input",
     "url": "https://bulma.io/documentation/form/input/",
     "section": "with-font-awesome-icons",
-    "name": "with font awesome icons 05",
+    "name": "Large input with icons",
     "source": {
       "file": "docs/documentation/form/input.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3437,7 +3437,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "basic",
-    "name": "Textarea 01",
+    "name": "Default textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3449,7 +3449,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "basic",
-    "name": "Textarea 02",
+    "name": "Textarea with ten rows",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3461,7 +3461,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Link textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3473,7 +3473,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Primary textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3485,7 +3485,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Info textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3497,7 +3497,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Success textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3509,7 +3509,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "colors",
-    "name": "colors 05",
+    "name": "Warning textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3521,7 +3521,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "colors",
-    "name": "colors 06",
+    "name": "Danger textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3533,7 +3533,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Textarea sizes",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3545,7 +3545,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "normal",
-    "name": "normal 01",
+    "name": "Normal state",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3557,7 +3557,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "hover",
-    "name": "hover 01",
+    "name": "Hover state",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3569,7 +3569,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "focus",
-    "name": "focus 01",
+    "name": "Focus state",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3581,7 +3581,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "loading",
-    "name": "loading 01",
+    "name": "Loading textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3593,7 +3593,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "loading",
-    "name": "loading 02",
+    "name": "Loading spinner sizes",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3605,7 +3605,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "disabled",
-    "name": "disabled 01",
+    "name": "Disabled textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3617,7 +3617,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "readonly",
-    "name": "readonly 01",
+    "name": "Read-only textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3629,7 +3629,7 @@
     "page": "form-textarea",
     "url": "https://bulma.io/documentation/form/textarea/",
     "section": "fixed-size",
-    "name": "fixed size 01",
+    "name": "Fixed-size textarea",
     "source": {
       "file": "docs/documentation/form/textarea.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3641,7 +3641,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "basic",
-    "name": "Select 01",
+    "name": "Default select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3653,7 +3653,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "multiple-select",
-    "name": "multiple select 01",
+    "name": "Multiple selection",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3665,7 +3665,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Link select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3677,7 +3677,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Primary select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3689,7 +3689,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Info select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3701,7 +3701,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Success select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3713,7 +3713,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "colors",
-    "name": "colors 05",
+    "name": "Warning select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3725,7 +3725,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "colors",
-    "name": "colors 06",
+    "name": "Danger select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3737,7 +3737,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "styles",
-    "name": "styles 01",
+    "name": "Rounded select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3749,7 +3749,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Small select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3761,7 +3761,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Normal size select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3773,7 +3773,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Medium select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3785,7 +3785,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "sizes",
-    "name": "sizes 04",
+    "name": "Large select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3797,7 +3797,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "normal",
-    "name": "normal 01",
+    "name": "Normal state",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3809,7 +3809,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "hover",
-    "name": "hover 01",
+    "name": "Hover state",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3821,7 +3821,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "focus",
-    "name": "focus 01",
+    "name": "Focus state",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3833,7 +3833,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "loading",
-    "name": "loading 01",
+    "name": "Loading select",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3845,7 +3845,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "with-icons",
-    "name": "with icons 01",
+    "name": "Select with an icon",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3857,7 +3857,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "with-icons",
-    "name": "with icons 02",
+    "name": "Small select with an icon",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3869,7 +3869,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "with-icons",
-    "name": "with icons 03",
+    "name": "Normal select with an icon",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3881,7 +3881,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "with-icons",
-    "name": "with icons 04",
+    "name": "Medium select with an icon",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3893,7 +3893,7 @@
     "page": "form-select",
     "url": "https://bulma.io/documentation/form/select/",
     "section": "with-icons",
-    "name": "with icons 05",
+    "name": "Large select with an icon",
     "source": {
       "file": "docs/documentation/form/select.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3905,7 +3905,7 @@
     "page": "form-checkbox",
     "url": "https://bulma.io/documentation/form/checkbox/",
     "section": "basic",
-    "name": "Checkbox 01",
+    "name": "Remember-me checkbox",
     "source": {
       "file": "docs/documentation/form/checkbox.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3917,7 +3917,7 @@
     "page": "form-checkbox",
     "url": "https://bulma.io/documentation/form/checkbox/",
     "section": "basic",
-    "name": "Checkbox 02",
+    "name": "Checkbox with a link",
     "source": {
       "file": "docs/documentation/form/checkbox.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3929,7 +3929,7 @@
     "page": "form-checkbox",
     "url": "https://bulma.io/documentation/form/checkbox/",
     "section": "basic",
-    "name": "Checkbox 03",
+    "name": "Disabled checkbox",
     "source": {
       "file": "docs/documentation/form/checkbox.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3941,7 +3941,7 @@
     "page": "form-checkbox",
     "url": "https://bulma.io/documentation/form/checkbox/",
     "section": "list-of-checkboxes",
-    "name": "list of checkboxes 01",
+    "name": "Checkbox list",
     "source": {
       "file": "docs/documentation/form/checkbox.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3953,7 +3953,7 @@
     "page": "form-radio",
     "url": "https://bulma.io/documentation/form/radio/",
     "section": "basic",
-    "name": "Radio button 01",
+    "name": "Radio group",
     "source": {
       "file": "docs/documentation/form/radio.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3965,7 +3965,7 @@
     "page": "form-radio",
     "url": "https://bulma.io/documentation/form/radio/",
     "section": "basic",
-    "name": "Radio button 02",
+    "name": "Preselected radio",
     "source": {
       "file": "docs/documentation/form/radio.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3977,7 +3977,7 @@
     "page": "form-radio",
     "url": "https://bulma.io/documentation/form/radio/",
     "section": "basic",
-    "name": "Radio button 03",
+    "name": "Disabled radio",
     "source": {
       "file": "docs/documentation/form/radio.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -3989,7 +3989,7 @@
     "page": "form-radio",
     "url": "https://bulma.io/documentation/form/radio/",
     "section": "list-of-radio-buttons",
-    "name": "list of radio buttons 01",
+    "name": "Radio button list",
     "source": {
       "file": "docs/documentation/form/radio.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4001,7 +4001,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "basic",
-    "name": "File upload 01",
+    "name": "Default file upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4013,7 +4013,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "modifiers",
-    "name": "modifiers 01",
+    "name": "Filename label",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4025,7 +4025,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "modifiers",
-    "name": "modifiers 02",
+    "name": "Filename with CTA on the right",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4037,7 +4037,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "modifiers",
-    "name": "modifiers 03",
+    "name": "Full-width filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4049,7 +4049,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "modifiers",
-    "name": "modifiers 04",
+    "name": "Boxed file upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4061,7 +4061,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "modifiers",
-    "name": "modifiers 05",
+    "name": "Boxed upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4073,7 +4073,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Primary file upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4085,7 +4085,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Info upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4097,7 +4097,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Warning boxed upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4109,7 +4109,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Danger boxed upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4121,7 +4121,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Small file upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4133,7 +4133,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Normal file upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4145,7 +4145,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Medium file upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4157,7 +4157,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 04",
+    "name": "Large file upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4169,7 +4169,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 05",
+    "name": "Small upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4181,7 +4181,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 06",
+    "name": "Normal upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4193,7 +4193,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 07",
+    "name": "Medium upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4205,7 +4205,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 08",
+    "name": "Large upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4217,7 +4217,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 09",
+    "name": "Small boxed upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4229,7 +4229,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 10",
+    "name": "Normal boxed upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4241,7 +4241,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 11",
+    "name": "Medium boxed upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4253,7 +4253,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 12",
+    "name": "Large boxed upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4265,7 +4265,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 13",
+    "name": "Small boxed upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4277,7 +4277,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 14",
+    "name": "Normal boxed upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4289,7 +4289,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 15",
+    "name": "Medium boxed upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4301,7 +4301,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "sizes",
-    "name": "sizes 16",
+    "name": "Large boxed upload with filename",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4313,7 +4313,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "alignment",
-    "name": "alignment 01",
+    "name": "Centered boxed upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4325,7 +4325,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "alignment",
-    "name": "alignment 02",
+    "name": "Right-aligned upload",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4337,7 +4337,7 @@
     "page": "form-file",
     "url": "https://bulma.io/documentation/form/file/",
     "section": "javascript",
-    "name": "javascript 01",
+    "name": "Live filename update",
     "source": {
       "file": "docs/documentation/form/file.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4349,7 +4349,7 @@
     "page": "columns-basics",
     "url": "https://bulma.io/documentation/columns/basics/",
     "section": "basic",
-    "name": "Columns powered by Flexbox 01",
+    "name": "Four equal columns",
     "source": {
       "file": "docs/documentation/columns/basics.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4361,7 +4361,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "basic",
-    "name": "Column sizes 01",
+    "name": "Full-width column",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4373,7 +4373,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "basic",
-    "name": "Column sizes 02",
+    "name": "Four-fifths column",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4385,7 +4385,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "basic",
-    "name": "Column sizes 03",
+    "name": "Three-quarters column",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4397,7 +4397,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "basic",
-    "name": "Column sizes 04",
+    "name": "Two-thirds column",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4409,7 +4409,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "basic",
-    "name": "Column sizes 05",
+    "name": "Three-fifths column",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4421,7 +4421,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "basic",
-    "name": "Column sizes 06",
+    "name": "Half-width column",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4433,7 +4433,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "basic",
-    "name": "Column sizes 07",
+    "name": "Two-fifths column",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4445,7 +4445,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "basic",
-    "name": "Column sizes 08",
+    "name": "One-third column",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4457,7 +4457,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "basic",
-    "name": "Column sizes 09",
+    "name": "Quarter-width column",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4469,7 +4469,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "basic",
-    "name": "Column sizes 10",
+    "name": "One-fifth column",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4481,7 +4481,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 01",
+    "name": "Width 1 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4493,7 +4493,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 02",
+    "name": "Width 2 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4505,7 +4505,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 03",
+    "name": "Width 3 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4517,7 +4517,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 04",
+    "name": "Width 4 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4529,7 +4529,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 05",
+    "name": "Width 5 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4541,7 +4541,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 06",
+    "name": "Width 6 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4553,7 +4553,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 07",
+    "name": "Width 7 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4565,7 +4565,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 08",
+    "name": "Width 8 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4577,7 +4577,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 09",
+    "name": "Width 9 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4589,7 +4589,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 10",
+    "name": "Width 10 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4601,7 +4601,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 11",
+    "name": "Width 11 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4613,7 +4613,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "12-columns-system",
-    "name": "12 columns system 12",
+    "name": "Width 12 of 12",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4625,7 +4625,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "offset",
-    "name": "offset 01",
+    "name": "Half-width with quarter offset",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4637,7 +4637,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "offset",
-    "name": "offset 02",
+    "name": "Three-fifths with fifth offset",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4649,7 +4649,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "offset",
-    "name": "offset 03",
+    "name": "Width 4 with offset 8",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4661,7 +4661,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "offset",
-    "name": "offset 04",
+    "name": "Width 11 with offset 1",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4673,7 +4673,7 @@
     "page": "columns-sizes",
     "url": "https://bulma.io/documentation/columns/sizes/",
     "section": "narrow-column",
-    "name": "narrow column 01",
+    "name": "Narrow and flexible columns",
     "source": {
       "file": "docs/documentation/columns/sizes.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4685,7 +4685,7 @@
     "page": "columns-responsiveness",
     "url": "https://bulma.io/documentation/columns/responsiveness/",
     "section": "mobile-columns",
-    "name": "mobile columns 01",
+    "name": "Columns on mobile",
     "source": {
       "file": "docs/documentation/columns/responsiveness.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4697,7 +4697,7 @@
     "page": "columns-responsiveness",
     "url": "https://bulma.io/documentation/columns/responsiveness/",
     "section": "mobile-columns",
-    "name": "mobile columns 02",
+    "name": "Columns from desktop",
     "source": {
       "file": "docs/documentation/columns/responsiveness.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4709,7 +4709,7 @@
     "page": "columns-responsiveness",
     "url": "https://bulma.io/documentation/columns/responsiveness/",
     "section": "different-column-sizes-per-breakpoint",
-    "name": "different column sizes per breakpoint 01",
+    "name": "Widths at each breakpoint",
     "source": {
       "file": "docs/documentation/columns/responsiveness.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4721,7 +4721,7 @@
     "page": "columns-nesting",
     "url": "https://bulma.io/documentation/columns/nesting/",
     "section": "basic",
-    "name": "Nesting columns 01",
+    "name": "Nested columns",
     "source": {
       "file": "docs/documentation/columns/nesting.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4733,7 +4733,7 @@
     "page": "columns-gap",
     "url": "https://bulma.io/documentation/columns/gap/",
     "section": "default-gap",
-    "name": "default gap 01",
+    "name": "Default column gap",
     "source": {
       "file": "docs/documentation/columns/gap.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4745,7 +4745,7 @@
     "page": "columns-gap",
     "url": "https://bulma.io/documentation/columns/gap/",
     "section": "gapless",
-    "name": "gapless 01",
+    "name": "Gapless columns",
     "source": {
       "file": "docs/documentation/columns/gap.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4757,7 +4757,7 @@
     "page": "columns-gap",
     "url": "https://bulma.io/documentation/columns/gap/",
     "section": "gapless",
-    "name": "gapless 02",
+    "name": "Gapless multiline columns",
     "source": {
       "file": "docs/documentation/columns/gap.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4769,7 +4769,7 @@
     "page": "columns-gap",
     "url": "https://bulma.io/documentation/columns/gap/",
     "section": "variable-gap",
-    "name": "variable gap 01",
+    "name": "Interactive gap selector",
     "source": {
       "file": "docs/documentation/columns/gap.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4781,7 +4781,7 @@
     "page": "columns-gap",
     "url": "https://bulma.io/documentation/columns/gap/",
     "section": "breakpoint-based-column-gaps",
-    "name": "breakpoint based column gaps 01",
+    "name": "Gaps at each breakpoint",
     "source": {
       "file": "docs/documentation/columns/gap.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4793,7 +4793,7 @@
     "page": "columns-options",
     "url": "https://bulma.io/documentation/columns/options/",
     "section": "vertical-alignment",
-    "name": "vertical alignment 01",
+    "name": "Vertically centered columns",
     "source": {
       "file": "docs/documentation/columns/options.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4805,7 +4805,7 @@
     "page": "columns-options",
     "url": "https://bulma.io/documentation/columns/options/",
     "section": "multiline",
-    "name": "multiline 01",
+    "name": "Multiline columns",
     "source": {
       "file": "docs/documentation/columns/options.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4817,7 +4817,7 @@
     "page": "columns-options",
     "url": "https://bulma.io/documentation/columns/options/",
     "section": "centering-columns",
-    "name": "centering columns 01",
+    "name": "Centered half-width column",
     "source": {
       "file": "docs/documentation/columns/options.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4829,7 +4829,7 @@
     "page": "columns-options",
     "url": "https://bulma.io/documentation/columns/options/",
     "section": "centering-columns",
-    "name": "centering columns 02",
+    "name": "Centered multiline columns",
     "source": {
       "file": "docs/documentation/columns/options.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4841,7 +4841,7 @@
     "page": "grid-smart",
     "url": "https://bulma.io/documentation/grid/smart-grid/",
     "section": "basic",
-    "name": "Smart Grid 01",
+    "name": "Automatically fitted cells",
     "source": {
       "file": "docs/documentation/grid/smart-grid.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4853,7 +4853,7 @@
     "page": "grid-fixed",
     "url": "https://bulma.io/documentation/grid/fixed-grid/",
     "section": "basic",
-    "name": "Fixed Grid 01",
+    "name": "Two-column fixed grid",
     "source": {
       "file": "docs/documentation/grid/fixed-grid.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4865,7 +4865,7 @@
     "page": "grid-fixed",
     "url": "https://bulma.io/documentation/grid/fixed-grid/",
     "section": "auto-count-fixed-grid",
-    "name": "auto count fixed grid 01",
+    "name": "Automatic column count",
     "source": {
       "file": "docs/documentation/grid/fixed-grid.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4877,7 +4877,7 @@
     "page": "grid-cells",
     "url": "https://bulma.io/documentation/grid/grid-cells/",
     "section": "column-start",
-    "name": "column start 01",
+    "name": "Column start position",
     "source": {
       "file": "docs/documentation/grid/grid-cells.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4889,7 +4889,7 @@
     "page": "grid-cells",
     "url": "https://bulma.io/documentation/grid/grid-cells/",
     "section": "column-from-end",
-    "name": "column from end 01",
+    "name": "Column end position",
     "source": {
       "file": "docs/documentation/grid/grid-cells.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4901,7 +4901,7 @@
     "page": "grid-cells",
     "url": "https://bulma.io/documentation/grid/grid-cells/",
     "section": "column-span",
-    "name": "column span 01",
+    "name": "Column span",
     "source": {
       "file": "docs/documentation/grid/grid-cells.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4913,7 +4913,7 @@
     "page": "grid-cells",
     "url": "https://bulma.io/documentation/grid/grid-cells/",
     "section": "row-start",
-    "name": "row start 01",
+    "name": "Row start position",
     "source": {
       "file": "docs/documentation/grid/grid-cells.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4925,7 +4925,7 @@
     "page": "grid-cells",
     "url": "https://bulma.io/documentation/grid/grid-cells/",
     "section": "row-from-end",
-    "name": "row from end 01",
+    "name": "Row end position",
     "source": {
       "file": "docs/documentation/grid/grid-cells.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4937,7 +4937,7 @@
     "page": "grid-cells",
     "url": "https://bulma.io/documentation/grid/grid-cells/",
     "section": "row-span",
-    "name": "row span 01",
+    "name": "Row span",
     "source": {
       "file": "docs/documentation/grid/grid-cells.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4949,7 +4949,7 @@
     "page": "layout-container",
     "url": "https://bulma.io/documentation/layout/container/",
     "section": "default-behavior",
-    "name": "default behavior 01",
+    "name": "Centered container",
     "source": {
       "file": "docs/documentation/layout/container.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4961,7 +4961,7 @@
     "page": "layout-container",
     "url": "https://bulma.io/documentation/layout/container/",
     "section": "widescreen-or-fullhd-only",
-    "name": "widescreen or fullhd only 01",
+    "name": "Container from widescreen",
     "source": {
       "file": "docs/documentation/layout/container.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4973,7 +4973,7 @@
     "page": "layout-container",
     "url": "https://bulma.io/documentation/layout/container/",
     "section": "widescreen-or-fullhd-only",
-    "name": "widescreen or fullhd only 02",
+    "name": "Container from full HD",
     "source": {
       "file": "docs/documentation/layout/container.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4985,7 +4985,7 @@
     "page": "layout-container",
     "url": "https://bulma.io/documentation/layout/container/",
     "section": "tablet-desktop-and-widescreen-maximum-widths",
-    "name": "tablet desktop and widescreen maximum widths 01",
+    "name": "Tablet maximum width",
     "source": {
       "file": "docs/documentation/layout/container.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -4997,7 +4997,7 @@
     "page": "layout-container",
     "url": "https://bulma.io/documentation/layout/container/",
     "section": "tablet-desktop-and-widescreen-maximum-widths",
-    "name": "tablet desktop and widescreen maximum widths 02",
+    "name": "Desktop maximum width",
     "source": {
       "file": "docs/documentation/layout/container.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5009,7 +5009,7 @@
     "page": "layout-container",
     "url": "https://bulma.io/documentation/layout/container/",
     "section": "tablet-desktop-and-widescreen-maximum-widths",
-    "name": "tablet desktop and widescreen maximum widths 03",
+    "name": "Widescreen maximum width",
     "source": {
       "file": "docs/documentation/layout/container.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5021,7 +5021,7 @@
     "page": "layout-container",
     "url": "https://bulma.io/documentation/layout/container/",
     "section": "fluid-container",
-    "name": "fluid container 01",
+    "name": "Fluid container",
     "source": {
       "file": "docs/documentation/layout/container.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5033,7 +5033,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "basic",
-    "name": "Hero 01",
+    "name": "Default hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5045,7 +5045,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "colors",
-    "name": "colors 01",
+    "name": "Link hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5057,7 +5057,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "colors",
-    "name": "colors 02",
+    "name": "Primary hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5069,7 +5069,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "colors",
-    "name": "colors 03",
+    "name": "Info hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5081,7 +5081,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "colors",
-    "name": "colors 04",
+    "name": "Success hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5093,7 +5093,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "colors",
-    "name": "colors 05",
+    "name": "Warning hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5105,7 +5105,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "colors",
-    "name": "colors 06",
+    "name": "Danger hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5117,7 +5117,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Small hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5129,7 +5129,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Medium hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5141,7 +5141,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "sizes",
-    "name": "sizes 03",
+    "name": "Large hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5153,7 +5153,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "sizes",
-    "name": "sizes 04",
+    "name": "Half-height hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5165,7 +5165,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "sizes",
-    "name": "sizes 05",
+    "name": "Full-height hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5177,7 +5177,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "fullheight-with-navbar",
-    "name": "fullheight with navbar 01",
+    "name": "Full-height hero below navbar",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5189,7 +5189,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "fullheight-hero-in-3-parts",
-    "name": "fullheight hero in 3 parts 01",
+    "name": "Medium three-part hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5201,7 +5201,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "fullheight-hero-in-3-parts",
-    "name": "fullheight hero in 3 parts 02",
+    "name": "Large three-part hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5213,7 +5213,7 @@
     "page": "layout-hero",
     "url": "https://bulma.io/documentation/layout/hero/",
     "section": "fullheight-hero-in-3-parts",
-    "name": "fullheight hero in 3 parts 03",
+    "name": "Full-height three-part hero",
     "source": {
       "file": "docs/documentation/layout/hero.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5225,7 +5225,7 @@
     "page": "layout-section",
     "url": "https://bulma.io/documentation/layout/section/",
     "section": "basic",
-    "name": "Section 01",
+    "name": "Default section",
     "source": {
       "file": "docs/documentation/layout/section.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5237,7 +5237,7 @@
     "page": "layout-section",
     "url": "https://bulma.io/documentation/layout/section/",
     "section": "sizes",
-    "name": "sizes 01",
+    "name": "Medium section",
     "source": {
       "file": "docs/documentation/layout/section.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5249,7 +5249,7 @@
     "page": "layout-section",
     "url": "https://bulma.io/documentation/layout/section/",
     "section": "sizes",
-    "name": "sizes 02",
+    "name": "Large section",
     "source": {
       "file": "docs/documentation/layout/section.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5261,7 +5261,7 @@
     "page": "layout-level",
     "url": "https://bulma.io/documentation/layout/level/",
     "section": "basic",
-    "name": "Level 01",
+    "name": "Toolbar with left and right items",
     "source": {
       "file": "docs/documentation/layout/level.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5273,7 +5273,7 @@
     "page": "layout-level",
     "url": "https://bulma.io/documentation/layout/level/",
     "section": "centered-level",
-    "name": "centered level 01",
+    "name": "Centered statistics",
     "source": {
       "file": "docs/documentation/layout/level.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5285,7 +5285,7 @@
     "page": "layout-level",
     "url": "https://bulma.io/documentation/layout/level/",
     "section": "centered-level",
-    "name": "centered level 02",
+    "name": "Centered navigation links",
     "source": {
       "file": "docs/documentation/layout/level.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5297,7 +5297,7 @@
     "page": "layout-level",
     "url": "https://bulma.io/documentation/layout/level/",
     "section": "mobile-level",
-    "name": "mobile level 01",
+    "name": "Mobile statistics",
     "source": {
       "file": "docs/documentation/layout/level.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5309,7 +5309,7 @@
     "page": "layout-media",
     "url": "https://bulma.io/documentation/layout/media-object/",
     "section": "basic",
-    "name": "Media Object 01",
+    "name": "Media object",
     "source": {
       "file": "docs/documentation/layout/media-object.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5321,7 +5321,7 @@
     "page": "layout-media",
     "url": "https://bulma.io/documentation/layout/media-object/",
     "section": "basic",
-    "name": "Media Object 02",
+    "name": "Media form",
     "source": {
       "file": "docs/documentation/layout/media-object.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5333,7 +5333,7 @@
     "page": "layout-media",
     "url": "https://bulma.io/documentation/layout/media-object/",
     "section": "nesting",
-    "name": "nesting 01",
+    "name": "Nested media objects",
     "source": {
       "file": "docs/documentation/layout/media-object.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
@@ -5345,7 +5345,7 @@
     "page": "layout-footer",
     "url": "https://bulma.io/documentation/layout/footer/",
     "section": "basic",
-    "name": "Footer 01",
+    "name": "Centered footer",
     "source": {
       "file": "docs/documentation/layout/footer.html",
       "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"

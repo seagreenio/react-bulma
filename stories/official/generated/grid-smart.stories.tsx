@@ -973,7 +973,7 @@ function Example001Demo() {
 }
 
 export const Example001 = {
-  name: 'Smart Grid 01',
+  name: 'Automatically fitted cells',
   parameters: {
     official: { id: 'grid-smart/basic/001' },
     docs: {

@@ -1202,7 +1202,7 @@ function Example022Demo() {
 }
 
 export const Example001 = {
-  name: 'Select 01',
+  name: 'Default select',
   parameters: {
     official: { id: 'form-select/basic/001' },
     docs: {
@@ -1217,7 +1217,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'multiple select 01',
+  name: 'Multiple selection',
   parameters: {
     official: { id: 'form-select/multiple-select/001' },
     docs: {
@@ -1232,7 +1232,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'colors 01',
+  name: 'Link select',
   parameters: {
     official: { id: 'form-select/colors/001' },
     docs: {
@@ -1247,7 +1247,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'colors 02',
+  name: 'Primary select',
   parameters: {
     official: { id: 'form-select/colors/002' },
     docs: {
@@ -1262,7 +1262,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'colors 03',
+  name: 'Info select',
   parameters: {
     official: { id: 'form-select/colors/003' },
     docs: {
@@ -1277,7 +1277,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'colors 04',
+  name: 'Success select',
   parameters: {
     official: { id: 'form-select/colors/004' },
     docs: {
@@ -1292,7 +1292,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'colors 05',
+  name: 'Warning select',
   parameters: {
     official: { id: 'form-select/colors/005' },
     docs: {
@@ -1307,7 +1307,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'colors 06',
+  name: 'Danger select',
   parameters: {
     official: { id: 'form-select/colors/006' },
     docs: {
@@ -1322,7 +1322,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'styles 01',
+  name: 'Rounded select',
   parameters: {
     official: { id: 'form-select/styles/001' },
     docs: {
@@ -1337,7 +1337,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'sizes 01',
+  name: 'Small select',
   parameters: {
     official: { id: 'form-select/sizes/001' },
     docs: {
@@ -1352,7 +1352,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'sizes 02',
+  name: 'Normal size select',
   parameters: {
     official: { id: 'form-select/sizes/002' },
     docs: {
@@ -1367,7 +1367,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'sizes 03',
+  name: 'Medium select',
   parameters: {
     official: { id: 'form-select/sizes/003' },
     docs: {
@@ -1382,7 +1382,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'sizes 04',
+  name: 'Large select',
   parameters: {
     official: { id: 'form-select/sizes/004' },
     docs: {
@@ -1397,7 +1397,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'normal 01',
+  name: 'Normal state',
   parameters: {
     official: { id: 'form-select/normal/001' },
     docs: {
@@ -1412,7 +1412,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'hover 01',
+  name: 'Hover state',
   parameters: {
     official: { id: 'form-select/hover/001' },
     docs: {
@@ -1427,7 +1427,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'focus 01',
+  name: 'Focus state',
   parameters: {
     official: { id: 'form-select/focus/001' },
     docs: {
@@ -1442,7 +1442,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: 'loading 01',
+  name: 'Loading select',
   parameters: {
     official: { id: 'form-select/loading/001' },
     docs: {
@@ -1457,7 +1457,7 @@ export const Example017 = {
 } satisfies StoryObj
 
 export const Example018 = {
-  name: 'with icons 01',
+  name: 'Select with an icon',
   parameters: {
     official: { id: 'form-select/with-icons/001' },
     docs: {
@@ -1472,7 +1472,7 @@ export const Example018 = {
 } satisfies StoryObj
 
 export const Example019 = {
-  name: 'with icons 02',
+  name: 'Small select with an icon',
   parameters: {
     official: { id: 'form-select/with-icons/002' },
     docs: {
@@ -1487,7 +1487,7 @@ export const Example019 = {
 } satisfies StoryObj
 
 export const Example020 = {
-  name: 'with icons 03',
+  name: 'Normal select with an icon',
   parameters: {
     official: { id: 'form-select/with-icons/003' },
     docs: {
@@ -1502,7 +1502,7 @@ export const Example020 = {
 } satisfies StoryObj
 
 export const Example021 = {
-  name: 'with icons 04',
+  name: 'Medium select with an icon',
   parameters: {
     official: { id: 'form-select/with-icons/004' },
     docs: {
@@ -1517,7 +1517,7 @@ export const Example021 = {
 } satisfies StoryObj
 
 export const Example022 = {
-  name: 'with icons 05',
+  name: 'Large select with an icon',
   parameters: {
     official: { id: 'form-select/with-icons/005' },
     docs: {

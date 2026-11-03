@@ -134,7 +134,7 @@ function Example001Demo() {
 }
 
 export const Example001 = {
-  name: 'Columns powered by Flexbox 01',
+  name: 'Four equal columns',
   parameters: {
     official: { id: 'columns-basics/basic/001' },
     docs: {

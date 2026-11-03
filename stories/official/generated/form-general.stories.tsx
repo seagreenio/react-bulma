@@ -2992,7 +2992,7 @@ function Example026Demo() {
 }
 
 export const Example001 = {
-  name: 'complete form example 01',
+  name: 'Complete form',
   parameters: {
     official: { id: 'form-general/complete-form-example/001' },
     docs: {
@@ -3007,7 +3007,7 @@ export const Example001 = {
 } satisfies StoryObj
 
 export const Example002 = {
-  name: 'form field 01',
+  name: 'Label, control and help',
   parameters: {
     official: { id: 'form-general/form-field/001' },
     docs: {
@@ -3022,7 +3022,7 @@ export const Example002 = {
 } satisfies StoryObj
 
 export const Example003 = {
-  name: 'form field 02',
+  name: 'Stacked fields',
   parameters: {
     official: { id: 'form-general/form-field/002' },
     docs: {
@@ -3037,7 +3037,7 @@ export const Example003 = {
 } satisfies StoryObj
 
 export const Example004 = {
-  name: 'form control 01',
+  name: 'Input control',
   parameters: {
     official: { id: 'form-general/form-control/001' },
     docs: {
@@ -3052,7 +3052,7 @@ export const Example004 = {
 } satisfies StoryObj
 
 export const Example005 = {
-  name: 'form control 02',
+  name: 'Select control',
   parameters: {
     official: { id: 'form-general/form-control/002' },
     docs: {
@@ -3067,7 +3067,7 @@ export const Example005 = {
 } satisfies StoryObj
 
 export const Example006 = {
-  name: 'form control 03',
+  name: 'Button control',
   parameters: {
     official: { id: 'form-general/form-control/003' },
     docs: {
@@ -3082,7 +3082,7 @@ export const Example006 = {
 } satisfies StoryObj
 
 export const Example007 = {
-  name: 'with icons 01',
+  name: 'Sign-in fields with icons',
   parameters: {
     official: { id: 'form-general/with-icons/001' },
     docs: {
@@ -3097,7 +3097,7 @@ export const Example007 = {
 } satisfies StoryObj
 
 export const Example008 = {
-  name: 'with icons 02',
+  name: 'Select with an icon',
   parameters: {
     official: { id: 'form-general/with-icons/002' },
     docs: {
@@ -3112,7 +3112,7 @@ export const Example008 = {
 } satisfies StoryObj
 
 export const Example009 = {
-  name: 'with icons 03',
+  name: 'Small input with icons',
   parameters: {
     official: { id: 'form-general/with-icons/003' },
     docs: {
@@ -3127,7 +3127,7 @@ export const Example009 = {
 } satisfies StoryObj
 
 export const Example010 = {
-  name: 'with icons 04',
+  name: 'Normal input with icons',
   parameters: {
     official: { id: 'form-general/with-icons/004' },
     docs: {
@@ -3142,7 +3142,7 @@ export const Example010 = {
 } satisfies StoryObj
 
 export const Example011 = {
-  name: 'with icons 05',
+  name: 'Medium input with icons',
   parameters: {
     official: { id: 'form-general/with-icons/005' },
     docs: {
@@ -3157,7 +3157,7 @@ export const Example011 = {
 } satisfies StoryObj
 
 export const Example012 = {
-  name: 'with icons 06',
+  name: 'Large input with icons',
   parameters: {
     official: { id: 'form-general/with-icons/006' },
     docs: {
@@ -3172,7 +3172,7 @@ export const Example012 = {
 } satisfies StoryObj
 
 export const Example013 = {
-  name: 'form addons 01',
+  name: 'Search input addon',
   parameters: {
     official: { id: 'form-general/form-addons/001' },
     docs: {
@@ -3187,7 +3187,7 @@ export const Example013 = {
 } satisfies StoryObj
 
 export const Example014 = {
-  name: 'form addons 02',
+  name: 'Static email addon',
   parameters: {
     official: { id: 'form-general/form-addons/002' },
     docs: {
@@ -3202,7 +3202,7 @@ export const Example014 = {
 } satisfies StoryObj
 
 export const Example015 = {
-  name: 'form addons 03',
+  name: 'Currency select addon',
   parameters: {
     official: { id: 'form-general/form-addons/003' },
     docs: {
@@ -3217,7 +3217,7 @@ export const Example015 = {
 } satisfies StoryObj
 
 export const Example016 = {
-  name: 'form addons 04',
+  name: 'Expanded select addon',
   parameters: {
     official: { id: 'form-general/form-addons/004' },
     docs: {
@@ -3232,7 +3232,7 @@ export const Example016 = {
 } satisfies StoryObj
 
 export const Example017 = {
-  name: 'form addons 05',
+  name: 'Centered addons',
   parameters: {
     official: { id: 'form-general/form-addons/005' },
     docs: {
@@ -3247,7 +3247,7 @@ export const Example017 = {
 } satisfies StoryObj
 
 export const Example018 = {
-  name: 'form addons 06',
+  name: 'Right-aligned addons',
   parameters: {
     official: { id: 'form-general/form-addons/006' },
     docs: {
@@ -3262,7 +3262,7 @@ export const Example018 = {
 } satisfies StoryObj
 
 export const Example019 = {
-  name: 'form group 01',
+  name: 'Grouped form actions',
   parameters: {
     official: { id: 'form-general/form-group/001' },
     docs: {
@@ -3277,7 +3277,7 @@ export const Example019 = {
 } satisfies StoryObj
 
 export const Example020 = {
-  name: 'form group 02',
+  name: 'Centered form actions',
   parameters: {
     official: { id: 'form-general/form-group/002' },
     docs: {
@@ -3292,7 +3292,7 @@ export const Example020 = {
 } satisfies StoryObj
 
 export const Example021 = {
-  name: 'form group 03',
+  name: 'Right-aligned form actions',
   parameters: {
     official: { id: 'form-general/form-group/003' },
     docs: {
@@ -3307,7 +3307,7 @@ export const Example021 = {
 } satisfies StoryObj
 
 export const Example022 = {
-  name: 'form group 04',
+  name: 'Expanded grouped input',
   parameters: {
     official: { id: 'form-general/form-group/004' },
     docs: {
@@ -3322,7 +3322,7 @@ export const Example022 = {
 } satisfies StoryObj
 
 export const Example023 = {
-  name: 'form group 05',
+  name: 'Multiline form group',
   parameters: {
     official: { id: 'form-general/form-group/005' },
     docs: {
@@ -3337,7 +3337,7 @@ export const Example023 = {
 } satisfies StoryObj
 
 export const Example024 = {
-  name: 'horizontal form 01',
+  name: 'Horizontal form',
   parameters: {
     official: { id: 'form-general/horizontal-form/001' },
     docs: {
@@ -3352,7 +3352,7 @@ export const Example024 = {
 } satisfies StoryObj
 
 export const Example025 = {
-  name: 'horizontal form 02',
+  name: 'Horizontal label sizes',
   parameters: {
     official: { id: 'form-general/horizontal-form/002' },
     docs: {
@@ -3367,7 +3367,7 @@ export const Example025 = {
 } satisfies StoryObj
 
 export const Example026 = {
-  name: 'disabled form 01',
+  name: 'Disabled fieldset',
   parameters: {
     official: { id: 'form-general/disabled-form/001' },
     docs: {
