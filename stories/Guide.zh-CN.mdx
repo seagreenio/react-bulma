@@ -1,0 +1,474 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+import reactLogo from '../assets/react.svg?url'
+import bulmaLogo from '../assets/bulma.svg?url'
+
+<Meta title="React Bulma" name="使用指南" />
+
+<p align="center">
+  <img src={reactLogo} width="128" height="128" alt="React 标志" />
+  <img src={bulmaLogo} width="128" height="128" alt="Bulma 标志" />
+</p>
+
+# React Bulma 使用指南
+
+<p>
+  <a href="./?path=/docs/react-bulma--usage-guide" target="_top">
+    {'English'}
+  </a>
+  {' | 简体中文'}
+</p>
+
+Another & Another React Bulma 组件库，内置 TypeScript 支持。
+
+React Bulma 提供基于 Bulma 1.0.4 的 React 组件，使用时需要 React 17.0.2 或更高版本。
+
+你可以通过组件 props 设置 Bulma 修饰符，通过带类型提示的 `helpers` 统一设置界面中的通用样式。`BulmaRoot` 负责限定这些样式的生效范围，让每个根组件拥有自己的主题，也支持自定义前缀。
+
+你可以从[默认样式](#使用默认样式)开始，也可以[自定义前缀并构建样式](#自定义前缀并构建样式)，或直接了解如何[组合交互组件](#组合交互组件)。
+
+## 安装
+
+下文的示例文件放在你的应用中，以应用 `package.json` 所在的目录为根目录。安装和应用构建命令都在该目录运行。
+
+使用 npm 安装 RC 版本：
+
+```sh
+npm install @seagreenio/react-bulma@1.0.0-rc.0
+```
+
+如果你使用 Bun，对应的命令如下：
+
+```sh
+bun add @seagreenio/react-bulma@1.0.0-rc.0
+```
+
+## 查找组件示例
+
+侧栏中的 **CSS Library** 和 **Features** 沿用 Bulma 文档的分组。各组件页面都提供渲染效果和可复制的 React 源码。
+
+- 按钮和操作可以参考 <a href="./?path=/docs/official-elements-button--docs" target="_top">Button</a>。
+- 原生表单的用法可以参考<a href="./?path=/docs/official-form-general--docs" target="_top">表单控件</a>。
+- 响应式行布局可以参考 <a href="./?path=/docs/official-columns-basics--docs" target="_top">Columns</a>。
+- 适应容器宽度的网格布局可以参考 <a href="./?path=/docs/official-grid-fixed--docs" target="_top">FixedGrid</a>。
+- 对话框的用法可以参考 <a href="./?path=/docs/official-components-modal--docs" target="_top">Modal</a>。
+- 加载占位效果可以参考 <a href="./?path=/docs/official-features-skeletons--docs" target="_top">Skeletons</a>。
+
+## 使用默认样式
+
+在应用的 `src/App.tsx` 中引入默认样式，并将组件放在 `BulmaRoot` 内。样式只需引入一次，不要同时引入全局 Bulma CSS：
+
+```tsx
+// src/App.tsx
+import { Button, BulmaRoot, Field, Input, Label } from '@seagreenio/react-bulma'
+import '@seagreenio/react-bulma/styles.css'
+
+export function App() {
+  return (
+    <BulmaRoot>
+      <Field>
+        <Label htmlFor="name">Name</Label>
+        <Input id="name" name="name" placeholder="Your name" />
+      </Field>
+      <Button color="primary" helpers={{ mt: 4 }}>
+        Save
+      </Button>
+    </BulmaRoot>
+  )
+}
+```
+
+`BulmaRoot` 为内部元素提供 CSS 变量、排版和表单基础样式，默认使用 `rb-` 前缀和浅色主题。设置 `theme="dark"` 可在局部使用深色主题，设置 `theme="system"` 则跟随浏览器的配色偏好。多个 `BulmaRoot` 嵌套时，各自保留自己的主题和前缀。
+
+样式依赖 CSS `@scope` 和容器查询，目标浏览器必须支持这两项功能。外层组件库样式不会进入嵌套的 Bulma 根组件，但页面自身的选择器和继承样式仍可能影响组件。
+
+## 设置 helpers 和原生属性
+
+在上面的 `src/App.tsx` 中，可以将 Save 按钮替换为：
+
+```tsx
+<Button
+  color="primary"
+  rounded
+  helpers={{ mt: 0, px: 4 }}
+  className="save-action"
+>
+  Save
+</Button>
+```
+
+组件专属的修饰符通过带类型约束的 props 设置。间距、文本、颜色、显示方式、可见性和 Flex 布局等通用样式放在 `helpers` 中。组件库还导出了纯函数 `helpers(values)`，可为原生元素生成带前缀的类名。`helpers` 会保留数值 `0`，可见性选项为 `false` 时不生成类名。传入的 `className` 会原样追加。
+
+原生元素也可以使用 helpers。将下面的示例保存为 `src/Summary.tsx`，它使用前面的默认样式。在 `src/App.tsx` 中通过 `import { Summary } from './Summary'` 导入，再渲染 `<Summary />`：
+
+```tsx
+// src/Summary.tsx
+'use client'
+
+import { BulmaRoot, helpers } from '@seagreenio/react-bulma'
+
+export function Summary() {
+  return (
+    <BulmaRoot>
+      <div
+        className={helpers({
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          p: 4,
+        })}
+      >
+        <p className={helpers({ m: 0, textWeight: 'semibold' })}>Draft saved</p>
+        <span className={helpers({ textColor: 'success' })}>Up to date</span>
+      </div>
+    </BulmaRoot>
+  )
+}
+```
+
+每个组件都导出对应的 props 类型。只渲染一个元素的组件会把原生属性、事件和 ref 转发给该元素。对于包含包装元素的组件，各项属性的作用位置如下：
+
+| 组件            | 原生属性、className、style 和 ref 传给谁 | helpers 和 wrapperProps 的作用位置                                    |
+| --------------- | ---------------------------------------- | --------------------------------------------------------------------- |
+| Input、Textarea | 原生 input 或 textarea                   | helpers 作用于控件本身                                                |
+| Select          | 原生 select                              | helpers 和 wrapperProps 作用于外层包装元素                            |
+| Checkbox、Radio | 原生 input                               | children 是标签内容，helpers 和 wrapperProps 作用于 label             |
+| File            | 原生文件 input                           | children 是上传标签，helpers 和 wrapperProps 作用于文件控件的包装元素 |
+| Image           | 原生 img，必须提供 alt                   | helpers 和 wrapperProps 作用于 figure                                 |
+| FixedGrid       | 外层 fixed-grid div                      | gridProps 配置内层网格                                                |
+
+`size` 控制组件在 Bulma 中的视觉尺寸。`htmlSize` 对应 Input 和 Select 原生的 `size` 属性，值为数字。Select 支持原生多选。File 使用原生文件输入框，显示的 `filename` 由调用方控制，可在 `onChange` 中更新。
+
+Button 默认使用 `type="button"`，因此不会提交表单，除非你显式设置提交类型。按钮进入加载状态时会禁用，并通过 `aria-busy` 告知辅助技术。LinkButton 渲染为链接，加载或禁用时会移除链接地址并阻止激活。禁用的分页链接和下拉菜单链接同样无法激活。Delete、TagDelete 和 NavbarBurger 都使用原生按钮，并带有默认的无障碍标签。
+
+## 自定义前缀并构建样式
+
+这个示例使用以下文件。`src/bulma.css` 由脚本生成；Bun 和 Node.js 脚本只需选择一种。
+
+```text
+bulma.config.ts
+scripts/
+  styles.ts
+  styles.mjs
+src/
+  ui.ts
+  App.tsx
+  bulma.css
+```
+
+在应用根目录创建 `bulma.config.ts`：
+
+```ts
+// bulma.config.ts
+export const bulmaConfig = { prefix: 'acme-' } as const
+```
+
+创建 `src/ui.ts`。其中 `../bulma.config` 指向根目录的 `bulma.config.ts`：
+
+```ts
+// src/ui.ts
+'use client'
+import { createBulma } from '@seagreenio/react-bulma'
+import { bulmaConfig } from '../bulma.config'
+
+export const ui = createBulma(bulmaConfig)
+
+const { BulmaRoot, Box, Button } = ui
+
+export { BulmaRoot, Box, Button }
+```
+
+### 使用 Bun 生成 CSS
+
+创建 `scripts/styles.ts`。其中 `../bulma.config` 同样指向根目录的配置：
+
+```ts
+// scripts/styles.ts
+import { buildStyles } from '@seagreenio/react-bulma/styles'
+import { bulmaConfig } from '../bulma.config'
+
+await Bun.write('src/bulma.css', await buildStyles(bulmaConfig))
+```
+
+在应用根目录运行，生成 `src/bulma.css`：
+
+```sh
+bun scripts/styles.ts
+```
+
+### 使用 Node.js 生成 CSS
+
+如果使用 Node.js 22.18 或更高版本，可以改为创建 `scripts/styles.mjs`：
+
+```js
+// scripts/styles.mjs
+import { writeFile } from 'node:fs/promises'
+import { buildStyles } from '@seagreenio/react-bulma/styles'
+import { bulmaConfig } from '../bulma.config.ts'
+
+await writeFile('src/bulma.css', await buildStyles(bulmaConfig), 'utf8')
+```
+
+在应用根目录运行，生成同一个 `src/bulma.css`：
+
+```sh
+node scripts/styles.mjs
+```
+
+### 在应用中使用
+
+每次构建应用前，先运行你选用的样式脚本。将默认样式示例中的 `src/App.tsx` 替换为下面的代码。这里的 `./ui` 和 `./bulma.css` 分别指向同在 `src/` 下的 `ui.ts` 和生成的 CSS：
+
+```tsx
+// src/App.tsx
+'use client'
+
+import { ui } from './ui'
+import './bulma.css'
+
+const { BulmaRoot, Button, helpers } = ui
+
+export function App() {
+  return (
+    <BulmaRoot theme="dark">
+      <p className={helpers({ mt: 4, textAlign: 'center', hidden: 'mobile' })}>
+        Visible above the mobile breakpoint
+      </p>
+      <Button color="info">Save</Button>
+    </BulmaRoot>
+  )
+}
+```
+
+在模块顶层调用一次 `createBulma`，根组件、组件、helpers 和 CSS 使用同一份前缀配置。前缀必须以小写 ASCII 字母开头、以连字符结尾，中间只能使用小写字母、数字和分隔它们的单个连字符。不同前缀的根组件可以共存或嵌套。
+
+## 使用服务端渲染（SSR）
+
+如果应用已使用 React 17、React DOM 17 和 Vite，可以运行下面的独立 SSR 示例。它会在终端输出按钮的 HTML。
+
+创建 `src/entry-server.tsx`：
+
+```tsx
+// src/entry-server.tsx
+import React from 'react'
+import { renderToString } from 'react-dom/server'
+import { BulmaRoot, Button } from '@seagreenio/react-bulma'
+
+const html = renderToString(
+  <BulmaRoot>
+    <Button color="primary">Save</Button>
+  </BulmaRoot>,
+)
+
+console.log(html)
+```
+
+在应用根目录创建 `vite.ssr.config.ts`：
+
+```ts
+// vite.ssr.config.ts
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  ssr: {
+    noExternal: ['@seagreenio/react-bulma'],
+  },
+  build: {
+    ssr: 'src/entry-server.tsx',
+    outDir: 'dist-server',
+    rollupOptions: {
+      output: {
+        format: 'cjs',
+        entryFileNames: 'entry-server.cjs',
+      },
+    },
+  },
+})
+```
+
+在应用根目录依次运行。第一条命令生成 `dist-server/entry-server.cjs`，第二条命令执行该文件：
+
+```sh
+npx vite build --config vite.ssr.config.ts
+node dist-server/entry-server.cjs
+```
+
+## 使用 React Server Components
+
+在 Next.js App Router 页面中直接导入组件。下面的页面不需要添加 `'use client'`：
+
+```tsx
+// src/app/page.tsx
+import { BulmaRoot, Box, Button } from '@seagreenio/react-bulma'
+
+export default function Page() {
+  return (
+    <BulmaRoot>
+      <Box>Content loaded on the server</Box>
+      <Button color="primary" helpers={{ mt: 4 }}>
+        Continue
+      </Button>
+    </BulmaRoot>
+  )
+}
+```
+
+在已有的 `src/app/layout.tsx` 顶部添加默认样式导入：
+
+```tsx
+// src/app/layout.tsx
+import '@seagreenio/react-bulma/styles.css'
+```
+
+### 自定义前缀
+
+先完成[自定义前缀配置](#自定义前缀并构建样式)，创建 `src/ui.ts` 并生成 `src/bulma.css`。这两个文件与 Next.js 页面的位置如下：
+
+```text
+src/
+  bulma.css
+  ui.ts
+  app/
+    layout.tsx
+    page.tsx
+```
+
+`layout.tsx` 和 `page.tsx` 都在 `src/app/` 中，因此 `../bulma.css` 指向 `src/bulma.css`，`../ui` 指向 `src/ui.ts`。
+
+将 `src/app/layout.tsx` 改为下面的根布局，引入生成的 CSS：
+
+```tsx
+// src/app/layout.tsx
+import type { ReactNode } from 'react'
+import '../bulma.css'
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
+}
+```
+
+`src/app/page.tsx` 从 `src/ui.ts` 导入组件：
+
+```tsx
+// src/app/page.tsx
+import { BulmaRoot, Box, Button } from '../ui'
+
+export default function Page() {
+  return (
+    <BulmaRoot>
+      <Box>Content loaded on the server</Box>
+      <Button color="primary" helpers={{ mt: 4 }}>
+        Continue
+      </Button>
+    </BulmaRoot>
+  )
+}
+```
+
+调用 `createBulma()`、`helpers()`，或定义事件处理函数、交互状态的文件，需要在顶部添加 `'use client'`。
+
+## 组合交互组件
+
+下面的示例使用[自定义前缀配置](#自定义前缀并构建样式)中的 `src/ui.ts` 和 CSS。将它保存为 `src/Settings.tsx`；其中 `./ui` 指向 `src/ui.ts`。在自定义前缀示例的 `src/App.tsx` 中添加 `import { Settings } from './Settings'`，再渲染 `<Settings />`：
+
+```tsx
+// src/Settings.tsx
+'use client'
+
+import { ui } from './ui'
+
+const {
+  BulmaRoot,
+  Modal,
+  ModalTrigger,
+  ModalCard,
+  ModalCardHead,
+  ModalTitle,
+  ModalClose,
+  ModalCardBody,
+  ModalDescription,
+  ModalCardFoot,
+} = ui
+
+export function Settings() {
+  return (
+    <BulmaRoot>
+      <Modal>
+        <ModalTrigger>Open settings</ModalTrigger>
+        <ModalCard>
+          <ModalCardHead>
+            <ModalTitle>Settings</ModalTitle>
+            <ModalClose variant="delete" />
+          </ModalCardHead>
+          <ModalCardBody>
+            <ModalDescription>Update your preferences.</ModalDescription>
+          </ModalCardBody>
+          <ModalCardFoot>
+            <ModalClose variant="button">Done</ModalClose>
+          </ModalCardFoot>
+        </ModalCard>
+      </Modal>
+    </BulmaRoot>
+  )
+}
+```
+
+你可以通过 `open` 和 `onOpenChange` 控制 Modal 的开关状态，也可以用 `defaultOpen` 设置初始状态。Modal 还接受 `closeOnEscape` 和 `closeOnOutsideClick`。每个弹窗都需要 ModalTitle 或无障碍标签。Portal 默认挂载到最近的、前缀匹配的 BulmaRoot 内，因此局部主题的实时修改也会作用于弹窗。如果手动指定 Portal 容器，容器也必须位于匹配的 BulmaRoot 内，才能使用对应的样式和主题变量。
+
+Dropdown 需要搭配 DropdownMenu 和 DropdownContent 使用，菜单的 Portal 始终位于当前 Dropdown 的根元素内。菜单项支持键盘导航和选择，设置 `as="a"` 可作为链接使用。禁用的菜单项仍可通过键盘获得焦点，但不能激活。
+
+Tabs 由 TabsList、Tab 和 TabPanel 组成。每个 Tab 与对应的 TabPanel 使用相同的 `value`，可以是字符串或数字。默认用方向键移动焦点，再按 Enter 或空格键激活选项卡。在 TabsList 上设置 `activateOnFocus` 后，选项卡获得焦点时就会激活。禁用的选项卡可以获得键盘焦点，但不能激活。
+
+Navbar 负责管理移动端菜单的展开状态，使用时组合 NavbarBrand、NavbarBurger、NavbarMenu、NavbarStart 和 NavbarEnd。你可以通过 `expanded` 和 `onExpandedChange` 控制展开状态，也可以用 `defaultExpanded` 设置非受控模式下的初始状态。按 Escape 会关闭移动端菜单，并将焦点移回菜单按钮。NavbarDropdown 使用原生 details/summary 元素，通过 `trigger` 指定触发菜单的节点。
+
+你可以结合 <a href="./?path=/docs/official-components-modal--docs" target="_top">Modal</a>、<a href="./?path=/docs/official-components-dropdown--docs" target="_top">Dropdown</a>、<a href="./?path=/docs/official-components-tabs--docs" target="_top">Tabs</a> 和 <a href="./?path=/docs/official-components-navbar--docs" target="_top">Navbar</a> 的示例，选择适合的组件组合方式。
+
+## 选择布局
+
+Columns 按视口断点调整十二等分布局。SmartGrid 根据 `minColumnWidth` 自动排列单元格，间距使用 CSS 长度值。FixedGrid 按容器宽度决定列数。
+
+下面的示例沿用[自定义前缀配置](#自定义前缀并构建样式)。保存为 `src/Layout.tsx`；其中 `./ui` 指向 `src/ui.ts`。在该配置的 `src/App.tsx` 中添加 `import { Layout } from './Layout'`，再渲染 `<Layout />`：
+
+```tsx
+// src/Layout.tsx
+'use client'
+
+import { ui } from './ui'
+
+const { BulmaRoot, FixedGrid, Cell, Box } = ui
+
+export function Layout() {
+  return (
+    <BulmaRoot>
+      <FixedGrid columns={{ mobile: 1, tablet: 2, desktop: 3 }}>
+        <Cell>
+          <Box>One</Box>
+        </Cell>
+        <Cell>
+          <Box>Two</Box>
+        </Cell>
+        <Cell>
+          <Box>Three</Box>
+        </Cell>
+      </FixedGrid>
+    </BulmaRoot>
+  )
+}
+```
+
+Column 支持预设的列宽和偏移值，包括分数值，也支持响应式配置。Cell 的起始位置、结束位置和跨度设置会转换为对应的 Bulma 修饰符。
+
+受 Bulma 1.0.4 限制，`offset="one-third"` 的偏移量为 `0.3333%`，Cell 的 `columnEnd` 和 `rowEnd` 不会改变网格位置。
+
+标题组件的 `level` 决定 HTML 标题级别，数字 `size` 则独立控制显示大小。
+
+## 许可证
+
+采用 MIT 许可证，版权所有 seagreenio。详见 [LICENSE](https://github.com/seagreenio/react-bulma/blob/master/LICENSE)。
+
+感谢 [Jeremy Thomas](https://github.com/jgthms) 开发的 [Bulma](https://bulma.io)，这些组件基于该 CSS 框架构建。
+
+Bulma 示例的来源说明和上游许可证见 [official/ATTRIBUTION.md](https://github.com/seagreenio/react-bulma/blob/master/official/ATTRIBUTION.md)。
