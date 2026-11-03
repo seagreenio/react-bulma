@@ -1,0 +1,11 @@
+@use 'bulma/sass/utilities/initial-variables' as iv;
+@use 'bulma/sass/utilities/css-variables' as cv;
+
+.#{iv.$class-prefix}file-input:focus-visible ~ .#{iv.$class-prefix}file-cta {
+  outline: 2px solid #{cv.getVar('link')};
+  outline-offset: 2px;
+}
+
+.#{iv.$class-prefix}button[data-loading-disabled] {
+  opacity: 1;
+}

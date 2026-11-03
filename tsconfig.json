@@ -1,18 +1,19 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
-    "module": "esnext",
-    "target": "es5",
-    "lib": ["esnext", "dom", "dom.iterable"],
-    "allowJs": true,
-    "jsx": "react",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
     "strict": true,
-    "isolatedModules": true,
-    "declaration": true,
-    "declarationDir": "dist",
-    "allowSyntheticDefaultImports": true,
-    "noImplicitReturns": true,
-    "baseUrl": "src"
+    "noEmit": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "types": ["bun", "vite/client"]
   },
-  "include": ["src"]
+  "include": ["src", "scripts", "stories", "tests", ".storybook", "*.config.ts"]
 }

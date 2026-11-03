@@ -1,0 +1,35 @@
+@use 'bulma/sass/utilities/initial-variables' as iv;
+@use 'bulma/sass/utilities/css-variables' as cv;
+
+.#{iv.$class-prefix}dropdown-item[data-highlighted] {
+  @include cv.register-vars(
+    (
+      'dropdown-item-background-l-delta': cv.getVar(
+          'dropdown-item-hover-background-l-delta'
+        ),
+    )
+  );
+}
+
+:where(.#{iv.$class-prefix}tab) {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  width: 100%;
+}
+
+details.#{iv.$class-prefix}navbar-item {
+  > summary.#{iv.$class-prefix}navbar-link {
+    list-style: none;
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+  &[open] > .#{iv.$class-prefix}navbar-dropdown {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+}

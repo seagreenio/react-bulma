@@ -1,0 +1,375 @@
+{
+  "source": {
+    "repository": "https://github.com/jgthms/bulma",
+    "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+  },
+  "upstreamVersion": "1.0.4",
+  "pages": [
+    {
+      "id": "features-skeletons",
+      "source": {
+        "file": "docs/documentation/features/skeletons.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 18
+    },
+    {
+      "id": "elements-block",
+      "source": {
+        "file": "docs/documentation/elements/block.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 3
+    },
+    {
+      "id": "elements-box",
+      "source": {
+        "file": "docs/documentation/elements/box.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 3
+    },
+    {
+      "id": "elements-button",
+      "source": {
+        "file": "docs/documentation/elements/button.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 30
+    },
+    {
+      "id": "elements-content",
+      "source": {
+        "file": "docs/documentation/elements/content.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 7
+    },
+    {
+      "id": "elements-delete",
+      "source": {
+        "file": "docs/documentation/elements/delete.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 3
+    },
+    {
+      "id": "elements-icon",
+      "source": {
+        "file": "docs/documentation/elements/icon.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 7
+    },
+    {
+      "id": "elements-image",
+      "source": {
+        "file": "docs/documentation/elements/image.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 4
+    },
+    {
+      "id": "elements-notification",
+      "source": {
+        "file": "docs/documentation/elements/notification.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 13
+    },
+    {
+      "id": "elements-progress",
+      "source": {
+        "file": "docs/documentation/elements/progress.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 12
+    },
+    {
+      "id": "elements-table",
+      "source": {
+        "file": "docs/documentation/elements/table.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 8
+    },
+    {
+      "id": "elements-tag",
+      "source": {
+        "file": "docs/documentation/elements/tag.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 18
+    },
+    {
+      "id": "elements-title",
+      "source": {
+        "file": "docs/documentation/elements/title.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 5
+    },
+    {
+      "id": "components-breadcrumb",
+      "source": {
+        "file": "docs/documentation/components/breadcrumb.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 11
+    },
+    {
+      "id": "components-card",
+      "source": {
+        "file": "docs/documentation/components/card.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 7
+    },
+    {
+      "id": "components-dropdown",
+      "source": {
+        "file": "docs/documentation/components/dropdown.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 7
+    },
+    {
+      "id": "components-menu",
+      "source": {
+        "file": "docs/documentation/components/menu.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 1
+    },
+    {
+      "id": "components-message",
+      "source": {
+        "file": "docs/documentation/components/message.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 20
+    },
+    {
+      "id": "components-modal",
+      "source": {
+        "file": "docs/documentation/components/modal.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 2
+    },
+    {
+      "id": "components-navbar",
+      "source": {
+        "file": "docs/documentation/components/navbar.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 26
+    },
+    {
+      "id": "components-pagination",
+      "source": {
+        "file": "docs/documentation/components/pagination.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 8
+    },
+    {
+      "id": "components-panel",
+      "source": {
+        "file": "docs/documentation/components/panel.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 7
+    },
+    {
+      "id": "components-tabs",
+      "source": {
+        "file": "docs/documentation/components/tabs.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 15
+    },
+    {
+      "id": "form-general",
+      "source": {
+        "file": "docs/documentation/form/general.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 26
+    },
+    {
+      "id": "form-input",
+      "source": {
+        "file": "docs/documentation/form/input.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 25
+    },
+    {
+      "id": "form-textarea",
+      "source": {
+        "file": "docs/documentation/form/textarea.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 17
+    },
+    {
+      "id": "form-select",
+      "source": {
+        "file": "docs/documentation/form/select.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 22
+    },
+    {
+      "id": "form-checkbox",
+      "source": {
+        "file": "docs/documentation/form/checkbox.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 4
+    },
+    {
+      "id": "form-radio",
+      "source": {
+        "file": "docs/documentation/form/radio.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 4
+    },
+    {
+      "id": "form-file",
+      "source": {
+        "file": "docs/documentation/form/file.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 29
+    },
+    {
+      "id": "columns-basics",
+      "source": {
+        "file": "docs/documentation/columns/basics.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 1
+    },
+    {
+      "id": "columns-sizes",
+      "source": {
+        "file": "docs/documentation/columns/sizes.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 27
+    },
+    {
+      "id": "columns-responsiveness",
+      "source": {
+        "file": "docs/documentation/columns/responsiveness.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 3
+    },
+    {
+      "id": "columns-nesting",
+      "source": {
+        "file": "docs/documentation/columns/nesting.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 1
+    },
+    {
+      "id": "columns-gap",
+      "source": {
+        "file": "docs/documentation/columns/gap.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 5
+    },
+    {
+      "id": "columns-options",
+      "source": {
+        "file": "docs/documentation/columns/options.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 4
+    },
+    {
+      "id": "grid-smart",
+      "source": {
+        "file": "docs/documentation/grid/smart-grid.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 1
+    },
+    {
+      "id": "grid-fixed",
+      "source": {
+        "file": "docs/documentation/grid/fixed-grid.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 2
+    },
+    {
+      "id": "grid-cells",
+      "source": {
+        "file": "docs/documentation/grid/grid-cells.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 6
+    },
+    {
+      "id": "layout-container",
+      "source": {
+        "file": "docs/documentation/layout/container.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 7
+    },
+    {
+      "id": "layout-hero",
+      "source": {
+        "file": "docs/documentation/layout/hero.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 16
+    },
+    {
+      "id": "layout-section",
+      "source": {
+        "file": "docs/documentation/layout/section.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 3
+    },
+    {
+      "id": "layout-level",
+      "source": {
+        "file": "docs/documentation/layout/level.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 4
+    },
+    {
+      "id": "layout-media",
+      "source": {
+        "file": "docs/documentation/layout/media-object.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 3
+    },
+    {
+      "id": "layout-footer",
+      "source": {
+        "file": "docs/documentation/layout/footer.html",
+        "revision": "c5cd04baf0258cfcc77b4e8610488a0d439effa2"
+      },
+      "examples": 1
+    }
+  ],
+  "excluded": [
+    {
+      "page": "grid-playground",
+      "reason": "The source declares an interactive Grid playground, outside the component documentation pages."
+    }
+  ]
+}

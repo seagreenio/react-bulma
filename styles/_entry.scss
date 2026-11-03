@@ -1,0 +1,57 @@
+@use 'bulma/sass/utilities/initial-variables' as iv;
+@use 'bulma/sass/utilities/css-variables' as cv;
+@use 'bulma/sass/utilities/controls';
+@use 'bulma/sass/base/minireset';
+@use 'bulma/sass/base/generic';
+@use 'bulma/sass/themes/light';
+@use 'bulma/sass/themes/dark';
+@use 'bulma/sass/themes/setup';
+@use 'bulma/sass/base/animations';
+@use 'bulma/sass/elements';
+@use 'bulma/sass/form';
+@use 'bulma/sass/components';
+@use 'bulma/sass/grid';
+@use 'bulma/sass/layout';
+@use 'bulma/sass/base/skeleton';
+@use 'bulma/sass/helpers/border';
+@use 'bulma/sass/helpers/spacing';
+@use 'bulma/sass/helpers/typography';
+@use 'bulma/sass/helpers/visibility';
+@use 'bulma/sass/helpers/flexbox';
+@use 'bulma/sass/helpers/color';
+@use './interactive';
+@use './adapters';
+
+.#{iv.$class-prefix}root {
+  @include light.light-theme;
+  @include setup.setup-theme;
+  color-scheme: light;
+  font-family: cv.getVar('family-primary');
+  font-size: cv.getVar('size-normal');
+  font-weight: cv.getVar('weight-normal');
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: cv.getVar('body-rendering');
+  text-size-adjust: 100%;
+  color: cv.getVar('text');
+  background-color: cv.getVar('scheme-main');
+}
+
+.#{iv.$class-prefix}root.#{iv.$class-prefix}theme-dark {
+  @include dark.dark-theme;
+  @include setup.setup-theme;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  .#{iv.$class-prefix}root.#{iv.$class-prefix}theme-system {
+    @include dark.dark-theme;
+    @include setup.setup-theme;
+    color-scheme: dark;
+  }
+}
+
+.#{iv.$class-prefix}root {
+  box-sizing: border-box;
+}

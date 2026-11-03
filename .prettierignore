@@ -1,0 +1,10 @@
+dist
+node_modules
+.generated
+storybook-static
+test-results
+playwright-report
+bun.lock
+coverage
+official/upstream
+official/assets

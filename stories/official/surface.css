@@ -1,0 +1,14 @@
+.official-root {
+  --scale: 1;
+  --snippet-spacing: 30px;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.official-root[data-view-mode='docs'] {
+  min-height: 0;
+}
+
+[data-official-preview] {
+  display: flow-root;
+}

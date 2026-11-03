@@ -1,0 +1,13 @@
+body {
+  font-family: serif;
+  line-height: 1.2;
+}
+.button {
+  padding: 3px;
+  background: rgb(123, 45, 67);
+  color: white;
+  border: 2px solid black;
+}
+.mt-4 {
+  margin-top: 13px;
+}

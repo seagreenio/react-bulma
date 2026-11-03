@@ -1,0 +1,93 @@
+@media screen and (max-width: 768px) {
+  .sbdocs-wrapper:has([data-official-document]) {
+    padding: 32px;
+  }
+}
+
+[data-official-document][data-official-navbar-visible] {
+  padding-bottom: 3.25rem;
+}
+
+[data-official-document] [data-official-document-dependency='fixed-navbar'] {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 30;
+}
+
+[data-official-document]
+  [data-official-control='skeleton-toggle']
+  [data-official-control-part='timer'] {
+  --duration: 2;
+  --size: 1.5;
+  --background: var(--bulma-border-weak, hsl(221, 14%, 93%));
+  --foreground: var(--bulma-danger, hsl(348, 100%, 70%));
+  animation-duration: calc(var(--duration) * 1s);
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(1000, start);
+  background: linear-gradient(
+    90deg,
+    var(--foreground) 50%,
+    var(--background) 50%
+  );
+  border-radius: 100%;
+  height: calc(var(--size) * 1em);
+  margin: 0 0.5rem 0 -0.5rem;
+  mask: radial-gradient(transparent 0%, transparent 29%, #000 30%, #000 100%);
+  position: relative;
+  width: calc(var(--size) * 1em);
+}
+
+[data-official-document]
+  [data-official-control='skeleton-toggle']
+  [data-official-control-part='timer'].is-active {
+  --foreground: var(--bulma-success, hsl(153, 53%, 53%));
+  animation-name: official-document-skeleton-timer;
+}
+
+[data-official-document]
+  [data-official-control='skeleton-toggle']
+  [data-official-control-part='timer'].is-active
+  .timer-mask {
+  animation-name: official-document-skeleton-timer-mask;
+}
+
+[data-official-document]
+  [data-official-control='skeleton-toggle']
+  [data-official-control-part='timer']
+  .timer-mask {
+  animation-duration: calc(var(--duration) * 1s);
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(500, start);
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform-origin: 100% 50%;
+  width: 50%;
+}
+
+@keyframes official-document-skeleton-timer {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes official-document-skeleton-timer-mask {
+  0% {
+    background: var(--background);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: var(--background);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: var(--foreground);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: var(--foreground);
+    transform: rotate(-180deg);
+  }
+}
