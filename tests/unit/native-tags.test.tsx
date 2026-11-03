@@ -1,8 +1,8 @@
-import { expect, test } from 'bun:test';
-import { renderToStaticMarkup } from 'react-dom/server';
-import { createBulma } from '../../src';
+import { expect, test } from 'bun:test'
+import { renderToStaticMarkup } from 'react-dom/server'
+import { createBulma } from '../../src'
 
-const ui = createBulma({ prefix: 'example-' });
+const ui = createBulma({ prefix: 'example-' })
 
 test('alternate tags retain the official element hierarchy and Bulma classes', () => {
   const markup = renderToStaticMarkup(
@@ -49,7 +49,7 @@ test('alternate tags retain the official element hierarchy and Bulma classes', (
         Subtitle
       </ui.Subtitle>
     </>,
-  );
+  )
   for (const fragment of [
     '<p class="example-block">',
     '<p class="example-buttons example-has-addons">',
@@ -69,9 +69,9 @@ test('alternate tags retain the official element hierarchy and Bulma classes', (
     '<p class="example-title example-is-1">',
     '<p class="example-subtitle example-is-2">',
   ])
-    expect(markup).toContain(fragment);
-  expect(markup).not.toContain(' as=');
-});
+    expect(markup).toContain(fragment)
+  expect(markup).not.toContain(' as=')
+})
 
 test('form boxes and input buttons retain native submission properties', () => {
   const markup = renderToStaticMarkup(
@@ -94,21 +94,21 @@ test('form boxes and input buttons retain native submission properties', () => {
         Waiting
       </ui.Button>
     </ui.Box>,
-  );
-  expect(markup).toContain('<form ');
-  expect(markup).toContain('action="/save"');
-  expect(markup).toContain('method="post"');
-  expect(markup).toContain('noValidate=""');
-  expect(markup).toContain('class="example-box example-mt-0"');
-  expect(markup).toContain('type="submit"');
-  expect(markup).toContain('name="action"');
-  expect(markup).toContain('value="Save"');
-  expect(markup).toContain('example-button example-is-primary');
-  expect(markup).toContain('<input type="reset" disabled="" aria-busy="true"');
+  )
+  expect(markup).toContain('<form ')
+  expect(markup).toContain('action="/save"')
+  expect(markup).toContain('method="post"')
+  expect(markup).toContain('noValidate=""')
+  expect(markup).toContain('class="example-box example-mt-0"')
+  expect(markup).toContain('type="submit"')
+  expect(markup).toContain('name="action"')
+  expect(markup).toContain('value="Save"')
+  expect(markup).toContain('example-button example-is-primary')
+  expect(markup).toContain('<input type="reset" disabled="" aria-busy="true"')
   expect(markup).toContain(
     '<span aria-disabled="true" aria-busy="true" data-loading-disabled="" class="example-button example-is-loading">Waiting</span>',
-  );
-});
+  )
+})
 
 test('image and select wrappers preserve separate media and control attributes', () => {
   const markup = renderToStaticMarkup(
@@ -127,17 +127,17 @@ test('image and select wrappers preserve separate media and control attributes',
         <option value="green">Green</option>
       </ui.Select>
     </>,
-  );
+  )
   expect(markup).toContain(
     '<p id="portrait" class="example-image example-is-64x64"><img',
-  );
+  )
   expect(markup).toContain(
     '<figure id="video" class="example-image example-is-16by9"><iframe title="Demo" src="/demo" allowFullScreen=""></iframe></figure>',
-  );
+  )
   expect(markup).toContain(
     '<span id="color-wrapper" class="example-select"><select name="color">',
-  );
-});
+  )
+})
 
 test('modal alternatives keep dialog associations and skeleton text controls dimensions', () => {
   const markup = renderToStaticMarkup(
@@ -150,13 +150,13 @@ test('modal alternatives keep dialog associations and skeleton text controls dim
       </ui.Modal>
       <ui.SkeletonBlock>Preserved sizing text</ui.SkeletonBlock>
     </>,
-  );
-  expect(markup).toContain('<a');
-  expect(markup).toContain('href="#dialog"');
-  expect(markup).toContain('aria-haspopup="dialog"');
-  expect(markup).toContain('<p');
-  expect(markup).toContain('example-modal-card-title');
+  )
+  expect(markup).toContain('<a')
+  expect(markup).toContain('href="#dialog"')
+  expect(markup).toContain('aria-haspopup="dialog"')
+  expect(markup).toContain('<p')
+  expect(markup).toContain('example-modal-card-title')
   expect(markup).toContain(
     'aria-hidden="true" class="example-skeleton-block">Preserved sizing text</div>',
-  );
-});
+  )
+})

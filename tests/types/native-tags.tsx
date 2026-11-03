@@ -2,71 +2,71 @@ import {
   createRef,
   type ComponentProps,
   type ComponentPropsWithRef,
-} from 'react';
+} from 'react'
 import {
   createBulma,
   type BoxProps,
   type ButtonProps,
   type ImageProps,
   type NavbarBurgerProps,
-} from '../../src';
+} from '../../src'
 
-const ui = createBulma();
-<ui.Box
+const ui = createBulma()
+;<ui.Box
   as="form"
   ref={createRef<HTMLFormElement>()}
   action="/save"
   method="post"
   onSubmit={(event) => event.currentTarget.requestSubmit()}
-/>;
-<ui.Button
+/>
+;<ui.Button
   as="input"
   ref={createRef<HTMLInputElement>()}
   type="submit"
   value="Save"
   onChange={(event) => event.currentTarget.value}
-/>;
-<ui.Button as="span" ref={createRef<HTMLSpanElement>()}>
+/>
+;<ui.Button as="span" ref={createRef<HTMLSpanElement>()}>
   Static
-</ui.Button>;
-<ui.Image
+</ui.Button>
+;<ui.Image
   as="p"
   alt="Portrait"
   ref={createRef<HTMLImageElement>()}
   wrapperProps={{ ref: createRef<HTMLParagraphElement>() }}
-/>;
-<ui.Image ratio="16by9">
+/>
+;<ui.Image ratio="16by9">
   <iframe title="Demo" />
-</ui.Image>;
-<ui.Select
+</ui.Image>
+;<ui.Select
   as="span"
   ref={createRef<HTMLSelectElement>()}
   wrapperProps={{ ref: createRef<HTMLSpanElement>() }}
-/>;
-<ui.LevelItem as="a" href="/about" ref={createRef<HTMLAnchorElement>()} />;
-<ui.NavbarBurger
+/>
+;<ui.LevelItem as="a" href="/about" ref={createRef<HTMLAnchorElement>()} />
+;<ui.NavbarBurger
   as="a"
   ref={createRef<HTMLAnchorElement>()}
   onClick={(event) => event.currentTarget.href}
   defaultExpanded
-/>;
-<ui.NavbarBurger
+/>
+;<ui.NavbarBurger
   as="div"
   ref={createRef<HTMLDivElement>()}
   onExpandedChange={(expanded) => expanded.valueOf()}
-/>;
-<ui.NavbarBurger as="span" ref={createRef<HTMLSpanElement>()} />;
-<ui.ModalTrigger as="a" href="#modal" ref={createRef<HTMLAnchorElement>()} />;
-<ui.ModalTitle as="p" ref={createRef<HTMLParagraphElement>()} />;
-<ui.TagDelete as="a" href="#remove" ref={createRef<HTMLAnchorElement>()} />;
-<ui.Tag as="button" ref={createRef<HTMLButtonElement>()} disabled />;
-<ui.SkeletonBlock>
+/>
+;<ui.NavbarBurger as="span" ref={createRef<HTMLSpanElement>()} />
+;<ui.ModalTrigger as="a" href="#modal" ref={createRef<HTMLAnchorElement>()} />
+;<ui.ModalTitle as="p" ref={createRef<HTMLParagraphElement>()} />
+;<ui.TagDelete as="a" href="#remove" ref={createRef<HTMLAnchorElement>()} />
+;<ui.Tag as="button" ref={createRef<HTMLButtonElement>()} disabled />
+;<ui.SkeletonBlock>
   Text determines the placeholder dimensions.
-</ui.SkeletonBlock>;
+</ui.SkeletonBlock>
 
-type Assert<Value extends true> = Value;
-type Equal<A, B> = [A] extends [B] ? ([B] extends [A] ? true : false) : false;
-type Rejected<Props, Input> = Input extends Props ? false : true;
+type Assert<Value extends true> = Value
+type Equal<A, B> = [A] extends [B] ? ([B] extends [A] ? true : false) : false
+type Rejected<Props, Input> = Input extends Props ? false : true
 export type NativeTagContracts = [
   Assert<Equal<ComponentProps<typeof ui.Button>, ButtonProps>>,
   Assert<Equal<ComponentProps<typeof ui.Box>, BoxProps>>,
@@ -110,4 +110,4 @@ export type NativeTagContracts = [
       { alt: string; ref: ReturnType<typeof createRef<HTMLDivElement>> }
     >
   >,
-];
+]

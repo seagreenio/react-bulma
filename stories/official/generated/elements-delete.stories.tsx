@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { useState } from 'react';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { useState } from 'react'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -19,8 +19,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-elements-delete',
   title: 'CSS Library/Elements/Delete',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -346,7 +346,7 @@ function OfficialDocs() {
         {'\n\n\n\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -356,7 +356,7 @@ function Example001Demo() {
       <ui.Delete />
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example002Demo() {
@@ -372,12 +372,12 @@ function Example002Demo() {
       <ui.Delete size={'large'} />
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example003Demo() {
-  const [visible1, setVisible1] = useState(true);
-  const [visible2, setVisible2] = useState(true);
+  const [visible1, setVisible1] = useState(true)
+  const [visible2, setVisible2] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -420,7 +420,7 @@ function Example003Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -436,7 +436,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'sizes 01',
@@ -451,7 +451,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'combinations 01',
@@ -466,4 +466,4 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

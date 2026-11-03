@@ -1,24 +1,24 @@
-import { useRef, useState } from 'react';
-import * as ui from '../../src';
-import '../../.generated/reserved-prefix.css';
+import { useRef, useState } from 'react'
+import * as ui from '../../src'
+import '../../.generated/reserved-prefix.css'
 
-const custom = ui.createBulma({ prefix: 'acme-' });
-const reserved = ui.createBulma({ prefix: 'is-' });
+const custom = ui.createBulma({ prefix: 'acme-' })
+const reserved = ui.createBulma({ prefix: 'is-' })
 
-const picture = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="160" height="120"><rect width="160" height="120" fill="#00d1b2"/></svg>')}`;
+const picture = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="160" height="120"><rect width="160" height="120" fill="#00d1b2"/></svg>')}`
 
 export function CatalogFixture() {
-  const input = useRef<HTMLInputElement>(null);
-  const select = useRef<HTMLSelectElement>(null);
-  const textarea = useRef<HTMLTextAreaElement>(null);
-  const file = useRef<HTMLInputElement>(null);
-  const image = useRef<HTMLImageElement>(null);
-  const [filename, setFilename] = useState('');
-  const [submitted, setSubmitted] = useState('');
-  const [disabledClicks, setDisabledClicks] = useState(0);
-  const [tag, setTag] = useState(true);
-  const [theme, setTheme] = useState<'light' | 'dark' | 'system'>('light');
-  const [linkClicks, setLinkClicks] = useState(0);
+  const input = useRef<HTMLInputElement>(null)
+  const select = useRef<HTMLSelectElement>(null)
+  const textarea = useRef<HTMLTextAreaElement>(null)
+  const file = useRef<HTMLInputElement>(null)
+  const image = useRef<HTMLImageElement>(null)
+  const [filename, setFilename] = useState('')
+  const [submitted, setSubmitted] = useState('')
+  const [disabledClicks, setDisabledClicks] = useState(0)
+  const [tag, setTag] = useState(true)
+  const [theme, setTheme] = useState<'light' | 'dark' | 'system'>('light')
+  const [linkClicks, setLinkClicks] = useState(0)
   return (
     <section aria-label="Component catalog">
       <ui.BulmaRoot theme={theme} data-testid="catalog-root" helpers={{ p: 4 }}>
@@ -58,9 +58,9 @@ export function CatalogFixture() {
         <form
           aria-label="Native form"
           onSubmit={(event) => {
-            event.preventDefault();
-            const data = new FormData(event.currentTarget);
-            const attachment = data.get('attachment');
+            event.preventDefault()
+            const data = new FormData(event.currentTarget)
+            const attachment = data.get('attachment')
             setSubmitted(
               JSON.stringify({
                 username: data.get('username'),
@@ -71,7 +71,7 @@ export function CatalogFixture() {
                 note: data.get('note'),
                 filename: attachment instanceof File ? attachment.name : null,
               }),
-            );
+            )
           }}
         >
           <ui.Field>
@@ -416,5 +416,5 @@ export function CatalogFixture() {
         <ui.Footer>Catalog footer</ui.Footer>
       </ui.BulmaRoot>
     </section>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import { createElement, type ReactElement } from 'react';
-import type { Prefix } from './config';
+import { createElement, type ReactElement } from 'react'
+import type { Prefix } from './config'
 import {
   classNames,
   forwardRefComponent,
@@ -8,51 +8,51 @@ import {
   type NativeProps,
   type NativeTagProps,
   type Size,
-} from './shared';
+} from './shared'
 
-export type BlockProps = NativeTagProps<'div', 'p'>;
-export type BoxProps = NativeTagProps<'div', 'form'>;
-export type IconTextProps = NativeTagProps<'span', 'div'>;
-export type TableContainerProps = NativeProps<'div'>;
-export type LoaderProps = NativeProps<'span'>;
+export type BlockProps = NativeTagProps<'div', 'p'>
+export type BoxProps = NativeTagProps<'div', 'form'>
+export type IconTextProps = NativeTagProps<'span', 'div'>
+export type TableContainerProps = NativeProps<'div'>
+export type LoaderProps = NativeProps<'span'>
 export type ButtonsProps = NativeTagProps<
   'div',
   'p',
   {
-    size?: Exclude<Size, 'normal'>;
-    align?: 'center' | 'right';
-    addons?: boolean;
+    size?: Exclude<Size, 'normal'>
+    align?: 'center' | 'right'
+    addons?: boolean
   }
->;
+>
 export interface LinkButtonProps extends Omit<NativeProps<'a'>, 'color'> {
-  color?: Color;
-  size?: Size;
-  tone?: 'light' | 'dark' | 'soft' | 'bold';
-  variant?: 'text' | 'ghost';
-  outlined?: boolean;
-  inverted?: boolean;
-  rounded?: boolean;
-  fullWidth?: boolean;
-  responsive?: boolean;
-  loading?: boolean;
-  disabled?: boolean;
-  selected?: boolean;
-  expanded?: boolean;
+  color?: Color
+  size?: Size
+  tone?: 'light' | 'dark' | 'soft' | 'bold'
+  variant?: 'text' | 'ghost'
+  outlined?: boolean
+  inverted?: boolean
+  rounded?: boolean
+  fullWidth?: boolean
+  responsive?: boolean
+  loading?: boolean
+  disabled?: boolean
+  selected?: boolean
+  expanded?: boolean
 }
 export interface ContentProps extends NativeProps<'div'> {
-  size?: Size;
+  size?: Size
 }
 export interface DeleteProps extends NativeProps<'button'> {
-  size?: Exclude<Size, 'normal'>;
+  size?: Exclude<Size, 'normal'>
 }
 export type IconProps = NativeTagProps<
   'span',
   'div',
   {
-    size?: Exclude<Size, 'normal'>;
+    size?: Exclude<Size, 'normal'>
   }
->;
-export type ImageSize = 16 | 24 | 32 | 48 | 64 | 96 | 128;
+>
+export type ImageSize = 16 | 24 | 32 | 48 | 64 | 96 | 128
 export type ImageRatio =
   | 'square'
   | '1by1'
@@ -69,89 +69,89 @@ export type ImageRatio =
   | '3by5'
   | '9by16'
   | '1by2'
-  | '1by3';
+  | '1by3'
 type ImageWrapperProps =
   | { as?: 'figure'; wrapperProps?: NativeProps<'figure'> }
-  | { as: 'p'; wrapperProps?: NativeProps<'p'> };
+  | { as: 'p'; wrapperProps?: NativeProps<'p'> }
 export type ImageProps = ImageWrapperProps & {
-  size?: ImageSize;
-  ratio?: ImageRatio;
-  fullWidth?: boolean;
+  size?: ImageSize
+  ratio?: ImageRatio
+  fullWidth?: boolean
 } & (
     | (Omit<NativeProps<'img'>, 'alt' | 'children'> & {
-        alt: string;
-        rounded?: boolean;
-        children?: never;
+        alt: string
+        rounded?: boolean
+        children?: never
       })
     | {
-        children: ReactElement;
-        alt?: never;
-        src?: never;
-        ref?: never;
-        rounded?: never;
-        helpers?: NativeProps<'figure'>['helpers'];
-        className?: string;
+        children: ReactElement
+        alt?: never
+        src?: never
+        ref?: never
+        rounded?: never
+        helpers?: NativeProps<'figure'>['helpers']
+        className?: string
       }
-  );
+  )
 export interface NotificationProps extends Omit<NativeProps<'div'>, 'color'> {
-  color?: Color;
-  tone?: 'light' | 'dark';
+  color?: Color
+  tone?: 'light' | 'dark'
 }
 export interface ProgressProps extends Omit<NativeProps<'progress'>, 'color'> {
-  color?: Color;
-  size?: Exclude<Size, 'normal'>;
+  color?: Color
+  size?: Exclude<Size, 'normal'>
 }
 export interface TableProps extends NativeProps<'table'> {
-  bordered?: boolean;
-  striped?: boolean;
-  narrow?: boolean;
-  hoverable?: boolean;
-  fullWidth?: boolean;
+  bordered?: boolean
+  striped?: boolean
+  narrow?: boolean
+  hoverable?: boolean
+  fullWidth?: boolean
 }
 export interface TagModifiers {
-  color?: Color;
-  size?: Exclude<Size, 'small'>;
-  light?: boolean;
-  rounded?: boolean;
+  color?: Color
+  size?: Exclude<Size, 'small'>
+  light?: boolean
+  rounded?: boolean
 }
-export type TagProps = NativeTagProps<'span', 'div' | 'button', TagModifiers>;
+export type TagProps = NativeTagProps<'span', 'div' | 'button', TagModifiers>
 export interface LinkTagProps
   extends Omit<NativeProps<'a'>, 'color'>, TagModifiers {}
 export type TagDeleteProps = NativeTagProps<
   'button',
   'a',
   TagModifiers & { children?: never }
->;
+>
 export interface TagsProps extends NativeProps<'div'> {
-  size?: 'medium' | 'large';
-  align?: 'center' | 'right';
-  addons?: boolean;
+  size?: 'medium' | 'large'
+  align?: 'center' | 'right'
+  addons?: boolean
 }
-export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
+export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6
 export type TitleProps = NativeTagProps<
   'h1',
   'p',
   {
-    level?: HeadingLevel;
-    size?: HeadingLevel;
-    spaced?: boolean;
+    level?: HeadingLevel
+    size?: HeadingLevel
+    spaced?: boolean
   }
->;
-export type SubtitleProps = TitleProps;
-export type SkeletonBlockProps = Omit<NativeProps<'div'>, 'aria-hidden'>;
+>
+export type SubtitleProps = TitleProps
+export type SkeletonBlockProps = Omit<NativeProps<'div'>, 'aria-hidden'>
 export interface SkeletonLinesProps extends Omit<
   SkeletonBlockProps,
   'children'
 > {
-  lines?: number;
+  lines?: number
 }
 
 export function createElements(prefix: Prefix) {
-  const Block = styledElement(prefix, 'div', 'block', ['p']);
-  const Box = styledElement(prefix, 'div', 'box', ['form']);
-  const IconText = styledElement(prefix, 'span', 'icon-text', ['div']);
-  const TableContainer = styledElement(prefix, 'div', 'table-container');
-  const Loader = styledElement(prefix, 'span', 'loader');
+  const Block = styledElement(prefix, 'div', 'block', ['p'])
+  const Box = styledElement(prefix, 'div', 'box', ['form'])
+  const IconText = styledElement(prefix, 'span', 'icon-text', ['div'])
+  const TableContainer = styledElement(prefix, 'div', 'table-container')
+  const Loader = styledElement(prefix, 'span', 'loader')
 
   const Buttons = forwardRefComponent(function Buttons({
     as,
@@ -175,8 +175,8 @@ export function createElements(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
+    })
+  })
 
   const LinkButton = forwardRefComponent(function LinkButton({
     color,
@@ -212,10 +212,10 @@ export function createElements(prefix: Prefix) {
         data-loading-disabled={loading && !disabled ? '' : undefined}
         onClick={(event) => {
           if (loading || disabled) {
-            event.preventDefault();
-            return;
+            event.preventDefault()
+            return
           }
-          onClick?.(event);
+          onClick?.(event)
         }}
         className={classNames(
           prefix,
@@ -238,8 +238,8 @@ export function createElements(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const Content = forwardRefComponent(function Content({
     size,
@@ -257,8 +257,8 @@ export function createElements(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const Delete = forwardRefComponent(function Delete({
     size,
@@ -280,8 +280,8 @@ export function createElements(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const Icon = forwardRefComponent(function Icon({
     as,
@@ -298,8 +298,8 @@ export function createElements(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
+    })
+  })
 
   const Image = forwardRefComponent(function Image({
     as = 'figure',
@@ -317,7 +317,7 @@ export function createElements(prefix: Prefix) {
       helpers: wrapperHelpers,
       className: wrapperClass,
       ...nativeWrapperProps
-    } = wrapperProps;
+    } = wrapperProps
     return createElement(as, {
       ...nativeWrapperProps,
       className: classNames(
@@ -345,8 +345,8 @@ export function createElements(prefix: Prefix) {
           }
         />
       ),
-    });
-  });
+    })
+  })
 
   const Notification = forwardRefComponent(function Notification({
     color,
@@ -365,8 +365,8 @@ export function createElements(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const Progress = forwardRefComponent(function Progress({
     color,
@@ -385,8 +385,8 @@ export function createElements(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const Table = forwardRefComponent(function Table({
     bordered,
@@ -415,8 +415,8 @@ export function createElements(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const Tag = forwardRefComponent(function Tag({
     as,
@@ -442,8 +442,8 @@ export function createElements(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
+    })
+  })
 
   const Tags = forwardRefComponent(function Tags({
     size,
@@ -468,8 +468,8 @@ export function createElements(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const LinkTag = forwardRefComponent(function LinkTag({
     color,
@@ -496,8 +496,8 @@ export function createElements(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const TagDelete = forwardRefComponent(function TagDelete({
     as,
@@ -528,8 +528,8 @@ export function createElements(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
+    })
+  })
 
   const Title = forwardRefComponent(function Title({
     as,
@@ -548,8 +548,8 @@ export function createElements(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
+    })
+  })
 
   const Subtitle = forwardRefComponent(function Subtitle({
     as,
@@ -568,8 +568,8 @@ export function createElements(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
+    })
+  })
 
   const SkeletonBlock = forwardRefComponent(function SkeletonBlock({
     helpers,
@@ -582,8 +582,8 @@ export function createElements(prefix: Prefix) {
         aria-hidden="true"
         className={classNames(prefix, ['skeleton-block'], helpers, className)}
       />
-    );
-  });
+    )
+  })
 
   const SkeletonLines = forwardRefComponent(function SkeletonLines({
     lines = 3,
@@ -592,7 +592,7 @@ export function createElements(prefix: Prefix) {
     ...props
   }: SkeletonLinesProps) {
     if (!Number.isInteger(lines) || lines < 1)
-      throw new RangeError('SkeletonLines lines must be a positive integer.');
+      throw new RangeError('SkeletonLines lines must be a positive integer.')
     return (
       <div
         {...props}
@@ -603,8 +603,8 @@ export function createElements(prefix: Prefix) {
           <div key={index} />
         ))}
       </div>
-    );
-  });
+    )
+  })
 
   return {
     Block,
@@ -629,5 +629,5 @@ export function createElements(prefix: Prefix) {
     Loader,
     SkeletonBlock,
     SkeletonLines,
-  };
+  }
 }

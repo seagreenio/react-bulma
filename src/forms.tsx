@@ -1,5 +1,5 @@
-import { Children, createElement, type ReactNode } from 'react';
-import type { Prefix } from './config';
+import { Children, createElement, type ReactNode } from 'react'
+import type { Prefix } from './config'
 import {
   classNames,
   forwardRefComponent,
@@ -8,95 +8,95 @@ import {
   type NativeTagProps,
   type Color,
   type Size,
-} from './shared';
+} from './shared'
 
 export type FieldProps = NativeTagProps<
   'div',
   'p',
   {
-    horizontal?: boolean;
-    narrow?: boolean;
-    layout?: 'addons' | 'grouped';
-    alignment?: 'centered' | 'right';
-    multiline?: boolean;
-    fullWidth?: boolean;
+    horizontal?: boolean
+    narrow?: boolean
+    layout?: 'addons' | 'grouped'
+    alignment?: 'centered' | 'right'
+    multiline?: boolean
+    fullWidth?: boolean
   }
->;
-export type FieldLabelProps = NativeProps<'div'> & { size?: Size };
-export type FieldBodyProps = NativeProps<'div'>;
-export type LabelProps = NativeProps<'label'> & { size?: Size };
+>
+export type FieldLabelProps = NativeProps<'div'> & { size?: Size }
+export type FieldBodyProps = NativeProps<'div'>
+export type LabelProps = NativeProps<'label'> & { size?: Size }
 export type ControlProps = NativeTagProps<
   'div',
   'p',
   {
-    expanded?: boolean;
-    loading?: boolean;
-    size?: Size;
-    icons?: 'left' | 'right' | 'both';
+    expanded?: boolean
+    loading?: boolean
+    size?: Size
+    icons?: 'left' | 'right' | 'both'
   }
->;
-export type HelpProps = NativeProps<'p'> & { color?: Color };
+>
+export type HelpProps = NativeProps<'p'> & { color?: Color }
 type InputStyleProps = {
-  color?: Color;
-  size?: Size;
-  fullWidth?: boolean;
-  inline?: boolean;
-  state?: 'hovered' | 'focused' | 'active';
-};
+  color?: Color
+  size?: Size
+  fullWidth?: boolean
+  inline?: boolean
+  state?: 'hovered' | 'focused' | 'active'
+}
 export type InputProps = Omit<NativeProps<'input'>, 'size' | 'color'> &
   InputStyleProps & {
-    htmlSize?: number;
-    rounded?: boolean;
-    static?: boolean;
-  };
+    htmlSize?: number
+    rounded?: boolean
+    static?: boolean
+  }
 export type TextareaProps = Omit<NativeProps<'textarea'>, 'color'> &
-  InputStyleProps & { fixedSize?: boolean };
+  InputStyleProps & { fixedSize?: boolean }
 export type SelectProps = Omit<NativeProps<'select'>, 'size' | 'color'> & {
-  color?: Color;
-  size?: Size;
-  htmlSize?: number;
-  rounded?: boolean;
-  loading?: boolean;
-  fullWidth?: boolean;
+  color?: Color
+  size?: Size
+  htmlSize?: number
+  rounded?: boolean
+  loading?: boolean
+  fullWidth?: boolean
 } & (
     | {
-        as?: 'div';
-        wrapperProps?: Omit<NativeProps<'div'>, 'children' | 'helpers'>;
+        as?: 'div'
+        wrapperProps?: Omit<NativeProps<'div'>, 'children' | 'helpers'>
       }
     | {
-        as: 'span';
-        wrapperProps?: Omit<NativeProps<'span'>, 'children' | 'helpers'>;
+        as: 'span'
+        wrapperProps?: Omit<NativeProps<'span'>, 'children' | 'helpers'>
       }
-  );
+  )
 export type CheckboxProps = Omit<NativeProps<'input'>, 'type' | 'children'> & {
-  children?: ReactNode;
-  wrapperProps?: Omit<NativeProps<'label'>, 'children' | 'helpers'>;
-};
-export type RadioProps = CheckboxProps;
-export type CheckboxesProps = NativeProps<'div'>;
-export type RadiosProps = NativeProps<'div'>;
+  children?: ReactNode
+  wrapperProps?: Omit<NativeProps<'label'>, 'children' | 'helpers'>
+}
+export type RadioProps = CheckboxProps
+export type CheckboxesProps = NativeProps<'div'>
+export type RadiosProps = NativeProps<'div'>
 export type FileProps = Omit<
   NativeProps<'input'>,
   'type' | 'size' | 'color' | 'value' | 'defaultValue' | 'children'
 > & {
-  children?: ReactNode;
-  color?: Color;
-  size?: Size;
-  boxed?: boolean;
-  fullWidth?: boolean;
-  alignment?: 'centered' | 'right';
-  filename?: string;
-  icon?: ReactNode;
-  wrapperProps?: Omit<NativeProps<'div'>, 'children' | 'helpers'>;
-};
+  children?: ReactNode
+  color?: Color
+  size?: Size
+  boxed?: boolean
+  fullWidth?: boolean
+  alignment?: 'centered' | 'right'
+  filename?: string
+  icon?: ReactNode
+  wrapperProps?: Omit<NativeProps<'div'>, 'children' | 'helpers'>
+}
 
 function checkLabel(children: ReactNode): ReactNode {
-  const content = Children.toArray(children);
-  const first = content[0];
+  const content = Children.toArray(children)
+  const first = content[0]
   if (typeof first === 'string')
-    content[0] = /^\s/.test(first) ? first : ` ${first}`;
-  else if (content.length) content.unshift(' ');
-  return content;
+    content[0] = /^\s/.test(first) ? first : ` ${first}`
+  else if (content.length) content.unshift(' ')
+  return content
 }
 
 export function createForms(prefix: Prefix) {
@@ -130,8 +130,8 @@ export function createForms(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
+    })
+  })
   const FieldLabel = forwardRefComponent(function FieldLabel({
     size,
     helpers,
@@ -148,9 +148,9 @@ export function createForms(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
-  const FieldBody = styledElement(prefix, 'div', 'field-body');
+    )
+  })
+  const FieldBody = styledElement(prefix, 'div', 'field-body')
   const Label = forwardRefComponent(function Label({
     size,
     helpers,
@@ -167,8 +167,8 @@ export function createForms(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
   const Control = forwardRefComponent(function Control({
     as,
     expanded,
@@ -194,8 +194,8 @@ export function createForms(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
+    })
+  })
   const Help = forwardRefComponent(function Help({
     color,
     helpers,
@@ -212,8 +212,8 @@ export function createForms(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
   const Input = forwardRefComponent(function Input({
     color,
     size,
@@ -247,8 +247,8 @@ export function createForms(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
   const Textarea = forwardRefComponent(function Textarea({
     color,
     size,
@@ -278,8 +278,8 @@ export function createForms(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
   const Select = forwardRefComponent(function Select({
     as,
     color,
@@ -319,8 +319,8 @@ export function createForms(prefix: Prefix) {
           disabled={disabled}
         />
       ),
-    });
-  });
+    })
+  })
   const Checkbox = forwardRefComponent(function Checkbox({
     children,
     helpers,
@@ -340,8 +340,8 @@ export function createForms(prefix: Prefix) {
         <input {...props} type="checkbox" />
         {checkLabel(children)}
       </label>
-    );
-  });
+    )
+  })
   const Radio = forwardRefComponent(function Radio({
     children,
     helpers,
@@ -361,8 +361,8 @@ export function createForms(prefix: Prefix) {
         <input {...props} type="radio" />
         {checkLabel(children)}
       </label>
-    );
-  });
+    )
+  })
   const Checkboxes = forwardRefComponent(function Checkboxes({
     helpers,
     className,
@@ -374,8 +374,8 @@ export function createForms(prefix: Prefix) {
         {...props}
         className={classNames(prefix, ['checkboxes'], helpers, className)}
       />
-    );
-  });
+    )
+  })
   const Radios = forwardRefComponent(function Radios({
     helpers,
     className,
@@ -387,8 +387,8 @@ export function createForms(prefix: Prefix) {
         {...props}
         className={classNames(prefix, ['radios'], helpers, className)}
       />
-    );
-  });
+    )
+  })
   const File = forwardRefComponent(function File({
     children = 'Choose a file…',
     disabled,
@@ -451,8 +451,8 @@ export function createForms(prefix: Prefix) {
           )}
         </label>
       </div>
-    );
-  });
+    )
+  })
   return {
     Field,
     FieldLabel,
@@ -468,5 +468,5 @@ export function createForms(prefix: Prefix) {
     Checkboxes,
     Radios,
     File,
-  };
+  }
 }

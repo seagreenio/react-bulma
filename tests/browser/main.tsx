@@ -1,18 +1,18 @@
-import { useRef, useState } from 'react';
-import { createRoot } from 'react-dom/client';
-import { Button, BulmaRoot } from '../../src';
-import * as custom from './custom-ui';
-import '../../.generated/default.css';
-import '../../.generated/custom.css';
-import './host.css';
-import { InteractiveFixture } from './interactive-fixture';
-import { CatalogFixture } from './catalog-fixture';
+import { useRef, useState } from 'react'
+import { createRoot } from 'react-dom/client'
+import { Button, BulmaRoot } from '../../src'
+import * as custom from './custom-ui'
+import '../../.generated/default.css'
+import '../../.generated/custom.css'
+import './host.css'
+import { InteractiveFixture } from './interactive-fixture'
+import { CatalogFixture } from './catalog-fixture'
 
 function Fixture() {
-  const button = useRef<HTMLButtonElement>(null);
-  const root = useRef<HTMLDivElement>(null);
-  const [clicks, setClicks] = useState(0);
-  const [loading, setLoading] = useState(false);
+  const button = useRef<HTMLButtonElement>(null)
+  const root = useRef<HTMLDivElement>(null)
+  const [clicks, setClicks] = useState(0)
+  const [loading, setLoading] = useState(false)
   return (
     <>
       <h1>React Bulma regression fixture</h1>
@@ -70,8 +70,8 @@ function Fixture() {
           data-testid="loading"
           loading={loading}
           onClick={() => {
-            setClicks((count) => count + 1);
-            setLoading(true);
+            setClicks((count) => count + 1)
+            setLoading(true)
           }}
         >
           Submit once
@@ -84,7 +84,7 @@ function Fixture() {
       <InteractiveFixture />
       <CatalogFixture />
     </>
-  );
+  )
 }
 
-createRoot(document.getElementById('app')!).render(<Fixture />);
+createRoot(document.getElementById('app')!).render(<Fixture />)

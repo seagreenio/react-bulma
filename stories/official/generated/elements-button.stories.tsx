@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -18,8 +18,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-elements-button',
   title: 'CSS Library/Elements/Button',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -2256,7 +2256,7 @@ function OfficialDocs() {
         {'\n\n\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -2270,7 +2270,7 @@ function Example001Demo() {
       </ui.Buttons>
       {'\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example002Demo() {
@@ -2290,7 +2290,7 @@ function Example002Demo() {
       </ui.Buttons>
       {'\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example003Demo() {
@@ -2314,7 +2314,7 @@ function Example003Demo() {
       </ui.Buttons>
       {'\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example004Demo() {
@@ -2342,7 +2342,7 @@ function Example004Demo() {
       </ui.Buttons>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example005Demo() {
@@ -2382,7 +2382,7 @@ function Example005Demo() {
       </ui.Buttons>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example006Demo() {
@@ -2422,7 +2422,7 @@ function Example006Demo() {
       </ui.Buttons>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example007Demo() {
@@ -2444,7 +2444,7 @@ function Example007Demo() {
       </ui.Buttons>
       {'\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example008Demo() {
@@ -2462,7 +2462,7 @@ function Example008Demo() {
       </ui.Buttons>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example009Demo() {
@@ -2484,7 +2484,7 @@ function Example009Demo() {
       </ui.Buttons>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example010Demo() {
@@ -2510,7 +2510,7 @@ function Example010Demo() {
       </ui.Buttons>
       {'\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example011Demo() {
@@ -2542,7 +2542,7 @@ function Example011Demo() {
       </ui.Buttons>
       {'\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example012Demo() {
@@ -2598,7 +2598,7 @@ function Example012Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example013Demo() {
@@ -2652,7 +2652,7 @@ function Example013Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example014Demo() {
@@ -2678,7 +2678,7 @@ function Example014Demo() {
       </ui.Buttons>
       {'\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example015Demo() {
@@ -2716,7 +2716,7 @@ function Example015Demo() {
       </ui.Buttons>
       {'\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example016Demo() {
@@ -2754,7 +2754,7 @@ function Example016Demo() {
       </ui.Buttons>
       {'\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example017Demo() {
@@ -2792,7 +2792,7 @@ function Example017Demo() {
       </ui.Buttons>
       {'\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example018Demo() {
@@ -2870,7 +2870,7 @@ function Example018Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example019Demo() {
@@ -2920,7 +2920,7 @@ function Example019Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example020Demo() {
@@ -3000,7 +3000,7 @@ function Example020Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example021Demo() {
@@ -3146,7 +3146,7 @@ function Example021Demo() {
       </ui.Buttons>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example022Demo() {
@@ -3294,7 +3294,7 @@ function Example022Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example023Demo() {
@@ -3324,7 +3324,7 @@ function Example023Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example024Demo() {
@@ -3384,7 +3384,7 @@ function Example024Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example025Demo() {
@@ -3496,7 +3496,7 @@ function Example025Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example026Demo() {
@@ -3550,7 +3550,7 @@ function Example026Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example027Demo() {
@@ -3640,7 +3640,7 @@ function Example027Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example028Demo() {
@@ -3694,7 +3694,7 @@ function Example028Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example029Demo() {
@@ -3760,7 +3760,7 @@ function Example029Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example030Demo() {
@@ -3844,7 +3844,7 @@ function Example030Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -3860,7 +3860,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'Button 02',
@@ -3875,7 +3875,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'colors 01',
@@ -3890,7 +3890,7 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example004 = {
   name: 'colors 02',
@@ -3905,7 +3905,7 @@ export const Example004 = {
     },
   },
   render: Example004Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example005 = {
   name: 'colors 03',
@@ -3920,7 +3920,7 @@ export const Example005 = {
     },
   },
   render: Example005Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example006 = {
   name: 'colors 04',
@@ -3935,7 +3935,7 @@ export const Example006 = {
     },
   },
   render: Example006Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example007 = {
   name: 'sizes 01',
@@ -3950,7 +3950,7 @@ export const Example007 = {
     },
   },
   render: Example007Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example008 = {
   name: 'sizes 02',
@@ -3965,7 +3965,7 @@ export const Example008 = {
     },
   },
   render: Example008Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example009 = {
   name: 'sizes 03',
@@ -3980,7 +3980,7 @@ export const Example009 = {
     },
   },
   render: Example009Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example010 = {
   name: 'displays 01',
@@ -3995,7 +3995,7 @@ export const Example010 = {
     },
   },
   render: Example010Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example011 = {
   name: 'outlined 01',
@@ -4010,7 +4010,7 @@ export const Example011 = {
     },
   },
   render: Example011Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example012 = {
   name: 'inverted the text color becomes the background color and vice versa 01',
@@ -4027,7 +4027,7 @@ export const Example012 = {
     },
   },
   render: Example012Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example013 = {
   name: 'rounded buttons 01',
@@ -4042,7 +4042,7 @@ export const Example013 = {
     },
   },
   render: Example013Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example014 = {
   name: 'normal 01',
@@ -4057,7 +4057,7 @@ export const Example014 = {
     },
   },
   render: Example014Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example015 = {
   name: 'hover 01',
@@ -4072,7 +4072,7 @@ export const Example015 = {
     },
   },
   render: Example015Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example016 = {
   name: 'focus 01',
@@ -4087,7 +4087,7 @@ export const Example016 = {
     },
   },
   render: Example016Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example017 = {
   name: 'active 01',
@@ -4102,7 +4102,7 @@ export const Example017 = {
     },
   },
   render: Example017Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example018 = {
   name: 'loading 01',
@@ -4117,7 +4117,7 @@ export const Example018 = {
     },
   },
   render: Example018Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example019 = {
   name: 'static button 01',
@@ -4132,7 +4132,7 @@ export const Example019 = {
     },
   },
   render: Example019Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example020 = {
   name: 'disabled 01',
@@ -4147,7 +4147,7 @@ export const Example020 = {
     },
   },
   render: Example020Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example021 = {
   name: 'with font awesome icons 01',
@@ -4162,7 +4162,7 @@ export const Example021 = {
     },
   },
   render: Example021Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example022 = {
   name: 'with font awesome icons 02',
@@ -4177,7 +4177,7 @@ export const Example022 = {
     },
   },
   render: Example022Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example023 = {
   name: 'button group 01',
@@ -4192,7 +4192,7 @@ export const Example023 = {
     },
   },
   render: Example023Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example024 = {
   name: 'button addons 01',
@@ -4207,7 +4207,7 @@ export const Example024 = {
     },
   },
   render: Example024Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example025 = {
   name: 'button group with addons 01',
@@ -4222,7 +4222,7 @@ export const Example025 = {
     },
   },
   render: Example025Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example026 = {
   name: 'list of buttons 01',
@@ -4237,7 +4237,7 @@ export const Example026 = {
     },
   },
   render: Example026Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example027 = {
   name: 'list of buttons 02',
@@ -4252,7 +4252,7 @@ export const Example027 = {
     },
   },
   render: Example027Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example028 = {
   name: 'list of buttons 03',
@@ -4267,7 +4267,7 @@ export const Example028 = {
     },
   },
   render: Example028Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example029 = {
   name: 'list of buttons 04',
@@ -4282,7 +4282,7 @@ export const Example029 = {
     },
   },
   render: Example029Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example030 = {
   name: 'list of buttons 05',
@@ -4297,4 +4297,4 @@ export const Example030 = {
     },
   },
   render: Example030Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

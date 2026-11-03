@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { useState } from 'react';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { useState } from 'react'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -19,8 +19,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-form-file',
   title: 'CSS Library/Form/File',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -948,7 +948,7 @@ function OfficialDocs() {
         {'\n\n\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -969,13 +969,13 @@ function Example001Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example002Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       <ui.Columns>
@@ -1038,13 +1038,13 @@ function Example002Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example003Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       <ui.Columns>
@@ -1106,13 +1106,13 @@ function Example003Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example004Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       <ui.Columns>
@@ -1174,7 +1174,7 @@ function Example004Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example005Demo() {
@@ -1232,13 +1232,13 @@ function Example005Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example006Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       <ui.Columns>
@@ -1300,7 +1300,7 @@ function Example006Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example007Demo() {
@@ -1322,13 +1322,13 @@ function Example007Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example008Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1354,7 +1354,7 @@ function Example008Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example009Demo() {
@@ -1377,13 +1377,13 @@ function Example009Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example010Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1410,7 +1410,7 @@ function Example010Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example011Demo() {
@@ -1432,7 +1432,7 @@ function Example011Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example012Demo() {
@@ -1454,7 +1454,7 @@ function Example012Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example013Demo() {
@@ -1476,7 +1476,7 @@ function Example013Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example014Demo() {
@@ -1498,13 +1498,13 @@ function Example014Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example015Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1530,13 +1530,13 @@ function Example015Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example016Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1562,13 +1562,13 @@ function Example016Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example017Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1594,13 +1594,13 @@ function Example017Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example018Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1626,7 +1626,7 @@ function Example018Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example019Demo() {
@@ -1649,7 +1649,7 @@ function Example019Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example020Demo() {
@@ -1672,7 +1672,7 @@ function Example020Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example021Demo() {
@@ -1695,7 +1695,7 @@ function Example021Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example022Demo() {
@@ -1718,13 +1718,13 @@ function Example022Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example023Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1751,13 +1751,13 @@ function Example023Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example024Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1784,13 +1784,13 @@ function Example024Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example025Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1817,13 +1817,13 @@ function Example025Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example026Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1850,13 +1850,13 @@ function Example026Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example027Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1884,13 +1884,13 @@ function Example027Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example028Demo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
-  );
+  )
   return (
     <>
       {'\n        \n          \n'}
@@ -1917,11 +1917,11 @@ function Example028Demo() {
       </ui.File>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example029Demo() {
-  const [filename1, setFilename1] = useState(' No file uploaded ');
+  const [filename1, setFilename1] = useState(' No file uploaded ')
   return (
     <>
       {'\n        \n          \n'}
@@ -1947,7 +1947,7 @@ function Example029Demo() {
       {'\n\n'}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -1963,7 +1963,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'modifiers 01',
@@ -1978,7 +1978,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'modifiers 02',
@@ -1993,7 +1993,7 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example004 = {
   name: 'modifiers 03',
@@ -2008,7 +2008,7 @@ export const Example004 = {
     },
   },
   render: Example004Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example005 = {
   name: 'modifiers 04',
@@ -2023,7 +2023,7 @@ export const Example005 = {
     },
   },
   render: Example005Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example006 = {
   name: 'modifiers 05',
@@ -2038,7 +2038,7 @@ export const Example006 = {
     },
   },
   render: Example006Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example007 = {
   name: 'colors 01',
@@ -2053,7 +2053,7 @@ export const Example007 = {
     },
   },
   render: Example007Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example008 = {
   name: 'colors 02',
@@ -2068,7 +2068,7 @@ export const Example008 = {
     },
   },
   render: Example008Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example009 = {
   name: 'colors 03',
@@ -2083,7 +2083,7 @@ export const Example009 = {
     },
   },
   render: Example009Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example010 = {
   name: 'colors 04',
@@ -2098,7 +2098,7 @@ export const Example010 = {
     },
   },
   render: Example010Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example011 = {
   name: 'sizes 01',
@@ -2113,7 +2113,7 @@ export const Example011 = {
     },
   },
   render: Example011Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example012 = {
   name: 'sizes 02',
@@ -2128,7 +2128,7 @@ export const Example012 = {
     },
   },
   render: Example012Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example013 = {
   name: 'sizes 03',
@@ -2143,7 +2143,7 @@ export const Example013 = {
     },
   },
   render: Example013Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example014 = {
   name: 'sizes 04',
@@ -2158,7 +2158,7 @@ export const Example014 = {
     },
   },
   render: Example014Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example015 = {
   name: 'sizes 05',
@@ -2173,7 +2173,7 @@ export const Example015 = {
     },
   },
   render: Example015Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example016 = {
   name: 'sizes 06',
@@ -2188,7 +2188,7 @@ export const Example016 = {
     },
   },
   render: Example016Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example017 = {
   name: 'sizes 07',
@@ -2203,7 +2203,7 @@ export const Example017 = {
     },
   },
   render: Example017Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example018 = {
   name: 'sizes 08',
@@ -2218,7 +2218,7 @@ export const Example018 = {
     },
   },
   render: Example018Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example019 = {
   name: 'sizes 09',
@@ -2233,7 +2233,7 @@ export const Example019 = {
     },
   },
   render: Example019Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example020 = {
   name: 'sizes 10',
@@ -2248,7 +2248,7 @@ export const Example020 = {
     },
   },
   render: Example020Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example021 = {
   name: 'sizes 11',
@@ -2263,7 +2263,7 @@ export const Example021 = {
     },
   },
   render: Example021Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example022 = {
   name: 'sizes 12',
@@ -2278,7 +2278,7 @@ export const Example022 = {
     },
   },
   render: Example022Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example023 = {
   name: 'sizes 13',
@@ -2293,7 +2293,7 @@ export const Example023 = {
     },
   },
   render: Example023Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example024 = {
   name: 'sizes 14',
@@ -2308,7 +2308,7 @@ export const Example024 = {
     },
   },
   render: Example024Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example025 = {
   name: 'sizes 15',
@@ -2323,7 +2323,7 @@ export const Example025 = {
     },
   },
   render: Example025Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example026 = {
   name: 'sizes 16',
@@ -2338,7 +2338,7 @@ export const Example026 = {
     },
   },
   render: Example026Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example027 = {
   name: 'alignment 01',
@@ -2353,7 +2353,7 @@ export const Example027 = {
     },
   },
   render: Example027Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example028 = {
   name: 'alignment 02',
@@ -2368,7 +2368,7 @@ export const Example028 = {
     },
   },
   render: Example028Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example029 = {
   name: 'javascript 01',
@@ -2383,4 +2383,4 @@ export const Example029 = {
     },
   },
   render: Example029Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

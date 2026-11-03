@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -18,8 +18,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-grid-smart',
   title: 'CSS Library/Grid/Smart Grid',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -791,7 +791,7 @@ function OfficialDocs() {
         {'\n\n\n\n\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -969,7 +969,7 @@ function Example001Demo() {
         {'\n  \n'}
       </ui.SmartGrid>
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -985,4 +985,4 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

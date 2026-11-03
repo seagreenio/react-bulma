@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -18,8 +18,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-elements-table',
   title: 'CSS Library/Elements/Table',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -2130,7 +2130,7 @@ function OfficialDocs() {
         {'\n\n\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -2767,7 +2767,7 @@ function Example001Demo() {
       </ui.Table>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example002Demo() {
@@ -2864,7 +2864,7 @@ function Example002Demo() {
       </ui.Table>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example003Demo() {
@@ -2909,7 +2909,7 @@ function Example003Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example004Demo() {
@@ -2970,7 +2970,7 @@ function Example004Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example005Demo() {
@@ -3031,7 +3031,7 @@ function Example005Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example006Demo() {
@@ -3092,7 +3092,7 @@ function Example006Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example007Demo() {
@@ -3153,7 +3153,7 @@ function Example007Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example008Demo() {
@@ -3216,7 +3216,7 @@ function Example008Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -3232,7 +3232,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'colors 01',
@@ -3247,7 +3247,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'modifiers 01',
@@ -3262,7 +3262,7 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example004 = {
   name: 'modifiers 02',
@@ -3277,7 +3277,7 @@ export const Example004 = {
     },
   },
   render: Example004Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example005 = {
   name: 'modifiers 03',
@@ -3292,7 +3292,7 @@ export const Example005 = {
     },
   },
   render: Example005Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example006 = {
   name: 'modifiers 04',
@@ -3307,7 +3307,7 @@ export const Example006 = {
     },
   },
   render: Example006Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example007 = {
   name: 'modifiers 05',
@@ -3322,7 +3322,7 @@ export const Example007 = {
     },
   },
   render: Example007Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example008 = {
   name: 'modifiers 06',
@@ -3337,4 +3337,4 @@ export const Example008 = {
     },
   },
   render: Example008Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

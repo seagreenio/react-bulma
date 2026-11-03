@@ -1,4 +1,4 @@
-import { defineConfig } from '@playwright/test';
+import { defineConfig } from '@playwright/test'
 
 export default defineConfig({
   testDir: './tests/browser',
@@ -15,4 +15,4 @@ export default defineConfig({
     url: 'http://127.0.0.1:4173/tests/browser/',
     reuseExistingServer: false,
   },
-});
+})

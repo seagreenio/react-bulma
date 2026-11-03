@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { useState } from 'react';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { useState } from 'react'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -19,8 +19,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-elements-notification',
   title: 'CSS Library/Elements/Notification',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -507,11 +507,11 @@ function OfficialDocs() {
         {'\n\n\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -532,11 +532,11 @@ function Example001Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example002Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -557,11 +557,11 @@ function Example002Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example003Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -582,11 +582,11 @@ function Example003Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example004Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -607,11 +607,11 @@ function Example004Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example005Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -632,11 +632,11 @@ function Example005Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example006Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -657,11 +657,11 @@ function Example006Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example007Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -682,11 +682,11 @@ function Example007Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example008Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -707,11 +707,11 @@ function Example008Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example009Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -732,11 +732,11 @@ function Example009Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example010Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -757,11 +757,11 @@ function Example010Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example011Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -782,11 +782,11 @@ function Example011Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example012Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -807,11 +807,11 @@ function Example012Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example013Demo() {
-  const [visible1, setVisible1] = useState(true);
+  const [visible1, setVisible1] = useState(true)
   return (
     <>
       {'\n        \n          \n'}
@@ -832,7 +832,7 @@ function Example013Demo() {
       )}
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -848,7 +848,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'colors 01',
@@ -863,7 +863,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'colors 02',
@@ -878,7 +878,7 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example004 = {
   name: 'colors 03',
@@ -893,7 +893,7 @@ export const Example004 = {
     },
   },
   render: Example004Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example005 = {
   name: 'colors 04',
@@ -908,7 +908,7 @@ export const Example005 = {
     },
   },
   render: Example005Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example006 = {
   name: 'colors 05',
@@ -923,7 +923,7 @@ export const Example006 = {
     },
   },
   render: Example006Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example007 = {
   name: 'colors 06',
@@ -938,7 +938,7 @@ export const Example007 = {
     },
   },
   render: Example007Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example008 = {
   name: 'light colors 01',
@@ -953,7 +953,7 @@ export const Example008 = {
     },
   },
   render: Example008Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example009 = {
   name: 'light colors 02',
@@ -968,7 +968,7 @@ export const Example009 = {
     },
   },
   render: Example009Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example010 = {
   name: 'light colors 03',
@@ -983,7 +983,7 @@ export const Example010 = {
     },
   },
   render: Example010Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example011 = {
   name: 'light colors 04',
@@ -998,7 +998,7 @@ export const Example011 = {
     },
   },
   render: Example011Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example012 = {
   name: 'light colors 05',
@@ -1013,7 +1013,7 @@ export const Example012 = {
     },
   },
   render: Example012Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example013 = {
   name: 'light colors 06',
@@ -1028,4 +1028,4 @@ export const Example013 = {
     },
   },
   render: Example013Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

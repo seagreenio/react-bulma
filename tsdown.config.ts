@@ -1,4 +1,4 @@
-import { defineConfig } from 'tsdown';
+import { defineConfig } from 'tsdown'
 
 export default defineConfig({
   entry: ['src/index.tsx', 'src/styles.ts'],
@@ -11,4 +11,4 @@ export default defineConfig({
   },
   deps: { neverBundle: ['react', 'react/jsx-runtime', 'sass', 'postcss'] },
   outExtensions: () => ({ js: '.js', dts: '.d.ts' }),
-});
+})

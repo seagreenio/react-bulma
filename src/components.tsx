@@ -1,5 +1,5 @@
-import { createElement, type ReactNode } from 'react';
-import type { Prefix } from './config';
+import { createElement, type ReactNode } from 'react'
+import type { Prefix } from './config'
 import {
   classNames,
   forwardRefComponent,
@@ -8,72 +8,72 @@ import {
   type NativeTagProps,
   type Color,
   type Size,
-} from './shared';
+} from './shared'
 
 export type BreadcrumbProps = NativeProps<'nav'> & {
-  size?: Size;
-  alignment?: 'centered' | 'right';
-  separator?: 'arrow' | 'bullet' | 'dot' | 'succeeds';
-  listProps?: Omit<NativeProps<'ul'>, 'children'>;
-};
+  size?: Size
+  alignment?: 'centered' | 'right'
+  separator?: 'arrow' | 'bullet' | 'dot' | 'succeeds'
+  listProps?: Omit<NativeProps<'ul'>, 'children'>
+}
 export type BreadcrumbItemProps = NativeProps<'a'> & {
-  active?: boolean;
-  wrapperProps?: Omit<NativeProps<'li'>, 'children' | 'helpers'>;
-};
-export type CardProps = NativeProps<'div'>;
-export type CardHeaderProps = NativeProps<'header'>;
-export type CardHeaderTitleProps = NativeProps<'p'> & { centered?: boolean };
-export type CardHeaderIconProps = NativeProps<'button'>;
-export type CardImageProps = NativeProps<'div'>;
-export type CardContentProps = NativeProps<'div'>;
-export type CardFooterProps = NativeProps<'footer'>;
-export type CardFooterItemProps = NativeTagProps<'a', 'p'>;
-export type MenuProps = NativeProps<'aside'> & { size?: Size };
-export type MenuLabelProps = NativeProps<'p'>;
-export type MenuListProps = NativeProps<'ul'>;
+  active?: boolean
+  wrapperProps?: Omit<NativeProps<'li'>, 'children' | 'helpers'>
+}
+export type CardProps = NativeProps<'div'>
+export type CardHeaderProps = NativeProps<'header'>
+export type CardHeaderTitleProps = NativeProps<'p'> & { centered?: boolean }
+export type CardHeaderIconProps = NativeProps<'button'>
+export type CardImageProps = NativeProps<'div'>
+export type CardContentProps = NativeProps<'div'>
+export type CardFooterProps = NativeProps<'footer'>
+export type CardFooterItemProps = NativeTagProps<'a', 'p'>
+export type MenuProps = NativeProps<'aside'> & { size?: Size }
+export type MenuLabelProps = NativeProps<'p'>
+export type MenuListProps = NativeProps<'ul'>
 export type MenuItemProps = NativeProps<'a'> & {
-  active?: boolean;
-  nested?: ReactNode;
-  wrapperProps?: Omit<NativeProps<'li'>, 'children' | 'helpers'>;
-};
+  active?: boolean
+  nested?: ReactNode
+  wrapperProps?: Omit<NativeProps<'li'>, 'children' | 'helpers'>
+}
 export type MessageProps = NativeTagProps<
   'article',
   'div',
   {
-    color?: Color;
-    size?: Size;
+    color?: Color
+    size?: Size
   }
->;
-export type MessageHeaderProps = NativeProps<'div'>;
-export type MessageBodyProps = NativeProps<'div'>;
+>
+export type MessageHeaderProps = NativeProps<'div'>
+export type MessageBodyProps = NativeProps<'div'>
 export type PaginationProps = NativeProps<'nav'> & {
-  size?: Size;
-  alignment?: 'centered' | 'right';
-  rounded?: boolean;
-};
-export type PaginationListProps = NativeProps<'ul'>;
+  size?: Size
+  alignment?: 'centered' | 'right'
+  rounded?: boolean
+}
+export type PaginationListProps = NativeProps<'ul'>
 export type PaginationLinkProps = NativeProps<'a'> & {
-  current?: boolean;
-  disabled?: boolean;
-  wrapperProps?: Omit<NativeProps<'li'>, 'children' | 'helpers'>;
-};
-export type PaginationPreviousProps = NativeProps<'a'> & { disabled?: boolean };
-export type PaginationNextProps = PaginationPreviousProps;
+  current?: boolean
+  disabled?: boolean
+  wrapperProps?: Omit<NativeProps<'li'>, 'children' | 'helpers'>
+}
+export type PaginationPreviousProps = NativeProps<'a'> & { disabled?: boolean }
+export type PaginationNextProps = PaginationPreviousProps
 export type PaginationEllipsisProps = NativeProps<'span'> & {
-  wrapperProps?: Omit<NativeProps<'li'>, 'children' | 'helpers'>;
-};
-export type PanelProps = NativeTagProps<'nav', 'article', { color?: Color }>;
-export type PanelHeadingProps = NativeProps<'p'>;
-export type PanelTabsProps = NativeProps<'p'>;
-export type PanelTabProps = NativeProps<'a'> & { active?: boolean };
-type PanelBlockStyle = { active?: boolean; wrapped?: boolean };
+  wrapperProps?: Omit<NativeProps<'li'>, 'children' | 'helpers'>
+}
+export type PanelProps = NativeTagProps<'nav', 'article', { color?: Color }>
+export type PanelHeadingProps = NativeProps<'p'>
+export type PanelTabsProps = NativeProps<'p'>
+export type PanelTabProps = NativeProps<'a'> & { active?: boolean }
+type PanelBlockStyle = { active?: boolean; wrapped?: boolean }
 export type PanelBlockProps = PanelBlockStyle &
   (
     | (NativeProps<'div'> & { as?: 'div' })
     | (NativeProps<'a'> & { as: 'a' })
     | (NativeProps<'label'> & { as: 'label' })
-  );
-export type PanelIconProps = NativeProps<'span'>;
+  )
+export type PanelIconProps = NativeProps<'span'>
 
 export function createComponents(prefix: Prefix) {
   const Breadcrumb = forwardRefComponent(function Breadcrumb({
@@ -90,7 +90,7 @@ export function createComponents(prefix: Prefix) {
       helpers: listHelpers,
       className: listClassName,
       ...listNativeProps
-    } = listProps ?? {};
+    } = listProps ?? {}
     return (
       <nav
         aria-label="Breadcrumb"
@@ -114,8 +114,8 @@ export function createComponents(prefix: Prefix) {
           {children}
         </ul>
       </nav>
-    );
-  });
+    )
+  })
   const BreadcrumbItem = forwardRefComponent(function BreadcrumbItem({
     active,
     wrapperProps,
@@ -137,10 +137,10 @@ export function createComponents(prefix: Prefix) {
           {children}
         </a>
       </li>
-    );
-  });
-  const Card = styledElement(prefix, 'div', 'card');
-  const CardHeader = styledElement(prefix, 'header', 'card-header');
+    )
+  })
+  const Card = styledElement(prefix, 'div', 'card')
+  const CardHeader = styledElement(prefix, 'header', 'card-header')
   const CardHeaderTitle = forwardRefComponent(function CardHeaderTitle({
     centered,
     helpers,
@@ -157,8 +157,8 @@ export function createComponents(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
   const CardHeaderIcon = forwardRefComponent(function CardHeaderIcon({
     helpers,
     className,
@@ -171,12 +171,12 @@ export function createComponents(prefix: Prefix) {
         type={type}
         className={classNames(prefix, ['card-header-icon'], helpers, className)}
       />
-    );
-  });
-  const CardImage = styledElement(prefix, 'div', 'card-image');
-  const CardContent = styledElement(prefix, 'div', 'card-content');
-  const CardFooter = styledElement(prefix, 'footer', 'card-footer');
-  const CardFooterItem = styledElement(prefix, 'a', 'card-footer-item', ['p']);
+    )
+  })
+  const CardImage = styledElement(prefix, 'div', 'card-image')
+  const CardContent = styledElement(prefix, 'div', 'card-content')
+  const CardFooter = styledElement(prefix, 'footer', 'card-footer')
+  const CardFooterItem = styledElement(prefix, 'a', 'card-footer-item', ['p'])
   const Menu = forwardRefComponent(function Menu({
     size,
     helpers,
@@ -193,10 +193,10 @@ export function createComponents(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
-  const MenuLabel = styledElement(prefix, 'p', 'menu-label');
-  const MenuList = styledElement(prefix, 'ul', 'menu-list');
+    )
+  })
+  const MenuLabel = styledElement(prefix, 'p', 'menu-label')
+  const MenuList = styledElement(prefix, 'ul', 'menu-list')
   const MenuItem = forwardRefComponent(function MenuItem({
     active,
     nested,
@@ -222,8 +222,8 @@ export function createComponents(prefix: Prefix) {
         </a>
         {nested}
       </li>
-    );
-  });
+    )
+  })
   const Message = forwardRefComponent(function Message({
     as,
     color,
@@ -240,10 +240,10 @@ export function createComponents(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
-  const MessageHeader = styledElement(prefix, 'div', 'message-header');
-  const MessageBody = styledElement(prefix, 'div', 'message-body');
+    })
+  })
+  const MessageHeader = styledElement(prefix, 'div', 'message-header')
+  const MessageBody = styledElement(prefix, 'div', 'message-body')
   const Pagination = forwardRefComponent(function Pagination({
     size,
     alignment,
@@ -268,9 +268,9 @@ export function createComponents(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
-  const PaginationList = styledElement(prefix, 'ul', 'pagination-list');
+    )
+  })
+  const PaginationList = styledElement(prefix, 'ul', 'pagination-list')
   const PaginationLink = forwardRefComponent(function PaginationLink({
     current,
     disabled,
@@ -303,15 +303,15 @@ export function createComponents(prefix: Prefix) {
           )}
           onClick={(event) => {
             if (disabled) {
-              event.preventDefault();
-              return;
+              event.preventDefault()
+              return
             }
-            onClick?.(event);
+            onClick?.(event)
           }}
         />
       </li>
-    );
-  });
+    )
+  })
   const PaginationPrevious = forwardRefComponent(function PaginationPrevious({
     disabled,
     helpers,
@@ -338,16 +338,16 @@ export function createComponents(prefix: Prefix) {
         )}
         onClick={(event) => {
           if (disabled) {
-            event.preventDefault();
-            return;
+            event.preventDefault()
+            return
           }
-          onClick?.(event);
+          onClick?.(event)
         }}
       >
         {children}
       </a>
-    );
-  });
+    )
+  })
   const PaginationNext = forwardRefComponent(function PaginationNext({
     disabled,
     helpers,
@@ -374,16 +374,16 @@ export function createComponents(prefix: Prefix) {
         )}
         onClick={(event) => {
           if (disabled) {
-            event.preventDefault();
-            return;
+            event.preventDefault()
+            return
           }
-          onClick?.(event);
+          onClick?.(event)
         }}
       >
         {children}
       </a>
-    );
-  });
+    )
+  })
   const PaginationEllipsis = forwardRefComponent(function PaginationEllipsis({
     wrapperProps,
     helpers,
@@ -406,8 +406,8 @@ export function createComponents(prefix: Prefix) {
           {children}
         </span>
       </li>
-    );
-  });
+    )
+  })
   const Panel = forwardRefComponent(function Panel({
     as,
     color,
@@ -423,10 +423,10 @@ export function createComponents(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
-  const PanelHeading = styledElement(prefix, 'p', 'panel-heading');
-  const PanelTabs = styledElement(prefix, 'p', 'panel-tabs');
+    })
+  })
+  const PanelHeading = styledElement(prefix, 'p', 'panel-heading')
+  const PanelTabs = styledElement(prefix, 'p', 'panel-tabs')
   const PanelTab = forwardRefComponent(function PanelTab({
     active,
     helpers,
@@ -444,8 +444,8 @@ export function createComponents(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
   const PanelBlock = forwardRefComponent(function PanelBlock({
     as = 'div',
     active,
@@ -465,9 +465,9 @@ export function createComponents(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
-  const PanelIcon = styledElement(prefix, 'span', 'panel-icon');
+    })
+  })
+  const PanelIcon = styledElement(prefix, 'span', 'panel-icon')
   return {
     Breadcrumb,
     BreadcrumbItem,
@@ -498,5 +498,5 @@ export function createComponents(prefix: Prefix) {
     PanelTab,
     PanelBlock,
     PanelIcon,
-  };
+  }
 }

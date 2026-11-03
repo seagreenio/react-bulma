@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -18,8 +18,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-form-select',
   title: 'CSS Library/Form/Select',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -498,7 +498,7 @@ function OfficialDocs() {
         {'\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -534,7 +534,7 @@ function Example001Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example002Demo() {
@@ -604,7 +604,7 @@ function Example002Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example003Demo() {
@@ -620,7 +620,7 @@ function Example003Demo() {
       </ui.Select>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example004Demo() {
@@ -636,7 +636,7 @@ function Example004Demo() {
       </ui.Select>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example005Demo() {
@@ -652,7 +652,7 @@ function Example005Demo() {
       </ui.Select>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example006Demo() {
@@ -668,7 +668,7 @@ function Example006Demo() {
       </ui.Select>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example007Demo() {
@@ -684,7 +684,7 @@ function Example007Demo() {
       </ui.Select>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example008Demo() {
@@ -700,7 +700,7 @@ function Example008Demo() {
       </ui.Select>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example009Demo() {
@@ -736,7 +736,7 @@ function Example009Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example010Demo() {
@@ -752,7 +752,7 @@ function Example010Demo() {
       </ui.Select>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example011Demo() {
@@ -768,7 +768,7 @@ function Example011Demo() {
       </ui.Select>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example012Demo() {
@@ -784,7 +784,7 @@ function Example012Demo() {
       </ui.Select>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example013Demo() {
@@ -800,7 +800,7 @@ function Example013Demo() {
       </ui.Select>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example014Demo() {
@@ -836,7 +836,7 @@ function Example014Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example015Demo() {
@@ -872,7 +872,7 @@ function Example015Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example016Demo() {
@@ -908,7 +908,7 @@ function Example016Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example017Demo() {
@@ -944,7 +944,7 @@ function Example017Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example018Demo() {
@@ -992,7 +992,7 @@ function Example018Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example019Demo() {
@@ -1054,7 +1054,7 @@ function Example019Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example020Demo() {
@@ -1102,7 +1102,7 @@ function Example020Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example021Demo() {
@@ -1150,7 +1150,7 @@ function Example021Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example022Demo() {
@@ -1198,7 +1198,7 @@ function Example022Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -1214,7 +1214,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'multiple select 01',
@@ -1229,7 +1229,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'colors 01',
@@ -1244,7 +1244,7 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example004 = {
   name: 'colors 02',
@@ -1259,7 +1259,7 @@ export const Example004 = {
     },
   },
   render: Example004Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example005 = {
   name: 'colors 03',
@@ -1274,7 +1274,7 @@ export const Example005 = {
     },
   },
   render: Example005Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example006 = {
   name: 'colors 04',
@@ -1289,7 +1289,7 @@ export const Example006 = {
     },
   },
   render: Example006Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example007 = {
   name: 'colors 05',
@@ -1304,7 +1304,7 @@ export const Example007 = {
     },
   },
   render: Example007Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example008 = {
   name: 'colors 06',
@@ -1319,7 +1319,7 @@ export const Example008 = {
     },
   },
   render: Example008Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example009 = {
   name: 'styles 01',
@@ -1334,7 +1334,7 @@ export const Example009 = {
     },
   },
   render: Example009Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example010 = {
   name: 'sizes 01',
@@ -1349,7 +1349,7 @@ export const Example010 = {
     },
   },
   render: Example010Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example011 = {
   name: 'sizes 02',
@@ -1364,7 +1364,7 @@ export const Example011 = {
     },
   },
   render: Example011Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example012 = {
   name: 'sizes 03',
@@ -1379,7 +1379,7 @@ export const Example012 = {
     },
   },
   render: Example012Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example013 = {
   name: 'sizes 04',
@@ -1394,7 +1394,7 @@ export const Example013 = {
     },
   },
   render: Example013Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example014 = {
   name: 'normal 01',
@@ -1409,7 +1409,7 @@ export const Example014 = {
     },
   },
   render: Example014Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example015 = {
   name: 'hover 01',
@@ -1424,7 +1424,7 @@ export const Example015 = {
     },
   },
   render: Example015Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example016 = {
   name: 'focus 01',
@@ -1439,7 +1439,7 @@ export const Example016 = {
     },
   },
   render: Example016Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example017 = {
   name: 'loading 01',
@@ -1454,7 +1454,7 @@ export const Example017 = {
     },
   },
   render: Example017Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example018 = {
   name: 'with icons 01',
@@ -1469,7 +1469,7 @@ export const Example018 = {
     },
   },
   render: Example018Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example019 = {
   name: 'with icons 02',
@@ -1484,7 +1484,7 @@ export const Example019 = {
     },
   },
   render: Example019Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example020 = {
   name: 'with icons 03',
@@ -1499,7 +1499,7 @@ export const Example020 = {
     },
   },
   render: Example020Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example021 = {
   name: 'with icons 04',
@@ -1514,7 +1514,7 @@ export const Example021 = {
     },
   },
   render: Example021Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example022 = {
   name: 'with icons 05',
@@ -1529,4 +1529,4 @@ export const Example022 = {
     },
   },
   render: Example022Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

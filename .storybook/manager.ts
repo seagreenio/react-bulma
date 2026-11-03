@@ -1,5 +1,5 @@
-import { addons } from 'storybook/manager-api';
-import { create } from 'storybook/theming/create';
+import { addons } from 'storybook/manager-api'
+import { create } from 'storybook/theming/create'
 
 addons.setConfig({
   theme: create({
@@ -14,4 +14,4 @@ addons.setConfig({
     brandUrl: './?path=/docs/react-bulma--docs',
     brandTarget: '_self',
   }),
-});
+})

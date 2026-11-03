@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -18,8 +18,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-columns-sizes',
   title: 'CSS Library/Columns/Sizes',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -518,7 +518,7 @@ function OfficialDocs() {
         {'\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -538,7 +538,7 @@ function Example001Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example002Demo() {
@@ -570,7 +570,7 @@ function Example002Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example003Demo() {
@@ -602,7 +602,7 @@ function Example003Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example004Demo() {
@@ -634,7 +634,7 @@ function Example004Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example005Demo() {
@@ -666,7 +666,7 @@ function Example005Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example006Demo() {
@@ -698,7 +698,7 @@ function Example006Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example007Demo() {
@@ -730,7 +730,7 @@ function Example007Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example008Demo() {
@@ -762,7 +762,7 @@ function Example008Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example009Demo() {
@@ -794,7 +794,7 @@ function Example009Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example010Demo() {
@@ -826,7 +826,7 @@ function Example010Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example011Demo() {
@@ -976,7 +976,7 @@ function Example011Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example012Demo() {
@@ -1114,7 +1114,7 @@ function Example012Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example013Demo() {
@@ -1240,7 +1240,7 @@ function Example013Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example014Demo() {
@@ -1354,7 +1354,7 @@ function Example014Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example015Demo() {
@@ -1456,7 +1456,7 @@ function Example015Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example016Demo() {
@@ -1546,7 +1546,7 @@ function Example016Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example017Demo() {
@@ -1624,7 +1624,7 @@ function Example017Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example018Demo() {
@@ -1690,7 +1690,7 @@ function Example018Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example019Demo() {
@@ -1744,7 +1744,7 @@ function Example019Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example020Demo() {
@@ -1786,7 +1786,7 @@ function Example020Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example021Demo() {
@@ -1816,7 +1816,7 @@ function Example021Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example022Demo() {
@@ -1834,7 +1834,7 @@ function Example022Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example023Demo() {
@@ -1857,7 +1857,7 @@ function Example023Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example024Demo() {
@@ -1880,7 +1880,7 @@ function Example024Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example025Demo() {
@@ -1903,7 +1903,7 @@ function Example025Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example026Demo() {
@@ -1926,7 +1926,7 @@ function Example026Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example027Demo() {
@@ -1968,7 +1968,7 @@ function Example027Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -1984,7 +1984,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'Column sizes 02',
@@ -1999,7 +1999,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'Column sizes 03',
@@ -2014,7 +2014,7 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example004 = {
   name: 'Column sizes 04',
@@ -2029,7 +2029,7 @@ export const Example004 = {
     },
   },
   render: Example004Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example005 = {
   name: 'Column sizes 05',
@@ -2044,7 +2044,7 @@ export const Example005 = {
     },
   },
   render: Example005Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example006 = {
   name: 'Column sizes 06',
@@ -2059,7 +2059,7 @@ export const Example006 = {
     },
   },
   render: Example006Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example007 = {
   name: 'Column sizes 07',
@@ -2074,7 +2074,7 @@ export const Example007 = {
     },
   },
   render: Example007Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example008 = {
   name: 'Column sizes 08',
@@ -2089,7 +2089,7 @@ export const Example008 = {
     },
   },
   render: Example008Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example009 = {
   name: 'Column sizes 09',
@@ -2104,7 +2104,7 @@ export const Example009 = {
     },
   },
   render: Example009Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example010 = {
   name: 'Column sizes 10',
@@ -2119,7 +2119,7 @@ export const Example010 = {
     },
   },
   render: Example010Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example011 = {
   name: '12 columns system 01',
@@ -2134,7 +2134,7 @@ export const Example011 = {
     },
   },
   render: Example011Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example012 = {
   name: '12 columns system 02',
@@ -2149,7 +2149,7 @@ export const Example012 = {
     },
   },
   render: Example012Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example013 = {
   name: '12 columns system 03',
@@ -2164,7 +2164,7 @@ export const Example013 = {
     },
   },
   render: Example013Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example014 = {
   name: '12 columns system 04',
@@ -2179,7 +2179,7 @@ export const Example014 = {
     },
   },
   render: Example014Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example015 = {
   name: '12 columns system 05',
@@ -2194,7 +2194,7 @@ export const Example015 = {
     },
   },
   render: Example015Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example016 = {
   name: '12 columns system 06',
@@ -2209,7 +2209,7 @@ export const Example016 = {
     },
   },
   render: Example016Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example017 = {
   name: '12 columns system 07',
@@ -2224,7 +2224,7 @@ export const Example017 = {
     },
   },
   render: Example017Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example018 = {
   name: '12 columns system 08',
@@ -2239,7 +2239,7 @@ export const Example018 = {
     },
   },
   render: Example018Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example019 = {
   name: '12 columns system 09',
@@ -2254,7 +2254,7 @@ export const Example019 = {
     },
   },
   render: Example019Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example020 = {
   name: '12 columns system 10',
@@ -2269,7 +2269,7 @@ export const Example020 = {
     },
   },
   render: Example020Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example021 = {
   name: '12 columns system 11',
@@ -2284,7 +2284,7 @@ export const Example021 = {
     },
   },
   render: Example021Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example022 = {
   name: '12 columns system 12',
@@ -2299,7 +2299,7 @@ export const Example022 = {
     },
   },
   render: Example022Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example023 = {
   name: 'offset 01',
@@ -2314,7 +2314,7 @@ export const Example023 = {
     },
   },
   render: Example023Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example024 = {
   name: 'offset 02',
@@ -2329,7 +2329,7 @@ export const Example024 = {
     },
   },
   render: Example024Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example025 = {
   name: 'offset 03',
@@ -2344,7 +2344,7 @@ export const Example025 = {
     },
   },
   render: Example025Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example026 = {
   name: 'offset 04',
@@ -2359,7 +2359,7 @@ export const Example026 = {
     },
   },
   render: Example026Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example027 = {
   name: 'narrow column 01',
@@ -2374,4 +2374,4 @@ export const Example027 = {
     },
   },
   render: Example027Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

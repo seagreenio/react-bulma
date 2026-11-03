@@ -34,14 +34,8 @@ bun add @seagreenio/react-bulma@1.0.0-rc.0
 You need to import the stylesheet once and place React Bulma components inside `BulmaRoot`. The example below uses the default styles. Do not also import global Bulma CSS:
 
 ```tsx
-import {
-  Button,
-  BulmaRoot,
-  Field,
-  Input,
-  Label,
-} from '@seagreenio/react-bulma';
-import '@seagreenio/react-bulma/styles.css';
+import { Button, BulmaRoot, Field, Input, Label } from '@seagreenio/react-bulma'
+import '@seagreenio/react-bulma/styles.css'
 
 export function App() {
   return (
@@ -54,7 +48,7 @@ export function App() {
         Save
       </Button>
     </BulmaRoot>
-  );
+  )
 }
 ```
 
@@ -82,7 +76,7 @@ Each component exposes its Bulma modifiers as typed properties. For spacing, tex
 You can use those same helpers on native markup inside a root:
 
 ```tsx
-import { BulmaRoot, helpers } from '@seagreenio/react-bulma';
+import { BulmaRoot, helpers } from '@seagreenio/react-bulma'
 
 export function Summary() {
   return (
@@ -99,7 +93,7 @@ export function Summary() {
         <span className={helpers({ textColor: 'success' })}>Up to date</span>
       </div>
     </BulmaRoot>
-  );
+  )
 }
 ```
 
@@ -124,25 +118,25 @@ If you need a custom prefix, your runtime code and style build must share one co
 
 ```ts
 // bulma.config.ts
-export const bulmaConfig = { prefix: 'acme-' } as const;
+export const bulmaConfig = { prefix: 'acme-' } as const
 ```
 
 ```ts
 // src/ui.ts
-'use client';
-import { createBulma } from '@seagreenio/react-bulma';
-import { bulmaConfig } from '../bulma.config';
+'use client'
+import { createBulma } from '@seagreenio/react-bulma'
+import { bulmaConfig } from '../bulma.config'
 
-export const ui = createBulma(bulmaConfig);
+export const ui = createBulma(bulmaConfig)
 ```
 
 With Bun, you can build the stylesheet from `scripts/styles.ts`:
 
 ```ts
-import { buildStyles } from '@seagreenio/react-bulma/styles';
-import { bulmaConfig } from '../bulma.config';
+import { buildStyles } from '@seagreenio/react-bulma/styles'
+import { bulmaConfig } from '../bulma.config'
 
-await Bun.write('src/bulma.css', await buildStyles(bulmaConfig));
+await Bun.write('src/bulma.css', await buildStyles(bulmaConfig))
 ```
 
 You can run this script with `bun scripts/styles.ts` in your app directory.
@@ -150,25 +144,25 @@ You can run this script with `bun scripts/styles.ts` in your app directory.
 If you use Node.js 22.18 or later, put the build in `scripts/styles.mjs` instead. That version of Node can load your shared TypeScript configuration through its [native TypeScript support](https://nodejs.org/api/typescript.html#type-stripping):
 
 ```js
-import { writeFile } from 'node:fs/promises';
-import { buildStyles } from '@seagreenio/react-bulma/styles';
-import { bulmaConfig } from '../bulma.config.ts';
+import { writeFile } from 'node:fs/promises'
+import { buildStyles } from '@seagreenio/react-bulma/styles'
+import { bulmaConfig } from '../bulma.config.ts'
 
-await writeFile('src/bulma.css', await buildStyles(bulmaConfig), 'utf8');
+await writeFile('src/bulma.css', await buildStyles(bulmaConfig), 'utf8')
 ```
 
 The Node command is `node scripts/styles.mjs`, run from your app directory. Whichever script you choose, it must run before each app build. Your application then imports the generated CSS and uses the bound components and helpers from the same module:
 
 ```tsx
-import { ui } from './ui';
-import './bulma.css';
+import { ui } from './ui'
+import './bulma.css'
 
-<ui.BulmaRoot theme="dark">
+;<ui.BulmaRoot theme="dark">
   <p className={ui.helpers({ mt: 4, textAlign: 'center', hidden: 'mobile' })}>
     Visible above the mobile breakpoint
   </p>
   <ui.Button color="info">Save</ui.Button>
-</ui.BulmaRoot>;
+</ui.BulmaRoot>
 ```
 
 A custom setup needs one call to `createBulma` at module scope. The prefix is part of your build configuration. It must start with a lowercase ASCII letter, contain lowercase letters or digits separated by single hyphens, and end in a hyphen. Your root, components, helpers and generated CSS must all use that same prefix. You can use separate prefixes together, including in nested roots. CSS variables still inherit, and each instance reads its own variable names.

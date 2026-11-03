@@ -1,19 +1,19 @@
-import type { ReactNode } from 'react';
-import type { Meta } from '@storybook/react-vite';
-import { BulmaRoot } from '../../src';
-import catalog from '../../official/catalog.json';
-import '../../.generated/official-assets/fontawesome.css';
-import '../../.generated/official-assets/decorations.css';
-import './surface.css';
-import '../../.generated/official-assets/docs.css';
+import type { ReactNode } from 'react'
+import type { Meta } from '@storybook/react-vite'
+import { BulmaRoot } from '../../src'
+import catalog from '../../official/catalog.json'
+import '../../.generated/official-assets/fontawesome.css'
+import '../../.generated/official-assets/decorations.css'
+import './surface.css'
+import '../../.generated/official-assets/docs.css'
 
-const examples = new Map(catalog.map((example) => [example.id, example]));
+const examples = new Map(catalog.map((example) => [example.id, example]))
 
 export function officialPage(
   page: {
-    id: string;
-    title: string;
-    url: string;
+    id: string
+    title: string
+    url: string
   },
   docsPage?: () => ReactNode,
 ): Meta {
@@ -32,8 +32,8 @@ export function officialPage(
     },
     decorators: [
       (Story, context) => {
-        const example = examples.get(context.parameters.official?.id as string);
-        const snippet = example?.kind === 'snippet';
+        const example = examples.get(context.parameters.official?.id as string)
+        const snippet = example?.kind === 'snippet'
         return (
           <BulmaRoot
             className="official-root"
@@ -55,8 +55,8 @@ export function officialPage(
               )}
             </div>
           </BulmaRoot>
-        );
+        )
       },
     ],
-  };
+  }
 }

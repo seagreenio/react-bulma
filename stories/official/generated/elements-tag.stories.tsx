@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -18,8 +18,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-elements-tag',
   title: 'CSS Library/Elements/Tag',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -512,7 +512,7 @@ function OfficialDocs() {
         {'\n\n\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -546,7 +546,7 @@ function Example001Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example002Demo() {
@@ -636,7 +636,7 @@ function Example002Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example003Demo() {
@@ -718,7 +718,7 @@ function Example003Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example004Demo() {
@@ -794,7 +794,7 @@ function Example004Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example005Demo() {
@@ -812,7 +812,7 @@ function Example005Demo() {
       </ui.Tags>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example006Demo() {
@@ -830,7 +830,7 @@ function Example006Demo() {
       </ui.Tags>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example007Demo() {
@@ -852,7 +852,7 @@ function Example007Demo() {
       </ui.Tags>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example008Demo() {
@@ -868,7 +868,7 @@ function Example008Demo() {
       </ui.Tag>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example009Demo() {
@@ -904,7 +904,7 @@ function Example009Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example010Demo() {
@@ -940,7 +940,7 @@ function Example010Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example011Demo() {
@@ -994,7 +994,7 @@ function Example011Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example012Demo() {
@@ -1058,7 +1058,7 @@ function Example012Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example013Demo() {
@@ -1112,7 +1112,7 @@ function Example013Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example014Demo() {
@@ -1202,7 +1202,7 @@ function Example014Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example015Demo() {
@@ -1254,7 +1254,7 @@ function Example015Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example016Demo() {
@@ -1306,7 +1306,7 @@ function Example016Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example017Demo() {
@@ -1396,7 +1396,7 @@ function Example017Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 function Example018Demo() {
@@ -1526,7 +1526,7 @@ function Example018Demo() {
         {'\n'}
       </ui.Columns>
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -1542,7 +1542,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'colors 01',
@@ -1557,7 +1557,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'colors 02',
@@ -1572,7 +1572,7 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example004 = {
   name: 'sizes 01',
@@ -1587,7 +1587,7 @@ export const Example004 = {
     },
   },
   render: Example004Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example005 = {
   name: 'sizes 02',
@@ -1602,7 +1602,7 @@ export const Example005 = {
     },
   },
   render: Example005Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example006 = {
   name: 'sizes 03',
@@ -1617,7 +1617,7 @@ export const Example006 = {
     },
   },
   render: Example006Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example007 = {
   name: 'sizes 04',
@@ -1632,7 +1632,7 @@ export const Example007 = {
     },
   },
   render: Example007Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example008 = {
   name: 'hover active state 01',
@@ -1647,7 +1647,7 @@ export const Example008 = {
     },
   },
   render: Example008Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example009 = {
   name: 'modifiers 01',
@@ -1662,7 +1662,7 @@ export const Example009 = {
     },
   },
   render: Example009Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example010 = {
   name: 'modifiers 02',
@@ -1677,7 +1677,7 @@ export const Example010 = {
     },
   },
   render: Example010Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example011 = {
   name: 'combinations 01',
@@ -1692,7 +1692,7 @@ export const Example011 = {
     },
   },
   render: Example011Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example012 = {
   name: 'combinations 02',
@@ -1707,7 +1707,7 @@ export const Example012 = {
     },
   },
   render: Example012Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example013 = {
   name: 'list of tags 01',
@@ -1722,7 +1722,7 @@ export const Example013 = {
     },
   },
   render: Example013Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example014 = {
   name: 'list of tags 02',
@@ -1737,7 +1737,7 @@ export const Example014 = {
     },
   },
   render: Example014Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example015 = {
   name: 'tag addons 01',
@@ -1752,7 +1752,7 @@ export const Example015 = {
     },
   },
   render: Example015Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example016 = {
   name: 'tag addons 02',
@@ -1767,7 +1767,7 @@ export const Example016 = {
     },
   },
   render: Example016Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example017 = {
   name: 'tag addons 03',
@@ -1782,7 +1782,7 @@ export const Example017 = {
     },
   },
   render: Example017Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example018 = {
   name: 'tag addons 04',
@@ -1797,4 +1797,4 @@ export const Example018 = {
     },
   },
   render: Example018Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from 'react'
 import {
   createContext,
   createElement,
@@ -17,12 +17,12 @@ import {
   type Ref,
   type MutableRefObject,
   type RefObject,
-} from 'react';
-import { Dialog as BaseDialog } from '@base-ui/react/dialog';
-import { Menu as BaseMenu } from '@base-ui/react/menu';
-import { Tabs as BaseTabs } from '@base-ui/react/tabs';
-import type { BaseUIChangeEventDetails } from '@base-ui/react/types';
-import type { Prefix } from './config';
+} from 'react'
+import { Dialog as BaseDialog } from '@base-ui/react/dialog'
+import { Menu as BaseMenu } from '@base-ui/react/menu'
+import { Tabs as BaseTabs } from '@base-ui/react/tabs'
+import type { BaseUIChangeEventDetails } from '@base-ui/react/types'
+import type { Prefix } from './config'
 import {
   classNames,
   forwardRefComponent,
@@ -31,7 +31,7 @@ import {
   type NativeProps,
   type NativeTagProps,
   type Size,
-} from './shared';
+} from './shared'
 
 type ModalChangeReason =
   | 'trigger-press'
@@ -40,7 +40,7 @@ type ModalChangeReason =
   | 'close-press'
   | 'focus-out'
   | 'imperative-action'
-  | 'none';
+  | 'none'
 type DropdownChangeReason =
   | ModalChangeReason
   | 'trigger-hover'
@@ -48,217 +48,217 @@ type DropdownChangeReason =
   | 'list-navigation'
   | 'item-press'
   | 'sibling-open'
-  | 'cancel-open';
+  | 'cancel-open'
 type OpenChangeDetails<Reason extends string> =
   BaseUIChangeEventDetails<Reason> & {
-    preventUnmountOnClose: () => void;
-  };
+    preventUnmountOnClose: () => void
+  }
 type ModalFocusTarget =
   | boolean
   | RefObject<HTMLElement | null>
   | ((
       interactionType: 'mouse' | 'touch' | 'pen' | 'keyboard' | '',
-    ) => boolean | HTMLElement | null | void);
+    ) => boolean | HTMLElement | null | void)
 
 export interface DropdownProps extends Omit<NativeProps<'div'>, 'onChange'> {
-  open?: boolean;
-  defaultOpen?: boolean;
+  open?: boolean
+  defaultOpen?: boolean
   onOpenChange?:
     | ((
         open: boolean,
         details: OpenChangeDetails<DropdownChangeReason>,
       ) => void)
-    | undefined;
-  right?: boolean;
-  up?: boolean;
-  disabled?: boolean;
-  hoverable?: boolean;
+    | undefined
+  right?: boolean
+  up?: boolean
+  disabled?: boolean
+  hoverable?: boolean
 }
 export type DropdownTriggerProps = NativeProps<'button'> & {
-  wrapperProps?: NativeProps<'div'>;
-};
-export type DropdownMenuProps = NativeProps<'div'>;
-export type DropdownContentProps = NativeProps<'div'>;
+  wrapperProps?: NativeProps<'div'>
+}
+export type DropdownMenuProps = NativeProps<'div'>
+export type DropdownContentProps = NativeProps<'div'>
 export type DropdownItemProps = (
   | ({ as?: 'button' } & NativeProps<'button'>)
   | ({ as: 'a'; disabled?: boolean } & NativeProps<'a'>)
   | ({ as: 'div' } & NativeProps<'div'>)
-) & { active?: boolean; closeOnClick?: boolean; label?: string };
-export type DropdownDividerProps = NativeProps<'hr'>;
+) & { active?: boolean; closeOnClick?: boolean; label?: string }
+export type DropdownDividerProps = NativeProps<'hr'>
 export interface ModalProps {
-  children?: ReactNode;
-  open?: boolean;
-  defaultOpen?: boolean;
+  children?: ReactNode
+  open?: boolean
+  defaultOpen?: boolean
   onOpenChange?:
     | ((open: boolean, details: OpenChangeDetails<ModalChangeReason>) => void)
-    | undefined;
-  closeOnEscape?: boolean;
-  closeOnOutsideClick?: boolean;
+    | undefined
+  closeOnEscape?: boolean
+  closeOnOutsideClick?: boolean
 }
 export type ModalTriggerProps = NativeTagProps<
   'button',
   'a',
   { unstyled?: boolean }
->;
+>
 export interface ModalContentProps extends NativeProps<'div'> {
   container?:
     | HTMLElement
     | ShadowRoot
     | RefObject<HTMLElement | ShadowRoot | null>
     | null
-    | undefined;
-  initialFocus?: ModalFocusTarget | undefined;
-  finalFocus?: ModalFocusTarget | undefined;
-  wrapperProps?: NativeProps<'div'>;
-  backdropProps?: NativeProps<'div'>;
-  close?: ReactNode;
+    | undefined
+  initialFocus?: ModalFocusTarget | undefined
+  finalFocus?: ModalFocusTarget | undefined
+  wrapperProps?: NativeProps<'div'>
+  backdropProps?: NativeProps<'div'>
+  close?: ReactNode
 }
-export type ModalCardProps = ModalContentProps;
-export type ModalTitleProps = NativeTagProps<'h2', 'p'>;
-export type ModalDescriptionProps = NativeProps<'p'>;
+export type ModalCardProps = ModalContentProps
+export type ModalTitleProps = NativeTagProps<'h2', 'p'>
+export type ModalDescriptionProps = NativeProps<'p'>
 export type ModalCloseProps = NativeProps<'button'> & {
-  variant?: 'icon' | 'button' | 'delete';
-};
-export type ModalCardHeadProps = NativeProps<'header'>;
-export type ModalCardBodyProps = NativeProps<'section'>;
-export type ModalCardFootProps = NativeProps<'footer'>;
-export type TabValue = string | number;
+  variant?: 'icon' | 'button' | 'delete'
+}
+export type ModalCardHeadProps = NativeProps<'header'>
+export type ModalCardBodyProps = NativeProps<'section'>
+export type ModalCardFootProps = NativeProps<'footer'>
+export type TabValue = string | number
 export interface TabsProps extends Omit<
   NativeProps<'div'>,
   'defaultValue' | 'onChange'
 > {
-  value?: TabValue | null;
-  defaultValue?: TabValue | null;
+  value?: TabValue | null
+  defaultValue?: TabValue | null
   onValueChange?: (
     value: TabValue | null,
     details: BaseUIChangeEventDetails<
       'none' | 'disabled' | 'missing' | 'initial',
       { activationDirection: 'left' | 'right' | 'up' | 'down' | 'none' }
     >,
-  ) => void;
+  ) => void
 }
 export type TabsListProps = NativeTagProps<
   'div',
   'nav',
   {
-    size?: Size;
-    alignment?: 'left' | 'centered' | 'right';
-    variant?: 'boxed' | 'toggle' | 'toggle-rounded';
-    fullWidth?: boolean;
-    activateOnFocus?: boolean;
-    loopFocus?: boolean;
-    listProps?: NativeProps<'ul'>;
-    listWrapper?: ReactElement<{ children?: ReactNode }>;
+    size?: Size
+    alignment?: 'left' | 'centered' | 'right'
+    variant?: 'boxed' | 'toggle' | 'toggle-rounded'
+    fullWidth?: boolean
+    activateOnFocus?: boolean
+    loopFocus?: boolean
+    listProps?: NativeProps<'ul'>
+    listWrapper?: ReactElement<{ children?: ReactNode }>
   }
->;
+>
 export type TabProps = NativeTagProps<
   'button',
   'a',
   {
-    value: TabValue;
-    disabled?: boolean;
-    wrapperProps?: NativeProps<'li'>;
+    value: TabValue
+    disabled?: boolean
+    wrapperProps?: NativeProps<'li'>
   }
->;
+>
 export interface TabPanelProps extends NativeProps<'div'> {
-  value: TabValue;
-  keepMounted?: boolean;
+  value: TabValue
+  keepMounted?: boolean
 }
 export type NavbarProps = NativeTagProps<
   'nav',
   'header',
   {
-    color?: Color;
-    transparent?: boolean;
-    spaced?: boolean;
-    shadow?: boolean;
-    fixed?: 'top' | 'bottom';
-    expanded?: boolean;
-    defaultExpanded?: boolean;
-    onExpandedChange?: (expanded: boolean) => void;
+    color?: Color
+    transparent?: boolean
+    spaced?: boolean
+    shadow?: boolean
+    fixed?: 'top' | 'bottom'
+    expanded?: boolean
+    defaultExpanded?: boolean
+    onExpandedChange?: (expanded: boolean) => void
   }
->;
-export type NavbarBrandProps = NativeProps<'div'>;
+>
+export type NavbarBrandProps = NativeProps<'div'>
 export type NavbarBurgerProps = NativeTagProps<
   'button',
   'a' | 'div' | 'span',
   {
-    expanded?: boolean;
-    defaultExpanded?: boolean;
-    onExpandedChange?: (expanded: boolean) => void;
+    expanded?: boolean
+    defaultExpanded?: boolean
+    onExpandedChange?: (expanded: boolean) => void
   }
->;
-export type NavbarMenuProps = NativeProps<'div'> & { expanded?: boolean };
-export type NavbarStartProps = NativeProps<'div'>;
-export type NavbarEndProps = NativeProps<'div'>;
+>
+export type NavbarMenuProps = NativeProps<'div'> & { expanded?: boolean }
+export type NavbarStartProps = NativeProps<'div'>
+export type NavbarEndProps = NativeProps<'div'>
 export type NavbarItemProps = (
   | ({ as?: 'a' } & NativeProps<'a'>)
   | ({ as: 'div' } & NativeProps<'div'>)
   | ({ as: 'span' } & NativeProps<'span'>)
   | ({ as: 'button' } & NativeProps<'button'>)
-) & { active?: boolean; expanded?: boolean; tab?: boolean };
+) & { active?: boolean; expanded?: boolean; tab?: boolean }
 export type NavbarLinkProps = NativeProps<'a'> & {
-  active?: boolean;
-  arrowless?: boolean;
-};
+  active?: boolean
+  arrowless?: boolean
+}
 type NavbarDropdownOptions = {
-  trigger: ReactNode;
-  right?: boolean;
-  boxed?: boolean;
-  up?: boolean;
-  arrowless?: boolean;
-  defaultOpen?: boolean;
-  open?: boolean;
-  hoverable?: boolean;
-  menuProps?: NativeProps<'div'>;
-};
+  trigger: ReactNode
+  right?: boolean
+  boxed?: boolean
+  up?: boolean
+  arrowless?: boolean
+  defaultOpen?: boolean
+  open?: boolean
+  hoverable?: boolean
+  menuProps?: NativeProps<'div'>
+}
 export type NavbarDropdownProps = NavbarDropdownOptions &
   (
     | (NativeProps<'details'> & {
-        as?: 'details';
-        triggerProps?: NativeProps<'summary'>;
+        as?: 'details'
+        triggerProps?: NativeProps<'summary'>
       })
     | (NativeProps<'div'> & { as: 'div'; triggerProps?: NativeProps<'a'> })
-  );
-export type NavbarDividerProps = NativeProps<'hr'>;
+  )
+export type NavbarDividerProps = NativeProps<'hr'>
 
 type NavbarState = {
-  expanded: boolean;
-  setExpanded: (value: boolean) => void;
-  menuId: string | undefined;
-  setMenuId: (id: string | undefined) => void;
-  burger: { current: HTMLElement | null };
-};
-
-function assignRef<T>(ref: Ref<T> | undefined, value: T | null) {
-  if (typeof ref === 'function') return ref(value);
-  if (ref) (ref as MutableRefObject<T | null>).current = value;
+  expanded: boolean
+  setExpanded: (value: boolean) => void
+  menuId: string | undefined
+  setMenuId: (id: string | undefined) => void
+  burger: { current: HTMLElement | null }
 }
 
-let nextId = 0;
+function assignRef<T>(ref: Ref<T> | undefined, value: T | null) {
+  if (typeof ref === 'function') return ref(value)
+  if (ref) (ref as MutableRefObject<T | null>).current = value
+}
+
+let nextId = 0
 function useFallbackId() {
-  const [id, setId] = useState<string>();
+  const [id, setId] = useState<string>()
   useEffect(() => {
-    setId((current) => current ?? `react-bulma-${++nextId}`);
-  }, []);
-  return id;
+    setId((current) => current ?? `react-bulma-${++nextId}`)
+  }, [])
+  return id
 }
 
 const useStableId =
   ({ ...React } as typeof React & { useId?: () => string }).useId ??
-  useFallbackId;
+  useFallbackId
 const useClientLayoutEffect =
-  typeof window === 'undefined' ? useEffect : useLayoutEffect;
+  typeof window === 'undefined' ? useEffect : useLayoutEffect
 
 export function createInteractive(prefix: Prefix) {
   const DropdownContext = createContext<{
-    right: boolean;
-    up: boolean;
-    hoverable: boolean;
-    container: HTMLDivElement | null;
-  }>({ right: false, up: false, hoverable: false, container: null });
-  const ModalContainerContext = createContext<HTMLElement | null>(null);
-  const NavbarContext = createContext<NavbarState | null>(null);
+    right: boolean
+    up: boolean
+    hoverable: boolean
+    container: HTMLDivElement | null
+  }>({ right: false, up: false, hoverable: false, container: null })
+  const ModalContainerContext = createContext<HTMLElement | null>(null)
+  const NavbarContext = createContext<NavbarState | null>(null)
   const Dropdown = forwardRefComponent(function Dropdown({
     open,
     defaultOpen = false,
@@ -273,16 +273,16 @@ export function createInteractive(prefix: Prefix) {
     ref,
     ...props
   }: DropdownProps) {
-    const [uncontrolledOpen, setOpen] = useState(defaultOpen);
-    const currentOpen = open ?? uncontrolledOpen;
-    const [container, setContainer] = useState<HTMLDivElement | null>(null);
+    const [uncontrolledOpen, setOpen] = useState(defaultOpen)
+    const currentOpen = open ?? uncontrolledOpen
+    const [container, setContainer] = useState<HTMLDivElement | null>(null)
     const rootRef = useCallback(
       (element: HTMLDivElement | null) => {
-        setContainer(element);
-        return assignRef(ref, element);
+        setContainer(element)
+        return assignRef(ref, element)
       },
       [ref],
-    );
+    )
     return (
       <DropdownContext.Provider value={{ right, up, hoverable, container }}>
         <BaseMenu.Root
@@ -290,8 +290,8 @@ export function createInteractive(prefix: Prefix) {
           disabled={disabled}
           modal={false}
           onOpenChange={(next, details) => {
-            onOpenChange?.(next, details);
-            if (open === undefined && !details.isCanceled) setOpen(next);
+            onOpenChange?.(next, details)
+            if (open === undefined && !details.isCanceled) setOpen(next)
           }}
         >
           <div
@@ -314,8 +314,8 @@ export function createInteractive(prefix: Prefix) {
           </div>
         </BaseMenu.Root>
       </DropdownContext.Provider>
-    );
-  });
+    )
+  })
   const DropdownTrigger = forwardRefComponent(function DropdownTrigger({
     helpers,
     className,
@@ -323,12 +323,12 @@ export function createInteractive(prefix: Prefix) {
     wrapperProps,
     ...props
   }: DropdownTriggerProps) {
-    const { hoverable } = useContext(DropdownContext);
+    const { hoverable } = useContext(DropdownContext)
     const {
       helpers: wrapperHelpers,
       className: wrapperClassName,
       ...wrapper
-    } = wrapperProps ?? {};
+    } = wrapperProps ?? {}
     return (
       <div
         {...wrapper}
@@ -347,16 +347,16 @@ export function createInteractive(prefix: Prefix) {
           className={classNames(prefix, ['button'], helpers, className)}
         />
       </div>
-    );
-  });
+    )
+  })
   const DropdownMenu = forwardRefComponent(function DropdownMenu({
     helpers,
     className,
     style,
     ...props
   }: DropdownMenuProps) {
-    const { right, up, container } = useContext(DropdownContext);
-    if (!container) return null;
+    const { right, up, container } = useContext(DropdownContext)
+    if (!container) return null
     return (
       <BaseMenu.Portal container={container}>
         <BaseMenu.Positioner
@@ -374,8 +374,8 @@ export function createInteractive(prefix: Prefix) {
           className={classNames(prefix, ['dropdown-menu'], helpers, className)}
         />
       </BaseMenu.Portal>
-    );
-  });
+    )
+  })
   const DropdownContent = forwardRefComponent(function DropdownContent({
     helpers,
     className,
@@ -386,8 +386,8 @@ export function createInteractive(prefix: Prefix) {
         {...props}
         className={classNames(prefix, ['dropdown-content'], helpers, className)}
       />
-    );
-  });
+    )
+  })
   const DropdownItem = forwardRefComponent(function DropdownItem(
     props: DropdownItemProps,
   ) {
@@ -400,7 +400,7 @@ export function createInteractive(prefix: Prefix) {
         closeOnClick: _closeOnClick,
         label: _label,
         ...native
-      } = props;
+      } = props
       return (
         <div
           {...native}
@@ -411,7 +411,7 @@ export function createInteractive(prefix: Prefix) {
             className,
           )}
         />
-      );
+      )
     }
     // Base UI types Item events as div events even when render supplies a native tag.
     // Forward handlers through Item so its disabled guard runs before user callbacks.
@@ -426,7 +426,7 @@ export function createInteractive(prefix: Prefix) {
         label,
         ref,
         ...native
-      } = props;
+      } = props
       return (
         <BaseMenu.Item
           {...(native as BaseMenu.Item.Props)}
@@ -441,7 +441,7 @@ export function createInteractive(prefix: Prefix) {
             className,
           )}
         />
-      );
+      )
     }
     const {
       as: _as,
@@ -454,7 +454,7 @@ export function createInteractive(prefix: Prefix) {
       disabled,
       type = 'button',
       ...native
-    } = props;
+    } = props
     return (
       <BaseMenu.Item
         {...(native as BaseMenu.Item.Props)}
@@ -470,9 +470,9 @@ export function createInteractive(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
-  const DropdownDivider = styledElement(prefix, 'hr', 'dropdown-divider');
+    )
+  })
+  const DropdownDivider = styledElement(prefix, 'hr', 'dropdown-divider')
 
   function Modal({
     children,
@@ -482,7 +482,7 @@ export function createInteractive(prefix: Prefix) {
     closeOnEscape = true,
     closeOnOutsideClick = true,
   }: ModalProps) {
-    const [container, setContainer] = useState<HTMLElement | null>(null);
+    const [container, setContainer] = useState<HTMLElement | null>(null)
     return (
       <BaseDialog.Root
         open={open}
@@ -490,30 +490,30 @@ export function createInteractive(prefix: Prefix) {
         disablePointerDismissal={!closeOnOutsideClick}
         onOpenChange={(next, details) => {
           if (!next && !closeOnEscape && details.reason === 'escape-key') {
-            details.cancel();
-            return;
+            details.cancel()
+            return
           }
-          onOpenChange?.(next, details);
+          onOpenChange?.(next, details)
         }}
       >
         <span
           hidden
           ref={(element) => {
             if (element)
-              setContainer(element.closest<HTMLElement>(`.${prefix}root`));
+              setContainer(element.closest<HTMLElement>(`.${prefix}root`))
           }}
         />
         <ModalContainerContext.Provider value={container}>
           {children}
         </ModalContainerContext.Provider>
       </BaseDialog.Root>
-    );
+    )
   }
   const ModalTrigger = forwardRefComponent(function ModalTrigger(
     props: ModalTriggerProps,
   ) {
     if (props.as === 'a') {
-      const { as: _as, helpers, className, unstyled, ...native } = props;
+      const { as: _as, helpers, className, unstyled, ...native } = props
       return (
         <BaseDialog.Trigger
           nativeButton={false}
@@ -525,7 +525,7 @@ export function createInteractive(prefix: Prefix) {
             className,
           )}
         />
-      );
+      )
     }
     const {
       as: _as,
@@ -534,7 +534,7 @@ export function createInteractive(prefix: Prefix) {
       unstyled,
       type = 'button',
       ...native
-    } = props;
+    } = props
     return (
       <BaseDialog.Trigger
         {...native}
@@ -546,8 +546,8 @@ export function createInteractive(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const ModalSurface = forwardRefComponent(function ModalSurface({
     token,
@@ -560,19 +560,19 @@ export function createInteractive(prefix: Prefix) {
     close,
     ...props
   }: ModalContentProps & { token: 'modal-content' | 'modal-card' }) {
-    const localContainer = useContext(ModalContainerContext);
-    const container = explicitContainer ?? localContainer;
+    const localContainer = useContext(ModalContainerContext)
+    const container = explicitContainer ?? localContainer
     const {
       helpers: wrapperHelpers,
       className: wrapperClassName,
       ...wrapper
-    } = wrapperProps ?? {};
+    } = wrapperProps ?? {}
     const {
       helpers: backdropHelpers,
       className: backdropClassName,
       ...backdrop
-    } = backdropProps ?? {};
-    if (!container) return null;
+    } = backdropProps ?? {}
+    if (!container) return null
     return (
       <BaseDialog.Portal container={container}>
         <div
@@ -603,23 +603,23 @@ export function createInteractive(prefix: Prefix) {
           </BaseDialog.Popup>
         </div>
       </BaseDialog.Portal>
-    );
-  });
+    )
+  })
   const ModalContent = forwardRefComponent(function ModalContent(
     props: ModalContentProps,
   ) {
-    return <ModalSurface {...props} token="modal-content" />;
-  });
+    return <ModalSurface {...props} token="modal-content" />
+  })
   const ModalCard = forwardRefComponent(function ModalCard(
     props: ModalCardProps,
   ) {
-    return <ModalSurface {...props} token="modal-card" />;
-  });
+    return <ModalSurface {...props} token="modal-card" />
+  })
   const ModalTitle = forwardRefComponent(function ModalTitle(
     props: ModalTitleProps,
   ) {
     if (props.as === 'p') {
-      const { as: _as, helpers, className, ...native } = props;
+      const { as: _as, helpers, className, ...native } = props
       return (
         <BaseDialog.Title
           render={<p {...native} />}
@@ -630,16 +630,16 @@ export function createInteractive(prefix: Prefix) {
             className,
           )}
         />
-      );
+      )
     }
-    const { as: _as, helpers, className, ...native } = props;
+    const { as: _as, helpers, className, ...native } = props
     return (
       <BaseDialog.Title
         {...native}
         className={classNames(prefix, ['modal-card-title'], helpers, className)}
       />
-    );
-  });
+    )
+  })
 
   const ModalDescription = forwardRefComponent(function ModalDescription({
     helpers,
@@ -651,8 +651,8 @@ export function createInteractive(prefix: Prefix) {
         {...props}
         className={classNames(prefix, [], helpers, className)}
       />
-    );
-  });
+    )
+  })
   const ModalClose = forwardRefComponent(function ModalClose({
     helpers,
     className,
@@ -673,11 +673,11 @@ export function createInteractive(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
-  const ModalCardHead = styledElement(prefix, 'header', 'modal-card-head');
-  const ModalCardBody = styledElement(prefix, 'section', 'modal-card-body');
-  const ModalCardFoot = styledElement(prefix, 'footer', 'modal-card-foot');
+    )
+  })
+  const ModalCardHead = styledElement(prefix, 'header', 'modal-card-head')
+  const ModalCardBody = styledElement(prefix, 'section', 'modal-card-body')
+  const ModalCardFoot = styledElement(prefix, 'footer', 'modal-card-foot')
 
   const Tabs = forwardRefComponent(function Tabs({
     helpers,
@@ -689,8 +689,8 @@ export function createInteractive(prefix: Prefix) {
         {...props}
         className={classNames(prefix, [], helpers, className)}
       />
-    );
-  });
+    )
+  })
   const TabsList = forwardRefComponent(function TabsList({
     as,
     helpers,
@@ -708,12 +708,12 @@ export function createInteractive(prefix: Prefix) {
     'aria-labelledby': ariaLabelledBy,
     ...props
   }: TabsListProps) {
-    const Tag = as ?? 'div';
+    const Tag = as ?? 'div'
     const {
       helpers: listHelpers,
       className: listClassName,
       ...listNative
-    } = listProps ?? {};
+    } = listProps ?? {}
     const list = (
       <BaseTabs.List
         render={<ul {...listNative} />}
@@ -725,7 +725,7 @@ export function createInteractive(prefix: Prefix) {
       >
         {children}
       </BaseTabs.List>
-    );
+    )
     return createElement<NativeProps<'div'> | NativeProps<'nav'>>(Tag, {
       ...props,
       className: classNames(
@@ -742,15 +742,15 @@ export function createInteractive(prefix: Prefix) {
         className,
       ),
       children: listWrapper ? cloneElement(listWrapper, undefined, list) : list,
-    });
-  });
+    })
+  })
   const Tab = forwardRefComponent(function Tab(props: TabProps) {
-    const { as: _as, helpers, className, wrapperProps, ...native } = props;
+    const { as: _as, helpers, className, wrapperProps, ...native } = props
     const {
       helpers: wrapperHelpers,
       className: wrapperClassName,
       ...wrapper
-    } = wrapperProps ?? {};
+    } = wrapperProps ?? {}
     if (props.as === 'a') {
       return (
         <BaseTabs.Tab
@@ -772,7 +772,7 @@ export function createInteractive(prefix: Prefix) {
             </li>
           )}
         />
-      );
+      )
     }
     return (
       <BaseTabs.Tab
@@ -794,8 +794,8 @@ export function createInteractive(prefix: Prefix) {
           </li>
         )}
       />
-    );
-  });
+    )
+  })
   const TabPanel = forwardRefComponent(function TabPanel({
     helpers,
     className,
@@ -806,8 +806,8 @@ export function createInteractive(prefix: Prefix) {
         {...props}
         className={classNames(prefix, [], helpers, className)}
       />
-    );
-  });
+    )
+  })
 
   const Navbar = forwardRefComponent(function Navbar({
     as,
@@ -825,21 +825,21 @@ export function createInteractive(prefix: Prefix) {
     onKeyDown,
     ...props
   }: NavbarProps) {
-    const [localExpanded, setLocalExpanded] = useState(defaultExpanded);
-    const burger = useRef<HTMLElement | null>(null);
-    const defaultMenuId = useStableId();
-    const [registeredMenuId, setMenuId] = useState<string>();
+    const [localExpanded, setLocalExpanded] = useState(defaultExpanded)
+    const burger = useRef<HTMLElement | null>(null)
+    const defaultMenuId = useStableId()
+    const [registeredMenuId, setMenuId] = useState<string>()
     const state: NavbarState = {
       expanded: expanded ?? localExpanded,
       burger,
       menuId: registeredMenuId ?? defaultMenuId,
       setMenuId,
       setExpanded(value) {
-        if (expanded === undefined) setLocalExpanded(value);
-        onExpandedChange?.(value);
+        if (expanded === undefined) setLocalExpanded(value)
+        onExpandedChange?.(value)
       },
-    };
-    const Tag = as ?? 'nav';
+    }
+    const Tag = as ?? 'nav'
     return (
       <NavbarContext.Provider value={state}>
         <Tag
@@ -858,32 +858,32 @@ export function createInteractive(prefix: Prefix) {
             className,
           )}
           onKeyDown={(event) => {
-            onKeyDown?.(event);
+            onKeyDown?.(event)
             if (
               !event.defaultPrevented &&
               event.key === 'Escape' &&
               state.expanded
             ) {
-              state.setExpanded(false);
-              burger.current?.focus();
-              event.preventDefault();
+              state.setExpanded(false)
+              burger.current?.focus()
+              event.preventDefault()
             }
           }}
         >
           {children}
         </Tag>
       </NavbarContext.Provider>
-    );
-  });
-  const NavbarBrand = styledElement(prefix, 'div', 'navbar-brand');
+    )
+  })
+  const NavbarBrand = styledElement(prefix, 'div', 'navbar-brand')
   const NavbarBurger = forwardRefComponent(function NavbarBurger(
     props: NavbarBurgerProps,
   ): ReactElement {
-    const state = useContext(NavbarContext);
+    const state = useContext(NavbarContext)
     const [localExpanded, setLocalExpanded] = useState(
       props.defaultExpanded ?? false,
-    );
-    const expanded = props.expanded ?? state?.expanded ?? localExpanded;
+    )
+    const expanded = props.expanded ?? state?.expanded ?? localExpanded
     const {
       as: _as,
       expanded: _expanded,
@@ -893,7 +893,7 @@ export function createInteractive(prefix: Prefix) {
       className,
       children,
       ...native
-    } = props;
+    } = props
     const common = {
       'aria-label': props['aria-label'] ?? 'Toggle navigation',
       'aria-expanded': expanded,
@@ -912,7 +912,7 @@ export function createInteractive(prefix: Prefix) {
           <span aria-hidden="true" />
         </>
       ),
-    };
+    }
     function behavior<Element extends HTMLElement>(
       ref: Ref<Element> | undefined,
       onClick: MouseEventHandler<Element> | undefined,
@@ -922,25 +922,25 @@ export function createInteractive(prefix: Prefix) {
     ) {
       return {
         ref(element: Element | null) {
-          if (state) state.burger.current = element;
-          return assignRef(ref, element);
+          if (state) state.burger.current = element
+          return assignRef(ref, element)
         },
         onClick: ((event) => {
-          onClick?.(event);
-          if (event.defaultPrevented) return;
-          if (state) state.setExpanded(!expanded);
-          else if (props.expanded === undefined) setLocalExpanded(!expanded);
-          onExpandedChange?.(!expanded);
+          onClick?.(event)
+          if (event.defaultPrevented) return
+          if (state) state.setExpanded(!expanded)
+          else if (props.expanded === undefined) setLocalExpanded(!expanded)
+          onExpandedChange?.(!expanded)
         }) satisfies MouseEventHandler<Element>,
         onKeyDown: ((event) => {
-          onKeyDown?.(event);
-          if (event.defaultPrevented || nativeButton) return;
+          onKeyDown?.(event)
+          if (event.defaultPrevented || nativeButton) return
           if (event.key === ' ' || (event.key === 'Enter' && !nativeEnter)) {
-            event.preventDefault();
-            event.currentTarget.click();
+            event.preventDefault()
+            event.currentTarget.click()
           }
         }) satisfies KeyboardEventHandler<Element>,
-      };
+      }
     }
     if (props.as === 'a') {
       return createElement('a', {
@@ -955,7 +955,7 @@ export function createInteractive(prefix: Prefix) {
           false,
           !!props.href,
         ),
-      });
+      })
     }
     if (props.as === 'div') {
       return createElement('div', {
@@ -964,7 +964,7 @@ export function createInteractive(prefix: Prefix) {
         role: props.role ?? 'button',
         tabIndex: props.tabIndex ?? 0,
         ...behavior(props.ref, props.onClick, props.onKeyDown, false),
-      });
+      })
     }
     if (props.as === 'span') {
       return createElement('span', {
@@ -973,15 +973,15 @@ export function createInteractive(prefix: Prefix) {
         role: props.role ?? 'button',
         tabIndex: props.tabIndex ?? 0,
         ...behavior(props.ref, props.onClick, props.onKeyDown, false),
-      });
+      })
     }
     return createElement('button', {
       ...native,
       ...common,
       type: props.type ?? 'button',
       ...behavior(props.ref, props.onClick, props.onKeyDown, true),
-    });
-  });
+    })
+  })
 
   const NavbarMenu = forwardRefComponent(function NavbarMenu({
     helpers,
@@ -990,12 +990,12 @@ export function createInteractive(prefix: Prefix) {
     expanded,
     ...props
   }: NavbarMenuProps) {
-    const state = useContext(NavbarContext);
-    const registerMenuId = state?.setMenuId;
+    const state = useContext(NavbarContext)
+    const registerMenuId = state?.setMenuId
     useClientLayoutEffect(() => {
-      registerMenuId?.(id);
-      return () => registerMenuId?.(undefined);
-    }, [id, registerMenuId]);
+      registerMenuId?.(id)
+      return () => registerMenuId?.(undefined)
+    }, [id, registerMenuId])
     return (
       <div
         {...props}
@@ -1007,10 +1007,10 @@ export function createInteractive(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
-  const NavbarStart = styledElement(prefix, 'div', 'navbar-start');
-  const NavbarEnd = styledElement(prefix, 'div', 'navbar-end');
+    )
+  })
+  const NavbarStart = styledElement(prefix, 'div', 'navbar-start')
+  const NavbarEnd = styledElement(prefix, 'div', 'navbar-end')
   const NavbarItem = forwardRefComponent(function NavbarItem(
     props: NavbarItemProps,
   ) {
@@ -1019,7 +1019,7 @@ export function createInteractive(prefix: Prefix) {
       props.active && 'is-active',
       props.expanded && 'is-expanded',
       props.tab && 'is-tab',
-    ];
+    ]
     if (props.as === 'div' || props.as === 'span') {
       const {
         as,
@@ -1029,11 +1029,11 @@ export function createInteractive(prefix: Prefix) {
         expanded: _expanded,
         tab: _tab,
         ...native
-      } = props;
+      } = props
       return createElement(as, {
         ...native,
         className: classNames(prefix, tokens, helpers, className),
-      });
+      })
     }
     if (props.as === 'button') {
       const {
@@ -1045,14 +1045,14 @@ export function createInteractive(prefix: Prefix) {
         tab: _tab,
         type = 'button',
         ...native
-      } = props;
+      } = props
       return (
         <button
           {...native}
           type={type}
           className={classNames(prefix, tokens, helpers, className)}
         />
-      );
+      )
     }
     const {
       as: _as,
@@ -1062,14 +1062,14 @@ export function createInteractive(prefix: Prefix) {
       expanded: _expanded,
       tab: _tab,
       ...native
-    } = props;
+    } = props
     return (
       <a
         {...native}
         className={classNames(prefix, tokens, helpers, className)}
       />
-    );
-  });
+    )
+  })
   const NavbarLink = forwardRefComponent(function NavbarLink({
     helpers,
     className,
@@ -1087,20 +1087,20 @@ export function createInteractive(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
   const NavbarDropdown = forwardRefComponent(function NavbarDropdown(
     props: NavbarDropdownProps,
   ) {
-    const [localOpen, setLocalOpen] = useState(props.defaultOpen ?? false);
-    const open = props.open ?? localOpen;
-    const triggerRef = useRef<HTMLElement | null>(null);
-    const menuId = useStableId();
+    const [localOpen, setLocalOpen] = useState(props.defaultOpen ?? false)
+    const open = props.open ?? localOpen
+    const triggerRef = useRef<HTMLElement | null>(null)
+    const menuId = useStableId()
     const {
       helpers: menuHelpers,
       className: menuClassName,
       ...menuNative
-    } = props.menuProps ?? {};
+    } = props.menuProps ?? {}
     const menu = (
       <div
         {...menuNative}
@@ -1118,7 +1118,7 @@ export function createInteractive(prefix: Prefix) {
       >
         {props.children}
       </div>
-    );
+    )
     const rootClassName = classNames(
       prefix,
       [
@@ -1129,31 +1129,31 @@ export function createInteractive(prefix: Prefix) {
       ],
       props.helpers,
       props.className,
-    );
+    )
     function changeOpen(value: boolean) {
-      if (props.open === undefined) setLocalOpen(value);
+      if (props.open === undefined) setLocalOpen(value)
     }
     function keyDown<Element extends HTMLElement>(
       handler: KeyboardEventHandler<Element> | undefined,
     ): KeyboardEventHandler<Element> {
       return (event) => {
-        handler?.(event);
+        handler?.(event)
         const details =
           event.currentTarget instanceof HTMLDetailsElement
             ? event.currentTarget
-            : undefined;
+            : undefined
         if (
           !event.defaultPrevented &&
           event.key === 'Escape' &&
           (details?.open ?? open)
         ) {
-          if (details && props.open === undefined) details.open = false;
-          changeOpen(false);
-          triggerRef.current?.focus();
-          event.preventDefault();
-          event.stopPropagation();
+          if (details && props.open === undefined) details.open = false
+          changeOpen(false)
+          triggerRef.current?.focus()
+          event.preventDefault()
+          event.stopPropagation()
         }
-      };
+      }
     }
     if (props.as === 'div') {
       const {
@@ -1175,7 +1175,7 @@ export function createInteractive(prefix: Prefix) {
         onPointerEnter,
         onPointerLeave,
         ...native
-      } = props;
+      } = props
       const {
         helpers: triggerHelpers,
         className: triggerClassName,
@@ -1183,36 +1183,36 @@ export function createInteractive(prefix: Prefix) {
         onClick,
         onKeyDown: onTriggerKeyDown,
         ...triggerNative
-      } = triggerProps ?? {};
+      } = triggerProps ?? {}
       return (
         <div
           {...native}
           className={rootClassName}
           onKeyDown={keyDown(onKeyDown)}
           onPointerEnter={(event) => {
-            onPointerEnter?.(event);
+            onPointerEnter?.(event)
             if (
               !event.defaultPrevented &&
               hoverable &&
               event.pointerType !== 'touch'
             )
-              changeOpen(true);
+              changeOpen(true)
           }}
           onPointerLeave={(event) => {
-            onPointerLeave?.(event);
+            onPointerLeave?.(event)
             if (
               !event.defaultPrevented &&
               hoverable &&
               event.pointerType !== 'touch'
             )
-              changeOpen(false);
+              changeOpen(false)
           }}
         >
           <a
             {...triggerNative}
             ref={(element) => {
-              triggerRef.current = element;
-              return assignRef(ref, element);
+              triggerRef.current = element
+              return assignRef(ref, element)
             }}
             role={
               triggerNative.role ?? (triggerNative.href ? undefined : 'button')
@@ -1227,18 +1227,18 @@ export function createInteractive(prefix: Prefix) {
               triggerClassName,
             )}
             onClick={(event) => {
-              onClick?.(event);
-              if (!event.defaultPrevented) changeOpen(!open);
+              onClick?.(event)
+              if (!event.defaultPrevented) changeOpen(!open)
             }}
             onKeyDown={(event) => {
-              onTriggerKeyDown?.(event);
+              onTriggerKeyDown?.(event)
               if (
                 !event.defaultPrevented &&
                 (event.key === ' ' ||
                   (event.key === 'Enter' && !triggerNative.href))
               ) {
-                event.preventDefault();
-                event.currentTarget.click();
+                event.preventDefault()
+                event.currentTarget.click()
               }
             }}
           >
@@ -1246,7 +1246,7 @@ export function createInteractive(prefix: Prefix) {
           </a>
           {menu}
         </div>
-      );
+      )
     }
     const {
       as: _as,
@@ -1268,13 +1268,13 @@ export function createInteractive(prefix: Prefix) {
       onPointerEnter,
       onPointerLeave,
       ...native
-    } = props;
+    } = props
     const {
       helpers: triggerHelpers,
       className: triggerClassName,
       ref,
       ...triggerNative
-    } = triggerProps ?? {};
+    } = triggerProps ?? {}
     return (
       <details
         {...native}
@@ -1282,33 +1282,33 @@ export function createInteractive(prefix: Prefix) {
         className={rootClassName}
         onKeyDown={keyDown(onKeyDown)}
         onToggle={(event) => {
-          onToggle?.(event);
-          changeOpen(event.currentTarget.open);
+          onToggle?.(event)
+          changeOpen(event.currentTarget.open)
         }}
         onPointerEnter={(event) => {
-          onPointerEnter?.(event);
+          onPointerEnter?.(event)
           if (
             !event.defaultPrevented &&
             hoverable &&
             event.pointerType !== 'touch'
           )
-            changeOpen(true);
+            changeOpen(true)
         }}
         onPointerLeave={(event) => {
-          onPointerLeave?.(event);
+          onPointerLeave?.(event)
           if (
             !event.defaultPrevented &&
             hoverable &&
             event.pointerType !== 'touch'
           )
-            changeOpen(false);
+            changeOpen(false)
         }}
       >
         <summary
           {...triggerNative}
           ref={(element) => {
-            triggerRef.current = element;
-            return assignRef(ref, element);
+            triggerRef.current = element
+            return assignRef(ref, element)
           }}
           className={classNames(
             prefix,
@@ -1321,9 +1321,9 @@ export function createInteractive(prefix: Prefix) {
         </summary>
         {menu}
       </details>
-    );
-  });
-  const NavbarDivider = styledElement(prefix, 'hr', 'navbar-divider');
+    )
+  })
+  const NavbarDivider = styledElement(prefix, 'hr', 'navbar-divider')
 
   return {
     Dropdown,
@@ -1356,5 +1356,5 @@ export function createInteractive(prefix: Prefix) {
     NavbarLink,
     NavbarDropdown,
     NavbarDivider,
-  };
+  }
 }

@@ -1,4 +1,4 @@
-import type { Prefix } from './config';
+import type { Prefix } from './config'
 
 const spacing = {
   0: '0',
@@ -8,8 +8,8 @@ const spacing = {
   4: '4',
   5: '5',
   6: '6',
-} as const;
-const margin = { ...spacing, auto: 'auto' } as const;
+} as const
+const margin = { ...spacing, auto: 'auto' } as const
 
 export const colors = {
   white: 'white',
@@ -22,7 +22,7 @@ export const colors = {
   success: 'success',
   warning: 'warning',
   danger: 'danger',
-} as const;
+} as const
 
 function suffixes<const T extends Record<string | number, string>>(
   start: string,
@@ -30,7 +30,7 @@ function suffixes<const T extends Record<string | number, string>>(
 ): { [K in keyof T]: string } {
   return Object.fromEntries(
     Object.entries(values).map(([key, value]) => [key, `${start}${value}`]),
-  ) as { [K in keyof T]: string };
+  ) as { [K in keyof T]: string }
 }
 
 export const helperClasses = {
@@ -119,22 +119,22 @@ export const helperClasses = {
     center: 'center',
     baseline: 'baseline',
   }),
-} as const;
+} as const
 
 export type Helpers = {
   readonly [K in keyof typeof helperClasses]?: K extends 'hidden'
     ? boolean | Exclude<keyof (typeof helperClasses)[K], 'true'>
-    : keyof (typeof helperClasses)[K];
-};
+    : keyof (typeof helperClasses)[K]
+}
 
 export function helperNames(prefix: Prefix, values: Helpers = {}): string {
-  const result: string[] = [];
+  const result: string[] = []
   for (const key of Object.keys(helperClasses) as (keyof Helpers)[]) {
-    const value = values[key];
-    if (value === undefined || value === false) continue;
-    const variants: Readonly<Record<string, string>> = helperClasses[key];
-    const name = variants[String(value)];
-    if (name) result.push(`${prefix}${name}`);
+    const value = values[key]
+    if (value === undefined || value === false) continue
+    const variants: Readonly<Record<string, string>> = helperClasses[key]
+    const name = variants[String(value)]
+    if (name) result.push(`${prefix}${name}`)
   }
-  return result.join(' ');
+  return result.join(' ')
 }

@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -18,8 +18,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-form-general',
   title: 'CSS Library/Form/General',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -1523,7 +1523,7 @@ function OfficialDocs() {
         {'\n\n\n\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -1679,7 +1679,7 @@ function Example001Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example002Demo() {
@@ -1701,7 +1701,7 @@ function Example002Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example003Demo() {
@@ -1733,7 +1733,7 @@ function Example003Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example004Demo() {
@@ -1747,7 +1747,7 @@ function Example004Demo() {
       </ui.Control>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example005Demo() {
@@ -1767,7 +1767,7 @@ function Example005Demo() {
       </ui.Control>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example006Demo() {
@@ -1781,7 +1781,7 @@ function Example006Demo() {
       </ui.Control>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example007Demo() {
@@ -1837,7 +1837,7 @@ function Example007Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example008Demo() {
@@ -1869,7 +1869,7 @@ function Example008Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example009Demo() {
@@ -1901,7 +1901,7 @@ function Example009Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example010Demo() {
@@ -1955,7 +1955,7 @@ function Example010Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example011Demo() {
@@ -2035,7 +2035,7 @@ function Example011Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example012Demo() {
@@ -2133,7 +2133,7 @@ function Example012Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example013Demo() {
@@ -2157,7 +2157,7 @@ function Example013Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example014Demo() {
@@ -2183,7 +2183,7 @@ function Example014Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example015Demo() {
@@ -2251,7 +2251,7 @@ function Example015Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example016Demo() {
@@ -2303,7 +2303,7 @@ function Example016Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example017Demo() {
@@ -2341,7 +2341,7 @@ function Example017Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example018Demo() {
@@ -2379,7 +2379,7 @@ function Example018Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example019Demo() {
@@ -2405,7 +2405,7 @@ function Example019Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example020Demo() {
@@ -2431,7 +2431,7 @@ function Example020Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example021Demo() {
@@ -2457,7 +2457,7 @@ function Example021Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example022Demo() {
@@ -2481,7 +2481,7 @@ function Example022Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example023Demo() {
@@ -2571,7 +2571,7 @@ function Example023Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example024Demo() {
@@ -2812,7 +2812,7 @@ function Example024Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example025Demo() {
@@ -2952,7 +2952,7 @@ function Example025Demo() {
       </ui.Field>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example026Demo() {
@@ -2988,7 +2988,7 @@ function Example026Demo() {
       </fieldset>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -3004,7 +3004,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'form field 01',
@@ -3019,7 +3019,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'form field 02',
@@ -3034,7 +3034,7 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example004 = {
   name: 'form control 01',
@@ -3049,7 +3049,7 @@ export const Example004 = {
     },
   },
   render: Example004Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example005 = {
   name: 'form control 02',
@@ -3064,7 +3064,7 @@ export const Example005 = {
     },
   },
   render: Example005Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example006 = {
   name: 'form control 03',
@@ -3079,7 +3079,7 @@ export const Example006 = {
     },
   },
   render: Example006Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example007 = {
   name: 'with icons 01',
@@ -3094,7 +3094,7 @@ export const Example007 = {
     },
   },
   render: Example007Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example008 = {
   name: 'with icons 02',
@@ -3109,7 +3109,7 @@ export const Example008 = {
     },
   },
   render: Example008Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example009 = {
   name: 'with icons 03',
@@ -3124,7 +3124,7 @@ export const Example009 = {
     },
   },
   render: Example009Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example010 = {
   name: 'with icons 04',
@@ -3139,7 +3139,7 @@ export const Example010 = {
     },
   },
   render: Example010Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example011 = {
   name: 'with icons 05',
@@ -3154,7 +3154,7 @@ export const Example011 = {
     },
   },
   render: Example011Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example012 = {
   name: 'with icons 06',
@@ -3169,7 +3169,7 @@ export const Example012 = {
     },
   },
   render: Example012Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example013 = {
   name: 'form addons 01',
@@ -3184,7 +3184,7 @@ export const Example013 = {
     },
   },
   render: Example013Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example014 = {
   name: 'form addons 02',
@@ -3199,7 +3199,7 @@ export const Example014 = {
     },
   },
   render: Example014Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example015 = {
   name: 'form addons 03',
@@ -3214,7 +3214,7 @@ export const Example015 = {
     },
   },
   render: Example015Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example016 = {
   name: 'form addons 04',
@@ -3229,7 +3229,7 @@ export const Example016 = {
     },
   },
   render: Example016Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example017 = {
   name: 'form addons 05',
@@ -3244,7 +3244,7 @@ export const Example017 = {
     },
   },
   render: Example017Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example018 = {
   name: 'form addons 06',
@@ -3259,7 +3259,7 @@ export const Example018 = {
     },
   },
   render: Example018Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example019 = {
   name: 'form group 01',
@@ -3274,7 +3274,7 @@ export const Example019 = {
     },
   },
   render: Example019Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example020 = {
   name: 'form group 02',
@@ -3289,7 +3289,7 @@ export const Example020 = {
     },
   },
   render: Example020Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example021 = {
   name: 'form group 03',
@@ -3304,7 +3304,7 @@ export const Example021 = {
     },
   },
   render: Example021Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example022 = {
   name: 'form group 04',
@@ -3319,7 +3319,7 @@ export const Example022 = {
     },
   },
   render: Example022Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example023 = {
   name: 'form group 05',
@@ -3334,7 +3334,7 @@ export const Example023 = {
     },
   },
   render: Example023Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example024 = {
   name: 'horizontal form 01',
@@ -3349,7 +3349,7 @@ export const Example024 = {
     },
   },
   render: Example024Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example025 = {
   name: 'horizontal form 02',
@@ -3364,7 +3364,7 @@ export const Example025 = {
     },
   },
   render: Example025Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example026 = {
   name: 'disabled form 01',
@@ -3379,4 +3379,4 @@ export const Example026 = {
     },
   },
   render: Example026Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

@@ -1,9 +1,9 @@
-import { load } from 'cheerio';
-import { basename } from 'node:path';
-import { isTag, type AnyNode, type Element } from 'domhandler';
-import { helperClasses } from '../../src/helpers';
-import type { OfficialNavigation } from './source';
-import { compileDocument, type OfficialDocuments } from './documents';
+import { load } from 'cheerio'
+import { basename } from 'node:path'
+import { isTag, type AnyNode, type Element } from 'domhandler'
+import { helperClasses } from '../../src/helpers'
+import type { OfficialNavigation } from './source'
+import { compileDocument, type OfficialDocuments } from './documents'
 import type {
   CompiledExample,
   CompiledPage,
@@ -11,20 +11,20 @@ import type {
   OfficialCorpus,
   OfficialExample,
   OfficialPage,
-} from './types';
+} from './types'
 
-type Props = Record<string, string>;
+type Props = Record<string, string>
 type Context = {
-  page: OfficialPage;
-  assets: ReadonlyMap<string, string>;
-  example: OfficialExample;
-  components: Set<string>;
-  states: string[];
-  overrides: Map<Element, Props>;
-  modal?: boolean;
-};
+  page: OfficialPage
+  assets: ReadonlyMap<string, string>
+  example: OfficialExample
+  components: Set<string>
+  states: string[]
+  overrides: Map<Element, Props>
+  modal?: boolean
+}
 
-type Component = { name: string; tag: string };
+type Component = { name: string; tag: string }
 const components: Record<string, Component> = Object.fromEntries(
   [
     ['Block', 'div', 'block'],
@@ -132,7 +132,7 @@ const components: Record<string, Component> = Object.fromEntries(
     ['NavbarDropdown', 'div', 'navbar-dropdown'],
     ['NavbarDivider', 'hr', 'navbar-divider'],
   ].map(([name, tag, token]) => [token!, { name: name!, tag: tag! }]),
-);
+)
 
 const alternativeTags: Record<string, readonly string[]> = {
   Block: ['p'],
@@ -165,7 +165,7 @@ const alternativeTags: Record<string, readonly string[]> = {
   Tab: ['a'],
   DropdownItem: ['a', 'button', 'div'],
   PanelBlock: ['a', 'label'],
-};
+}
 const ownedTokens = new Set([
   'dropdown-trigger',
   'modal-background',
@@ -174,14 +174,14 @@ const ownedTokens = new Set([
   'file-cta',
   'file-icon',
   'file-name',
-]);
-const helperByClass = new Map<string, [string, string | number | boolean]>();
+])
+const helperByClass = new Map<string, [string, string | number | boolean]>()
 for (const [key, values] of Object.entries(helperClasses)) {
   for (const [value, token] of Object.entries(values)) {
     helperByClass.set(token, [
       key,
       value === 'true' ? true : /^\d+$/.test(value) ? Number(value) : value,
-    ]);
+    ])
   }
 }
 const colors = new Set([
@@ -195,8 +195,8 @@ const colors = new Set([
   'success',
   'warning',
   'danger',
-]);
-const sizes = new Set(['small', 'normal', 'medium', 'large']);
+])
+const sizes = new Set(['small', 'normal', 'medium', 'large'])
 const colorComponents = new Set([
   'Button',
   'LinkButton',
@@ -215,7 +215,7 @@ const colorComponents = new Set([
   'Message',
   'Panel',
   'Navbar',
-]);
+])
 const sizeComponents = new Set([
   'Button',
   'LinkButton',
@@ -243,7 +243,7 @@ const sizeComponents = new Set([
   'Pagination',
   'TabsList',
   'ModalClose',
-]);
+])
 const booleans: Record<string, Record<string, string>> = {
   Button: {
     outlined: 'outlined',
@@ -345,7 +345,7 @@ const booleans: Record<string, Record<string, string>> = {
     hoverable: 'hoverable',
     active: 'defaultOpen',
   },
-};
+}
 
 export const officialClassNameEscapes = [
   'is-default',
@@ -380,8 +380,8 @@ export const officialClassNameEscapes = [
   'is-lower-roman',
   'is-upper-alpha',
   'is-upper-roman',
-] as const;
-const escapeClasses = new Set<string>(officialClassNameEscapes);
+] as const
+const escapeClasses = new Set<string>(officialClassNameEscapes)
 const attributeNames: Record<string, string> = {
   class: 'className',
   for: 'htmlFor',
@@ -423,7 +423,7 @@ const attributeNames: Record<string, string> = {
   usemap: 'useMap',
   contenteditable: 'contentEditable',
   spellcheck: 'spellCheck',
-};
+}
 const booleanAttributes = new Set([
   'disabled',
   'multiple',
@@ -441,7 +441,7 @@ const booleanAttributes = new Set([
   'muted',
   'open',
   'download',
-]);
+])
 const numberAttributes = new Set([
   'tabIndex',
   'maxLength',
@@ -453,7 +453,7 @@ const numberAttributes = new Set([
   'size',
   'start',
   'span',
-]);
+])
 const voidTags = new Set([
   'area',
   'base',
@@ -469,77 +469,77 @@ const voidTags = new Set([
   'source',
   'track',
   'wbr',
-]);
-const q = JSON.stringify;
+])
+const q = JSON.stringify
 const classes = (node: Element) =>
-  (node.attribs.class ?? '').split(/\s+/).filter(Boolean);
+  (node.attribs.class ?? '').split(/\s+/).filter(Boolean)
 const has = (node: AnyNode, token: string): boolean =>
-  isTag(node) && classes(node).includes(token);
-const elements = (node: Element) => node.children.filter(isTag);
+  isTag(node) && classes(node).includes(token)
+const elements = (node: Element) => node.children.filter(isTag)
 const textContent = (node: AnyNode): string =>
   node.type === 'text'
     ? node.data
     : 'children' in node
       ? node.children.map(textContent).join('')
-      : '';
+      : ''
 const object = (props: Props) =>
   `{ ${Object.entries(props)
     .map(([key, value]) => `${/^[$\w]+$/.test(key) ? key : q(key)}: ${value}`)
-    .join(', ')} }`;
+    .join(', ')} }`
 function fail(ctx: Context, node: Element, message: string): never {
   throw new Error(
     `${ctx.example.id}: <${node.name}${node.attribs.class ? ` class=${q(node.attribs.class)}` : ''}> ${message}`,
-  );
+  )
 }
 function jsx(tag: string, props: Props, children = ''): string {
   const attributes = Object.entries(props)
     .map(([name, value]) =>
       value === 'true' ? ` ${name}` : ` ${name}={${value}}`,
     )
-    .join('');
+    .join('')
   return !children
     ? `<${tag}${attributes} />`
-    : `<${tag}${attributes}>${children}</${tag}>`;
+    : `<${tag}${attributes}>${children}</${tag}>`
 }
 function component(ctx: Context, name: string, props: Props, children = '') {
   if (props.as && !alternativeTags[name]?.includes(JSON.parse(props.as))) {
     throw new Error(
       `${ctx.example.id}: ${name} has no supported as=${props.as} adapter`,
-    );
+    )
   }
-  ctx.components.add(name);
-  return jsx(`ui.${name}`, props, children);
+  ctx.components.add(name)
+  return jsx(`ui.${name}`, props, children)
 }
 function nativeProps(node: Element, ctx: Context, omit: string[] = []): Props {
-  const result: Props = {};
+  const result: Props = {}
   for (const [attribute, value] of Object.entries(node.attribs)) {
     if (
       attribute === 'class' ||
       attribute === 'data-source-example' ||
       omit.includes(attribute)
     )
-      continue;
+      continue
     if (attribute.startsWith('on'))
       fail(
         ctx,
         node,
         `inline event attribute ${attribute} needs an explicit React behavior adapter`,
-      );
-    let name = attributeNames[attribute] ?? attribute;
+      )
+    let name = attributeNames[attribute] ?? attribute
     if (name === 'style') {
-      const style: Props = {};
+      const style: Props = {}
       for (const declaration of value.split(';')) {
-        const index = declaration.indexOf(':');
-        if (index < 0) continue;
-        const key = declaration.slice(0, index).trim();
+        const index = declaration.indexOf(':')
+        if (index < 0) continue
+        const key = declaration.slice(0, index).trim()
         const cssValue = declaration
           .slice(index + 1)
           .trim()
           .replace(/var\(--bulma-/g, 'var(--rb-')
           .replace(/url\(['"]?([^'")]+)['"]?\)/g, (_, url: string) => {
-            const absolute = new URL(url, ctx.page.url).href;
-            return `url(${q(ctx.assets.get(absolute) ?? absolute)})`;
-          });
+            const absolute = new URL(url, ctx.page.url).href
+            return `url(${q(ctx.assets.get(absolute) ?? absolute)})`
+          })
         style[
           key.startsWith('--')
             ? key.replace(/^--bulma-/, '--rb-')
@@ -548,10 +548,10 @@ function nativeProps(node: Element, ctx: Context, omit: string[] = []): Props {
                 .replace(/-([a-z])/g, (_, letter: string) =>
                   letter.toUpperCase(),
                 )
-        ] = q(cssValue);
+        ] = q(cssValue)
       }
-      result.style = `{ ...${object(style)} }`;
-      continue;
+      result.style = `{ ...${object(style)} }`
+      continue
     }
     if (
       name === 'value' &&
@@ -561,16 +561,16 @@ function nativeProps(node: Element, ctx: Context, omit: string[] = []): Props {
         ['button', 'submit', 'reset'].includes(node.attribs.type ?? '')
       )
     )
-      name = 'defaultValue';
-    if (name === 'checked') name = 'defaultChecked';
-    if (name === 'selected' && node.name === 'option') continue;
+      name = 'defaultValue'
+    if (name === 'checked') name = 'defaultChecked'
+    if (name === 'selected' && node.name === 'option') continue
     if (
       (booleanAttributes.has(name) || name === 'defaultChecked') &&
       value === ''
     )
-      result[name] = 'true';
+      result[name] = 'true'
     else if (numberAttributes.has(name) && /^-?\d+$/.test(value))
-      result[name] = String(Number(value));
+      result[name] = String(Number(value))
     else if (
       (name === 'href' ||
         name === 'src' ||
@@ -579,15 +579,15 @@ function nativeProps(node: Element, ctx: Context, omit: string[] = []): Props {
       value &&
       !/^(?:#|data:|blob:|mailto:|tel:)/.test(value)
     ) {
-      const absolute = new URL(value, ctx.page.url).href;
+      const absolute = new URL(value, ctx.page.url).href
       result[name] = q(
         name === 'src' || name === 'poster'
           ? (ctx.assets.get(absolute) ?? absolute)
           : absolute,
-      );
-    } else result[name] = q(value);
+      )
+    } else result[name] = q(value)
   }
-  return result;
+  return result
 }
 function styleProps(
   node: Element,
@@ -595,40 +595,40 @@ function styleProps(
   base: string[],
   ctx: Context,
 ): Props {
-  const props: Props = {};
-  const styleName = name;
+  const props: Props = {}
+  const styleName = name
   if (
     name === 'ModalTrigger' ||
     name === 'DropdownTrigger' ||
     name === 'ModalClose'
   )
-    name = 'Button';
-  const helpers: Record<string, string | number | boolean> = {};
-  const remaining: string[] = [];
-  const tokens = classes(node);
-  const responsive: Record<string, Record<string, string | number>> = {};
+    name = 'Button'
+  const helpers: Record<string, string | number | boolean> = {}
+  const remaining: string[] = []
+  const tokens = classes(node)
+  const responsive: Record<string, Record<string, string | number>> = {}
   const addResponsive = (key: string, value: string, breakpoint = 'base') => {
-    (responsive[key] ??= {})[breakpoint] = /^\d+$/.test(value)
+    ;(responsive[key] ??= {})[breakpoint] = /^\d+$/.test(value)
       ? Number(value)
-      : value;
-  };
+      : value
+  }
   for (const token of tokens) {
-    if (base.includes(token)) continue;
+    if (base.includes(token)) continue
     if (
       !name &&
       tokens.some((value) => value.startsWith('bd-')) &&
       /^(?:is-|has-|are-)/.test(token) &&
       !helperByClass.has(token)
     ) {
-      remaining.push(token);
-      continue;
+      remaining.push(token)
+      continue
     }
-    const modifier = token.replace(/^is-/, '');
+    const modifier = token.replace(/^is-/, '')
     const boolean =
-      name && token.startsWith('is-') && booleans[name]?.[modifier];
+      name && token.startsWith('is-') && booleans[name]?.[modifier]
     if (boolean) {
-      props[boolean] = 'true';
-      continue;
+      props[boolean] = 'true'
+      continue
     }
     if (
       name &&
@@ -640,8 +640,8 @@ function styleProps(
               (value) => value.startsWith('is-') && colors.has(value.slice(3)),
             )))
     ) {
-      props.tone = q(modifier);
-      continue;
+      props.tone = q(modifier)
+      continue
     }
     if (
       name &&
@@ -649,8 +649,8 @@ function styleProps(
       token.startsWith('is-') &&
       colors.has(modifier)
     ) {
-      props.color = q(modifier);
-      continue;
+      props.color = q(modifier)
+      continue
     }
     if (
       name &&
@@ -665,75 +665,75 @@ function styleProps(
         (['Delete', 'Icon', 'Progress', 'Hero'].includes(name) &&
           modifier === 'normal')
       )
-        remaining.push(`rb-${token}`);
-      else props.size = q(modifier);
-      continue;
+        remaining.push(`rb-${token}`)
+      else props.size = q(modifier)
+      continue
     }
     if (
       name &&
       ['Button', 'LinkButton', 'InputButton'].includes(name) &&
       ['text', 'ghost'].includes(modifier)
     ) {
-      props.variant = q(modifier);
-      continue;
+      props.variant = q(modifier)
+      continue
     }
     if (
       name &&
       ['Button', 'Input', 'Textarea'].includes(name) &&
       ['hovered', 'focused', 'active'].includes(modifier)
     ) {
-      props.state = q(modifier);
-      continue;
+      props.state = q(modifier)
+      continue
     }
     if ((name === 'Title' || name === 'Subtitle') && /^is-[1-6]$/.test(token)) {
-      props.size = modifier;
-      continue;
+      props.size = modifier
+      continue
     }
     if (
       (name === 'Buttons' || name === 'Tags') &&
       /^are-(small|medium|large)$/.test(token)
     ) {
-      props.size = q(token.slice(4));
-      continue;
+      props.size = q(token.slice(4))
+      continue
     }
     if (
       (name === 'Buttons' || name === 'Tags') &&
       ['is-centered', 'is-right'].includes(token)
     ) {
-      props.align = q(token === 'is-centered' ? 'center' : 'right');
-      continue;
+      props.align = q(token === 'is-centered' ? 'center' : 'right')
+      continue
     }
     if ((name === 'Buttons' || name === 'Tags') && token === 'has-addons') {
-      props.addons = 'true';
-      continue;
+      props.addons = 'true'
+      continue
     }
     if (
       name &&
       ['File', 'Breadcrumb', 'Pagination', 'TabsList'].includes(name) &&
       ['is-centered', 'is-right'].includes(token)
     ) {
-      props.alignment = q(modifier);
-      continue;
+      props.alignment = q(modifier)
+      continue
     }
     if (
       name === 'Breadcrumb' &&
       /^has-(arrow|bullet|dot|succeeds)-separator$/.test(token)
     ) {
-      props.separator = q(token.slice(4, -10));
-      continue;
+      props.separator = q(token.slice(4, -10))
+      continue
     }
     if (name === 'Field') {
       if (token.startsWith('has-addons')) {
-        props.layout = q('addons');
-        if (token === 'has-addons-fullwidth') props.fullWidth = 'true';
-        else if (token !== 'has-addons') props.alignment = q(token.slice(11));
-        continue;
+        props.layout = q('addons')
+        if (token === 'has-addons-fullwidth') props.fullWidth = 'true'
+        else if (token !== 'has-addons') props.alignment = q(token.slice(11))
+        continue
       }
       if (token.startsWith('is-grouped')) {
-        props.layout = q('grouped');
-        if (token === 'is-grouped-multiline') props.multiline = 'true';
-        else if (token !== 'is-grouped') props.alignment = q(token.slice(11));
-        continue;
+        props.layout = q('grouped')
+        if (token === 'is-grouped-multiline') props.multiline = 'true'
+        else if (token !== 'is-grouped') props.alignment = q(token.slice(11))
+        continue
       }
     }
     if (name === 'Control' && /^has-icons-(left|right)$/.test(token)) {
@@ -741,21 +741,21 @@ function styleProps(
         tokens.includes('has-icons-left') && tokens.includes('has-icons-right')
           ? 'both'
           : token.slice(10),
-      );
-      continue;
+      )
+      continue
     }
     if (name === 'Textarea' && token === 'has-fixed-size') {
-      props.fixedSize = 'true';
-      continue;
+      props.fixedSize = 'true'
+      continue
     }
     if (name === 'Container') {
       if (/^is-(fluid|widescreen|fullhd)$/.test(token)) {
-        props.width = q(modifier);
-        continue;
+        props.width = q(modifier)
+        continue
       }
       if (/^is-max-(tablet|desktop|widescreen)$/.test(token)) {
-        props.maxWidth = q(token.slice(7));
-        continue;
+        props.maxWidth = q(token.slice(7))
+        continue
       }
     }
     if (
@@ -770,52 +770,52 @@ function styleProps(
           : token === 'is-fullheight'
             ? 'full'
             : 'full-with-navbar',
-      );
-      continue;
+      )
+      continue
     }
     if (name === 'Columns') {
       if (/^is-(mobile|tablet|desktop)$/.test(token)) {
-        props.displayFrom = q(modifier);
-        continue;
+        props.displayFrom = q(modifier)
+        continue
       }
       const match =
         /^is-([0-8])(?:-(mobile|tablet(?:-only)?|touch|desktop(?:-only)?|widescreen(?:-only)?|fullhd))?$/.exec(
           token,
-        );
+        )
       if (match) {
-        addResponsive('gap', match[1]!, match[2]);
-        continue;
+        addResponsive('gap', match[1]!, match[2])
+        continue
       }
     }
     if (name === 'Column') {
       const match =
         /^is-(offset-)?(\d+|three-quarters|two-thirds|half|one-third|one-quarter|one-fifth|two-fifths|three-fifths|four-fifths|full|narrow)(?:-(mobile|tablet|touch|desktop|widescreen|fullhd))?$/.exec(
           token,
-        );
+        )
       if (match) {
-        addResponsive(match[1] ? 'offset' : 'width', match[2]!, match[3]);
-        continue;
+        addResponsive(match[1] ? 'offset' : 'width', match[2]!, match[3])
+        continue
       }
     }
     if (name === 'FixedGrid') {
       if (token === 'has-auto-count') {
-        props.columns = q('auto');
-        continue;
+        props.columns = q('auto')
+        continue
       }
       const match =
         /^has-(\d+)-cols(?:-(mobile|tablet|desktop|widescreen|fullhd))?$/.exec(
           token,
-        );
+        )
       if (match) {
-        addResponsive('columns', match[1]!, match[2]);
-        continue;
+        addResponsive('columns', match[1]!, match[2])
+        continue
       }
     }
     if (name === 'Cell') {
       const match =
         /^is-(col|row)-(span|start|end|from-end)-(\d+)(?:-(mobile|tablet(?:-only)?|desktop(?:-only)?|widescreen(?:-only)?|fullhd))?$/.exec(
           token,
-        );
+        )
       if (match) {
         addResponsive(
           `${match[1] === 'col' ? 'column' : 'row'}${match[2]!
@@ -824,8 +824,8 @@ function styleProps(
             .join('')}`,
           match[3]!,
           match[4],
-        );
-        continue;
+        )
+        continue
       }
     }
     if (
@@ -834,58 +834,58 @@ function styleProps(
     ) {
       props.variant = q(
         tokens.includes('is-toggle-rounded') ? 'toggle-rounded' : modifier,
-      );
-      continue;
+      )
+      continue
     }
     if (name === 'Navbar' && token === 'has-shadow') {
-      props.shadow = 'true';
-      continue;
+      props.shadow = 'true'
+      continue
     }
     if (name === 'Navbar' && /^is-fixed-(top|bottom)$/.test(token)) {
-      props.fixed = q(token.slice(9));
-      continue;
+      props.fixed = q(token.slice(9))
+      continue
     }
     if (name === 'NavbarDropdown' && token === 'has-dropdown-up') {
-      props.up = 'true';
-      continue;
+      props.up = 'true'
+      continue
     }
-    if (name === 'NavbarDropdown' && token === 'has-dropdown') continue;
+    if (name === 'NavbarDropdown' && token === 'has-dropdown') continue
     if (name === 'NavbarBurger' || name === 'NavbarMenu') {
       if (token === 'is-active') {
-        if (name === 'NavbarBurger') props.defaultExpanded = 'true';
-        continue;
+        if (name === 'NavbarBurger') props.defaultExpanded = 'true'
+        continue
       }
     }
-    const helper = helperByClass.get(token);
+    const helper = helperByClass.get(token)
     if (helper) {
-      helpers[helper[0]] = helper[1];
-      continue;
+      helpers[helper[0]] = helper[1]
+      continue
     }
     if (
       !name &&
       tokens.some((t) => t.startsWith('bd-')) &&
       /^(?:is-|has-)/.test(token)
     ) {
-      remaining.push(token);
-      continue;
+      remaining.push(token)
+      continue
     }
     if (components[token] || ownedTokens.has(token))
-      fail(ctx, node, `unclaimed Bulma component class ${token}`);
+      fail(ctx, node, `unclaimed Bulma component class ${token}`)
     if (/^(?:is-|has-|are-)/.test(token)) {
       if (escapeClasses.has(token) || (!name && colors.has(modifier)))
-        remaining.push(`rb-${token}`);
+        remaining.push(`rb-${token}`)
       else
         fail(
           ctx,
           node,
           `unsupported modifier ${token}${name ? ` on ${name}` : ''}`,
-        );
-    } else remaining.push(token);
+        )
+    } else remaining.push(token)
   }
   for (const [key, value] of Object.entries(responsive))
     props[key] = q(
       Object.keys(value).length === 1 && 'base' in value ? value.base : value,
-    );
+    )
   if (
     styleName === 'ModalTrigger' ||
     styleName === 'DropdownTrigger' ||
@@ -893,27 +893,27 @@ function styleProps(
   ) {
     for (const [key, value] of Object.entries(props)) {
       if (key !== 'className' && key !== 'helpers') {
-        const text = JSON.parse(value);
+        const text = JSON.parse(value)
         const token =
           text === true
             ? Object.entries(booleans.Button!).find(
                 ([, prop]) => prop === key,
               )?.[0]
-            : text;
-        if (token) remaining.push(`rb-is-${token}`);
-        delete props[key];
+            : text
+        if (token) remaining.push(`rb-is-${token}`)
+        delete props[key]
       }
     }
   }
   if (Object.keys(helpers).length) {
-    if (name) props.helpers = q(helpers);
-    else props.className = `ui.helpers(${q(helpers)})`;
+    if (name) props.helpers = q(helpers)
+    else props.className = `ui.helpers(${q(helpers)})`
   }
   if (remaining.length)
     props.className = props.className
       ? `[${props.className}, ${q(remaining.join(' '))}].filter(Boolean).join(' ')`
-      : q(remaining.join(' '));
-  return props;
+      : q(remaining.join(' '))
+  return props
 }
 function propsFor(
   node: Element,
@@ -925,7 +925,7 @@ function propsFor(
     ...nativeProps(node, ctx),
     ...styleProps(node, name, base, ctx),
     ...ctx.overrides.get(node),
-  };
+  }
 }
 function requireChild(
   node: Element,
@@ -933,49 +933,49 @@ function requireChild(
   ctx: Context,
   description: string,
 ) {
-  const found = elements(node).filter(predicate);
+  const found = elements(node).filter(predicate)
   if (found.length !== 1)
     fail(
       ctx,
       node,
       `expected exactly one ${description}, found ${found.length}`,
-    );
-  return found[0]!;
+    )
+  return found[0]!
 }
 function children(node: Element, ctx: Context) {
-  return nodes(node.children, ctx);
+  return nodes(node.children, ctx)
 }
 function descendants(node: Element): Element[] {
-  return elements(node).flatMap((child) => [child, ...descendants(child)]);
+  return elements(node).flatMap((child) => [child, ...descendants(child)])
 }
 function state(ctx: Context, initial: string, stem: string) {
-  const name = `${stem}${ctx.states.length + 1}`;
-  const setter = `set${name[0]!.toUpperCase()}${name.slice(1)}`;
-  ctx.states.push(`const [${name}, ${setter}] = useState(${initial});`);
-  return [name, setter] as const;
+  const name = `${stem}${ctx.states.length + 1}`
+  const setter = `set${name[0]!.toUpperCase()}${name.slice(1)}`
+  ctx.states.push(`const [${name}, ${setter}] = useState(${initial});`)
+  return [name, setter] as const
 }
 function wrapProps(props: Props, key: string, childProps: Props) {
-  if (Object.keys(childProps).length) props[key] = object(childProps);
+  if (Object.keys(childProps).length) props[key] = object(childProps)
 }
 
 function emit(node: Element, ctx: Context): string {
-  const tokens = classes(node);
-  const base = tokens.find((token) => components[token]);
-  const definition = base ? components[base] : undefined;
-  let name = definition?.name;
+  const tokens = classes(node)
+  const base = tokens.find((token) => components[token])
+  const definition = base ? components[base] : undefined
+  let name = definition?.name
   if (node.name === 'li' && node.parent && has(node.parent, 'menu-list')) {
     const anchor = requireChild(
       node,
       (child) => child.name === 'a',
       ctx,
       'menu anchor',
-    );
-    const nested = elements(node).filter((child) => child !== anchor);
-    const props = propsFor(anchor, 'MenuItem', [], ctx);
-    wrapProps(props, 'wrapperProps', propsFor(node, undefined, [], ctx));
+    )
+    const nested = elements(node).filter((child) => child !== anchor)
+    const props = propsFor(anchor, 'MenuItem', [], ctx)
+    wrapProps(props, 'wrapperProps', propsFor(node, undefined, [], ctx))
     if (nested.length)
-      props.nested = `<>${nested.map((child) => emit(child, ctx)).join('')}</>`;
-    return component(ctx, 'MenuItem', props, children(anchor, ctx));
+      props.nested = `<>${nested.map((child) => emit(child, ctx)).join('')}</>`
+    return component(ctx, 'MenuItem', props, children(anchor, ctx))
   }
   if (
     node.name === 'li' &&
@@ -990,14 +990,14 @@ function emit(node: Element, ctx: Context): string {
         has(child, 'pagination-link') || has(child, 'pagination-ellipsis'),
       ctx,
       'pagination item',
-    );
+    )
     const token = has(child, 'pagination-link')
       ? 'pagination-link'
-      : 'pagination-ellipsis';
-    const itemName = components[token]!.name;
-    const props = propsFor(child, itemName, [token], ctx);
-    wrapProps(props, 'wrapperProps', propsFor(node, undefined, [], ctx));
-    return component(ctx, itemName, props, children(child, ctx));
+      : 'pagination-ellipsis'
+    const itemName = components[token]!.name
+    const props = propsFor(child, itemName, [token], ctx)
+    wrapProps(props, 'wrapperProps', propsFor(node, undefined, [], ctx))
+    return component(ctx, itemName, props, children(child, ctx))
   }
   if (name === 'Image') {
     const media = requireChild(
@@ -1005,7 +1005,7 @@ function emit(node: Element, ctx: Context): string {
       (child) => ['img', 'iframe', 'video'].includes(child.name),
       ctx,
       'image media',
-    );
+    )
     const wrapper = propsFor(
       node,
       'Image',
@@ -1016,23 +1016,23 @@ function emit(node: Element, ctx: Context): string {
         ),
       ],
       ctx,
-    );
-    const props: Props = {};
+    )
+    const props: Props = {}
     for (const token of tokens) {
-      const size = /^is-(\d+)x\d+$/.exec(token);
-      if (size) props.size = size[1]!;
+      const size = /^is-(\d+)x\d+$/.exec(token)
+      if (size) props.size = size[1]!
       else if (/^is-(\d+by\d+|square)$/.test(token))
-        props.ratio = q(token.slice(3));
-      else if (token === 'is-fullwidth') props.fullWidth = 'true';
+        props.ratio = q(token.slice(3))
+      else if (token === 'is-fullwidth') props.fullWidth = 'true'
     }
-    if (node.name !== 'figure') props.as = q(node.name);
-    wrapProps(props, 'wrapperProps', wrapper);
+    if (node.name !== 'figure') props.as = q(node.name)
+    wrapProps(props, 'wrapperProps', wrapper)
     if (media.name !== 'img')
-      return component(ctx, 'Image', props, emit(media, ctx));
-    Object.assign(props, propsFor(media, undefined, ['is-rounded'], ctx));
-    props.alt ??= q('');
-    if (has(media, 'is-rounded')) props.rounded = 'true';
-    return component(ctx, 'Image', props);
+      return component(ctx, 'Image', props, emit(media, ctx))
+    Object.assign(props, propsFor(media, undefined, ['is-rounded'], ctx))
+    props.alt ??= q('')
+    if (has(media, 'is-rounded')) props.rounded = 'true'
+    return component(ctx, 'Image', props)
   }
   if (name === 'Select') {
     const select = requireChild(
@@ -1040,32 +1040,32 @@ function emit(node: Element, ctx: Context): string {
       (child) => child.name === 'select',
       ctx,
       'select',
-    );
+    )
     const props = {
       ...nativeProps(select, ctx, ['size']),
       ...styleProps(node, 'Select', ['select'], ctx),
-    };
-    if (select.attribs.size)
-      props.htmlSize = String(Number(select.attribs.size));
-    const wrapper = nativeProps(node, ctx);
-    if (props.className) {
-      wrapper.className = props.className;
-      delete props.className;
     }
-    if (node.name !== 'div') props.as = q(node.name);
-    wrapProps(props, 'wrapperProps', wrapper);
-    const selectStyle = styleProps(select, undefined, [], ctx);
-    if (selectStyle.className) props.className = selectStyle.className;
+    if (select.attribs.size)
+      props.htmlSize = String(Number(select.attribs.size))
+    const wrapper = nativeProps(node, ctx)
+    if (props.className) {
+      wrapper.className = props.className
+      delete props.className
+    }
+    if (node.name !== 'div') props.as = q(node.name)
+    wrapProps(props, 'wrapperProps', wrapper)
+    const selectStyle = styleProps(select, undefined, [], ctx)
+    if (selectStyle.className) props.className = selectStyle.className
     const selected = descendants(select)
       .filter(
         (option) => option.name === 'option' && 'selected' in option.attribs,
       )
-      .map((option) => option.attribs.value ?? textContent(option));
+      .map((option) => option.attribs.value ?? textContent(option))
     if (selected.length)
       props.defaultValue = q(
         'multiple' in select.attribs ? selected : selected[0],
-      );
-    return component(ctx, 'Select', props, children(select, ctx));
+      )
+    return component(ctx, 'Select', props, children(select, ctx))
   }
   if (name === 'Checkbox' || name === 'Radio') {
     const input = requireChild(
@@ -1073,57 +1073,57 @@ function emit(node: Element, ctx: Context): string {
       (child) => child.name === 'input',
       ctx,
       `${name.toLowerCase()} input`,
-    );
+    )
     const props = {
       ...nativeProps(input, ctx, ['type']),
       ...styleProps(node, name, [base!], ctx),
-    };
-    const wrapper = nativeProps(node, ctx);
+    }
+    const wrapper = nativeProps(node, ctx)
     if (props.className) {
-      wrapper.className = props.className;
-      delete props.className;
+      wrapper.className = props.className
+      delete props.className
     }
     if ('disabled' in wrapper) {
-      wrapper['aria-disabled'] = wrapper.disabled!;
-      delete wrapper.disabled;
+      wrapper['aria-disabled'] = wrapper.disabled!
+      delete wrapper.disabled
     }
-    wrapProps(props, 'wrapperProps', wrapper);
-    Object.assign(props, styleProps(input, undefined, [], ctx));
+    wrapProps(props, 'wrapperProps', wrapper)
+    Object.assign(props, styleProps(input, undefined, [], ctx))
     return component(
       ctx,
       name,
       props,
       nodes(node.children.slice(node.children.indexOf(input) + 1), ctx),
-    );
+    )
   }
   if (name === 'File') {
-    const all = descendants(node);
-    const input = all.find((child) => has(child, 'file-input'));
+    const all = descendants(node)
+    const input = all.find((child) => has(child, 'file-input'))
     const label = all.find(
       (child) => has(child, 'file-label') && child.name === 'span',
-    );
+    )
     if (!input || !label)
-      fail(ctx, node, 'file requires its input and visible label');
+      fail(ctx, node, 'file requires its input and visible label')
     const props = {
       ...nativeProps(input, ctx, ['type']),
       ...styleProps(node, 'File', ['file', 'has-name', 'is-empty'], ctx),
-    };
-    const wrapper = nativeProps(node, ctx);
+    }
+    const wrapper = nativeProps(node, ctx)
     if (props.className) {
-      wrapper.className = props.className;
-      delete props.className;
+      wrapper.className = props.className
+      delete props.className
     }
-    wrapProps(props, 'wrapperProps', wrapper);
-    const icon = all.find((child) => has(child, 'file-icon'));
-    if (icon) props.icon = `<>${children(icon, ctx)}</>`;
-    const filename = all.find((child) => has(child, 'file-name'));
+    wrapProps(props, 'wrapperProps', wrapper)
+    const icon = all.find((child) => has(child, 'file-icon'))
+    if (icon) props.icon = `<>${children(icon, ctx)}</>`
+    const filename = all.find((child) => has(child, 'file-name'))
     if (filename) {
-      const initial = q(textContent(filename));
-      const [value, setter] = state(ctx, initial, 'filename');
-      props.filename = value;
-      props.onChange = `(event) => ${setter}(event.currentTarget.files?.[0]?.name ?? ${initial})`;
+      const initial = q(textContent(filename))
+      const [value, setter] = state(ctx, initial, 'filename')
+      props.filename = value
+      props.onChange = `(event) => ${setter}(event.currentTarget.files?.[0]?.name ?? ${initial})`
     }
-    return component(ctx, 'File', props, children(label, ctx));
+    return component(ctx, 'File', props, children(label, ctx))
   }
   if (name === 'Breadcrumb') {
     const list = requireChild(
@@ -1131,29 +1131,29 @@ function emit(node: Element, ctx: Context): string {
       (child) => child.name === 'ul',
       ctx,
       'breadcrumb list',
-    );
-    const props = propsFor(node, name, [base!], ctx);
-    wrapProps(props, 'listProps', propsFor(list, undefined, [], ctx));
+    )
+    const props = propsFor(node, name, [base!], ctx)
+    wrapProps(props, 'listProps', propsFor(list, undefined, [], ctx))
     const items = list.children
       .map((child) => {
-        if (!isTag(child)) return nodes([child], ctx);
+        if (!isTag(child)) return nodes([child], ctx)
         if (child.name !== 'li')
-          fail(ctx, child, 'breadcrumb list requires li children');
+          fail(ctx, child, 'breadcrumb list requires li children')
         const anchor = requireChild(
           child,
           (item) => item.name === 'a',
           ctx,
           'breadcrumb anchor',
-        );
+        )
         const item = {
           ...propsFor(anchor, undefined, [], ctx),
           ...styleProps(child, 'BreadcrumbItem', [], ctx),
-        };
-        wrapProps(item, 'wrapperProps', nativeProps(child, ctx));
-        return component(ctx, 'BreadcrumbItem', item, children(anchor, ctx));
+        }
+        wrapProps(item, 'wrapperProps', nativeProps(child, ctx))
+        return component(ctx, 'BreadcrumbItem', item, children(anchor, ctx))
       })
-      .join('');
-    return component(ctx, name, props, items);
+      .join('')
+    return component(ctx, name, props, items)
   }
   if (name === 'FixedGrid') {
     const grid = requireChild(
@@ -1161,29 +1161,29 @@ function emit(node: Element, ctx: Context): string {
       (child) => has(child, 'grid'),
       ctx,
       'inner grid',
-    );
-    const props = propsFor(node, name, [base!], ctx);
-    wrapProps(props, 'gridProps', propsFor(grid, 'SmartGrid', ['grid'], ctx));
-    return component(ctx, name, props, children(grid, ctx));
+    )
+    const props = propsFor(node, name, [base!], ctx)
+    wrapProps(props, 'gridProps', propsFor(grid, 'SmartGrid', ['grid'], ctx))
+    return component(ctx, name, props, children(grid, ctx))
   }
   if (name === 'TabsList') {
-    const container = elements(node).find((child) => has(child, 'container'));
+    const container = elements(node).find((child) => has(child, 'container'))
     const list = requireChild(
       container ?? node,
       (child) => child.name === 'ul',
       ctx,
       'tab list',
-    );
-    const items = elements(list);
-    const props = propsFor(node, name, ['tabs'], ctx);
-    if (node.name !== 'div') props.as = q(node.name);
-    wrapProps(props, 'listProps', propsFor(list, undefined, [], ctx));
+    )
+    const items = elements(list)
+    const props = propsFor(node, name, ['tabs'], ctx)
+    if (node.name !== 'div') props.as = q(node.name)
+    wrapProps(props, 'listProps', propsFor(list, undefined, [], ctx))
     if (container)
       props.listWrapper = component(
         ctx,
         'Container',
         propsFor(container, 'Container', ['container'], ctx),
-      );
+      )
     const tabs = items
       .map((item, index) => {
         const anchor = requireChild(
@@ -1191,25 +1191,25 @@ function emit(node: Element, ctx: Context): string {
           (child) => child.name === 'a' || child.name === 'button',
           ctx,
           'tab control',
-        );
-        const tabProps = propsFor(anchor, undefined, [], ctx);
-        tabProps.value = q(`tab-${index + 1}`);
-        if (anchor.name === 'a') tabProps.as = q('a');
+        )
+        const tabProps = propsFor(anchor, undefined, [], ctx)
+        tabProps.value = q(`tab-${index + 1}`)
+        if (anchor.name === 'a') tabProps.as = q('a')
         wrapProps(
           tabProps,
           'wrapperProps',
           propsFor(item, undefined, ['is-active'], ctx),
-        );
-        return component(ctx, 'Tab', tabProps, children(anchor, ctx));
+        )
+        return component(ctx, 'Tab', tabProps, children(anchor, ctx))
       })
-      .join('');
-    const active = items.findIndex((item) => has(item, 'is-active'));
+      .join('')
+    const active = items.findIndex((item) => has(item, 'is-active'))
     return component(
       ctx,
       'Tabs',
       { defaultValue: active < 0 ? 'null' : q(`tab-${active + 1}`) },
       component(ctx, name, props, tabs),
-    );
+    )
   }
   if (has(node, 'dropdown-trigger')) {
     const trigger = requireChild(
@@ -1217,14 +1217,14 @@ function emit(node: Element, ctx: Context): string {
       (child) => child.name === 'button',
       ctx,
       'dropdown trigger button',
-    );
-    const props = propsFor(trigger, 'DropdownTrigger', ['button'], ctx);
+    )
+    const props = propsFor(trigger, 'DropdownTrigger', ['button'], ctx)
     wrapProps(
       props,
       'wrapperProps',
       propsFor(node, undefined, ['dropdown-trigger'], ctx),
-    );
-    return component(ctx, 'DropdownTrigger', props, children(trigger, ctx));
+    )
+    return component(ctx, 'DropdownTrigger', props, children(trigger, ctx))
   }
   if (name === 'NavbarItem' && tokens.includes('has-dropdown')) {
     const trigger = requireChild(
@@ -1232,32 +1232,32 @@ function emit(node: Element, ctx: Context): string {
       (child) => has(child, 'navbar-link'),
       ctx,
       'navbar dropdown link',
-    );
+    )
     const menu = requireChild(
       node,
       (child) => has(child, 'navbar-dropdown'),
       ctx,
       'navbar dropdown menu',
-    );
+    )
     const props = {
       ...propsFor(node, 'NavbarDropdown', ['navbar-item', 'has-dropdown'], ctx),
       ...styleProps(menu, 'NavbarDropdown', ['navbar-dropdown'], ctx),
-    };
-    if (node.name !== 'details') props.as = q(node.name);
-    props.trigger = `<>${children(trigger, ctx)}</>`;
-    if (has(trigger, 'is-arrowless')) props.arrowless = 'true';
+    }
+    if (node.name !== 'details') props.as = q(node.name)
+    props.trigger = `<>${children(trigger, ctx)}</>`
+    if (has(trigger, 'is-arrowless')) props.arrowless = 'true'
     wrapProps(
       props,
       'triggerProps',
       propsFor(trigger, undefined, ['navbar-link', 'is-arrowless'], ctx),
-    );
-    wrapProps(props, 'menuProps', nativeProps(menu, ctx));
-    return component(ctx, 'NavbarDropdown', props, children(menu, ctx));
+    )
+    wrapProps(props, 'menuProps', nativeProps(menu, ctx))
+    return component(ctx, 'NavbarDropdown', props, children(menu, ctx))
   }
-  if (name === 'Modal') return modal(node, undefined, ctx);
+  if (name === 'Modal') return modal(node, undefined, ctx)
   if (name === 'Navbar') {
-    const props = propsFor(node, name, [base!], ctx);
-    if (node.name !== 'nav') props.as = q(node.name);
+    const props = propsFor(node, name, [base!], ctx)
+    if (node.name !== 'nav') props.as = q(node.name)
     if (
       descendants(node).some(
         (child) =>
@@ -1265,48 +1265,47 @@ function emit(node: Element, ctx: Context): string {
           has(child, 'is-active'),
       )
     )
-      props.defaultExpanded = 'true';
-    return component(ctx, name, props, children(node, ctx));
+      props.defaultExpanded = 'true'
+    return component(ctx, name, props, children(node, ctx))
   }
-  if (name === 'Button' && node.name === 'a') name = 'LinkButton';
+  if (name === 'Button' && node.name === 'a') name = 'LinkButton'
 
-  if (name === 'Tag' && has(node, 'is-delete')) name = 'TagDelete';
-  else if (name === 'Tag' && node.name === 'a') name = 'LinkTag';
-  let modalFooterButton = false;
+  if (name === 'Tag' && has(node, 'is-delete')) name = 'TagDelete'
+  else if (name === 'Tag' && node.name === 'a') name = 'LinkTag'
+  let modalFooterButton = false
   if (ctx.modal && name === 'Button') {
-    let parent = node.parent;
+    let parent = node.parent
     while (parent && isTag(parent)) {
       if (has(parent, 'modal-card-foot')) {
-        modalFooterButton = true;
-        break;
+        modalFooterButton = true
+        break
       }
-      parent = parent.parent;
+      parent = parent.parent
     }
   }
-  if (ctx.modal && (name === 'Delete' || modalFooterButton))
-    name = 'ModalClose';
+  if (ctx.modal && (name === 'Delete' || modalFooterButton)) name = 'ModalClose'
   if (
     !name &&
     node.name === 'a' &&
     node.parent &&
     has(node.parent, 'panel-tabs')
   )
-    name = 'PanelTab';
+    name = 'PanelTab'
   const props = propsFor(
     node,
     name,
     base ? [base, ...(name === 'TagDelete' ? ['is-delete'] : [])] : [],
     ctx,
-  );
-  if (name === 'ModalClose' && base === 'delete') props.variant = q('delete');
-  if (modalFooterButton) props.variant = q('button');
-  if (name === 'TagDelete') props.as = q(node.name);
-  if (name === 'PanelBlock' && node.name !== 'div') props.as = q(node.name);
-  else if (name === 'NavbarItem' && node.name !== 'a') props.as = q(node.name);
-  else if (name === 'DropdownItem') props.as = q(node.name);
+  )
+  if (name === 'ModalClose' && base === 'delete') props.variant = q('delete')
+  if (modalFooterButton) props.variant = q('button')
+  if (name === 'TagDelete') props.as = q(node.name)
+  if (name === 'PanelBlock' && node.name !== 'div') props.as = q(node.name)
+  else if (name === 'NavbarItem' && node.name !== 'a') props.as = q(node.name)
+  else if (name === 'DropdownItem') props.as = q(node.name)
   else if (name === 'Title' || name === 'Subtitle') {
-    if (/^h[1-6]$/.test(node.name)) props.level = node.name.slice(1);
-    else props.as = q(node.name);
+    if (/^h[1-6]$/.test(node.name)) props.level = node.name.slice(1)
+    else props.as = q(node.name)
   } else if (
     name &&
     definition &&
@@ -1321,34 +1320,34 @@ function emit(node: Element, ctx: Context): string {
       'NavbarItem',
     ].includes(name)
   )
-    props.as = q(node.name);
+    props.as = q(node.name)
   if (name === 'Input' && 'size' in node.attribs) {
-    props.htmlSize = String(Number(node.attribs.size));
+    props.htmlSize = String(Number(node.attribs.size))
     if (!tokens.some((token) => /^is-(small|normal|medium|large)$/.test(token)))
-      delete props.size;
+      delete props.size
   }
-  if (node.name === 'textarea') props.defaultValue = q(textContent(node));
+  if (node.name === 'textarea') props.defaultValue = q(textContent(node))
   if (name === 'SkeletonLines') {
-    props.lines = String(elements(node).length);
-    return component(ctx, name, props);
+    props.lines = String(elements(node).length)
+    return component(ctx, name, props)
   }
-  let visibleState: string | undefined;
+  let visibleState: string | undefined
   if (name === 'Notification' || name === 'Message') {
-    const close = descendants(node).find((child) => has(child, 'delete'));
+    const close = descendants(node).find((child) => has(child, 'delete'))
     if (close) {
-      const [visible, setter] = state(ctx, 'true', 'visible');
-      ctx.overrides.set(close, { onClick: `() => ${setter}(false)` });
-      visibleState = visible;
+      const [visible, setter] = state(ctx, 'true', 'visible')
+      ctx.overrides.set(close, { onClick: `() => ${setter}(false)` })
+      visibleState = visible
     }
   }
   const body =
     node.name === 'textarea' || voidTags.has(node.name)
       ? ''
-      : children(node, ctx);
+      : children(node, ctx)
   if (visibleState && name)
-    return `{${visibleState} && (${component(ctx, name, props, body)})}`;
-  if (name) return component(ctx, name, props, body);
-  return jsx(node.name, props, body);
+    return `{${visibleState} && (${component(ctx, name, props, body)})}`
+  if (name) return component(ctx, name, props, body)
+  return jsx(node.name, props, body)
 }
 
 function modal(node: Element, trigger: Element | undefined, ctx: Context) {
@@ -1357,34 +1356,34 @@ function modal(node: Element, trigger: Element | undefined, ctx: Context) {
     (child) => has(child, 'modal-content') || has(child, 'modal-card'),
     ctx,
     'modal content or card',
-  );
-  const inner = { ...ctx, modal: true };
-  const surfaceName = has(surface, 'modal-card') ? 'ModalCard' : 'ModalContent';
+  )
+  const inner = { ...ctx, modal: true }
+  const surfaceName = has(surface, 'modal-card') ? 'ModalCard' : 'ModalContent'
   const props = propsFor(
     surface,
     surfaceName,
     [has(surface, 'modal-card') ? 'modal-card' : 'modal-content'],
     ctx,
-  );
+  )
   wrapProps(
     props,
     'wrapperProps',
     propsFor(node, undefined, ['modal', 'is-active'], ctx),
-  );
+  )
   const backdrop = elements(node).find((child) =>
     has(child, 'modal-background'),
-  );
+  )
   if (backdrop)
     wrapProps(
       props,
       'backdropProps',
       propsFor(backdrop, undefined, ['modal-background'], ctx),
-    );
+    )
   const outside = elements(node).filter(
     (child) => child !== surface && child !== backdrop,
-  );
+  )
   if (outside.length)
-    props.close = `<>${outside.map((child) => emit(child, inner)).join('')}</>`;
+    props.close = `<>${outside.map((child) => emit(child, inner)).join('')}</>`
   const triggerProps = trigger
     ? propsFor(
         trigger,
@@ -1392,9 +1391,9 @@ function modal(node: Element, trigger: Element | undefined, ctx: Context) {
         ['button', 'modal-button', 'js-modal-trigger'],
         ctx,
       )
-    : {};
-  if (trigger && trigger.name !== 'button') triggerProps.as = q(trigger.name);
-  if (trigger && !has(trigger, 'button')) triggerProps.unstyled = 'true';
+    : {}
+  if (trigger && trigger.name !== 'button') triggerProps.as = q(trigger.name)
+  if (trigger && !has(trigger, 'button')) triggerProps.unstyled = 'true'
   return component(
     ctx,
     'Modal',
@@ -1402,13 +1401,13 @@ function modal(node: Element, trigger: Element | undefined, ctx: Context) {
     (trigger
       ? component(ctx, 'ModalTrigger', triggerProps, children(trigger, ctx))
       : '') + component(ctx, surfaceName, props, children(surface, inner)),
-  );
+  )
 }
 function nodes(input: AnyNode[], ctx: Context): string {
-  const consumed = new Set<AnyNode>();
+  const consumed = new Set<AnyNode>()
   return input
     .map((node) => {
-      if (consumed.has(node)) return '';
+      if (consumed.has(node)) return ''
       if (node.type === 'text') {
         if (
           !node.data.trim() &&
@@ -1418,28 +1417,28 @@ function nodes(input: AnyNode[], ctx: Context): string {
             node.parent.name,
           )
         )
-          return '';
-        return `{${q(node.data)}}`;
+          return ''
+        return `{${q(node.data)}}`
       }
-      if (node.type === 'comment') return '';
-      if (!isTag(node)) return '';
+      if (node.type === 'comment') return ''
+      if (!isTag(node)) return ''
       if (
         node.name === 'script' &&
         ctx.page.id === 'form-file' &&
         ctx.components.has('File')
       ) {
         const source =
-          'const fileInput = document.querySelector("#file-js-example input[type=file]"); fileInput.onchange = () => { if (fileInput.files.length > 0) { const fileName = document.querySelector("#file-js-example .file-name"); fileName.textContent = fileInput.files[0].name; } };';
+          'const fileInput = document.querySelector("#file-js-example input[type=file]"); fileInput.onchange = () => { if (fileInput.files.length > 0) { const fileName = document.querySelector("#file-js-example .file-name"); fileName.textContent = fileInput.files[0].name; } };'
         if (textContent(node).replace(/\s/g, '') === source.replace(/\s/g, ''))
-          return '';
+          return ''
       }
       if (node.name === 'script' || node.name === 'style')
         fail(
           ctx,
           node,
           'inline script/style requires a source documentation adapter',
-        );
-      const target = node.attribs['data-target'];
+        )
+      const target = node.attribs['data-target']
       if (
         target &&
         (has(node, 'modal-button') || has(node, 'js-modal-trigger'))
@@ -1449,15 +1448,15 @@ function nodes(input: AnyNode[], ctx: Context): string {
             isTag(candidate) &&
             candidate.attribs.id === target &&
             has(candidate, 'modal'),
-        );
+        )
         if (dialog && isTag(dialog)) {
-          consumed.add(dialog);
-          return modal(dialog, node, ctx);
+          consumed.add(dialog)
+          return modal(dialog, node, ctx)
         }
       }
-      return emit(node, ctx);
+      return emit(node, ctx)
     })
-    .join('');
+    .join('')
 }
 
 export function compilePage(
@@ -1471,10 +1470,10 @@ export function compilePage(
       asset.url,
       `/official-assets/${basename(asset.file)}`,
     ]),
-  );
-  const functions: string[] = [];
-  const stories: string[] = [];
-  let usesState = false;
+  )
+  const functions: string[] = []
+  const stories: string[] = []
+  let usesState = false
   const compileDemo = (example: OfficialExample, name: string) => {
     const ctx: Context = {
       page,
@@ -1483,28 +1482,28 @@ export function compilePage(
       components: new Set(),
       states: [],
       overrides: new Map(),
-    };
-    const $ = load(example.html, {}, false);
-    const body = nodes($.root().contents().toArray(), ctx);
-    if (ctx.states.length) usesState = true;
-    const fn = `function ${name}() {\n${ctx.states.map((line) => `  ${line}\n`).join('')}  return (<>${body}</>);\n}`;
-    return { fn, ctx };
-  };
+    }
+    const $ = load(example.html, {}, false)
+    const body = nodes($.root().contents().toArray(), ctx)
+    if (ctx.states.length) usesState = true
+    const fn = `function ${name}() {\n${ctx.states.map((line) => `  ${line}\n`).join('')}  return (<>${body}</>);\n}`
+    return { fn, ctx }
+  }
   const examples: CompiledExample[] = page.examples.map((example, index) => {
-    const exportName = `Example${String(index + 1).padStart(3, '0')}`;
-    const { fn, ctx } = compileDemo(example, `${exportName}Demo`);
-    const source = `${ctx.states.length ? "import { useState } from 'react';\n" : ''}import { createBulma } from '@seagreenio/react-bulma';\n\nconst ui = createBulma();\n\n${fn}\n`;
-    functions.push(fn);
+    const exportName = `Example${String(index + 1).padStart(3, '0')}`
+    const { fn, ctx } = compileDemo(example, `${exportName}Demo`)
+    const source = `${ctx.states.length ? "import { useState } from 'react';\n" : ''}import { createBulma } from '@seagreenio/react-bulma';\n\nconst ui = createBulma();\n\n${fn}\n`
+    functions.push(fn)
     stories.push(
       `export const ${exportName} = {\n  name: ${q(example.name)},\n  parameters: { official: { id: ${q(example.id)} }, docs: { source: { code: ${q(source)}, language: 'tsx', type: 'code' } } },\n  render: ${exportName}Demo,\n} satisfies StoryObj;`,
-    );
+    )
     return {
       id: example.id,
       exportName,
       source,
       components: [...ctx.components].sort(),
-    };
-  });
+    }
+  })
   const docs =
     document === undefined
       ? ''
@@ -1526,12 +1525,12 @@ export function compilePage(
               },
               name,
             ).fn,
-        );
+        )
   return {
     id: page.id,
     source: `import type { Meta, StoryObj } from '@storybook/react-vite';\n${docs ? "import { Canvas } from '@storybook/addon-docs/blocks';\nimport { OfficialDocument } from '../document';\n" : ''}${usesState ? "import { useState } from 'react';\n" : ''}import { createBulma } from '../../../src';\nimport { officialPage } from '../support';\n\nconst ui = createBulma();\n\nconst meta = { ...officialPage(${q({ id: page.id, title: page.title, url: page.url })}${docs ? ', OfficialDocs' : ''}), tags: ['autodocs'], id: ${q('official-' + page.id)}, title: ${q(title)} } satisfies Meta;\nexport default meta;\n\n${docs}\n\n${functions.join('\n\n')}\n\n${stories.join('\n\n')}\n`,
     examples,
-  };
+  }
 }
 
 export function compileCorpus(
@@ -1540,9 +1539,9 @@ export function compileCorpus(
   navigation?: OfficialNavigation,
 ): CompiledPage[] {
   return corpus.pages.map((page) => {
-    const document = documents.get(page.id);
+    const document = documents.get(page.id)
     if (document === undefined)
-      throw new Error(`Missing official document: ${page.id}`);
+      throw new Error(`Missing official document: ${page.id}`)
     return compilePage(
       page,
       corpus.assets,
@@ -1550,6 +1549,6 @@ export function compileCorpus(
         .find((entry) => entry.page === page.id)
         ?.path.join('/') ?? page.title,
       document,
-    );
-  });
+    )
+  })
 }

@@ -1,21 +1,21 @@
-import { useState, type CSSProperties } from 'react';
-import { createBulma } from '../../src';
+import { useState, type CSSProperties } from 'react'
+import { createBulma } from '../../src'
 
-const ui = createBulma();
-const custom = createBulma({ prefix: 'acme-' });
+const ui = createBulma()
+const custom = createBulma({ prefix: 'acme-' })
 
 export function InteractiveFixture() {
-  const [selection, setSelection] = useState('None');
-  const [mounted, setMounted] = useState(false);
-  const [protectedOpen, setProtectedOpen] = useState(false);
-  const [initialMenu, setInitialMenu] = useState(false);
+  const [selection, setSelection] = useState('None')
+  const [mounted, setMounted] = useState(false)
+  const [protectedOpen, setProtectedOpen] = useState(false)
+  const [initialMenu, setInitialMenu] = useState(false)
   return (
     <section aria-label="Interactive components">
       <ui.BulmaRoot helpers={{ p: 4 }}>
         <ui.Dropdown>
           <ui.DropdownTrigger
             ref={(element) => {
-              element?.setAttribute('data-ref-target', 'dropdown-trigger');
+              element?.setAttribute('data-ref-target', 'dropdown-trigger')
             }}
           >
             Choose action
@@ -87,7 +87,7 @@ export function InteractiveFixture() {
           <ui.Modal
             defaultOpen
             onOpenChange={(open) => {
-              if (!open) setMounted(false);
+              if (!open) setMounted(false)
             }}
           >
             <ui.ModalContent aria-label="Initially open dialog">
@@ -124,7 +124,7 @@ export function InteractiveFixture() {
             right
             data-testid="interactive-custom-dropdown"
             onOpenChange={(open) => {
-              if (!open) setInitialMenu(false);
+              if (!open) setInitialMenu(false)
             }}
           >
             <custom.DropdownTrigger>Initial actions</custom.DropdownTrigger>
@@ -141,7 +141,7 @@ export function InteractiveFixture() {
           <custom.ModalTrigger>Open themed dialog</custom.ModalTrigger>
           <custom.ModalCard
             ref={(element) => {
-              element?.setAttribute('data-ref-target', 'modal-card');
+              element?.setAttribute('data-ref-target', 'modal-card')
             }}
           >
             <custom.ModalCardHead>
@@ -178,5 +178,5 @@ export function InteractiveFixture() {
         </custom.Modal>
       </custom.BulmaRoot>
     </section>
-  );
+  )
 }

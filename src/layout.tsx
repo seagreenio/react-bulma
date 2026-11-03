@@ -1,5 +1,5 @@
-import { createElement, type CSSProperties } from 'react';
-import type { Prefix } from './config';
+import { createElement, type CSSProperties } from 'react'
+import type { Prefix } from './config'
 import {
   classNames,
   forwardRefComponent,
@@ -8,51 +8,51 @@ import {
   type NativeProps,
   type NativeTagProps,
   type Size,
-} from './shared';
+} from './shared'
 
 export interface ContainerProps extends NativeProps<'div'> {
-  width?: 'fluid' | 'widescreen' | 'fullhd';
-  maxWidth?: 'tablet' | 'desktop' | 'widescreen';
+  width?: 'fluid' | 'widescreen' | 'fullhd'
+  maxWidth?: 'tablet' | 'desktop' | 'widescreen'
 }
 export interface HeroProps extends Omit<NativeProps<'section'>, 'color'> {
-  color?: Color;
-  size?: Exclude<Size, 'normal'>;
-  height?: 'half' | 'full' | 'full-with-navbar';
-  bold?: boolean;
+  color?: Color
+  size?: Exclude<Size, 'normal'>
+  height?: 'half' | 'full' | 'full-with-navbar'
+  bold?: boolean
 }
-export type HeroHeadProps = NativeProps<'div'>;
-export type HeroBodyProps = NativeProps<'div'>;
-export type HeroFootProps = NativeProps<'div'>;
+export type HeroHeadProps = NativeProps<'div'>
+export type HeroBodyProps = NativeProps<'div'>
+export type HeroFootProps = NativeProps<'div'>
 export interface SectionProps extends NativeProps<'section'> {
-  size?: 'medium' | 'large';
-  fullHeight?: boolean;
+  size?: 'medium' | 'large'
+  fullHeight?: boolean
 }
-export type FooterProps = NativeProps<'footer'>;
+export type FooterProps = NativeProps<'footer'>
 export interface LevelProps extends NativeProps<'nav'> {
-  mobile?: boolean;
+  mobile?: boolean
 }
-export type LevelLeftProps = NativeProps<'div'>;
-export type LevelRightProps = NativeProps<'div'>;
+export type LevelLeftProps = NativeProps<'div'>
+export type LevelRightProps = NativeProps<'div'>
 export type LevelItemProps = NativeTagProps<
   'div',
   'a' | 'p',
   {
-    narrow?: boolean;
-    flexible?: boolean;
+    narrow?: boolean
+    flexible?: boolean
   }
->;
+>
 export type MediaProps = NativeTagProps<
   'article',
   'div',
   {
-    size?: 'large';
+    size?: 'large'
   }
->;
-export type MediaLeftProps = NativeTagProps<'div', 'figure'>;
-export type MediaRightProps = NativeProps<'div'>;
-export type MediaContentProps = NativeProps<'div'>;
+>
+export type MediaLeftProps = NativeTagProps<'div', 'figure'>
+export type MediaRightProps = NativeProps<'div'>
+export type MediaContentProps = NativeProps<'div'>
 
-export type GridCount = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+export type GridCount = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
 export type ColumnFraction =
   | 'three-quarters'
   | 'two-thirds'
@@ -62,54 +62,54 @@ export type ColumnFraction =
   | 'one-fifth'
   | 'two-fifths'
   | 'three-fifths'
-  | 'four-fifths';
-export type ColumnWidth = GridCount | ColumnFraction | 'full' | 'narrow';
-export type ColumnOffset = 0 | GridCount | ColumnFraction;
+  | 'four-fifths'
+export type ColumnWidth = GridCount | ColumnFraction | 'full' | 'narrow'
+export type ColumnOffset = 0 | GridCount | ColumnFraction
 export type ColumnBreakpoint =
-  'base' | 'mobile' | 'tablet' | 'touch' | 'desktop' | 'widescreen' | 'fullhd';
-export type ColumnResponsive<T> = T | Partial<Record<ColumnBreakpoint, T>>;
-export type ColumnGap = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+  'base' | 'mobile' | 'tablet' | 'touch' | 'desktop' | 'widescreen' | 'fullhd'
+export type ColumnResponsive<T> = T | Partial<Record<ColumnBreakpoint, T>>
+export type ColumnGap = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
 export type GapBreakpoint =
-  ColumnBreakpoint | 'tablet-only' | 'desktop-only' | 'widescreen-only';
+  ColumnBreakpoint | 'tablet-only' | 'desktop-only' | 'widescreen-only'
 export interface ColumnsProps extends NativeProps<'div'> {
-  displayFrom?: 'mobile' | 'tablet' | 'desktop';
-  gap?: ColumnGap | Partial<Record<GapBreakpoint, ColumnGap>>;
-  gapless?: boolean;
-  multiline?: boolean;
-  centered?: boolean;
-  verticallyCentered?: boolean;
+  displayFrom?: 'mobile' | 'tablet' | 'desktop'
+  gap?: ColumnGap | Partial<Record<GapBreakpoint, ColumnGap>>
+  gapless?: boolean
+  multiline?: boolean
+  centered?: boolean
+  verticallyCentered?: boolean
 }
 export interface ColumnProps extends NativeProps<'div'> {
-  width?: ColumnResponsive<ColumnWidth>;
-  offset?: ColumnResponsive<ColumnOffset>;
+  width?: ColumnResponsive<ColumnWidth>
+  offset?: ColumnResponsive<ColumnOffset>
 }
 export type GridBreakpoint =
-  'base' | 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd';
-export type GridResponsive<T> = T | Partial<Record<GridBreakpoint, T>>;
+  'base' | 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd'
+export type GridResponsive<T> = T | Partial<Record<GridBreakpoint, T>>
 export interface SmartGridProps extends NativeProps<'div'> {
-  minColumnWidth?: string;
-  gap?: string;
-  columnGap?: string;
-  rowGap?: string;
-  autoFill?: boolean;
+  minColumnWidth?: string
+  gap?: string
+  columnGap?: string
+  rowGap?: string
+  autoFill?: boolean
 }
 export interface FixedGridProps extends NativeProps<'div'> {
-  columns?: GridResponsive<GridCount> | 'auto';
-  gridProps?: Omit<SmartGridProps, 'children' | 'minColumnWidth' | 'autoFill'>;
+  columns?: GridResponsive<GridCount> | 'auto'
+  gridProps?: Omit<SmartGridProps, 'children' | 'minColumnWidth' | 'autoFill'>
 }
 export type CellBreakpoint =
-  GridBreakpoint | 'tablet-only' | 'desktop-only' | 'widescreen-only';
+  GridBreakpoint | 'tablet-only' | 'desktop-only' | 'widescreen-only'
 export type CellResponsive =
-  GridCount | Partial<Record<CellBreakpoint, GridCount>>;
+  GridCount | Partial<Record<CellBreakpoint, GridCount>>
 export interface CellProps extends NativeProps<'div'> {
-  columnSpan?: CellResponsive;
-  rowSpan?: CellResponsive;
-  columnStart?: CellResponsive | 'end';
-  rowStart?: CellResponsive | 'end';
-  columnEnd?: CellResponsive;
-  rowEnd?: CellResponsive;
-  columnFromEnd?: CellResponsive;
-  rowFromEnd?: CellResponsive;
+  columnSpan?: CellResponsive
+  rowSpan?: CellResponsive
+  columnStart?: CellResponsive | 'end'
+  rowStart?: CellResponsive | 'end'
+  columnEnd?: CellResponsive
+  rowEnd?: CellResponsive
+  columnFromEnd?: CellResponsive
+  rowFromEnd?: CellResponsive
 }
 
 function responsiveTokens(
@@ -117,14 +117,14 @@ function responsiveTokens(
   stem: string,
   suffix = '',
 ): string[] {
-  if (value === undefined) return [];
-  if (typeof value !== 'object') return [`${stem}${value}${suffix}`];
+  if (value === undefined) return []
+  if (typeof value !== 'object') return [`${stem}${value}${suffix}`]
   return Object.entries(value)
     .filter(([, item]) => item !== undefined)
     .map(
       ([breakpoint, item]) =>
         `${stem}${item}${suffix}${breakpoint === 'base' ? '' : `-${breakpoint}`}`,
-    );
+    )
 }
 
 function gridStyle(
@@ -145,19 +145,19 @@ function gridStyle(
     }),
     ...(rowGap !== undefined && { [`--${prefix}grid-row-gap`]: rowGap }),
     ...style,
-  };
+  }
 }
 
 export function createLayout(prefix: Prefix) {
-  const HeroHead = styledElement(prefix, 'div', 'hero-head');
-  const HeroBody = styledElement(prefix, 'div', 'hero-body');
-  const HeroFoot = styledElement(prefix, 'div', 'hero-foot');
-  const Footer = styledElement(prefix, 'footer', 'footer');
-  const LevelLeft = styledElement(prefix, 'div', 'level-left');
-  const LevelRight = styledElement(prefix, 'div', 'level-right');
-  const MediaLeft = styledElement(prefix, 'div', 'media-left', ['figure']);
-  const MediaRight = styledElement(prefix, 'div', 'media-right');
-  const MediaContent = styledElement(prefix, 'div', 'media-content');
+  const HeroHead = styledElement(prefix, 'div', 'hero-head')
+  const HeroBody = styledElement(prefix, 'div', 'hero-body')
+  const HeroFoot = styledElement(prefix, 'div', 'hero-foot')
+  const Footer = styledElement(prefix, 'footer', 'footer')
+  const LevelLeft = styledElement(prefix, 'div', 'level-left')
+  const LevelRight = styledElement(prefix, 'div', 'level-right')
+  const MediaLeft = styledElement(prefix, 'div', 'media-left', ['figure'])
+  const MediaRight = styledElement(prefix, 'div', 'media-right')
+  const MediaContent = styledElement(prefix, 'div', 'media-content')
 
   const Container = forwardRefComponent(function Container({
     width,
@@ -180,8 +180,8 @@ export function createLayout(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const Hero = forwardRefComponent(function Hero({
     color,
@@ -196,7 +196,7 @@ export function createLayout(prefix: Prefix) {
       half: 'is-halfheight',
       full: 'is-fullheight',
       'full-with-navbar': 'is-fullheight-with-navbar',
-    } as const;
+    } as const
     return (
       <section
         {...props}
@@ -213,8 +213,8 @@ export function createLayout(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const Section = forwardRefComponent(function Section({
     size,
@@ -233,8 +233,8 @@ export function createLayout(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const Level = forwardRefComponent(function Level({
     mobile,
@@ -252,8 +252,8 @@ export function createLayout(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const LevelItem = forwardRefComponent(function LevelItem({
     as,
@@ -271,8 +271,8 @@ export function createLayout(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
+    })
+  })
 
   const Media = forwardRefComponent(function Media({
     as,
@@ -289,8 +289,8 @@ export function createLayout(prefix: Prefix) {
         helpers,
         className,
       ),
-    });
-  });
+    })
+  })
 
   const Columns = forwardRefComponent(function Columns({
     displayFrom,
@@ -321,8 +321,8 @@ export function createLayout(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const Column = forwardRefComponent(function Column({
     width,
@@ -345,8 +345,8 @@ export function createLayout(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const SmartGrid = forwardRefComponent(function SmartGrid({
     minColumnWidth,
@@ -370,8 +370,8 @@ export function createLayout(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   const FixedGrid = forwardRefComponent(function FixedGrid({
     columns,
@@ -398,8 +398,8 @@ export function createLayout(prefix: Prefix) {
       >
         <SmartGrid {...gridProps}>{children}</SmartGrid>
       </div>
-    );
-  });
+    )
+  })
 
   const Cell = forwardRefComponent(function Cell({
     columnSpan,
@@ -434,8 +434,8 @@ export function createLayout(prefix: Prefix) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   return {
     Container,
@@ -458,5 +458,5 @@ export function createLayout(prefix: Prefix) {
     SmartGrid,
     FixedGrid,
     Cell,
-  };
+  }
 }

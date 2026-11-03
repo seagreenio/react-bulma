@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -18,8 +18,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-features-skeletons',
   title: 'Features/Skeletons',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -595,7 +595,7 @@ function OfficialDocs() {
         </div>
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -605,7 +605,7 @@ function Example001Demo() {
       <ui.SkeletonBlock />
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example002Demo() {
@@ -619,7 +619,7 @@ function Example002Demo() {
       </ui.SkeletonBlock>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example003Demo() {
@@ -629,7 +629,7 @@ function Example003Demo() {
       <ui.SkeletonLines lines={5} />
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example004Demo() {
@@ -667,7 +667,7 @@ function Example004Demo() {
       </ui.Buttons>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example005Demo() {
@@ -681,7 +681,7 @@ function Example005Demo() {
       </ui.Icon>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example006Demo() {
@@ -717,7 +717,7 @@ function Example006Demo() {
       />
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example007Demo() {
@@ -792,7 +792,7 @@ function Example007Demo() {
       </ui.Media>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example008Demo() {
@@ -862,7 +862,7 @@ function Example008Demo() {
       </ui.Media>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example009Demo() {
@@ -876,7 +876,7 @@ function Example009Demo() {
       </ui.Notification>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example010Demo() {
@@ -910,7 +910,7 @@ function Example010Demo() {
       </ui.Tag>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example011Demo() {
@@ -922,7 +922,7 @@ function Example011Demo() {
       </ui.Title>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example012Demo() {
@@ -934,7 +934,7 @@ function Example012Demo() {
       </ui.Title>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example013Demo() {
@@ -946,7 +946,7 @@ function Example013Demo() {
       </ui.Subtitle>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example014Demo() {
@@ -958,7 +958,7 @@ function Example014Demo() {
       </ui.Subtitle>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example015Demo() {
@@ -974,7 +974,7 @@ function Example015Demo() {
       </ui.Subtitle>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example016Demo() {
@@ -990,7 +990,7 @@ function Example016Demo() {
       </ui.Subtitle>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example017Demo() {
@@ -1000,7 +1000,7 @@ function Example017Demo() {
       <ui.Input className={'rb-is-skeleton'} />
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example018Demo() {
@@ -1010,7 +1010,7 @@ function Example018Demo() {
       <ui.Textarea className={'rb-is-skeleton'} defaultValue={''} />
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -1026,7 +1026,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'skeleton block 02',
@@ -1041,7 +1041,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'skeleton lines 01',
@@ -1056,7 +1056,7 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example004 = {
   name: 'button 01',
@@ -1071,7 +1071,7 @@ export const Example004 = {
     },
   },
   render: Example004Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example005 = {
   name: 'icon 01',
@@ -1086,7 +1086,7 @@ export const Example005 = {
     },
   },
   render: Example005Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example006 = {
   name: 'image 01',
@@ -1101,7 +1101,7 @@ export const Example006 = {
     },
   },
   render: Example006Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example007 = {
   name: 'media object 01',
@@ -1116,7 +1116,7 @@ export const Example007 = {
     },
   },
   render: Example007Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example008 = {
   name: 'media object 02',
@@ -1131,7 +1131,7 @@ export const Example008 = {
     },
   },
   render: Example008Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example009 = {
   name: 'notification 01',
@@ -1146,7 +1146,7 @@ export const Example009 = {
     },
   },
   render: Example009Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example010 = {
   name: 'tag 01',
@@ -1161,7 +1161,7 @@ export const Example010 = {
     },
   },
   render: Example010Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example011 = {
   name: 'title and subtitle 01',
@@ -1176,7 +1176,7 @@ export const Example011 = {
     },
   },
   render: Example011Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example012 = {
   name: 'title and subtitle 02',
@@ -1191,7 +1191,7 @@ export const Example012 = {
     },
   },
   render: Example012Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example013 = {
   name: 'title and subtitle 03',
@@ -1206,7 +1206,7 @@ export const Example013 = {
     },
   },
   render: Example013Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example014 = {
   name: 'title and subtitle 04',
@@ -1221,7 +1221,7 @@ export const Example014 = {
     },
   },
   render: Example014Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example015 = {
   name: 'title and subtitle 05',
@@ -1236,7 +1236,7 @@ export const Example015 = {
     },
   },
   render: Example015Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example016 = {
   name: 'title and subtitle 06',
@@ -1251,7 +1251,7 @@ export const Example016 = {
     },
   },
   render: Example016Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example017 = {
   name: 'form controls 01',
@@ -1266,7 +1266,7 @@ export const Example017 = {
     },
   },
   render: Example017Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example018 = {
   name: 'form controls 02',
@@ -1281,4 +1281,4 @@ export const Example018 = {
     },
   },
   render: Example018Demo,
-} satisfies StoryObj;
+} satisfies StoryObj

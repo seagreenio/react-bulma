@@ -1,58 +1,58 @@
-import { createElement } from 'react';
-import { resolvePrefix, type BulmaConfig } from './config';
-import { helperNames, type Helpers } from './helpers';
-import { createElements } from './elements';
-import { createForms } from './forms';
-import { createLayout } from './layout';
-import { createComponents } from './components';
-import { createInteractive } from './interactive';
+import { createElement } from 'react'
+import { resolvePrefix, type BulmaConfig } from './config'
+import { helperNames, type Helpers } from './helpers'
+import { createElements } from './elements'
+import { createForms } from './forms'
+import { createLayout } from './layout'
+import { createComponents } from './components'
+import { createInteractive } from './interactive'
 import {
   classNames,
   forwardRefComponent,
   type Color,
   type NativeProps,
   type NativeTagProps,
-} from './shared';
+} from './shared'
 
-export type { BulmaConfig } from './config';
-export type { Helpers } from './helpers';
-export type { Color, Size, StyledProps, Style } from './shared';
-export type * from './elements';
-export type * from './forms';
-export type * from './layout';
-export type * from './components';
-export type * from './interactive';
+export type { BulmaConfig } from './config'
+export type { Helpers } from './helpers'
+export type { Color, Size, StyledProps, Style } from './shared'
+export type * from './elements'
+export type * from './forms'
+export type * from './layout'
+export type * from './components'
+export type * from './interactive'
 
 export type ButtonProps = NativeTagProps<
   'button',
   'input' | 'span',
   {
-    color?: Color;
-    tone?: 'light' | 'dark' | 'soft' | 'bold';
-    variant?: 'text' | 'ghost';
-    state?: 'hovered' | 'focused' | 'active';
-    selected?: boolean;
-    expanded?: boolean;
-    size?: 'small' | 'normal' | 'medium' | 'large';
-    outlined?: boolean;
-    inverted?: boolean;
-    rounded?: boolean;
-    fullWidth?: boolean;
-    responsive?: boolean;
-    loading?: boolean;
-    helpers?: Helpers;
-    disabled?: boolean;
+    color?: Color
+    tone?: 'light' | 'dark' | 'soft' | 'bold'
+    variant?: 'text' | 'ghost'
+    state?: 'hovered' | 'focused' | 'active'
+    selected?: boolean
+    expanded?: boolean
+    size?: 'small' | 'normal' | 'medium' | 'large'
+    outlined?: boolean
+    inverted?: boolean
+    rounded?: boolean
+    fullWidth?: boolean
+    responsive?: boolean
+    loading?: boolean
+    helpers?: Helpers
+    disabled?: boolean
   }
->;
+>
 
 export interface BulmaRootProps extends NativeProps<'div'> {
-  theme?: 'light' | 'dark' | 'system';
-  helpers?: Helpers;
+  theme?: 'light' | 'dark' | 'system'
+  helpers?: Helpers
 }
 
 export function createBulma(config: BulmaConfig = {}) {
-  const prefix = resolvePrefix(config);
-  const helpers = (values?: Helpers) => helperNames(prefix, values);
+  const prefix = resolvePrefix(config)
+  const helpers = (values?: Helpers) => helperNames(prefix, values)
 
   const Button = forwardRefComponent(function Button({
     as,
@@ -91,7 +91,7 @@ export function createBulma(config: BulmaConfig = {}) {
       loading && 'loading',
     ]
       .filter(Boolean)
-      .map((value) => `${prefix}is-${value}`);
+      .map((value) => `${prefix}is-${value}`)
     return createElement(as ?? 'button', {
       ...nativeProps,
       type:
@@ -113,8 +113,8 @@ export function createBulma(config: BulmaConfig = {}) {
       className: [`${prefix}button`, ...modifiers, helpers(values), className]
         .filter(Boolean)
         .join(' '),
-    });
-  });
+    })
+  })
 
   const BulmaRoot = forwardRefComponent(function BulmaRoot({
     theme = 'light',
@@ -133,8 +133,8 @@ export function createBulma(config: BulmaConfig = {}) {
           className,
         )}
       />
-    );
-  });
+    )
+  })
 
   return Object.freeze({
     Button,
@@ -145,10 +145,10 @@ export function createBulma(config: BulmaConfig = {}) {
     ...createLayout(prefix),
     ...createComponents(prefix),
     ...createInteractive(prefix),
-  });
+  })
 }
 
-export type Bulma = ReturnType<typeof createBulma>;
+export type Bulma = ReturnType<typeof createBulma>
 
 export const {
   Button,
@@ -269,4 +269,4 @@ export const {
   NavbarLink,
   NavbarDropdown,
   NavbarDivider,
-} = createBulma();
+} = createBulma()

@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/react-vite';
+import type { StorybookConfig } from '@storybook/react-vite'
 
 const config: StorybookConfig = {
   stories: [
@@ -11,6 +11,6 @@ const config: StorybookConfig = {
     { from: '../assets', to: '/brand' },
     { from: '../.generated/official-assets', to: '/official-assets' },
   ],
-};
+}
 
-export default config;
+export default config

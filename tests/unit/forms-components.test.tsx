@@ -1,8 +1,8 @@
-import { describe, expect, test } from 'bun:test';
-import { renderToStaticMarkup } from 'react-dom/server';
-import { createBulma } from '../../src';
+import { describe, expect, test } from 'bun:test'
+import { renderToStaticMarkup } from 'react-dom/server'
+import { createBulma } from '../../src'
 
-const ui = createBulma({ prefix: 'acme-' });
+const ui = createBulma({ prefix: 'acme-' })
 
 describe('native forms', () => {
   test('input native size and textarea attributes remain separate from Bulma modifiers', () => {
@@ -28,19 +28,19 @@ describe('native forms', () => {
           size="large"
         />
       </>,
-    );
-    expect(html).toContain('size="24"');
-    expect(html).toContain('name="email"');
-    expect(html).toContain('value="reader@example.com"');
+    )
+    expect(html).toContain('size="24"')
+    expect(html).toContain('name="email"')
+    expect(html).toContain('value="reader@example.com"')
     expect(html).toContain(
       'acme-input acme-is-small acme-is-rounded acme-mt-2 business',
-    );
-    expect(html).toContain('rows="4"');
-    expect(html).toContain('maxLength="200"');
-    expect(html).toContain('acme-textarea acme-is-large acme-has-fixed-size');
-    expect(html).not.toContain('htmlSize=');
-    expect(html).not.toContain('fixedSize=');
-  });
+    )
+    expect(html).toContain('rows="4"')
+    expect(html).toContain('maxLength="200"')
+    expect(html).toContain('acme-textarea acme-is-large acme-has-fixed-size')
+    expect(html).not.toContain('htmlSize=')
+    expect(html).not.toContain('fixedSize=')
+  })
   test('select targets native attributes at the select and structural modifiers at its wrapper', () => {
     const html = renderToStaticMarkup(
       <ui.Select
@@ -59,17 +59,17 @@ describe('native forms', () => {
         <option value="css">CSS</option>
         <option value="react">React</option>
       </ui.Select>,
-    );
+    )
     expect(html).toContain(
       'class="acme-select acme-is-medium acme-is-fullwidth acme-is-multiple acme-is-disabled acme-mb-3 wrapper"',
-    );
-    expect(html).toContain('id="select-wrapper"');
+    )
+    expect(html).toContain('id="select-wrapper"')
     expect(html).toContain(
       '<select name="topics" class="native-select" style="color:red" size="3" multiple="" disabled="">',
-    );
-    expect(html).toContain('<option value="css" selected="">CSS</option>');
-    expect(html).not.toContain('acme-native-select');
-  });
+    )
+    expect(html).toContain('<option value="css" selected="">CSS</option>')
+    expect(html).not.toContain('acme-native-select')
+  })
   test('checkbox and radio preserve native submission values and labels', () => {
     const html = renderToStaticMarkup(
       <>
@@ -90,16 +90,16 @@ describe('native forms', () => {
           Pro
         </ui.Radio>
       </>,
-    );
-    expect(html).toContain('class="acme-checkbox check-label"');
-    expect(html).toContain('name="terms"');
-    expect(html).toContain('class="native-check"');
-    expect(html).toContain('type="checkbox"');
-    expect(html).toContain('checked="" value="accepted"');
-    expect(html).toContain('type="radio" name="plan" checked="" value="basic"');
-    expect(html).toContain('Accept terms</label>');
-    expect(html).not.toContain('wrapperProps=');
-  });
+    )
+    expect(html).toContain('class="acme-checkbox check-label"')
+    expect(html).toContain('name="terms"')
+    expect(html).toContain('class="native-check"')
+    expect(html).toContain('type="checkbox"')
+    expect(html).toContain('checked="" value="accepted"')
+    expect(html).toContain('type="radio" name="plan" checked="" value="basic"')
+    expect(html).toContain('Accept terms</label>')
+    expect(html).not.toContain('wrapperProps=')
+  })
   test('choice containers expose labeled groups and scoped flex grouping classes', () => {
     const html = renderToStaticMarkup(
       <>
@@ -116,14 +116,12 @@ describe('native forms', () => {
           </ui.Radio>
         </ui.Radios>
       </>,
-    );
+    )
     expect(html).toContain(
       'role="group" aria-label="Notifications" class="acme-checkboxes acme-mt-3"',
-    );
-    expect(html).toContain(
-      'role="group" aria-label="Plan" class="acme-radios"',
-    );
-  });
+    )
+    expect(html).toContain('role="group" aria-label="Plan" class="acme-radios"')
+  })
   test('file is an actual native multiple file input with a caller-provided filename', () => {
     const html = renderToStaticMarkup(
       <ui.File
@@ -141,18 +139,18 @@ describe('native forms', () => {
       >
         Attach documents
       </ui.File>,
-    );
+    )
     expect(html).toContain(
       'acme-file acme-is-small acme-is-boxed acme-is-fullwidth acme-has-name upload',
-    );
-    expect(html).toContain('aria-disabled="true"');
-    expect(html).toContain('type="file" disabled=""');
-    expect(html).toContain('multiple=""');
-    expect(html).toContain('accept=".pdf"');
-    expect(html).toContain('class="acme-file-input native-file"');
-    expect(html).toContain('<span class="acme-file-name">notes.pdf</span>');
-    expect(html).toContain('Attach documents');
-  });
+    )
+    expect(html).toContain('aria-disabled="true"')
+    expect(html).toContain('type="file" disabled=""')
+    expect(html).toContain('multiple=""')
+    expect(html).toContain('accept=".pdf"')
+    expect(html).toContain('class="acme-file-input native-file"')
+    expect(html).toContain('<span class="acme-file-name">notes.pdf</span>')
+    expect(html).toContain('Attach documents')
+  })
   test('horizontal fields and caller-owned error associations compose without hidden ids', () => {
     const html = renderToStaticMarkup(
       <ui.Field horizontal>
@@ -170,14 +168,14 @@ describe('native forms', () => {
           </ui.Field>
         </ui.FieldBody>
       </ui.Field>,
-    );
-    expect(html).toContain('acme-field acme-is-horizontal');
-    expect(html).toContain('for="email"');
-    expect(html).toContain('aria-describedby="email-help"');
-    expect(html).toContain('id="email-help" class="acme-help acme-is-danger"');
-    expect(html).toContain('acme-control acme-is-loading acme-has-icons-left');
-  });
-});
+    )
+    expect(html).toContain('acme-field acme-is-horizontal')
+    expect(html).toContain('for="email"')
+    expect(html).toContain('aria-describedby="email-help"')
+    expect(html).toContain('id="email-help" class="acme-help acme-is-danger"')
+    expect(html).toContain('acme-control acme-is-loading acme-has-icons-left')
+  })
+})
 
 describe('static composites', () => {
   test('breadcrumb produces a navigation list and marks the current link', () => {
@@ -188,14 +186,14 @@ describe('static composites', () => {
           Docs
         </ui.BreadcrumbItem>
       </ui.Breadcrumb>,
-    );
-    expect(html).toContain('aria-label="Breadcrumb"');
-    expect(html).toContain('acme-breadcrumb acme-has-arrow-separator');
-    expect(html).toContain('<ul class="acme-mb-0">');
+    )
+    expect(html).toContain('aria-label="Breadcrumb"')
+    expect(html).toContain('acme-breadcrumb acme-has-arrow-separator')
+    expect(html).toContain('<ul class="acme-mb-0">')
     expect(html).toContain(
       '<li class="acme-is-active"><a href="/docs" class="business" aria-current="page">Docs</a></li>',
-    );
-  });
+    )
+  })
   test('menu nested links retain navigation semantics', () => {
     const html = renderToStaticMarkup(
       <ui.Menu size="small">
@@ -214,12 +212,12 @@ describe('static composites', () => {
           </ui.MenuItem>
         </ui.MenuList>
       </ui.Menu>,
-    );
-    expect(html).toContain('class="acme-menu acme-is-small"');
-    expect(html).toContain('aria-current="page" class="acme-is-active"');
-    expect(html).toContain('Account</a><ul class="acme-menu-list">');
-    expect(html).not.toContain('role="menu"');
-  });
+    )
+    expect(html).toContain('class="acme-menu acme-is-small"')
+    expect(html).toContain('aria-current="page" class="acme-is-active"')
+    expect(html).toContain('Account</a><ul class="acme-menu-list">')
+    expect(html).not.toContain('role="menu"')
+  })
   test('pagination exposes current page and removes disabled links from navigation', () => {
     const html = renderToStaticMarkup(
       <ui.Pagination rounded alignment="centered">
@@ -235,17 +233,17 @@ describe('static composites', () => {
           <ui.PaginationEllipsis />
         </ui.PaginationList>
       </ui.Pagination>,
-    );
-    expect(html).toContain('aria-label="Pagination"');
+    )
+    expect(html).toContain('aria-label="Pagination"')
     expect(html).toContain(
       'aria-label="Previous page" tabindex="-1" aria-disabled="true"',
-    );
-    expect(html).not.toContain('href="/page/0"');
-    expect(html).toContain('aria-current="page"');
+    )
+    expect(html).not.toContain('href="/page/0"')
+    expect(html).toContain('aria-current="page"')
     expect(html).toContain(
       '<li><span aria-hidden="true" class="acme-pagination-ellipsis">…</span></li>',
-    );
-  });
+    )
+  })
   test('card action defaults to a non-submit button and footer items remain links', () => {
     const html = renderToStaticMarkup(
       <ui.Card>
@@ -261,13 +259,13 @@ describe('static composites', () => {
           <ui.CardFooterItem href="/edit">Edit</ui.CardFooterItem>
         </ui.CardFooter>
       </ui.Card>,
-    );
+    )
     expect(html).toContain(
       '<button aria-label="Expand" type="button" class="acme-card-header-icon">',
-    );
-    expect(html).toContain('<a href="/edit" class="acme-card-footer-item">');
-    expect(html).toContain('acme-card-header-title acme-is-centered');
-  });
+    )
+    expect(html).toContain('<a href="/edit" class="acme-card-footer-item">')
+    expect(html).toContain('acme-card-header-title acme-is-centered')
+  })
   test('message and panel preserve semantic element choices and modifiers', () => {
     const html = renderToStaticMarkup(
       <>
@@ -292,13 +290,13 @@ describe('static composites', () => {
           <ui.PanelBlock wrapped>Summary</ui.PanelBlock>
         </ui.Panel>
       </>,
-    );
-    expect(html).toContain('acme-message acme-is-warning acme-is-small');
+    )
+    expect(html).toContain('acme-message acme-is-warning acme-is-small')
     expect(html).toContain(
       '<a href="/repo" aria-current="page" class="acme-panel-block acme-is-active">',
-    );
-    expect(html).toContain('<label class="acme-panel-block">');
-    expect(html).toContain('<div class="acme-panel-block acme-is-wrapped">');
-    expect(html).not.toContain(' as=');
-  });
-});
+    )
+    expect(html).toContain('<label class="acme-panel-block">')
+    expect(html).toContain('<div class="acme-panel-block acme-is-wrapped">')
+    expect(html).not.toContain(' as=')
+  })
+})

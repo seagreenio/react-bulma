@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Canvas } from '@storybook/addon-docs/blocks';
-import { OfficialDocument } from '../document';
-import { createBulma } from '../../../src';
-import { officialPage } from '../support';
+import type { Meta, StoryObj } from '@storybook/react-vite'
+import { Canvas } from '@storybook/addon-docs/blocks'
+import { OfficialDocument } from '../document'
+import { createBulma } from '../../../src'
+import { officialPage } from '../support'
 
-const ui = createBulma();
+const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -18,8 +18,8 @@ const meta = {
   tags: ['autodocs'],
   id: 'official-components-panel',
   title: 'CSS Library/Components/Panel',
-} satisfies Meta;
-export default meta;
+} satisfies Meta
+export default meta
 
 function OfficialDocs() {
   return (
@@ -1060,7 +1060,7 @@ function OfficialDocs() {
         {'\n\n\n'}
       </div>
     </OfficialDocument>
-  );
+  )
 }
 
 function Example001Demo() {
@@ -1178,7 +1178,7 @@ function Example001Demo() {
       </ui.Panel>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example002Demo() {
@@ -1262,7 +1262,7 @@ function Example002Demo() {
       </ui.Panel>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example003Demo() {
@@ -1346,7 +1346,7 @@ function Example003Demo() {
       </ui.Panel>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example004Demo() {
@@ -1430,7 +1430,7 @@ function Example004Demo() {
       </ui.Panel>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example005Demo() {
@@ -1514,7 +1514,7 @@ function Example005Demo() {
       </ui.Panel>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example006Demo() {
@@ -1598,7 +1598,7 @@ function Example006Demo() {
       </ui.Panel>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 function Example007Demo() {
@@ -1682,7 +1682,7 @@ function Example007Demo() {
       </ui.Panel>
       {'\n\n        \n      '}
     </>
-  );
+  )
 }
 
 export const Example001 = {
@@ -1698,7 +1698,7 @@ export const Example001 = {
     },
   },
   render: Example001Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example002 = {
   name: 'colors 01',
@@ -1713,7 +1713,7 @@ export const Example002 = {
     },
   },
   render: Example002Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example003 = {
   name: 'colors 02',
@@ -1728,7 +1728,7 @@ export const Example003 = {
     },
   },
   render: Example003Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example004 = {
   name: 'colors 03',
@@ -1743,7 +1743,7 @@ export const Example004 = {
     },
   },
   render: Example004Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example005 = {
   name: 'colors 04',
@@ -1758,7 +1758,7 @@ export const Example005 = {
     },
   },
   render: Example005Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example006 = {
   name: 'colors 05',
@@ -1773,7 +1773,7 @@ export const Example006 = {
     },
   },
   render: Example006Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
 
 export const Example007 = {
   name: 'colors 06',
@@ -1788,4 +1788,4 @@ export const Example007 = {
     },
   },
   render: Example007Demo,
-} satisfies StoryObj;
+} satisfies StoryObj
