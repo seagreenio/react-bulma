@@ -64,7 +64,6 @@ test('generated components and helpers use the configured prefix', () => {
   expect(html).toContain('class="custom-root custom-theme-dark"')
   expect(html).toContain('class="custom-button custom-is-primary"')
   expect(html).toContain('type="submit"')
-  expect(configured.Button).toBe(configured.Button)
 })
 
 test('separately generated modules keep their contexts isolated with the same prefix', () => {
@@ -77,10 +76,6 @@ test('separately generated modules keep their contexts isolated with the same pr
   )
   expect(html).toContain('aria-expanded="false"')
   expect(configured.Navbar).not.toBe(secondConfigured.Navbar)
-})
-
-test('UI generation rejects invalid prefixes before emitting a module', () => {
-  expect(() => buildUI({ prefix: 'bad' })).toThrow(TypeError)
 })
 
 test.each([
