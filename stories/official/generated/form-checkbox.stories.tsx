@@ -136,15 +136,13 @@ function Example001Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
-          <ui.Checkbox>{'\n  Remember me\n'}</ui.Checkbox>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <ui.Checkbox> Remember me </ui.Checkbox>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -153,10 +151,8 @@ function Example001Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -166,19 +162,16 @@ function Example002Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Checkbox>
-            {'\n  I agree to the '}
-            <a href={'#'}>{'terms and conditions'}</a>
-            {'\n'}
-          </ui.Checkbox>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            I agree to the <a href={'#'}>terms and conditions</a>{' '}
+          </ui.Checkbox>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -187,10 +180,8 @@ function Example002Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -200,17 +191,16 @@ function Example003Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Checkbox disabled wrapperProps={{ 'aria-disabled': true }}>
-            {'\n  Save my preferences\n'}
-          </ui.Checkbox>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            Save my preferences{' '}
+          </ui.Checkbox>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -219,10 +209,8 @@ function Example003Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -232,25 +220,17 @@ function Example004Demo() {
   return (
     <>
       <ui.Block>
-        {'\n'}
+        {' '}
         <ui.Checkboxes>
-          {'\n  '}
-          <ui.Checkbox>{'\n    Monday\n  '}</ui.Checkbox>
-          {'\n\n  '}
-          <ui.Checkbox>{'\n    Tuesday\n  '}</ui.Checkbox>
-          {'\n\n  '}
-          <ui.Checkbox>{'\n    Wednesday\n  '}</ui.Checkbox>
-          {'\n\n  '}
-          <ui.Checkbox>{'\n    Thursday\n  '}</ui.Checkbox>
-          {'\n\n  '}
-          <ui.Checkbox>{'\n    Friday\n  '}</ui.Checkbox>
-          {'\n\n  '}
-          <ui.Checkbox defaultChecked>{'\n    Saturday\n  '}</ui.Checkbox>
-          {'\n\n  '}
-          <ui.Checkbox defaultChecked>{'\n    Sunday\n  '}</ui.Checkbox>
-          {'\n'}
-        </ui.Checkboxes>
-        {'\n'}
+          {' '}
+          <ui.Checkbox> Monday </ui.Checkbox>{' '}
+          <ui.Checkbox> Tuesday </ui.Checkbox>{' '}
+          <ui.Checkbox> Wednesday </ui.Checkbox>{' '}
+          <ui.Checkbox> Thursday </ui.Checkbox>{' '}
+          <ui.Checkbox> Friday </ui.Checkbox>{' '}
+          <ui.Checkbox defaultChecked> Saturday </ui.Checkbox>{' '}
+          <ui.Checkbox defaultChecked> Sunday </ui.Checkbox>{' '}
+        </ui.Checkboxes>{' '}
       </ui.Block>
     </>
   )
@@ -262,7 +242,7 @@ export const Example001 = {
     official: { id: 'form-checkbox/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Checkbox>{"\\n  Remember me\\n"}</ui.Checkbox>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<label class=\\"checkbox\\">\\n  <input type=\\"checkbox\\" />\\n  Remember me\\n</label>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Checkbox> Remember me </ui.Checkbox>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<label class=\"checkbox\">\\n  <input type=\"checkbox\" />\\n  Remember me\\n</label>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -277,7 +257,7 @@ export const Example002 = {
     official: { id: 'form-checkbox/basic/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Checkbox>{"\\n  I agree to the "}<a href={"#"}>{"terms and conditions"}</a>{"\\n"}</ui.Checkbox>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<label class=\\"checkbox\\">\\n  <input type=\\"checkbox\\" />\\n  I agree to the <a href=\\"#\\">terms and conditions</a>\\n</label>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Checkbox>\n            {' '}\n            I agree to the <a href={'#'}>terms and conditions</a>{' '}\n          </ui.Checkbox>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<label class=\"checkbox\">\\n  <input type=\"checkbox\" />\\n  I agree to the <a href=\"#\">terms and conditions</a>\\n</label>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -292,7 +272,7 @@ export const Example003 = {
     official: { id: 'form-checkbox/basic/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Checkbox disabled wrapperProps={{ "aria-disabled": true }}>{"\\n  Save my preferences\\n"}</ui.Checkbox>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<label class=\\"checkbox\\" disabled>\\n  <input type=\\"checkbox\\" disabled />\\n  Save my preferences\\n</label>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Checkbox disabled wrapperProps={{ 'aria-disabled': true }}>\n            {' '}\n            Save my preferences{' '}\n          </ui.Checkbox>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<label class=\"checkbox\" disabled>\\n  <input type=\"checkbox\" disabled />\\n  Save my preferences\\n</label>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -307,7 +287,7 @@ export const Example004 = {
     official: { id: 'form-checkbox/list-of-checkboxes/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.Block>{"\\n"}<ui.Checkboxes>{"\\n  "}<ui.Checkbox>{"\\n    Monday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Tuesday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Wednesday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Thursday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Friday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox defaultChecked>{"\\n    Saturday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox defaultChecked>{"\\n    Sunday\\n  "}</ui.Checkbox>{"\\n"}</ui.Checkboxes>{"\\n"}</ui.Block></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Block>\n        {' '}\n        <ui.Checkboxes>\n          {' '}\n          <ui.Checkbox> Monday </ui.Checkbox>{' '}\n          <ui.Checkbox> Tuesday </ui.Checkbox>{' '}\n          <ui.Checkbox> Wednesday </ui.Checkbox>{' '}\n          <ui.Checkbox> Thursday </ui.Checkbox>{' '}\n          <ui.Checkbox> Friday </ui.Checkbox>{' '}\n          <ui.Checkbox defaultChecked> Saturday </ui.Checkbox>{' '}\n          <ui.Checkbox defaultChecked> Sunday </ui.Checkbox>{' '}\n        </ui.Checkboxes>{' '}\n      </ui.Block>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

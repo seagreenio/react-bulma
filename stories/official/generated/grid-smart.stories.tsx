@@ -796,175 +796,151 @@ function Example001Demo() {
   return (
     <>
       <ui.SmartGrid>
-        {'\n  '}
+        {' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 1'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 1
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 2'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 2
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 3'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 3
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 4'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 4
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 5'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 5
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 6'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 6
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 7'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 7
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 8'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 8
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 9'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 9
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 10'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 10
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 11'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 11
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 12'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 12
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 13'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 13
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 14'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 14
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 15'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 15
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 16'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 16
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 17'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 17
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 18'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 18
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 19'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 19
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 20'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 20
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 21'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 21
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 22'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 22
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 23'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 23
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 24'}
-        </ui.Cell>
-        {'\n  \n'}
+          Cell 24
+        </ui.Cell>{' '}
       </ui.SmartGrid>
     </>
   )
@@ -976,7 +952,7 @@ export const Example001 = {
     official: { id: 'grid-smart/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.SmartGrid>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 1"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 2"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 3"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 4"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 5"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 6"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 7"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 8"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 9"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 10"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 11"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 12"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 13"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 14"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 15"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 16"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 17"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 18"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 19"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 20"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 21"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 22"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 23"}</ui.Cell>{"\\n  "}<ui.Cell helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 24"}</ui.Cell>{"\\n  \\n"}</ui.SmartGrid></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.SmartGrid>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 6\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 7\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 8\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 9\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 10\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 11\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 12\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 13\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 14\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 15\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 16\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 17\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 18\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 19\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 20\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 21\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 22\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 23\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 24\n        </ui.Cell>{' '}\n      </ui.SmartGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

@@ -512,79 +512,59 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Media>
-        {'\n  '}
+        {' '}
         <ui.MediaLeft as={'figure'}>
-          {'\n    '}
+          {' '}
           <ui.Image
             size={64}
             as={'p'}
             src={'./official-assets/128x128.png'}
             alt={''}
-          />
-          {'\n  '}
-        </ui.MediaLeft>
-        {'\n  '}
+          />{' '}
+        </ui.MediaLeft>{' '}
         <ui.MediaContent>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {'\n        '}
-              <strong>{'John Smith'}</strong> <small>{'@johnsmith'}</small>{' '}
-              <small>{'31m'}</small>
-              {'\n        '}
-              <br />
-              {
-                '\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare\n        magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa\n        sem. Etiam finibus odio quis feugiat facilisis.\n      '
-              }
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n    '}
+              <strong>John Smith</strong> <small>@johnsmith</small>{' '}
+              <small>31m</small> <br /> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
+              vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
+              feugiat facilisis.
+            </p>{' '}
+          </ui.Content>{' '}
           <ui.Level mobile>
-            {'\n      '}
+            {' '}
             <ui.LevelLeft>
-              {'\n        '}
+              {' '}
               <ui.LevelItem as={'a'}>
-                {'\n          '}
+                {' '}
                 <ui.Icon size={'small'}>
                   <i className={'fas fa-reply'} />
-                </ui.Icon>
-                {'\n        '}
-              </ui.LevelItem>
-              {'\n        '}
+                </ui.Icon>{' '}
+              </ui.LevelItem>{' '}
               <ui.LevelItem as={'a'}>
-                {'\n          '}
+                {' '}
                 <ui.Icon size={'small'}>
                   <i className={'fas fa-retweet'} />
-                </ui.Icon>
-                {'\n        '}
-              </ui.LevelItem>
-              {'\n        '}
+                </ui.Icon>{' '}
+              </ui.LevelItem>{' '}
               <ui.LevelItem as={'a'}>
-                {'\n          '}
+                {' '}
                 <ui.Icon size={'small'}>
                   <i className={'fas fa-heart'} />
-                </ui.Icon>
-                {'\n        '}
-              </ui.LevelItem>
-              {'\n      '}
-            </ui.LevelLeft>
-            {'\n    '}
-          </ui.Level>
-          {'\n  '}
-        </ui.MediaContent>
-        {'\n  '}
+                </ui.Icon>{' '}
+              </ui.LevelItem>{' '}
+            </ui.LevelLeft>{' '}
+          </ui.Level>{' '}
+        </ui.MediaContent>{' '}
         <ui.MediaRight>
-          {'\n    '}
-          <ui.Delete />
-          {'\n  '}
-        </ui.MediaRight>
-        {'\n'}
+          {' '}
+          <ui.Delete />{' '}
+        </ui.MediaRight>{' '}
       </ui.Media>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -592,62 +572,48 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Media>
-        {'\n  '}
+        {' '}
         <ui.MediaLeft as={'figure'}>
-          {'\n    '}
+          {' '}
           <ui.Image
             size={64}
             as={'p'}
             src={'./official-assets/128x128.png'}
             alt={''}
-          />
-          {'\n  '}
-        </ui.MediaLeft>
-        {'\n  '}
+          />{' '}
+        </ui.MediaLeft>{' '}
         <ui.MediaContent>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control as={'p'}>
-              {'\n        '}
-              <ui.Textarea placeholder={'Add a comment...'} defaultValue={''} />
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              <ui.Textarea
+                placeholder={'Add a comment...'}
+                defaultValue={''}
+              />{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
           <ui.Level>
-            {'\n      '}
+            {' '}
             <ui.LevelLeft>
-              {'\n        '}
+              {' '}
               <ui.LevelItem>
-                {'\n          '}
-                <ui.LinkButton color={'info'}>{'Submit'}</ui.LinkButton>
-                {'\n        '}
-              </ui.LevelItem>
-              {'\n      '}
-            </ui.LevelLeft>
-            {'\n      '}
+                {' '}
+                <ui.LinkButton color={'info'}>Submit</ui.LinkButton>{' '}
+              </ui.LevelItem>{' '}
+            </ui.LevelLeft>{' '}
             <ui.LevelRight>
-              {'\n        '}
+              {' '}
               <ui.LevelItem>
-                {'\n          '}
-                <ui.Checkbox>
-                  {' Press enter to submit\n          '}
-                </ui.Checkbox>
-                {'\n        '}
-              </ui.LevelItem>
-              {'\n      '}
-            </ui.LevelRight>
-            {'\n    '}
-          </ui.Level>
-          {'\n  '}
-        </ui.MediaContent>
-        {'\n'}
+                {' '}
+                <ui.Checkbox> Press enter to submit </ui.Checkbox>{' '}
+              </ui.LevelItem>{' '}
+            </ui.LevelRight>{' '}
+          </ui.Level>{' '}
+        </ui.MediaContent>{' '}
       </ui.Media>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -655,184 +621,133 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Media>
-        {'\n  '}
+        {' '}
         <ui.MediaLeft as={'figure'}>
-          {'\n    '}
+          {' '}
           <ui.Image
             size={64}
             as={'p'}
             src={'./official-assets/128x128.png'}
             alt={''}
-          />
-          {'\n  '}
-        </ui.MediaLeft>
-        {'\n  '}
+          />{' '}
+        </ui.MediaLeft>{' '}
         <ui.MediaContent>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {'\n        '}
-              <strong>{'Barbara Middleton'}</strong>
-              {'\n        '}
-              <br />
-              {
-                '\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros\n        lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris\n        sit amet dolor blandit rutrum. Nunc in tempus turpis.\n        '
-              }
-              <br />
-              {'\n        '}
+              <strong>Barbara Middleton</strong> <br /> Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+              ultricies elit blandit non. Suspendisse pellentesque mauris sit
+              amet dolor blandit rutrum. Nunc in tempus turpis. <br />{' '}
               <small>
-                <a>{'Like'}</a>
-                {' · '}
-                <a>{'Reply'}</a>
-                {' · 3 hrs'}
+                <a>Like</a> · <a>Reply</a> · 3 hrs
               </small>
-              {'\n      '}
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n\n    '}
+            </p>{' '}
+          </ui.Content>{' '}
           <ui.Media>
-            {'\n      '}
+            {' '}
             <ui.MediaLeft as={'figure'}>
-              {'\n        '}
+              {' '}
               <ui.Image
                 size={48}
                 as={'p'}
                 src={'./official-assets/96x96.png'}
                 alt={''}
-              />
-              {'\n      '}
-            </ui.MediaLeft>
-            {'\n      '}
+              />{' '}
+            </ui.MediaLeft>{' '}
             <ui.MediaContent>
-              {'\n        '}
+              {' '}
               <ui.Content>
-                {'\n          '}
+                {' '}
                 <p>
-                  {'\n            '}
-                  <strong>{'Sean Brown'}</strong>
-                  {'\n            '}
-                  <br />
-                  {
-                    '\n            Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque\n            habitant morbi tristique senectus et netus et malesuada fames ac\n            turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis\n            leo feugiat.\n            '
-                  }
-                  <br />
-                  {'\n            '}
+                  <strong>Sean Brown</strong> <br /> Donec sollicitudin urna
+                  eget eros malesuada sagittis. Pellentesque habitant morbi
+                  tristique senectus et netus et malesuada fames ac turpis
+                  egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo
+                  feugiat. <br />{' '}
                   <small>
-                    <a>{'Like'}</a>
-                    {' · '}
-                    <a>{'Reply'}</a>
-                    {' · 2 hrs'}
+                    <a>Like</a> · <a>Reply</a> · 2 hrs
                   </small>
-                  {'\n          '}
-                </p>
-                {'\n        '}
-              </ui.Content>
-              {'\n\n        '}
+                </p>{' '}
+              </ui.Content>{' '}
               <ui.Media>
-                {
-                  '\n          Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem\n          cursus ullamcorper sit amet nec massa.\n        '
-                }
-              </ui.Media>
-              {'\n\n        '}
+                {' '}
+                Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu
+                lorem cursus ullamcorper sit amet nec massa.{' '}
+              </ui.Media>{' '}
               <ui.Media>
-                {
-                  '\n          Morbi vitae diam et purus tincidunt porttitor vel vitae augue.\n          Praesent malesuada metus sed pharetra euismod. Cras tellus odio,\n          tincidunt iaculis diam non, porta aliquet tortor.\n        '
-                }
-              </ui.Media>
-              {'\n      '}
-            </ui.MediaContent>
-            {'\n    '}
-          </ui.Media>
-          {'\n\n    '}
+                {' '}
+                Morbi vitae diam et purus tincidunt porttitor vel vitae augue.
+                Praesent malesuada metus sed pharetra euismod. Cras tellus odio,
+                tincidunt iaculis diam non, porta aliquet tortor.{' '}
+              </ui.Media>{' '}
+            </ui.MediaContent>{' '}
+          </ui.Media>{' '}
           <ui.Media>
-            {'\n      '}
+            {' '}
             <ui.MediaLeft as={'figure'}>
-              {'\n        '}
+              {' '}
               <ui.Image
                 size={48}
                 as={'p'}
                 src={'./official-assets/96x96.png'}
                 alt={''}
-              />
-              {'\n      '}
-            </ui.MediaLeft>
-            {'\n      '}
+              />{' '}
+            </ui.MediaLeft>{' '}
             <ui.MediaContent>
-              {'\n        '}
+              {' '}
               <ui.Content>
-                {'\n          '}
+                {' '}
                 <p>
-                  {'\n            '}
-                  <strong>{'Kayli Eunice '}</strong>
-                  {'\n            '}
-                  <br />
-                  {
-                    '\n            Sed convallis scelerisque mauris, non pulvinar nunc mattis vel.\n            Maecenas varius felis sit amet magna vestibulum euismod malesuada\n            cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus\n            et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id\n            feugiat.\n            '
-                  }
-                  <br />
-                  {'\n            '}
+                  <strong>Kayli Eunice </strong> <br /> Sed convallis
+                  scelerisque mauris, non pulvinar nunc mattis vel. Maecenas
+                  varius felis sit amet magna vestibulum euismod malesuada
+                  cursus libero. Vestibulum ante ipsum primis in faucibus orci
+                  luctus et ultrices posuere cubilia Curae; Phasellus lacinia
+                  non nisl id feugiat. <br />{' '}
                   <small>
-                    <a>{'Like'}</a>
-                    {' · '}
-                    <a>{'Reply'}</a>
-                    {' · 2 hrs'}
+                    <a>Like</a> · <a>Reply</a> · 2 hrs
                   </small>
-                  {'\n          '}
-                </p>
-                {'\n        '}
-              </ui.Content>
-              {'\n      '}
-            </ui.MediaContent>
-            {'\n    '}
-          </ui.Media>
-          {'\n  '}
-        </ui.MediaContent>
-        {'\n'}
-      </ui.Media>
-      {'\n\n'}
+                </p>{' '}
+              </ui.Content>{' '}
+            </ui.MediaContent>{' '}
+          </ui.Media>{' '}
+        </ui.MediaContent>{' '}
+      </ui.Media>{' '}
       <ui.Media>
-        {'\n  '}
+        {' '}
         <ui.MediaLeft as={'figure'}>
-          {'\n    '}
+          {' '}
           <ui.Image
             size={64}
             as={'p'}
             src={'./official-assets/128x128.png'}
             alt={''}
-          />
-          {'\n  '}
-        </ui.MediaLeft>
-        {'\n  '}
+          />{' '}
+        </ui.MediaLeft>{' '}
         <ui.MediaContent>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control as={'p'}>
-              {'\n        '}
-              <ui.Textarea placeholder={'Add a comment...'} defaultValue={''} />
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              <ui.Textarea
+                placeholder={'Add a comment...'}
+                defaultValue={''}
+              />{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control as={'p'}>
-              {'\n        '}
-              <ui.Button>{'Post comment'}</ui.Button>
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.MediaContent>
-        {'\n'}
+              {' '}
+              <ui.Button>Post comment</ui.Button>{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.MediaContent>{' '}
       </ui.Media>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -843,7 +758,7 @@ export const Example001 = {
     official: { id: 'layout-media/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Media>{"\\n  "}<ui.MediaLeft as={"figure"}>{"\\n    "}<ui.Image size={64} as={"p"} src={"./official-assets/128x128.png"} alt={""} />{"\\n  "}</ui.MediaLeft>{"\\n  "}<ui.MediaContent>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        "}<strong>{"John Smith"}</strong>{" "}<small>{"@johnsmith"}</small>{" "}<small>{"31m"}</small>{"\\n        "}<br />{"\\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare\\n        magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa\\n        sem. Etiam finibus odio quis feugiat facilisis.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    "}<ui.Level mobile>{"\\n      "}<ui.LevelLeft>{"\\n        "}<ui.LevelItem as={"a"}>{"\\n          "}<ui.Icon size={"small"}><i className={"fas fa-reply"} /></ui.Icon>{"\\n        "}</ui.LevelItem>{"\\n        "}<ui.LevelItem as={"a"}>{"\\n          "}<ui.Icon size={"small"}><i className={"fas fa-retweet"} /></ui.Icon>{"\\n        "}</ui.LevelItem>{"\\n        "}<ui.LevelItem as={"a"}>{"\\n          "}<ui.Icon size={"small"}><i className={"fas fa-heart"} /></ui.Icon>{"\\n        "}</ui.LevelItem>{"\\n      "}</ui.LevelLeft>{"\\n    "}</ui.Level>{"\\n  "}</ui.MediaContent>{"\\n  "}<ui.MediaRight>{"\\n    "}<ui.Delete />{"\\n  "}</ui.MediaRight>{"\\n"}</ui.Media>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Media>\n        {' '}\n        <ui.MediaLeft as={'figure'}>\n          {' '}\n          <ui.Image\n            size={64}\n            as={'p'}\n            src={'./official-assets/128x128.png'}\n            alt={''}\n          />{' '}\n        </ui.MediaLeft>{' '}\n        <ui.MediaContent>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              <strong>John Smith</strong> <small>@johnsmith</small>{' '}\n              <small>31m</small> <br /> Lorem ipsum dolor sit amet, consectetur\n              adipiscing elit. Proin ornare magna eros, eu pellentesque tortor\n              vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis\n              feugiat facilisis.\n            </p>{' '}\n          </ui.Content>{' '}\n          <ui.Level mobile>\n            {' '}\n            <ui.LevelLeft>\n              {' '}\n              <ui.LevelItem as={'a'}>\n                {' '}\n                <ui.Icon size={'small'}>\n                  <i className={'fas fa-reply'} />\n                </ui.Icon>{' '}\n              </ui.LevelItem>{' '}\n              <ui.LevelItem as={'a'}>\n                {' '}\n                <ui.Icon size={'small'}>\n                  <i className={'fas fa-retweet'} />\n                </ui.Icon>{' '}\n              </ui.LevelItem>{' '}\n              <ui.LevelItem as={'a'}>\n                {' '}\n                <ui.Icon size={'small'}>\n                  <i className={'fas fa-heart'} />\n                </ui.Icon>{' '}\n              </ui.LevelItem>{' '}\n            </ui.LevelLeft>{' '}\n          </ui.Level>{' '}\n        </ui.MediaContent>{' '}\n        <ui.MediaRight>\n          {' '}\n          <ui.Delete />{' '}\n        </ui.MediaRight>{' '}\n      </ui.Media>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -858,7 +773,7 @@ export const Example002 = {
     official: { id: 'layout-media/basic/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Media>{"\\n  "}<ui.MediaLeft as={"figure"}>{"\\n    "}<ui.Image size={64} as={"p"} src={"./official-assets/128x128.png"} alt={""} />{"\\n  "}</ui.MediaLeft>{"\\n  "}<ui.MediaContent>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control as={"p"}>{"\\n        "}<ui.Textarea placeholder={"Add a comment..."} defaultValue={""} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n    "}<ui.Level>{"\\n      "}<ui.LevelLeft>{"\\n        "}<ui.LevelItem>{"\\n          "}<ui.LinkButton color={"info"}>{"Submit"}</ui.LinkButton>{"\\n        "}</ui.LevelItem>{"\\n      "}</ui.LevelLeft>{"\\n      "}<ui.LevelRight>{"\\n        "}<ui.LevelItem>{"\\n          "}<ui.Checkbox>{" Press enter to submit\\n          "}</ui.Checkbox>{"\\n        "}</ui.LevelItem>{"\\n      "}</ui.LevelRight>{"\\n    "}</ui.Level>{"\\n  "}</ui.MediaContent>{"\\n"}</ui.Media>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Media>\n        {' '}\n        <ui.MediaLeft as={'figure'}>\n          {' '}\n          <ui.Image\n            size={64}\n            as={'p'}\n            src={'./official-assets/128x128.png'}\n            alt={''}\n          />{' '}\n        </ui.MediaLeft>{' '}\n        <ui.MediaContent>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control as={'p'}>\n              {' '}\n              <ui.Textarea\n                placeholder={'Add a comment...'}\n                defaultValue={''}\n              />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n          <ui.Level>\n            {' '}\n            <ui.LevelLeft>\n              {' '}\n              <ui.LevelItem>\n                {' '}\n                <ui.LinkButton color={'info'}>Submit</ui.LinkButton>{' '}\n              </ui.LevelItem>{' '}\n            </ui.LevelLeft>{' '}\n            <ui.LevelRight>\n              {' '}\n              <ui.LevelItem>\n                {' '}\n                <ui.Checkbox> Press enter to submit </ui.Checkbox>{' '}\n              </ui.LevelItem>{' '}\n            </ui.LevelRight>{' '}\n          </ui.Level>{' '}\n        </ui.MediaContent>{' '}\n      </ui.Media>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -873,7 +788,7 @@ export const Example003 = {
     official: { id: 'layout-media/nesting/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Media>{"\\n  "}<ui.MediaLeft as={"figure"}>{"\\n    "}<ui.Image size={64} as={"p"} src={"./official-assets/128x128.png"} alt={""} />{"\\n  "}</ui.MediaLeft>{"\\n  "}<ui.MediaContent>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        "}<strong>{"Barbara Middleton"}</strong>{"\\n        "}<br />{"\\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros\\n        lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris\\n        sit amet dolor blandit rutrum. Nunc in tempus turpis.\\n        "}<br />{"\\n        "}<small><a>{"Like"}</a>{" · "}<a>{"Reply"}</a>{" · 3 hrs"}</small>{"\\n      "}</p>{"\\n    "}</ui.Content>{"\\n\\n    "}<ui.Media>{"\\n      "}<ui.MediaLeft as={"figure"}>{"\\n        "}<ui.Image size={48} as={"p"} src={"./official-assets/96x96.png"} alt={""} />{"\\n      "}</ui.MediaLeft>{"\\n      "}<ui.MediaContent>{"\\n        "}<ui.Content>{"\\n          "}<p>{"\\n            "}<strong>{"Sean Brown"}</strong>{"\\n            "}<br />{"\\n            Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque\\n            habitant morbi tristique senectus et netus et malesuada fames ac\\n            turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis\\n            leo feugiat.\\n            "}<br />{"\\n            "}<small><a>{"Like"}</a>{" · "}<a>{"Reply"}</a>{" · 2 hrs"}</small>{"\\n          "}</p>{"\\n        "}</ui.Content>{"\\n\\n        "}<ui.Media>{"\\n          Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem\\n          cursus ullamcorper sit amet nec massa.\\n        "}</ui.Media>{"\\n\\n        "}<ui.Media>{"\\n          Morbi vitae diam et purus tincidunt porttitor vel vitae augue.\\n          Praesent malesuada metus sed pharetra euismod. Cras tellus odio,\\n          tincidunt iaculis diam non, porta aliquet tortor.\\n        "}</ui.Media>{"\\n      "}</ui.MediaContent>{"\\n    "}</ui.Media>{"\\n\\n    "}<ui.Media>{"\\n      "}<ui.MediaLeft as={"figure"}>{"\\n        "}<ui.Image size={48} as={"p"} src={"./official-assets/96x96.png"} alt={""} />{"\\n      "}</ui.MediaLeft>{"\\n      "}<ui.MediaContent>{"\\n        "}<ui.Content>{"\\n          "}<p>{"\\n            "}<strong>{"Kayli Eunice "}</strong>{"\\n            "}<br />{"\\n            Sed convallis scelerisque mauris, non pulvinar nunc mattis vel.\\n            Maecenas varius felis sit amet magna vestibulum euismod malesuada\\n            cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus\\n            et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id\\n            feugiat.\\n            "}<br />{"\\n            "}<small><a>{"Like"}</a>{" · "}<a>{"Reply"}</a>{" · 2 hrs"}</small>{"\\n          "}</p>{"\\n        "}</ui.Content>{"\\n      "}</ui.MediaContent>{"\\n    "}</ui.Media>{"\\n  "}</ui.MediaContent>{"\\n"}</ui.Media>{"\\n\\n"}<ui.Media>{"\\n  "}<ui.MediaLeft as={"figure"}>{"\\n    "}<ui.Image size={64} as={"p"} src={"./official-assets/128x128.png"} alt={""} />{"\\n  "}</ui.MediaLeft>{"\\n  "}<ui.MediaContent>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control as={"p"}>{"\\n        "}<ui.Textarea placeholder={"Add a comment..."} defaultValue={""} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control as={"p"}>{"\\n        "}<ui.Button>{"Post comment"}</ui.Button>{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.MediaContent>{"\\n"}</ui.Media>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Media>\n        {' '}\n        <ui.MediaLeft as={'figure'}>\n          {' '}\n          <ui.Image\n            size={64}\n            as={'p'}\n            src={'./official-assets/128x128.png'}\n            alt={''}\n          />{' '}\n        </ui.MediaLeft>{' '}\n        <ui.MediaContent>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              <strong>Barbara Middleton</strong> <br /> Lorem ipsum dolor sit\n              amet, consectetur adipiscing elit. Duis porta eros lacus, nec\n              ultricies elit blandit non. Suspendisse pellentesque mauris sit\n              amet dolor blandit rutrum. Nunc in tempus turpis. <br />{' '}\n              <small>\n                <a>Like</a> · <a>Reply</a> · 3 hrs\n              </small>\n            </p>{' '}\n          </ui.Content>{' '}\n          <ui.Media>\n            {' '}\n            <ui.MediaLeft as={'figure'}>\n              {' '}\n              <ui.Image\n                size={48}\n                as={'p'}\n                src={'./official-assets/96x96.png'}\n                alt={''}\n              />{' '}\n            </ui.MediaLeft>{' '}\n            <ui.MediaContent>\n              {' '}\n              <ui.Content>\n                {' '}\n                <p>\n                  <strong>Sean Brown</strong> <br /> Donec sollicitudin urna\n                  eget eros malesuada sagittis. Pellentesque habitant morbi\n                  tristique senectus et netus et malesuada fames ac turpis\n                  egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo\n                  feugiat. <br />{' '}\n                  <small>\n                    <a>Like</a> · <a>Reply</a> · 2 hrs\n                  </small>\n                </p>{' '}\n              </ui.Content>{' '}\n              <ui.Media>\n                {' '}\n                Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu\n                lorem cursus ullamcorper sit amet nec massa.{' '}\n              </ui.Media>{' '}\n              <ui.Media>\n                {' '}\n                Morbi vitae diam et purus tincidunt porttitor vel vitae augue.\n                Praesent malesuada metus sed pharetra euismod. Cras tellus odio,\n                tincidunt iaculis diam non, porta aliquet tortor.{' '}\n              </ui.Media>{' '}\n            </ui.MediaContent>{' '}\n          </ui.Media>{' '}\n          <ui.Media>\n            {' '}\n            <ui.MediaLeft as={'figure'}>\n              {' '}\n              <ui.Image\n                size={48}\n                as={'p'}\n                src={'./official-assets/96x96.png'}\n                alt={''}\n              />{' '}\n            </ui.MediaLeft>{' '}\n            <ui.MediaContent>\n              {' '}\n              <ui.Content>\n                {' '}\n                <p>\n                  <strong>Kayli Eunice </strong> <br /> Sed convallis\n                  scelerisque mauris, non pulvinar nunc mattis vel. Maecenas\n                  varius felis sit amet magna vestibulum euismod malesuada\n                  cursus libero. Vestibulum ante ipsum primis in faucibus orci\n                  luctus et ultrices posuere cubilia Curae; Phasellus lacinia\n                  non nisl id feugiat. <br />{' '}\n                  <small>\n                    <a>Like</a> · <a>Reply</a> · 2 hrs\n                  </small>\n                </p>{' '}\n              </ui.Content>{' '}\n            </ui.MediaContent>{' '}\n          </ui.Media>{' '}\n        </ui.MediaContent>{' '}\n      </ui.Media>{' '}\n      <ui.Media>\n        {' '}\n        <ui.MediaLeft as={'figure'}>\n          {' '}\n          <ui.Image\n            size={64}\n            as={'p'}\n            src={'./official-assets/128x128.png'}\n            alt={''}\n          />{' '}\n        </ui.MediaLeft>{' '}\n        <ui.MediaContent>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control as={'p'}>\n              {' '}\n              <ui.Textarea\n                placeholder={'Add a comment...'}\n                defaultValue={''}\n              />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n          <ui.Field>\n            {' '}\n            <ui.Control as={'p'}>\n              {' '}\n              <ui.Button>Post comment</ui.Button>{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.MediaContent>{' '}\n      </ui.Media>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

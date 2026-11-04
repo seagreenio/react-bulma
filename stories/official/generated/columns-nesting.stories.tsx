@@ -155,61 +155,45 @@ function Example001Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-info'}>{'First column'}</p>
-          {'\n    '}
+          {' '}
+          <p className={'bd-notification is-info'}>First column</p>{' '}
           <ui.Columns displayFrom={'mobile'}>
-            {'\n      '}
+            {' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <p className={'bd-notification is-info'}>
-                {'First nested column'}
-              </p>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                First nested column
+              </p>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <p className={'bd-notification is-info'}>
-                {'Second nested column'}
-              </p>
-              {'\n      '}
-            </ui.Column>
-            {'\n    '}
-          </ui.Columns>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+                Second nested column
+              </p>{' '}
+            </ui.Column>{' '}
+          </ui.Columns>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-danger'}>{'Second column'}</p>
-          {'\n    '}
+          {' '}
+          <p className={'bd-notification is-danger'}>Second column</p>{' '}
           <ui.Columns displayFrom={'mobile'}>
-            {'\n      '}
+            {' '}
             <ui.Column width={'half'}>
-              {'\n        '}
-              <p className={'bd-notification is-danger'}>{'50%'}</p>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+              {' '}
+              <p className={'bd-notification is-danger'}>50%</p>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
-              <p className={'bd-notification is-danger'}>{'Auto'}</p>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+              {' '}
+              <p className={'bd-notification is-danger'}>Auto</p>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
-              <p className={'bd-notification is-danger'}>{'Auto'}</p>
-              {'\n      '}
-            </ui.Column>
-            {'\n    '}
-          </ui.Columns>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+              {' '}
+              <p className={'bd-notification is-danger'}>Auto</p>{' '}
+            </ui.Column>{' '}
+          </ui.Columns>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -221,7 +205,7 @@ export const Example001 = {
     official: { id: 'columns-nesting/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-info"}>{"First column"}</p>{"\\n    "}<ui.Columns displayFrom={"mobile"}>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-info"}>{"First nested column"}</p>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-info"}>{"Second nested column"}</p>{"\\n      "}</ui.Column>{"\\n    "}</ui.Columns>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-danger"}>{"Second column"}</p>{"\\n    "}<ui.Columns displayFrom={"mobile"}>{"\\n      "}<ui.Column width={"half"}>{"\\n        "}<p className={"bd-notification is-danger"}>{"50%"}</p>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-danger"}>{"Auto"}</p>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-danger"}>{"Auto"}</p>{"\\n      "}</ui.Column>{"\\n    "}</ui.Columns>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-info'}>First column</p>{' '}\n          <ui.Columns displayFrom={'mobile'}>\n            {' '}\n            <ui.Column>\n              {' '}\n              <p className={'bd-notification is-info'}>\n                First nested column\n              </p>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <p className={'bd-notification is-info'}>\n                Second nested column\n              </p>{' '}\n            </ui.Column>{' '}\n          </ui.Columns>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-danger'}>Second column</p>{' '}\n          <ui.Columns displayFrom={'mobile'}>\n            {' '}\n            <ui.Column width={'half'}>\n              {' '}\n              <p className={'bd-notification is-danger'}>50%</p>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <p className={'bd-notification is-danger'}>Auto</p>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <p className={'bd-notification is-danger'}>Auto</p>{' '}\n            </ui.Column>{' '}\n          </ui.Columns>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

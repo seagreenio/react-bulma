@@ -379,27 +379,21 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Block>
-        {'\n  This text is within a '}
-        <strong>{'block'}</strong>
-        {'.\n'}
-      </ui.Block>
-      {'\n'}
+        {' '}
+        This text is within a <strong>block</strong>.{' '}
+      </ui.Block>{' '}
       <ui.Block>
-        {'\n  This text is within a '}
-        <strong>{'second block'}</strong>
-        {
-          '. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.\n'
-        }
-      </ui.Block>
-      {'\n'}
+        {' '}
+        This text is within a <strong>second block</strong>. Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+        fringilla egestas. Nullam condimentum luctus turpis.{' '}
+      </ui.Block>{' '}
       <ui.Block>
-        {'\n  This text is within a '}
-        <strong>{'third block'}</strong>
-        {'. This block has no margin at the bottom.\n'}
+        {' '}
+        This text is within a <strong>third block</strong>. This block has no
+        margin at the bottom.{' '}
       </ui.Block>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -407,33 +401,17 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <div>
-        {'\n  This text is '}
-        <em>{'not'}</em>
-        {' within a '}
-        <strong>{'block'}</strong>
-        {'.\n'}
-      </div>
-      {'\n'}
+        This text is <em>not</em> within a <strong>block</strong>.
+      </div>{' '}
       <div>
-        {'\n  This text '}
-        <em>{"isn't"}</em>
-        {' within a '}
-        <strong>{'block'}</strong>
-        {
-          ' either. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.\n'
-        }
-      </div>
-      {'\n'}
+        This text <em>isn't</em> within a <strong>block</strong> either. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit
+        amet massa fringilla egestas. Nullam condimentum luctus turpis.
+      </div>{' '}
       <div>
-        {'\n  This text is also '}
-        <em>{'not'}</em>
-        {' within a '}
-        <strong>{'block'}</strong>
-        {'.\n'}
+        This text is also <em>not</em> within a <strong>block</strong>.
       </div>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -446,216 +424,164 @@ function Example003Demo() {
   return (
     <>
       <ui.Columns helpers={{ textSize: 6 }}>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    \n'}
+          {' '}
           <ui.Title helpers={{ mb: 0 }} as={'p'}>
-            {'Without block'}
-          </ui.Title>
-          {'\n'}
+            Without block
+          </ui.Title>{' '}
           <ui.Block helpers={{ mb: 0 }}>
-            {'\n  '}
+            {' '}
             <ui.Field layout={'grouped'}>
-              {'\n    '}
+              {' '}
               <ui.Control expanded>
-                {'\n      '}
-                <ui.Input type={'text'} placeholder={'Text input'} />
-                {'\n    '}
-              </ui.Control>
-              {'\n    '}
+                {' '}
+                <ui.Input type={'text'} placeholder={'Text input'} />{' '}
+              </ui.Control>{' '}
               <ui.Control>
-                {'\n      '}
-                <ui.Button color={'primary'}>{'Button'}</ui.Button>
-                {'\n    '}
-              </ui.Control>
-              {'\n  '}
-            </ui.Field>
-            {'\n'}
-          </ui.Block>
-          {'\n'}
+                {' '}
+                <ui.Button color={'primary'}>Button</ui.Button>{' '}
+              </ui.Control>{' '}
+            </ui.Field>{' '}
+          </ui.Block>{' '}
           <ui.Pagination
             role={'navigation'}
             aria-label={'pagination'}
             helpers={{ mb: 0 }}
           >
-            {'\n  '}
+            {' '}
             <ui.PaginationPrevious title={'This is the first page'} disabled>
-              {'Previous'}
-            </ui.PaginationPrevious>
-            {'\n  '}
-            <ui.PaginationNext>{'Next page'}</ui.PaginationNext>
-            {'\n  '}
+              Previous
+            </ui.PaginationPrevious>{' '}
+            <ui.PaginationNext>Next page</ui.PaginationNext>{' '}
             <ui.PaginationList>
-              {'\n    '}
+              {' '}
               <ui.PaginationLink
                 aria-label={'Page 1'}
                 aria-current={'page'}
                 current
               >
-                {'1'}
-              </ui.PaginationLink>
-              {'\n    '}
+                1
+              </ui.PaginationLink>{' '}
               <ui.PaginationLink aria-label={'Goto page 2'}>
-                {'2'}
-              </ui.PaginationLink>
-              {'\n    '}
+                2
+              </ui.PaginationLink>{' '}
               <ui.PaginationLink aria-label={'Goto page 3'}>
-                {'3'}
-              </ui.PaginationLink>
-              {'\n  '}
-            </ui.PaginationList>
-            {'\n'}
-          </ui.Pagination>
-          {'\n'}
+                3
+              </ui.PaginationLink>{' '}
+            </ui.PaginationList>{' '}
+          </ui.Pagination>{' '}
           <ui.Progress
             value={'30'}
             max={'100'}
             color={'success'}
             helpers={{ mb: 0 }}
           >
-            {'30%'}
-          </ui.Progress>
-          {'\n'}
+            30%
+          </ui.Progress>{' '}
           {visible1 && (
             <ui.Notification color={'warning'} helpers={{ mb: 0 }}>
-              {'\n  '}
-              <ui.Delete onClick={() => setVisible1(false)} />
-              {
-                '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.\n'
-              }
+              {' '}
+              <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem
+              ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+              dolor.{' '}
             </ui.Notification>
-          )}
-          {'\n'}
+          )}{' '}
           {visible2 && (
             <ui.Message color={'danger'} helpers={{ mb: 0 }}>
-              {'\n  '}
+              {' '}
               <ui.MessageHeader>
-                {'\n    '}
-                <p>{'Error'}</p>
-                {'\n    '}
+                {' '}
+                <p>Error</p>{' '}
                 <ui.Delete
                   aria-label={'delete'}
                   onClick={() => setVisible2(false)}
-                />
-                {'\n  '}
-              </ui.MessageHeader>
-              {'\n  '}
+                />{' '}
+              </ui.MessageHeader>{' '}
               <ui.MessageBody>
-                {
-                  '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-                }
-                <strong>{'Pellentesque risus mi'}</strong>
-                {
-                  ', tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum '
-                }
-                <a>{'felis venenatis'}</a>
-                {' efficitur.\n  '}
-              </ui.MessageBody>
-              {'\n'}
+                {' '}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+                <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+                porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+                Nullam gravida purus diam, et dictum <a>felis venenatis</a>{' '}
+                efficitur.{' '}
+              </ui.MessageBody>{' '}
             </ui.Message>
-          )}
-          {'\n\n  '}
-        </ui.Column>
-        {'\n  '}
+          )}{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    \n'}
-          <ui.Title as={'p'}>{'With block'}</ui.Title>
-          {'\n'}
+          {' '}
+          <ui.Title as={'p'}>With block</ui.Title>{' '}
           <ui.Block>
-            {'\n  '}
+            {' '}
             <ui.Field layout={'grouped'}>
-              {'\n    '}
+              {' '}
               <ui.Control expanded>
-                {'\n      '}
-                <ui.Input type={'text'} placeholder={'Text input'} />
-                {'\n    '}
-              </ui.Control>
-              {'\n    '}
+                {' '}
+                <ui.Input type={'text'} placeholder={'Text input'} />{' '}
+              </ui.Control>{' '}
               <ui.Control>
-                {'\n      '}
-                <ui.Button color={'primary'}>{'Button'}</ui.Button>
-                {'\n    '}
-              </ui.Control>
-              {'\n  '}
-            </ui.Field>
-            {'\n'}
-          </ui.Block>
-          {'\n'}
+                {' '}
+                <ui.Button color={'primary'}>Button</ui.Button>{' '}
+              </ui.Control>{' '}
+            </ui.Field>{' '}
+          </ui.Block>{' '}
           <ui.Pagination role={'navigation'} aria-label={'pagination'}>
-            {'\n  '}
+            {' '}
             <ui.PaginationPrevious title={'This is the first page'} disabled>
-              {'Previous'}
-            </ui.PaginationPrevious>
-            {'\n  '}
-            <ui.PaginationNext>{'Next page'}</ui.PaginationNext>
-            {'\n  '}
+              Previous
+            </ui.PaginationPrevious>{' '}
+            <ui.PaginationNext>Next page</ui.PaginationNext>{' '}
             <ui.PaginationList>
-              {'\n    '}
+              {' '}
               <ui.PaginationLink
                 aria-label={'Page 1'}
                 aria-current={'page'}
                 current
               >
-                {'1'}
-              </ui.PaginationLink>
-              {'\n    '}
+                1
+              </ui.PaginationLink>{' '}
               <ui.PaginationLink aria-label={'Goto page 2'}>
-                {'2'}
-              </ui.PaginationLink>
-              {'\n    '}
+                2
+              </ui.PaginationLink>{' '}
               <ui.PaginationLink aria-label={'Goto page 3'}>
-                {'3'}
-              </ui.PaginationLink>
-              {'\n  '}
-            </ui.PaginationList>
-            {'\n'}
-          </ui.Pagination>
-          {'\n'}
+                3
+              </ui.PaginationLink>{' '}
+            </ui.PaginationList>{' '}
+          </ui.Pagination>{' '}
           <ui.Progress value={'30'} max={'100'} color={'success'}>
-            {'30%'}
-          </ui.Progress>
-          {'\n'}
+            30%
+          </ui.Progress>{' '}
           {visible3 && (
             <ui.Notification color={'warning'}>
-              {'\n  '}
-              <ui.Delete onClick={() => setVisible3(false)} />
-              {
-                '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.\n'
-              }
+              {' '}
+              <ui.Delete onClick={() => setVisible3(false)} /> Primar lorem
+              ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+              dolor.{' '}
             </ui.Notification>
-          )}
-          {'\n'}
+          )}{' '}
           {visible4 && (
             <ui.Message color={'danger'}>
-              {'\n  '}
+              {' '}
               <ui.MessageHeader>
-                {'\n    '}
-                <p>{'Error'}</p>
-                {'\n    '}
+                {' '}
+                <p>Error</p>{' '}
                 <ui.Delete
                   aria-label={'delete'}
                   onClick={() => setVisible4(false)}
-                />
-                {'\n  '}
-              </ui.MessageHeader>
-              {'\n  '}
+                />{' '}
+              </ui.MessageHeader>{' '}
               <ui.MessageBody>
-                {
-                  '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-                }
-                <strong>{'Pellentesque risus mi'}</strong>
-                {
-                  ', tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum '
-                }
-                <a>{'felis venenatis'}</a>
-                {' efficitur.\n  '}
-              </ui.MessageBody>
-              {'\n'}
+                {' '}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+                <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+                porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+                Nullam gravida purus diam, et dictum <a>felis venenatis</a>{' '}
+                efficitur.{' '}
+              </ui.MessageBody>{' '}
             </ui.Message>
-          )}
-          {'\n\n  '}
-        </ui.Column>
-        {'\n'}
+          )}{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -667,7 +593,7 @@ export const Example001 = {
     official: { id: 'elements-block/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Block>{"\\n  This text is within a "}<strong>{"block"}</strong>{".\\n"}</ui.Block>{"\\n"}<ui.Block>{"\\n  This text is within a "}<strong>{"second block"}</strong>{". Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.\\n"}</ui.Block>{"\\n"}<ui.Block>{"\\n  This text is within a "}<strong>{"third block"}</strong>{". This block has no margin at the bottom.\\n"}</ui.Block>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Block>\n        {' '}\n        This text is within a <strong>block</strong>.{' '}\n      </ui.Block>{' '}\n      <ui.Block>\n        {' '}\n        This text is within a <strong>second block</strong>. Lorem ipsum dolor\n        sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa\n        fringilla egestas. Nullam condimentum luctus turpis.{' '}\n      </ui.Block>{' '}\n      <ui.Block>\n        {' '}\n        This text is within a <strong>third block</strong>. This block has no\n        margin at the bottom.{' '}\n      </ui.Block>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -682,7 +608,7 @@ export const Example002 = {
     official: { id: 'elements-block/basic/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<div>{"\\n  This text is "}<em>{"not"}</em>{" within a "}<strong>{"block"}</strong>{".\\n"}</div>{"\\n"}<div>{"\\n  This text "}<em>{"isn\'t"}</em>{" within a "}<strong>{"block"}</strong>{" either. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.\\n"}</div>{"\\n"}<div>{"\\n  This text is also "}<em>{"not"}</em>{" within a "}<strong>{"block"}</strong>{".\\n"}</div>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <div>\n        This text is <em>not</em> within a <strong>block</strong>.\n      </div>{' '}\n      <div>\n        This text <em>isn't</em> within a <strong>block</strong> either. Lorem\n        ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit\n        amet massa fringilla egestas. Nullam condimentum luctus turpis.\n      </div>{' '}\n      <div>\n        This text is also <em>not</em> within a <strong>block</strong>.\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -697,7 +623,7 @@ export const Example003 = {
     official: { id: 'elements-block/you-re-already-using-it/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true);\n  const [visible2, setVisible2] = useState(true);\n  const [visible3, setVisible3] = useState(true);\n  const [visible4, setVisible4] = useState(true);\n  return (<><ui.Columns helpers={{"textSize":6}}>{"\\n  "}<ui.Column>{"\\n    \\n"}<ui.Title helpers={{"mb":0}} as={"p"}>{"Without block"}</ui.Title>{"\\n"}<ui.Block helpers={{"mb":0}}>{"\\n  "}<ui.Field layout={"grouped"}>{"\\n    "}<ui.Control expanded>{"\\n      "}<ui.Input type={"text"} placeholder={"Text input"} />{"\\n    "}</ui.Control>{"\\n    "}<ui.Control>{"\\n      "}<ui.Button color={"primary"}>{"Button"}</ui.Button>{"\\n    "}</ui.Control>{"\\n  "}</ui.Field>{"\\n"}</ui.Block>{"\\n"}<ui.Pagination role={"navigation"} aria-label={"pagination"} helpers={{"mb":0}}>{"\\n  "}<ui.PaginationPrevious title={"This is the first page"} disabled>{"Previous"}</ui.PaginationPrevious>{"\\n  "}<ui.PaginationNext>{"Next page"}</ui.PaginationNext>{"\\n  "}<ui.PaginationList>{"\\n    "}<ui.PaginationLink aria-label={"Page 1"} aria-current={"page"} current>{"1"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Goto page 2"}>{"2"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Goto page 3"}>{"3"}</ui.PaginationLink>{"\\n  "}</ui.PaginationList>{"\\n"}</ui.Pagination>{"\\n"}<ui.Progress value={"30"} max={"100"} color={"success"} helpers={{"mb":0}}>{"30%"}</ui.Progress>{"\\n"}{visible1 && (<ui.Notification color={"warning"} helpers={{"mb":0}}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.\\n"}</ui.Notification>)}{"\\n"}{visible2 && (<ui.Message color={"danger"} helpers={{"mb":0}}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Error"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible2(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    \\n"}<ui.Title as={"p"}>{"With block"}</ui.Title>{"\\n"}<ui.Block>{"\\n  "}<ui.Field layout={"grouped"}>{"\\n    "}<ui.Control expanded>{"\\n      "}<ui.Input type={"text"} placeholder={"Text input"} />{"\\n    "}</ui.Control>{"\\n    "}<ui.Control>{"\\n      "}<ui.Button color={"primary"}>{"Button"}</ui.Button>{"\\n    "}</ui.Control>{"\\n  "}</ui.Field>{"\\n"}</ui.Block>{"\\n"}<ui.Pagination role={"navigation"} aria-label={"pagination"}>{"\\n  "}<ui.PaginationPrevious title={"This is the first page"} disabled>{"Previous"}</ui.PaginationPrevious>{"\\n  "}<ui.PaginationNext>{"Next page"}</ui.PaginationNext>{"\\n  "}<ui.PaginationList>{"\\n    "}<ui.PaginationLink aria-label={"Page 1"} aria-current={"page"} current>{"1"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Goto page 2"}>{"2"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Goto page 3"}>{"3"}</ui.PaginationLink>{"\\n  "}</ui.PaginationList>{"\\n"}</ui.Pagination>{"\\n"}<ui.Progress value={"30"} max={"100"} color={"success"}>{"30%"}</ui.Progress>{"\\n"}{visible3 && (<ui.Notification color={"warning"}>{"\\n  "}<ui.Delete onClick={() => setVisible3(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.\\n"}</ui.Notification>)}{"\\n"}{visible4 && (<ui.Message color={"danger"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Error"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible4(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true)\n  const [visible2, setVisible2] = useState(true)\n  const [visible3, setVisible3] = useState(true)\n  const [visible4, setVisible4] = useState(true)\n  return (\n    <>\n      <ui.Columns helpers={{ textSize: 6 }}>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Title helpers={{ mb: 0 }} as={'p'}>\n            Without block\n          </ui.Title>{' '}\n          <ui.Block helpers={{ mb: 0 }}>\n            {' '}\n            <ui.Field layout={'grouped'}>\n              {' '}\n              <ui.Control expanded>\n                {' '}\n                <ui.Input type={'text'} placeholder={'Text input'} />{' '}\n              </ui.Control>{' '}\n              <ui.Control>\n                {' '}\n                <ui.Button color={'primary'}>Button</ui.Button>{' '}\n              </ui.Control>{' '}\n            </ui.Field>{' '}\n          </ui.Block>{' '}\n          <ui.Pagination\n            role={'navigation'}\n            aria-label={'pagination'}\n            helpers={{ mb: 0 }}\n          >\n            {' '}\n            <ui.PaginationPrevious title={'This is the first page'} disabled>\n              Previous\n            </ui.PaginationPrevious>{' '}\n            <ui.PaginationNext>Next page</ui.PaginationNext>{' '}\n            <ui.PaginationList>\n              {' '}\n              <ui.PaginationLink\n                aria-label={'Page 1'}\n                aria-current={'page'}\n                current\n              >\n                1\n              </ui.PaginationLink>{' '}\n              <ui.PaginationLink aria-label={'Goto page 2'}>\n                2\n              </ui.PaginationLink>{' '}\n              <ui.PaginationLink aria-label={'Goto page 3'}>\n                3\n              </ui.PaginationLink>{' '}\n            </ui.PaginationList>{' '}\n          </ui.Pagination>{' '}\n          <ui.Progress\n            value={'30'}\n            max={'100'}\n            color={'success'}\n            helpers={{ mb: 0 }}\n          >\n            30%\n          </ui.Progress>{' '}\n          {visible1 && (\n            <ui.Notification color={'warning'} helpers={{ mb: 0 }}>\n              {' '}\n              <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem\n              ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n              dolor.{' '}\n            </ui.Notification>\n          )}{' '}\n          {visible2 && (\n            <ui.Message color={'danger'} helpers={{ mb: 0 }}>\n              {' '}\n              <ui.MessageHeader>\n                {' '}\n                <p>Error</p>{' '}\n                <ui.Delete\n                  aria-label={'delete'}\n                  onClick={() => setVisible2(false)}\n                />{' '}\n              </ui.MessageHeader>{' '}\n              <ui.MessageBody>\n                {' '}\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n                <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n                porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.\n                Nullam gravida purus diam, et dictum <a>felis venenatis</a>{' '}\n                efficitur.{' '}\n              </ui.MessageBody>{' '}\n            </ui.Message>\n          )}{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <ui.Title as={'p'}>With block</ui.Title>{' '}\n          <ui.Block>\n            {' '}\n            <ui.Field layout={'grouped'}>\n              {' '}\n              <ui.Control expanded>\n                {' '}\n                <ui.Input type={'text'} placeholder={'Text input'} />{' '}\n              </ui.Control>{' '}\n              <ui.Control>\n                {' '}\n                <ui.Button color={'primary'}>Button</ui.Button>{' '}\n              </ui.Control>{' '}\n            </ui.Field>{' '}\n          </ui.Block>{' '}\n          <ui.Pagination role={'navigation'} aria-label={'pagination'}>\n            {' '}\n            <ui.PaginationPrevious title={'This is the first page'} disabled>\n              Previous\n            </ui.PaginationPrevious>{' '}\n            <ui.PaginationNext>Next page</ui.PaginationNext>{' '}\n            <ui.PaginationList>\n              {' '}\n              <ui.PaginationLink\n                aria-label={'Page 1'}\n                aria-current={'page'}\n                current\n              >\n                1\n              </ui.PaginationLink>{' '}\n              <ui.PaginationLink aria-label={'Goto page 2'}>\n                2\n              </ui.PaginationLink>{' '}\n              <ui.PaginationLink aria-label={'Goto page 3'}>\n                3\n              </ui.PaginationLink>{' '}\n            </ui.PaginationList>{' '}\n          </ui.Pagination>{' '}\n          <ui.Progress value={'30'} max={'100'} color={'success'}>\n            30%\n          </ui.Progress>{' '}\n          {visible3 && (\n            <ui.Notification color={'warning'}>\n              {' '}\n              <ui.Delete onClick={() => setVisible3(false)} /> Primar lorem\n              ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n              dolor.{' '}\n            </ui.Notification>\n          )}{' '}\n          {visible4 && (\n            <ui.Message color={'danger'}>\n              {' '}\n              <ui.MessageHeader>\n                {' '}\n                <p>Error</p>{' '}\n                <ui.Delete\n                  aria-label={'delete'}\n                  onClick={() => setVisible4(false)}\n                />{' '}\n              </ui.MessageHeader>{' '}\n              <ui.MessageBody>\n                {' '}\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n                <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n                porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.\n                Nullam gravida purus diam, et dictum <a>felis venenatis</a>{' '}\n                efficitur.{' '}\n              </ui.MessageBody>{' '}\n            </ui.Message>\n          )}{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

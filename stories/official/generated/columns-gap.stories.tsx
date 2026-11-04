@@ -330,31 +330,23 @@ function Example001Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Default gap'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Default gap</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Default gap'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Default gap</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Default gap'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Default gap</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Default gap'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification is-primary'}>Default gap</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -364,31 +356,23 @@ function Example002Demo() {
   return (
     <>
       <ui.Columns gapless>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'First column'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>First column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Second column'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Second column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Third column'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Third column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Fourth column'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification is-primary'}>Fourth column</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -398,77 +382,59 @@ function Example003Demo() {
   return (
     <>
       <ui.Columns multiline displayFrom={'mobile'} gapless>
-        {'\n  '}
+        {' '}
         <ui.Column width={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-half'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification is-primary'}>Auto</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -478,59 +444,56 @@ function Example004Demo() {
   return (
     <>
       <div id={'klmn'} className={'bd-klmn'}>
-        {'\n  '}
+        {' '}
         <div className={'bd-klmn-gaps'}>
-          {'\n    '}
+          {' '}
           <strong className={'bd-klmn-label'}>
-            {'\n      Gap:\n      '}
-            <code id={'klmnValue'} className={'bd-klmn-value'} />
-            {'\n    '}
-          </strong>
-          {'\n    \n      '}
+            {' '}
+            Gap: <code id={'klmnValue'} className={'bd-klmn-value'} />{' '}
+          </strong>{' '}
           <a data-value={'0'} className={'bd-klmn-gap'}>
-            {'\n        is-0\n      '}
-          </a>
-          {'\n    \n      '}
+            {' '}
+            is-0{' '}
+          </a>{' '}
           <a data-value={'1'} className={'bd-klmn-gap'}>
-            {'\n        is-1\n      '}
-          </a>
-          {'\n    \n      '}
+            {' '}
+            is-1{' '}
+          </a>{' '}
           <a data-value={'2'} className={'bd-klmn-gap'}>
-            {'\n        is-2\n      '}
-          </a>
-          {'\n    \n      '}
+            {' '}
+            is-2{' '}
+          </a>{' '}
           <a data-value={'3'} className={'bd-klmn-gap'}>
-            {'\n        is-3\n      '}
-          </a>
-          {'\n    \n      '}
+            {' '}
+            is-3{' '}
+          </a>{' '}
           <a data-value={'4'} className={'bd-klmn-gap'}>
-            {'\n        is-4\n      '}
-          </a>
-          {'\n    \n      '}
+            {' '}
+            is-4{' '}
+          </a>{' '}
           <a data-value={'5'} className={'bd-klmn-gap'}>
-            {'\n        is-5\n      '}
-          </a>
-          {'\n    \n      '}
+            {' '}
+            is-5{' '}
+          </a>{' '}
           <a data-value={'6'} className={'bd-klmn-gap'}>
-            {'\n        is-6\n      '}
-          </a>
-          {'\n    \n      '}
+            {' '}
+            is-6{' '}
+          </a>{' '}
           <a data-value={'7'} className={'bd-klmn-gap'}>
-            {'\n        is-7\n      '}
-          </a>
-          {'\n    \n      '}
+            {' '}
+            is-7{' '}
+          </a>{' '}
           <a data-value={'8'} className={'bd-klmn-gap'}>
-            {'\n        is-8\n      '}
-          </a>
-          {'\n    \n  '}
-        </div>
-        {'\n\n  '}
+            {' '}
+            is-8{' '}
+          </a>{' '}
+        </div>{' '}
         <div className={'bd-klmn-lead'}>
-          {'\n    '}
+          {' '}
           <ui.Columns className={'rb-is-variable bd-klmn-columns'}>
-            {'\n      '}
+            {' '}
             <ui.Column width={3}>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -539,13 +502,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          Side\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                Side{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column width={9}>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -554,17 +516,15 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          Main\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n    '}
-          </ui.Columns>
-          {'\n\n    '}
+                {' '}
+                Main{' '}
+              </div>{' '}
+            </ui.Column>{' '}
+          </ui.Columns>{' '}
           <ui.Columns className={'rb-is-variable bd-klmn-columns'}>
-            {'\n      '}
+            {' '}
             <ui.Column width={4}>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -573,13 +533,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          Three columns\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                Three columns{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column width={4}>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -588,13 +547,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          Three columns\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                Three columns{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column width={4}>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -603,17 +561,15 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          Three columns\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n    '}
-          </ui.Columns>
-          {'\n\n    '}
+                {' '}
+                Three columns{' '}
+              </div>{' '}
+            </ui.Column>{' '}
+          </ui.Columns>{' '}
           <ui.Columns className={'rb-is-variable bd-klmn-columns'}>
-            {'\n      '}
+            {' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -622,13 +578,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          1\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                1{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -637,13 +592,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          2\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                2{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -652,13 +606,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          3\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                3{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -667,13 +620,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          4\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                4{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -682,13 +634,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          5\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                5{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -697,13 +648,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          6\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                6{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -712,13 +662,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          7\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                7{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -727,13 +676,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          8\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                8{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -742,13 +690,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          9\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                9{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -757,13 +704,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          10\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                10{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -772,13 +718,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          11\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n      '}
+                {' '}
+                11{' '}
+              </div>{' '}
+            </ui.Column>{' '}
             <ui.Column>
-              {'\n        '}
+              {' '}
               <div
                 className={[
                   ui.helpers({ textAlign: 'center' }),
@@ -787,15 +732,12 @@ function Example004Demo() {
                   .filter(Boolean)
                   .join(' ')}
               >
-                {'\n          12\n        '}
-              </div>
-              {'\n      '}
-            </ui.Column>
-            {'\n    '}
-          </ui.Columns>
-          {'\n  '}
-        </div>
-        {'\n'}
+                {' '}
+                12{' '}
+              </div>{' '}
+            </ui.Column>{' '}
+          </ui.Columns>{' '}
+        </div>{' '}
       </div>
     </>
   )
@@ -807,43 +749,31 @@ function Example005Demo() {
       <ui.Columns
         gap={{ mobile: 1, tablet: 0, desktop: 3, widescreen: 8, fullhd: 2 }}
       >
-        {'\n    '}
+        {' '}
         <ui.Column>
-          {'\n      '}
-          <p className={'bd-notification is-primary'}>{'Column'}</p>
-          {'\n    '}
-        </ui.Column>
-        {'\n    '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n      '}
-          <p className={'bd-notification is-primary'}>{'Column'}</p>
-          {'\n    '}
-        </ui.Column>
-        {'\n    '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n      '}
-          <p className={'bd-notification is-primary'}>{'Column'}</p>
-          {'\n    '}
-        </ui.Column>
-        {'\n    '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n      '}
-          <p className={'bd-notification is-primary'}>{'Column'}</p>
-          {'\n    '}
-        </ui.Column>
-        {'\n    '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n      '}
-          <p className={'bd-notification is-primary'}>{'Column'}</p>
-          {'\n    '}
-        </ui.Column>
-        {'\n    '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n      '}
-          <p className={'bd-notification is-primary'}>{'Column'}</p>
-          {'\n    '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Column</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -855,7 +785,7 @@ export const Example001 = {
     official: { id: 'columns-gap/default-gap/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Default gap"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Default gap"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Default gap"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Default gap"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Default gap</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Default gap</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Default gap</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Default gap</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -870,7 +800,7 @@ export const Example002 = {
     official: { id: 'columns-gap/gapless/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns gapless>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"First column"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Second column"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Third column"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Fourth column"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns gapless>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>First column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Second column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Third column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Fourth column</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -885,7 +815,7 @@ export const Example003 = {
     official: { id: 'columns-gap/gapless/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns multiline displayFrom={"mobile"} gapless>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-half"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns multiline displayFrom={'mobile'} gapless>\n        {' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-half'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -900,7 +830,7 @@ export const Example004 = {
     official: { id: 'columns-gap/variable-gap/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><div id={"klmn"} className={"bd-klmn"}>{"\\n  "}<div className={"bd-klmn-gaps"}>{"\\n    "}<strong className={"bd-klmn-label"}>{"\\n      Gap:\\n      "}<code id={"klmnValue"} className={"bd-klmn-value"} />{"\\n    "}</strong>{"\\n    \\n      "}<a data-value={"0"} className={"bd-klmn-gap"}>{"\\n        is-0\\n      "}</a>{"\\n    \\n      "}<a data-value={"1"} className={"bd-klmn-gap"}>{"\\n        is-1\\n      "}</a>{"\\n    \\n      "}<a data-value={"2"} className={"bd-klmn-gap"}>{"\\n        is-2\\n      "}</a>{"\\n    \\n      "}<a data-value={"3"} className={"bd-klmn-gap"}>{"\\n        is-3\\n      "}</a>{"\\n    \\n      "}<a data-value={"4"} className={"bd-klmn-gap"}>{"\\n        is-4\\n      "}</a>{"\\n    \\n      "}<a data-value={"5"} className={"bd-klmn-gap"}>{"\\n        is-5\\n      "}</a>{"\\n    \\n      "}<a data-value={"6"} className={"bd-klmn-gap"}>{"\\n        is-6\\n      "}</a>{"\\n    \\n      "}<a data-value={"7"} className={"bd-klmn-gap"}>{"\\n        is-7\\n      "}</a>{"\\n    \\n      "}<a data-value={"8"} className={"bd-klmn-gap"}>{"\\n        is-8\\n      "}</a>{"\\n    \\n  "}</div>{"\\n\\n  "}<div className={"bd-klmn-lead"}>{"\\n    "}<ui.Columns className={"rb-is-variable bd-klmn-columns"}>{"\\n      "}<ui.Column width={3}>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          Side\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column width={9}>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          Main\\n        "}</div>{"\\n      "}</ui.Column>{"\\n    "}</ui.Columns>{"\\n\\n    "}<ui.Columns className={"rb-is-variable bd-klmn-columns"}>{"\\n      "}<ui.Column width={4}>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          Three columns\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column width={4}>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          Three columns\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column width={4}>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          Three columns\\n        "}</div>{"\\n      "}</ui.Column>{"\\n    "}</ui.Columns>{"\\n\\n    "}<ui.Columns className={"rb-is-variable bd-klmn-columns"}>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          1\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          2\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          3\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          4\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          5\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          6\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          7\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          8\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          9\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          10\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          11\\n        "}</div>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<div className={[ui.helpers({"textAlign":"center"}), "bd-notification is-primary"].filter(Boolean).join(\' \')}>{"\\n          12\\n        "}</div>{"\\n      "}</ui.Column>{"\\n    "}</ui.Columns>{"\\n  "}</div>{"\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <div id={'klmn'} className={'bd-klmn'}>\n        {' '}\n        <div className={'bd-klmn-gaps'}>\n          {' '}\n          <strong className={'bd-klmn-label'}>\n            {' '}\n            Gap: <code id={'klmnValue'} className={'bd-klmn-value'} />{' '}\n          </strong>{' '}\n          <a data-value={'0'} className={'bd-klmn-gap'}>\n            {' '}\n            is-0{' '}\n          </a>{' '}\n          <a data-value={'1'} className={'bd-klmn-gap'}>\n            {' '}\n            is-1{' '}\n          </a>{' '}\n          <a data-value={'2'} className={'bd-klmn-gap'}>\n            {' '}\n            is-2{' '}\n          </a>{' '}\n          <a data-value={'3'} className={'bd-klmn-gap'}>\n            {' '}\n            is-3{' '}\n          </a>{' '}\n          <a data-value={'4'} className={'bd-klmn-gap'}>\n            {' '}\n            is-4{' '}\n          </a>{' '}\n          <a data-value={'5'} className={'bd-klmn-gap'}>\n            {' '}\n            is-5{' '}\n          </a>{' '}\n          <a data-value={'6'} className={'bd-klmn-gap'}>\n            {' '}\n            is-6{' '}\n          </a>{' '}\n          <a data-value={'7'} className={'bd-klmn-gap'}>\n            {' '}\n            is-7{' '}\n          </a>{' '}\n          <a data-value={'8'} className={'bd-klmn-gap'}>\n            {' '}\n            is-8{' '}\n          </a>{' '}\n        </div>{' '}\n        <div className={'bd-klmn-lead'}>\n          {' '}\n          <ui.Columns className={'rb-is-variable bd-klmn-columns'}>\n            {' '}\n            <ui.Column width={3}>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                Side{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column width={9}>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                Main{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n          </ui.Columns>{' '}\n          <ui.Columns className={'rb-is-variable bd-klmn-columns'}>\n            {' '}\n            <ui.Column width={4}>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                Three columns{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column width={4}>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                Three columns{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column width={4}>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                Three columns{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n          </ui.Columns>{' '}\n          <ui.Columns className={'rb-is-variable bd-klmn-columns'}>\n            {' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                1{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                2{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                3{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                4{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                5{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                6{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                7{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                8{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                9{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                10{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                11{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                12{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n          </ui.Columns>{' '}\n        </div>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -915,7 +845,7 @@ export const Example005 = {
     official: { id: 'columns-gap/breakpoint-based-column-gaps/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<><ui.Columns gap={{"mobile":1,"tablet":0,"desktop":3,"widescreen":8,"fullhd":2}}>{"\\n    "}<ui.Column>{"\\n      "}<p className={"bd-notification is-primary"}>{"Column"}</p>{"\\n    "}</ui.Column>{"\\n    "}<ui.Column>{"\\n      "}<p className={"bd-notification is-primary"}>{"Column"}</p>{"\\n    "}</ui.Column>{"\\n    "}<ui.Column>{"\\n      "}<p className={"bd-notification is-primary"}>{"Column"}</p>{"\\n    "}</ui.Column>{"\\n    "}<ui.Column>{"\\n      "}<p className={"bd-notification is-primary"}>{"Column"}</p>{"\\n    "}</ui.Column>{"\\n    "}<ui.Column>{"\\n      "}<p className={"bd-notification is-primary"}>{"Column"}</p>{"\\n    "}</ui.Column>{"\\n    "}<ui.Column>{"\\n      "}<p className={"bd-notification is-primary"}>{"Column"}</p>{"\\n    "}</ui.Column>{"\\n  "}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Columns\n        gap={{ mobile: 1, tablet: 0, desktop: 3, widescreen: 8, fullhd: 2 }}\n      >\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

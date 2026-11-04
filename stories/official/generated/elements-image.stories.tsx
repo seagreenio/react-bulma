@@ -1033,9 +1033,7 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Image size={128} src={'./official-assets/128x128.png'} alt={''} />
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1043,14 +1041,12 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Image
         size={128}
         src={'./official-assets/128x128.png'}
         alt={''}
         rounded
       />
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1058,9 +1054,7 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Image size={128} src={'./official-assets/256x256.png'} alt={''} />
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1068,7 +1062,6 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Image ratio={'16by9'}>
         <iframe
           width={'640'}
@@ -1079,7 +1072,6 @@ function Example004Demo() {
           className={'rb-has-ratio'}
         />
       </ui.Image>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1090,7 +1082,7 @@ export const Example001 = {
     official: { id: 'elements-image/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/128x128.png"} alt={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Image size={128} src={'./official-assets/128x128.png'} alt={''} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1105,7 +1097,7 @@ export const Example002 = {
     official: { id: 'elements-image/rounded-images/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/128x128.png"} alt={""} rounded />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Image\n        size={128}\n        src={'./official-assets/128x128.png'}\n        alt={''}\n        rounded\n      />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1120,7 +1112,7 @@ export const Example003 = {
     official: { id: 'elements-image/retina-images/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/256x256.png"} alt={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Image size={128} src={'./official-assets/256x256.png'} alt={''} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1135,7 +1127,7 @@ export const Example004 = {
     official: { id: 'elements-image/arbitrary-ratios-with-any-element/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image ratio={"16by9"}><iframe width={"640"} height={"360"} src={"https://www.youtube.com/embed/YE7VzlLtp-4"} frameBorder={"0"} allowFullScreen className={"rb-has-ratio"} /></ui.Image>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Image ratio={'16by9'}>\n        <iframe\n          width={'640'}\n          height={'360'}\n          src={'https://www.youtube.com/embed/YE7VzlLtp-4'}\n          frameBorder={'0'}\n          allowFullScreen\n          className={'rb-has-ratio'}\n        />\n      </ui.Image>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

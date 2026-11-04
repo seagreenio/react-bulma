@@ -1355,24 +1355,22 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'Pictures'}
+            Pictures
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'Music'}
+            Music
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'Videos'}
+            Videos
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'Documents'}
+            Documents
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1380,24 +1378,22 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList alignment={'centered'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'Pictures'}
+            Pictures
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'Music'}
+            Music
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'Videos'}
+            Videos
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'Documents'}
+            Documents
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1405,24 +1401,22 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList alignment={'right'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'Pictures'}
+            Pictures
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'Music'}
+            Music
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'Videos'}
+            Videos
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'Documents'}
+            Documents
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1430,48 +1424,38 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList alignment={'centered'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Pictures'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Pictures</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Music'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Music</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Videos'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Videos</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Documents'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Documents</span>{' '}
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1479,24 +1463,22 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList size={'small'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'Pictures'}
+            Pictures
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'Music'}
+            Music
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'Videos'}
+            Videos
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'Documents'}
+            Documents
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1504,24 +1486,22 @@ function Example005Demo() {
 function Example006Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList size={'medium'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'Pictures'}
+            Pictures
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'Music'}
+            Music
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'Videos'}
+            Videos
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'Documents'}
+            Documents
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1529,24 +1509,22 @@ function Example006Demo() {
 function Example007Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList size={'large'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'Pictures'}
+            Pictures
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'Music'}
+            Music
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'Videos'}
+            Videos
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'Documents'}
+            Documents
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1554,48 +1532,38 @@ function Example007Demo() {
 function Example008Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList variant={'boxed'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Pictures'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Pictures</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Music'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Music</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Videos'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Videos</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Documents'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Documents</span>{' '}
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1603,48 +1571,38 @@ function Example008Demo() {
 function Example009Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList variant={'toggle'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Pictures'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Pictures</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Music'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Music</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Videos'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Videos</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Documents'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Documents</span>{' '}
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1652,48 +1610,38 @@ function Example009Demo() {
 function Example010Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList variant={'toggle-rounded'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i className={'fas fa-image'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Pictures'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Pictures</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i className={'fas fa-music'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Music'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Music</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i className={'fas fa-film'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Videos'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Videos</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i className={'fas fa-file-alt'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Documents'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Documents</span>{' '}
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1701,39 +1649,31 @@ function Example010Demo() {
 function Example011Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={null}>
         <ui.TabsList fullWidth>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon>
               <i aria-hidden={'true'} className={'fas fa-angle-left'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Left'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Left</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon>
               <i aria-hidden={'true'} className={'fas fa-angle-up'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Up'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Up</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'\n        '}
-            <span>{'Right'}</span>
-            {'\n        '}
+            {' '}
+            <span>Right</span>{' '}
             <ui.Icon>
               <i aria-hidden={'true'} className={'fas fa-angle-right'} />
-            </ui.Icon>
-            {'\n      '}
+            </ui.Icon>{' '}
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1741,48 +1681,38 @@ function Example011Demo() {
 function Example012Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList alignment={'centered'} variant={'boxed'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Pictures'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Pictures</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Music'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Music</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Videos'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Videos</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Documents'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Documents</span>{' '}
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1790,48 +1720,38 @@ function Example012Demo() {
 function Example013Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList variant={'toggle'} fullWidth>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Pictures'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Pictures</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Music'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Music</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Videos'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Videos</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Documents'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Documents</span>{' '}
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1839,48 +1759,38 @@ function Example013Demo() {
 function Example014Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList alignment={'centered'} variant={'boxed'} size={'medium'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Pictures'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Pictures</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Music'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Music</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Videos'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Videos</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Documents'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Documents</span>{' '}
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1888,48 +1798,38 @@ function Example014Demo() {
 function Example015Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tabs defaultValue={'tab-1'}>
         <ui.TabsList variant={'toggle'} fullWidth size={'large'}>
           <ui.Tab value={'tab-1'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Pictures'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Pictures</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-2'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Music'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Music</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-3'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Videos'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Videos</span>{' '}
           </ui.Tab>
           <ui.Tab value={'tab-4'} as={'a'}>
-            {'\n        '}
+            {' '}
             <ui.Icon>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>
-            {'\n        '}
-            <span>{'Documents'}</span>
-            {'\n      '}
+            </ui.Icon>{' '}
+            <span>Documents</span>{' '}
           </ui.Tab>
         </ui.TabsList>
       </ui.Tabs>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1940,7 +1840,7 @@ export const Example001 = {
     official: { id: 'components-tabs/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList><ui.Tab value={"tab-1"} as={"a"}>{"Pictures"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Music"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Videos"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Documents"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1955,7 +1855,7 @@ export const Example002 = {
     official: { id: 'components-tabs/alignment/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList alignment={"centered"}><ui.Tab value={"tab-1"} as={"a"}>{"Pictures"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Music"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Videos"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Documents"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList alignment={'centered'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1970,7 +1870,7 @@ export const Example003 = {
     official: { id: 'components-tabs/alignment/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList alignment={"right"}><ui.Tab value={"tab-1"} as={"a"}>{"Pictures"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Music"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Videos"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Documents"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList alignment={'right'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1985,7 +1885,7 @@ export const Example004 = {
     official: { id: 'components-tabs/icons/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList alignment={"centered"}><ui.Tab value={"tab-1"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-image"} /></ui.Icon>{"\\n        "}<span>{"Pictures"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-music"} /></ui.Icon>{"\\n        "}<span>{"Music"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-film"} /></ui.Icon>{"\\n        "}<span>{"Videos"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"far fa-file-alt"} /></ui.Icon>{"\\n        "}<span>{"Documents"}</span>{"\\n      "}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList alignment={'centered'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2000,7 +1900,7 @@ export const Example005 = {
     official: { id: 'components-tabs/sizes/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList size={"small"}><ui.Tab value={"tab-1"} as={"a"}>{"Pictures"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Music"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Videos"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Documents"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList size={'small'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2015,7 +1915,7 @@ export const Example006 = {
     official: { id: 'components-tabs/sizes/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList size={"medium"}><ui.Tab value={"tab-1"} as={"a"}>{"Pictures"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Music"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Videos"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Documents"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList size={'medium'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2030,7 +1930,7 @@ export const Example007 = {
     official: { id: 'components-tabs/sizes/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList size={"large"}><ui.Tab value={"tab-1"} as={"a"}>{"Pictures"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Music"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Videos"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Documents"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList size={'large'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2045,7 +1945,7 @@ export const Example008 = {
     official: { id: 'components-tabs/styles/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList variant={"boxed"}><ui.Tab value={"tab-1"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-image"} /></ui.Icon>{"\\n        "}<span>{"Pictures"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-music"} /></ui.Icon>{"\\n        "}<span>{"Music"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-film"} /></ui.Icon>{"\\n        "}<span>{"Videos"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"far fa-file-alt"} /></ui.Icon>{"\\n        "}<span>{"Documents"}</span>{"\\n      "}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList variant={'boxed'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2060,7 +1960,7 @@ export const Example009 = {
     official: { id: 'components-tabs/styles/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList variant={"toggle"}><ui.Tab value={"tab-1"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-image"} /></ui.Icon>{"\\n        "}<span>{"Pictures"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-music"} /></ui.Icon>{"\\n        "}<span>{"Music"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-film"} /></ui.Icon>{"\\n        "}<span>{"Videos"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"far fa-file-alt"} /></ui.Icon>{"\\n        "}<span>{"Documents"}</span>{"\\n      "}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList variant={'toggle'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2075,7 +1975,7 @@ export const Example010 = {
     official: { id: 'components-tabs/styles/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList variant={"toggle-rounded"}><ui.Tab value={"tab-1"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i className={"fas fa-image"} /></ui.Icon>{"\\n        "}<span>{"Pictures"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i className={"fas fa-music"} /></ui.Icon>{"\\n        "}<span>{"Music"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i className={"fas fa-film"} /></ui.Icon>{"\\n        "}<span>{"Videos"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i className={"fas fa-file-alt"} /></ui.Icon>{"\\n        "}<span>{"Documents"}</span>{"\\n      "}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList variant={'toggle-rounded'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i className={'fas fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2090,7 +1990,7 @@ export const Example011 = {
     official: { id: 'components-tabs/styles/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={null}><ui.TabsList fullWidth><ui.Tab value={"tab-1"} as={"a"}>{"\\n        "}<ui.Icon><i aria-hidden={"true"} className={"fas fa-angle-left"} /></ui.Icon>{"\\n        "}<span>{"Left"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"\\n        "}<ui.Icon><i aria-hidden={"true"} className={"fas fa-angle-up"} /></ui.Icon>{"\\n        "}<span>{"Up"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"\\n        "}<span>{"Right"}</span>{"\\n        "}<ui.Icon><i aria-hidden={"true"} className={"fas fa-angle-right"} /></ui.Icon>{"\\n      "}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={null}>\n        <ui.TabsList fullWidth>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-left'} />\n            </ui.Icon>{' '}\n            <span>Left</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-up'} />\n            </ui.Icon>{' '}\n            <span>Up</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <span>Right</span>{' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-right'} />\n            </ui.Icon>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2105,7 +2005,7 @@ export const Example012 = {
     official: { id: 'components-tabs/combining/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList alignment={"centered"} variant={"boxed"}><ui.Tab value={"tab-1"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-image"} /></ui.Icon>{"\\n        "}<span>{"Pictures"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-music"} /></ui.Icon>{"\\n        "}<span>{"Music"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-film"} /></ui.Icon>{"\\n        "}<span>{"Videos"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"far fa-file-alt"} /></ui.Icon>{"\\n        "}<span>{"Documents"}</span>{"\\n      "}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList alignment={'centered'} variant={'boxed'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2120,7 +2020,7 @@ export const Example013 = {
     official: { id: 'components-tabs/combining/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList variant={"toggle"} fullWidth><ui.Tab value={"tab-1"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-image"} /></ui.Icon>{"\\n        "}<span>{"Pictures"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-music"} /></ui.Icon>{"\\n        "}<span>{"Music"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-film"} /></ui.Icon>{"\\n        "}<span>{"Videos"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"far fa-file-alt"} /></ui.Icon>{"\\n        "}<span>{"Documents"}</span>{"\\n      "}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList variant={'toggle'} fullWidth>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2135,7 +2035,7 @@ export const Example014 = {
     official: { id: 'components-tabs/combining/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList alignment={"centered"} variant={"boxed"} size={"medium"}><ui.Tab value={"tab-1"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-image"} /></ui.Icon>{"\\n        "}<span>{"Pictures"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-music"} /></ui.Icon>{"\\n        "}<span>{"Music"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"fas fa-film"} /></ui.Icon>{"\\n        "}<span>{"Videos"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"\\n        "}<ui.Icon size={"small"}><i aria-hidden={"true"} className={"far fa-file-alt"} /></ui.Icon>{"\\n        "}<span>{"Documents"}</span>{"\\n      "}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList alignment={'centered'} variant={'boxed'} size={'medium'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2150,7 +2050,7 @@ export const Example015 = {
     official: { id: 'components-tabs/combining/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList variant={"toggle"} fullWidth size={"large"}><ui.Tab value={"tab-1"} as={"a"}>{"\\n        "}<ui.Icon><i aria-hidden={"true"} className={"fas fa-image"} /></ui.Icon>{"\\n        "}<span>{"Pictures"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"\\n        "}<ui.Icon><i aria-hidden={"true"} className={"fas fa-music"} /></ui.Icon>{"\\n        "}<span>{"Music"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"\\n        "}<ui.Icon><i aria-hidden={"true"} className={"fas fa-film"} /></ui.Icon>{"\\n        "}<span>{"Videos"}</span>{"\\n      "}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"\\n        "}<ui.Icon><i aria-hidden={"true"} className={"far fa-file-alt"} /></ui.Icon>{"\\n        "}<span>{"Documents"}</span>{"\\n      "}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList variant={'toggle'} fullWidth size={'large'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

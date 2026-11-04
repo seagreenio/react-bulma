@@ -1015,214 +1015,161 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Content>
-        {'\n  '}
-        <h1>{'Hello World'}</h1>
-        {'\n  '}
+        {' '}
+        <h1>Hello World</h1>{' '}
         <p>
-          {'\n    Lorem ipsum'}
+          Lorem ipsum
           <sup>
-            <a>{'[1]'}</a>
-          </sup>
-          {
-            ' dolor sit amet, consectetur adipiscing\n    elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius\n    lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat\n    odio, sollicitudin vel erat vel, interdum mattis neque. Sub'
-          }
-          <sub>{'script'}</sub>
-          {'\n    works as well!\n  '}
-        </p>
-        {'\n  '}
-        <h2>{'Second level'}</h2>
-        {'\n  '}
+            <a>[1]</a>
+          </sup>{' '}
+          dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus
+          ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo
+          nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin
+          vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as
+          well!
+        </p>{' '}
+        <h2>Second level</h2>{' '}
         <p>
-          {'\n    Curabitur accumsan turpis pharetra '}
-          <strong>{'augue tincidunt'}</strong>
-          {
-            ' blandit.\n    Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin\n    pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\n    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.\n  '
-          }
-        </p>
-        {'\n  '}
+          Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong>{' '}
+          blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum
+          id. Proin pretium urna vel cursus venenatis. Suspendisse potenti.
+          Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim
+          dui. Ut et neque nisl.
+        </p>{' '}
         <ul>
-          {'\n    '}
+          {' '}
           <li>
-            {'In fermentum leo eu lectus mollis, quis dictum mi aliquet.'}
-          </li>
-          {'\n    '}
+            In fermentum leo eu lectus mollis, quis dictum mi aliquet.
+          </li>{' '}
+          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>{' '}
           <li>
-            {'Morbi eu nulla lobortis, lobortis est in, fringilla felis.'}
-          </li>
-          {'\n    '}
-          <li>
-            {
-              'Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.'
-            }
-          </li>
-          {'\n    '}
-          <li>{'Ut non enim metus.'}</li>
-          {'\n  '}
-        </ul>
-        {'\n  '}
-        <h3>{'Third level'}</h3>
-        {'\n  '}
+            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.
+          </li>{' '}
+          <li>Ut non enim metus.</li>{' '}
+        </ul>{' '}
+        <h3>Third level</h3>{' '}
         <p>
-          {'\n    Quisque ante lacus, malesuada ac auctor vitae, congue\n    '}
-          <a href={'#'}>{'non ante'}</a>
-          {
-            '. Phasellus lacus ex, semper ac tortor nec,\n    fringilla condimentum orci. Fusce eu rutrum tellus.\n  '
-          }
-        </p>
-        {'\n  '}
+          Quisque ante lacus, malesuada ac auctor vitae, congue{' '}
+          <a href={'#'}>non ante</a>. Phasellus lacus ex, semper ac tortor nec,
+          fringilla condimentum orci. Fusce eu rutrum tellus.
+        </p>{' '}
         <ol>
-          {'\n    '}
-          <li>{'Donec blandit a lorem id convallis.'}</li>
-          {'\n    '}
-          <li>{'Cras gravida arcu at diam gravida gravida.'}</li>
-          {'\n    '}
-          <li>{'Integer in volutpat libero.'}</li>
-          {'\n    '}
-          <li>{'Donec a diam tellus.'}</li>
-          {'\n    '}
-          <li>{'Aenean nec tortor orci.'}</li>
-          {'\n    '}
-          <li>
-            {'Quisque aliquam cursus urna, non bibendum massa viverra eget.'}
-          </li>
-          {'\n    '}
-          <li>{'Vivamus maximus ultricies pulvinar.'}</li>
-          {'\n  '}
-        </ol>
-        {'\n  '}
+          {' '}
+          <li>Donec blandit a lorem id convallis.</li>{' '}
+          <li>Cras gravida arcu at diam gravida gravida.</li>{' '}
+          <li>Integer in volutpat libero.</li> <li>Donec a diam tellus.</li>{' '}
+          <li>Aenean nec tortor orci.</li>{' '}
+          <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>{' '}
+          <li>Vivamus maximus ultricies pulvinar.</li>{' '}
+        </ol>{' '}
         <blockquote>
-          {
-            '\n    Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit\n    ipsum, ut blandit est tellus sit amet turpis.\n  '
-          }
-        </blockquote>
-        {'\n  '}
+          Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero
+          hendrerit ipsum, ut blandit est tellus sit amet turpis.
+        </blockquote>{' '}
         <p>
-          {
-            '\n    Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et\n    '
-          }
-          <em>{'justo sodales'}</em>
-          {
-            ' elementum. Maecenas ultrices lacus quis neque\n    consectetur, et lobortis nisi molestie.\n  '
-          }
-        </p>
-        {'\n  '}
+          Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et{' '}
+          <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque
+          consectetur, et lobortis nisi molestie.
+        </p>{' '}
         <p>
-          {
-            '\n    Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis\n    vulputate risus in luctus. Maecenas vestibulum interdum commodo.\n  '
-          }
-        </p>
-        {'\n  '}
+          Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec
+          mattis vulputate risus in luctus. Maecenas vestibulum interdum
+          commodo.
+        </p>{' '}
         <dl>
-          {'\n    '}
-          <dt>{'Web'}</dt>
-          {'\n    '}
-          <dd>
-            {'The part of the Internet that contains websites and web pages'}
-          </dd>
-          {'\n    '}
-          <dt>{'HTML'}</dt>
-          {'\n    '}
-          <dd>{'A markup language for creating web pages'}</dd>
-          {'\n    '}
-          <dt>{'CSS'}</dt>
-          {'\n    '}
-          <dd>{'A technology to make HTML look better'}</dd>
-          {'\n  '}
-        </dl>
-        {'\n  '}
+          {' '}
+          <dt>Web</dt>{' '}
+          <dd>The part of the Internet that contains websites and web pages</dd>{' '}
+          <dt>HTML</dt> <dd>A markup language for creating web pages</dd>{' '}
+          <dt>CSS</dt> <dd>A technology to make HTML look better</dd>{' '}
+        </dl>{' '}
         <p>
-          {
-            '\n    Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl,\n    suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac\n    erat ante.\n  '
-          }
-        </p>
-        {'\n  '}
-        <h4>{'Fourth level'}</h4>
-        {'\n  '}
+          Suspendisse egestas sapien non felis placerat elementum. Morbi tortor
+          nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla
+          facilisi. Nullam ac erat ante.
+        </p>{' '}
+        <h4>Fourth level</h4>{' '}
         <p>
-          {
-            '\n    Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris\n    euismod metus a tellus laoreet, at elementum ex efficitur.\n  '
-          }
-        </p>
-        {'\n  '}
+          Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac.
+          Mauris euismod metus a tellus laoreet, at elementum ex efficitur.
+        </p>{' '}
         <pre>
           {
             ' <!DOCTYPE html> <html> <head>\n<title>Hello World</title> </head> <body> <p>Lorem\nipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae\nmollis.</p> </body> </html> '
           }
-        </pre>
-        {'\n  '}
+        </pre>{' '}
         <p>
-          {
-            '\n    Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non.\n    Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta\n    condimentum in eu justo. Nulla id iaculis sapien.\n  '
-          }
-        </p>
-        {'\n  '}
+          Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus
+          non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est
+          porta condimentum in eu justo. Nulla id iaculis sapien.
+        </p>{' '}
         <table>
           <thead>
             <tr>
-              <th>{'One'}</th>
-              <th>{'Two'}</th>
+              <th>One</th>
+              <th>Two</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>{'Three'}</td>
-              <td>{'Four'}</td>
+              <td>Three</td>
+              <td>Four</td>
             </tr>
             <tr>
-              <td>{'Five'}</td>
-              <td>{'Six'}</td>
+              <td>Five</td>
+              <td>Six</td>
             </tr>
             <tr>
-              <td>{'Seven'}</td>
-              <td>{'Eight'}</td>
+              <td>Seven</td>
+              <td>Eight</td>
             </tr>
             <tr>
-              <td>{'Nine'}</td>
-              <td>{'Ten'}</td>
+              <td>Nine</td>
+              <td>Ten</td>
             </tr>
             <tr>
-              <td>{'Eleven'}</td>
-              <td>{'Twelve'}</td>
+              <td>Eleven</td>
+              <td>Twelve</td>
             </tr>
           </tbody>
-        </table>
-        {'\n  '}
+        </table>{' '}
         <p>
-          {
-            '\n    Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit\n    sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum\n    rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam\n    tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo\n    est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae\n    ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar.\n    Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor\n    cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.\n  '
-          }
-        </p>
-        {'\n  '}
-        <h5>{'Fifth level'}</h5>
-        {'\n  '}
+          Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc,
+          blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac
+          nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet
+          ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus
+          laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc
+          ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh
+          in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus
+          vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam
+          pharetra varius metus non pellentesque.
+        </p>{' '}
+        <h5>Fifth level</h5>{' '}
         <p>
-          {
-            '\n    Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt\n    ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit\n    volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue\n    laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.\n  '
-          }
-        </p>
-        {'\n  '}
+          Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt
+          ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus
+          elit volutpat porta. Phasellus molestie diam vel nisi sodales, a
+          eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin
+          odio.
+        </p>{' '}
         <figure>
-          {'\n    '}
-          <img src={'./official-assets/256x256.png'} />
-          {'\n    '}
-          <img src={'./official-assets/256x256.png'} />
-          {'\n    '}
-          <figcaption>{'Figure 1: Some beautiful placeholders'}</figcaption>
-          {'\n  '}
-        </figure>
-        {'\n  '}
-        <h6>{'Sixth level'}</h6>
-        {'\n  '}
+          {' '}
+          <img src={'./official-assets/256x256.png'} />{' '}
+          <img src={'./official-assets/256x256.png'} />{' '}
+          <figcaption>Figure 1: Some beautiful placeholders</figcaption>{' '}
+        </figure>{' '}
+        <h6>Sixth level</h6>{' '}
         <p>
-          {
-            '\n    Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus\n    sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut\n    sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada\n    ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse\n    euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius\n    sapien odio vitae est. Etiam at cursus metus.\n  '
-          }
-        </p>
-        {'\n'}
+          Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar
+          lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non
+          tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis
+          enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec
+          consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum
+          tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus
+          metus.
+        </p>{' '}
       </ui.Content>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1230,61 +1177,29 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Content>
-        {'\n  '}
+        {' '}
         <ol type={'1'}>
-          {'\n    '}
-          <li>{'Coffee'}</li>
-          {'\n    '}
-          <li>{'Tea'}</li>
-          {'\n    '}
-          <li>{'Milk'}</li>
-          {'\n  '}
-        </ol>
-        {'\n  '}
+          {' '}
+          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}
+        </ol>{' '}
         <ol type={'A'}>
-          {'\n    '}
-          <li>{'Coffee'}</li>
-          {'\n    '}
-          <li>{'Tea'}</li>
-          {'\n    '}
-          <li>{'Milk'}</li>
-          {'\n  '}
-        </ol>
-        {'\n  '}
+          {' '}
+          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}
+        </ol>{' '}
         <ol type={'a'}>
-          {'\n    '}
-          <li>{'Coffee'}</li>
-          {'\n    '}
-          <li>{'Tea'}</li>
-          {'\n    '}
-          <li>{'Milk'}</li>
-          {'\n  '}
-        </ol>
-        {'\n  '}
+          {' '}
+          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}
+        </ol>{' '}
         <ol type={'I'}>
-          {'\n    '}
-          <li>{'Coffee'}</li>
-          {'\n    '}
-          <li>{'Tea'}</li>
-          {'\n    '}
-          <li>{'Milk'}</li>
-          {'\n  '}
-        </ol>
-        {'\n  '}
+          {' '}
+          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}
+        </ol>{' '}
         <ol type={'i'}>
-          {'\n    '}
-          <li>{'Coffee'}</li>
-          {'\n    '}
-          <li>{'Tea'}</li>
-          {'\n    '}
-          <li>{'Milk'}</li>
-          {'\n  '}
-        </ol>
-        {'\n'}
+          {' '}
+          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}
+        </ol>{' '}
       </ui.Content>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1292,51 +1207,25 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Content>
-        {'\n  '}
+        {' '}
         <ol className={'rb-is-lower-alpha'}>
-          {'\n    '}
-          <li>{'Coffee'}</li>
-          {'\n    '}
-          <li>{'Tea'}</li>
-          {'\n    '}
-          <li>{'Milk'}</li>
-          {'\n  '}
-        </ol>
-        {'\n  '}
+          {' '}
+          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}
+        </ol>{' '}
         <ol className={'rb-is-lower-roman'}>
-          {'\n    '}
-          <li>{'Coffee'}</li>
-          {'\n    '}
-          <li>{'Tea'}</li>
-          {'\n    '}
-          <li>{'Milk'}</li>
-          {'\n  '}
-        </ol>
-        {'\n  '}
+          {' '}
+          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}
+        </ol>{' '}
         <ol className={'rb-is-upper-alpha'}>
-          {'\n    '}
-          <li>{'Coffee'}</li>
-          {'\n    '}
-          <li>{'Tea'}</li>
-          {'\n    '}
-          <li>{'Milk'}</li>
-          {'\n  '}
-        </ol>
-        {'\n  '}
+          {' '}
+          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}
+        </ol>{' '}
         <ol className={'rb-is-upper-roman'}>
-          {'\n    '}
-          <li>{'Coffee'}</li>
-          {'\n    '}
-          <li>{'Tea'}</li>
-          {'\n    '}
-          <li>{'Milk'}</li>
-          {'\n  '}
-        </ol>
-        {'\n'}
+          {' '}
+          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}
+        </ol>{' '}
       </ui.Content>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1344,49 +1233,35 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Content size={'small'}>
-        {'\n  '}
-        <h1>{'Hello World'}</h1>
-        {'\n  '}
+        {' '}
+        <h1>Hello World</h1>{' '}
         <p>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan,\n    metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo\n    nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel\n    erat vel, interdum mattis neque.\n  '
-          }
-        </p>
-        {'\n  '}
-        <h2>{'Second level'}</h2>
-        {'\n  '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,
+          nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat
+          odio, sollicitudin vel erat vel, interdum mattis neque.
+        </p>{' '}
+        <h2>Second level</h2>{' '}
         <p>
-          {'\n    Curabitur accumsan turpis pharetra '}
-          <strong>{'augue tincidunt'}</strong>
-          {
-            ' blandit.\n    Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin\n    pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\n    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.\n  '
-          }
-        </p>
-        {'\n  '}
+          Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong>{' '}
+          blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum
+          id. Proin pretium urna vel cursus venenatis. Suspendisse potenti.
+          Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim
+          dui. Ut et neque nisl.
+        </p>{' '}
         <ul>
-          {'\n    '}
+          {' '}
           <li>
-            {'In fermentum leo eu lectus mollis, quis dictum mi aliquet.'}
-          </li>
-          {'\n    '}
+            In fermentum leo eu lectus mollis, quis dictum mi aliquet.
+          </li>{' '}
+          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>{' '}
           <li>
-            {'Morbi eu nulla lobortis, lobortis est in, fringilla felis.'}
-          </li>
-          {'\n    '}
-          <li>
-            {
-              'Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.'
-            }
-          </li>
-          {'\n    '}
-          <li>{'Ut non enim metus.'}</li>
-          {'\n  '}
-        </ul>
-        {'\n'}
+            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.
+          </li>{' '}
+          <li>Ut non enim metus.</li>{' '}
+        </ul>{' '}
       </ui.Content>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1394,49 +1269,35 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Content size={'normal'}>
-        {'\n  '}
-        <h1>{'Hello World'}</h1>
-        {'\n  '}
+        {' '}
+        <h1>Hello World</h1>{' '}
         <p>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan,\n    metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo\n    nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel\n    erat vel, interdum mattis neque.\n  '
-          }
-        </p>
-        {'\n  '}
-        <h2>{'Second level'}</h2>
-        {'\n  '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,
+          nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat
+          odio, sollicitudin vel erat vel, interdum mattis neque.
+        </p>{' '}
+        <h2>Second level</h2>{' '}
         <p>
-          {'\n    Curabitur accumsan turpis pharetra '}
-          <strong>{'augue tincidunt'}</strong>
-          {
-            ' blandit.\n    Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin\n    pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\n    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.\n  '
-          }
-        </p>
-        {'\n  '}
+          Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong>{' '}
+          blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum
+          id. Proin pretium urna vel cursus venenatis. Suspendisse potenti.
+          Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim
+          dui. Ut et neque nisl.
+        </p>{' '}
         <ul>
-          {'\n    '}
+          {' '}
           <li>
-            {'In fermentum leo eu lectus mollis, quis dictum mi aliquet.'}
-          </li>
-          {'\n    '}
+            In fermentum leo eu lectus mollis, quis dictum mi aliquet.
+          </li>{' '}
+          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>{' '}
           <li>
-            {'Morbi eu nulla lobortis, lobortis est in, fringilla felis.'}
-          </li>
-          {'\n    '}
-          <li>
-            {
-              'Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.'
-            }
-          </li>
-          {'\n    '}
-          <li>{'Ut non enim metus.'}</li>
-          {'\n  '}
-        </ul>
-        {'\n'}
+            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.
+          </li>{' '}
+          <li>Ut non enim metus.</li>{' '}
+        </ul>{' '}
       </ui.Content>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1444,49 +1305,35 @@ function Example005Demo() {
 function Example006Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Content size={'medium'}>
-        {'\n  '}
-        <h1>{'Hello World'}</h1>
-        {'\n  '}
+        {' '}
+        <h1>Hello World</h1>{' '}
         <p>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan,\n    metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo\n    nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel\n    erat vel, interdum mattis neque.\n  '
-          }
-        </p>
-        {'\n  '}
-        <h2>{'Second level'}</h2>
-        {'\n  '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,
+          nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat
+          odio, sollicitudin vel erat vel, interdum mattis neque.
+        </p>{' '}
+        <h2>Second level</h2>{' '}
         <p>
-          {'\n    Curabitur accumsan turpis pharetra '}
-          <strong>{'augue tincidunt'}</strong>
-          {
-            ' blandit.\n    Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin\n    pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\n    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.\n  '
-          }
-        </p>
-        {'\n  '}
+          Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong>{' '}
+          blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum
+          id. Proin pretium urna vel cursus venenatis. Suspendisse potenti.
+          Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim
+          dui. Ut et neque nisl.
+        </p>{' '}
         <ul>
-          {'\n    '}
+          {' '}
           <li>
-            {'In fermentum leo eu lectus mollis, quis dictum mi aliquet.'}
-          </li>
-          {'\n    '}
+            In fermentum leo eu lectus mollis, quis dictum mi aliquet.
+          </li>{' '}
+          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>{' '}
           <li>
-            {'Morbi eu nulla lobortis, lobortis est in, fringilla felis.'}
-          </li>
-          {'\n    '}
-          <li>
-            {
-              'Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.'
-            }
-          </li>
-          {'\n    '}
-          <li>{'Ut non enim metus.'}</li>
-          {'\n  '}
-        </ul>
-        {'\n'}
+            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.
+          </li>{' '}
+          <li>Ut non enim metus.</li>{' '}
+        </ul>{' '}
       </ui.Content>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1494,49 +1341,35 @@ function Example006Demo() {
 function Example007Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Content size={'large'}>
-        {'\n  '}
-        <h1>{'Hello World'}</h1>
-        {'\n  '}
+        {' '}
+        <h1>Hello World</h1>{' '}
         <p>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan,\n    metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo\n    nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel\n    erat vel, interdum mattis neque.\n  '
-          }
-        </p>
-        {'\n  '}
-        <h2>{'Second level'}</h2>
-        {'\n  '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,
+          nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat
+          odio, sollicitudin vel erat vel, interdum mattis neque.
+        </p>{' '}
+        <h2>Second level</h2>{' '}
         <p>
-          {'\n    Curabitur accumsan turpis pharetra '}
-          <strong>{'augue tincidunt'}</strong>
-          {
-            ' blandit.\n    Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin\n    pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\n    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.\n  '
-          }
-        </p>
-        {'\n  '}
+          Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong>{' '}
+          blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum
+          id. Proin pretium urna vel cursus venenatis. Suspendisse potenti.
+          Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim
+          dui. Ut et neque nisl.
+        </p>{' '}
         <ul>
-          {'\n    '}
+          {' '}
           <li>
-            {'In fermentum leo eu lectus mollis, quis dictum mi aliquet.'}
-          </li>
-          {'\n    '}
+            In fermentum leo eu lectus mollis, quis dictum mi aliquet.
+          </li>{' '}
+          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>{' '}
           <li>
-            {'Morbi eu nulla lobortis, lobortis est in, fringilla felis.'}
-          </li>
-          {'\n    '}
-          <li>
-            {
-              'Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.'
-            }
-          </li>
-          {'\n    '}
-          <li>{'Ut non enim metus.'}</li>
-          {'\n  '}
-        </ul>
-        {'\n'}
+            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.
+          </li>{' '}
+          <li>Ut non enim metus.</li>{' '}
+        </ul>{' '}
       </ui.Content>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1547,7 +1380,7 @@ export const Example001 = {
     official: { id: 'elements-content/full-example/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Content>{"\\n  "}<h1>{"Hello World"}</h1>{"\\n  "}<p>{"\\n    Lorem ipsum"}<sup><a>{"[1]"}</a></sup>{" dolor sit amet, consectetur adipiscing\\n    elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius\\n    lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat\\n    odio, sollicitudin vel erat vel, interdum mattis neque. Sub"}<sub>{"script"}</sub>{"\\n    works as well!\\n  "}</p>{"\\n  "}<h2>{"Second level"}</h2>{"\\n  "}<p>{"\\n    Curabitur accumsan turpis pharetra "}<strong>{"augue tincidunt"}</strong>{" blandit.\\n    Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin\\n    pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\\n    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.\\n  "}</p>{"\\n  "}<ul>{"\\n    "}<li>{"In fermentum leo eu lectus mollis, quis dictum mi aliquet."}</li>{"\\n    "}<li>{"Morbi eu nulla lobortis, lobortis est in, fringilla felis."}</li>{"\\n    "}<li>{"Aliquam nec felis in sapien venenatis viverra fermentum nec lectus."}</li>{"\\n    "}<li>{"Ut non enim metus."}</li>{"\\n  "}</ul>{"\\n  "}<h3>{"Third level"}</h3>{"\\n  "}<p>{"\\n    Quisque ante lacus, malesuada ac auctor vitae, congue\\n    "}<a href={"#"}>{"non ante"}</a>{". Phasellus lacus ex, semper ac tortor nec,\\n    fringilla condimentum orci. Fusce eu rutrum tellus.\\n  "}</p>{"\\n  "}<ol>{"\\n    "}<li>{"Donec blandit a lorem id convallis."}</li>{"\\n    "}<li>{"Cras gravida arcu at diam gravida gravida."}</li>{"\\n    "}<li>{"Integer in volutpat libero."}</li>{"\\n    "}<li>{"Donec a diam tellus."}</li>{"\\n    "}<li>{"Aenean nec tortor orci."}</li>{"\\n    "}<li>{"Quisque aliquam cursus urna, non bibendum massa viverra eget."}</li>{"\\n    "}<li>{"Vivamus maximus ultricies pulvinar."}</li>{"\\n  "}</ol>{"\\n  "}<blockquote>{"\\n    Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit\\n    ipsum, ut blandit est tellus sit amet turpis.\\n  "}</blockquote>{"\\n  "}<p>{"\\n    Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et\\n    "}<em>{"justo sodales"}</em>{" elementum. Maecenas ultrices lacus quis neque\\n    consectetur, et lobortis nisi molestie.\\n  "}</p>{"\\n  "}<p>{"\\n    Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis\\n    vulputate risus in luctus. Maecenas vestibulum interdum commodo.\\n  "}</p>{"\\n  "}<dl>{"\\n    "}<dt>{"Web"}</dt>{"\\n    "}<dd>{"The part of the Internet that contains websites and web pages"}</dd>{"\\n    "}<dt>{"HTML"}</dt>{"\\n    "}<dd>{"A markup language for creating web pages"}</dd>{"\\n    "}<dt>{"CSS"}</dt>{"\\n    "}<dd>{"A technology to make HTML look better"}</dd>{"\\n  "}</dl>{"\\n  "}<p>{"\\n    Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl,\\n    suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac\\n    erat ante.\\n  "}</p>{"\\n  "}<h4>{"Fourth level"}</h4>{"\\n  "}<p>{"\\n    Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris\\n    euismod metus a tellus laoreet, at elementum ex efficitur.\\n  "}</p>{"\\n  "}<pre>{" <!DOCTYPE html> <html> <head>\\n<title>Hello World</title> </head> <body> <p>Lorem\\nipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae\\nmollis.</p> </body> </html> "}</pre>{"\\n  "}<p>{"\\n    Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non.\\n    Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta\\n    condimentum in eu justo. Nulla id iaculis sapien.\\n  "}</p>{"\\n  "}<table><thead><tr><th>{"One"}</th><th>{"Two"}</th></tr></thead><tbody><tr><td>{"Three"}</td><td>{"Four"}</td></tr><tr><td>{"Five"}</td><td>{"Six"}</td></tr><tr><td>{"Seven"}</td><td>{"Eight"}</td></tr><tr><td>{"Nine"}</td><td>{"Ten"}</td></tr><tr><td>{"Eleven"}</td><td>{"Twelve"}</td></tr></tbody></table>{"\\n  "}<p>{"\\n    Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit\\n    sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum\\n    rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam\\n    tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo\\n    est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae\\n    ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar.\\n    Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor\\n    cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.\\n  "}</p>{"\\n  "}<h5>{"Fifth level"}</h5>{"\\n  "}<p>{"\\n    Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt\\n    ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit\\n    volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue\\n    laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.\\n  "}</p>{"\\n  "}<figure>{"\\n    "}<img src={"./official-assets/256x256.png"} />{"\\n    "}<img src={"./official-assets/256x256.png"} />{"\\n    "}<figcaption>{"Figure 1: Some beautiful placeholders"}</figcaption>{"\\n  "}</figure>{"\\n  "}<h6>{"Sixth level"}</h6>{"\\n  "}<p>{"\\n    Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus\\n    sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut\\n    sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada\\n    ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse\\n    euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius\\n    sapien odio vitae est. Etiam at cursus metus.\\n  "}</p>{"\\n"}</ui.Content>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Content>\n        {' '}\n        <h1>Hello World</h1>{' '}\n        <p>\n          Lorem ipsum\n          <sup>\n            <a>[1]</a>\n          </sup>{' '}\n          dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus\n          ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo\n          nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin\n          vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as\n          well!\n        </p>{' '}\n        <h2>Second level</h2>{' '}\n        <p>\n          Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong>{' '}\n          blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum\n          id. Proin pretium urna vel cursus venenatis. Suspendisse potenti.\n          Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim\n          dui. Ut et neque nisl.\n        </p>{' '}\n        <ul>\n          {' '}\n          <li>\n            In fermentum leo eu lectus mollis, quis dictum mi aliquet.\n          </li>{' '}\n          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>{' '}\n          <li>\n            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.\n          </li>{' '}\n          <li>Ut non enim metus.</li>{' '}\n        </ul>{' '}\n        <h3>Third level</h3>{' '}\n        <p>\n          Quisque ante lacus, malesuada ac auctor vitae, congue{' '}\n          <a href={'#'}>non ante</a>. Phasellus lacus ex, semper ac tortor nec,\n          fringilla condimentum orci. Fusce eu rutrum tellus.\n        </p>{' '}\n        <ol>\n          {' '}\n          <li>Donec blandit a lorem id convallis.</li>{' '}\n          <li>Cras gravida arcu at diam gravida gravida.</li>{' '}\n          <li>Integer in volutpat libero.</li> <li>Donec a diam tellus.</li>{' '}\n          <li>Aenean nec tortor orci.</li>{' '}\n          <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>{' '}\n          <li>Vivamus maximus ultricies pulvinar.</li>{' '}\n        </ol>{' '}\n        <blockquote>\n          Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero\n          hendrerit ipsum, ut blandit est tellus sit amet turpis.\n        </blockquote>{' '}\n        <p>\n          Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et{' '}\n          <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque\n          consectetur, et lobortis nisi molestie.\n        </p>{' '}\n        <p>\n          Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec\n          mattis vulputate risus in luctus. Maecenas vestibulum interdum\n          commodo.\n        </p>{' '}\n        <dl>\n          {' '}\n          <dt>Web</dt>{' '}\n          <dd>The part of the Internet that contains websites and web pages</dd>{' '}\n          <dt>HTML</dt> <dd>A markup language for creating web pages</dd>{' '}\n          <dt>CSS</dt> <dd>A technology to make HTML look better</dd>{' '}\n        </dl>{' '}\n        <p>\n          Suspendisse egestas sapien non felis placerat elementum. Morbi tortor\n          nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla\n          facilisi. Nullam ac erat ante.\n        </p>{' '}\n        <h4>Fourth level</h4>{' '}\n        <p>\n          Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac.\n          Mauris euismod metus a tellus laoreet, at elementum ex efficitur.\n        </p>{' '}\n        <pre>\n          {\n            ' <!DOCTYPE html> <html> <head>\\n<title>Hello World</title> </head> <body> <p>Lorem\\nipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae\\nmollis.</p> </body> </html> '\n          }\n        </pre>{' '}\n        <p>\n          Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus\n          non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est\n          porta condimentum in eu justo. Nulla id iaculis sapien.\n        </p>{' '}\n        <table>\n          <thead>\n            <tr>\n              <th>One</th>\n              <th>Two</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td>Three</td>\n              <td>Four</td>\n            </tr>\n            <tr>\n              <td>Five</td>\n              <td>Six</td>\n            </tr>\n            <tr>\n              <td>Seven</td>\n              <td>Eight</td>\n            </tr>\n            <tr>\n              <td>Nine</td>\n              <td>Ten</td>\n            </tr>\n            <tr>\n              <td>Eleven</td>\n              <td>Twelve</td>\n            </tr>\n          </tbody>\n        </table>{' '}\n        <p>\n          Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc,\n          blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac\n          nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet\n          ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus\n          laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc\n          ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh\n          in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus\n          vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam\n          pharetra varius metus non pellentesque.\n        </p>{' '}\n        <h5>Fifth level</h5>{' '}\n        <p>\n          Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt\n          ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus\n          elit volutpat porta. Phasellus molestie diam vel nisi sodales, a\n          eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin\n          odio.\n        </p>{' '}\n        <figure>\n          {' '}\n          <img src={'./official-assets/256x256.png'} />{' '}\n          <img src={'./official-assets/256x256.png'} />{' '}\n          <figcaption>Figure 1: Some beautiful placeholders</figcaption>{' '}\n        </figure>{' '}\n        <h6>Sixth level</h6>{' '}\n        <p>\n          Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar\n          lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non\n          tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis\n          enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec\n          consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum\n          tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus\n          metus.\n        </p>{' '}\n      </ui.Content>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1562,7 +1395,7 @@ export const Example002 = {
     official: { id: 'elements-content/ordered-lists-alternatives/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Content>{"\\n  "}<ol type={"1"}>{"\\n    "}<li>{"Coffee"}</li>{"\\n    "}<li>{"Tea"}</li>{"\\n    "}<li>{"Milk"}</li>{"\\n  "}</ol>{"\\n  "}<ol type={"A"}>{"\\n    "}<li>{"Coffee"}</li>{"\\n    "}<li>{"Tea"}</li>{"\\n    "}<li>{"Milk"}</li>{"\\n  "}</ol>{"\\n  "}<ol type={"a"}>{"\\n    "}<li>{"Coffee"}</li>{"\\n    "}<li>{"Tea"}</li>{"\\n    "}<li>{"Milk"}</li>{"\\n  "}</ol>{"\\n  "}<ol type={"I"}>{"\\n    "}<li>{"Coffee"}</li>{"\\n    "}<li>{"Tea"}</li>{"\\n    "}<li>{"Milk"}</li>{"\\n  "}</ol>{"\\n  "}<ol type={"i"}>{"\\n    "}<li>{"Coffee"}</li>{"\\n    "}<li>{"Tea"}</li>{"\\n    "}<li>{"Milk"}</li>{"\\n  "}</ol>{"\\n"}</ui.Content>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Content>\n        {' '}\n        <ol type={'1'}>\n          {' '}\n          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}\n        </ol>{' '}\n        <ol type={'A'}>\n          {' '}\n          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}\n        </ol>{' '}\n        <ol type={'a'}>\n          {' '}\n          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}\n        </ol>{' '}\n        <ol type={'I'}>\n          {' '}\n          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}\n        </ol>{' '}\n        <ol type={'i'}>\n          {' '}\n          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}\n        </ol>{' '}\n      </ui.Content>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1577,7 +1410,7 @@ export const Example003 = {
     official: { id: 'elements-content/ordered-lists-alternatives/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Content>{"\\n  "}<ol className={"rb-is-lower-alpha"}>{"\\n    "}<li>{"Coffee"}</li>{"\\n    "}<li>{"Tea"}</li>{"\\n    "}<li>{"Milk"}</li>{"\\n  "}</ol>{"\\n  "}<ol className={"rb-is-lower-roman"}>{"\\n    "}<li>{"Coffee"}</li>{"\\n    "}<li>{"Tea"}</li>{"\\n    "}<li>{"Milk"}</li>{"\\n  "}</ol>{"\\n  "}<ol className={"rb-is-upper-alpha"}>{"\\n    "}<li>{"Coffee"}</li>{"\\n    "}<li>{"Tea"}</li>{"\\n    "}<li>{"Milk"}</li>{"\\n  "}</ol>{"\\n  "}<ol className={"rb-is-upper-roman"}>{"\\n    "}<li>{"Coffee"}</li>{"\\n    "}<li>{"Tea"}</li>{"\\n    "}<li>{"Milk"}</li>{"\\n  "}</ol>{"\\n"}</ui.Content>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Content>\n        {' '}\n        <ol className={'rb-is-lower-alpha'}>\n          {' '}\n          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}\n        </ol>{' '}\n        <ol className={'rb-is-lower-roman'}>\n          {' '}\n          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}\n        </ol>{' '}\n        <ol className={'rb-is-upper-alpha'}>\n          {' '}\n          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}\n        </ol>{' '}\n        <ol className={'rb-is-upper-roman'}>\n          {' '}\n          <li>Coffee</li> <li>Tea</li> <li>Milk</li>{' '}\n        </ol>{' '}\n      </ui.Content>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1592,7 +1425,7 @@ export const Example004 = {
     official: { id: 'elements-content/small-size-content/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Content size={"small"}>{"\\n  "}<h1>{"Hello World"}</h1>{"\\n  "}<p>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan,\\n    metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo\\n    nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel\\n    erat vel, interdum mattis neque.\\n  "}</p>{"\\n  "}<h2>{"Second level"}</h2>{"\\n  "}<p>{"\\n    Curabitur accumsan turpis pharetra "}<strong>{"augue tincidunt"}</strong>{" blandit.\\n    Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin\\n    pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\\n    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.\\n  "}</p>{"\\n  "}<ul>{"\\n    "}<li>{"In fermentum leo eu lectus mollis, quis dictum mi aliquet."}</li>{"\\n    "}<li>{"Morbi eu nulla lobortis, lobortis est in, fringilla felis."}</li>{"\\n    "}<li>{"Aliquam nec felis in sapien venenatis viverra fermentum nec lectus."}</li>{"\\n    "}<li>{"Ut non enim metus."}</li>{"\\n  "}</ul>{"\\n"}</ui.Content>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Content size={'small'}>\n        {' '}\n        <h1>Hello World</h1>{' '}\n        <p>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla\n          accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,\n          nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat\n          odio, sollicitudin vel erat vel, interdum mattis neque.\n        </p>{' '}\n        <h2>Second level</h2>{' '}\n        <p>\n          Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong>{' '}\n          blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum\n          id. Proin pretium urna vel cursus venenatis. Suspendisse potenti.\n          Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim\n          dui. Ut et neque nisl.\n        </p>{' '}\n        <ul>\n          {' '}\n          <li>\n            In fermentum leo eu lectus mollis, quis dictum mi aliquet.\n          </li>{' '}\n          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>{' '}\n          <li>\n            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.\n          </li>{' '}\n          <li>Ut non enim metus.</li>{' '}\n        </ul>{' '}\n      </ui.Content>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1607,7 +1440,7 @@ export const Example005 = {
     official: { id: 'elements-content/normal-size-content-default/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Content size={"normal"}>{"\\n  "}<h1>{"Hello World"}</h1>{"\\n  "}<p>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan,\\n    metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo\\n    nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel\\n    erat vel, interdum mattis neque.\\n  "}</p>{"\\n  "}<h2>{"Second level"}</h2>{"\\n  "}<p>{"\\n    Curabitur accumsan turpis pharetra "}<strong>{"augue tincidunt"}</strong>{" blandit.\\n    Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin\\n    pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\\n    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.\\n  "}</p>{"\\n  "}<ul>{"\\n    "}<li>{"In fermentum leo eu lectus mollis, quis dictum mi aliquet."}</li>{"\\n    "}<li>{"Morbi eu nulla lobortis, lobortis est in, fringilla felis."}</li>{"\\n    "}<li>{"Aliquam nec felis in sapien venenatis viverra fermentum nec lectus."}</li>{"\\n    "}<li>{"Ut non enim metus."}</li>{"\\n  "}</ul>{"\\n"}</ui.Content>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Content size={'normal'}>\n        {' '}\n        <h1>Hello World</h1>{' '}\n        <p>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla\n          accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,\n          nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat\n          odio, sollicitudin vel erat vel, interdum mattis neque.\n        </p>{' '}\n        <h2>Second level</h2>{' '}\n        <p>\n          Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong>{' '}\n          blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum\n          id. Proin pretium urna vel cursus venenatis. Suspendisse potenti.\n          Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim\n          dui. Ut et neque nisl.\n        </p>{' '}\n        <ul>\n          {' '}\n          <li>\n            In fermentum leo eu lectus mollis, quis dictum mi aliquet.\n          </li>{' '}\n          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>{' '}\n          <li>\n            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.\n          </li>{' '}\n          <li>Ut non enim metus.</li>{' '}\n        </ul>{' '}\n      </ui.Content>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1622,7 +1455,7 @@ export const Example006 = {
     official: { id: 'elements-content/medium-size-content/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Content size={"medium"}>{"\\n  "}<h1>{"Hello World"}</h1>{"\\n  "}<p>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan,\\n    metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo\\n    nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel\\n    erat vel, interdum mattis neque.\\n  "}</p>{"\\n  "}<h2>{"Second level"}</h2>{"\\n  "}<p>{"\\n    Curabitur accumsan turpis pharetra "}<strong>{"augue tincidunt"}</strong>{" blandit.\\n    Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin\\n    pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\\n    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.\\n  "}</p>{"\\n  "}<ul>{"\\n    "}<li>{"In fermentum leo eu lectus mollis, quis dictum mi aliquet."}</li>{"\\n    "}<li>{"Morbi eu nulla lobortis, lobortis est in, fringilla felis."}</li>{"\\n    "}<li>{"Aliquam nec felis in sapien venenatis viverra fermentum nec lectus."}</li>{"\\n    "}<li>{"Ut non enim metus."}</li>{"\\n  "}</ul>{"\\n"}</ui.Content>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Content size={'medium'}>\n        {' '}\n        <h1>Hello World</h1>{' '}\n        <p>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla\n          accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,\n          nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat\n          odio, sollicitudin vel erat vel, interdum mattis neque.\n        </p>{' '}\n        <h2>Second level</h2>{' '}\n        <p>\n          Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong>{' '}\n          blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum\n          id. Proin pretium urna vel cursus venenatis. Suspendisse potenti.\n          Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim\n          dui. Ut et neque nisl.\n        </p>{' '}\n        <ul>\n          {' '}\n          <li>\n            In fermentum leo eu lectus mollis, quis dictum mi aliquet.\n          </li>{' '}\n          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>{' '}\n          <li>\n            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.\n          </li>{' '}\n          <li>Ut non enim metus.</li>{' '}\n        </ul>{' '}\n      </ui.Content>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1637,7 +1470,7 @@ export const Example007 = {
     official: { id: 'elements-content/large-size-content/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Content size={"large"}>{"\\n  "}<h1>{"Hello World"}</h1>{"\\n  "}<p>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan,\\n    metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo\\n    nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel\\n    erat vel, interdum mattis neque.\\n  "}</p>{"\\n  "}<h2>{"Second level"}</h2>{"\\n  "}<p>{"\\n    Curabitur accumsan turpis pharetra "}<strong>{"augue tincidunt"}</strong>{" blandit.\\n    Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin\\n    pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\\n    rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.\\n  "}</p>{"\\n  "}<ul>{"\\n    "}<li>{"In fermentum leo eu lectus mollis, quis dictum mi aliquet."}</li>{"\\n    "}<li>{"Morbi eu nulla lobortis, lobortis est in, fringilla felis."}</li>{"\\n    "}<li>{"Aliquam nec felis in sapien venenatis viverra fermentum nec lectus."}</li>{"\\n    "}<li>{"Ut non enim metus."}</li>{"\\n  "}</ul>{"\\n"}</ui.Content>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Content size={'large'}>\n        {' '}\n        <h1>Hello World</h1>{' '}\n        <p>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla\n          accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus,\n          nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat\n          odio, sollicitudin vel erat vel, interdum mattis neque.\n        </p>{' '}\n        <h2>Second level</h2>{' '}\n        <p>\n          Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong>{' '}\n          blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum\n          id. Proin pretium urna vel cursus venenatis. Suspendisse potenti.\n          Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim\n          dui. Ut et neque nisl.\n        </p>{' '}\n        <ul>\n          {' '}\n          <li>\n            In fermentum leo eu lectus mollis, quis dictum mi aliquet.\n          </li>{' '}\n          <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>{' '}\n          <li>\n            Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.\n          </li>{' '}\n          <li>Ut non enim metus.</li>{' '}\n        </ul>{' '}\n      </ui.Content>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

@@ -1229,11 +1229,11 @@ function Example001Demo() {
   return (
     <>
       <ui.Block data-target={'modal-js-example'}>
-        {'\n  \n'}
+        {' '}
         <button data-target={'modal-js-example'} className={'js-modal-trigger'}>
-          {'\n  Open JS example modal\n'}
-        </button>
-        {'\n\n'}
+          {' '}
+          Open JS example modal{' '}
+        </button>{' '}
       </ui.Block>
       <ui.Modal defaultOpen={false}>
         <ui.ModalContent
@@ -1244,14 +1244,11 @@ function Example001Demo() {
             </>
           }
         >
-          {'\n    '}
+          {' '}
           <ui.Box>
-            {'\n      '}
-            <p>{'Modal JS example'}</p>
-            {'\n      '}
-            {'\n    '}
-          </ui.Box>
-          {'\n  '}
+            {' '}
+            <p>Modal JS example</p>{' '}
+          </ui.Box>{' '}
         </ui.ModalContent>
       </ui.Modal>
     </>
@@ -1262,15 +1259,15 @@ function Example002Demo() {
   return (
     <>
       <ui.Block data-target={'modal-js-example'}>
-        {'\n  \n'}
+        {' '}
         <ui.Button
           data-target={'modal-js-example'}
           color={'primary'}
           className={'js-modal-trigger'}
         >
-          {'\n  Open JS example modal\n'}
-        </ui.Button>
-        {'\n\n'}
+          {' '}
+          Open JS example modal{' '}
+        </ui.Button>{' '}
       </ui.Block>
       <ui.Modal defaultOpen={false}>
         <ui.ModalContent
@@ -1281,14 +1278,11 @@ function Example002Demo() {
             </>
           }
         >
-          {'\n    '}
+          {' '}
           <ui.Box>
-            {'\n      '}
-            <p>{'Modal JS example'}</p>
-            {'\n      '}
-            {'\n    '}
-          </ui.Box>
-          {'\n  '}
+            {' '}
+            <p>Modal JS example</p>{' '}
+          </ui.Box>{' '}
         </ui.ModalContent>
       </ui.Modal>
     </>
@@ -1301,7 +1295,7 @@ export const Example001 = {
     official: { id: 'components-modal/2-add-the-html-for-the-trigger/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Block data-target={"modal-js-example"}>{"\\n  \\n"}<button data-target={"modal-js-example"} className={"js-modal-trigger"}>{"\\n  Open JS example modal\\n"}</button>{"\\n\\n"}</ui.Block><ui.Modal defaultOpen={false}><ui.ModalContent wrapperProps={{ id: "modal-js-example" }} close={<><ui.ModalClose aria-label={"close"} className={"rb-is-large"} /></>}>{"\\n    "}<ui.Box>{"\\n      "}<p>{"Modal JS example"}</p>{"\\n      "}{"\\n    "}</ui.Box>{"\\n  "}</ui.ModalContent></ui.Modal></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Block data-target={'modal-js-example'}>\n        {' '}\n        <button data-target={'modal-js-example'} className={'js-modal-trigger'}>\n          {' '}\n          Open JS example modal{' '}\n        </button>{' '}\n      </ui.Block>\n      <ui.Modal defaultOpen={false}>\n        <ui.ModalContent\n          wrapperProps={{ id: 'modal-js-example' }}\n          close={\n            <>\n              <ui.ModalClose aria-label={'close'} className={'rb-is-large'} />\n            </>\n          }\n        >\n          {' '}\n          <ui.Box>\n            {' '}\n            <p>Modal JS example</p>{' '}\n          </ui.Box>{' '}\n        </ui.ModalContent>\n      </ui.Modal>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1316,7 +1310,7 @@ export const Example002 = {
     official: { id: 'components-modal/2-add-the-html-for-the-trigger/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Block data-target={"modal-js-example"}>{"\\n  \\n"}<ui.Button data-target={"modal-js-example"} color={"primary"} className={"js-modal-trigger"}>{"\\n  Open JS example modal\\n"}</ui.Button>{"\\n\\n"}</ui.Block><ui.Modal defaultOpen={false}><ui.ModalContent wrapperProps={{ id: "modal-js-example" }} close={<><ui.ModalClose aria-label={"close"} className={"rb-is-large"} /></>}>{"\\n    "}<ui.Box>{"\\n      "}<p>{"Modal JS example"}</p>{"\\n      "}{"\\n    "}</ui.Box>{"\\n  "}</ui.ModalContent></ui.Modal></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Block data-target={'modal-js-example'}>\n        {' '}\n        <ui.Button\n          data-target={'modal-js-example'}\n          color={'primary'}\n          className={'js-modal-trigger'}\n        >\n          {' '}\n          Open JS example modal{' '}\n        </ui.Button>{' '}\n      </ui.Block>\n      <ui.Modal defaultOpen={false}>\n        <ui.ModalContent\n          wrapperProps={{ id: 'modal-js-example' }}\n          close={\n            <>\n              <ui.ModalClose aria-label={'close'} className={'rb-is-large'} />\n            </>\n          }\n        >\n          {' '}\n          <ui.Box>\n            {' '}\n            <p>Modal JS example</p>{' '}\n          </ui.Box>{' '}\n        </ui.ModalContent>\n      </ui.Modal>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

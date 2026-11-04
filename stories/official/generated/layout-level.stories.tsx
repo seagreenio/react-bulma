@@ -312,71 +312,51 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
-      {'\n'}
+      {' '}
       <ui.Level>
-        {'\n  '}
-        {'\n  '}
+        {' '}
         <ui.LevelLeft>
-          {'\n    '}
+          {' '}
           <ui.LevelItem>
-            {'\n      '}
+            {' '}
             <ui.Subtitle size={5} as={'p'}>
-              <strong>{'123'}</strong>
-              {' posts'}
-            </ui.Subtitle>
-            {'\n    '}
-          </ui.LevelItem>
-          {'\n    '}
+              <strong>123</strong> posts
+            </ui.Subtitle>{' '}
+          </ui.LevelItem>{' '}
           <ui.LevelItem>
-            {'\n      '}
+            {' '}
             <ui.Field layout={'addons'}>
-              {'\n        '}
+              {' '}
               <ui.Control as={'p'}>
-                {'\n          '}
-                <ui.Input type={'text'} placeholder={'Find a post'} />
-                {'\n        '}
-              </ui.Control>
-              {'\n        '}
+                {' '}
+                <ui.Input type={'text'} placeholder={'Find a post'} />{' '}
+              </ui.Control>{' '}
               <ui.Control as={'p'}>
-                {'\n          '}
-                <ui.Button>{'Search'}</ui.Button>
-                {'\n        '}
-              </ui.Control>
-              {'\n      '}
-            </ui.Field>
-            {'\n    '}
-          </ui.LevelItem>
-          {'\n  '}
-        </ui.LevelLeft>
-        {'\n\n  '}
-        {'\n  '}
+                {' '}
+                <ui.Button>Search</ui.Button>{' '}
+              </ui.Control>{' '}
+            </ui.Field>{' '}
+          </ui.LevelItem>{' '}
+        </ui.LevelLeft>{' '}
         <ui.LevelRight>
-          {'\n    '}
+          {' '}
           <ui.LevelItem as={'p'}>
-            <strong>{'All'}</strong>
-          </ui.LevelItem>
-          {'\n    '}
+            <strong>All</strong>
+          </ui.LevelItem>{' '}
           <ui.LevelItem as={'p'}>
-            <a>{'Published'}</a>
-          </ui.LevelItem>
-          {'\n    '}
+            <a>Published</a>
+          </ui.LevelItem>{' '}
           <ui.LevelItem as={'p'}>
-            <a>{'Drafts'}</a>
-          </ui.LevelItem>
-          {'\n    '}
+            <a>Drafts</a>
+          </ui.LevelItem>{' '}
           <ui.LevelItem as={'p'}>
-            <a>{'Deleted'}</a>
-          </ui.LevelItem>
-          {'\n    '}
+            <a>Deleted</a>
+          </ui.LevelItem>{' '}
           <ui.LevelItem as={'p'}>
-            <ui.LinkButton color={'success'}>{'New'}</ui.LinkButton>
-          </ui.LevelItem>
-          {'\n  '}
-        </ui.LevelRight>
-        {'\n'}
+            <ui.LinkButton color={'success'}>New</ui.LinkButton>
+          </ui.LevelItem>{' '}
+        </ui.LevelRight>{' '}
       </ui.Level>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -384,59 +364,36 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Level>
-        {'\n  '}
+        {' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }}>
-          {'\n    '}
+          {' '}
           <div>
-            {'\n      '}
-            <p className={'heading'}>{'Tweets'}</p>
-            {'\n      '}
-            <ui.Title as={'p'}>{'3,456'}</ui.Title>
-            {'\n    '}
-          </div>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n  '}
+            <p className={'heading'}>Tweets</p>{' '}
+            <ui.Title as={'p'}>3,456</ui.Title>
+          </div>{' '}
+        </ui.LevelItem>{' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }}>
-          {'\n    '}
+          {' '}
           <div>
-            {'\n      '}
-            <p className={'heading'}>{'Following'}</p>
-            {'\n      '}
-            <ui.Title as={'p'}>{'123'}</ui.Title>
-            {'\n    '}
-          </div>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n  '}
+            <p className={'heading'}>Following</p>{' '}
+            <ui.Title as={'p'}>123</ui.Title>
+          </div>{' '}
+        </ui.LevelItem>{' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }}>
-          {'\n    '}
+          {' '}
           <div>
-            {'\n      '}
-            <p className={'heading'}>{'Followers'}</p>
-            {'\n      '}
-            <ui.Title as={'p'}>{'456K'}</ui.Title>
-            {'\n    '}
-          </div>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n  '}
+            <p className={'heading'}>Followers</p>{' '}
+            <ui.Title as={'p'}>456K</ui.Title>
+          </div>{' '}
+        </ui.LevelItem>{' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }}>
-          {'\n    '}
+          {' '}
           <div>
-            {'\n      '}
-            <p className={'heading'}>{'Likes'}</p>
-            {'\n      '}
-            <ui.Title as={'p'}>{'789'}</ui.Title>
-            {'\n    '}
-          </div>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n'}
+            <p className={'heading'}>Likes</p> <ui.Title as={'p'}>789</ui.Title>
+          </div>{' '}
+        </ui.LevelItem>{' '}
       </ui.Level>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -444,45 +401,33 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Level>
-        {'\n  '}
+        {' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>
-          {'\n    '}
-          <a className={'link rb-is-info'}>{'Home'}</a>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n  '}
+          {' '}
+          <a className={'link rb-is-info'}>Home</a>{' '}
+        </ui.LevelItem>{' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>
-          {'\n    '}
-          <a className={'link rb-is-info'}>{'Menu'}</a>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n  '}
+          {' '}
+          <a className={'link rb-is-info'}>Menu</a>{' '}
+        </ui.LevelItem>{' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>
-          {'\n    '}
+          {' '}
           <img
             src={'./official-assets/bulma-type.png'}
             alt={''}
             style={{ ...{ height: '30px' } }}
-          />
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n  '}
+          />{' '}
+        </ui.LevelItem>{' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>
-          {'\n    '}
-          <a className={'link rb-is-info'}>{'Reservations'}</a>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n  '}
+          {' '}
+          <a className={'link rb-is-info'}>Reservations</a>{' '}
+        </ui.LevelItem>{' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>
-          {'\n    '}
-          <a className={'link rb-is-info'}>{'Contact'}</a>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n'}
+          {' '}
+          <a className={'link rb-is-info'}>Contact</a>{' '}
+        </ui.LevelItem>{' '}
       </ui.Level>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -490,59 +435,36 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Level mobile>
-        {'\n  '}
+        {' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }}>
-          {'\n    '}
+          {' '}
           <div>
-            {'\n      '}
-            <p className={'heading'}>{'Tweets'}</p>
-            {'\n      '}
-            <ui.Title as={'p'}>{'3,456'}</ui.Title>
-            {'\n    '}
-          </div>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n  '}
+            <p className={'heading'}>Tweets</p>{' '}
+            <ui.Title as={'p'}>3,456</ui.Title>
+          </div>{' '}
+        </ui.LevelItem>{' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }}>
-          {'\n    '}
+          {' '}
           <div>
-            {'\n      '}
-            <p className={'heading'}>{'Following'}</p>
-            {'\n      '}
-            <ui.Title as={'p'}>{'123'}</ui.Title>
-            {'\n    '}
-          </div>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n  '}
+            <p className={'heading'}>Following</p>{' '}
+            <ui.Title as={'p'}>123</ui.Title>
+          </div>{' '}
+        </ui.LevelItem>{' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }}>
-          {'\n    '}
+          {' '}
           <div>
-            {'\n      '}
-            <p className={'heading'}>{'Followers'}</p>
-            {'\n      '}
-            <ui.Title as={'p'}>{'456K'}</ui.Title>
-            {'\n    '}
-          </div>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n  '}
+            <p className={'heading'}>Followers</p>{' '}
+            <ui.Title as={'p'}>456K</ui.Title>
+          </div>{' '}
+        </ui.LevelItem>{' '}
         <ui.LevelItem helpers={{ textAlign: 'center' }}>
-          {'\n    '}
+          {' '}
           <div>
-            {'\n      '}
-            <p className={'heading'}>{'Likes'}</p>
-            {'\n      '}
-            <ui.Title as={'p'}>{'789'}</ui.Title>
-            {'\n    '}
-          </div>
-          {'\n  '}
-        </ui.LevelItem>
-        {'\n'}
+            <p className={'heading'}>Likes</p> <ui.Title as={'p'}>789</ui.Title>
+          </div>{' '}
+        </ui.LevelItem>{' '}
       </ui.Level>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -553,7 +475,7 @@ export const Example001 = {
     official: { id: 'layout-level/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}{"\\n"}<ui.Level>{"\\n  "}{"\\n  "}<ui.LevelLeft>{"\\n    "}<ui.LevelItem>{"\\n      "}<ui.Subtitle size={5} as={"p"}><strong>{"123"}</strong>{" posts"}</ui.Subtitle>{"\\n    "}</ui.LevelItem>{"\\n    "}<ui.LevelItem>{"\\n      "}<ui.Field layout={"addons"}>{"\\n        "}<ui.Control as={"p"}>{"\\n          "}<ui.Input type={"text"} placeholder={"Find a post"} />{"\\n        "}</ui.Control>{"\\n        "}<ui.Control as={"p"}>{"\\n          "}<ui.Button>{"Search"}</ui.Button>{"\\n        "}</ui.Control>{"\\n      "}</ui.Field>{"\\n    "}</ui.LevelItem>{"\\n  "}</ui.LevelLeft>{"\\n\\n  "}{"\\n  "}<ui.LevelRight>{"\\n    "}<ui.LevelItem as={"p"}><strong>{"All"}</strong></ui.LevelItem>{"\\n    "}<ui.LevelItem as={"p"}><a>{"Published"}</a></ui.LevelItem>{"\\n    "}<ui.LevelItem as={"p"}><a>{"Drafts"}</a></ui.LevelItem>{"\\n    "}<ui.LevelItem as={"p"}><a>{"Deleted"}</a></ui.LevelItem>{"\\n    "}<ui.LevelItem as={"p"}><ui.LinkButton color={"success"}>{"New"}</ui.LinkButton></ui.LevelItem>{"\\n  "}</ui.LevelRight>{"\\n"}</ui.Level>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      {' '}\n      <ui.Level>\n        {' '}\n        <ui.LevelLeft>\n          {' '}\n          <ui.LevelItem>\n            {' '}\n            <ui.Subtitle size={5} as={'p'}>\n              <strong>123</strong> posts\n            </ui.Subtitle>{' '}\n          </ui.LevelItem>{' '}\n          <ui.LevelItem>\n            {' '}\n            <ui.Field layout={'addons'}>\n              {' '}\n              <ui.Control as={'p'}>\n                {' '}\n                <ui.Input type={'text'} placeholder={'Find a post'} />{' '}\n              </ui.Control>{' '}\n              <ui.Control as={'p'}>\n                {' '}\n                <ui.Button>Search</ui.Button>{' '}\n              </ui.Control>{' '}\n            </ui.Field>{' '}\n          </ui.LevelItem>{' '}\n        </ui.LevelLeft>{' '}\n        <ui.LevelRight>\n          {' '}\n          <ui.LevelItem as={'p'}>\n            <strong>All</strong>\n          </ui.LevelItem>{' '}\n          <ui.LevelItem as={'p'}>\n            <a>Published</a>\n          </ui.LevelItem>{' '}\n          <ui.LevelItem as={'p'}>\n            <a>Drafts</a>\n          </ui.LevelItem>{' '}\n          <ui.LevelItem as={'p'}>\n            <a>Deleted</a>\n          </ui.LevelItem>{' '}\n          <ui.LevelItem as={'p'}>\n            <ui.LinkButton color={'success'}>New</ui.LinkButton>\n          </ui.LevelItem>{' '}\n        </ui.LevelRight>{' '}\n      </ui.Level>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -568,7 +490,7 @@ export const Example002 = {
     official: { id: 'layout-level/centered-level/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Level>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}}>{"\\n    "}<div>{"\\n      "}<p className={"heading"}>{"Tweets"}</p>{"\\n      "}<ui.Title as={"p"}>{"3,456"}</ui.Title>{"\\n    "}</div>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}}>{"\\n    "}<div>{"\\n      "}<p className={"heading"}>{"Following"}</p>{"\\n      "}<ui.Title as={"p"}>{"123"}</ui.Title>{"\\n    "}</div>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}}>{"\\n    "}<div>{"\\n      "}<p className={"heading"}>{"Followers"}</p>{"\\n      "}<ui.Title as={"p"}>{"456K"}</ui.Title>{"\\n    "}</div>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}}>{"\\n    "}<div>{"\\n      "}<p className={"heading"}>{"Likes"}</p>{"\\n      "}<ui.Title as={"p"}>{"789"}</ui.Title>{"\\n    "}</div>{"\\n  "}</ui.LevelItem>{"\\n"}</ui.Level>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Level>\n        {' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }}>\n          {' '}\n          <div>\n            <p className={'heading'}>Tweets</p>{' '}\n            <ui.Title as={'p'}>3,456</ui.Title>\n          </div>{' '}\n        </ui.LevelItem>{' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }}>\n          {' '}\n          <div>\n            <p className={'heading'}>Following</p>{' '}\n            <ui.Title as={'p'}>123</ui.Title>\n          </div>{' '}\n        </ui.LevelItem>{' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }}>\n          {' '}\n          <div>\n            <p className={'heading'}>Followers</p>{' '}\n            <ui.Title as={'p'}>456K</ui.Title>\n          </div>{' '}\n        </ui.LevelItem>{' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }}>\n          {' '}\n          <div>\n            <p className={'heading'}>Likes</p> <ui.Title as={'p'}>789</ui.Title>\n          </div>{' '}\n        </ui.LevelItem>{' '}\n      </ui.Level>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -583,7 +505,7 @@ export const Example003 = {
     official: { id: 'layout-level/centered-level/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Level>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Home"}</a>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Menu"}</a>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<img src={"./official-assets/bulma-type.png"} alt={""} style={{ ...{ height: "30px" } }} />{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Reservations"}</a>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Contact"}</a>{"\\n  "}</ui.LevelItem>{"\\n"}</ui.Level>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Level>\n        {' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>\n          {' '}\n          <a className={'link rb-is-info'}>Home</a>{' '}\n        </ui.LevelItem>{' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>\n          {' '}\n          <a className={'link rb-is-info'}>Menu</a>{' '}\n        </ui.LevelItem>{' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>\n          {' '}\n          <img\n            src={'./official-assets/bulma-type.png'}\n            alt={''}\n            style={{ ...{ height: '30px' } }}\n          />{' '}\n        </ui.LevelItem>{' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>\n          {' '}\n          <a className={'link rb-is-info'}>Reservations</a>{' '}\n        </ui.LevelItem>{' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>\n          {' '}\n          <a className={'link rb-is-info'}>Contact</a>{' '}\n        </ui.LevelItem>{' '}\n      </ui.Level>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -598,7 +520,7 @@ export const Example004 = {
     official: { id: 'layout-level/mobile-level/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Level mobile>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}}>{"\\n    "}<div>{"\\n      "}<p className={"heading"}>{"Tweets"}</p>{"\\n      "}<ui.Title as={"p"}>{"3,456"}</ui.Title>{"\\n    "}</div>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}}>{"\\n    "}<div>{"\\n      "}<p className={"heading"}>{"Following"}</p>{"\\n      "}<ui.Title as={"p"}>{"123"}</ui.Title>{"\\n    "}</div>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}}>{"\\n    "}<div>{"\\n      "}<p className={"heading"}>{"Followers"}</p>{"\\n      "}<ui.Title as={"p"}>{"456K"}</ui.Title>{"\\n    "}</div>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}}>{"\\n    "}<div>{"\\n      "}<p className={"heading"}>{"Likes"}</p>{"\\n      "}<ui.Title as={"p"}>{"789"}</ui.Title>{"\\n    "}</div>{"\\n  "}</ui.LevelItem>{"\\n"}</ui.Level>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Level mobile>\n        {' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }}>\n          {' '}\n          <div>\n            <p className={'heading'}>Tweets</p>{' '}\n            <ui.Title as={'p'}>3,456</ui.Title>\n          </div>{' '}\n        </ui.LevelItem>{' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }}>\n          {' '}\n          <div>\n            <p className={'heading'}>Following</p>{' '}\n            <ui.Title as={'p'}>123</ui.Title>\n          </div>{' '}\n        </ui.LevelItem>{' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }}>\n          {' '}\n          <div>\n            <p className={'heading'}>Followers</p>{' '}\n            <ui.Title as={'p'}>456K</ui.Title>\n          </div>{' '}\n        </ui.LevelItem>{' '}\n        <ui.LevelItem helpers={{ textAlign: 'center' }}>\n          {' '}\n          <div>\n            <p className={'heading'}>Likes</p> <ui.Title as={'p'}>789</ui.Title>\n          </div>{' '}\n        </ui.LevelItem>{' '}\n      </ui.Level>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

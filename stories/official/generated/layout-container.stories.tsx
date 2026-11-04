@@ -824,17 +824,15 @@ function Example001Demo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {'\n'}
+        {' '}
         <ui.Container>
-          {'\n  '}
+          {' '}
           <ui.Notification color={'primary'}>
-            {'\n    This container is '}
-            <strong>{'centered'}</strong>
-            {' on desktop and larger viewports.\n  '}
-          </ui.Notification>
-          {'\n'}
-        </ui.Container>
-        {'\n'}
+            {' '}
+            This container is <strong>centered</strong> on desktop and larger
+            viewports.{' '}
+          </ui.Notification>{' '}
+        </ui.Container>{' '}
       </div>
     </>
   )
@@ -844,19 +842,15 @@ function Example002Demo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {'\n'}
+        {' '}
         <ui.Container width={'widescreen'}>
-          {'\n  '}
+          {' '}
           <ui.Notification color={'primary'}>
-            {'\n    This container is '}
-            <strong>{'fullwidth'}</strong> <em>{'until'}</em>
-            {' the\n    '}
-            <code>{'$widescreen'}</code>
-            {' breakpoint.\n  '}
-          </ui.Notification>
-          {'\n'}
-        </ui.Container>
-        {'\n'}
+            {' '}
+            This container is <strong>fullwidth</strong> <em>until</em> the{' '}
+            <code>{'$widescreen'}</code> breakpoint.{' '}
+          </ui.Notification>{' '}
+        </ui.Container>{' '}
       </div>
     </>
   )
@@ -866,19 +860,15 @@ function Example003Demo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {'\n'}
+        {' '}
         <ui.Container width={'fullhd'}>
-          {'\n  '}
+          {' '}
           <ui.Notification color={'primary'}>
-            {'\n    This container is '}
-            <strong>{'fullwidth'}</strong> <em>{'until'}</em>
-            {' the\n    '}
-            <code>{'$fullhd'}</code>
-            {' breakpoint.\n  '}
-          </ui.Notification>
-          {'\n'}
-        </ui.Container>
-        {'\n'}
+            {' '}
+            This container is <strong>fullwidth</strong> <em>until</em> the{' '}
+            <code>{'$fullhd'}</code> breakpoint.{' '}
+          </ui.Notification>{' '}
+        </ui.Container>{' '}
       </div>
     </>
   )
@@ -888,19 +878,15 @@ function Example004Demo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {'\n'}
+        {' '}
         <ui.Container maxWidth={'tablet'}>
-          {'\n  '}
+          {' '}
           <ui.Notification color={'primary'}>
-            {'\n    This container has a '}
-            <code>{'max-width'}</code>
-            {' of\n    '}
-            <code>{'$tablet - $container-offset'}</code>
-            {'.\n  '}
-          </ui.Notification>
-          {'\n'}
-        </ui.Container>
-        {'\n'}
+            {' '}
+            This container has a <code>{'max-width'}</code> of{' '}
+            <code>{'$tablet - $container-offset'}</code>.{' '}
+          </ui.Notification>{' '}
+        </ui.Container>{' '}
       </div>
     </>
   )
@@ -910,19 +896,16 @@ function Example005Demo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {'\n'}
+        {' '}
         <ui.Container maxWidth={'desktop'}>
-          {'\n  '}
+          {' '}
           <ui.Notification color={'primary'}>
-            {'\n    This container has a '}
-            <code>{'max-width'}</code>
-            {' of\n    '}
-            <code>{'$desktop - $container-offset'}</code>
-            {' on widescreen and fullhd.\n  '}
-          </ui.Notification>
-          {'\n'}
-        </ui.Container>
-        {'\n'}
+            {' '}
+            This container has a <code>{'max-width'}</code> of{' '}
+            <code>{'$desktop - $container-offset'}</code> on widescreen and
+            fullhd.{' '}
+          </ui.Notification>{' '}
+        </ui.Container>{' '}
       </div>
     </>
   )
@@ -932,19 +915,15 @@ function Example006Demo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {'\n  \n'}
+        {' '}
         <ui.Container maxWidth={'widescreen'}>
-          {'\n  '}
+          {' '}
           <ui.Notification color={'primary'}>
-            {'\n    This container has a '}
-            <code>{'max-width'}</code>
-            {' of\n    '}
-            <code>{'$widescreen - $container-offset'}</code>
-            {' on fullhd.\n  '}
-          </ui.Notification>
-          {'\n'}
-        </ui.Container>
-        {'\n\n'}
+            {' '}
+            This container has a <code>{'max-width'}</code> of{' '}
+            <code>{'$widescreen - $container-offset'}</code> on fullhd.{' '}
+          </ui.Notification>{' '}
+        </ui.Container>{' '}
       </div>
     </>
   )
@@ -954,19 +933,15 @@ function Example007Demo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {'\n'}
+        {' '}
         <ui.Container width={'fluid'}>
-          {'\n  '}
+          {' '}
           <ui.Notification color={'primary'}>
-            {'\n    This container is '}
-            <strong>{'fluid'}</strong>
-            {
-              ': it will have a 32px gap on either\n    side, on any viewport size.\n  '
-            }
-          </ui.Notification>
-          {'\n'}
-        </ui.Container>
-        {'\n'}
+            {' '}
+            This container is <strong>fluid</strong>: it will have a 32px gap on
+            either side, on any viewport size.{' '}
+          </ui.Notification>{' '}
+        </ui.Container>{' '}
       </div>
     </>
   )
@@ -978,7 +953,7 @@ export const Example001 = {
     official: { id: 'layout-container/default-behavior/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"centered"}</strong>{" on desktop and larger viewports.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container is <strong>centered</strong> on desktop and larger\n            viewports.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -993,7 +968,7 @@ export const Example002 = {
     official: { id: 'layout-container/widescreen-or-fullhd-only/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container width={"widescreen"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"fullwidth"}</strong>{" "}<em>{"until"}</em>{" the\\n    "}<code>{"$widescreen"}</code>{" breakpoint.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container width={'widescreen'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container is <strong>fullwidth</strong> <em>until</em> the{' '}\n            <code>{'$widescreen'}</code> breakpoint.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1008,7 +983,7 @@ export const Example003 = {
     official: { id: 'layout-container/widescreen-or-fullhd-only/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container width={"fullhd"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"fullwidth"}</strong>{" "}<em>{"until"}</em>{" the\\n    "}<code>{"$fullhd"}</code>{" breakpoint.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container width={'fullhd'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container is <strong>fullwidth</strong> <em>until</em> the{' '}\n            <code>{'$fullhd'}</code> breakpoint.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1025,7 +1000,7 @@ export const Example004 = {
     },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container maxWidth={"tablet"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container has a "}<code>{"max-width"}</code>{" of\\n    "}<code>{"$tablet - $container-offset"}</code>{".\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container maxWidth={'tablet'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container has a <code>{'max-width'}</code> of{' '}\n            <code>{'$tablet - $container-offset'}</code>.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1042,7 +1017,7 @@ export const Example005 = {
     },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container maxWidth={"desktop"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container has a "}<code>{"max-width"}</code>{" of\\n    "}<code>{"$desktop - $container-offset"}</code>{" on widescreen and fullhd.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container maxWidth={'desktop'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container has a <code>{'max-width'}</code> of{' '}\n            <code>{'$desktop - $container-offset'}</code> on widescreen and\n            fullhd.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1059,7 +1034,7 @@ export const Example006 = {
     },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n  \\n"}<ui.Container maxWidth={"widescreen"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container has a "}<code>{"max-width"}</code>{" of\\n    "}<code>{"$widescreen - $container-offset"}</code>{" on fullhd.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container maxWidth={'widescreen'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container has a <code>{'max-width'}</code> of{' '}\n            <code>{'$widescreen - $container-offset'}</code> on fullhd.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1074,7 +1049,7 @@ export const Example007 = {
     official: { id: 'layout-container/fluid-container/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container width={"fluid"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"fluid"}</strong>{": it will have a 32px gap on either\\n    side, on any viewport size.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container width={'fluid'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container is <strong>fluid</strong>: it will have a 32px gap on\n            either side, on any viewport size.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

@@ -271,29 +271,22 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Footer>
-        {'\n  '}
+        {' '}
         <ui.Content helpers={{ textAlign: 'center' }}>
-          {'\n    '}
+          {' '}
           <p>
-            {'\n      '}
-            <strong>{'Bulma'}</strong>
-            {' by '}
-            <a href={'https://jgthms.com/'}>{'Jeremy Thomas'}</a>
-            {'.\n      The source code is licensed\n      '}
-            <a href={'https://opensource.org/license/mit'}>{'MIT'}</a>
-            {'. The\n      website content is licensed\n      '}
+            <strong>Bulma</strong> by{' '}
+            <a href={'https://jgthms.com/'}>Jeremy Thomas</a>. The source code
+            is licensed <a href={'https://opensource.org/license/mit'}>MIT</a>.
+            The website content is licensed{' '}
             <a href={'https://creativecommons.org/licenses/by-nc-sa/4.0//'}>
-              {'CC BY NC SA 4.0'}
+              CC BY NC SA 4.0
             </a>
-            {'.\n    '}
-          </p>
-          {'\n  '}
-        </ui.Content>
-        {'\n'}
+            .
+          </p>{' '}
+        </ui.Content>{' '}
       </ui.Footer>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -304,7 +297,7 @@ export const Example001 = {
     official: { id: 'layout-footer/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Footer>{"\\n  "}<ui.Content helpers={{"textAlign":"center"}}>{"\\n    "}<p>{"\\n      "}<strong>{"Bulma"}</strong>{" by "}<a href={"https://jgthms.com/"}>{"Jeremy Thomas"}</a>{".\\n      The source code is licensed\\n      "}<a href={"https://opensource.org/license/mit"}>{"MIT"}</a>{". The\\n      website content is licensed\\n      "}<a href={"https://creativecommons.org/licenses/by-nc-sa/4.0//"}>{"CC BY NC SA 4.0"}</a>{".\\n    "}</p>{"\\n  "}</ui.Content>{"\\n"}</ui.Footer>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Footer>\n        {' '}\n        <ui.Content helpers={{ textAlign: 'center' }}>\n          {' '}\n          <p>\n            <strong>Bulma</strong> by{' '}\n            <a href={'https://jgthms.com/'}>Jeremy Thomas</a>. The source code\n            is licensed <a href={'https://opensource.org/license/mit'}>MIT</a>.\n            The website content is licensed{' '}\n            <a href={'https://creativecommons.org/licenses/by-nc-sa/4.0//'}>\n              CC BY NC SA 4.0\n            </a>\n            .\n          </p>{' '}\n        </ui.Content>{' '}\n      </ui.Footer>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

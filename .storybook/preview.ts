@@ -4,6 +4,7 @@ import '../.generated/default.css'
 const preview: Preview = {
   parameters: {
     layout: 'padded',
+    docs: { canvas: { sourceState: 'shown' }, codePanel: true },
     options: {
       storySort: {
         order: [

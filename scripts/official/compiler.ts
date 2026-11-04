@@ -1,4 +1,5 @@
 import { load } from 'cheerio'
+import { format, type Options } from 'prettier'
 import { basename } from 'node:path'
 import { isTag, type AnyNode, type Element } from 'domhandler'
 import { helperClasses } from '../../src/helpers'
@@ -1409,16 +1410,75 @@ function nodes(input: AnyNode[], ctx: Context): string {
     .map((node) => {
       if (consumed.has(node)) return ''
       if (node.type === 'text') {
+        for (let ancestor = node.parent; ancestor; ancestor = ancestor.parent) {
+          if (
+            isTag(ancestor) &&
+            (['pre', 'code'].includes(ancestor.name) ||
+              /(?:^|;)\s*white-space\s*:\s*(?:pre(?:-wrap|-line)?|break-spaces)\b/i.test(
+                ancestor.attribs.style ?? '',
+              ))
+          )
+            return `{${q(node.data)}}`
+        }
+        const parent = node.parent
+        const whitespaceOnly = /^[\t\n\f\r ]*$/.test(node.data)
         if (
-          !node.data.trim() &&
-          node.parent &&
-          isTag(node.parent) &&
+          whitespaceOnly &&
+          parent &&
+          isTag(parent) &&
           ['table', 'thead', 'tbody', 'tfoot', 'tr', 'colgroup'].includes(
-            node.parent.name,
+            parent.name,
           )
         )
           return ''
-        return `{${q(node.data)}}`
+        const boundary =
+          parent?.type === 'root' ||
+          (parent &&
+            isTag(parent) &&
+            !parent.attribs.style &&
+            (has(parent, 'buttons') ||
+              (!parent.attribs.class &&
+                [
+                  'div',
+                  'p',
+                  'section',
+                  'article',
+                  'header',
+                  'footer',
+                  'main',
+                  'aside',
+                  'nav',
+                  'blockquote',
+                  'h1',
+                  'h2',
+                  'h3',
+                  'h4',
+                  'h5',
+                  'h6',
+                  'li',
+                  'td',
+                  'th',
+                ].includes(parent.name))))
+        let text = node.data.replace(/[\t\n\f\r ]+/g, ' ')
+        if (boundary) {
+          if (!node.prev) text = text.replace(/^ /, '')
+          if (!node.next) text = text.replace(/ $/, '')
+        }
+        if (!text) return ''
+        if (text === ' ') return "{' '}"
+        const escaped = text.replace(/^ | $/g, '').replace(
+          /[&<>{}\u00a0]/g,
+          (character) =>
+            ({
+              '&': '&amp;',
+              '<': '&lt;',
+              '>': '&gt;',
+              '{': '&#123;',
+              '}': '&#125;',
+              '\u00a0': '&nbsp;',
+            })[character]!,
+        )
+        return `${text.startsWith(' ') ? "{' '}" : ''}${escaped}${text.endsWith(' ') ? "{' '}" : ''}`
       }
       if (node.type === 'comment') return ''
       if (!isTag(node)) return ''
@@ -1459,12 +1519,13 @@ function nodes(input: AnyNode[], ctx: Context): string {
     .join('')
 }
 
-export function compilePage(
+export async function compilePage(
   page: OfficialPage,
   assets: OfficialAsset[] = [],
   title = page.title,
   document?: string,
-): CompiledPage {
+  formatOptions: Options = {},
+): Promise<CompiledPage> {
   const assetPaths = new Map(
     assets.map((asset) => [
       asset.url,
@@ -1489,21 +1550,29 @@ export function compilePage(
     const fn = `function ${name}() {\n${ctx.states.map((line) => `  ${line}\n`).join('')}  return (<>${body}</>);\n}`
     return { fn, ctx }
   }
-  const examples: CompiledExample[] = page.examples.map((example, index) => {
+  const examples: CompiledExample[] = []
+  for (const [index, example] of page.examples.entries()) {
     const exportName = `Example${String(index + 1).padStart(3, '0')}`
-    const { fn, ctx } = compileDemo(example, `${exportName}Demo`)
-    const source = `${ctx.states.length ? "import { useState } from 'react';\n" : ''}import * as ui from '@seagreenio/react-bulma';\n\n${fn}\n`
+    const { fn: rawFunction, ctx } = compileDemo(example, `${exportName}Demo`)
+    const fn = await format(rawFunction, {
+      ...formatOptions,
+      parser: 'typescript',
+    })
+    const source = await format(
+      `${ctx.states.length ? "import { useState } from 'react';\n" : ''}import * as ui from '@seagreenio/react-bulma';\n\n${fn}\n`,
+      { ...formatOptions, parser: 'typescript' },
+    )
     functions.push(fn)
     stories.push(
       `export const ${exportName} = {\n  name: ${q(example.name)},\n  parameters: { official: { id: ${q(example.id)} }, docs: { source: { code: ${q(source)}, language: 'tsx', type: 'code' } } },\n  render: ${exportName}Demo,\n} satisfies StoryObj;`,
     )
-    return {
+    examples.push({
       id: example.id,
       exportName,
       source,
       components: [...ctx.components].sort(),
-    }
-  })
+    })
+  }
   const docs =
     document === undefined
       ? ''
@@ -1533,22 +1602,26 @@ export function compilePage(
   }
 }
 
-export function compileCorpus(
+export async function compileCorpus(
   corpus: OfficialCorpus,
   documents: OfficialDocuments,
   navigation?: OfficialNavigation,
-): CompiledPage[] {
-  return corpus.pages.map((page) => {
-    const document = documents.get(page.id)
-    if (document === undefined)
-      throw new Error(`Missing official document: ${page.id}`)
-    return compilePage(
-      page,
-      corpus.assets,
-      navigation?.pages
-        .find((entry) => entry.page === page.id)
-        ?.path.join('/') ?? page.title,
-      document,
-    )
-  })
+  formatOptions: Options = {},
+): Promise<CompiledPage[]> {
+  return Promise.all(
+    corpus.pages.map((page) => {
+      const document = documents.get(page.id)
+      if (document === undefined)
+        throw new Error(`Missing official document: ${page.id}`)
+      return compilePage(
+        page,
+        corpus.assets,
+        navigation?.pages
+          .find((entry) => entry.page === page.id)
+          ?.path.join('/') ?? page.title,
+        document,
+        formatOptions,
+      )
+    }),
+  )
 }

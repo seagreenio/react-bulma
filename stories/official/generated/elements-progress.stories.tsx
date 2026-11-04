@@ -511,11 +511,9 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Progress value={'15'} max={'100'}>
-        {'15%'}
+        15%
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -523,11 +521,10 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n           \n'}
       <ui.Progress value={'15'} max={'100'} color={'link'}>
-        {'\n  15%\n'}
+        {' '}
+        15%{' '}
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -535,11 +532,10 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n           \n'}
       <ui.Progress value={'30'} max={'100'} color={'primary'}>
-        {'\n  30%\n'}
+        {' '}
+        30%{' '}
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -547,11 +543,10 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n           \n'}
       <ui.Progress value={'45'} max={'100'} color={'info'}>
-        {'\n  45%\n'}
+        {' '}
+        45%{' '}
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -559,11 +554,10 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n           \n'}
       <ui.Progress value={'60'} max={'100'} color={'success'}>
-        {'\n  60%\n'}
+        {' '}
+        60%{' '}
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -571,11 +565,10 @@ function Example005Demo() {
 function Example006Demo() {
   return (
     <>
-      {'\n        \n           \n'}
       <ui.Progress value={'75'} max={'100'} color={'warning'}>
-        {'\n  75%\n'}
+        {' '}
+        75%{' '}
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -583,11 +576,10 @@ function Example006Demo() {
 function Example007Demo() {
   return (
     <>
-      {'\n        \n           \n'}
       <ui.Progress value={'90'} max={'100'} color={'danger'}>
-        {'\n  90%\n'}
+        {' '}
+        90%{' '}
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -595,11 +587,10 @@ function Example007Demo() {
 function Example008Demo() {
   return (
     <>
-      {'\n        \n           \n'}
       <ui.Progress value={'20'} max={'100'} size={'small'}>
-        {'\n  20%\n'}
+        {' '}
+        20%{' '}
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -607,11 +598,10 @@ function Example008Demo() {
 function Example009Demo() {
   return (
     <>
-      {'\n        \n           \n'}
       <ui.Progress value={'40'} max={'100'} className={'rb-is-normal'}>
-        {'\n  40%\n'}
+        {' '}
+        40%{' '}
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -619,11 +609,10 @@ function Example009Demo() {
 function Example010Demo() {
   return (
     <>
-      {'\n        \n           \n'}
       <ui.Progress value={'60'} max={'100'} size={'medium'}>
-        {'\n  60%\n'}
+        {' '}
+        60%{' '}
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -631,11 +620,10 @@ function Example010Demo() {
 function Example011Demo() {
   return (
     <>
-      {'\n        \n           \n'}
       <ui.Progress value={'80'} max={'100'} size={'large'}>
-        {'\n  80%\n'}
+        {' '}
+        80%{' '}
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -643,23 +631,18 @@ function Example011Demo() {
 function Example012Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Progress max={'100'} size={'small'} color={'primary'}>
-        {'15%'}
-      </ui.Progress>
-      {'\n'}
+        15%
+      </ui.Progress>{' '}
       <ui.Progress max={'100'} color={'danger'}>
-        {'30%'}
-      </ui.Progress>
-      {'\n'}
+        30%
+      </ui.Progress>{' '}
       <ui.Progress max={'100'} size={'medium'} color={'dark'}>
-        {'45%'}
-      </ui.Progress>
-      {'\n'}
+        45%
+      </ui.Progress>{' '}
       <ui.Progress max={'100'} size={'large'} color={'info'}>
-        {'60%'}
+        60%
       </ui.Progress>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -670,7 +653,7 @@ export const Example001 = {
     official: { id: 'elements-progress/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Progress value={"15"} max={"100"}>{"15%"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Progress value={'15'} max={'100'}>\n        15%\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -685,7 +668,7 @@ export const Example002 = {
     official: { id: 'elements-progress/colors/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"15"} max={"100"} color={"link"}>{"\\n  15%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Progress value={'15'} max={'100'} color={'link'}>\n        {' '}\n        15%{' '}\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -700,7 +683,7 @@ export const Example003 = {
     official: { id: 'elements-progress/colors/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"30"} max={"100"} color={"primary"}>{"\\n  30%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Progress value={'30'} max={'100'} color={'primary'}>\n        {' '}\n        30%{' '}\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -715,7 +698,7 @@ export const Example004 = {
     official: { id: 'elements-progress/colors/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"45"} max={"100"} color={"info"}>{"\\n  45%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Progress value={'45'} max={'100'} color={'info'}>\n        {' '}\n        45%{' '}\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -730,7 +713,7 @@ export const Example005 = {
     official: { id: 'elements-progress/colors/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"60"} max={"100"} color={"success"}>{"\\n  60%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Progress value={'60'} max={'100'} color={'success'}>\n        {' '}\n        60%{' '}\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -745,7 +728,7 @@ export const Example006 = {
     official: { id: 'elements-progress/colors/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"75"} max={"100"} color={"warning"}>{"\\n  75%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Progress value={'75'} max={'100'} color={'warning'}>\n        {' '}\n        75%{' '}\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -760,7 +743,7 @@ export const Example007 = {
     official: { id: 'elements-progress/colors/006' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"90"} max={"100"} color={"danger"}>{"\\n  90%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Progress value={'90'} max={'100'} color={'danger'}>\n        {' '}\n        90%{' '}\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -775,7 +758,7 @@ export const Example008 = {
     official: { id: 'elements-progress/sizes/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"20"} max={"100"} size={"small"}>{"\\n  20%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Progress value={'20'} max={'100'} size={'small'}>\n        {' '}\n        20%{' '}\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -790,7 +773,7 @@ export const Example009 = {
     official: { id: 'elements-progress/sizes/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"40"} max={"100"} className={"rb-is-normal"}>{"\\n  40%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Progress value={'40'} max={'100'} className={'rb-is-normal'}>\n        {' '}\n        40%{' '}\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -805,7 +788,7 @@ export const Example010 = {
     official: { id: 'elements-progress/sizes/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"60"} max={"100"} size={"medium"}>{"\\n  60%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Progress value={'60'} max={'100'} size={'medium'}>\n        {' '}\n        60%{' '}\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -820,7 +803,7 @@ export const Example011 = {
     official: { id: 'elements-progress/sizes/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"80"} max={"100"} size={"large"}>{"\\n  80%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Progress value={'80'} max={'100'} size={'large'}>\n        {' '}\n        80%{' '}\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -835,7 +818,7 @@ export const Example012 = {
     official: { id: 'elements-progress/indeterminate/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Progress max={"100"} size={"small"} color={"primary"}>{"15%"}</ui.Progress>{"\\n"}<ui.Progress max={"100"} color={"danger"}>{"30%"}</ui.Progress>{"\\n"}<ui.Progress max={"100"} size={"medium"} color={"dark"}>{"45%"}</ui.Progress>{"\\n"}<ui.Progress max={"100"} size={"large"} color={"info"}>{"60%"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Progress max={'100'} size={'small'} color={'primary'}>\n        15%\n      </ui.Progress>{' '}\n      <ui.Progress max={'100'} color={'danger'}>\n        30%\n      </ui.Progress>{' '}\n      <ui.Progress max={'100'} size={'medium'} color={'dark'}>\n        45%\n      </ui.Progress>{' '}\n      <ui.Progress max={'100'} size={'large'} color={'info'}>\n        60%\n      </ui.Progress>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

@@ -717,60 +717,54 @@ function Example001Demo() {
   return (
     <>
       <ui.FixedGrid columns={4}>
-        {'\n    '}
+        {' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 1'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 1
+        </ui.Cell>{' '}
         <ui.Cell
           columnStart={3}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 2'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 2
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 3'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 3
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 4'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 4
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 5'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 5
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 6'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 6
+        </ui.Cell>{' '}
       </ui.FixedGrid>
     </>
   )
@@ -780,60 +774,54 @@ function Example002Demo() {
   return (
     <>
       <ui.FixedGrid columns={4}>
-        {'\n    '}
+        {' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 1'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 1
+        </ui.Cell>{' '}
         <ui.Cell
           columnFromEnd={2}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 2'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 2
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 3'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 3
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 4'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 4
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 5'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 5
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 6'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 6
+        </ui.Cell>{' '}
       </ui.FixedGrid>
     </>
   )
@@ -843,60 +831,54 @@ function Example003Demo() {
   return (
     <>
       <ui.FixedGrid columns={4}>
-        {'\n    '}
+        {' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 1'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 1
+        </ui.Cell>{' '}
         <ui.Cell
           columnSpan={2}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 2'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 2
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 3'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 3
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 4'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 4
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 5'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 5
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 6'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 6
+        </ui.Cell>{' '}
       </ui.FixedGrid>
     </>
   )
@@ -906,60 +888,54 @@ function Example004Demo() {
   return (
     <>
       <ui.FixedGrid columns={4}>
-        {'\n    '}
+        {' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 1'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 1
+        </ui.Cell>{' '}
         <ui.Cell
           rowStart={3}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 2'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 2
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 3'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 3
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 4'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 4
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 5'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 5
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 6'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 6
+        </ui.Cell>{' '}
       </ui.FixedGrid>
     </>
   )
@@ -969,60 +945,54 @@ function Example005Demo() {
   return (
     <>
       <ui.FixedGrid columns={4}>
-        {'\n    '}
+        {' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 1'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 1
+        </ui.Cell>{' '}
         <ui.Cell
           rowFromEnd={1}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 2'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 2
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 3'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 3
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 4'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 4
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 5'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 5
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 6'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 6
+        </ui.Cell>{' '}
       </ui.FixedGrid>
     </>
   )
@@ -1032,60 +1002,54 @@ function Example006Demo() {
   return (
     <>
       <ui.FixedGrid columns={4}>
-        {'\n    '}
+        {' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 1'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 1
+        </ui.Cell>{' '}
         <ui.Cell
           rowSpan={2}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
-          {'Cell 2'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 2
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 3'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 3
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 4'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 4
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 5'}
-        </ui.Cell>
-        {'\n    '}
+          Cell 5
+        </ui.Cell>{' '}
         <ui.Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
-          {'Cell 6'}
-        </ui.Cell>
-        {'\n  '}
+          Cell 6
+        </ui.Cell>{' '}
       </ui.FixedGrid>
     </>
   )
@@ -1097,7 +1061,7 @@ export const Example001 = {
     official: { id: 'grid-cells/column-start/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.FixedGrid columns={4}>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 1"}</ui.Cell>{"\\n    "}<ui.Cell columnStart={3} helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 2"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 3"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 4"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 5"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 6"}</ui.Cell>{"\\n  "}</ui.FixedGrid></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          columnStart={3}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1112,7 +1076,7 @@ export const Example002 = {
     official: { id: 'grid-cells/column-from-end/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.FixedGrid columns={4}>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 1"}</ui.Cell>{"\\n    "}<ui.Cell columnFromEnd={2} helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 2"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 3"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 4"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 5"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 6"}</ui.Cell>{"\\n  "}</ui.FixedGrid></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          columnFromEnd={2}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1127,7 +1091,7 @@ export const Example003 = {
     official: { id: 'grid-cells/column-span/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.FixedGrid columns={4}>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 1"}</ui.Cell>{"\\n    "}<ui.Cell columnSpan={2} helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 2"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 3"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 4"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 5"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 6"}</ui.Cell>{"\\n  "}</ui.FixedGrid></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          columnSpan={2}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1142,7 +1106,7 @@ export const Example004 = {
     official: { id: 'grid-cells/row-start/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.FixedGrid columns={4}>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 1"}</ui.Cell>{"\\n    "}<ui.Cell rowStart={3} helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 2"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 3"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 4"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 5"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 6"}</ui.Cell>{"\\n  "}</ui.FixedGrid></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          rowStart={3}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1157,7 +1121,7 @@ export const Example005 = {
     official: { id: 'grid-cells/row-from-end/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<><ui.FixedGrid columns={4}>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 1"}</ui.Cell>{"\\n    "}<ui.Cell rowFromEnd={1} helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 2"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 3"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 4"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 5"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 6"}</ui.Cell>{"\\n  "}</ui.FixedGrid></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          rowFromEnd={1}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1172,7 +1136,7 @@ export const Example006 = {
     official: { id: 'grid-cells/row-span/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<><ui.FixedGrid columns={4}>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 1"}</ui.Cell>{"\\n    "}<ui.Cell rowSpan={2} helpers={{"py":3,"px":4,"backgroundColor":"primary"}} className={"rb-has-text-primary-invert rb-has-radius-normal"}>{"Cell 2"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 3"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 4"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 5"}</ui.Cell>{"\\n    "}<ui.Cell helpers={{"py":3,"px":4}} className={"rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal"}>{"Cell 6"}</ui.Cell>{"\\n  "}</ui.FixedGrid></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          rowSpan={2}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

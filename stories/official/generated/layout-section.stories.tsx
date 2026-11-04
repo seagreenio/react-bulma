@@ -361,19 +361,15 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Section>
-        {'\n  '}
-        <ui.Title level={1}>{'Section'}</ui.Title>
-        {'\n  '}
+        {' '}
+        <ui.Title level={1}>Section</ui.Title>{' '}
         <ui.Subtitle level={2}>
-          {'\n    A simple container to divide your page into '}
-          <strong>{'sections'}</strong>
-          {", like\n    the one you're currently reading.\n  "}
-        </ui.Subtitle>
-        {'\n'}
+          {' '}
+          A simple container to divide your page into <strong>sections</strong>,
+          like the one you're currently reading.{' '}
+        </ui.Subtitle>{' '}
       </ui.Section>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -381,19 +377,15 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Section size={'medium'}>
-        {'\n  '}
-        <ui.Title level={1}>{'Medium section'}</ui.Title>
-        {'\n  '}
+        {' '}
+        <ui.Title level={1}>Medium section</ui.Title>{' '}
         <ui.Subtitle level={2}>
-          {'\n    A simple container to divide your page into '}
-          <strong>{'sections'}</strong>
-          {", like\n    the one you're currently reading.\n  "}
-        </ui.Subtitle>
-        {'\n'}
+          {' '}
+          A simple container to divide your page into <strong>sections</strong>,
+          like the one you're currently reading.{' '}
+        </ui.Subtitle>{' '}
       </ui.Section>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -401,19 +393,15 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Section size={'large'}>
-        {'\n  '}
-        <ui.Title level={1}>{'Large section'}</ui.Title>
-        {'\n  '}
+        {' '}
+        <ui.Title level={1}>Large section</ui.Title>{' '}
         <ui.Subtitle level={2}>
-          {'\n    A simple container to divide your page into '}
-          <strong>{'sections'}</strong>
-          {", like\n    the one you're currently reading.\n  "}
-        </ui.Subtitle>
-        {'\n'}
+          {' '}
+          A simple container to divide your page into <strong>sections</strong>,
+          like the one you're currently reading.{' '}
+        </ui.Subtitle>{' '}
       </ui.Section>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -424,7 +412,7 @@ export const Example001 = {
     official: { id: 'layout-section/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Section>{"\\n  "}<ui.Title level={1}>{"Section"}</ui.Title>{"\\n  "}<ui.Subtitle level={2}>{"\\n    A simple container to divide your page into "}<strong>{"sections"}</strong>{", like\\n    the one you\'re currently reading.\\n  "}</ui.Subtitle>{"\\n"}</ui.Section>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Section>\n        {' '}\n        <ui.Title level={1}>Section</ui.Title>{' '}\n        <ui.Subtitle level={2}>\n          {' '}\n          A simple container to divide your page into <strong>sections</strong>,\n          like the one you're currently reading.{' '}\n        </ui.Subtitle>{' '}\n      </ui.Section>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -439,7 +427,7 @@ export const Example002 = {
     official: { id: 'layout-section/sizes/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Section size={"medium"}>{"\\n  "}<ui.Title level={1}>{"Medium section"}</ui.Title>{"\\n  "}<ui.Subtitle level={2}>{"\\n    A simple container to divide your page into "}<strong>{"sections"}</strong>{", like\\n    the one you\'re currently reading.\\n  "}</ui.Subtitle>{"\\n"}</ui.Section>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Section size={'medium'}>\n        {' '}\n        <ui.Title level={1}>Medium section</ui.Title>{' '}\n        <ui.Subtitle level={2}>\n          {' '}\n          A simple container to divide your page into <strong>sections</strong>,\n          like the one you're currently reading.{' '}\n        </ui.Subtitle>{' '}\n      </ui.Section>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -454,7 +442,7 @@ export const Example003 = {
     official: { id: 'layout-section/sizes/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Section size={"large"}>{"\\n  "}<ui.Title level={1}>{"Large section"}</ui.Title>{"\\n  "}<ui.Subtitle level={2}>{"\\n    A simple container to divide your page into "}<strong>{"sections"}</strong>{", like\\n    the one you\'re currently reading.\\n  "}</ui.Subtitle>{"\\n"}</ui.Section>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Section size={'large'}>\n        {' '}\n        <ui.Title level={1}>Large section</ui.Title>{' '}\n        <ui.Subtitle level={2}>\n          {' '}\n          A simple container to divide your page into <strong>sections</strong>,\n          like the one you're currently reading.{' '}\n        </ui.Subtitle>{' '}\n      </ui.Section>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

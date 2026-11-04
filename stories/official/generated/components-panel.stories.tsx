@@ -1064,117 +1064,87 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Panel>
-        {'\n  '}
-        <ui.PanelHeading>{'Repositories'}</ui.PanelHeading>
-        {'\n  '}
+        {' '}
+        <ui.PanelHeading>Repositories</ui.PanelHeading>{' '}
         <ui.PanelBlock>
-          {'\n    '}
+          {' '}
           <ui.Control icons={'left'} as={'p'}>
-            {'\n      '}
-            <ui.Input type={'text'} placeholder={'Search'} />
-            {'\n      '}
+            {' '}
+            <ui.Input type={'text'} placeholder={'Search'} />{' '}
             <ui.Icon className={'rb-is-left'}>
-              {'\n        '}
-              <i aria-hidden={'true'} className={'fas fa-search'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n    '}
-          </ui.Control>
-          {'\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+              {' '}
+              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelTabs>
-          {'\n    '}
-          <ui.PanelTab active>{'All'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Public'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Private'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Sources'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Forks'}</ui.PanelTab>
-          {'\n  '}
-        </ui.PanelTabs>
-        {'\n  '}
+          {' '}
+          <ui.PanelTab active>All</ui.PanelTab>{' '}
+          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}
+          <ui.PanelTab>Sources</ui.PanelTab>{' '}
+          <ui.PanelTab>Forks</ui.PanelTab>{' '}
+        </ui.PanelTabs>{' '}
         <ui.PanelBlock active as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    bulma\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          bulma{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    marksheet\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          marksheet{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    minireset.css\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          minireset.css{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    jgthms.github.io\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          jgthms.github.io{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-code-branch'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    daniellowtw/infboard\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-code-branch'} />{' '}
+          </ui.PanelIcon>{' '}
+          daniellowtw/infboard{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-code-branch'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    mojs\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-code-branch'} />{' '}
+          </ui.PanelIcon>{' '}
+          mojs{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'label'}>
-          {'\n    '}
-          <input type={'checkbox'} />
-          {'\n    remember me\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+          {' '}
+          <input type={'checkbox'} /> remember me{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock>
-          {'\n    '}
+          {' '}
           <ui.Button color={'link'} outlined fullWidth>
-            {'\n      Reset all filters\n    '}
-          </ui.Button>
-          {'\n  '}
-        </ui.PanelBlock>
-        {'\n'}
+            {' '}
+            Reset all filters{' '}
+          </ui.Button>{' '}
+        </ui.PanelBlock>{' '}
       </ui.Panel>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1182,83 +1152,64 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Panel color={'link'} as={'article'}>
-        {'\n  '}
-        <ui.PanelHeading>{'Link'}</ui.PanelHeading>
-        {'\n  '}
+        {' '}
+        <ui.PanelHeading>Link</ui.PanelHeading>{' '}
         <ui.PanelTabs>
-          {'\n    '}
-          <ui.PanelTab active>{'All'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Public'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Private'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Sources'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Forks'}</ui.PanelTab>
-          {'\n  '}
-        </ui.PanelTabs>
-        {'\n  '}
+          {' '}
+          <ui.PanelTab active>All</ui.PanelTab>{' '}
+          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}
+          <ui.PanelTab>Sources</ui.PanelTab>{' '}
+          <ui.PanelTab>Forks</ui.PanelTab>{' '}
+        </ui.PanelTabs>{' '}
         <ui.PanelBlock>
-          {'\n    '}
+          {' '}
           <ui.Control icons={'left'} as={'p'}>
-            {'\n      '}
-            <ui.Input type={'text'} placeholder={'Search'} color={'link'} />
-            {'\n      '}
+            {' '}
+            <ui.Input
+              type={'text'}
+              placeholder={'Search'}
+              color={'link'}
+            />{' '}
             <ui.Icon className={'rb-is-left'}>
-              {'\n        '}
-              <i aria-hidden={'true'} className={'fas fa-search'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n    '}
-          </ui.Control>
-          {'\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+              {' '}
+              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock active as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    bulma\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          bulma{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    marksheet\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          marksheet{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    minireset.css\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          minireset.css{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    jgthms.github.io\n  '}
-        </ui.PanelBlock>
-        {'\n'}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          jgthms.github.io{' '}
+        </ui.PanelBlock>{' '}
       </ui.Panel>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1266,83 +1217,64 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Panel color={'primary'} as={'article'}>
-        {'\n  '}
-        <ui.PanelHeading>{'Primary'}</ui.PanelHeading>
-        {'\n  '}
+        {' '}
+        <ui.PanelHeading>Primary</ui.PanelHeading>{' '}
         <ui.PanelTabs>
-          {'\n    '}
-          <ui.PanelTab active>{'All'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Public'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Private'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Sources'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Forks'}</ui.PanelTab>
-          {'\n  '}
-        </ui.PanelTabs>
-        {'\n  '}
+          {' '}
+          <ui.PanelTab active>All</ui.PanelTab>{' '}
+          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}
+          <ui.PanelTab>Sources</ui.PanelTab>{' '}
+          <ui.PanelTab>Forks</ui.PanelTab>{' '}
+        </ui.PanelTabs>{' '}
         <ui.PanelBlock>
-          {'\n    '}
+          {' '}
           <ui.Control icons={'left'} as={'p'}>
-            {'\n      '}
-            <ui.Input type={'text'} placeholder={'Search'} color={'primary'} />
-            {'\n      '}
+            {' '}
+            <ui.Input
+              type={'text'}
+              placeholder={'Search'}
+              color={'primary'}
+            />{' '}
             <ui.Icon className={'rb-is-left'}>
-              {'\n        '}
-              <i aria-hidden={'true'} className={'fas fa-search'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n    '}
-          </ui.Control>
-          {'\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+              {' '}
+              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock active as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    bulma\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          bulma{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    marksheet\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          marksheet{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    minireset.css\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          minireset.css{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    jgthms.github.io\n  '}
-        </ui.PanelBlock>
-        {'\n'}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          jgthms.github.io{' '}
+        </ui.PanelBlock>{' '}
       </ui.Panel>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1350,83 +1282,64 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Panel color={'info'} as={'article'}>
-        {'\n  '}
-        <ui.PanelHeading>{'Info'}</ui.PanelHeading>
-        {'\n  '}
+        {' '}
+        <ui.PanelHeading>Info</ui.PanelHeading>{' '}
         <ui.PanelTabs>
-          {'\n    '}
-          <ui.PanelTab active>{'All'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Public'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Private'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Sources'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Forks'}</ui.PanelTab>
-          {'\n  '}
-        </ui.PanelTabs>
-        {'\n  '}
+          {' '}
+          <ui.PanelTab active>All</ui.PanelTab>{' '}
+          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}
+          <ui.PanelTab>Sources</ui.PanelTab>{' '}
+          <ui.PanelTab>Forks</ui.PanelTab>{' '}
+        </ui.PanelTabs>{' '}
         <ui.PanelBlock>
-          {'\n    '}
+          {' '}
           <ui.Control icons={'left'} as={'p'}>
-            {'\n      '}
-            <ui.Input type={'text'} placeholder={'Search'} color={'info'} />
-            {'\n      '}
+            {' '}
+            <ui.Input
+              type={'text'}
+              placeholder={'Search'}
+              color={'info'}
+            />{' '}
             <ui.Icon className={'rb-is-left'}>
-              {'\n        '}
-              <i aria-hidden={'true'} className={'fas fa-search'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n    '}
-          </ui.Control>
-          {'\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+              {' '}
+              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock active as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    bulma\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          bulma{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    marksheet\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          marksheet{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    minireset.css\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          minireset.css{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    jgthms.github.io\n  '}
-        </ui.PanelBlock>
-        {'\n'}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          jgthms.github.io{' '}
+        </ui.PanelBlock>{' '}
       </ui.Panel>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1434,83 +1347,64 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Panel color={'success'} as={'article'}>
-        {'\n  '}
-        <ui.PanelHeading>{'Success'}</ui.PanelHeading>
-        {'\n  '}
+        {' '}
+        <ui.PanelHeading>Success</ui.PanelHeading>{' '}
         <ui.PanelTabs>
-          {'\n    '}
-          <ui.PanelTab active>{'All'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Public'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Private'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Sources'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Forks'}</ui.PanelTab>
-          {'\n  '}
-        </ui.PanelTabs>
-        {'\n  '}
+          {' '}
+          <ui.PanelTab active>All</ui.PanelTab>{' '}
+          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}
+          <ui.PanelTab>Sources</ui.PanelTab>{' '}
+          <ui.PanelTab>Forks</ui.PanelTab>{' '}
+        </ui.PanelTabs>{' '}
         <ui.PanelBlock>
-          {'\n    '}
+          {' '}
           <ui.Control icons={'left'} as={'p'}>
-            {'\n      '}
-            <ui.Input type={'text'} placeholder={'Search'} color={'success'} />
-            {'\n      '}
+            {' '}
+            <ui.Input
+              type={'text'}
+              placeholder={'Search'}
+              color={'success'}
+            />{' '}
             <ui.Icon className={'rb-is-left'}>
-              {'\n        '}
-              <i aria-hidden={'true'} className={'fas fa-search'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n    '}
-          </ui.Control>
-          {'\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+              {' '}
+              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock active as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    bulma\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          bulma{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    marksheet\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          marksheet{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    minireset.css\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          minireset.css{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    jgthms.github.io\n  '}
-        </ui.PanelBlock>
-        {'\n'}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          jgthms.github.io{' '}
+        </ui.PanelBlock>{' '}
       </ui.Panel>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1518,83 +1412,64 @@ function Example005Demo() {
 function Example006Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Panel color={'warning'} as={'article'}>
-        {'\n  '}
-        <ui.PanelHeading>{'Warning'}</ui.PanelHeading>
-        {'\n  '}
+        {' '}
+        <ui.PanelHeading>Warning</ui.PanelHeading>{' '}
         <ui.PanelTabs>
-          {'\n    '}
-          <ui.PanelTab active>{'All'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Public'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Private'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Sources'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Forks'}</ui.PanelTab>
-          {'\n  '}
-        </ui.PanelTabs>
-        {'\n  '}
+          {' '}
+          <ui.PanelTab active>All</ui.PanelTab>{' '}
+          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}
+          <ui.PanelTab>Sources</ui.PanelTab>{' '}
+          <ui.PanelTab>Forks</ui.PanelTab>{' '}
+        </ui.PanelTabs>{' '}
         <ui.PanelBlock>
-          {'\n    '}
+          {' '}
           <ui.Control icons={'left'} as={'p'}>
-            {'\n      '}
-            <ui.Input type={'text'} placeholder={'Search'} color={'warning'} />
-            {'\n      '}
+            {' '}
+            <ui.Input
+              type={'text'}
+              placeholder={'Search'}
+              color={'warning'}
+            />{' '}
             <ui.Icon className={'rb-is-left'}>
-              {'\n        '}
-              <i aria-hidden={'true'} className={'fas fa-search'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n    '}
-          </ui.Control>
-          {'\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+              {' '}
+              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock active as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    bulma\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          bulma{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    marksheet\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          marksheet{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    minireset.css\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          minireset.css{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    jgthms.github.io\n  '}
-        </ui.PanelBlock>
-        {'\n'}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          jgthms.github.io{' '}
+        </ui.PanelBlock>{' '}
       </ui.Panel>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1602,83 +1477,64 @@ function Example006Demo() {
 function Example007Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Panel color={'danger'} as={'article'}>
-        {'\n  '}
-        <ui.PanelHeading>{'Danger'}</ui.PanelHeading>
-        {'\n  '}
+        {' '}
+        <ui.PanelHeading>Danger</ui.PanelHeading>{' '}
         <ui.PanelTabs>
-          {'\n    '}
-          <ui.PanelTab active>{'All'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Public'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Private'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Sources'}</ui.PanelTab>
-          {'\n    '}
-          <ui.PanelTab>{'Forks'}</ui.PanelTab>
-          {'\n  '}
-        </ui.PanelTabs>
-        {'\n  '}
+          {' '}
+          <ui.PanelTab active>All</ui.PanelTab>{' '}
+          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}
+          <ui.PanelTab>Sources</ui.PanelTab>{' '}
+          <ui.PanelTab>Forks</ui.PanelTab>{' '}
+        </ui.PanelTabs>{' '}
         <ui.PanelBlock>
-          {'\n    '}
+          {' '}
           <ui.Control icons={'left'} as={'p'}>
-            {'\n      '}
-            <ui.Input type={'text'} placeholder={'Search'} color={'danger'} />
-            {'\n      '}
+            {' '}
+            <ui.Input
+              type={'text'}
+              placeholder={'Search'}
+              color={'danger'}
+            />{' '}
             <ui.Icon className={'rb-is-left'}>
-              {'\n        '}
-              <i aria-hidden={'true'} className={'fas fa-search'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n    '}
-          </ui.Control>
-          {'\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+              {' '}
+              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock active as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    bulma\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          bulma{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    marksheet\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          marksheet{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    minireset.css\n  '}
-        </ui.PanelBlock>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          minireset.css{' '}
+        </ui.PanelBlock>{' '}
         <ui.PanelBlock as={'a'}>
-          {'\n    '}
+          {' '}
           <ui.PanelIcon>
-            {'\n      '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />
-            {'\n    '}
-          </ui.PanelIcon>
-          {'\n    jgthms.github.io\n  '}
-        </ui.PanelBlock>
-        {'\n'}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
+          </ui.PanelIcon>{' '}
+          jgthms.github.io{' '}
+        </ui.PanelBlock>{' '}
       </ui.Panel>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1689,7 +1545,7 @@ export const Example001 = {
     official: { id: 'components-panel/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Panel>{"\\n  "}<ui.PanelHeading>{"Repositories"}</ui.PanelHeading>{"\\n  "}<ui.PanelBlock>{"\\n    "}<ui.Control icons={"left"} as={"p"}>{"\\n      "}<ui.Input type={"text"} placeholder={"Search"} />{"\\n      "}<ui.Icon className={"rb-is-left"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-search"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.Control>{"\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelTabs>{"\\n    "}<ui.PanelTab active>{"All"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Public"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Private"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Sources"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Forks"}</ui.PanelTab>{"\\n  "}</ui.PanelTabs>{"\\n  "}<ui.PanelBlock active as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    bulma\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    marksheet\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    minireset.css\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    jgthms.github.io\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-code-branch"} />{"\\n    "}</ui.PanelIcon>{"\\n    daniellowtw/infboard\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-code-branch"} />{"\\n    "}</ui.PanelIcon>{"\\n    mojs\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"label"}>{"\\n    "}<input type={"checkbox"} />{"\\n    remember me\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock>{"\\n    "}<ui.Button color={"link"} outlined fullWidth>{"\\n      Reset all filters\\n    "}</ui.Button>{"\\n  "}</ui.PanelBlock>{"\\n"}</ui.Panel>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Panel>\n        {' '}\n        <ui.PanelHeading>Repositories</ui.PanelHeading>{' '}\n        <ui.PanelBlock>\n          {' '}\n          <ui.Control icons={'left'} as={'p'}>\n            {' '}\n            <ui.Input type={'text'} placeholder={'Search'} />{' '}\n            <ui.Icon className={'rb-is-left'}>\n              {' '}\n              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelTabs>\n          {' '}\n          <ui.PanelTab active>All</ui.PanelTab>{' '}\n          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}\n          <ui.PanelTab>Sources</ui.PanelTab>{' '}\n          <ui.PanelTab>Forks</ui.PanelTab>{' '}\n        </ui.PanelTabs>{' '}\n        <ui.PanelBlock active as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          bulma{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          marksheet{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          minireset.css{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          jgthms.github.io{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-code-branch'} />{' '}\n          </ui.PanelIcon>{' '}\n          daniellowtw/infboard{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-code-branch'} />{' '}\n          </ui.PanelIcon>{' '}\n          mojs{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'label'}>\n          {' '}\n          <input type={'checkbox'} /> remember me{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock>\n          {' '}\n          <ui.Button color={'link'} outlined fullWidth>\n            {' '}\n            Reset all filters{' '}\n          </ui.Button>{' '}\n        </ui.PanelBlock>{' '}\n      </ui.Panel>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1704,7 +1560,7 @@ export const Example002 = {
     official: { id: 'components-panel/colors/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Panel color={"link"} as={"article"}>{"\\n  "}<ui.PanelHeading>{"Link"}</ui.PanelHeading>{"\\n  "}<ui.PanelTabs>{"\\n    "}<ui.PanelTab active>{"All"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Public"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Private"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Sources"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Forks"}</ui.PanelTab>{"\\n  "}</ui.PanelTabs>{"\\n  "}<ui.PanelBlock>{"\\n    "}<ui.Control icons={"left"} as={"p"}>{"\\n      "}<ui.Input type={"text"} placeholder={"Search"} color={"link"} />{"\\n      "}<ui.Icon className={"rb-is-left"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-search"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.Control>{"\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock active as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    bulma\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    marksheet\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    minireset.css\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    jgthms.github.io\\n  "}</ui.PanelBlock>{"\\n"}</ui.Panel>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Panel color={'link'} as={'article'}>\n        {' '}\n        <ui.PanelHeading>Link</ui.PanelHeading>{' '}\n        <ui.PanelTabs>\n          {' '}\n          <ui.PanelTab active>All</ui.PanelTab>{' '}\n          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}\n          <ui.PanelTab>Sources</ui.PanelTab>{' '}\n          <ui.PanelTab>Forks</ui.PanelTab>{' '}\n        </ui.PanelTabs>{' '}\n        <ui.PanelBlock>\n          {' '}\n          <ui.Control icons={'left'} as={'p'}>\n            {' '}\n            <ui.Input\n              type={'text'}\n              placeholder={'Search'}\n              color={'link'}\n            />{' '}\n            <ui.Icon className={'rb-is-left'}>\n              {' '}\n              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock active as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          bulma{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          marksheet{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          minireset.css{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          jgthms.github.io{' '}\n        </ui.PanelBlock>{' '}\n      </ui.Panel>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1719,7 +1575,7 @@ export const Example003 = {
     official: { id: 'components-panel/colors/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Panel color={"primary"} as={"article"}>{"\\n  "}<ui.PanelHeading>{"Primary"}</ui.PanelHeading>{"\\n  "}<ui.PanelTabs>{"\\n    "}<ui.PanelTab active>{"All"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Public"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Private"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Sources"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Forks"}</ui.PanelTab>{"\\n  "}</ui.PanelTabs>{"\\n  "}<ui.PanelBlock>{"\\n    "}<ui.Control icons={"left"} as={"p"}>{"\\n      "}<ui.Input type={"text"} placeholder={"Search"} color={"primary"} />{"\\n      "}<ui.Icon className={"rb-is-left"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-search"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.Control>{"\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock active as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    bulma\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    marksheet\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    minireset.css\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    jgthms.github.io\\n  "}</ui.PanelBlock>{"\\n"}</ui.Panel>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Panel color={'primary'} as={'article'}>\n        {' '}\n        <ui.PanelHeading>Primary</ui.PanelHeading>{' '}\n        <ui.PanelTabs>\n          {' '}\n          <ui.PanelTab active>All</ui.PanelTab>{' '}\n          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}\n          <ui.PanelTab>Sources</ui.PanelTab>{' '}\n          <ui.PanelTab>Forks</ui.PanelTab>{' '}\n        </ui.PanelTabs>{' '}\n        <ui.PanelBlock>\n          {' '}\n          <ui.Control icons={'left'} as={'p'}>\n            {' '}\n            <ui.Input\n              type={'text'}\n              placeholder={'Search'}\n              color={'primary'}\n            />{' '}\n            <ui.Icon className={'rb-is-left'}>\n              {' '}\n              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock active as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          bulma{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          marksheet{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          minireset.css{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          jgthms.github.io{' '}\n        </ui.PanelBlock>{' '}\n      </ui.Panel>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1734,7 +1590,7 @@ export const Example004 = {
     official: { id: 'components-panel/colors/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Panel color={"info"} as={"article"}>{"\\n  "}<ui.PanelHeading>{"Info"}</ui.PanelHeading>{"\\n  "}<ui.PanelTabs>{"\\n    "}<ui.PanelTab active>{"All"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Public"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Private"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Sources"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Forks"}</ui.PanelTab>{"\\n  "}</ui.PanelTabs>{"\\n  "}<ui.PanelBlock>{"\\n    "}<ui.Control icons={"left"} as={"p"}>{"\\n      "}<ui.Input type={"text"} placeholder={"Search"} color={"info"} />{"\\n      "}<ui.Icon className={"rb-is-left"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-search"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.Control>{"\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock active as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    bulma\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    marksheet\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    minireset.css\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    jgthms.github.io\\n  "}</ui.PanelBlock>{"\\n"}</ui.Panel>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Panel color={'info'} as={'article'}>\n        {' '}\n        <ui.PanelHeading>Info</ui.PanelHeading>{' '}\n        <ui.PanelTabs>\n          {' '}\n          <ui.PanelTab active>All</ui.PanelTab>{' '}\n          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}\n          <ui.PanelTab>Sources</ui.PanelTab>{' '}\n          <ui.PanelTab>Forks</ui.PanelTab>{' '}\n        </ui.PanelTabs>{' '}\n        <ui.PanelBlock>\n          {' '}\n          <ui.Control icons={'left'} as={'p'}>\n            {' '}\n            <ui.Input\n              type={'text'}\n              placeholder={'Search'}\n              color={'info'}\n            />{' '}\n            <ui.Icon className={'rb-is-left'}>\n              {' '}\n              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock active as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          bulma{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          marksheet{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          minireset.css{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          jgthms.github.io{' '}\n        </ui.PanelBlock>{' '}\n      </ui.Panel>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1749,7 +1605,7 @@ export const Example005 = {
     official: { id: 'components-panel/colors/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Panel color={"success"} as={"article"}>{"\\n  "}<ui.PanelHeading>{"Success"}</ui.PanelHeading>{"\\n  "}<ui.PanelTabs>{"\\n    "}<ui.PanelTab active>{"All"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Public"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Private"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Sources"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Forks"}</ui.PanelTab>{"\\n  "}</ui.PanelTabs>{"\\n  "}<ui.PanelBlock>{"\\n    "}<ui.Control icons={"left"} as={"p"}>{"\\n      "}<ui.Input type={"text"} placeholder={"Search"} color={"success"} />{"\\n      "}<ui.Icon className={"rb-is-left"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-search"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.Control>{"\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock active as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    bulma\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    marksheet\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    minireset.css\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    jgthms.github.io\\n  "}</ui.PanelBlock>{"\\n"}</ui.Panel>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Panel color={'success'} as={'article'}>\n        {' '}\n        <ui.PanelHeading>Success</ui.PanelHeading>{' '}\n        <ui.PanelTabs>\n          {' '}\n          <ui.PanelTab active>All</ui.PanelTab>{' '}\n          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}\n          <ui.PanelTab>Sources</ui.PanelTab>{' '}\n          <ui.PanelTab>Forks</ui.PanelTab>{' '}\n        </ui.PanelTabs>{' '}\n        <ui.PanelBlock>\n          {' '}\n          <ui.Control icons={'left'} as={'p'}>\n            {' '}\n            <ui.Input\n              type={'text'}\n              placeholder={'Search'}\n              color={'success'}\n            />{' '}\n            <ui.Icon className={'rb-is-left'}>\n              {' '}\n              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock active as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          bulma{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          marksheet{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          minireset.css{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          jgthms.github.io{' '}\n        </ui.PanelBlock>{' '}\n      </ui.Panel>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1764,7 +1620,7 @@ export const Example006 = {
     official: { id: 'components-panel/colors/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Panel color={"warning"} as={"article"}>{"\\n  "}<ui.PanelHeading>{"Warning"}</ui.PanelHeading>{"\\n  "}<ui.PanelTabs>{"\\n    "}<ui.PanelTab active>{"All"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Public"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Private"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Sources"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Forks"}</ui.PanelTab>{"\\n  "}</ui.PanelTabs>{"\\n  "}<ui.PanelBlock>{"\\n    "}<ui.Control icons={"left"} as={"p"}>{"\\n      "}<ui.Input type={"text"} placeholder={"Search"} color={"warning"} />{"\\n      "}<ui.Icon className={"rb-is-left"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-search"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.Control>{"\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock active as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    bulma\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    marksheet\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    minireset.css\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    jgthms.github.io\\n  "}</ui.PanelBlock>{"\\n"}</ui.Panel>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Panel color={'warning'} as={'article'}>\n        {' '}\n        <ui.PanelHeading>Warning</ui.PanelHeading>{' '}\n        <ui.PanelTabs>\n          {' '}\n          <ui.PanelTab active>All</ui.PanelTab>{' '}\n          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}\n          <ui.PanelTab>Sources</ui.PanelTab>{' '}\n          <ui.PanelTab>Forks</ui.PanelTab>{' '}\n        </ui.PanelTabs>{' '}\n        <ui.PanelBlock>\n          {' '}\n          <ui.Control icons={'left'} as={'p'}>\n            {' '}\n            <ui.Input\n              type={'text'}\n              placeholder={'Search'}\n              color={'warning'}\n            />{' '}\n            <ui.Icon className={'rb-is-left'}>\n              {' '}\n              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock active as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          bulma{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          marksheet{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          minireset.css{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          jgthms.github.io{' '}\n        </ui.PanelBlock>{' '}\n      </ui.Panel>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1779,7 +1635,7 @@ export const Example007 = {
     official: { id: 'components-panel/colors/006' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Panel color={"danger"} as={"article"}>{"\\n  "}<ui.PanelHeading>{"Danger"}</ui.PanelHeading>{"\\n  "}<ui.PanelTabs>{"\\n    "}<ui.PanelTab active>{"All"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Public"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Private"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Sources"}</ui.PanelTab>{"\\n    "}<ui.PanelTab>{"Forks"}</ui.PanelTab>{"\\n  "}</ui.PanelTabs>{"\\n  "}<ui.PanelBlock>{"\\n    "}<ui.Control icons={"left"} as={"p"}>{"\\n      "}<ui.Input type={"text"} placeholder={"Search"} color={"danger"} />{"\\n      "}<ui.Icon className={"rb-is-left"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-search"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.Control>{"\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock active as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    bulma\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    marksheet\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    minireset.css\\n  "}</ui.PanelBlock>{"\\n  "}<ui.PanelBlock as={"a"}>{"\\n    "}<ui.PanelIcon>{"\\n      "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n    "}</ui.PanelIcon>{"\\n    jgthms.github.io\\n  "}</ui.PanelBlock>{"\\n"}</ui.Panel>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Panel color={'danger'} as={'article'}>\n        {' '}\n        <ui.PanelHeading>Danger</ui.PanelHeading>{' '}\n        <ui.PanelTabs>\n          {' '}\n          <ui.PanelTab active>All</ui.PanelTab>{' '}\n          <ui.PanelTab>Public</ui.PanelTab> <ui.PanelTab>Private</ui.PanelTab>{' '}\n          <ui.PanelTab>Sources</ui.PanelTab>{' '}\n          <ui.PanelTab>Forks</ui.PanelTab>{' '}\n        </ui.PanelTabs>{' '}\n        <ui.PanelBlock>\n          {' '}\n          <ui.Control icons={'left'} as={'p'}>\n            {' '}\n            <ui.Input\n              type={'text'}\n              placeholder={'Search'}\n              color={'danger'}\n            />{' '}\n            <ui.Icon className={'rb-is-left'}>\n              {' '}\n              <i aria-hidden={'true'} className={'fas fa-search'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock active as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          bulma{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          marksheet{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          minireset.css{' '}\n        </ui.PanelBlock>{' '}\n        <ui.PanelBlock as={'a'}>\n          {' '}\n          <ui.PanelIcon>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.PanelIcon>{' '}\n          jgthms.github.io{' '}\n        </ui.PanelBlock>{' '}\n      </ui.Panel>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

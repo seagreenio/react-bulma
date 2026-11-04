@@ -162,21 +162,17 @@ function Example001Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Control>
-            {'\n  '}
-            <ui.Radio name={'answer'}>{'\n    Yes\n  '}</ui.Radio>
-            {'\n  '}
-            <ui.Radio name={'answer'}>{'\n    No\n  '}</ui.Radio>
-            {'\n'}
-          </ui.Control>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <ui.Radio name={'answer'}> Yes </ui.Radio>{' '}
+            <ui.Radio name={'answer'}> No </ui.Radio>{' '}
+          </ui.Control>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -185,10 +181,8 @@ function Example001Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -198,23 +192,20 @@ function Example002Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Control>
-            {'\n  '}
-            <ui.Radio name={'foobar'}>{'\n    Foo\n  '}</ui.Radio>
-            {'\n  '}
+            {' '}
+            <ui.Radio name={'foobar'}> Foo </ui.Radio>{' '}
             <ui.Radio name={'foobar'} defaultChecked>
-              {'\n    Bar\n  '}
-            </ui.Radio>
-            {'\n'}
-          </ui.Control>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              Bar{' '}
+            </ui.Radio>{' '}
+          </ui.Control>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -223,10 +214,8 @@ function Example002Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -236,29 +225,25 @@ function Example003Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Control>
-            {'\n  '}
-            <ui.Radio name={'rsvp'}>{'\n    Going\n  '}</ui.Radio>
-            {'\n  '}
-            <ui.Radio name={'rsvp'}>{'\n    Not going\n  '}</ui.Radio>
-            {'\n  '}
+            {' '}
+            <ui.Radio name={'rsvp'}> Going </ui.Radio>{' '}
+            <ui.Radio name={'rsvp'}> Not going </ui.Radio>{' '}
             <ui.Radio
               name={'rsvp'}
               disabled
               wrapperProps={{ 'aria-disabled': true }}
             >
-              {'\n    Maybe\n  '}
-            </ui.Radio>
-            {'\n'}
-          </ui.Control>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              Maybe{' '}
+            </ui.Radio>{' '}
+          </ui.Control>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -267,10 +252,8 @@ function Example003Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -280,23 +263,20 @@ function Example004Demo() {
   return (
     <>
       <ui.Block>
-        {'\n'}
+        {' '}
         <ui.Radios>
-          {'\n  '}
-          <ui.Radio name={'rsvp'}>{'\n    Going\n  '}</ui.Radio>
-          {'\n  '}
-          <ui.Radio name={'rsvp'}>{'\n    Not going\n  '}</ui.Radio>
-          {'\n  '}
+          {' '}
+          <ui.Radio name={'rsvp'}> Going </ui.Radio>{' '}
+          <ui.Radio name={'rsvp'}> Not going </ui.Radio>{' '}
           <ui.Radio
             name={'rsvp'}
             disabled
             wrapperProps={{ 'aria-disabled': true }}
           >
-            {'\n    Maybe\n  '}
-          </ui.Radio>
-          {'\n'}
-        </ui.Radios>
-        {'\n'}
+            {' '}
+            Maybe{' '}
+          </ui.Radio>{' '}
+        </ui.Radios>{' '}
       </ui.Block>
     </>
   )
@@ -308,7 +288,7 @@ export const Example001 = {
     official: { id: 'form-radio/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Radio name={"answer"}>{"\\n    Yes\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"answer"}>{"\\n    No\\n  "}</ui.Radio>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"answer\\" />\\n    Yes\\n  </label>\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"answer\\" />\\n    No\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Radio name={'answer'}> Yes </ui.Radio>{' '}\n            <ui.Radio name={'answer'}> No </ui.Radio>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"answer\" />\\n    Yes\\n  </label>\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"answer\" />\\n    No\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -323,7 +303,7 @@ export const Example002 = {
     official: { id: 'form-radio/basic/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Radio name={"foobar"}>{"\\n    Foo\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"foobar"} defaultChecked>{"\\n    Bar\\n  "}</ui.Radio>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"foobar\\" />\\n    Foo\\n  </label>\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"foobar\\" checked />\\n    Bar\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Radio name={'foobar'}> Foo </ui.Radio>{' '}\n            <ui.Radio name={'foobar'} defaultChecked>\n              {' '}\n              Bar{' '}\n            </ui.Radio>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"foobar\" />\\n    Foo\\n  </label>\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"foobar\" checked />\\n    Bar\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -338,7 +318,7 @@ export const Example003 = {
     official: { id: 'form-radio/basic/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Not going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"} disabled wrapperProps={{ "aria-disabled": true }}>{"\\n    Maybe\\n  "}</ui.Radio>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"rsvp\\" />\\n    Going\\n  </label>\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"rsvp\\" />\\n    Not going\\n  </label>\\n  <label class=\\"radio\\" disabled>\\n    <input type=\\"radio\\" name=\\"rsvp\\" disabled />\\n    Maybe\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Radio name={'rsvp'}> Going </ui.Radio>{' '}\n            <ui.Radio name={'rsvp'}> Not going </ui.Radio>{' '}\n            <ui.Radio\n              name={'rsvp'}\n              disabled\n              wrapperProps={{ 'aria-disabled': true }}\n            >\n              {' '}\n              Maybe{' '}\n            </ui.Radio>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"rsvp\" />\\n    Going\\n  </label>\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"rsvp\" />\\n    Not going\\n  </label>\\n  <label class=\"radio\" disabled>\\n    <input type=\"radio\" name=\"rsvp\" disabled />\\n    Maybe\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -353,7 +333,7 @@ export const Example004 = {
     official: { id: 'form-radio/list-of-radio-buttons/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.Block>{"\\n"}<ui.Radios>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Not going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"} disabled wrapperProps={{ "aria-disabled": true }}>{"\\n    Maybe\\n  "}</ui.Radio>{"\\n"}</ui.Radios>{"\\n"}</ui.Block></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Block>\n        {' '}\n        <ui.Radios>\n          {' '}\n          <ui.Radio name={'rsvp'}> Going </ui.Radio>{' '}\n          <ui.Radio name={'rsvp'}> Not going </ui.Radio>{' '}\n          <ui.Radio\n            name={'rsvp'}\n            disabled\n            wrapperProps={{ 'aria-disabled': true }}\n          >\n            {' '}\n            Maybe{' '}\n          </ui.Radio>{' '}\n        </ui.Radios>{' '}\n      </ui.Block>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

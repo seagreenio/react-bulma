@@ -503,21 +503,16 @@ function Example001Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Select>
-            {'\n    '}
-            <option>{'Select dropdown'}</option>
-            {'\n    '}
-            <option>{'With options'}</option>
-            {'\n  '}
-          </ui.Select>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <option>Select dropdown</option> <option>With options</option>{' '}
+          </ui.Select>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -526,10 +521,8 @@ function Example001Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -539,55 +532,35 @@ function Example002Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {'\n        You can style a '}
-              <strong>{'multiple select'}</strong>
-              {' dropdown, by using the '}
-              <code>{'is-multiple'}</code>
-              {' modifier, and\n        by using the '}
-              <code>{'multiple'}</code>
-              {' HTML attribute.\n      '}
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n    \n'}
+              You can style a <strong>multiple select</strong> dropdown, by
+              using the <code>{'is-multiple'}</code> modifier, and by using the{' '}
+              <code>{'multiple'}</code> HTML attribute.
+            </p>{' '}
+          </ui.Content>{' '}
           <ui.Select multiple htmlSize={8}>
-            {'\n    '}
-            <option value={'Argentina'}>{'Argentina'}</option>
-            {'\n    '}
-            <option value={'Bolivia'}>{'Bolivia'}</option>
-            {'\n    '}
-            <option value={'Brazil'}>{'Brazil'}</option>
-            {'\n    '}
-            <option value={'Chile'}>{'Chile'}</option>
-            {'\n    '}
-            <option value={'Colombia'}>{'Colombia'}</option>
-            {'\n    '}
-            <option value={'Ecuador'}>{'Ecuador'}</option>
-            {'\n    '}
-            <option value={'Guyana'}>{'Guyana'}</option>
-            {'\n    '}
-            <option value={'Paraguay'}>{'Paraguay'}</option>
-            {'\n    '}
-            <option value={'Peru'}>{'Peru'}</option>
-            {'\n    '}
-            <option value={'Suriname'}>{'Suriname'}</option>
-            {'\n    '}
-            <option value={'Uruguay'}>{'Uruguay'}</option>
-            {'\n    '}
-            <option value={'Venezuela'}>{'Venezuela'}</option>
-            {'\n  '}
-          </ui.Select>
-          {'\n\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <option value={'Argentina'}>Argentina</option>{' '}
+            <option value={'Bolivia'}>Bolivia</option>{' '}
+            <option value={'Brazil'}>Brazil</option>{' '}
+            <option value={'Chile'}>Chile</option>{' '}
+            <option value={'Colombia'}>Colombia</option>{' '}
+            <option value={'Ecuador'}>Ecuador</option>{' '}
+            <option value={'Guyana'}>Guyana</option>{' '}
+            <option value={'Paraguay'}>Paraguay</option>{' '}
+            <option value={'Peru'}>Peru</option>{' '}
+            <option value={'Suriname'}>Suriname</option>{' '}
+            <option value={'Uruguay'}>Uruguay</option>{' '}
+            <option value={'Venezuela'}>Venezuela</option>{' '}
+          </ui.Select>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -596,10 +569,8 @@ function Example002Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -608,15 +579,10 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Select color={'link'}>
-        {'\n    '}
-        <option>{'Select dropdown'}</option>
-        {'\n    '}
-        <option>{'With options'}</option>
-        {'\n  '}
+        {' '}
+        <option>Select dropdown</option> <option>With options</option>{' '}
       </ui.Select>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -624,15 +590,10 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Select color={'primary'}>
-        {'\n    '}
-        <option>{'Select dropdown'}</option>
-        {'\n    '}
-        <option>{'With options'}</option>
-        {'\n  '}
+        {' '}
+        <option>Select dropdown</option> <option>With options</option>{' '}
       </ui.Select>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -640,15 +601,10 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Select color={'info'}>
-        {'\n    '}
-        <option>{'Select dropdown'}</option>
-        {'\n    '}
-        <option>{'With options'}</option>
-        {'\n  '}
+        {' '}
+        <option>Select dropdown</option> <option>With options</option>{' '}
       </ui.Select>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -656,15 +612,10 @@ function Example005Demo() {
 function Example006Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Select color={'success'}>
-        {'\n    '}
-        <option>{'Select dropdown'}</option>
-        {'\n    '}
-        <option>{'With options'}</option>
-        {'\n  '}
+        {' '}
+        <option>Select dropdown</option> <option>With options</option>{' '}
       </ui.Select>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -672,15 +623,10 @@ function Example006Demo() {
 function Example007Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Select color={'warning'}>
-        {'\n    '}
-        <option>{'Select dropdown'}</option>
-        {'\n    '}
-        <option>{'With options'}</option>
-        {'\n  '}
+        {' '}
+        <option>Select dropdown</option> <option>With options</option>{' '}
       </ui.Select>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -688,15 +634,10 @@ function Example007Demo() {
 function Example008Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Select color={'danger'}>
-        {'\n    '}
-        <option>{'Select dropdown'}</option>
-        {'\n    '}
-        <option>{'With options'}</option>
-        {'\n  '}
+        {' '}
+        <option>Select dropdown</option> <option>With options</option>{' '}
       </ui.Select>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -705,21 +646,16 @@ function Example009Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Select rounded>
-            {'\n    '}
-            <option>{'Rounded dropdown'}</option>
-            {'\n    '}
-            <option>{'With options'}</option>
-            {'\n  '}
-          </ui.Select>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <option>Rounded dropdown</option> <option>With options</option>{' '}
+          </ui.Select>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -728,10 +664,8 @@ function Example009Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -740,15 +674,10 @@ function Example009Demo() {
 function Example010Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Select size={'small'}>
-        {'\n    '}
-        <option>{'Select dropdown'}</option>
-        {'\n    '}
-        <option>{'With options'}</option>
-        {'\n  '}
+        {' '}
+        <option>Select dropdown</option> <option>With options</option>{' '}
       </ui.Select>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -756,15 +685,10 @@ function Example010Demo() {
 function Example011Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Select size={'normal'}>
-        {'\n    '}
-        <option>{'Select dropdown'}</option>
-        {'\n    '}
-        <option>{'With options'}</option>
-        {'\n  '}
+        {' '}
+        <option>Select dropdown</option> <option>With options</option>{' '}
       </ui.Select>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -772,15 +696,10 @@ function Example011Demo() {
 function Example012Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Select size={'medium'}>
-        {'\n    '}
-        <option>{'Select dropdown'}</option>
-        {'\n    '}
-        <option>{'With options'}</option>
-        {'\n  '}
+        {' '}
+        <option>Select dropdown</option> <option>With options</option>{' '}
       </ui.Select>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -788,15 +707,10 @@ function Example012Demo() {
 function Example013Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Select size={'large'}>
-        {'\n    '}
-        <option>{'Select dropdown'}</option>
-        {'\n    '}
-        <option>{'With options'}</option>
-        {'\n  '}
+        {' '}
+        <option>Select dropdown</option> <option>With options</option>{' '}
       </ui.Select>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -805,21 +719,16 @@ function Example014Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Select>
-            {'\n    '}
-            <option>{'Select dropdown'}</option>
-            {'\n    '}
-            <option>{'With options'}</option>
-            {'\n  '}
-          </ui.Select>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <option>Select dropdown</option> <option>With options</option>{' '}
+          </ui.Select>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -828,10 +737,8 @@ function Example014Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -841,21 +748,16 @@ function Example015Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Select className={'rb-is-hovered'}>
-            {'\n    '}
-            <option>{'Select dropdown'}</option>
-            {'\n    '}
-            <option>{'With options'}</option>
-            {'\n  '}
-          </ui.Select>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <option>Select dropdown</option> <option>With options</option>{' '}
+          </ui.Select>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -864,10 +766,8 @@ function Example015Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -877,21 +777,16 @@ function Example016Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Select className={'rb-is-focused'}>
-            {'\n    '}
-            <option>{'Select dropdown'}</option>
-            {'\n    '}
-            <option>{'With options'}</option>
-            {'\n  '}
-          </ui.Select>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <option>Select dropdown</option> <option>With options</option>{' '}
+          </ui.Select>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -900,10 +795,8 @@ function Example016Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -913,21 +806,16 @@ function Example017Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Select loading>
-            {'\n    '}
-            <option>{'Select dropdown'}</option>
-            {'\n    '}
-            <option>{'With options'}</option>
-            {'\n  '}
-          </ui.Select>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <option>Select dropdown</option> <option>With options</option>{' '}
+          </ui.Select>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -936,10 +824,8 @@ function Example017Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -949,33 +835,24 @@ function Example018Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Control icons={'left'}>
-            {'\n  '}
+            {' '}
             <ui.Select defaultValue={'Country'}>
-              {'\n      '}
-              <option>{'Country'}</option>
-              {'\n      '}
-              <option>{'Select dropdown'}</option>
-              {'\n      '}
-              <option>{'With options'}</option>
-              {'\n    '}
-            </ui.Select>
-            {'\n  '}
+              {' '}
+              <option>Country</option> <option>Select dropdown</option>{' '}
+              <option>With options</option>{' '}
+            </ui.Select>{' '}
             <ui.Icon size={'small'} className={'rb-is-left'} as={'div'}>
-              {'\n    '}
-              <i className={'fas fa-globe'} />
-              {'\n  '}
-            </ui.Icon>
-            {'\n'}
-          </ui.Control>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              <i className={'fas fa-globe'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -984,10 +861,8 @@ function Example018Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -997,47 +872,32 @@ function Example019Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {
-                '\n        If the control contains an icon, Bulma will make sure the icon remains\n        '
-              }
-              <strong>{'centered'}</strong>
-              {', no matter the size of the input '}
-              <em>{'or'}</em>
-              {' of the icon.\n      '}
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n    \n'}
+              If the control contains an icon, Bulma will make sure the icon
+              remains <strong>centered</strong>, no matter the size of the input{' '}
+              <em>or</em> of the icon.
+            </p>{' '}
+          </ui.Content>{' '}
           <ui.Control icons={'left'}>
-            {'\n  '}
+            {' '}
             <ui.Select size={'small'} defaultValue={'Country'}>
-              {'\n      '}
-              <option>{'Country'}</option>
-              {'\n      '}
-              <option>{'Select dropdown'}</option>
-              {'\n      '}
-              <option>{'With options'}</option>
-              {'\n    '}
-            </ui.Select>
-            {'\n  '}
+              {' '}
+              <option>Country</option> <option>Select dropdown</option>{' '}
+              <option>With options</option>{' '}
+            </ui.Select>{' '}
             <ui.Icon size={'small'} className={'rb-is-left'}>
-              {'\n    '}
-              <i className={'fas fa-globe'} />
-              {'\n  '}
-            </ui.Icon>
-            {'\n'}
-          </ui.Control>
-          {'\n\n  '}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              <i className={'fas fa-globe'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1046,10 +906,8 @@ function Example019Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1059,33 +917,24 @@ function Example020Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Control icons={'left'}>
-            {'\n  '}
+            {' '}
             <ui.Select defaultValue={'Country'}>
-              {'\n      '}
-              <option>{'Country'}</option>
-              {'\n      '}
-              <option>{'Select dropdown'}</option>
-              {'\n      '}
-              <option>{'With options'}</option>
-              {'\n    '}
-            </ui.Select>
-            {'\n  '}
+              {' '}
+              <option>Country</option> <option>Select dropdown</option>{' '}
+              <option>With options</option>{' '}
+            </ui.Select>{' '}
             <ui.Icon className={'rb-is-left'}>
-              {'\n    '}
-              <i className={'fas fa-globe'} />
-              {'\n  '}
-            </ui.Icon>
-            {'\n'}
-          </ui.Control>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              <i className={'fas fa-globe'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1094,10 +943,8 @@ function Example020Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1107,33 +954,24 @@ function Example021Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Control icons={'left'}>
-            {'\n  '}
+            {' '}
             <ui.Select size={'medium'} defaultValue={'Country'}>
-              {'\n      '}
-              <option>{'Country'}</option>
-              {'\n      '}
-              <option>{'Select dropdown'}</option>
-              {'\n      '}
-              <option>{'With options'}</option>
-              {'\n    '}
-            </ui.Select>
-            {'\n  '}
+              {' '}
+              <option>Country</option> <option>Select dropdown</option>{' '}
+              <option>With options</option>{' '}
+            </ui.Select>{' '}
             <ui.Icon size={'medium'} className={'rb-is-left'}>
-              {'\n    '}
-              <i className={'fas fa-globe'} />
-              {'\n  '}
-            </ui.Icon>
-            {'\n'}
-          </ui.Control>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              <i className={'fas fa-globe'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1142,10 +980,8 @@ function Example021Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1155,33 +991,24 @@ function Example022Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n'}
+          {' '}
           <ui.Control icons={'left'}>
-            {'\n  '}
+            {' '}
             <ui.Select size={'large'} defaultValue={'Country'}>
-              {'\n      '}
-              <option>{'Country'}</option>
-              {'\n      '}
-              <option>{'Select dropdown'}</option>
-              {'\n      '}
-              <option>{'With options'}</option>
-              {'\n    '}
-            </ui.Select>
-            {'\n  '}
+              {' '}
+              <option>Country</option> <option>Select dropdown</option>{' '}
+              <option>With options</option>{' '}
+            </ui.Select>{' '}
             <ui.Icon size={'large'} className={'rb-is-left'}>
-              {'\n    '}
-              <i className={'fas fa-globe'} />
-              {'\n  '}
-            </ui.Icon>
-            {'\n'}
-          </ui.Control>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              <i className={'fas fa-globe'} />{' '}
+            </ui.Icon>{' '}
+          </ui.Control>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1190,10 +1017,8 @@ function Example022Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1205,7 +1030,7 @@ export const Example001 = {
     official: { id: 'form-select/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1220,7 +1045,7 @@ export const Example002 = {
     official: { id: 'form-select/multiple-select/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        You can style a "}<strong>{"multiple select"}</strong>{" dropdown, by using the "}<code>{"is-multiple"}</code>{" modifier, and\\n        by using the "}<code>{"multiple"}</code>{" HTML attribute.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Select multiple htmlSize={8}>{"\\n    "}<option value={"Argentina"}>{"Argentina"}</option>{"\\n    "}<option value={"Bolivia"}>{"Bolivia"}</option>{"\\n    "}<option value={"Brazil"}>{"Brazil"}</option>{"\\n    "}<option value={"Chile"}>{"Chile"}</option>{"\\n    "}<option value={"Colombia"}>{"Colombia"}</option>{"\\n    "}<option value={"Ecuador"}>{"Ecuador"}</option>{"\\n    "}<option value={"Guyana"}>{"Guyana"}</option>{"\\n    "}<option value={"Paraguay"}>{"Paraguay"}</option>{"\\n    "}<option value={"Peru"}>{"Peru"}</option>{"\\n    "}<option value={"Suriname"}>{"Suriname"}</option>{"\\n    "}<option value={"Uruguay"}>{"Uruguay"}</option>{"\\n    "}<option value={"Venezuela"}>{"Venezuela"}</option>{"\\n  "}</ui.Select>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select is-multiple\\">\\n  <select multiple size=\\"8\\">\\n    <option value=\\"Argentina\\">Argentina</option>\\n    <option value=\\"Bolivia\\">Bolivia</option>\\n    <option value=\\"Brazil\\">Brazil</option>\\n    <option value=\\"Chile\\">Chile</option>\\n    <option value=\\"Colombia\\">Colombia</option>\\n    <option value=\\"Ecuador\\">Ecuador</option>\\n    <option value=\\"Guyana\\">Guyana</option>\\n    <option value=\\"Paraguay\\">Paraguay</option>\\n    <option value=\\"Peru\\">Peru</option>\\n    <option value=\\"Suriname\\">Suriname</option>\\n    <option value=\\"Uruguay\\">Uruguay</option>\\n    <option value=\\"Venezuela\\">Venezuela</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can style a <strong>multiple select</strong> dropdown, by\n              using the <code>{'is-multiple'}</code> modifier, and by using the{' '}\n              <code>{'multiple'}</code> HTML attribute.\n            </p>{' '}\n          </ui.Content>{' '}\n          <ui.Select multiple htmlSize={8}>\n            {' '}\n            <option value={'Argentina'}>Argentina</option>{' '}\n            <option value={'Bolivia'}>Bolivia</option>{' '}\n            <option value={'Brazil'}>Brazil</option>{' '}\n            <option value={'Chile'}>Chile</option>{' '}\n            <option value={'Colombia'}>Colombia</option>{' '}\n            <option value={'Ecuador'}>Ecuador</option>{' '}\n            <option value={'Guyana'}>Guyana</option>{' '}\n            <option value={'Paraguay'}>Paraguay</option>{' '}\n            <option value={'Peru'}>Peru</option>{' '}\n            <option value={'Suriname'}>Suriname</option>{' '}\n            <option value={'Uruguay'}>Uruguay</option>{' '}\n            <option value={'Venezuela'}>Venezuela</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select is-multiple\">\\n  <select multiple size=\"8\">\\n    <option value=\"Argentina\">Argentina</option>\\n    <option value=\"Bolivia\">Bolivia</option>\\n    <option value=\"Brazil\">Brazil</option>\\n    <option value=\"Chile\">Chile</option>\\n    <option value=\"Colombia\">Colombia</option>\\n    <option value=\"Ecuador\">Ecuador</option>\\n    <option value=\"Guyana\">Guyana</option>\\n    <option value=\"Paraguay\">Paraguay</option>\\n    <option value=\"Peru\">Peru</option>\\n    <option value=\"Suriname\">Suriname</option>\\n    <option value=\"Uruguay\">Uruguay</option>\\n    <option value=\"Venezuela\">Venezuela</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1235,7 +1060,7 @@ export const Example003 = {
     official: { id: 'form-select/colors/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"link"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Select color={'link'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1250,7 +1075,7 @@ export const Example004 = {
     official: { id: 'form-select/colors/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"primary"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Select color={'primary'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1265,7 +1090,7 @@ export const Example005 = {
     official: { id: 'form-select/colors/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"info"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Select color={'info'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1280,7 +1105,7 @@ export const Example006 = {
     official: { id: 'form-select/colors/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"success"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Select color={'success'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1295,7 +1120,7 @@ export const Example007 = {
     official: { id: 'form-select/colors/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"warning"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Select color={'warning'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1310,7 +1135,7 @@ export const Example008 = {
     official: { id: 'form-select/colors/006' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"danger"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Select color={'danger'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1325,7 +1150,7 @@ export const Example009 = {
     official: { id: 'form-select/styles/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select rounded>{"\\n    "}<option>{"Rounded dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select is-rounded\\">\\n  <select>\\n    <option>Rounded dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select rounded>\n            {' '}\n            <option>Rounded dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select is-rounded\">\\n  <select>\\n    <option>Rounded dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1340,7 +1165,7 @@ export const Example010 = {
     official: { id: 'form-select/sizes/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"small"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Select size={'small'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1355,7 +1180,7 @@ export const Example011 = {
     official: { id: 'form-select/sizes/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"normal"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Select size={'normal'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1370,7 +1195,7 @@ export const Example012 = {
     official: { id: 'form-select/sizes/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"medium"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Select size={'medium'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1385,7 +1210,7 @@ export const Example013 = {
     official: { id: 'form-select/sizes/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"large"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Select size={'large'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1400,7 +1225,7 @@ export const Example014 = {
     official: { id: 'form-select/normal/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1415,7 +1240,7 @@ export const Example015 = {
     official: { id: 'form-select/hover/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select className={"rb-is-hovered"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select class=\\"is-hovered\\">\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select className={'rb-is-hovered'}>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select\">\\n  <select class=\"is-hovered\">\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1430,7 +1255,7 @@ export const Example016 = {
     official: { id: 'form-select/focus/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select className={"rb-is-focused"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select class=\\"is-focused\\">\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select className={'rb-is-focused'}>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select\">\\n  <select class=\"is-focused\">\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1445,7 +1270,7 @@ export const Example017 = {
     official: { id: 'form-select/loading/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select loading>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select is-loading\\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select loading>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select is-loading\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1460,7 +1285,7 @@ export const Example018 = {
     official: { id: 'form-select/with-icons/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"small"} className={"rb-is-left"} as={"div"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <div class=\\"icon is-small is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </div>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'left'}>\n            {' '}\n            <ui.Select defaultValue={'Country'}>\n              {' '}\n              <option>Country</option> <option>Select dropdown</option>{' '}\n              <option>With options</option>{' '}\n            </ui.Select>{' '}\n            <ui.Icon size={'small'} className={'rb-is-left'} as={'div'}>\n              {' '}\n              <i className={'fas fa-globe'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left\">\\n  <div class=\"select\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <div class=\"icon is-small is-left\">\\n    <i class=\"fas fa-globe\"></i>\\n  </div>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1475,7 +1300,7 @@ export const Example019 = {
     official: { id: 'form-select/with-icons/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example019Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        If the control contains an icon, Bulma will make sure the icon remains\\n        "}<strong>{"centered"}</strong>{", no matter the size of the input "}<em>{"or"}</em>{" of the icon.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select size={"small"} defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select is-small\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-small is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example019Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              If the control contains an icon, Bulma will make sure the icon\n              remains <strong>centered</strong>, no matter the size of the input{' '}\n              <em>or</em> of the icon.\n            </p>{' '}\n          </ui.Content>{' '}\n          <ui.Control icons={'left'}>\n            {' '}\n            <ui.Select size={'small'} defaultValue={'Country'}>\n              {' '}\n              <option>Country</option> <option>Select dropdown</option>{' '}\n              <option>With options</option>{' '}\n            </ui.Select>{' '}\n            <ui.Icon size={'small'} className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-globe'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left\">\\n  <div class=\"select is-small\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\"icon is-small is-left\">\\n    <i class=\"fas fa-globe\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1490,7 +1315,7 @@ export const Example020 = {
     official: { id: 'form-select/with-icons/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example020Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example020Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'left'}>\n            {' '}\n            <ui.Select defaultValue={'Country'}>\n              {' '}\n              <option>Country</option> <option>Select dropdown</option>{' '}\n              <option>With options</option>{' '}\n            </ui.Select>{' '}\n            <ui.Icon className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-globe'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left\">\\n  <div class=\"select\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\"icon is-left\">\\n    <i class=\"fas fa-globe\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1505,7 +1330,7 @@ export const Example021 = {
     official: { id: 'form-select/with-icons/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example021Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select size={"medium"} defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"medium"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select is-medium\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-medium is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example021Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'left'}>\n            {' '}\n            <ui.Select size={'medium'} defaultValue={'Country'}>\n              {' '}\n              <option>Country</option> <option>Select dropdown</option>{' '}\n              <option>With options</option>{' '}\n            </ui.Select>{' '}\n            <ui.Icon size={'medium'} className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-globe'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left\">\\n  <div class=\"select is-medium\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\"icon is-medium is-left\">\\n    <i class=\"fas fa-globe\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1520,7 +1345,7 @@ export const Example022 = {
     official: { id: 'form-select/with-icons/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example022Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select size={"large"} defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"large"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select is-large\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-large is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example022Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'left'}>\n            {' '}\n            <ui.Select size={'large'} defaultValue={'Country'}>\n              {' '}\n              <option>Country</option> <option>Select dropdown</option>{' '}\n              <option>With options</option>{' '}\n            </ui.Select>{' '}\n            <ui.Icon size={'large'} className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-globe'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left\">\\n  <div class=\"select is-large\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\"icon is-large is-left\">\\n    <i class=\"fas fa-globe\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

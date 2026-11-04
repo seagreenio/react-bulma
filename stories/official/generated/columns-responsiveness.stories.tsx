@@ -221,31 +221,23 @@ function Example001Demo() {
   return (
     <>
       <ui.Columns displayFrom={'mobile'}>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'1'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>1</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'2'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>2</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'3'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>3</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'4'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification is-primary'}>4</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -255,31 +247,23 @@ function Example002Demo() {
   return (
     <>
       <ui.Columns displayFrom={'desktop'}>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'1'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>1</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'2'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>2</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'3'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>3</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'4'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification is-primary'}>4</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -289,7 +273,7 @@ function Example003Demo() {
   return (
     <>
       <ui.Columns displayFrom={'mobile'}>
-        {'\n  '}
+        {' '}
         <ui.Column
           width={{
             mobile: 'three-quarters',
@@ -299,52 +283,33 @@ function Example003Demo() {
             fullhd: 'one-quarter',
           }}
         >
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
+            {' '}
             <code>{'is-three-quarters-mobile'}</code>
-            <br />
-            {'\n      '}
-            <code>{'is-two-thirds-tablet'}</code>
-            <br />
-            {'\n      '}
-            <code>{'is-half-desktop'}</code>
-            <br />
-            {'\n      '}
-            <code>{'is-one-third-widescreen'}</code>
-            <br />
-            {'\n      '}
-            <code>{'is-one-quarter-fullhd'}</code>
-            <br />
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            <br /> <code>{'is-two-thirds-tablet'}</code>
+            <br /> <code>{'is-half-desktop'}</code>
+            <br /> <code>{'is-one-third-widescreen'}</code>
+            <br /> <code>{'is-one-quarter-fullhd'}</code>
+            <br />{' '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'2'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>2</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'3'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>3</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'4'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>4</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'5'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification is-primary'}>5</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -356,7 +321,7 @@ export const Example001 = {
     official: { id: 'columns-responsiveness/mobile-columns/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"2"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"3"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"4"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns displayFrom={'mobile'}>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>1</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>2</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>3</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>4</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -371,7 +336,7 @@ export const Example002 = {
     official: { id: 'columns-responsiveness/mobile-columns/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns displayFrom={"desktop"}>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"2"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"3"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"4"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns displayFrom={'desktop'}>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>1</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>2</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>3</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>4</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -388,7 +353,7 @@ export const Example003 = {
     },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={{"mobile":"three-quarters","tablet":"two-thirds","desktop":"half","widescreen":"one-third","fullhd":"one-quarter"}}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code>{"is-three-quarters-mobile"}</code><br />{"\\n      "}<code>{"is-two-thirds-tablet"}</code><br />{"\\n      "}<code>{"is-half-desktop"}</code><br />{"\\n      "}<code>{"is-one-third-widescreen"}</code><br />{"\\n      "}<code>{"is-one-quarter-fullhd"}</code><br />{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"2"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"3"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"4"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"5"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns displayFrom={'mobile'}>\n        {' '}\n        <ui.Column\n          width={{\n            mobile: 'three-quarters',\n            tablet: 'two-thirds',\n            desktop: 'half',\n            widescreen: 'one-third',\n            fullhd: 'one-quarter',\n          }}\n        >\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code>{'is-three-quarters-mobile'}</code>\n            <br /> <code>{'is-two-thirds-tablet'}</code>\n            <br /> <code>{'is-half-desktop'}</code>\n            <br /> <code>{'is-one-third-widescreen'}</code>\n            <br /> <code>{'is-one-quarter-fullhd'}</code>\n            <br />{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>2</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>3</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>4</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>5</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

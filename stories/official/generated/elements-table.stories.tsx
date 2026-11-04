@@ -2134,636 +2134,580 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Table>
         <thead>
           <tr>
             <th>
-              <abbr title={'Position'}>{'Pos'}</abbr>
+              <abbr title={'Position'}>Pos</abbr>
             </th>
-            <th>{'Team'}</th>
+            <th>Team</th>
             <th>
-              <abbr title={'Played'}>{'Pld'}</abbr>
-            </th>
-            <th>
-              <abbr title={'Won'}>{'W'}</abbr>
+              <abbr title={'Played'}>Pld</abbr>
             </th>
             <th>
-              <abbr title={'Drawn'}>{'D'}</abbr>
+              <abbr title={'Won'}>W</abbr>
             </th>
             <th>
-              <abbr title={'Lost'}>{'L'}</abbr>
+              <abbr title={'Drawn'}>D</abbr>
             </th>
             <th>
-              <abbr title={'Goals for'}>{'GF'}</abbr>
+              <abbr title={'Lost'}>L</abbr>
             </th>
             <th>
-              <abbr title={'Goals against'}>{'GA'}</abbr>
+              <abbr title={'Goals for'}>GF</abbr>
             </th>
             <th>
-              <abbr title={'Goal difference'}>{'GD'}</abbr>
+              <abbr title={'Goals against'}>GA</abbr>
             </th>
             <th>
-              <abbr title={'Points'}>{'Pts'}</abbr>
+              <abbr title={'Goal difference'}>GD</abbr>
             </th>
-            <th>{'Qualification or relegation'}</th>
+            <th>
+              <abbr title={'Points'}>Pts</abbr>
+            </th>
+            <th>Qualification or relegation</th>
           </tr>
         </thead>
         <tfoot>
           <tr>
             <th>
-              <abbr title={'Position'}>{'Pos'}</abbr>
+              <abbr title={'Position'}>Pos</abbr>
             </th>
-            <th>{'Team'}</th>
+            <th>Team</th>
             <th>
-              <abbr title={'Played'}>{'Pld'}</abbr>
-            </th>
-            <th>
-              <abbr title={'Won'}>{'W'}</abbr>
+              <abbr title={'Played'}>Pld</abbr>
             </th>
             <th>
-              <abbr title={'Drawn'}>{'D'}</abbr>
+              <abbr title={'Won'}>W</abbr>
             </th>
             <th>
-              <abbr title={'Lost'}>{'L'}</abbr>
+              <abbr title={'Drawn'}>D</abbr>
             </th>
             <th>
-              <abbr title={'Goals for'}>{'GF'}</abbr>
+              <abbr title={'Lost'}>L</abbr>
             </th>
             <th>
-              <abbr title={'Goals against'}>{'GA'}</abbr>
+              <abbr title={'Goals for'}>GF</abbr>
             </th>
             <th>
-              <abbr title={'Goal difference'}>{'GD'}</abbr>
+              <abbr title={'Goals against'}>GA</abbr>
             </th>
             <th>
-              <abbr title={'Points'}>{'Pts'}</abbr>
+              <abbr title={'Goal difference'}>GD</abbr>
             </th>
-            <th>{'Qualification or relegation'}</th>
+            <th>
+              <abbr title={'Points'}>Pts</abbr>
+            </th>
+            <th>Qualification or relegation</th>
           </tr>
         </tfoot>
         <tbody>
           <tr>
-            <th>{'1'}</th>
+            <th>1</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Leicester_City_F.C.'}
                 title={'Leicester City F.C.'}
               >
-                {'Leicester City'}
-              </a>
-              {'\n        '}
-              <strong>{'(C)'}</strong>
-              {'\n      '}
+                Leicester City
+              </a>{' '}
+              <strong>(C)</strong>
             </td>
-            <td>{'38'}</td>
-            <td>{'23'}</td>
-            <td>{'12'}</td>
-            <td>{'3'}</td>
-            <td>{'68'}</td>
-            <td>{'36'}</td>
-            <td>{'+32'}</td>
-            <td>{'81'}</td>
+            <td>38</td>
+            <td>23</td>
+            <td>12</td>
+            <td>3</td>
+            <td>68</td>
+            <td>36</td>
+            <td>+32</td>
+            <td>81</td>
             <td>
-              {'\n        Qualification for the\n        '}
+              Qualification for the{' '}
               <a
                 href={
                   'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage'
                 }
                 title={'2016–17 UEFA Champions League'}
               >
-                {'Champions League group stage'}
+                Champions League group stage
               </a>
-              {'\n      '}
             </td>
           </tr>
           <tr>
-            <th>{'2'}</th>
+            <th>2</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Arsenal_F.C.'}
                 title={'Arsenal F.C.'}
               >
-                {'Arsenal'}
+                Arsenal
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'20'}</td>
-            <td>{'11'}</td>
-            <td>{'7'}</td>
-            <td>{'65'}</td>
-            <td>{'36'}</td>
-            <td>{'+29'}</td>
-            <td>{'71'}</td>
+            <td>38</td>
+            <td>20</td>
+            <td>11</td>
+            <td>7</td>
+            <td>65</td>
+            <td>36</td>
+            <td>+29</td>
+            <td>71</td>
             <td>
-              {'\n        Qualification for the\n        '}
+              Qualification for the{' '}
               <a
                 href={
                   'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage'
                 }
                 title={'2016–17 UEFA Champions League'}
               >
-                {'Champions League group stage'}
+                Champions League group stage
               </a>
-              {'\n      '}
             </td>
           </tr>
           <tr>
-            <th>{'3'}</th>
+            <th>3</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.'}
                 title={'Tottenham Hotspur F.C.'}
               >
-                {'Tottenham Hotspur'}
+                Tottenham Hotspur
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'19'}</td>
-            <td>{'13'}</td>
-            <td>{'6'}</td>
-            <td>{'69'}</td>
-            <td>{'35'}</td>
-            <td>{'+34'}</td>
-            <td>{'70'}</td>
+            <td>38</td>
+            <td>19</td>
+            <td>13</td>
+            <td>6</td>
+            <td>69</td>
+            <td>35</td>
+            <td>+34</td>
+            <td>70</td>
             <td>
-              {'\n        Qualification for the\n        '}
+              Qualification for the{' '}
               <a
                 href={
                   'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage'
                 }
                 title={'2016–17 UEFA Champions League'}
               >
-                {'Champions League group stage'}
+                Champions League group stage
               </a>
-              {'\n      '}
             </td>
           </tr>
           <tr className={'rb-is-selected'}>
-            <th>{'4'}</th>
+            <th>4</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Manchester_City_F.C.'}
                 title={'Manchester City F.C.'}
               >
-                {'Manchester City'}
+                Manchester City
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'19'}</td>
-            <td>{'9'}</td>
-            <td>{'10'}</td>
-            <td>{'71'}</td>
-            <td>{'41'}</td>
-            <td>{'+30'}</td>
-            <td>{'66'}</td>
+            <td>38</td>
+            <td>19</td>
+            <td>9</td>
+            <td>10</td>
+            <td>71</td>
+            <td>41</td>
+            <td>+30</td>
+            <td>66</td>
             <td>
-              {'\n        Qualification for the\n        '}
+              Qualification for the{' '}
               <a
                 href={
                   'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round'
                 }
                 title={'2016–17 UEFA Champions League'}
               >
-                {'Champions League play-off round'}
+                Champions League play-off round
               </a>
-              {'\n      '}
             </td>
           </tr>
           <tr>
-            <th>{'5'}</th>
+            <th>5</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Manchester_United_F.C.'}
                 title={'Manchester United F.C.'}
               >
-                {'Manchester United'}
+                Manchester United
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'19'}</td>
-            <td>{'9'}</td>
-            <td>{'10'}</td>
-            <td>{'49'}</td>
-            <td>{'35'}</td>
-            <td>{'+14'}</td>
-            <td>{'66'}</td>
+            <td>38</td>
+            <td>19</td>
+            <td>9</td>
+            <td>10</td>
+            <td>49</td>
+            <td>35</td>
+            <td>+14</td>
+            <td>66</td>
             <td>
-              {'\n        Qualification for the\n        '}
+              Qualification for the{' '}
               <a
                 href={
                   'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage'
                 }
                 title={'2016–17 UEFA Europa League'}
               >
-                {'Europa League group stage'}
+                Europa League group stage
               </a>
-              {'\n      '}
             </td>
           </tr>
           <tr>
-            <th>{'6'}</th>
+            <th>6</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Southampton_F.C.'}
                 title={'Southampton F.C.'}
               >
-                {'Southampton'}
+                Southampton
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'18'}</td>
-            <td>{'9'}</td>
-            <td>{'11'}</td>
-            <td>{'59'}</td>
-            <td>{'41'}</td>
-            <td>{'+18'}</td>
-            <td>{'63'}</td>
+            <td>38</td>
+            <td>18</td>
+            <td>9</td>
+            <td>11</td>
+            <td>59</td>
+            <td>41</td>
+            <td>+18</td>
+            <td>63</td>
             <td>
-              {'\n        Qualification for the\n        '}
+              Qualification for the{' '}
               <a
                 href={
                   'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage'
                 }
                 title={'2016–17 UEFA Europa League'}
               >
-                {'Europa League group stage'}
+                Europa League group stage
               </a>
-              {'\n      '}
             </td>
           </tr>
           <tr>
-            <th>{'7'}</th>
+            <th>7</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/West_Ham_United_F.C.'}
                 title={'West Ham United F.C.'}
               >
-                {'West Ham United'}
+                West Ham United
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'16'}</td>
-            <td>{'14'}</td>
-            <td>{'8'}</td>
-            <td>{'65'}</td>
-            <td>{'51'}</td>
-            <td>{'+14'}</td>
-            <td>{'62'}</td>
+            <td>38</td>
+            <td>16</td>
+            <td>14</td>
+            <td>8</td>
+            <td>65</td>
+            <td>51</td>
+            <td>+14</td>
+            <td>62</td>
             <td>
-              {'\n        Qualification for the\n        '}
+              Qualification for the{' '}
               <a
                 href={
                   'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round'
                 }
                 title={'2016–17 UEFA Europa League'}
               >
-                {'Europa League third qualifying round'}
+                Europa League third qualifying round
               </a>
-              {'\n      '}
             </td>
           </tr>
           <tr>
-            <th>{'8'}</th>
+            <th>8</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Liverpool_F.C.'}
                 title={'Liverpool F.C.'}
               >
-                {'Liverpool'}
+                Liverpool
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'16'}</td>
-            <td>{'12'}</td>
-            <td>{'10'}</td>
-            <td>{'63'}</td>
-            <td>{'50'}</td>
-            <td>{'+13'}</td>
-            <td>{'60'}</td>
+            <td>38</td>
+            <td>16</td>
+            <td>12</td>
+            <td>10</td>
+            <td>63</td>
+            <td>50</td>
+            <td>+13</td>
+            <td>60</td>
             <td />
           </tr>
           <tr>
-            <th>{'9'}</th>
+            <th>9</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Stoke_City_F.C.'}
                 title={'Stoke City F.C.'}
               >
-                {'Stoke City'}
+                Stoke City
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'14'}</td>
-            <td>{'9'}</td>
-            <td>{'15'}</td>
-            <td>{'41'}</td>
-            <td>{'55'}</td>
-            <td>{'−14'}</td>
-            <td>{'51'}</td>
+            <td>38</td>
+            <td>14</td>
+            <td>9</td>
+            <td>15</td>
+            <td>41</td>
+            <td>55</td>
+            <td>−14</td>
+            <td>51</td>
             <td />
           </tr>
           <tr>
-            <th>{'10'}</th>
+            <th>10</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Chelsea_F.C.'}
                 title={'Chelsea F.C.'}
               >
-                {'Chelsea'}
+                Chelsea
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'12'}</td>
-            <td>{'14'}</td>
-            <td>{'12'}</td>
-            <td>{'59'}</td>
-            <td>{'53'}</td>
-            <td>{'+6'}</td>
-            <td>{'50'}</td>
+            <td>38</td>
+            <td>12</td>
+            <td>14</td>
+            <td>12</td>
+            <td>59</td>
+            <td>53</td>
+            <td>+6</td>
+            <td>50</td>
             <td />
           </tr>
           <tr>
-            <th>{'11'}</th>
+            <th>11</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Everton_F.C.'}
                 title={'Everton F.C.'}
               >
-                {'Everton'}
+                Everton
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'11'}</td>
-            <td>{'14'}</td>
-            <td>{'13'}</td>
-            <td>{'59'}</td>
-            <td>{'55'}</td>
-            <td>{'+4'}</td>
-            <td>{'47'}</td>
+            <td>38</td>
+            <td>11</td>
+            <td>14</td>
+            <td>13</td>
+            <td>59</td>
+            <td>55</td>
+            <td>+4</td>
+            <td>47</td>
             <td />
           </tr>
           <tr>
-            <th>{'12'}</th>
+            <th>12</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Swansea_City_A.F.C.'}
                 title={'Swansea City A.F.C.'}
               >
-                {'Swansea City'}
+                Swansea City
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'12'}</td>
-            <td>{'11'}</td>
-            <td>{'15'}</td>
-            <td>{'42'}</td>
-            <td>{'52'}</td>
-            <td>{'−10'}</td>
-            <td>{'47'}</td>
+            <td>38</td>
+            <td>12</td>
+            <td>11</td>
+            <td>15</td>
+            <td>42</td>
+            <td>52</td>
+            <td>−10</td>
+            <td>47</td>
             <td />
           </tr>
           <tr>
-            <th>{'13'}</th>
+            <th>13</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Watford_F.C.'}
                 title={'Watford F.C.'}
               >
-                {'Watford'}
+                Watford
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'12'}</td>
-            <td>{'9'}</td>
-            <td>{'17'}</td>
-            <td>{'40'}</td>
-            <td>{'50'}</td>
-            <td>{'−10'}</td>
-            <td>{'45'}</td>
+            <td>38</td>
+            <td>12</td>
+            <td>9</td>
+            <td>17</td>
+            <td>40</td>
+            <td>50</td>
+            <td>−10</td>
+            <td>45</td>
             <td />
           </tr>
           <tr>
-            <th>{'14'}</th>
+            <th>14</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C.'}
                 title={'West Bromwich Albion F.C.'}
               >
-                {'West Bromwich Albion'}
+                West Bromwich Albion
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'10'}</td>
-            <td>{'13'}</td>
-            <td>{'15'}</td>
-            <td>{'34'}</td>
-            <td>{'48'}</td>
-            <td>{'−14'}</td>
-            <td>{'43'}</td>
+            <td>38</td>
+            <td>10</td>
+            <td>13</td>
+            <td>15</td>
+            <td>34</td>
+            <td>48</td>
+            <td>−14</td>
+            <td>43</td>
             <td />
           </tr>
           <tr>
-            <th>{'15'}</th>
+            <th>15</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Crystal_Palace_F.C.'}
                 title={'Crystal Palace F.C.'}
               >
-                {'Crystal Palace'}
+                Crystal Palace
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'11'}</td>
-            <td>{'9'}</td>
-            <td>{'18'}</td>
-            <td>{'39'}</td>
-            <td>{'51'}</td>
-            <td>{'−12'}</td>
-            <td>{'42'}</td>
+            <td>38</td>
+            <td>11</td>
+            <td>9</td>
+            <td>18</td>
+            <td>39</td>
+            <td>51</td>
+            <td>−12</td>
+            <td>42</td>
             <td />
           </tr>
           <tr>
-            <th>{'16'}</th>
+            <th>16</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/A.F.C._Bournemouth'}
                 title={'A.F.C. Bournemouth'}
               >
-                {'AFC Bournemouth'}
+                AFC Bournemouth
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'11'}</td>
-            <td>{'9'}</td>
-            <td>{'18'}</td>
-            <td>{'45'}</td>
-            <td>{'67'}</td>
-            <td>{'−22'}</td>
-            <td>{'42'}</td>
+            <td>38</td>
+            <td>11</td>
+            <td>9</td>
+            <td>18</td>
+            <td>45</td>
+            <td>67</td>
+            <td>−22</td>
+            <td>42</td>
             <td />
           </tr>
           <tr>
-            <th>{'17'}</th>
+            <th>17</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Sunderland_A.F.C.'}
                 title={'Sunderland A.F.C.'}
               >
-                {'Sunderland'}
+                Sunderland
               </a>
-              {'\n      '}
             </td>
-            <td>{'38'}</td>
-            <td>{'9'}</td>
-            <td>{'12'}</td>
-            <td>{'17'}</td>
-            <td>{'48'}</td>
-            <td>{'62'}</td>
-            <td>{'−14'}</td>
-            <td>{'39'}</td>
+            <td>38</td>
+            <td>9</td>
+            <td>12</td>
+            <td>17</td>
+            <td>48</td>
+            <td>62</td>
+            <td>−14</td>
+            <td>39</td>
             <td />
           </tr>
           <tr>
-            <th>{'18'}</th>
+            <th>18</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Newcastle_United_F.C.'}
                 title={'Newcastle United F.C.'}
               >
-                {'Newcastle United'}
-              </a>
-              {'\n        '}
-              <strong>{'(R)'}</strong>
-              {'\n      '}
+                Newcastle United
+              </a>{' '}
+              <strong>(R)</strong>
             </td>
-            <td>{'38'}</td>
-            <td>{'9'}</td>
-            <td>{'10'}</td>
-            <td>{'19'}</td>
-            <td>{'44'}</td>
-            <td>{'65'}</td>
-            <td>{'−21'}</td>
-            <td>{'37'}</td>
+            <td>38</td>
+            <td>9</td>
+            <td>10</td>
+            <td>19</td>
+            <td>44</td>
+            <td>65</td>
+            <td>−21</td>
+            <td>37</td>
             <td>
-              {'\n        Relegation to the\n        '}
+              Relegation to the{' '}
               <a
                 href={
                   'https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship'
                 }
                 title={'2016–17 Football League Championship'}
               >
-                {'Football League Championship'}
+                Football League Championship
               </a>
-              {'\n      '}
             </td>
           </tr>
           <tr>
-            <th>{'19'}</th>
+            <th>19</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Norwich_City_F.C.'}
                 title={'Norwich City F.C.'}
               >
-                {'Norwich City'}
-              </a>
-              {'\n        '}
-              <strong>{'(R)'}</strong>
-              {'\n      '}
+                Norwich City
+              </a>{' '}
+              <strong>(R)</strong>
             </td>
-            <td>{'38'}</td>
-            <td>{'9'}</td>
-            <td>{'7'}</td>
-            <td>{'22'}</td>
-            <td>{'39'}</td>
-            <td>{'67'}</td>
-            <td>{'−28'}</td>
-            <td>{'34'}</td>
+            <td>38</td>
+            <td>9</td>
+            <td>7</td>
+            <td>22</td>
+            <td>39</td>
+            <td>67</td>
+            <td>−28</td>
+            <td>34</td>
             <td>
-              {'\n        Relegation to the\n        '}
+              Relegation to the{' '}
               <a
                 href={
                   'https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship'
                 }
                 title={'2016–17 Football League Championship'}
               >
-                {'Football League Championship'}
+                Football League Championship
               </a>
-              {'\n      '}
             </td>
           </tr>
           <tr>
-            <th>{'20'}</th>
+            <th>20</th>
             <td>
-              {'\n        '}
               <a
                 href={'https://en.wikipedia.org/wiki/Aston_Villa_F.C.'}
                 title={'Aston Villa F.C.'}
               >
-                {'Aston Villa'}
-              </a>
-              {'\n        '}
-              <strong>{'(R)'}</strong>
-              {'\n      '}
+                Aston Villa
+              </a>{' '}
+              <strong>(R)</strong>
             </td>
-            <td>{'38'}</td>
-            <td>{'3'}</td>
-            <td>{'8'}</td>
-            <td>{'27'}</td>
-            <td>{'27'}</td>
-            <td>{'76'}</td>
-            <td>{'−49'}</td>
-            <td>{'17'}</td>
+            <td>38</td>
+            <td>3</td>
+            <td>8</td>
+            <td>27</td>
+            <td>27</td>
+            <td>76</td>
+            <td>−49</td>
+            <td>17</td>
             <td>
-              {'\n        Relegation to the\n        '}
+              Relegation to the{' '}
               <a
                 href={
                   'https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship'
                 }
                 title={'2016–17 Football League Championship'}
               >
-                {'Football League Championship'}
+                Football League Championship
               </a>
-              {'\n      '}
             </td>
           </tr>
         </tbody>
       </ui.Table>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2771,96 +2715,94 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Table bordered>
         <tbody>
           <tr>
-            <th className={'rb-is-link'}>{'Link th cell'}</th>
-            <td>{'Two'}</td>
-            <td className={'rb-is-link'}>{'Link td cell'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th className={'rb-is-link'}>Link th cell</th>
+            <td>Two</td>
+            <td className={'rb-is-link'}>Link td cell</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr className={'rb-is-link'}>
-            <th>{'Link row'}</th>
-            <td>{'Two'}</td>
-            <td>{'Three'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th>Link row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr>
-            <th className={'rb-is-primary'}>{'Primary th cell'}</th>
-            <td>{'Two'}</td>
-            <td className={'rb-is-primary'}>{'Primary td cell'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th className={'rb-is-primary'}>Primary th cell</th>
+            <td>Two</td>
+            <td className={'rb-is-primary'}>Primary td cell</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr className={'rb-is-primary'}>
-            <th>{'Primary row'}</th>
-            <td>{'Two'}</td>
-            <td>{'Three'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th>Primary row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr>
-            <th className={'rb-is-info'}>{'Info th cell'}</th>
-            <td>{'Two'}</td>
-            <td className={'rb-is-info'}>{'Info td cell'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th className={'rb-is-info'}>Info th cell</th>
+            <td>Two</td>
+            <td className={'rb-is-info'}>Info td cell</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr className={'rb-is-info'}>
-            <th>{'Info row'}</th>
-            <td>{'Two'}</td>
-            <td>{'Three'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th>Info row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr>
-            <th className={'rb-is-success'}>{'Success th cell'}</th>
-            <td>{'Two'}</td>
-            <td className={'rb-is-success'}>{'Success td cell'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th className={'rb-is-success'}>Success th cell</th>
+            <td>Two</td>
+            <td className={'rb-is-success'}>Success td cell</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr className={'rb-is-success'}>
-            <th>{'Success row'}</th>
-            <td>{'Two'}</td>
-            <td>{'Three'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th>Success row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr>
-            <th className={'rb-is-warning'}>{'Warning th cell'}</th>
-            <td>{'Two'}</td>
-            <td className={'rb-is-warning'}>{'Warning td cell'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th className={'rb-is-warning'}>Warning th cell</th>
+            <td>Two</td>
+            <td className={'rb-is-warning'}>Warning td cell</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr className={'rb-is-warning'}>
-            <th>{'Warning row'}</th>
-            <td>{'Two'}</td>
-            <td>{'Three'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th>Warning row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr>
-            <th className={'rb-is-danger'}>{'Danger th cell'}</th>
-            <td>{'Two'}</td>
-            <td className={'rb-is-danger'}>{'Danger td cell'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th className={'rb-is-danger'}>Danger th cell</th>
+            <td>Two</td>
+            <td className={'rb-is-danger'}>Danger td cell</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
           <tr className={'rb-is-danger'}>
-            <th>{'Danger row'}</th>
-            <td>{'Two'}</td>
-            <td>{'Three'}</td>
-            <td>{'Four'}</td>
-            <td>{'Five'}</td>
+            <th>Danger row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
           </tr>
         </tbody>
       </ui.Table>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2869,42 +2811,34 @@ function Example003Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p>
-            {'Add '}
-            <strong>{'borders'}</strong>
-            {' to all the cells.'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            Add <strong>borders</strong> to all the cells.
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <code>{'table is-bordered'}</code>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <code>{'table is-bordered'}</code>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <ui.Table bordered>
             <thead>
               <tr>
-                <th>{'One'}</th>
-                <th>{'Two'}</th>
+                <th>One</th>
+                <th>Two</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>{'Three'}</td>
-                <td>{'Four'}</td>
+                <td>Three</td>
+                <td>Four</td>
               </tr>
             </tbody>
-          </ui.Table>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </ui.Table>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -2914,58 +2848,50 @@ function Example004Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p>
-            {'Add '}
-            <strong>{'stripes'}</strong>
-            {' to the table.'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            Add <strong>stripes</strong> to the table.
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <code>{'table is-striped'}</code>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <code>{'table is-striped'}</code>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <ui.Table striped>
             <thead>
               <tr>
-                <th>{'One'}</th>
-                <th>{'Two'}</th>
+                <th>One</th>
+                <th>Two</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>{'Three'}</td>
-                <td>{'Four'}</td>
+                <td>Three</td>
+                <td>Four</td>
               </tr>
               <tr>
-                <td>{'Five'}</td>
-                <td>{'Six'}</td>
+                <td>Five</td>
+                <td>Six</td>
               </tr>
               <tr>
-                <td>{'Seven'}</td>
-                <td>{'Eight'}</td>
+                <td>Seven</td>
+                <td>Eight</td>
               </tr>
               <tr>
-                <td>{'Nine'}</td>
-                <td>{'Ten'}</td>
+                <td>Nine</td>
+                <td>Ten</td>
               </tr>
               <tr>
-                <td>{'Eleven'}</td>
-                <td>{'Twelve'}</td>
+                <td>Eleven</td>
+                <td>Twelve</td>
               </tr>
             </tbody>
-          </ui.Table>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </ui.Table>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -2975,58 +2901,50 @@ function Example005Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p>
-            {'Make the cells '}
-            <strong>{'narrower'}</strong>
-            {'.'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            Make the cells <strong>narrower</strong>.
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <code>{'table is-narrow'}</code>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <code>{'table is-narrow'}</code>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <ui.Table narrow>
             <thead>
               <tr>
-                <th>{'One'}</th>
-                <th>{'Two'}</th>
+                <th>One</th>
+                <th>Two</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>{'Three'}</td>
-                <td>{'Four'}</td>
+                <td>Three</td>
+                <td>Four</td>
               </tr>
               <tr>
-                <td>{'Five'}</td>
-                <td>{'Six'}</td>
+                <td>Five</td>
+                <td>Six</td>
               </tr>
               <tr>
-                <td>{'Seven'}</td>
-                <td>{'Eight'}</td>
+                <td>Seven</td>
+                <td>Eight</td>
               </tr>
               <tr>
-                <td>{'Nine'}</td>
-                <td>{'Ten'}</td>
+                <td>Nine</td>
+                <td>Ten</td>
               </tr>
               <tr>
-                <td>{'Eleven'}</td>
-                <td>{'Twelve'}</td>
+                <td>Eleven</td>
+                <td>Twelve</td>
               </tr>
             </tbody>
-          </ui.Table>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </ui.Table>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3036,58 +2954,50 @@ function Example006Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p>
-            {'You can add a '}
-            <strong>{'hover effect'}</strong>
-            {' on each row'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            You can add a <strong>hover effect</strong> on each row
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <code>{'table is-hoverable'}</code>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <code>{'table is-hoverable'}</code>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <ui.Table hoverable>
             <thead>
               <tr>
-                <th>{'One'}</th>
-                <th>{'Two'}</th>
+                <th>One</th>
+                <th>Two</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>{'Three'}</td>
-                <td>{'Four'}</td>
+                <td>Three</td>
+                <td>Four</td>
               </tr>
               <tr>
-                <td>{'Five'}</td>
-                <td>{'Six'}</td>
+                <td>Five</td>
+                <td>Six</td>
               </tr>
               <tr>
-                <td>{'Seven'}</td>
-                <td>{'Eight'}</td>
+                <td>Seven</td>
+                <td>Eight</td>
               </tr>
               <tr>
-                <td>{'Nine'}</td>
-                <td>{'Ten'}</td>
+                <td>Nine</td>
+                <td>Ten</td>
               </tr>
               <tr>
-                <td>{'Eleven'}</td>
-                <td>{'Twelve'}</td>
+                <td>Eleven</td>
+                <td>Twelve</td>
               </tr>
             </tbody>
-          </ui.Table>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </ui.Table>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3097,58 +3007,50 @@ function Example007Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p>
-            {'You can have a '}
-            <strong>{'fullwidth'}</strong>
-            {' table.'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            You can have a <strong>fullwidth</strong> table.
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <code>{'table is-fullwidth'}</code>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <code>{'table is-fullwidth'}</code>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <ui.Table fullWidth>
             <thead>
               <tr>
-                <th>{'One'}</th>
-                <th>{'Two'}</th>
+                <th>One</th>
+                <th>Two</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>{'Three'}</td>
-                <td>{'Four'}</td>
+                <td>Three</td>
+                <td>Four</td>
               </tr>
               <tr>
-                <td>{'Five'}</td>
-                <td>{'Six'}</td>
+                <td>Five</td>
+                <td>Six</td>
               </tr>
               <tr>
-                <td>{'Seven'}</td>
-                <td>{'Eight'}</td>
+                <td>Seven</td>
+                <td>Eight</td>
               </tr>
               <tr>
-                <td>{'Nine'}</td>
-                <td>{'Ten'}</td>
+                <td>Nine</td>
+                <td>Ten</td>
               </tr>
               <tr>
-                <td>{'Eleven'}</td>
-                <td>{'Twelve'}</td>
+                <td>Eleven</td>
+                <td>Twelve</td>
               </tr>
             </tbody>
-          </ui.Table>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </ui.Table>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3158,60 +3060,52 @@ function Example008Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p>
-            {'You can '}
-            <strong>{'combine'}</strong>
-            {' all five modifiers.'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            You can <strong>combine</strong> all five modifiers.
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <code>
             {'table is-bordered is-striped is-narrow is-hoverable is-fullwidth'}
-          </code>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </code>{' '}
+        </ui.Column>{' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <ui.Table bordered striped narrow hoverable fullWidth>
             <thead>
               <tr>
-                <th>{'One'}</th>
-                <th>{'Two'}</th>
+                <th>One</th>
+                <th>Two</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>{'Three'}</td>
-                <td>{'Four'}</td>
+                <td>Three</td>
+                <td>Four</td>
               </tr>
               <tr>
-                <td>{'Five'}</td>
-                <td>{'Six'}</td>
+                <td>Five</td>
+                <td>Six</td>
               </tr>
               <tr>
-                <td>{'Seven'}</td>
-                <td>{'Eight'}</td>
+                <td>Seven</td>
+                <td>Eight</td>
               </tr>
               <tr>
-                <td>{'Nine'}</td>
-                <td>{'Ten'}</td>
+                <td>Nine</td>
+                <td>Ten</td>
               </tr>
               <tr>
-                <td>{'Eleven'}</td>
-                <td>{'Twelve'}</td>
+                <td>Eleven</td>
+                <td>Twelve</td>
               </tr>
             </tbody>
-          </ui.Table>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </ui.Table>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3223,7 +3117,7 @@ export const Example001 = {
     official: { id: 'elements-table/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Table><thead><tr><th><abbr title={"Position"}>{"Pos"}</abbr></th><th>{"Team"}</th><th><abbr title={"Played"}>{"Pld"}</abbr></th><th><abbr title={"Won"}>{"W"}</abbr></th><th><abbr title={"Drawn"}>{"D"}</abbr></th><th><abbr title={"Lost"}>{"L"}</abbr></th><th><abbr title={"Goals for"}>{"GF"}</abbr></th><th><abbr title={"Goals against"}>{"GA"}</abbr></th><th><abbr title={"Goal difference"}>{"GD"}</abbr></th><th><abbr title={"Points"}>{"Pts"}</abbr></th><th>{"Qualification or relegation"}</th></tr></thead><tfoot><tr><th><abbr title={"Position"}>{"Pos"}</abbr></th><th>{"Team"}</th><th><abbr title={"Played"}>{"Pld"}</abbr></th><th><abbr title={"Won"}>{"W"}</abbr></th><th><abbr title={"Drawn"}>{"D"}</abbr></th><th><abbr title={"Lost"}>{"L"}</abbr></th><th><abbr title={"Goals for"}>{"GF"}</abbr></th><th><abbr title={"Goals against"}>{"GA"}</abbr></th><th><abbr title={"Goal difference"}>{"GD"}</abbr></th><th><abbr title={"Points"}>{"Pts"}</abbr></th><th>{"Qualification or relegation"}</th></tr></tfoot><tbody><tr><th>{"1"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Leicester_City_F.C."} title={"Leicester City F.C."}>{"Leicester City"}</a>{"\\n        "}<strong>{"(C)"}</strong>{"\\n      "}</td><td>{"38"}</td><td>{"23"}</td><td>{"12"}</td><td>{"3"}</td><td>{"68"}</td><td>{"36"}</td><td>{"+32"}</td><td>{"81"}</td><td>{"\\n        Qualification for the\\n        "}<a href={"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"} title={"2016–17 UEFA Champions League"}>{"Champions League group stage"}</a>{"\\n      "}</td></tr><tr><th>{"2"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Arsenal_F.C."} title={"Arsenal F.C."}>{"Arsenal"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"20"}</td><td>{"11"}</td><td>{"7"}</td><td>{"65"}</td><td>{"36"}</td><td>{"+29"}</td><td>{"71"}</td><td>{"\\n        Qualification for the\\n        "}<a href={"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"} title={"2016–17 UEFA Champions League"}>{"Champions League group stage"}</a>{"\\n      "}</td></tr><tr><th>{"3"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C."} title={"Tottenham Hotspur F.C."}>{"Tottenham Hotspur"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"19"}</td><td>{"13"}</td><td>{"6"}</td><td>{"69"}</td><td>{"35"}</td><td>{"+34"}</td><td>{"70"}</td><td>{"\\n        Qualification for the\\n        "}<a href={"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"} title={"2016–17 UEFA Champions League"}>{"Champions League group stage"}</a>{"\\n      "}</td></tr><tr className={"rb-is-selected"}><th>{"4"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Manchester_City_F.C."} title={"Manchester City F.C."}>{"Manchester City"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"19"}</td><td>{"9"}</td><td>{"10"}</td><td>{"71"}</td><td>{"41"}</td><td>{"+30"}</td><td>{"66"}</td><td>{"\\n        Qualification for the\\n        "}<a href={"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round"} title={"2016–17 UEFA Champions League"}>{"Champions League play-off round"}</a>{"\\n      "}</td></tr><tr><th>{"5"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Manchester_United_F.C."} title={"Manchester United F.C."}>{"Manchester United"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"19"}</td><td>{"9"}</td><td>{"10"}</td><td>{"49"}</td><td>{"35"}</td><td>{"+14"}</td><td>{"66"}</td><td>{"\\n        Qualification for the\\n        "}<a href={"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"} title={"2016–17 UEFA Europa League"}>{"Europa League group stage"}</a>{"\\n      "}</td></tr><tr><th>{"6"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Southampton_F.C."} title={"Southampton F.C."}>{"Southampton"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"18"}</td><td>{"9"}</td><td>{"11"}</td><td>{"59"}</td><td>{"41"}</td><td>{"+18"}</td><td>{"63"}</td><td>{"\\n        Qualification for the\\n        "}<a href={"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"} title={"2016–17 UEFA Europa League"}>{"Europa League group stage"}</a>{"\\n      "}</td></tr><tr><th>{"7"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/West_Ham_United_F.C."} title={"West Ham United F.C."}>{"West Ham United"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"16"}</td><td>{"14"}</td><td>{"8"}</td><td>{"65"}</td><td>{"51"}</td><td>{"+14"}</td><td>{"62"}</td><td>{"\\n        Qualification for the\\n        "}<a href={"https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round"} title={"2016–17 UEFA Europa League"}>{"Europa League third qualifying round"}</a>{"\\n      "}</td></tr><tr><th>{"8"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Liverpool_F.C."} title={"Liverpool F.C."}>{"Liverpool"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"16"}</td><td>{"12"}</td><td>{"10"}</td><td>{"63"}</td><td>{"50"}</td><td>{"+13"}</td><td>{"60"}</td><td /></tr><tr><th>{"9"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Stoke_City_F.C."} title={"Stoke City F.C."}>{"Stoke City"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"14"}</td><td>{"9"}</td><td>{"15"}</td><td>{"41"}</td><td>{"55"}</td><td>{"−14"}</td><td>{"51"}</td><td /></tr><tr><th>{"10"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Chelsea_F.C."} title={"Chelsea F.C."}>{"Chelsea"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"12"}</td><td>{"14"}</td><td>{"12"}</td><td>{"59"}</td><td>{"53"}</td><td>{"+6"}</td><td>{"50"}</td><td /></tr><tr><th>{"11"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Everton_F.C."} title={"Everton F.C."}>{"Everton"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"11"}</td><td>{"14"}</td><td>{"13"}</td><td>{"59"}</td><td>{"55"}</td><td>{"+4"}</td><td>{"47"}</td><td /></tr><tr><th>{"12"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Swansea_City_A.F.C."} title={"Swansea City A.F.C."}>{"Swansea City"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"12"}</td><td>{"11"}</td><td>{"15"}</td><td>{"42"}</td><td>{"52"}</td><td>{"−10"}</td><td>{"47"}</td><td /></tr><tr><th>{"13"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Watford_F.C."} title={"Watford F.C."}>{"Watford"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"12"}</td><td>{"9"}</td><td>{"17"}</td><td>{"40"}</td><td>{"50"}</td><td>{"−10"}</td><td>{"45"}</td><td /></tr><tr><th>{"14"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C."} title={"West Bromwich Albion F.C."}>{"West Bromwich Albion"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"10"}</td><td>{"13"}</td><td>{"15"}</td><td>{"34"}</td><td>{"48"}</td><td>{"−14"}</td><td>{"43"}</td><td /></tr><tr><th>{"15"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Crystal_Palace_F.C."} title={"Crystal Palace F.C."}>{"Crystal Palace"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"11"}</td><td>{"9"}</td><td>{"18"}</td><td>{"39"}</td><td>{"51"}</td><td>{"−12"}</td><td>{"42"}</td><td /></tr><tr><th>{"16"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/A.F.C._Bournemouth"} title={"A.F.C. Bournemouth"}>{"AFC Bournemouth"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"11"}</td><td>{"9"}</td><td>{"18"}</td><td>{"45"}</td><td>{"67"}</td><td>{"−22"}</td><td>{"42"}</td><td /></tr><tr><th>{"17"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Sunderland_A.F.C."} title={"Sunderland A.F.C."}>{"Sunderland"}</a>{"\\n      "}</td><td>{"38"}</td><td>{"9"}</td><td>{"12"}</td><td>{"17"}</td><td>{"48"}</td><td>{"62"}</td><td>{"−14"}</td><td>{"39"}</td><td /></tr><tr><th>{"18"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Newcastle_United_F.C."} title={"Newcastle United F.C."}>{"Newcastle United"}</a>{"\\n        "}<strong>{"(R)"}</strong>{"\\n      "}</td><td>{"38"}</td><td>{"9"}</td><td>{"10"}</td><td>{"19"}</td><td>{"44"}</td><td>{"65"}</td><td>{"−21"}</td><td>{"37"}</td><td>{"\\n        Relegation to the\\n        "}<a href={"https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"} title={"2016–17 Football League Championship"}>{"Football League Championship"}</a>{"\\n      "}</td></tr><tr><th>{"19"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Norwich_City_F.C."} title={"Norwich City F.C."}>{"Norwich City"}</a>{"\\n        "}<strong>{"(R)"}</strong>{"\\n      "}</td><td>{"38"}</td><td>{"9"}</td><td>{"7"}</td><td>{"22"}</td><td>{"39"}</td><td>{"67"}</td><td>{"−28"}</td><td>{"34"}</td><td>{"\\n        Relegation to the\\n        "}<a href={"https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"} title={"2016–17 Football League Championship"}>{"Football League Championship"}</a>{"\\n      "}</td></tr><tr><th>{"20"}</th><td>{"\\n        "}<a href={"https://en.wikipedia.org/wiki/Aston_Villa_F.C."} title={"Aston Villa F.C."}>{"Aston Villa"}</a>{"\\n        "}<strong>{"(R)"}</strong>{"\\n      "}</td><td>{"38"}</td><td>{"3"}</td><td>{"8"}</td><td>{"27"}</td><td>{"27"}</td><td>{"76"}</td><td>{"−49"}</td><td>{"17"}</td><td>{"\\n        Relegation to the\\n        "}<a href={"https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"} title={"2016–17 Football League Championship"}>{"Football League Championship"}</a>{"\\n      "}</td></tr></tbody></ui.Table>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Table>\n        <thead>\n          <tr>\n            <th>\n              <abbr title={'Position'}>Pos</abbr>\n            </th>\n            <th>Team</th>\n            <th>\n              <abbr title={'Played'}>Pld</abbr>\n            </th>\n            <th>\n              <abbr title={'Won'}>W</abbr>\n            </th>\n            <th>\n              <abbr title={'Drawn'}>D</abbr>\n            </th>\n            <th>\n              <abbr title={'Lost'}>L</abbr>\n            </th>\n            <th>\n              <abbr title={'Goals for'}>GF</abbr>\n            </th>\n            <th>\n              <abbr title={'Goals against'}>GA</abbr>\n            </th>\n            <th>\n              <abbr title={'Goal difference'}>GD</abbr>\n            </th>\n            <th>\n              <abbr title={'Points'}>Pts</abbr>\n            </th>\n            <th>Qualification or relegation</th>\n          </tr>\n        </thead>\n        <tfoot>\n          <tr>\n            <th>\n              <abbr title={'Position'}>Pos</abbr>\n            </th>\n            <th>Team</th>\n            <th>\n              <abbr title={'Played'}>Pld</abbr>\n            </th>\n            <th>\n              <abbr title={'Won'}>W</abbr>\n            </th>\n            <th>\n              <abbr title={'Drawn'}>D</abbr>\n            </th>\n            <th>\n              <abbr title={'Lost'}>L</abbr>\n            </th>\n            <th>\n              <abbr title={'Goals for'}>GF</abbr>\n            </th>\n            <th>\n              <abbr title={'Goals against'}>GA</abbr>\n            </th>\n            <th>\n              <abbr title={'Goal difference'}>GD</abbr>\n            </th>\n            <th>\n              <abbr title={'Points'}>Pts</abbr>\n            </th>\n            <th>Qualification or relegation</th>\n          </tr>\n        </tfoot>\n        <tbody>\n          <tr>\n            <th>1</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Leicester_City_F.C.'}\n                title={'Leicester City F.C.'}\n              >\n                Leicester City\n              </a>{' '}\n              <strong>(C)</strong>\n            </td>\n            <td>38</td>\n            <td>23</td>\n            <td>12</td>\n            <td>3</td>\n            <td>68</td>\n            <td>36</td>\n            <td>+32</td>\n            <td>81</td>\n            <td>\n              Qualification for the{' '}\n              <a\n                href={\n                  'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage'\n                }\n                title={'2016–17 UEFA Champions League'}\n              >\n                Champions League group stage\n              </a>\n            </td>\n          </tr>\n          <tr>\n            <th>2</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Arsenal_F.C.'}\n                title={'Arsenal F.C.'}\n              >\n                Arsenal\n              </a>\n            </td>\n            <td>38</td>\n            <td>20</td>\n            <td>11</td>\n            <td>7</td>\n            <td>65</td>\n            <td>36</td>\n            <td>+29</td>\n            <td>71</td>\n            <td>\n              Qualification for the{' '}\n              <a\n                href={\n                  'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage'\n                }\n                title={'2016–17 UEFA Champions League'}\n              >\n                Champions League group stage\n              </a>\n            </td>\n          </tr>\n          <tr>\n            <th>3</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.'}\n                title={'Tottenham Hotspur F.C.'}\n              >\n                Tottenham Hotspur\n              </a>\n            </td>\n            <td>38</td>\n            <td>19</td>\n            <td>13</td>\n            <td>6</td>\n            <td>69</td>\n            <td>35</td>\n            <td>+34</td>\n            <td>70</td>\n            <td>\n              Qualification for the{' '}\n              <a\n                href={\n                  'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage'\n                }\n                title={'2016–17 UEFA Champions League'}\n              >\n                Champions League group stage\n              </a>\n            </td>\n          </tr>\n          <tr className={'rb-is-selected'}>\n            <th>4</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Manchester_City_F.C.'}\n                title={'Manchester City F.C.'}\n              >\n                Manchester City\n              </a>\n            </td>\n            <td>38</td>\n            <td>19</td>\n            <td>9</td>\n            <td>10</td>\n            <td>71</td>\n            <td>41</td>\n            <td>+30</td>\n            <td>66</td>\n            <td>\n              Qualification for the{' '}\n              <a\n                href={\n                  'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round'\n                }\n                title={'2016–17 UEFA Champions League'}\n              >\n                Champions League play-off round\n              </a>\n            </td>\n          </tr>\n          <tr>\n            <th>5</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Manchester_United_F.C.'}\n                title={'Manchester United F.C.'}\n              >\n                Manchester United\n              </a>\n            </td>\n            <td>38</td>\n            <td>19</td>\n            <td>9</td>\n            <td>10</td>\n            <td>49</td>\n            <td>35</td>\n            <td>+14</td>\n            <td>66</td>\n            <td>\n              Qualification for the{' '}\n              <a\n                href={\n                  'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage'\n                }\n                title={'2016–17 UEFA Europa League'}\n              >\n                Europa League group stage\n              </a>\n            </td>\n          </tr>\n          <tr>\n            <th>6</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Southampton_F.C.'}\n                title={'Southampton F.C.'}\n              >\n                Southampton\n              </a>\n            </td>\n            <td>38</td>\n            <td>18</td>\n            <td>9</td>\n            <td>11</td>\n            <td>59</td>\n            <td>41</td>\n            <td>+18</td>\n            <td>63</td>\n            <td>\n              Qualification for the{' '}\n              <a\n                href={\n                  'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage'\n                }\n                title={'2016–17 UEFA Europa League'}\n              >\n                Europa League group stage\n              </a>\n            </td>\n          </tr>\n          <tr>\n            <th>7</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/West_Ham_United_F.C.'}\n                title={'West Ham United F.C.'}\n              >\n                West Ham United\n              </a>\n            </td>\n            <td>38</td>\n            <td>16</td>\n            <td>14</td>\n            <td>8</td>\n            <td>65</td>\n            <td>51</td>\n            <td>+14</td>\n            <td>62</td>\n            <td>\n              Qualification for the{' '}\n              <a\n                href={\n                  'https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round'\n                }\n                title={'2016–17 UEFA Europa League'}\n              >\n                Europa League third qualifying round\n              </a>\n            </td>\n          </tr>\n          <tr>\n            <th>8</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Liverpool_F.C.'}\n                title={'Liverpool F.C.'}\n              >\n                Liverpool\n              </a>\n            </td>\n            <td>38</td>\n            <td>16</td>\n            <td>12</td>\n            <td>10</td>\n            <td>63</td>\n            <td>50</td>\n            <td>+13</td>\n            <td>60</td>\n            <td />\n          </tr>\n          <tr>\n            <th>9</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Stoke_City_F.C.'}\n                title={'Stoke City F.C.'}\n              >\n                Stoke City\n              </a>\n            </td>\n            <td>38</td>\n            <td>14</td>\n            <td>9</td>\n            <td>15</td>\n            <td>41</td>\n            <td>55</td>\n            <td>−14</td>\n            <td>51</td>\n            <td />\n          </tr>\n          <tr>\n            <th>10</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Chelsea_F.C.'}\n                title={'Chelsea F.C.'}\n              >\n                Chelsea\n              </a>\n            </td>\n            <td>38</td>\n            <td>12</td>\n            <td>14</td>\n            <td>12</td>\n            <td>59</td>\n            <td>53</td>\n            <td>+6</td>\n            <td>50</td>\n            <td />\n          </tr>\n          <tr>\n            <th>11</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Everton_F.C.'}\n                title={'Everton F.C.'}\n              >\n                Everton\n              </a>\n            </td>\n            <td>38</td>\n            <td>11</td>\n            <td>14</td>\n            <td>13</td>\n            <td>59</td>\n            <td>55</td>\n            <td>+4</td>\n            <td>47</td>\n            <td />\n          </tr>\n          <tr>\n            <th>12</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Swansea_City_A.F.C.'}\n                title={'Swansea City A.F.C.'}\n              >\n                Swansea City\n              </a>\n            </td>\n            <td>38</td>\n            <td>12</td>\n            <td>11</td>\n            <td>15</td>\n            <td>42</td>\n            <td>52</td>\n            <td>−10</td>\n            <td>47</td>\n            <td />\n          </tr>\n          <tr>\n            <th>13</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Watford_F.C.'}\n                title={'Watford F.C.'}\n              >\n                Watford\n              </a>\n            </td>\n            <td>38</td>\n            <td>12</td>\n            <td>9</td>\n            <td>17</td>\n            <td>40</td>\n            <td>50</td>\n            <td>−10</td>\n            <td>45</td>\n            <td />\n          </tr>\n          <tr>\n            <th>14</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C.'}\n                title={'West Bromwich Albion F.C.'}\n              >\n                West Bromwich Albion\n              </a>\n            </td>\n            <td>38</td>\n            <td>10</td>\n            <td>13</td>\n            <td>15</td>\n            <td>34</td>\n            <td>48</td>\n            <td>−14</td>\n            <td>43</td>\n            <td />\n          </tr>\n          <tr>\n            <th>15</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Crystal_Palace_F.C.'}\n                title={'Crystal Palace F.C.'}\n              >\n                Crystal Palace\n              </a>\n            </td>\n            <td>38</td>\n            <td>11</td>\n            <td>9</td>\n            <td>18</td>\n            <td>39</td>\n            <td>51</td>\n            <td>−12</td>\n            <td>42</td>\n            <td />\n          </tr>\n          <tr>\n            <th>16</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/A.F.C._Bournemouth'}\n                title={'A.F.C. Bournemouth'}\n              >\n                AFC Bournemouth\n              </a>\n            </td>\n            <td>38</td>\n            <td>11</td>\n            <td>9</td>\n            <td>18</td>\n            <td>45</td>\n            <td>67</td>\n            <td>−22</td>\n            <td>42</td>\n            <td />\n          </tr>\n          <tr>\n            <th>17</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Sunderland_A.F.C.'}\n                title={'Sunderland A.F.C.'}\n              >\n                Sunderland\n              </a>\n            </td>\n            <td>38</td>\n            <td>9</td>\n            <td>12</td>\n            <td>17</td>\n            <td>48</td>\n            <td>62</td>\n            <td>−14</td>\n            <td>39</td>\n            <td />\n          </tr>\n          <tr>\n            <th>18</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Newcastle_United_F.C.'}\n                title={'Newcastle United F.C.'}\n              >\n                Newcastle United\n              </a>{' '}\n              <strong>(R)</strong>\n            </td>\n            <td>38</td>\n            <td>9</td>\n            <td>10</td>\n            <td>19</td>\n            <td>44</td>\n            <td>65</td>\n            <td>−21</td>\n            <td>37</td>\n            <td>\n              Relegation to the{' '}\n              <a\n                href={\n                  'https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship'\n                }\n                title={'2016–17 Football League Championship'}\n              >\n                Football League Championship\n              </a>\n            </td>\n          </tr>\n          <tr>\n            <th>19</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Norwich_City_F.C.'}\n                title={'Norwich City F.C.'}\n              >\n                Norwich City\n              </a>{' '}\n              <strong>(R)</strong>\n            </td>\n            <td>38</td>\n            <td>9</td>\n            <td>7</td>\n            <td>22</td>\n            <td>39</td>\n            <td>67</td>\n            <td>−28</td>\n            <td>34</td>\n            <td>\n              Relegation to the{' '}\n              <a\n                href={\n                  'https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship'\n                }\n                title={'2016–17 Football League Championship'}\n              >\n                Football League Championship\n              </a>\n            </td>\n          </tr>\n          <tr>\n            <th>20</th>\n            <td>\n              <a\n                href={'https://en.wikipedia.org/wiki/Aston_Villa_F.C.'}\n                title={'Aston Villa F.C.'}\n              >\n                Aston Villa\n              </a>{' '}\n              <strong>(R)</strong>\n            </td>\n            <td>38</td>\n            <td>3</td>\n            <td>8</td>\n            <td>27</td>\n            <td>27</td>\n            <td>76</td>\n            <td>−49</td>\n            <td>17</td>\n            <td>\n              Relegation to the{' '}\n              <a\n                href={\n                  'https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship'\n                }\n                title={'2016–17 Football League Championship'}\n              >\n                Football League Championship\n              </a>\n            </td>\n          </tr>\n        </tbody>\n      </ui.Table>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3238,7 +3132,7 @@ export const Example002 = {
     official: { id: 'elements-table/colors/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Table bordered><tbody><tr><th className={"rb-is-link"}>{"Link th cell"}</th><td>{"Two"}</td><td className={"rb-is-link"}>{"Link td cell"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr className={"rb-is-link"}><th>{"Link row"}</th><td>{"Two"}</td><td>{"Three"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr><th className={"rb-is-primary"}>{"Primary th cell"}</th><td>{"Two"}</td><td className={"rb-is-primary"}>{"Primary td cell"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr className={"rb-is-primary"}><th>{"Primary row"}</th><td>{"Two"}</td><td>{"Three"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr><th className={"rb-is-info"}>{"Info th cell"}</th><td>{"Two"}</td><td className={"rb-is-info"}>{"Info td cell"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr className={"rb-is-info"}><th>{"Info row"}</th><td>{"Two"}</td><td>{"Three"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr><th className={"rb-is-success"}>{"Success th cell"}</th><td>{"Two"}</td><td className={"rb-is-success"}>{"Success td cell"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr className={"rb-is-success"}><th>{"Success row"}</th><td>{"Two"}</td><td>{"Three"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr><th className={"rb-is-warning"}>{"Warning th cell"}</th><td>{"Two"}</td><td className={"rb-is-warning"}>{"Warning td cell"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr className={"rb-is-warning"}><th>{"Warning row"}</th><td>{"Two"}</td><td>{"Three"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr><th className={"rb-is-danger"}>{"Danger th cell"}</th><td>{"Two"}</td><td className={"rb-is-danger"}>{"Danger td cell"}</td><td>{"Four"}</td><td>{"Five"}</td></tr><tr className={"rb-is-danger"}><th>{"Danger row"}</th><td>{"Two"}</td><td>{"Three"}</td><td>{"Four"}</td><td>{"Five"}</td></tr></tbody></ui.Table>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Table bordered>\n        <tbody>\n          <tr>\n            <th className={'rb-is-link'}>Link th cell</th>\n            <td>Two</td>\n            <td className={'rb-is-link'}>Link td cell</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr className={'rb-is-link'}>\n            <th>Link row</th>\n            <td>Two</td>\n            <td>Three</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr>\n            <th className={'rb-is-primary'}>Primary th cell</th>\n            <td>Two</td>\n            <td className={'rb-is-primary'}>Primary td cell</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr className={'rb-is-primary'}>\n            <th>Primary row</th>\n            <td>Two</td>\n            <td>Three</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr>\n            <th className={'rb-is-info'}>Info th cell</th>\n            <td>Two</td>\n            <td className={'rb-is-info'}>Info td cell</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr className={'rb-is-info'}>\n            <th>Info row</th>\n            <td>Two</td>\n            <td>Three</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr>\n            <th className={'rb-is-success'}>Success th cell</th>\n            <td>Two</td>\n            <td className={'rb-is-success'}>Success td cell</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr className={'rb-is-success'}>\n            <th>Success row</th>\n            <td>Two</td>\n            <td>Three</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr>\n            <th className={'rb-is-warning'}>Warning th cell</th>\n            <td>Two</td>\n            <td className={'rb-is-warning'}>Warning td cell</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr className={'rb-is-warning'}>\n            <th>Warning row</th>\n            <td>Two</td>\n            <td>Three</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr>\n            <th className={'rb-is-danger'}>Danger th cell</th>\n            <td>Two</td>\n            <td className={'rb-is-danger'}>Danger td cell</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n          <tr className={'rb-is-danger'}>\n            <th>Danger row</th>\n            <td>Two</td>\n            <td>Three</td>\n            <td>Four</td>\n            <td>Five</td>\n          </tr>\n        </tbody>\n      </ui.Table>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3253,7 +3147,7 @@ export const Example003 = {
     official: { id: 'elements-table/modifiers/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p>{"Add "}<strong>{"borders"}</strong>{" to all the cells."}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<code>{"table is-bordered"}</code>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Table bordered><thead><tr><th>{"One"}</th><th>{"Two"}</th></tr></thead><tbody><tr><td>{"Three"}</td><td>{"Four"}</td></tr></tbody></ui.Table>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p>\n            Add <strong>borders</strong> to all the cells.\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <code>{'table is-bordered'}</code>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Table bordered>\n            <thead>\n              <tr>\n                <th>One</th>\n                <th>Two</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Three</td>\n                <td>Four</td>\n              </tr>\n            </tbody>\n          </ui.Table>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3268,7 +3162,7 @@ export const Example004 = {
     official: { id: 'elements-table/modifiers/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p>{"Add "}<strong>{"stripes"}</strong>{" to the table."}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<code>{"table is-striped"}</code>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Table striped><thead><tr><th>{"One"}</th><th>{"Two"}</th></tr></thead><tbody><tr><td>{"Three"}</td><td>{"Four"}</td></tr><tr><td>{"Five"}</td><td>{"Six"}</td></tr><tr><td>{"Seven"}</td><td>{"Eight"}</td></tr><tr><td>{"Nine"}</td><td>{"Ten"}</td></tr><tr><td>{"Eleven"}</td><td>{"Twelve"}</td></tr></tbody></ui.Table>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p>\n            Add <strong>stripes</strong> to the table.\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <code>{'table is-striped'}</code>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Table striped>\n            <thead>\n              <tr>\n                <th>One</th>\n                <th>Two</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Three</td>\n                <td>Four</td>\n              </tr>\n              <tr>\n                <td>Five</td>\n                <td>Six</td>\n              </tr>\n              <tr>\n                <td>Seven</td>\n                <td>Eight</td>\n              </tr>\n              <tr>\n                <td>Nine</td>\n                <td>Ten</td>\n              </tr>\n              <tr>\n                <td>Eleven</td>\n                <td>Twelve</td>\n              </tr>\n            </tbody>\n          </ui.Table>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3283,7 +3177,7 @@ export const Example005 = {
     official: { id: 'elements-table/modifiers/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p>{"Make the cells "}<strong>{"narrower"}</strong>{"."}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<code>{"table is-narrow"}</code>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Table narrow><thead><tr><th>{"One"}</th><th>{"Two"}</th></tr></thead><tbody><tr><td>{"Three"}</td><td>{"Four"}</td></tr><tr><td>{"Five"}</td><td>{"Six"}</td></tr><tr><td>{"Seven"}</td><td>{"Eight"}</td></tr><tr><td>{"Nine"}</td><td>{"Ten"}</td></tr><tr><td>{"Eleven"}</td><td>{"Twelve"}</td></tr></tbody></ui.Table>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p>\n            Make the cells <strong>narrower</strong>.\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <code>{'table is-narrow'}</code>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Table narrow>\n            <thead>\n              <tr>\n                <th>One</th>\n                <th>Two</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Three</td>\n                <td>Four</td>\n              </tr>\n              <tr>\n                <td>Five</td>\n                <td>Six</td>\n              </tr>\n              <tr>\n                <td>Seven</td>\n                <td>Eight</td>\n              </tr>\n              <tr>\n                <td>Nine</td>\n                <td>Ten</td>\n              </tr>\n              <tr>\n                <td>Eleven</td>\n                <td>Twelve</td>\n              </tr>\n            </tbody>\n          </ui.Table>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3298,7 +3192,7 @@ export const Example006 = {
     official: { id: 'elements-table/modifiers/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p>{"You can add a "}<strong>{"hover effect"}</strong>{" on each row"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<code>{"table is-hoverable"}</code>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Table hoverable><thead><tr><th>{"One"}</th><th>{"Two"}</th></tr></thead><tbody><tr><td>{"Three"}</td><td>{"Four"}</td></tr><tr><td>{"Five"}</td><td>{"Six"}</td></tr><tr><td>{"Seven"}</td><td>{"Eight"}</td></tr><tr><td>{"Nine"}</td><td>{"Ten"}</td></tr><tr><td>{"Eleven"}</td><td>{"Twelve"}</td></tr></tbody></ui.Table>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p>\n            You can add a <strong>hover effect</strong> on each row\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <code>{'table is-hoverable'}</code>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Table hoverable>\n            <thead>\n              <tr>\n                <th>One</th>\n                <th>Two</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Three</td>\n                <td>Four</td>\n              </tr>\n              <tr>\n                <td>Five</td>\n                <td>Six</td>\n              </tr>\n              <tr>\n                <td>Seven</td>\n                <td>Eight</td>\n              </tr>\n              <tr>\n                <td>Nine</td>\n                <td>Ten</td>\n              </tr>\n              <tr>\n                <td>Eleven</td>\n                <td>Twelve</td>\n              </tr>\n            </tbody>\n          </ui.Table>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3313,7 +3207,7 @@ export const Example007 = {
     official: { id: 'elements-table/modifiers/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p>{"You can have a "}<strong>{"fullwidth"}</strong>{" table."}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<code>{"table is-fullwidth"}</code>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Table fullWidth><thead><tr><th>{"One"}</th><th>{"Two"}</th></tr></thead><tbody><tr><td>{"Three"}</td><td>{"Four"}</td></tr><tr><td>{"Five"}</td><td>{"Six"}</td></tr><tr><td>{"Seven"}</td><td>{"Eight"}</td></tr><tr><td>{"Nine"}</td><td>{"Ten"}</td></tr><tr><td>{"Eleven"}</td><td>{"Twelve"}</td></tr></tbody></ui.Table>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p>\n            You can have a <strong>fullwidth</strong> table.\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <code>{'table is-fullwidth'}</code>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Table fullWidth>\n            <thead>\n              <tr>\n                <th>One</th>\n                <th>Two</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Three</td>\n                <td>Four</td>\n              </tr>\n              <tr>\n                <td>Five</td>\n                <td>Six</td>\n              </tr>\n              <tr>\n                <td>Seven</td>\n                <td>Eight</td>\n              </tr>\n              <tr>\n                <td>Nine</td>\n                <td>Ten</td>\n              </tr>\n              <tr>\n                <td>Eleven</td>\n                <td>Twelve</td>\n              </tr>\n            </tbody>\n          </ui.Table>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3328,7 +3222,7 @@ export const Example008 = {
     official: { id: 'elements-table/modifiers/006' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p>{"You can "}<strong>{"combine"}</strong>{" all five modifiers."}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<code>{"table is-bordered is-striped is-narrow is-hoverable is-fullwidth"}</code>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Table bordered striped narrow hoverable fullWidth><thead><tr><th>{"One"}</th><th>{"Two"}</th></tr></thead><tbody><tr><td>{"Three"}</td><td>{"Four"}</td></tr><tr><td>{"Five"}</td><td>{"Six"}</td></tr><tr><td>{"Seven"}</td><td>{"Eight"}</td></tr><tr><td>{"Nine"}</td><td>{"Ten"}</td></tr><tr><td>{"Eleven"}</td><td>{"Twelve"}</td></tr></tbody></ui.Table>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p>\n            You can <strong>combine</strong> all five modifiers.\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <code>\n            {'table is-bordered is-striped is-narrow is-hoverable is-fullwidth'}\n          </code>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Table bordered striped narrow hoverable fullWidth>\n            <thead>\n              <tr>\n                <th>One</th>\n                <th>Two</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Three</td>\n                <td>Four</td>\n              </tr>\n              <tr>\n                <td>Five</td>\n                <td>Six</td>\n              </tr>\n              <tr>\n                <td>Seven</td>\n                <td>Eight</td>\n              </tr>\n              <tr>\n                <td>Nine</td>\n                <td>Ten</td>\n              </tr>\n              <tr>\n                <td>Eleven</td>\n                <td>Twelve</td>\n              </tr>\n            </tbody>\n          </ui.Table>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

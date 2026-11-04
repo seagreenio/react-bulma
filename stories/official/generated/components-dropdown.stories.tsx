@@ -781,56 +781,47 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Dropdown defaultOpen>
-        {'\n  '}
+        {' '}
         <ui.DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu'}
         >
-          {'\n      '}
-          <span>{'Dropdown button'}</span>
-          {'\n      '}
+          {' '}
+          <span>Dropdown button</span>{' '}
           <ui.Icon size={'small'}>
-            {'\n        '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
-            {'\n      '}
-          </ui.Icon>
-          {'\n    '}
-        </ui.DropdownTrigger>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
+          </ui.Icon>{' '}
+        </ui.DropdownTrigger>{' '}
         <ui.DropdownMenu id={'dropdown-menu'} role={'menu'}>
-          {'\n    '}
+          {' '}
           <ui.DropdownContent>
-            {'\n      '}
+            {' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' Dropdown item '}
-            </ui.DropdownItem>
-            {'\n      '}
+              {' '}
+              Dropdown item{' '}
+            </ui.DropdownItem>{' '}
             <ui.DropdownItem as={'a'}>
-              {' Other dropdown item '}
-            </ui.DropdownItem>
-            {'\n      '}
+              {' '}
+              Other dropdown item{' '}
+            </ui.DropdownItem>{' '}
             <ui.DropdownItem href={'#'} active as={'a'}>
-              {' Active dropdown item '}
-            </ui.DropdownItem>
-            {'\n      '}
+              {' '}
+              Active dropdown item{' '}
+            </ui.DropdownItem>{' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' Other dropdown item '}
-            </ui.DropdownItem>
-            {'\n      '}
-            <ui.DropdownDivider />
-            {'\n      '}
+              {' '}
+              Other dropdown item{' '}
+            </ui.DropdownItem>{' '}
+            <ui.DropdownDivider />{' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' With a divider '}
-            </ui.DropdownItem>
-            {'\n    '}
-          </ui.DropdownContent>
-          {'\n  '}
-        </ui.DropdownMenu>
-        {'\n'}
+              {' '}
+              With a divider{' '}
+            </ui.DropdownItem>{' '}
+          </ui.DropdownContent>{' '}
+        </ui.DropdownMenu>{' '}
       </ui.Dropdown>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -838,62 +829,45 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Dropdown defaultOpen>
-        {'\n  '}
+        {' '}
         <ui.DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu2'}
         >
-          {'\n      '}
-          <span>{'Content'}</span>
-          {'\n      '}
+          {' '}
+          <span>Content</span>{' '}
           <ui.Icon size={'small'}>
-            {'\n        '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
-            {'\n      '}
-          </ui.Icon>
-          {'\n    '}
-        </ui.DropdownTrigger>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
+          </ui.Icon>{' '}
+        </ui.DropdownTrigger>{' '}
         <ui.DropdownMenu id={'dropdown-menu2'} role={'menu'}>
-          {'\n    '}
+          {' '}
           <ui.DropdownContent>
-            {'\n      '}
+            {' '}
             <ui.DropdownItem as={'div'}>
-              {'\n        '}
+              {' '}
               <p>
-                {'\n          You can insert '}
-                <strong>{'any type of content'}</strong>
-                {' within the\n          dropdown menu.\n        '}
-              </p>
-              {'\n      '}
-            </ui.DropdownItem>
-            {'\n      '}
-            <ui.DropdownDivider />
-            {'\n      '}
+                You can insert <strong>any type of content</strong> within the
+                dropdown menu.
+              </p>{' '}
+            </ui.DropdownItem>{' '}
+            <ui.DropdownDivider />{' '}
             <ui.DropdownItem as={'div'}>
-              {'\n        '}
+              {' '}
               <p>
-                {'You simply need to use a '}
-                <code>{'<div>'}</code>
-                {' instead.'}
-              </p>
-              {'\n      '}
-            </ui.DropdownItem>
-            {'\n      '}
-            <ui.DropdownDivider />
-            {'\n      '}
+                You simply need to use a <code>{'<div>'}</code> instead.
+              </p>{' '}
+            </ui.DropdownItem>{' '}
+            <ui.DropdownDivider />{' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' This is a link '}
-            </ui.DropdownItem>
-            {'\n    '}
-          </ui.DropdownContent>
-          {'\n  '}
-        </ui.DropdownMenu>
-        {'\n'}
+              {' '}
+              This is a link{' '}
+            </ui.DropdownItem>{' '}
+          </ui.DropdownContent>{' '}
+        </ui.DropdownMenu>{' '}
       </ui.Dropdown>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -901,68 +875,59 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Dropdown>
-        {'\n  '}
+        {' '}
         <ui.DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu3'}
         >
-          {'\n      '}
-          <span>{'Click me'}</span>
-          {'\n      '}
+          {' '}
+          <span>Click me</span>{' '}
           <ui.Icon size={'small'}>
-            {'\n        '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
-            {'\n      '}
-          </ui.Icon>
-          {'\n    '}
-        </ui.DropdownTrigger>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
+          </ui.Icon>{' '}
+        </ui.DropdownTrigger>{' '}
         <ui.DropdownMenu id={'dropdown-menu3'} role={'menu'}>
-          {'\n    '}
+          {' '}
           <ui.DropdownContent>
-            {'\n      '}
+            {' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' Overview '}
-            </ui.DropdownItem>
-            {'\n      '}
+              {' '}
+              Overview{' '}
+            </ui.DropdownItem>{' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' Modifiers '}
-            </ui.DropdownItem>
-            {'\n      '}
+              {' '}
+              Modifiers{' '}
+            </ui.DropdownItem>{' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' Grid '}
-            </ui.DropdownItem>
-            {'\n      '}
+              {' '}
+              Grid{' '}
+            </ui.DropdownItem>{' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' Form '}
-            </ui.DropdownItem>
-            {'\n      '}
+              {' '}
+              Form{' '}
+            </ui.DropdownItem>{' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' Elements '}
-            </ui.DropdownItem>
-            {'\n      '}
+              {' '}
+              Elements{' '}
+            </ui.DropdownItem>{' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' Components '}
-            </ui.DropdownItem>
-            {'\n      '}
+              {' '}
+              Components{' '}
+            </ui.DropdownItem>{' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' Layout '}
-            </ui.DropdownItem>
-            {'\n      '}
-            <ui.DropdownDivider />
-            {'\n      '}
+              {' '}
+              Layout{' '}
+            </ui.DropdownItem>{' '}
+            <ui.DropdownDivider />{' '}
             <ui.DropdownItem href={'#'} as={'a'}>
-              {' More '}
-            </ui.DropdownItem>
-            {'\n    '}
-          </ui.DropdownContent>
-          {'\n  '}
-        </ui.DropdownMenu>
-        {'\n'}
+              {' '}
+              More{' '}
+            </ui.DropdownItem>{' '}
+          </ui.DropdownContent>{' '}
+        </ui.DropdownMenu>{' '}
       </ui.Dropdown>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -970,44 +935,33 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Dropdown hoverable>
-        {'\n  '}
+        {' '}
         <ui.DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu4'}
         >
-          {'\n      '}
-          <span>{'Hover me'}</span>
-          {'\n      '}
+          {' '}
+          <span>Hover me</span>{' '}
           <ui.Icon size={'small'}>
-            {'\n        '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
-            {'\n      '}
-          </ui.Icon>
-          {'\n    '}
-        </ui.DropdownTrigger>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
+          </ui.Icon>{' '}
+        </ui.DropdownTrigger>{' '}
         <ui.DropdownMenu id={'dropdown-menu4'} role={'menu'}>
-          {'\n    '}
+          {' '}
           <ui.DropdownContent>
-            {'\n      '}
+            {' '}
             <ui.DropdownItem as={'div'}>
-              {'\n        '}
+              {' '}
               <p>
-                {'\n          You can insert '}
-                <strong>{'any type of content'}</strong>
-                {' within the\n          dropdown menu.\n        '}
-              </p>
-              {'\n      '}
-            </ui.DropdownItem>
-            {'\n    '}
-          </ui.DropdownContent>
-          {'\n  '}
-        </ui.DropdownMenu>
-        {'\n'}
+                You can insert <strong>any type of content</strong> within the
+                dropdown menu.
+              </p>{' '}
+            </ui.DropdownItem>{' '}
+          </ui.DropdownContent>{' '}
+        </ui.DropdownMenu>{' '}
       </ui.Dropdown>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1015,44 +969,32 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Dropdown defaultOpen>
-        {'\n  '}
+        {' '}
         <ui.DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu5'}
         >
-          {'\n      '}
-          <span>{'Left aligned'}</span>
-          {'\n      '}
+          {' '}
+          <span>Left aligned</span>{' '}
           <ui.Icon size={'small'}>
-            {'\n        '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
-            {'\n      '}
-          </ui.Icon>
-          {'\n    '}
-        </ui.DropdownTrigger>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
+          </ui.Icon>{' '}
+        </ui.DropdownTrigger>{' '}
         <ui.DropdownMenu id={'dropdown-menu5'} role={'menu'}>
-          {'\n    '}
+          {' '}
           <ui.DropdownContent>
-            {'\n      '}
+            {' '}
             <ui.DropdownItem as={'div'}>
-              {'\n        '}
+              {' '}
               <p>
-                {'The dropdown is '}
-                <strong>{'left-aligned'}</strong>
-                {' by default.'}
-              </p>
-              {'\n      '}
-            </ui.DropdownItem>
-            {'\n    '}
-          </ui.DropdownContent>
-          {'\n  '}
-        </ui.DropdownMenu>
-        {'\n'}
+                The dropdown is <strong>left-aligned</strong> by default.
+              </p>{' '}
+            </ui.DropdownItem>{' '}
+          </ui.DropdownContent>{' '}
+        </ui.DropdownMenu>{' '}
       </ui.Dropdown>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1060,46 +1002,33 @@ function Example005Demo() {
 function Example006Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Dropdown right defaultOpen>
-        {'\n  '}
+        {' '}
         <ui.DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu6'}
         >
-          {'\n      '}
-          <span>{'Right aligned'}</span>
-          {'\n      '}
+          {' '}
+          <span>Right aligned</span>{' '}
           <ui.Icon size={'small'}>
-            {'\n        '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
-            {'\n      '}
-          </ui.Icon>
-          {'\n    '}
-        </ui.DropdownTrigger>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
+          </ui.Icon>{' '}
+        </ui.DropdownTrigger>{' '}
         <ui.DropdownMenu id={'dropdown-menu6'} role={'menu'}>
-          {'\n    '}
+          {' '}
           <ui.DropdownContent>
-            {'\n      '}
+            {' '}
             <ui.DropdownItem as={'div'}>
-              {'\n        '}
+              {' '}
               <p>
-                {'\n          Add the '}
-                <code>{'is-right'}</code>
-                {' modifier for a\n          '}
-                <strong>{'right-aligned'}</strong>
-                {' dropdown.\n        '}
-              </p>
-              {'\n      '}
-            </ui.DropdownItem>
-            {'\n    '}
-          </ui.DropdownContent>
-          {'\n  '}
-        </ui.DropdownMenu>
-        {'\n'}
+                Add the <code>{'is-right'}</code> modifier for a{' '}
+                <strong>right-aligned</strong> dropdown.
+              </p>{' '}
+            </ui.DropdownItem>{' '}
+          </ui.DropdownContent>{' '}
+        </ui.DropdownMenu>{' '}
       </ui.Dropdown>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1107,46 +1036,33 @@ function Example006Demo() {
 function Example007Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Dropdown up>
-        {'\n  '}
+        {' '}
         <ui.DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu7'}
         >
-          {'\n      '}
-          <span>{'Dropup button'}</span>
-          {'\n      '}
+          {' '}
+          <span>Dropup button</span>{' '}
           <ui.Icon size={'small'}>
-            {'\n        '}
-            <i aria-hidden={'true'} className={'fas fa-angle-up'} />
-            {'\n      '}
-          </ui.Icon>
-          {'\n    '}
-        </ui.DropdownTrigger>
-        {'\n  '}
+            {' '}
+            <i aria-hidden={'true'} className={'fas fa-angle-up'} />{' '}
+          </ui.Icon>{' '}
+        </ui.DropdownTrigger>{' '}
         <ui.DropdownMenu id={'dropdown-menu7'} role={'menu'}>
-          {'\n    '}
+          {' '}
           <ui.DropdownContent>
-            {'\n      '}
+            {' '}
             <ui.DropdownItem as={'div'}>
-              {'\n        '}
+              {' '}
               <p>
-                {'\n          You can add the '}
-                <code>{'is-up'}</code>
-                {
-                  ' modifier to have a dropdown menu\n          that appears above the dropdown button.\n        '
-                }
-              </p>
-              {'\n      '}
-            </ui.DropdownItem>
-            {'\n    '}
-          </ui.DropdownContent>
-          {'\n  '}
-        </ui.DropdownMenu>
-        {'\n'}
+                You can add the <code>{'is-up'}</code> modifier to have a
+                dropdown menu that appears above the dropdown button.
+              </p>{' '}
+            </ui.DropdownItem>{' '}
+          </ui.DropdownContent>{' '}
+        </ui.DropdownMenu>{' '}
       </ui.Dropdown>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1157,7 +1073,7 @@ export const Example001 = {
     official: { id: 'components-dropdown/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Dropdown defaultOpen>{"\\n  "}<ui.DropdownTrigger aria-haspopup={"true"} aria-controls={"dropdown-menu"}>{"\\n      "}<span>{"Dropdown button"}</span>{"\\n      "}<ui.Icon size={"small"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-down"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.DropdownTrigger>{"\\n  "}<ui.DropdownMenu id={"dropdown-menu"} role={"menu"}>{"\\n    "}<ui.DropdownContent>{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" Dropdown item "}</ui.DropdownItem>{"\\n      "}<ui.DropdownItem as={"a"}>{" Other dropdown item "}</ui.DropdownItem>{"\\n      "}<ui.DropdownItem href={"#"} active as={"a"}>{" Active dropdown item "}</ui.DropdownItem>{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" Other dropdown item "}</ui.DropdownItem>{"\\n      "}<ui.DropdownDivider />{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" With a divider "}</ui.DropdownItem>{"\\n    "}</ui.DropdownContent>{"\\n  "}</ui.DropdownMenu>{"\\n"}</ui.Dropdown>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Dropdown defaultOpen>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu'}\n        >\n          {' '}\n          <span>Dropdown button</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Dropdown item{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem as={'a'}>\n              {' '}\n              Other dropdown item{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} active as={'a'}>\n              {' '}\n              Active dropdown item{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Other dropdown item{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownDivider />{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              With a divider{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1172,7 +1088,7 @@ export const Example002 = {
     official: { id: 'components-dropdown/dropdown-content/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Dropdown defaultOpen>{"\\n  "}<ui.DropdownTrigger aria-haspopup={"true"} aria-controls={"dropdown-menu2"}>{"\\n      "}<span>{"Content"}</span>{"\\n      "}<ui.Icon size={"small"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-down"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.DropdownTrigger>{"\\n  "}<ui.DropdownMenu id={"dropdown-menu2"} role={"menu"}>{"\\n    "}<ui.DropdownContent>{"\\n      "}<ui.DropdownItem as={"div"}>{"\\n        "}<p>{"\\n          You can insert "}<strong>{"any type of content"}</strong>{" within the\\n          dropdown menu.\\n        "}</p>{"\\n      "}</ui.DropdownItem>{"\\n      "}<ui.DropdownDivider />{"\\n      "}<ui.DropdownItem as={"div"}>{"\\n        "}<p>{"You simply need to use a "}<code>{"<div>"}</code>{" instead."}</p>{"\\n      "}</ui.DropdownItem>{"\\n      "}<ui.DropdownDivider />{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" This is a link "}</ui.DropdownItem>{"\\n    "}</ui.DropdownContent>{"\\n  "}</ui.DropdownMenu>{"\\n"}</ui.Dropdown>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Dropdown defaultOpen>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu2'}\n        >\n          {' '}\n          <span>Content</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu2'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                You can insert <strong>any type of content</strong> within the\n                dropdown menu.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownDivider />{' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                You simply need to use a <code>{'<div>'}</code> instead.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownDivider />{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              This is a link{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1187,7 +1103,7 @@ export const Example003 = {
     official: { id: 'components-dropdown/hoverable-or-toggable/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Dropdown>{"\\n  "}<ui.DropdownTrigger aria-haspopup={"true"} aria-controls={"dropdown-menu3"}>{"\\n      "}<span>{"Click me"}</span>{"\\n      "}<ui.Icon size={"small"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-down"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.DropdownTrigger>{"\\n  "}<ui.DropdownMenu id={"dropdown-menu3"} role={"menu"}>{"\\n    "}<ui.DropdownContent>{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" Overview "}</ui.DropdownItem>{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" Modifiers "}</ui.DropdownItem>{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" Grid "}</ui.DropdownItem>{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" Form "}</ui.DropdownItem>{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" Elements "}</ui.DropdownItem>{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" Components "}</ui.DropdownItem>{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" Layout "}</ui.DropdownItem>{"\\n      "}<ui.DropdownDivider />{"\\n      "}<ui.DropdownItem href={"#"} as={"a"}>{" More "}</ui.DropdownItem>{"\\n    "}</ui.DropdownContent>{"\\n  "}</ui.DropdownMenu>{"\\n"}</ui.Dropdown>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Dropdown>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu3'}\n        >\n          {' '}\n          <span>Click me</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu3'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Overview{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Modifiers{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Grid{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Form{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Elements{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Components{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Layout{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownDivider />{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              More{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1202,7 +1118,7 @@ export const Example004 = {
     official: { id: 'components-dropdown/hoverable-or-toggable/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Dropdown hoverable>{"\\n  "}<ui.DropdownTrigger aria-haspopup={"true"} aria-controls={"dropdown-menu4"}>{"\\n      "}<span>{"Hover me"}</span>{"\\n      "}<ui.Icon size={"small"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-down"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.DropdownTrigger>{"\\n  "}<ui.DropdownMenu id={"dropdown-menu4"} role={"menu"}>{"\\n    "}<ui.DropdownContent>{"\\n      "}<ui.DropdownItem as={"div"}>{"\\n        "}<p>{"\\n          You can insert "}<strong>{"any type of content"}</strong>{" within the\\n          dropdown menu.\\n        "}</p>{"\\n      "}</ui.DropdownItem>{"\\n    "}</ui.DropdownContent>{"\\n  "}</ui.DropdownMenu>{"\\n"}</ui.Dropdown>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Dropdown hoverable>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu4'}\n        >\n          {' '}\n          <span>Hover me</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu4'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                You can insert <strong>any type of content</strong> within the\n                dropdown menu.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1217,7 +1133,7 @@ export const Example005 = {
     official: { id: 'components-dropdown/right-aligned/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Dropdown defaultOpen>{"\\n  "}<ui.DropdownTrigger aria-haspopup={"true"} aria-controls={"dropdown-menu5"}>{"\\n      "}<span>{"Left aligned"}</span>{"\\n      "}<ui.Icon size={"small"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-down"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.DropdownTrigger>{"\\n  "}<ui.DropdownMenu id={"dropdown-menu5"} role={"menu"}>{"\\n    "}<ui.DropdownContent>{"\\n      "}<ui.DropdownItem as={"div"}>{"\\n        "}<p>{"The dropdown is "}<strong>{"left-aligned"}</strong>{" by default."}</p>{"\\n      "}</ui.DropdownItem>{"\\n    "}</ui.DropdownContent>{"\\n  "}</ui.DropdownMenu>{"\\n"}</ui.Dropdown>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Dropdown defaultOpen>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu5'}\n        >\n          {' '}\n          <span>Left aligned</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu5'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                The dropdown is <strong>left-aligned</strong> by default.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1232,7 +1148,7 @@ export const Example006 = {
     official: { id: 'components-dropdown/right-aligned/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Dropdown right defaultOpen>{"\\n  "}<ui.DropdownTrigger aria-haspopup={"true"} aria-controls={"dropdown-menu6"}>{"\\n      "}<span>{"Right aligned"}</span>{"\\n      "}<ui.Icon size={"small"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-down"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.DropdownTrigger>{"\\n  "}<ui.DropdownMenu id={"dropdown-menu6"} role={"menu"}>{"\\n    "}<ui.DropdownContent>{"\\n      "}<ui.DropdownItem as={"div"}>{"\\n        "}<p>{"\\n          Add the "}<code>{"is-right"}</code>{" modifier for a\\n          "}<strong>{"right-aligned"}</strong>{" dropdown.\\n        "}</p>{"\\n      "}</ui.DropdownItem>{"\\n    "}</ui.DropdownContent>{"\\n  "}</ui.DropdownMenu>{"\\n"}</ui.Dropdown>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Dropdown right defaultOpen>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu6'}\n        >\n          {' '}\n          <span>Right aligned</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu6'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                Add the <code>{'is-right'}</code> modifier for a{' '}\n                <strong>right-aligned</strong> dropdown.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1247,7 +1163,7 @@ export const Example007 = {
     official: { id: 'components-dropdown/dropup/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Dropdown up>{"\\n  "}<ui.DropdownTrigger aria-haspopup={"true"} aria-controls={"dropdown-menu7"}>{"\\n      "}<span>{"Dropup button"}</span>{"\\n      "}<ui.Icon size={"small"}>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-up"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.DropdownTrigger>{"\\n  "}<ui.DropdownMenu id={"dropdown-menu7"} role={"menu"}>{"\\n    "}<ui.DropdownContent>{"\\n      "}<ui.DropdownItem as={"div"}>{"\\n        "}<p>{"\\n          You can add the "}<code>{"is-up"}</code>{" modifier to have a dropdown menu\\n          that appears above the dropdown button.\\n        "}</p>{"\\n      "}</ui.DropdownItem>{"\\n    "}</ui.DropdownContent>{"\\n  "}</ui.DropdownMenu>{"\\n"}</ui.Dropdown>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Dropdown up>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu7'}\n        >\n          {' '}\n          <span>Dropup button</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-up'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu7'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                You can add the <code>{'is-up'}</code> modifier to have a\n                dropdown menu that appears above the dropdown button.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

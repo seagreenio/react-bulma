@@ -350,9 +350,7 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Delete />
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -360,15 +358,8 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
-      <ui.Delete size={'small'} />
-      {'\n'}
-      <ui.Delete />
-      {'\n'}
-      <ui.Delete size={'medium'} />
-      {'\n'}
+      <ui.Delete size={'small'} /> <ui.Delete /> <ui.Delete size={'medium'} />{' '}
       <ui.Delete size={'large'} />
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -378,45 +369,40 @@ function Example003Demo() {
   const [visible2, setVisible2] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Block>
-        {'\n  '}
+        {' '}
         <ui.Tag color={'success'}>
-          {'\n    Hello World\n    '}
-          <ui.Delete size={'small'} />
-          {'\n  '}
-        </ui.Tag>
-        {'\n'}
-      </ui.Block>
-      {'\n\n'}
+          {' '}
+          Hello World <ui.Delete size={'small'} />{' '}
+        </ui.Tag>{' '}
+      </ui.Block>{' '}
       {visible1 && (
         <ui.Notification color={'danger'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit\n  amet, consectetur adipiscing elit\n'
-          }
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit lorem ipsum dolor sit amet,
+          consectetur adipiscing elit{' '}
         </ui.Notification>
-      )}
-      {'\n\n'}
+      )}{' '}
       {visible2 && (
         <ui.Message color={'info'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    Info\n    '}
-            <ui.Delete onClick={() => setVisible2(false)} />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            {' '}
+            Info <ui.Delete onClick={() => setVisible2(false)} />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus\n    mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit\n    amet fringilla. Nullam gravida purus diam, et dictum felis venenatis\n    efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu\n    et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna\n    a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-            }
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque risus mi, tempus quis placerat ut, porta nec nulla.
+            Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
+            diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus,
+            in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
+            tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui
+            urna, vehicula et sem eget, facilisis sodales sem.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -427,7 +413,7 @@ export const Example001 = {
     official: { id: 'elements-delete/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Delete />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Delete />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -442,7 +428,7 @@ export const Example002 = {
     official: { id: 'elements-delete/sizes/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Delete size={"small"} />{"\\n"}<ui.Delete />{"\\n"}<ui.Delete size={"medium"} />{"\\n"}<ui.Delete size={"large"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Delete size={'small'} /> <ui.Delete /> <ui.Delete size={'medium'} />{' '}\n      <ui.Delete size={'large'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -457,7 +443,7 @@ export const Example003 = {
     official: { id: 'elements-delete/combinations/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true);\n  const [visible2, setVisible2] = useState(true);\n  return (<>{"\\n        \\n          \\n"}<ui.Block>{"\\n  "}<ui.Tag color={"success"}>{"\\n    Hello World\\n    "}<ui.Delete size={"small"} />{"\\n  "}</ui.Tag>{"\\n"}</ui.Block>{"\\n\\n"}{visible1 && (<ui.Notification color={"danger"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit\\n  amet, consectetur adipiscing elit\\n"}</ui.Notification>)}{"\\n\\n"}{visible2 && (<ui.Message color={"info"}>{"\\n  "}<ui.MessageHeader>{"\\n    Info\\n    "}<ui.Delete onClick={() => setVisible2(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus\\n    mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit\\n    amet fringilla. Nullam gravida purus diam, et dictum felis venenatis\\n    efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu\\n    et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna\\n    a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true)\n  const [visible2, setVisible2] = useState(true)\n  return (\n    <>\n      <ui.Block>\n        {' '}\n        <ui.Tag color={'success'}>\n          {' '}\n          Hello World <ui.Delete size={'small'} />{' '}\n        </ui.Tag>{' '}\n      </ui.Block>{' '}\n      {visible1 && (\n        <ui.Notification color={'danger'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Lorem ipsum dolor sit\n          amet, consectetur adipiscing elit lorem ipsum dolor sit amet,\n          consectetur adipiscing elit{' '}\n        </ui.Notification>\n      )}{' '}\n      {visible2 && (\n        <ui.Message color={'info'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            Info <ui.Delete onClick={() => setVisible2(false)} />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n            Pellentesque risus mi, tempus quis placerat ut, porta nec nulla.\n            Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n            diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus,\n            in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,\n            tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui\n            urna, vehicula et sem eget, facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

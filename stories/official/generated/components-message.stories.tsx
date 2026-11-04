@@ -1322,40 +1322,30 @@ function Example001Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Hello World'}</p>
-            {'\n    '}
+            {' '}
+            <p>Hello World</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur. Aenean ac\n    '}
-            <em>{'eleifend lacus'}</em>
-            {
-              ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-            }
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
+            arcu et sollicitudin porttitor, tortor urna tempor ligula, id
+            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+            facilisis sodales sem.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1364,40 +1354,30 @@ function Example002Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message color={'dark'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Dark'}</p>
-            {'\n    '}
+            {' '}
+            <p>Dark</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur. Aenean ac\n    '}
-            <em>{'eleifend lacus'}</em>
-            {
-              ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-            }
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
+            arcu et sollicitudin porttitor, tortor urna tempor ligula, id
+            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+            facilisis sodales sem.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1406,40 +1386,30 @@ function Example003Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message color={'link'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Link'}</p>
-            {'\n    '}
+            {' '}
+            <p>Link</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur. Aenean ac\n    '}
-            <em>{'eleifend lacus'}</em>
-            {
-              ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-            }
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
+            arcu et sollicitudin porttitor, tortor urna tempor ligula, id
+            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+            facilisis sodales sem.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1448,40 +1418,30 @@ function Example004Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message color={'primary'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Primary'}</p>
-            {'\n    '}
+            {' '}
+            <p>Primary</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur. Aenean ac\n    '}
-            <em>{'eleifend lacus'}</em>
-            {
-              ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-            }
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
+            arcu et sollicitudin porttitor, tortor urna tempor ligula, id
+            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+            facilisis sodales sem.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1490,40 +1450,30 @@ function Example005Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message color={'info'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Info'}</p>
-            {'\n    '}
+            {' '}
+            <p>Info</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur. Aenean ac\n    '}
-            <em>{'eleifend lacus'}</em>
-            {
-              ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-            }
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
+            arcu et sollicitudin porttitor, tortor urna tempor ligula, id
+            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+            facilisis sodales sem.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1532,40 +1482,30 @@ function Example006Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message color={'success'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Success'}</p>
-            {'\n    '}
+            {' '}
+            <p>Success</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur. Aenean ac\n    '}
-            <em>{'eleifend lacus'}</em>
-            {
-              ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-            }
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
+            arcu et sollicitudin porttitor, tortor urna tempor ligula, id
+            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+            facilisis sodales sem.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1574,40 +1514,30 @@ function Example007Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message color={'warning'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Warning'}</p>
-            {'\n    '}
+            {' '}
+            <p>Warning</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur. Aenean ac\n    '}
-            <em>{'eleifend lacus'}</em>
-            {
-              ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-            }
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
+            arcu et sollicitudin porttitor, tortor urna tempor ligula, id
+            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+            facilisis sodales sem.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1616,40 +1546,30 @@ function Example008Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message color={'danger'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Danger'}</p>
-            {'\n    '}
+            {' '}
+            <p>Danger</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur. Aenean ac\n    '}
-            <em>{'eleifend lacus'}</em>
-            {
-              ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-            }
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
+            arcu et sollicitudin porttitor, tortor urna tempor ligula, id
+            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+            facilisis sodales sem.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1657,27 +1577,20 @@ function Example008Demo() {
 function Example009Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Message>
-        {'\n  '}
+        {' '}
         <ui.MessageBody>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur. Aenean ac\n    '}
-          <em>{'eleifend lacus'}</em>
-          {
-            ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-          }
-        </ui.MessageBody>
-        {'\n'}
+          {' '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}
+          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+          sem.{' '}
+        </ui.MessageBody>{' '}
       </ui.Message>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1685,27 +1598,20 @@ function Example009Demo() {
 function Example010Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Message color={'dark'}>
-        {'\n  '}
+        {' '}
         <ui.MessageBody>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur. Aenean ac\n    '}
-          <em>{'eleifend lacus'}</em>
-          {
-            ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-          }
-        </ui.MessageBody>
-        {'\n'}
+          {' '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}
+          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+          sem.{' '}
+        </ui.MessageBody>{' '}
       </ui.Message>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1713,27 +1619,20 @@ function Example010Demo() {
 function Example011Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Message color={'link'}>
-        {'\n  '}
+        {' '}
         <ui.MessageBody>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur. Aenean ac\n    '}
-          <em>{'eleifend lacus'}</em>
-          {
-            ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-          }
-        </ui.MessageBody>
-        {'\n'}
+          {' '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}
+          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+          sem.{' '}
+        </ui.MessageBody>{' '}
       </ui.Message>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1741,27 +1640,20 @@ function Example011Demo() {
 function Example012Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Message color={'primary'}>
-        {'\n  '}
+        {' '}
         <ui.MessageBody>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur. Aenean ac\n    '}
-          <em>{'eleifend lacus'}</em>
-          {
-            ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-          }
-        </ui.MessageBody>
-        {'\n'}
+          {' '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}
+          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+          sem.{' '}
+        </ui.MessageBody>{' '}
       </ui.Message>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1769,27 +1661,20 @@ function Example012Demo() {
 function Example013Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Message color={'info'}>
-        {'\n  '}
+        {' '}
         <ui.MessageBody>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur. Aenean ac\n    '}
-          <em>{'eleifend lacus'}</em>
-          {
-            ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-          }
-        </ui.MessageBody>
-        {'\n'}
+          {' '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}
+          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+          sem.{' '}
+        </ui.MessageBody>{' '}
       </ui.Message>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1797,27 +1682,20 @@ function Example013Demo() {
 function Example014Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Message color={'success'}>
-        {'\n  '}
+        {' '}
         <ui.MessageBody>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur. Aenean ac\n    '}
-          <em>{'eleifend lacus'}</em>
-          {
-            ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-          }
-        </ui.MessageBody>
-        {'\n'}
+          {' '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}
+          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+          sem.{' '}
+        </ui.MessageBody>{' '}
       </ui.Message>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1825,27 +1703,20 @@ function Example014Demo() {
 function Example015Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Message color={'warning'}>
-        {'\n  '}
+        {' '}
         <ui.MessageBody>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur. Aenean ac\n    '}
-          <em>{'eleifend lacus'}</em>
-          {
-            ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-          }
-        </ui.MessageBody>
-        {'\n'}
+          {' '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}
+          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+          sem.{' '}
+        </ui.MessageBody>{' '}
       </ui.Message>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1853,27 +1724,20 @@ function Example015Demo() {
 function Example016Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Message color={'danger'}>
-        {'\n  '}
+        {' '}
         <ui.MessageBody>
-          {
-            '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta nec\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n    diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur. Aenean ac\n    '}
-          <em>{'eleifend lacus'}</em>
-          {
-            ', in mollis lectus. Donec sodales, arcu et\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\n  '
-          }
-        </ui.MessageBody>
-        {'\n'}
+          {' '}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}
+          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+          sem.{' '}
+        </ui.MessageBody>{' '}
       </ui.Message>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1882,39 +1746,28 @@ function Example017Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message size={'small'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Small message'}</p>
-            {'\n    '}
+            {' '}
+            <p>Small message</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               size={'small'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla.Nullam gravida purus diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur.\n    Aenean ac '}
-            <em>{'eleifend lacus'}</em>
-            {', in mollis lectus.\n  '}
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla.Nullam gravida purus diam, et dictum{' '}
+            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,
+            in mollis lectus.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1923,38 +1776,27 @@ function Example018Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Normal message'}</p>
-            {'\n    '}
+            {' '}
+            <p>Normal message</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla.Nullam gravida purus diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur.\n    Aenean ac '}
-            <em>{'eleifend lacus'}</em>
-            {', in mollis lectus.\n  '}
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla.Nullam gravida purus diam, et dictum{' '}
+            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,
+            in mollis lectus.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1963,39 +1805,28 @@ function Example019Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message size={'medium'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Medium message'}</p>
-            {'\n    '}
+            {' '}
+            <p>Medium message</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               size={'medium'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla.Nullam gravida purus diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur.\n    Aenean ac '}
-            <em>{'eleifend lacus'}</em>
-            {', in mollis lectus.\n  '}
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla.Nullam gravida purus diam, et dictum{' '}
+            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,
+            in mollis lectus.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2004,39 +1835,28 @@ function Example020Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Message size={'large'}>
-          {'\n  '}
+          {' '}
           <ui.MessageHeader>
-            {'\n    '}
-            <p>{'Large message'}</p>
-            {'\n    '}
+            {' '}
+            <p>Large message</p>{' '}
             <ui.Delete
               aria-label={'delete'}
               size={'large'}
               onClick={() => setVisible1(false)}
-            />
-            {'\n  '}
-          </ui.MessageHeader>
-          {'\n  '}
+            />{' '}
+          </ui.MessageHeader>{' '}
           <ui.MessageBody>
-            {
-              '\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    '
-            }
-            <strong>{'Pellentesque risus mi'}</strong>
-            {
-              ', tempus quis placerat ut, porta nec\n    nulla.Nullam gravida purus diam, et dictum '
-            }
-            <a>{'felis venenatis'}</a>
-            {' efficitur.\n    Aenean ac '}
-            <em>{'eleifend lacus'}</em>
-            {', in mollis lectus.\n  '}
-          </ui.MessageBody>
-          {'\n'}
+            {' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
+            porta nec nulla.Nullam gravida purus diam, et dictum{' '}
+            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,
+            in mollis lectus.{' '}
+          </ui.MessageBody>{' '}
         </ui.Message>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2047,7 +1867,7 @@ export const Example001 = {
     official: { id: 'components-message/basic/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Hello World"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Hello World</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2062,7 +1882,7 @@ export const Example002 = {
     official: { id: 'components-message/colors/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message color={"dark"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Dark"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'dark'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Dark</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2077,7 +1897,7 @@ export const Example003 = {
     official: { id: 'components-message/colors/002' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message color={"link"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Link"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'link'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Link</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2092,7 +1912,7 @@ export const Example004 = {
     official: { id: 'components-message/colors/003' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message color={"primary"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Primary"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'primary'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Primary</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2107,7 +1927,7 @@ export const Example005 = {
     official: { id: 'components-message/colors/004' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message color={"info"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Info"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'info'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Info</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2122,7 +1942,7 @@ export const Example006 = {
     official: { id: 'components-message/colors/005' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message color={"success"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Success"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'success'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Success</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2137,7 +1957,7 @@ export const Example007 = {
     official: { id: 'components-message/colors/006' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message color={"warning"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Warning"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'warning'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Warning</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2152,7 +1972,7 @@ export const Example008 = {
     official: { id: 'components-message/colors/007' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message color={"danger"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Danger"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'danger'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Danger</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2167,7 +1987,7 @@ export const Example009 = {
     official: { id: 'components-message/message-body-only/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Message>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Message>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2182,7 +2002,7 @@ export const Example010 = {
     official: { id: 'components-message/message-body-only/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Message color={"dark"}>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Message color={'dark'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2197,7 +2017,7 @@ export const Example011 = {
     official: { id: 'components-message/message-body-only/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Message color={"link"}>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Message color={'link'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2212,7 +2032,7 @@ export const Example012 = {
     official: { id: 'components-message/message-body-only/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Message color={"primary"}>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Message color={'primary'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2227,7 +2047,7 @@ export const Example013 = {
     official: { id: 'components-message/message-body-only/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Message color={"info"}>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Message color={'info'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2242,7 +2062,7 @@ export const Example014 = {
     official: { id: 'components-message/message-body-only/006' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Message color={"success"}>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Message color={'success'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2257,7 +2077,7 @@ export const Example015 = {
     official: { id: 'components-message/message-body-only/007' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Message color={"warning"}>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Message color={'warning'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2272,7 +2092,7 @@ export const Example016 = {
     official: { id: 'components-message/message-body-only/008' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Message color={"danger"}>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n    diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur. Aenean ac\\n    "}<em>{"eleifend lacus"}</em>{", in mollis lectus. Donec sodales, arcu et\\n    sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a\\n    neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <ui.Message color={'danger'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2287,7 +2107,7 @@ export const Example017 = {
     official: { id: 'components-message/sizes/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message size={"small"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Small message"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} size={"small"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla.Nullam gravida purus diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n    Aenean ac "}<em>{"eleifend lacus"}</em>{", in mollis lectus.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message size={'small'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Small message</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              size={'small'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2302,7 +2122,7 @@ export const Example018 = {
     official: { id: 'components-message/sizes/002' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Normal message"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla.Nullam gravida purus diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n    Aenean ac "}<em>{"eleifend lacus"}</em>{", in mollis lectus.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Normal message</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2317,7 +2137,7 @@ export const Example019 = {
     official: { id: 'components-message/sizes/003' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example019Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message size={"medium"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Medium message"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} size={"medium"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla.Nullam gravida purus diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n    Aenean ac "}<em>{"eleifend lacus"}</em>{", in mollis lectus.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example019Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message size={'medium'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Medium message</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              size={'medium'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2332,7 +2152,7 @@ export const Example020 = {
     official: { id: 'components-message/sizes/004' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example020Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Message size={"large"}>{"\\n  "}<ui.MessageHeader>{"\\n    "}<p>{"Large message"}</p>{"\\n    "}<ui.Delete aria-label={"delete"} size={"large"} onClick={() => setVisible1(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\n    "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n    nulla.Nullam gravida purus diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n    Aenean ac "}<em>{"eleifend lacus"}</em>{", in mollis lectus.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example020Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message size={'large'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Large message</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              size={'large'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

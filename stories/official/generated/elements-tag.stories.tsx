@@ -517,31 +517,24 @@ function Example001Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={4}>
-          {'By default, a '}
-          <strong>{'tag'}</strong>
-          {' is a 1.5rem high label.'}
-        </ui.Column>
-        {'\n  '}
+          By default, a <strong>tag</strong> is a 1.5rem high label.
+        </ui.Column>{' '}
         <ui.Column width={2}>
-          {'\n    '}
-          <ui.Tag>{' Tag label '}</ui.Tag>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <ui.Tag> Tag label </ui.Tag>{' '}
+        </ui.Column>{' '}
         <ui.Column width={6}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
                 {'\n<span class="tag"> Tag label </span>\n'}
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -551,75 +544,53 @@ function Example002Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={4}>
-          {'Like with buttons, there are '}
-          <strong>{'10 different colors'}</strong>
-          {' available.'}
-        </ui.Column>
-        {'\n  '}
+          Like with buttons, there are <strong>10 different colors</strong>{' '}
+          available.
+        </ui.Column>{' '}
         <ui.Column width={2}>
-          {'\n    '}
+          {' '}
           <ui.Field as={'p'}>
-            {'\n      '}
-            <ui.Tag color={'black'}>{' Black '}</ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+            {' '}
+            <ui.Tag color={'black'}> Black </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
-            <ui.Tag color={'dark'}>{' Dark '}</ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+            {' '}
+            <ui.Tag color={'dark'}> Dark </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
-            <ui.Tag light>{' Light '}</ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+            {' '}
+            <ui.Tag light> Light </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
-            <ui.Tag color={'white'}>{' White '}</ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+            {' '}
+            <ui.Tag color={'white'}> White </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
-            <ui.Tag color={'primary'}>{' Primary '}</ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+            {' '}
+            <ui.Tag color={'primary'}> Primary </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
-            <ui.Tag color={'link'}>{' Link '}</ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+            {' '}
+            <ui.Tag color={'link'}> Link </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
-            <ui.Tag color={'info'}>{' Info '}</ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+            {' '}
+            <ui.Tag color={'info'}> Info </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
-            <ui.Tag color={'success'}>{' Success '}</ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+            {' '}
+            <ui.Tag color={'success'}> Success </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
-            <ui.Tag color={'warning'}>{' Warning '}</ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
-          <ui.Tag color={'danger'}>{' Danger '}</ui.Tag>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <ui.Tag color={'warning'}> Warning </ui.Tag>{' '}
+          </ui.Field>{' '}
+          <ui.Tag color={'danger'}> Danger </ui.Tag>{' '}
+        </ui.Column>{' '}
         <ui.Column width={6}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -628,10 +599,8 @@ function Example002Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -641,67 +610,57 @@ function Example003Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={4}>
-          {'\n    '}
+          {' '}
           <p>
-            {'You can now choose the '}
-            <strong>{'light version'}</strong>
-            {' of a color.'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            You can now choose the <strong>light version</strong> of a color.
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column width={2}>
-          {'\n    '}
+          {' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'primary'} light>
-              {' Primary '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              Primary{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'link'} light>
-              {' Link '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              Link{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'info'} light>
-              {' Info '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              Info{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'success'} light>
-              {' Success '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              Success{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'warning'} light>
-              {' Warning '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              Warning{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Tag color={'danger'} light>
-            {' Danger '}
-          </ui.Tag>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            Danger{' '}
+          </ui.Tag>{' '}
+        </ui.Column>{' '}
         <ui.Column width={6}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -710,10 +669,8 @@ function Example003Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -723,61 +680,47 @@ function Example004Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={4}>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {'The tag comes in '}
-              <strong>{'3 different'}</strong>
-              {' sizes.'}
-            </p>
-            {'\n      '}
+              The tag comes in <strong>3 different</strong> sizes.
+            </p>{' '}
             <p>
-              {'\n        While the default size is the '}
-              <strong>{'normal'}</strong>
-              {' one, the '}
-              <code>{'is-normal'}</code>
-              {
-                ' modifier exists in case\n        you need to reset the tag to its normal size.\n      '
-              }
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+              While the default size is the <strong>normal</strong> one, the{' '}
+              <code>{'is-normal'}</code> modifier exists in case you need to
+              reset the tag to its normal size.
+            </p>{' '}
+          </ui.Content>{' '}
+        </ui.Column>{' '}
         <ui.Column width={2}>
-          {'\n    '}
+          {' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'link'} size={'normal'}>
-              {' Normal '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              Normal{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'primary'} size={'medium'}>
-              {' Medium '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              Medium{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'info'} size={'large'}>
-              {' Large '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              Large{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
+        </ui.Column>{' '}
         <ui.Column width={6}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -786,10 +729,8 @@ function Example004Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -798,17 +739,10 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tags size={'medium'}>
-        {'\n  '}
-        <ui.Tag>{'All'}</ui.Tag>
-        {'\n  '}
-        <ui.Tag>{'Medium'}</ui.Tag>
-        {'\n  '}
-        <ui.Tag>{'Size'}</ui.Tag>
-        {'\n'}
+        {' '}
+        <ui.Tag>All</ui.Tag> <ui.Tag>Medium</ui.Tag> <ui.Tag>Size</ui.Tag>{' '}
       </ui.Tags>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -816,17 +750,10 @@ function Example005Demo() {
 function Example006Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tags size={'large'}>
-        {'\n  '}
-        <ui.Tag>{'All'}</ui.Tag>
-        {'\n  '}
-        <ui.Tag>{'Large'}</ui.Tag>
-        {'\n  '}
-        <ui.Tag>{'Size'}</ui.Tag>
-        {'\n'}
+        {' '}
+        <ui.Tag>All</ui.Tag> <ui.Tag>Large</ui.Tag> <ui.Tag>Size</ui.Tag>{' '}
       </ui.Tags>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -834,21 +761,12 @@ function Example006Demo() {
 function Example007Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Tags size={'medium'}>
-        {'\n  '}
-        <ui.Tag>{'Medium'}</ui.Tag>
-        {'\n  '}
-        <ui.Tag size={'normal'}>{'Normal'}</ui.Tag>
-        {'\n  '}
-        <ui.Tag>{'Medium'}</ui.Tag>
-        {'\n  '}
-        <ui.Tag size={'large'}>{'Large'}</ui.Tag>
-        {'\n  '}
-        <ui.Tag>{'Medium'}</ui.Tag>
-        {'\n'}
+        {' '}
+        <ui.Tag>Medium</ui.Tag> <ui.Tag size={'normal'}>Normal</ui.Tag>{' '}
+        <ui.Tag>Medium</ui.Tag> <ui.Tag size={'large'}>Large</ui.Tag>{' '}
+        <ui.Tag>Medium</ui.Tag>{' '}
       </ui.Tags>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -856,15 +774,10 @@ function Example007Demo() {
 function Example008Demo() {
   return (
     <>
-      {'\n        \n          \n'}
-      <ui.LinkTag>{'Hover me'}</ui.LinkTag>
-      {'\n'}
-      <ui.Tag as={'button'}>{'Hover me'}</ui.Tag>
-      {'\n'}
+      <ui.LinkTag>Hover me</ui.LinkTag> <ui.Tag as={'button'}>Hover me</ui.Tag>{' '}
       <ui.Tag className={'rb-is-hoverable'} as={'div'}>
-        {'Hover me'}
+        Hover me
       </ui.Tag>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -873,33 +786,26 @@ function Example009Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={4}>
-          {'\n    You can add the '}
-          <code>{'is-rounded'}</code>
-          {' modifier to make a '}
-          <strong>{'rounded'}</strong>
-          {' tag.\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          You can add the <code>{'is-rounded'}</code> modifier to make a{' '}
+          <strong>rounded</strong> tag.{' '}
+        </ui.Column>{' '}
         <ui.Column width={2}>
-          {'\n'}
-          <ui.Tag rounded>{'Rounded'}</ui.Tag>
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <ui.Tag rounded>Rounded</ui.Tag>{' '}
+        </ui.Column>{' '}
         <ui.Column width={6}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
                 {'\n<span class="tag is-rounded">Rounded</span>\n'}
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -909,33 +815,26 @@ function Example010Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={4}>
-          {'\n    You can add the '}
-          <code>{'is-delete'}</code>
-          {' modifier to turn the tag into a '}
-          <strong>{'delete button'}</strong>
-          {'.\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          You can add the <code>{'is-delete'}</code> modifier to turn the tag
+          into a <strong>delete button</strong>.{' '}
+        </ui.Column>{' '}
         <ui.Column width={2}>
-          {'\n'}
-          <ui.TagDelete as={'a'} />
-          {'\n'}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <ui.TagDelete as={'a'} />{' '}
+        </ui.Column>{' '}
         <ui.Column width={6}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
                 {'\n<a class="tag is-delete"></a>\n'}
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -945,39 +844,29 @@ function Example011Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={4}>
-          {'You can create '}
-          <strong>{'hoverable colored'}</strong>
-          {' tags.'}
-        </ui.Column>
-        {'\n  '}
+          You can create <strong>hoverable colored</strong> tags.
+        </ui.Column>{' '}
         <ui.Column width={2}>
-          {'\n    \n'}
-          <ui.LinkTag color={'link'}>{'Hover me'}</ui.LinkTag>
-          {'\n'}
+          {' '}
+          <ui.LinkTag color={'link'}>Hover me</ui.LinkTag>{' '}
           <ui.Tag color={'primary'} as={'button'}>
-            {'Hover me'}
-          </ui.Tag>
-          {'\n'}
+            Hover me
+          </ui.Tag>{' '}
           <ui.Tag color={'success'} className={'rb-is-hoverable'} as={'div'}>
-            {'Hover me'}
-          </ui.Tag>
-          {'\n'}
-          <ui.LinkTag color={'info'}>{'Hover me'}</ui.LinkTag>
-          {'\n'}
+            Hover me
+          </ui.Tag>{' '}
+          <ui.LinkTag color={'info'}>Hover me</ui.LinkTag>{' '}
           <ui.Tag color={'warning'} as={'button'}>
-            {'Hover me'}
-          </ui.Tag>
-          {'\n'}
+            Hover me
+          </ui.Tag>{' '}
           <ui.Tag color={'danger'} className={'rb-is-hoverable'} as={'div'}>
-            {'Hover me'}
-          </ui.Tag>
-          {'\n\n  '}
-        </ui.Column>
-        {'\n  '}
+            Hover me
+          </ui.Tag>{' '}
+        </ui.Column>{' '}
         <ui.Column width={6}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -986,10 +875,8 @@ function Example011Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -999,49 +886,36 @@ function Example012Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={4}>
-          {'You can append a '}
-          <strong>{'delete button'}</strong>
-          {'.'}
-        </ui.Column>
-        {'\n  '}
+          You can append a <strong>delete button</strong>.
+        </ui.Column>{' '}
         <ui.Column width={2}>
-          {'\n    '}
+          {' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'success'}>
-              {'\n        Bar\n        '}
-              <ui.Delete size={'small'} />
-              {'\n      '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              Bar <ui.Delete size={'small'} />{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'warning'} size={'medium'}>
-              {'\n        Hello\n        '}
-              <ui.Delete size={'small'} />
-              {'\n      '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+              {' '}
+              Hello <ui.Delete size={'small'} />{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
           <ui.Field as={'p'}>
-            {'\n      '}
+            {' '}
             <ui.Tag color={'danger'} size={'large'}>
-              {'\n        World\n        '}
-              <ui.Delete />
-              {'\n      '}
-            </ui.Tag>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              World <ui.Delete />{' '}
+            </ui.Tag>{' '}
+          </ui.Field>{' '}
+        </ui.Column>{' '}
         <ui.Column width={6}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1050,10 +924,8 @@ function Example012Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1063,39 +935,27 @@ function Example013Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {'You can now create a '}
-              <strong>{'list of tags'}</strong>
-              {' with the '}
-              <code>{'tags'}</code>
-              {' container.'}
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n    '}
+              You can now create a <strong>list of tags</strong> with the{' '}
+              <code>{'tags'}</code> container.
+            </p>{' '}
+          </ui.Content>{' '}
           <div className={'bd-example'}>
-            {'\n'}
+            {' '}
             <ui.Tags>
-              {'\n  '}
-              <ui.Tag>{'One'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Two'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Three'}</ui.Tag>
-              {'\n'}
-            </ui.Tags>
-            {'\n'}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              <ui.Tag>One</ui.Tag> <ui.Tag>Two</ui.Tag>{' '}
+              <ui.Tag>Three</ui.Tag>{' '}
+            </ui.Tags>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1104,10 +964,8 @@ function Example013Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1117,75 +975,35 @@ function Example014Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {'\n        If the list is '}
-              <strong>{'very long'}</strong>
-              {', it will automatically wrap on '}
-              <strong>{'multiple lines'}</strong>
-              {', while\n        keeping all tags '}
-              <strong>{'evenly spaced'}</strong>
-              {'.\n      '}
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n    '}
+              If the list is <strong>very long</strong>, it will automatically
+              wrap on <strong>multiple lines</strong>, while keeping all tags{' '}
+              <strong>evenly spaced</strong>.
+            </p>{' '}
+          </ui.Content>{' '}
           <div className={'bd-example'}>
-            {'\n'}
+            {' '}
             <ui.Tags>
-              {'\n  '}
-              <ui.Tag>{'One'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Two'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Three'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Four'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Five'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Six'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Seven'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Eight'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Nine'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Ten'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Eleven'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Twelve'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Thirteen'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Fourteen'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Fifteen'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Sixteen'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Seventeen'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Eighteen'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Nineteen'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag>{'Twenty'}</ui.Tag>
-              {'\n'}
-            </ui.Tags>
-            {'\n'}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              <ui.Tag>One</ui.Tag> <ui.Tag>Two</ui.Tag> <ui.Tag>Three</ui.Tag>{' '}
+              <ui.Tag>Four</ui.Tag> <ui.Tag>Five</ui.Tag> <ui.Tag>Six</ui.Tag>{' '}
+              <ui.Tag>Seven</ui.Tag> <ui.Tag>Eight</ui.Tag>{' '}
+              <ui.Tag>Nine</ui.Tag> <ui.Tag>Ten</ui.Tag> <ui.Tag>Eleven</ui.Tag>{' '}
+              <ui.Tag>Twelve</ui.Tag> <ui.Tag>Thirteen</ui.Tag>{' '}
+              <ui.Tag>Fourteen</ui.Tag> <ui.Tag>Fifteen</ui.Tag>{' '}
+              <ui.Tag>Sixteen</ui.Tag> <ui.Tag>Seventeen</ui.Tag>{' '}
+              <ui.Tag>Eighteen</ui.Tag> <ui.Tag>Nineteen</ui.Tag>{' '}
+              <ui.Tag>Twenty</ui.Tag>{' '}
+            </ui.Tags>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1194,10 +1012,8 @@ function Example014Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1207,37 +1023,27 @@ function Example015Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {'You can '}
-              <strong>{'attach tags together'}</strong>
-              {' with the '}
-              <code>{'has-addons'}</code>
-              {' modifier.'}
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n    '}
+              You can <strong>attach tags together</strong> with the{' '}
+              <code>{'has-addons'}</code> modifier.
+            </p>{' '}
+          </ui.Content>{' '}
           <div className={'bd-example'}>
-            {'\n'}
+            {' '}
             <ui.Tags addons>
-              {'\n  '}
-              <ui.Tag>{'Package'}</ui.Tag>
-              {'\n  '}
-              <ui.Tag color={'primary'}>{'Bulma'}</ui.Tag>
-              {'\n'}
-            </ui.Tags>
-            {'\n'}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              <ui.Tag>Package</ui.Tag>{' '}
+              <ui.Tag color={'primary'}>Bulma</ui.Tag>{' '}
+            </ui.Tags>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1246,10 +1052,8 @@ function Example015Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1259,37 +1063,27 @@ function Example016Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {'You can attach a '}
-              <strong>{'text'}</strong>
-              {' tag with a '}
-              <strong>{'delete'}</strong>
-              {' tag together.'}
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n    '}
+              You can attach a <strong>text</strong> tag with a{' '}
+              <strong>delete</strong> tag together.
+            </p>{' '}
+          </ui.Content>{' '}
           <div className={'bd-example'}>
-            {'\n'}
+            {' '}
             <ui.Tags addons>
-              {'\n  '}
-              <ui.Tag color={'danger'}>{'Alex Smith'}</ui.Tag>
-              {'\n  '}
-              <ui.TagDelete as={'a'} />
-              {'\n'}
-            </ui.Tags>
-            {'\n'}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+              {' '}
+              <ui.Tag color={'danger'}>Alex Smith</ui.Tag>{' '}
+              <ui.TagDelete as={'a'} />{' '}
+            </ui.Tags>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1298,10 +1092,8 @@ function Example016Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1311,75 +1103,51 @@ function Example017Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {'\n        If you want to attach '}
-              <code>{'tags'}</code>
-              {' containers '}
-              <strong>{'together'}</strong>
-              {', simply use the\n        '}
-              <code>{'field'}</code>
-              {' element with the '}
-              <code>{'is-grouped'}</code>
-              {' and '}
-              <code>{'is-grouped-multiline'}</code>
-              {' modifiers.\n      '}
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n    '}
+              If you want to attach <code>{'tags'}</code> containers{' '}
+              <strong>together</strong>, simply use the <code>{'field'}</code>{' '}
+              element with the <code>{'is-grouped'}</code> and{' '}
+              <code>{'is-grouped-multiline'}</code> modifiers.
+            </p>{' '}
+          </ui.Content>{' '}
           <div className={'bd-example'}>
-            {'\n'}
+            {' '}
             <ui.Field layout={'grouped'} multiline>
-              {'\n  '}
+              {' '}
               <ui.Control>
-                {'\n    '}
+                {' '}
                 <ui.Tags addons>
-                  {'\n      '}
-                  <ui.Tag color={'dark'}>{'npm'}</ui.Tag>
-                  {'\n      '}
-                  <ui.Tag color={'info'}>{'1.0.4'}</ui.Tag>
-                  {'\n    '}
-                </ui.Tags>
-                {'\n  '}
-              </ui.Control>
-              {'\n\n  '}
+                  {' '}
+                  <ui.Tag color={'dark'}>npm</ui.Tag>{' '}
+                  <ui.Tag color={'info'}>1.0.4</ui.Tag>{' '}
+                </ui.Tags>{' '}
+              </ui.Control>{' '}
               <ui.Control>
-                {'\n    '}
+                {' '}
                 <ui.Tags addons>
-                  {'\n      '}
-                  <ui.Tag color={'dark'}>{'build'}</ui.Tag>
-                  {'\n      '}
-                  <ui.Tag color={'success'}>{'passing'}</ui.Tag>
-                  {'\n    '}
-                </ui.Tags>
-                {'\n  '}
-              </ui.Control>
-              {'\n\n  '}
+                  {' '}
+                  <ui.Tag color={'dark'}>build</ui.Tag>{' '}
+                  <ui.Tag color={'success'}>passing</ui.Tag>{' '}
+                </ui.Tags>{' '}
+              </ui.Control>{' '}
               <ui.Control>
-                {'\n    '}
+                {' '}
                 <ui.Tags addons>
-                  {'\n      '}
-                  <ui.Tag color={'dark'}>{'chat'}</ui.Tag>
-                  {'\n      '}
-                  <ui.Tag color={'primary'}>{'on gitter'}</ui.Tag>
-                  {'\n    '}
-                </ui.Tags>
-                {'\n  '}
-              </ui.Control>
-              {'\n'}
-            </ui.Field>
-            {'\n'}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+                  {' '}
+                  <ui.Tag color={'dark'}>chat</ui.Tag>{' '}
+                  <ui.Tag color={'primary'}>on gitter</ui.Tag>{' '}
+                </ui.Tags>{' '}
+              </ui.Control>{' '}
+            </ui.Field>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column className={'bd-highlight-full'}>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1388,10 +1156,8 @@ function Example017Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1401,115 +1167,80 @@ function Example018Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <ui.Content>
-            {'\n      '}
+            {' '}
             <p>
-              {'This can be useful for a long list of '}
-              <strong>{'blog tags'}</strong>
-              {'.'}
-            </p>
-            {'\n    '}
-          </ui.Content>
-          {'\n    '}
+              This can be useful for a long list of <strong>blog tags</strong>.
+            </p>{' '}
+          </ui.Content>{' '}
           <div className={'bd-example'}>
-            {'\n'}
+            {' '}
             <ui.Field layout={'grouped'} multiline>
-              {'\n  '}
+              {' '}
               <ui.Control>
-                {'\n    '}
+                {' '}
                 <ui.Tags addons>
-                  {'\n      '}
-                  <ui.LinkTag color={'link'}>{'Technology'}</ui.LinkTag>
-                  {'\n      '}
-                  <ui.TagDelete as={'a'} />
-                  {'\n    '}
-                </ui.Tags>
-                {'\n  '}
-              </ui.Control>
-              {'\n\n  '}
+                  {' '}
+                  <ui.LinkTag color={'link'}>Technology</ui.LinkTag>{' '}
+                  <ui.TagDelete as={'a'} />{' '}
+                </ui.Tags>{' '}
+              </ui.Control>{' '}
               <ui.Control>
-                {'\n    '}
+                {' '}
                 <ui.Tags addons>
-                  {'\n      '}
-                  <ui.LinkTag color={'link'}>{'CSS'}</ui.LinkTag>
-                  {'\n      '}
-                  <ui.TagDelete as={'a'} />
-                  {'\n    '}
-                </ui.Tags>
-                {'\n  '}
-              </ui.Control>
-              {'\n\n  '}
+                  {' '}
+                  <ui.LinkTag color={'link'}>CSS</ui.LinkTag>{' '}
+                  <ui.TagDelete as={'a'} />{' '}
+                </ui.Tags>{' '}
+              </ui.Control>{' '}
               <ui.Control>
-                {'\n    '}
+                {' '}
                 <ui.Tags addons>
-                  {'\n      '}
-                  <ui.LinkTag color={'link'}>{'Flexbox'}</ui.LinkTag>
-                  {'\n      '}
-                  <ui.TagDelete as={'a'} />
-                  {'\n    '}
-                </ui.Tags>
-                {'\n  '}
-              </ui.Control>
-              {'\n\n  '}
+                  {' '}
+                  <ui.LinkTag color={'link'}>Flexbox</ui.LinkTag>{' '}
+                  <ui.TagDelete as={'a'} />{' '}
+                </ui.Tags>{' '}
+              </ui.Control>{' '}
               <ui.Control>
-                {'\n    '}
+                {' '}
                 <ui.Tags addons>
-                  {'\n      '}
-                  <ui.LinkTag color={'link'}>{'Web Design'}</ui.LinkTag>
-                  {'\n      '}
-                  <ui.TagDelete as={'a'} />
-                  {'\n    '}
-                </ui.Tags>
-                {'\n  '}
-              </ui.Control>
-              {'\n\n  '}
+                  {' '}
+                  <ui.LinkTag color={'link'}>Web Design</ui.LinkTag>{' '}
+                  <ui.TagDelete as={'a'} />{' '}
+                </ui.Tags>{' '}
+              </ui.Control>{' '}
               <ui.Control>
-                {'\n    '}
+                {' '}
                 <ui.Tags addons>
-                  {'\n      '}
-                  <ui.LinkTag color={'link'}>{'Open Source'}</ui.LinkTag>
-                  {'\n      '}
-                  <ui.TagDelete as={'a'} />
-                  {'\n    '}
-                </ui.Tags>
-                {'\n  '}
-              </ui.Control>
-              {'\n\n  '}
+                  {' '}
+                  <ui.LinkTag color={'link'}>Open Source</ui.LinkTag>{' '}
+                  <ui.TagDelete as={'a'} />{' '}
+                </ui.Tags>{' '}
+              </ui.Control>{' '}
               <ui.Control>
-                {'\n    '}
+                {' '}
                 <ui.Tags addons>
-                  {'\n      '}
-                  <ui.LinkTag color={'link'}>{'Community'}</ui.LinkTag>
-                  {'\n      '}
-                  <ui.TagDelete as={'a'} />
-                  {'\n    '}
-                </ui.Tags>
-                {'\n  '}
-              </ui.Control>
-              {'\n\n  '}
+                  {' '}
+                  <ui.LinkTag color={'link'}>Community</ui.LinkTag>{' '}
+                  <ui.TagDelete as={'a'} />{' '}
+                </ui.Tags>{' '}
+              </ui.Control>{' '}
               <ui.Control>
-                {'\n    '}
+                {' '}
                 <ui.Tags addons>
-                  {'\n      '}
-                  <ui.LinkTag color={'link'}>{'Documentation'}</ui.LinkTag>
-                  {'\n      '}
-                  <ui.TagDelete as={'a'} />
-                  {'\n    '}
-                </ui.Tags>
-                {'\n  '}
-              </ui.Control>
-              {'\n'}
-            </ui.Field>
-            {'\n'}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+                  {' '}
+                  <ui.LinkTag color={'link'}>Documentation</ui.LinkTag>{' '}
+                  <ui.TagDelete as={'a'} />{' '}
+                </ui.Tags>{' '}
+              </ui.Control>{' '}
+            </ui.Field>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -1518,10 +1249,8 @@ function Example018Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1533,7 +1262,7 @@ export const Example001 = {
     official: { id: 'elements-tag/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"By default, a "}<strong>{"tag"}</strong>{" is a 1.5rem high label."}</ui.Column>{"\\n  "}<ui.Column width={2}>{"\\n    "}<ui.Tag>{" Tag label "}</ui.Tag>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<span class=\\"tag\\"> Tag label </span>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={4}>\n          By default, a <strong>tag</strong> is a 1.5rem high label.\n        </ui.Column>{' '}\n        <ui.Column width={2}>\n          {' '}\n          <ui.Tag> Tag label </ui.Tag>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {'\\n<span class=\"tag\"> Tag label </span>\\n'}\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1548,7 +1277,7 @@ export const Example002 = {
     official: { id: 'elements-tag/colors/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"Like with buttons, there are "}<strong>{"10 different colors"}</strong>{" available."}</ui.Column>{"\\n  "}<ui.Column width={2}>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"black"}>{" Black "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"dark"}>{" Dark "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag light>{" Light "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"white"}>{" White "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"primary"}>{" Primary "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"link"}>{" Link "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"info"}>{" Info "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"success"}>{" Success "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"warning"}>{" Warning "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Tag color={"danger"}>{" Danger "}</ui.Tag>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<span class=\\"tag is-black\\">Black</span>\\n<span class=\\"tag is-dark\\">Dark</span>\\n<span class=\\"tag is-light\\">Light</span>\\n<span class=\\"tag is-white\\">White</span>\\n<span class=\\"tag is-primary\\">Primary</span>\\n<span class=\\"tag is-link\\">Link</span>\\n<span class=\\"tag is-info\\">Info</span>\\n<span class=\\"tag is-success\\">Success</span>\\n<span class=\\"tag is-warning\\">Warning</span>\\n<span class=\\"tag is-danger\\">Danger</span>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={4}>\n          Like with buttons, there are <strong>10 different colors</strong>{' '}\n          available.\n        </ui.Column>{' '}\n        <ui.Column width={2}>\n          {' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'black'}> Black </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'dark'}> Dark </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag light> Light </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'white'}> White </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'primary'}> Primary </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'link'}> Link </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'info'}> Info </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'success'}> Success </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'warning'}> Warning </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Tag color={'danger'}> Danger </ui.Tag>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<span class=\"tag is-black\">Black</span>\\n<span class=\"tag is-dark\">Dark</span>\\n<span class=\"tag is-light\">Light</span>\\n<span class=\"tag is-white\">White</span>\\n<span class=\"tag is-primary\">Primary</span>\\n<span class=\"tag is-link\">Link</span>\\n<span class=\"tag is-info\">Info</span>\\n<span class=\"tag is-success\">Success</span>\\n<span class=\"tag is-warning\">Warning</span>\\n<span class=\"tag is-danger\">Danger</span>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1563,7 +1292,7 @@ export const Example003 = {
     official: { id: 'elements-tag/colors/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"\\n    "}<p>{"You can now choose the "}<strong>{"light version"}</strong>{" of a color."}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={2}>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"primary"} light>{" Primary "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"link"} light>{" Link "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"info"} light>{" Info "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"success"} light>{" Success "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"warning"} light>{" Warning "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Tag color={"danger"} light>{" Danger "}</ui.Tag>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<span class=\\"tag is-primary is-light\\">Primary</span>\\n<span class=\\"tag is-link is-light\\">Link</span>\\n<span class=\\"tag is-info is-light\\">Info</span>\\n<span class=\\"tag is-success is-light\\">Success</span>\\n<span class=\\"tag is-warning is-light\\">Warning</span>\\n<span class=\\"tag is-danger is-light\\">Danger</span>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={4}>\n          {' '}\n          <p>\n            You can now choose the <strong>light version</strong> of a color.\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={2}>\n          {' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'primary'} light>\n              {' '}\n              Primary{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'link'} light>\n              {' '}\n              Link{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'info'} light>\n              {' '}\n              Info{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'success'} light>\n              {' '}\n              Success{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'warning'} light>\n              {' '}\n              Warning{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Tag color={'danger'} light>\n            {' '}\n            Danger{' '}\n          </ui.Tag>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<span class=\"tag is-primary is-light\">Primary</span>\\n<span class=\"tag is-link is-light\">Link</span>\\n<span class=\"tag is-info is-light\">Info</span>\\n<span class=\"tag is-success is-light\">Success</span>\\n<span class=\"tag is-warning is-light\">Warning</span>\\n<span class=\"tag is-danger is-light\">Danger</span>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1578,7 +1307,7 @@ export const Example004 = {
     official: { id: 'elements-tag/sizes/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"The tag comes in "}<strong>{"3 different"}</strong>{" sizes."}</p>{"\\n      "}<p>{"\\n        While the default size is the "}<strong>{"normal"}</strong>{" one, the "}<code>{"is-normal"}</code>{" modifier exists in case\\n        you need to reset the tag to its normal size.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={2}>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"link"} size={"normal"}>{" Normal "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"primary"} size={"medium"}>{" Medium "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"info"} size={"large"}>{" Large "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<span class=\\"tag is-link is-normal\\">Normal</span>\\n<span class=\\"tag is-primary is-medium\\">Medium</span>\\n<span class=\\"tag is-info is-large\\">Large</span>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={4}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              The tag comes in <strong>3 different</strong> sizes.\n            </p>{' '}\n            <p>\n              While the default size is the <strong>normal</strong> one, the{' '}\n              <code>{'is-normal'}</code> modifier exists in case you need to\n              reset the tag to its normal size.\n            </p>{' '}\n          </ui.Content>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={2}>\n          {' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'link'} size={'normal'}>\n              {' '}\n              Normal{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'primary'} size={'medium'}>\n              {' '}\n              Medium{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'info'} size={'large'}>\n              {' '}\n              Large{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<span class=\"tag is-link is-normal\">Normal</span>\\n<span class=\"tag is-primary is-medium\">Medium</span>\\n<span class=\"tag is-info is-large\">Large</span>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1593,7 +1322,7 @@ export const Example005 = {
     official: { id: 'elements-tag/sizes/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tags size={"medium"}>{"\\n  "}<ui.Tag>{"All"}</ui.Tag>{"\\n  "}<ui.Tag>{"Medium"}</ui.Tag>{"\\n  "}<ui.Tag>{"Size"}</ui.Tag>{"\\n"}</ui.Tags>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Tags size={'medium'}>\n        {' '}\n        <ui.Tag>All</ui.Tag> <ui.Tag>Medium</ui.Tag> <ui.Tag>Size</ui.Tag>{' '}\n      </ui.Tags>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1608,7 +1337,7 @@ export const Example006 = {
     official: { id: 'elements-tag/sizes/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tags size={"large"}>{"\\n  "}<ui.Tag>{"All"}</ui.Tag>{"\\n  "}<ui.Tag>{"Large"}</ui.Tag>{"\\n  "}<ui.Tag>{"Size"}</ui.Tag>{"\\n"}</ui.Tags>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Tags size={'large'}>\n        {' '}\n        <ui.Tag>All</ui.Tag> <ui.Tag>Large</ui.Tag> <ui.Tag>Size</ui.Tag>{' '}\n      </ui.Tags>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1623,7 +1352,7 @@ export const Example007 = {
     official: { id: 'elements-tag/sizes/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tags size={"medium"}>{"\\n  "}<ui.Tag>{"Medium"}</ui.Tag>{"\\n  "}<ui.Tag size={"normal"}>{"Normal"}</ui.Tag>{"\\n  "}<ui.Tag>{"Medium"}</ui.Tag>{"\\n  "}<ui.Tag size={"large"}>{"Large"}</ui.Tag>{"\\n  "}<ui.Tag>{"Medium"}</ui.Tag>{"\\n"}</ui.Tags>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Tags size={'medium'}>\n        {' '}\n        <ui.Tag>Medium</ui.Tag> <ui.Tag size={'normal'}>Normal</ui.Tag>{' '}\n        <ui.Tag>Medium</ui.Tag> <ui.Tag size={'large'}>Large</ui.Tag>{' '}\n        <ui.Tag>Medium</ui.Tag>{' '}\n      </ui.Tags>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1638,7 +1367,7 @@ export const Example008 = {
     official: { id: 'elements-tag/hover-active-state/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.LinkTag>{"Hover me"}</ui.LinkTag>{"\\n"}<ui.Tag as={"button"}>{"Hover me"}</ui.Tag>{"\\n"}<ui.Tag className={"rb-is-hoverable"} as={"div"}>{"Hover me"}</ui.Tag>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.LinkTag>Hover me</ui.LinkTag> <ui.Tag as={'button'}>Hover me</ui.Tag>{' '}\n      <ui.Tag className={'rb-is-hoverable'} as={'div'}>\n        Hover me\n      </ui.Tag>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1653,7 +1382,7 @@ export const Example009 = {
     official: { id: 'elements-tag/modifiers/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"\\n    You can add the "}<code>{"is-rounded"}</code>{" modifier to make a "}<strong>{"rounded"}</strong>{" tag.\\n  "}</ui.Column>{"\\n  "}<ui.Column width={2}>{"\\n"}<ui.Tag rounded>{"Rounded"}</ui.Tag>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={6}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<span class=\\"tag is-rounded\\">Rounded</span>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={4}>\n          {' '}\n          You can add the <code>{'is-rounded'}</code> modifier to make a{' '}\n          <strong>rounded</strong> tag.{' '}\n        </ui.Column>{' '}\n        <ui.Column width={2}>\n          {' '}\n          <ui.Tag rounded>Rounded</ui.Tag>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {'\\n<span class=\"tag is-rounded\">Rounded</span>\\n'}\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1668,7 +1397,7 @@ export const Example010 = {
     official: { id: 'elements-tag/modifiers/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"\\n    You can add the "}<code>{"is-delete"}</code>{" modifier to turn the tag into a "}<strong>{"delete button"}</strong>{".\\n  "}</ui.Column>{"\\n  "}<ui.Column width={2}>{"\\n"}<ui.TagDelete as={"a"} />{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={6}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<a class=\\"tag is-delete\\"></a>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={4}>\n          {' '}\n          You can add the <code>{'is-delete'}</code> modifier to turn the tag\n          into a <strong>delete button</strong>.{' '}\n        </ui.Column>{' '}\n        <ui.Column width={2}>\n          {' '}\n          <ui.TagDelete as={'a'} />{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {'\\n<a class=\"tag is-delete\"></a>\\n'}\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1683,7 +1412,7 @@ export const Example011 = {
     official: { id: 'elements-tag/combinations/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"You can create "}<strong>{"hoverable colored"}</strong>{" tags."}</ui.Column>{"\\n  "}<ui.Column width={2}>{"\\n    \\n"}<ui.LinkTag color={"link"}>{"Hover me"}</ui.LinkTag>{"\\n"}<ui.Tag color={"primary"} as={"button"}>{"Hover me"}</ui.Tag>{"\\n"}<ui.Tag color={"success"} className={"rb-is-hoverable"} as={"div"}>{"Hover me"}</ui.Tag>{"\\n"}<ui.LinkTag color={"info"}>{"Hover me"}</ui.LinkTag>{"\\n"}<ui.Tag color={"warning"} as={"button"}>{"Hover me"}</ui.Tag>{"\\n"}<ui.Tag color={"danger"} className={"rb-is-hoverable"} as={"div"}>{"Hover me"}</ui.Tag>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<a class=\\"tag is-link\\">Hover me</a>\\n<button class=\\"tag is-primary\\">Hover me</button>\\n<div class=\\"tag is-hoverable is-success\\">Hover me</div>\\n<a class=\\"tag is-info\\">Hover me</a>\\n<button class=\\"tag is-warning\\">Hover me</button>\\n<div class=\\"tag is-hoverable is-danger\\">Hover me</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={4}>\n          You can create <strong>hoverable colored</strong> tags.\n        </ui.Column>{' '}\n        <ui.Column width={2}>\n          {' '}\n          <ui.LinkTag color={'link'}>Hover me</ui.LinkTag>{' '}\n          <ui.Tag color={'primary'} as={'button'}>\n            Hover me\n          </ui.Tag>{' '}\n          <ui.Tag color={'success'} className={'rb-is-hoverable'} as={'div'}>\n            Hover me\n          </ui.Tag>{' '}\n          <ui.LinkTag color={'info'}>Hover me</ui.LinkTag>{' '}\n          <ui.Tag color={'warning'} as={'button'}>\n            Hover me\n          </ui.Tag>{' '}\n          <ui.Tag color={'danger'} className={'rb-is-hoverable'} as={'div'}>\n            Hover me\n          </ui.Tag>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<a class=\"tag is-link\">Hover me</a>\\n<button class=\"tag is-primary\">Hover me</button>\\n<div class=\"tag is-hoverable is-success\">Hover me</div>\\n<a class=\"tag is-info\">Hover me</a>\\n<button class=\"tag is-warning\">Hover me</button>\\n<div class=\"tag is-hoverable is-danger\">Hover me</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1698,7 +1427,7 @@ export const Example012 = {
     official: { id: 'elements-tag/combinations/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"You can append a "}<strong>{"delete button"}</strong>{"."}</ui.Column>{"\\n  "}<ui.Column width={2}>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"success"}>{"\\n        Bar\\n        "}<ui.Delete size={"small"} />{"\\n      "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"warning"} size={"medium"}>{"\\n        Hello\\n        "}<ui.Delete size={"small"} />{"\\n      "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field as={"p"}>{"\\n      "}<ui.Tag color={"danger"} size={"large"}>{"\\n        World\\n        "}<ui.Delete />{"\\n      "}</ui.Tag>{"\\n    "}</ui.Field>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<span class=\\"tag is-success\\">\\n  Bar\\n  <button class=\\"delete is-small\\"></button>\\n</span>\\n<span class=\\"tag is-warning is-medium\\">\\n  Hello\\n  <button class=\\"delete is-small\\"></button>\\n</span>\\n<span class=\\"tag is-danger is-large\\">\\n  World\\n  <button class=\\"delete\\"></button>\\n</span>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={4}>\n          You can append a <strong>delete button</strong>.\n        </ui.Column>{' '}\n        <ui.Column width={2}>\n          {' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'success'}>\n              {' '}\n              Bar <ui.Delete size={'small'} />{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'warning'} size={'medium'}>\n              {' '}\n              Hello <ui.Delete size={'small'} />{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n          <ui.Field as={'p'}>\n            {' '}\n            <ui.Tag color={'danger'} size={'large'}>\n              {' '}\n              World <ui.Delete />{' '}\n            </ui.Tag>{' '}\n          </ui.Field>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<span class=\"tag is-success\">\\n  Bar\\n  <button class=\"delete is-small\"></button>\\n</span>\\n<span class=\"tag is-warning is-medium\">\\n  Hello\\n  <button class=\"delete is-small\"></button>\\n</span>\\n<span class=\"tag is-danger is-large\">\\n  World\\n  <button class=\"delete\"></button>\\n</span>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1713,7 +1442,7 @@ export const Example013 = {
     official: { id: 'elements-tag/list-of-tags/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<ui.Content>{"\\n      "}<p>{"You can now create a "}<strong>{"list of tags"}</strong>{" with the "}<code>{"tags"}</code>{" container."}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.Tags>{"\\n  "}<ui.Tag>{"One"}</ui.Tag>{"\\n  "}<ui.Tag>{"Two"}</ui.Tag>{"\\n  "}<ui.Tag>{"Three"}</ui.Tag>{"\\n"}</ui.Tags>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"tags\\">\\n  <span class=\\"tag\\">One</span>\\n  <span class=\\"tag\\">Two</span>\\n  <span class=\\"tag\\">Three</span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can now create a <strong>list of tags</strong> with the{' '}\n              <code>{'tags'}</code> container.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Tags>\n              {' '}\n              <ui.Tag>One</ui.Tag> <ui.Tag>Two</ui.Tag>{' '}\n              <ui.Tag>Three</ui.Tag>{' '}\n            </ui.Tags>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"tags\">\\n  <span class=\"tag\">One</span>\\n  <span class=\"tag\">Two</span>\\n  <span class=\"tag\">Three</span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1728,7 +1457,7 @@ export const Example014 = {
     official: { id: 'elements-tag/list-of-tags/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        If the list is "}<strong>{"very long"}</strong>{", it will automatically wrap on "}<strong>{"multiple lines"}</strong>{", while\\n        keeping all tags "}<strong>{"evenly spaced"}</strong>{".\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.Tags>{"\\n  "}<ui.Tag>{"One"}</ui.Tag>{"\\n  "}<ui.Tag>{"Two"}</ui.Tag>{"\\n  "}<ui.Tag>{"Three"}</ui.Tag>{"\\n  "}<ui.Tag>{"Four"}</ui.Tag>{"\\n  "}<ui.Tag>{"Five"}</ui.Tag>{"\\n  "}<ui.Tag>{"Six"}</ui.Tag>{"\\n  "}<ui.Tag>{"Seven"}</ui.Tag>{"\\n  "}<ui.Tag>{"Eight"}</ui.Tag>{"\\n  "}<ui.Tag>{"Nine"}</ui.Tag>{"\\n  "}<ui.Tag>{"Ten"}</ui.Tag>{"\\n  "}<ui.Tag>{"Eleven"}</ui.Tag>{"\\n  "}<ui.Tag>{"Twelve"}</ui.Tag>{"\\n  "}<ui.Tag>{"Thirteen"}</ui.Tag>{"\\n  "}<ui.Tag>{"Fourteen"}</ui.Tag>{"\\n  "}<ui.Tag>{"Fifteen"}</ui.Tag>{"\\n  "}<ui.Tag>{"Sixteen"}</ui.Tag>{"\\n  "}<ui.Tag>{"Seventeen"}</ui.Tag>{"\\n  "}<ui.Tag>{"Eighteen"}</ui.Tag>{"\\n  "}<ui.Tag>{"Nineteen"}</ui.Tag>{"\\n  "}<ui.Tag>{"Twenty"}</ui.Tag>{"\\n"}</ui.Tags>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"tags\\">\\n  <span class=\\"tag\\">One</span>\\n  <span class=\\"tag\\">Two</span>\\n  <span class=\\"tag\\">Three</span>\\n  <span class=\\"tag\\">Four</span>\\n  <span class=\\"tag\\">Five</span>\\n  <span class=\\"tag\\">Six</span>\\n  <span class=\\"tag\\">Seven</span>\\n  <span class=\\"tag\\">Eight</span>\\n  <span class=\\"tag\\">Nine</span>\\n  <span class=\\"tag\\">Ten</span>\\n  <span class=\\"tag\\">Eleven</span>\\n  <span class=\\"tag\\">Twelve</span>\\n  <span class=\\"tag\\">Thirteen</span>\\n  <span class=\\"tag\\">Fourteen</span>\\n  <span class=\\"tag\\">Fifteen</span>\\n  <span class=\\"tag\\">Sixteen</span>\\n  <span class=\\"tag\\">Seventeen</span>\\n  <span class=\\"tag\\">Eighteen</span>\\n  <span class=\\"tag\\">Nineteen</span>\\n  <span class=\\"tag\\">Twenty</span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              If the list is <strong>very long</strong>, it will automatically\n              wrap on <strong>multiple lines</strong>, while keeping all tags{' '}\n              <strong>evenly spaced</strong>.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Tags>\n              {' '}\n              <ui.Tag>One</ui.Tag> <ui.Tag>Two</ui.Tag> <ui.Tag>Three</ui.Tag>{' '}\n              <ui.Tag>Four</ui.Tag> <ui.Tag>Five</ui.Tag> <ui.Tag>Six</ui.Tag>{' '}\n              <ui.Tag>Seven</ui.Tag> <ui.Tag>Eight</ui.Tag>{' '}\n              <ui.Tag>Nine</ui.Tag> <ui.Tag>Ten</ui.Tag> <ui.Tag>Eleven</ui.Tag>{' '}\n              <ui.Tag>Twelve</ui.Tag> <ui.Tag>Thirteen</ui.Tag>{' '}\n              <ui.Tag>Fourteen</ui.Tag> <ui.Tag>Fifteen</ui.Tag>{' '}\n              <ui.Tag>Sixteen</ui.Tag> <ui.Tag>Seventeen</ui.Tag>{' '}\n              <ui.Tag>Eighteen</ui.Tag> <ui.Tag>Nineteen</ui.Tag>{' '}\n              <ui.Tag>Twenty</ui.Tag>{' '}\n            </ui.Tags>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"tags\">\\n  <span class=\"tag\">One</span>\\n  <span class=\"tag\">Two</span>\\n  <span class=\"tag\">Three</span>\\n  <span class=\"tag\">Four</span>\\n  <span class=\"tag\">Five</span>\\n  <span class=\"tag\">Six</span>\\n  <span class=\"tag\">Seven</span>\\n  <span class=\"tag\">Eight</span>\\n  <span class=\"tag\">Nine</span>\\n  <span class=\"tag\">Ten</span>\\n  <span class=\"tag\">Eleven</span>\\n  <span class=\"tag\">Twelve</span>\\n  <span class=\"tag\">Thirteen</span>\\n  <span class=\"tag\">Fourteen</span>\\n  <span class=\"tag\">Fifteen</span>\\n  <span class=\"tag\">Sixteen</span>\\n  <span class=\"tag\">Seventeen</span>\\n  <span class=\"tag\">Eighteen</span>\\n  <span class=\"tag\">Nineteen</span>\\n  <span class=\"tag\">Twenty</span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1743,7 +1472,7 @@ export const Example015 = {
     official: { id: 'elements-tag/tag-addons/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<ui.Content>{"\\n      "}<p>{"You can "}<strong>{"attach tags together"}</strong>{" with the "}<code>{"has-addons"}</code>{" modifier."}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.Tags addons>{"\\n  "}<ui.Tag>{"Package"}</ui.Tag>{"\\n  "}<ui.Tag color={"primary"}>{"Bulma"}</ui.Tag>{"\\n"}</ui.Tags>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"tags has-addons\\">\\n  <span class=\\"tag\\">Package</span>\\n  <span class=\\"tag is-primary\\">Bulma</span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can <strong>attach tags together</strong> with the{' '}\n              <code>{'has-addons'}</code> modifier.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Tags addons>\n              {' '}\n              <ui.Tag>Package</ui.Tag>{' '}\n              <ui.Tag color={'primary'}>Bulma</ui.Tag>{' '}\n            </ui.Tags>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"tags has-addons\">\\n  <span class=\"tag\">Package</span>\\n  <span class=\"tag is-primary\">Bulma</span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1758,7 +1487,7 @@ export const Example016 = {
     official: { id: 'elements-tag/tag-addons/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<ui.Content>{"\\n      "}<p>{"You can attach a "}<strong>{"text"}</strong>{" tag with a "}<strong>{"delete"}</strong>{" tag together."}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.Tags addons>{"\\n  "}<ui.Tag color={"danger"}>{"Alex Smith"}</ui.Tag>{"\\n  "}<ui.TagDelete as={"a"} />{"\\n"}</ui.Tags>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"tags has-addons\\">\\n  <span class=\\"tag is-danger\\">Alex Smith</span>\\n  <a class=\\"tag is-delete\\"></a>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can attach a <strong>text</strong> tag with a{' '}\n              <strong>delete</strong> tag together.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Tags addons>\n              {' '}\n              <ui.Tag color={'danger'}>Alex Smith</ui.Tag>{' '}\n              <ui.TagDelete as={'a'} />{' '}\n            </ui.Tags>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"tags has-addons\">\\n  <span class=\"tag is-danger\">Alex Smith</span>\\n  <a class=\"tag is-delete\"></a>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1773,7 +1502,7 @@ export const Example017 = {
     official: { id: 'elements-tag/tag-addons/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        If you want to attach "}<code>{"tags"}</code>{" containers "}<strong>{"together"}</strong>{", simply use the\\n        "}<code>{"field"}</code>{" element with the "}<code>{"is-grouped"}</code>{" and "}<code>{"is-grouped-multiline"}</code>{" modifiers.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.Field layout={"grouped"} multiline>{"\\n  "}<ui.Control>{"\\n    "}<ui.Tags addons>{"\\n      "}<ui.Tag color={"dark"}>{"npm"}</ui.Tag>{"\\n      "}<ui.Tag color={"info"}>{"1.0.4"}</ui.Tag>{"\\n    "}</ui.Tags>{"\\n  "}</ui.Control>{"\\n\\n  "}<ui.Control>{"\\n    "}<ui.Tags addons>{"\\n      "}<ui.Tag color={"dark"}>{"build"}</ui.Tag>{"\\n      "}<ui.Tag color={"success"}>{"passing"}</ui.Tag>{"\\n    "}</ui.Tags>{"\\n  "}</ui.Control>{"\\n\\n  "}<ui.Control>{"\\n    "}<ui.Tags addons>{"\\n      "}<ui.Tag color={"dark"}>{"chat"}</ui.Tag>{"\\n      "}<ui.Tag color={"primary"}>{"on gitter"}</ui.Tag>{"\\n    "}</ui.Tags>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"field is-grouped is-grouped-multiline\\">\\n  <div class=\\"control\\">\\n    <div class=\\"tags has-addons\\">\\n      <span class=\\"tag is-dark\\">npm</span>\\n      <span class=\\"tag is-info\\">1.0.4</span>\\n    </div>\\n  </div>\\n\\n  <div class=\\"control\\">\\n    <div class=\\"tags has-addons\\">\\n      <span class=\\"tag is-dark\\">build</span>\\n      <span class=\\"tag is-success\\">passing</span>\\n    </div>\\n  </div>\\n\\n  <div class=\\"control\\">\\n    <div class=\\"tags has-addons\\">\\n      <span class=\\"tag is-dark\\">chat</span>\\n      <span class=\\"tag is-primary\\">on gitter</span>\\n    </div>\\n  </div>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              If you want to attach <code>{'tags'}</code> containers{' '}\n              <strong>together</strong>, simply use the <code>{'field'}</code>{' '}\n              element with the <code>{'is-grouped'}</code> and{' '}\n              <code>{'is-grouped-multiline'}</code> modifiers.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Field layout={'grouped'} multiline>\n              {' '}\n              <ui.Control>\n                {' '}\n                <ui.Tags addons>\n                  {' '}\n                  <ui.Tag color={'dark'}>npm</ui.Tag>{' '}\n                  <ui.Tag color={'info'}>1.0.4</ui.Tag>{' '}\n                </ui.Tags>{' '}\n              </ui.Control>{' '}\n              <ui.Control>\n                {' '}\n                <ui.Tags addons>\n                  {' '}\n                  <ui.Tag color={'dark'}>build</ui.Tag>{' '}\n                  <ui.Tag color={'success'}>passing</ui.Tag>{' '}\n                </ui.Tags>{' '}\n              </ui.Control>{' '}\n              <ui.Control>\n                {' '}\n                <ui.Tags addons>\n                  {' '}\n                  <ui.Tag color={'dark'}>chat</ui.Tag>{' '}\n                  <ui.Tag color={'primary'}>on gitter</ui.Tag>{' '}\n                </ui.Tags>{' '}\n              </ui.Control>{' '}\n            </ui.Field>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"field is-grouped is-grouped-multiline\">\\n  <div class=\"control\">\\n    <div class=\"tags has-addons\">\\n      <span class=\"tag is-dark\">npm</span>\\n      <span class=\"tag is-info\">1.0.4</span>\\n    </div>\\n  </div>\\n\\n  <div class=\"control\">\\n    <div class=\"tags has-addons\">\\n      <span class=\"tag is-dark\">build</span>\\n      <span class=\"tag is-success\">passing</span>\\n    </div>\\n  </div>\\n\\n  <div class=\"control\">\\n    <div class=\"tags has-addons\">\\n      <span class=\"tag is-dark\">chat</span>\\n      <span class=\"tag is-primary\">on gitter</span>\\n    </div>\\n  </div>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1788,7 +1517,7 @@ export const Example018 = {
     official: { id: 'elements-tag/tag-addons/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<ui.Content>{"\\n      "}<p>{"This can be useful for a long list of "}<strong>{"blog tags"}</strong>{"."}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.Field layout={"grouped"} multiline>{"\\n  "}<ui.Control>{"\\n    "}<ui.Tags addons>{"\\n      "}<ui.LinkTag color={"link"}>{"Technology"}</ui.LinkTag>{"\\n      "}<ui.TagDelete as={"a"} />{"\\n    "}</ui.Tags>{"\\n  "}</ui.Control>{"\\n\\n  "}<ui.Control>{"\\n    "}<ui.Tags addons>{"\\n      "}<ui.LinkTag color={"link"}>{"CSS"}</ui.LinkTag>{"\\n      "}<ui.TagDelete as={"a"} />{"\\n    "}</ui.Tags>{"\\n  "}</ui.Control>{"\\n\\n  "}<ui.Control>{"\\n    "}<ui.Tags addons>{"\\n      "}<ui.LinkTag color={"link"}>{"Flexbox"}</ui.LinkTag>{"\\n      "}<ui.TagDelete as={"a"} />{"\\n    "}</ui.Tags>{"\\n  "}</ui.Control>{"\\n\\n  "}<ui.Control>{"\\n    "}<ui.Tags addons>{"\\n      "}<ui.LinkTag color={"link"}>{"Web Design"}</ui.LinkTag>{"\\n      "}<ui.TagDelete as={"a"} />{"\\n    "}</ui.Tags>{"\\n  "}</ui.Control>{"\\n\\n  "}<ui.Control>{"\\n    "}<ui.Tags addons>{"\\n      "}<ui.LinkTag color={"link"}>{"Open Source"}</ui.LinkTag>{"\\n      "}<ui.TagDelete as={"a"} />{"\\n    "}</ui.Tags>{"\\n  "}</ui.Control>{"\\n\\n  "}<ui.Control>{"\\n    "}<ui.Tags addons>{"\\n      "}<ui.LinkTag color={"link"}>{"Community"}</ui.LinkTag>{"\\n      "}<ui.TagDelete as={"a"} />{"\\n    "}</ui.Tags>{"\\n  "}</ui.Control>{"\\n\\n  "}<ui.Control>{"\\n    "}<ui.Tags addons>{"\\n      "}<ui.LinkTag color={"link"}>{"Documentation"}</ui.LinkTag>{"\\n      "}<ui.TagDelete as={"a"} />{"\\n    "}</ui.Tags>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"field is-grouped is-grouped-multiline\\">\\n  <div class=\\"control\\">\\n    <div class=\\"tags has-addons\\">\\n      <a class=\\"tag is-link\\">Technology</a>\\n      <a class=\\"tag is-delete\\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\\"control\\">\\n    <div class=\\"tags has-addons\\">\\n      <a class=\\"tag is-link\\">CSS</a>\\n      <a class=\\"tag is-delete\\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\\"control\\">\\n    <div class=\\"tags has-addons\\">\\n      <a class=\\"tag is-link\\">Flexbox</a>\\n      <a class=\\"tag is-delete\\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\\"control\\">\\n    <div class=\\"tags has-addons\\">\\n      <a class=\\"tag is-link\\">Web Design</a>\\n      <a class=\\"tag is-delete\\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\\"control\\">\\n    <div class=\\"tags has-addons\\">\\n      <a class=\\"tag is-link\\">Open Source</a>\\n      <a class=\\"tag is-delete\\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\\"control\\">\\n    <div class=\\"tags has-addons\\">\\n      <a class=\\"tag is-link\\">Community</a>\\n      <a class=\\"tag is-delete\\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\\"control\\">\\n    <div class=\\"tags has-addons\\">\\n      <a class=\\"tag is-link\\">Documentation</a>\\n      <a class=\\"tag is-delete\\"></a>\\n    </div>\\n  </div>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              This can be useful for a long list of <strong>blog tags</strong>.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Field layout={'grouped'} multiline>\n              {' '}\n              <ui.Control>\n                {' '}\n                <ui.Tags addons>\n                  {' '}\n                  <ui.LinkTag color={'link'}>Technology</ui.LinkTag>{' '}\n                  <ui.TagDelete as={'a'} />{' '}\n                </ui.Tags>{' '}\n              </ui.Control>{' '}\n              <ui.Control>\n                {' '}\n                <ui.Tags addons>\n                  {' '}\n                  <ui.LinkTag color={'link'}>CSS</ui.LinkTag>{' '}\n                  <ui.TagDelete as={'a'} />{' '}\n                </ui.Tags>{' '}\n              </ui.Control>{' '}\n              <ui.Control>\n                {' '}\n                <ui.Tags addons>\n                  {' '}\n                  <ui.LinkTag color={'link'}>Flexbox</ui.LinkTag>{' '}\n                  <ui.TagDelete as={'a'} />{' '}\n                </ui.Tags>{' '}\n              </ui.Control>{' '}\n              <ui.Control>\n                {' '}\n                <ui.Tags addons>\n                  {' '}\n                  <ui.LinkTag color={'link'}>Web Design</ui.LinkTag>{' '}\n                  <ui.TagDelete as={'a'} />{' '}\n                </ui.Tags>{' '}\n              </ui.Control>{' '}\n              <ui.Control>\n                {' '}\n                <ui.Tags addons>\n                  {' '}\n                  <ui.LinkTag color={'link'}>Open Source</ui.LinkTag>{' '}\n                  <ui.TagDelete as={'a'} />{' '}\n                </ui.Tags>{' '}\n              </ui.Control>{' '}\n              <ui.Control>\n                {' '}\n                <ui.Tags addons>\n                  {' '}\n                  <ui.LinkTag color={'link'}>Community</ui.LinkTag>{' '}\n                  <ui.TagDelete as={'a'} />{' '}\n                </ui.Tags>{' '}\n              </ui.Control>{' '}\n              <ui.Control>\n                {' '}\n                <ui.Tags addons>\n                  {' '}\n                  <ui.LinkTag color={'link'}>Documentation</ui.LinkTag>{' '}\n                  <ui.TagDelete as={'a'} />{' '}\n                </ui.Tags>{' '}\n              </ui.Control>{' '}\n            </ui.Field>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"field is-grouped is-grouped-multiline\">\\n  <div class=\"control\">\\n    <div class=\"tags has-addons\">\\n      <a class=\"tag is-link\">Technology</a>\\n      <a class=\"tag is-delete\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\"control\">\\n    <div class=\"tags has-addons\">\\n      <a class=\"tag is-link\">CSS</a>\\n      <a class=\"tag is-delete\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\"control\">\\n    <div class=\"tags has-addons\">\\n      <a class=\"tag is-link\">Flexbox</a>\\n      <a class=\"tag is-delete\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\"control\">\\n    <div class=\"tags has-addons\">\\n      <a class=\"tag is-link\">Web Design</a>\\n      <a class=\"tag is-delete\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\"control\">\\n    <div class=\"tags has-addons\">\\n      <a class=\"tag is-link\">Open Source</a>\\n      <a class=\"tag is-delete\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\"control\">\\n    <div class=\"tags has-addons\">\\n      <a class=\"tag is-link\">Community</a>\\n      <a class=\"tag is-delete\"></a>\\n    </div>\\n  </div>\\n\\n  <div class=\"control\">\\n    <div class=\"tags has-addons\">\\n      <a class=\"tag is-link\">Documentation</a>\\n      <a class=\"tag is-delete\"></a>\\n    </div>\\n  </div>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

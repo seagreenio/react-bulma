@@ -2034,41 +2034,33 @@ function Example001Demo() {
   return (
     <>
       <ui.Block className={'bd-icon-size'}>
-        {'\n  '}
+        {' '}
         <div className={'bd-snippet bd-is-vertical bd-is-size-1'}>
-          {'\n  \n    '}
+          {' '}
           <div className={'bd-snippet-example'}>
-            {'\n      '}
+            {' '}
             <p className={'bd-snippet-title'}>
-              {'\n        '}
+              {' '}
               <span className={'bd-snippet-tag bd-is-example'}>
-                {'Example'}
-              </span>
-              {'\n      '}
-            </p>
-            {'\n\n      '}
+                Example
+              </span>{' '}
+            </p>{' '}
             <div className={'bd-snippet-preview'}>
-              {'\n        \n          \n'}
+              {' '}
               <ui.Icon>
-                {'\n  '}
-                <i className={'fas fa-home'} />
-                {'\n'}
-              </ui.Icon>
-              {'\n\n        \n      '}
-            </div>
-            {'\n    '}
-          </div>
-          {'\n  \n\n  '}
+                {' '}
+                <i className={'fas fa-home'} />{' '}
+              </ui.Icon>{' '}
+            </div>{' '}
+          </div>{' '}
           <div className={'bd-snippet-source bd-theme-html'}>
-            {'\n    '}
+            {' '}
             <p className={'bd-snippet-title'}>
-              {'\n      '}
-              <span className={'bd-snippet-tag bd-is-html'}>{'HTML'}</span>
-              {'\n    '}
-            </p>
-            {'\n\n    '}
+              {' '}
+              <span className={'bd-snippet-tag bd-is-html'}>HTML</span>{' '}
+            </p>{' '}
             <div className={'bd-snippet-code bd-highlight-full'}>
-              {'\n      '}
+              {' '}
               <div className={'highlight'}>
                 <pre>
                   <code className={'language-html'}>
@@ -2077,14 +2069,10 @@ function Example001Demo() {
                     }
                   </code>
                 </pre>
-              </div>
-              {'\n    '}
-            </div>
-            {'\n  '}
-          </div>
-          {'\n'}
-        </div>
-        {'\n\n'}
+              </div>{' '}
+            </div>{' '}
+          </div>{' '}
+        </div>{' '}
       </ui.Block>
     </>
   )
@@ -2093,19 +2081,14 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.IconText>
-        {'\n  '}
+        {' '}
         <ui.Icon>
-          {'\n    '}
-          <i className={'fas fa-home'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Home'}</span>
-        {'\n'}
+          {' '}
+          <i className={'fas fa-home'} />{' '}
+        </ui.Icon>{' '}
+        <span>Home</span>{' '}
       </ui.IconText>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2113,49 +2096,33 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.IconText>
-        {'\n  '}
+        {' '}
         <ui.Icon>
-          {'\n    '}
-          <i className={'fas fa-train'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Paris'}</span>
-        {'\n  '}
+          {' '}
+          <i className={'fas fa-train'} />{' '}
+        </ui.Icon>{' '}
+        <span>Paris</span>{' '}
         <ui.Icon>
-          {'\n    '}
-          <i className={'fas fa-arrow-right'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Budapest'}</span>
-        {'\n  '}
+          {' '}
+          <i className={'fas fa-arrow-right'} />{' '}
+        </ui.Icon>{' '}
+        <span>Budapest</span>{' '}
         <ui.Icon>
-          {'\n    '}
-          <i className={'fas fa-arrow-right'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Bucharest'}</span>
-        {'\n  '}
+          {' '}
+          <i className={'fas fa-arrow-right'} />{' '}
+        </ui.Icon>{' '}
+        <span>Bucharest</span>{' '}
         <ui.Icon>
-          {'\n    '}
-          <i className={'fas fa-arrow-right'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Istanbul'}</span>
-        {'\n  '}
+          {' '}
+          <i className={'fas fa-arrow-right'} />{' '}
+        </ui.Icon>{' '}
+        <span>Istanbul</span>{' '}
         <ui.Icon>
-          {'\n    '}
-          <i className={'fas fa-flag-checkered'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n'}
+          {' '}
+          <i className={'fas fa-flag-checkered'} />{' '}
+        </ui.Icon>{' '}
       </ui.IconText>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2163,88 +2130,65 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Content>
-        {'\n  '}
+        {' '}
         <p>
-          {'\n    An invitation to\n    '}
+          An invitation to{' '}
           <ui.IconText>
-            {'\n      '}
+            {' '}
             <ui.Icon>
-              {'\n        '}
-              <i className={'fas fa-utensils'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n      '}
-            <span>{'dinner'}</span>
-            {'\n    '}
-          </ui.IconText>
-          {
-            '\n    was soon afterwards dispatched; and already had Mrs. Bennet planned the\n    courses that were to do credit to her housekeeping, when an answer arrived\n    which deferred it all. Mr. Bingley was obliged to be in\n    '
-          }
+              {' '}
+              <i className={'fas fa-utensils'} />{' '}
+            </ui.Icon>{' '}
+            <span>dinner</span>{' '}
+          </ui.IconText>{' '}
+          was soon afterwards dispatched; and already had Mrs. Bennet planned
+          the courses that were to do credit to her housekeeping, when an answer
+          arrived which deferred it all. Mr. Bingley was obliged to be in{' '}
           <ui.IconText>
-            {'\n      '}
+            {' '}
             <ui.Icon>
-              {'\n        '}
-              <i className={'fas fa-city'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n      '}
-            <span>{'town'}</span>
-            {'\n    '}
-          </ui.IconText>
-          {
-            '\n    the following day, and, consequently, unable to accept the honour of their\n    '
-          }
+              {' '}
+              <i className={'fas fa-city'} />{' '}
+            </ui.Icon>{' '}
+            <span>town</span>{' '}
+          </ui.IconText>{' '}
+          the following day, and, consequently, unable to accept the honour of
+          their{' '}
           <ui.IconText>
-            {'\n      '}
+            {' '}
             <ui.Icon>
-              {'\n        '}
-              <i className={'fas fa-envelope-open-text'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n      '}
-            <span>{'invitation'}</span>{' '}
+              {' '}
+              <i className={'fas fa-envelope-open-text'} />{' '}
+            </ui.Icon>{' '}
+            <span>invitation</span>{' '}
           </ui.IconText>
-          {', etc.\n  '}
-        </p>
-        {'\n\n  '}
+          , etc.
+        </p>{' '}
         <p>
-          {
-            '\n    Mrs. Bennet was quite disconcerted. She could not imagine what business he\n    could have in town so soon after his\n    '
-          }
+          Mrs. Bennet was quite disconcerted. She could not imagine what
+          business he could have in town so soon after his{' '}
           <ui.IconText>
-            {'\n      '}
+            {' '}
             <ui.Icon>
-              {'\n        '}
-              <i className={'fas fa-flag-checkered'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n      '}
-            <span>{'arrival'}</span>
-            {'\n    '}
-          </ui.IconText>
-          {
-            '\n    in Hertfordshire; and she began to fear that he might be always\n    '
-          }
+              {' '}
+              <i className={'fas fa-flag-checkered'} />{' '}
+            </ui.Icon>{' '}
+            <span>arrival</span>{' '}
+          </ui.IconText>{' '}
+          in Hertfordshire; and she began to fear that he might be always{' '}
           <ui.IconText>
-            {'\n      '}
+            {' '}
             <ui.Icon>
-              {'\n        '}
-              <i className={'fas fa-plane-departure'} />
-              {'\n      '}
-            </ui.Icon>
-            {'\n      '}
-            <span>{'flying'}</span>
-            {'\n    '}
-          </ui.IconText>
-          {
-            '\n    about from one place to another, and never settled at Netherfield as he\n    ought to be.\n  '
-          }
-        </p>
-        {'\n'}
+              {' '}
+              <i className={'fas fa-plane-departure'} />{' '}
+            </ui.Icon>{' '}
+            <span>flying</span>{' '}
+          </ui.IconText>{' '}
+          about from one place to another, and never settled at Netherfield as
+          he ought to be.
+        </p>{' '}
       </ui.Content>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2252,77 +2196,54 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.IconText as={'div'}>
-        {'\n  '}
+        {' '}
         <ui.Icon helpers={{ textColor: 'info' }}>
-          {'\n    '}
-          <i className={'fas fa-info-circle'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Information'}</span>
-        {'\n'}
-      </ui.IconText>
-      {'\n\n'}
+          {' '}
+          <i className={'fas fa-info-circle'} />{' '}
+        </ui.Icon>{' '}
+        <span>Information</span>{' '}
+      </ui.IconText>{' '}
       <ui.Block as={'p'}>
-        {'\n  Your package will be delivered on '}
-        <strong>{'Tuesday at 08:00'}</strong>
-        {'.\n'}
-      </ui.Block>
-      {'\n\n'}
+        {' '}
+        Your package will be delivered on <strong>Tuesday at 08:00</strong>
+        .{' '}
+      </ui.Block>{' '}
       <ui.IconText as={'div'}>
-        {'\n  '}
+        {' '}
         <ui.Icon helpers={{ textColor: 'success' }}>
-          {'\n    '}
-          <i className={'fas fa-check-square'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Success'}</span>
-        {'\n'}
-      </ui.IconText>
-      {'\n\n'}
-      <ui.Block as={'p'}>
-        {'Your image has been successfully uploaded.'}
-      </ui.Block>
-      {'\n\n'}
+          {' '}
+          <i className={'fas fa-check-square'} />{' '}
+        </ui.Icon>{' '}
+        <span>Success</span>{' '}
+      </ui.IconText>{' '}
+      <ui.Block as={'p'}>Your image has been successfully uploaded.</ui.Block>{' '}
       <ui.IconText as={'div'}>
-        {'\n  '}
+        {' '}
         <ui.Icon helpers={{ textColor: 'warning' }}>
-          {'\n    '}
-          <i className={'fas fa-exclamation-triangle'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Warning'}</span>
-        {'\n'}
-      </ui.IconText>
-      {'\n\n'}
+          {' '}
+          <i className={'fas fa-exclamation-triangle'} />{' '}
+        </ui.Icon>{' '}
+        <span>Warning</span>{' '}
+      </ui.IconText>{' '}
       <ui.Block as={'p'}>
-        {'\n  Some information is missing from your '}
-        <a href={'#'}>{'profile'}</a>
-        {' details.\n'}
-      </ui.Block>
-      {'\n\n'}
+        {' '}
+        Some information is missing from your <a href={'#'}>profile</a>{' '}
+        details.{' '}
+      </ui.Block>{' '}
       <ui.IconText as={'div'}>
-        {'\n  '}
+        {' '}
         <ui.Icon helpers={{ textColor: 'danger' }}>
-          {'\n    '}
-          <i className={'fas fa-ban'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Danger'}</span>
-        {'\n'}
-      </ui.IconText>
-      {'\n\n'}
+          {' '}
+          <i className={'fas fa-ban'} />{' '}
+        </ui.Icon>{' '}
+        <span>Danger</span>{' '}
+      </ui.IconText>{' '}
       <ui.Block as={'p'}>
-        {'\n  There was an error in your submission. '}
-        <a href={'#'}>{'Please try again'}</a>
-        {'.\n'}
+        {' '}
+        There was an error in your submission.{' '}
+        <a href={'#'}>Please try again</a>.{' '}
       </ui.Block>
-      {'\n\n\n        \n      '}
     </>
   )
 }
@@ -2330,31 +2251,22 @@ function Example005Demo() {
 function Example006Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Icon helpers={{ textColor: 'info' }}>
-        {'\n  '}
-        <i className={'fas fa-info-circle'} />
-        {'\n'}
-      </ui.Icon>
-      {'\n'}
+        {' '}
+        <i className={'fas fa-info-circle'} />{' '}
+      </ui.Icon>{' '}
       <ui.Icon helpers={{ textColor: 'success' }}>
-        {'\n  '}
-        <i className={'fas fa-check-square'} />
-        {'\n'}
-      </ui.Icon>
-      {'\n'}
+        {' '}
+        <i className={'fas fa-check-square'} />{' '}
+      </ui.Icon>{' '}
       <ui.Icon helpers={{ textColor: 'warning' }}>
-        {'\n  '}
-        <i className={'fas fa-exclamation-triangle'} />
-        {'\n'}
-      </ui.Icon>
-      {'\n'}
+        {' '}
+        <i className={'fas fa-exclamation-triangle'} />{' '}
+      </ui.Icon>{' '}
       <ui.Icon helpers={{ textColor: 'danger' }}>
-        {'\n  '}
-        <i className={'fas fa-ban'} />
-        {'\n'}
+        {' '}
+        <i className={'fas fa-ban'} />{' '}
       </ui.Icon>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2362,55 +2274,38 @@ function Example006Demo() {
 function Example007Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.IconText helpers={{ textColor: 'info' }}>
-        {'\n  '}
+        {' '}
         <ui.Icon>
-          {'\n    '}
-          <i className={'fas fa-info-circle'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Info'}</span>
-        {'\n'}
-      </ui.IconText>
-      {'\n\n'}
+          {' '}
+          <i className={'fas fa-info-circle'} />{' '}
+        </ui.Icon>{' '}
+        <span>Info</span>{' '}
+      </ui.IconText>{' '}
       <ui.IconText helpers={{ textColor: 'success' }}>
-        {'\n  '}
+        {' '}
         <ui.Icon>
-          {'\n    '}
-          <i className={'fas fa-check-square'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Success'}</span>
-        {'\n'}
-      </ui.IconText>
-      {'\n\n'}
+          {' '}
+          <i className={'fas fa-check-square'} />{' '}
+        </ui.Icon>{' '}
+        <span>Success</span>{' '}
+      </ui.IconText>{' '}
       <ui.IconText helpers={{ textColor: 'warning' }}>
-        {'\n  '}
+        {' '}
         <ui.Icon>
-          {'\n    '}
-          <i className={'fas fa-exclamation-triangle'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Warning'}</span>
-        {'\n'}
-      </ui.IconText>
-      {'\n\n'}
+          {' '}
+          <i className={'fas fa-exclamation-triangle'} />{' '}
+        </ui.Icon>{' '}
+        <span>Warning</span>{' '}
+      </ui.IconText>{' '}
       <ui.IconText helpers={{ textColor: 'danger' }}>
-        {'\n  '}
+        {' '}
         <ui.Icon>
-          {'\n    '}
-          <i className={'fas fa-ban'} />
-          {'\n  '}
-        </ui.Icon>
-        {'\n  '}
-        <span>{'Danger'}</span>
-        {'\n'}
+          {' '}
+          <i className={'fas fa-ban'} />{' '}
+        </ui.Icon>{' '}
+        <span>Danger</span>{' '}
       </ui.IconText>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2421,7 +2316,7 @@ export const Example001 = {
     official: { id: 'elements-icon/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Block className={"bd-icon-size"}>{"\\n  "}<div className={"bd-snippet bd-is-vertical bd-is-size-1"}>{"\\n  \\n    "}<div className={"bd-snippet-example"}>{"\\n      "}<p className={"bd-snippet-title"}>{"\\n        "}<span className={"bd-snippet-tag bd-is-example"}>{"Example"}</span>{"\\n      "}</p>{"\\n\\n      "}<div className={"bd-snippet-preview"}>{"\\n        \\n          \\n"}<ui.Icon>{"\\n  "}<i className={"fas fa-home"} />{"\\n"}</ui.Icon>{"\\n\\n        \\n      "}</div>{"\\n    "}</div>{"\\n  \\n\\n  "}<div className={"bd-snippet-source bd-theme-html"}>{"\\n    "}<p className={"bd-snippet-title"}>{"\\n      "}<span className={"bd-snippet-tag bd-is-html"}>{"HTML"}</span>{"\\n    "}</p>{"\\n\\n    "}<div className={"bd-snippet-code bd-highlight-full"}>{"\\n      "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<span class=\\"icon\\">\\n  <i class=\\"fas fa-home\\"></i>\\n</span>\\n"}</code></pre></div>{"\\n    "}</div>{"\\n  "}</div>{"\\n"}</div>{"\\n\\n"}</ui.Block></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Block className={'bd-icon-size'}>\n        {' '}\n        <div className={'bd-snippet bd-is-vertical bd-is-size-1'}>\n          {' '}\n          <div className={'bd-snippet-example'}>\n            {' '}\n            <p className={'bd-snippet-title'}>\n              {' '}\n              <span className={'bd-snippet-tag bd-is-example'}>\n                Example\n              </span>{' '}\n            </p>{' '}\n            <div className={'bd-snippet-preview'}>\n              {' '}\n              <ui.Icon>\n                {' '}\n                <i className={'fas fa-home'} />{' '}\n              </ui.Icon>{' '}\n            </div>{' '}\n          </div>{' '}\n          <div className={'bd-snippet-source bd-theme-html'}>\n            {' '}\n            <p className={'bd-snippet-title'}>\n              {' '}\n              <span className={'bd-snippet-tag bd-is-html'}>HTML</span>{' '}\n            </p>{' '}\n            <div className={'bd-snippet-code bd-highlight-full'}>\n              {' '}\n              <div className={'highlight'}>\n                <pre>\n                  <code className={'language-html'}>\n                    {\n                      '\\n<span class=\"icon\">\\n  <i class=\"fas fa-home\"></i>\\n</span>\\n'\n                    }\n                  </code>\n                </pre>\n              </div>{' '}\n            </div>{' '}\n          </div>{' '}\n        </div>{' '}\n      </ui.Block>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2436,7 +2331,7 @@ export const Example002 = {
     official: { id: 'elements-icon/icon-text/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.IconText>{"\\n  "}<ui.Icon>{"\\n    "}<i className={"fas fa-home"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Home"}</span>{"\\n"}</ui.IconText>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.IconText>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-home'} />{' '}\n        </ui.Icon>{' '}\n        <span>Home</span>{' '}\n      </ui.IconText>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2451,7 +2346,7 @@ export const Example003 = {
     official: { id: 'elements-icon/icon-text/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.IconText>{"\\n  "}<ui.Icon>{"\\n    "}<i className={"fas fa-train"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Paris"}</span>{"\\n  "}<ui.Icon>{"\\n    "}<i className={"fas fa-arrow-right"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Budapest"}</span>{"\\n  "}<ui.Icon>{"\\n    "}<i className={"fas fa-arrow-right"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Bucharest"}</span>{"\\n  "}<ui.Icon>{"\\n    "}<i className={"fas fa-arrow-right"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Istanbul"}</span>{"\\n  "}<ui.Icon>{"\\n    "}<i className={"fas fa-flag-checkered"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.IconText>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.IconText>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-train'} />{' '}\n        </ui.Icon>{' '}\n        <span>Paris</span>{' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-arrow-right'} />{' '}\n        </ui.Icon>{' '}\n        <span>Budapest</span>{' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-arrow-right'} />{' '}\n        </ui.Icon>{' '}\n        <span>Bucharest</span>{' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-arrow-right'} />{' '}\n        </ui.Icon>{' '}\n        <span>Istanbul</span>{' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-flag-checkered'} />{' '}\n        </ui.Icon>{' '}\n      </ui.IconText>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2466,7 +2361,7 @@ export const Example004 = {
     official: { id: 'elements-icon/icon-text/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Content>{"\\n  "}<p>{"\\n    An invitation to\\n    "}<ui.IconText>{"\\n      "}<ui.Icon>{"\\n        "}<i className={"fas fa-utensils"} />{"\\n      "}</ui.Icon>{"\\n      "}<span>{"dinner"}</span>{"\\n    "}</ui.IconText>{"\\n    was soon afterwards dispatched; and already had Mrs. Bennet planned the\\n    courses that were to do credit to her housekeeping, when an answer arrived\\n    which deferred it all. Mr. Bingley was obliged to be in\\n    "}<ui.IconText>{"\\n      "}<ui.Icon>{"\\n        "}<i className={"fas fa-city"} />{"\\n      "}</ui.Icon>{"\\n      "}<span>{"town"}</span>{"\\n    "}</ui.IconText>{"\\n    the following day, and, consequently, unable to accept the honour of their\\n    "}<ui.IconText>{"\\n      "}<ui.Icon>{"\\n        "}<i className={"fas fa-envelope-open-text"} />{"\\n      "}</ui.Icon>{"\\n      "}<span>{"invitation"}</span>{" "}</ui.IconText>{", etc.\\n  "}</p>{"\\n\\n  "}<p>{"\\n    Mrs. Bennet was quite disconcerted. She could not imagine what business he\\n    could have in town so soon after his\\n    "}<ui.IconText>{"\\n      "}<ui.Icon>{"\\n        "}<i className={"fas fa-flag-checkered"} />{"\\n      "}</ui.Icon>{"\\n      "}<span>{"arrival"}</span>{"\\n    "}</ui.IconText>{"\\n    in Hertfordshire; and she began to fear that he might be always\\n    "}<ui.IconText>{"\\n      "}<ui.Icon>{"\\n        "}<i className={"fas fa-plane-departure"} />{"\\n      "}</ui.Icon>{"\\n      "}<span>{"flying"}</span>{"\\n    "}</ui.IconText>{"\\n    about from one place to another, and never settled at Netherfield as he\\n    ought to be.\\n  "}</p>{"\\n"}</ui.Content>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Content>\n        {' '}\n        <p>\n          An invitation to{' '}\n          <ui.IconText>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i className={'fas fa-utensils'} />{' '}\n            </ui.Icon>{' '}\n            <span>dinner</span>{' '}\n          </ui.IconText>{' '}\n          was soon afterwards dispatched; and already had Mrs. Bennet planned\n          the courses that were to do credit to her housekeeping, when an answer\n          arrived which deferred it all. Mr. Bingley was obliged to be in{' '}\n          <ui.IconText>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i className={'fas fa-city'} />{' '}\n            </ui.Icon>{' '}\n            <span>town</span>{' '}\n          </ui.IconText>{' '}\n          the following day, and, consequently, unable to accept the honour of\n          their{' '}\n          <ui.IconText>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i className={'fas fa-envelope-open-text'} />{' '}\n            </ui.Icon>{' '}\n            <span>invitation</span>{' '}\n          </ui.IconText>\n          , etc.\n        </p>{' '}\n        <p>\n          Mrs. Bennet was quite disconcerted. She could not imagine what\n          business he could have in town so soon after his{' '}\n          <ui.IconText>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i className={'fas fa-flag-checkered'} />{' '}\n            </ui.Icon>{' '}\n            <span>arrival</span>{' '}\n          </ui.IconText>{' '}\n          in Hertfordshire; and she began to fear that he might be always{' '}\n          <ui.IconText>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i className={'fas fa-plane-departure'} />{' '}\n            </ui.Icon>{' '}\n            <span>flying</span>{' '}\n          </ui.IconText>{' '}\n          about from one place to another, and never settled at Netherfield as\n          he ought to be.\n        </p>{' '}\n      </ui.Content>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2481,7 +2376,7 @@ export const Example005 = {
     official: { id: 'elements-icon/icon-text/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.IconText as={"div"}>{"\\n  "}<ui.Icon helpers={{"textColor":"info"}}>{"\\n    "}<i className={"fas fa-info-circle"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Information"}</span>{"\\n"}</ui.IconText>{"\\n\\n"}<ui.Block as={"p"}>{"\\n  Your package will be delivered on "}<strong>{"Tuesday at 08:00"}</strong>{".\\n"}</ui.Block>{"\\n\\n"}<ui.IconText as={"div"}>{"\\n  "}<ui.Icon helpers={{"textColor":"success"}}>{"\\n    "}<i className={"fas fa-check-square"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Success"}</span>{"\\n"}</ui.IconText>{"\\n\\n"}<ui.Block as={"p"}>{"Your image has been successfully uploaded."}</ui.Block>{"\\n\\n"}<ui.IconText as={"div"}>{"\\n  "}<ui.Icon helpers={{"textColor":"warning"}}>{"\\n    "}<i className={"fas fa-exclamation-triangle"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Warning"}</span>{"\\n"}</ui.IconText>{"\\n\\n"}<ui.Block as={"p"}>{"\\n  Some information is missing from your "}<a href={"#"}>{"profile"}</a>{" details.\\n"}</ui.Block>{"\\n\\n"}<ui.IconText as={"div"}>{"\\n  "}<ui.Icon helpers={{"textColor":"danger"}}>{"\\n    "}<i className={"fas fa-ban"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Danger"}</span>{"\\n"}</ui.IconText>{"\\n\\n"}<ui.Block as={"p"}>{"\\n  There was an error in your submission. "}<a href={"#"}>{"Please try again"}</a>{".\\n"}</ui.Block>{"\\n\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.IconText as={'div'}>\n        {' '}\n        <ui.Icon helpers={{ textColor: 'info' }}>\n          {' '}\n          <i className={'fas fa-info-circle'} />{' '}\n        </ui.Icon>{' '}\n        <span>Information</span>{' '}\n      </ui.IconText>{' '}\n      <ui.Block as={'p'}>\n        {' '}\n        Your package will be delivered on <strong>Tuesday at 08:00</strong>\n        .{' '}\n      </ui.Block>{' '}\n      <ui.IconText as={'div'}>\n        {' '}\n        <ui.Icon helpers={{ textColor: 'success' }}>\n          {' '}\n          <i className={'fas fa-check-square'} />{' '}\n        </ui.Icon>{' '}\n        <span>Success</span>{' '}\n      </ui.IconText>{' '}\n      <ui.Block as={'p'}>Your image has been successfully uploaded.</ui.Block>{' '}\n      <ui.IconText as={'div'}>\n        {' '}\n        <ui.Icon helpers={{ textColor: 'warning' }}>\n          {' '}\n          <i className={'fas fa-exclamation-triangle'} />{' '}\n        </ui.Icon>{' '}\n        <span>Warning</span>{' '}\n      </ui.IconText>{' '}\n      <ui.Block as={'p'}>\n        {' '}\n        Some information is missing from your <a href={'#'}>profile</a>{' '}\n        details.{' '}\n      </ui.Block>{' '}\n      <ui.IconText as={'div'}>\n        {' '}\n        <ui.Icon helpers={{ textColor: 'danger' }}>\n          {' '}\n          <i className={'fas fa-ban'} />{' '}\n        </ui.Icon>{' '}\n        <span>Danger</span>{' '}\n      </ui.IconText>{' '}\n      <ui.Block as={'p'}>\n        {' '}\n        There was an error in your submission.{' '}\n        <a href={'#'}>Please try again</a>.{' '}\n      </ui.Block>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2496,7 +2391,7 @@ export const Example006 = {
     official: { id: 'elements-icon/colors/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Icon helpers={{"textColor":"info"}}>{"\\n  "}<i className={"fas fa-info-circle"} />{"\\n"}</ui.Icon>{"\\n"}<ui.Icon helpers={{"textColor":"success"}}>{"\\n  "}<i className={"fas fa-check-square"} />{"\\n"}</ui.Icon>{"\\n"}<ui.Icon helpers={{"textColor":"warning"}}>{"\\n  "}<i className={"fas fa-exclamation-triangle"} />{"\\n"}</ui.Icon>{"\\n"}<ui.Icon helpers={{"textColor":"danger"}}>{"\\n  "}<i className={"fas fa-ban"} />{"\\n"}</ui.Icon>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Icon helpers={{ textColor: 'info' }}>\n        {' '}\n        <i className={'fas fa-info-circle'} />{' '}\n      </ui.Icon>{' '}\n      <ui.Icon helpers={{ textColor: 'success' }}>\n        {' '}\n        <i className={'fas fa-check-square'} />{' '}\n      </ui.Icon>{' '}\n      <ui.Icon helpers={{ textColor: 'warning' }}>\n        {' '}\n        <i className={'fas fa-exclamation-triangle'} />{' '}\n      </ui.Icon>{' '}\n      <ui.Icon helpers={{ textColor: 'danger' }}>\n        {' '}\n        <i className={'fas fa-ban'} />{' '}\n      </ui.Icon>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2511,7 +2406,7 @@ export const Example007 = {
     official: { id: 'elements-icon/colors/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.IconText helpers={{"textColor":"info"}}>{"\\n  "}<ui.Icon>{"\\n    "}<i className={"fas fa-info-circle"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Info"}</span>{"\\n"}</ui.IconText>{"\\n\\n"}<ui.IconText helpers={{"textColor":"success"}}>{"\\n  "}<ui.Icon>{"\\n    "}<i className={"fas fa-check-square"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Success"}</span>{"\\n"}</ui.IconText>{"\\n\\n"}<ui.IconText helpers={{"textColor":"warning"}}>{"\\n  "}<ui.Icon>{"\\n    "}<i className={"fas fa-exclamation-triangle"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Warning"}</span>{"\\n"}</ui.IconText>{"\\n\\n"}<ui.IconText helpers={{"textColor":"danger"}}>{"\\n  "}<ui.Icon>{"\\n    "}<i className={"fas fa-ban"} />{"\\n  "}</ui.Icon>{"\\n  "}<span>{"Danger"}</span>{"\\n"}</ui.IconText>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.IconText helpers={{ textColor: 'info' }}>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-info-circle'} />{' '}\n        </ui.Icon>{' '}\n        <span>Info</span>{' '}\n      </ui.IconText>{' '}\n      <ui.IconText helpers={{ textColor: 'success' }}>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-check-square'} />{' '}\n        </ui.Icon>{' '}\n        <span>Success</span>{' '}\n      </ui.IconText>{' '}\n      <ui.IconText helpers={{ textColor: 'warning' }}>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-exclamation-triangle'} />{' '}\n        </ui.Icon>{' '}\n        <span>Warning</span>{' '}\n      </ui.IconText>{' '}\n      <ui.IconText helpers={{ textColor: 'danger' }}>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-ban'} />{' '}\n        </ui.Icon>{' '}\n        <span>Danger</span>{' '}\n      </ui.IconText>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

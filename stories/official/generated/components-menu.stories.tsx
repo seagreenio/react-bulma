@@ -527,72 +527,51 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Menu>
-        {'\n  '}
-        <ui.MenuLabel>{'General'}</ui.MenuLabel>
-        {'\n  '}
+        {' '}
+        <ui.MenuLabel>General</ui.MenuLabel>{' '}
         <ui.MenuList>
-          {'\n    '}
-          <ui.MenuItem>{'Dashboard'}</ui.MenuItem>
-          {'\n    '}
-          <ui.MenuItem>{'Customers'}</ui.MenuItem>
-          {'\n  '}
-        </ui.MenuList>
-        {'\n  '}
-        <ui.MenuLabel>{'Administration'}</ui.MenuLabel>
-        {'\n  '}
+          {' '}
+          <ui.MenuItem>Dashboard</ui.MenuItem>{' '}
+          <ui.MenuItem>Customers</ui.MenuItem>{' '}
+        </ui.MenuList>{' '}
+        <ui.MenuLabel>Administration</ui.MenuLabel>{' '}
         <ui.MenuList>
-          {'\n    '}
-          <ui.MenuItem>{'Team Settings'}</ui.MenuItem>
-          {'\n    '}
+          {' '}
+          <ui.MenuItem>Team Settings</ui.MenuItem>{' '}
           <ui.MenuItem
             active
             nested={
               <>
                 <ul>
-                  {'\n        '}
+                  {' '}
                   <li>
-                    <a>{'Members'}</a>
-                  </li>
-                  {'\n        '}
+                    <a>Members</a>
+                  </li>{' '}
                   <li>
-                    <a>{'Plugins'}</a>
-                  </li>
-                  {'\n        '}
+                    <a>Plugins</a>
+                  </li>{' '}
                   <li>
-                    <a>{'Add a member'}</a>
-                  </li>
-                  {'\n      '}
+                    <a>Add a member</a>
+                  </li>{' '}
                 </ul>
               </>
             }
           >
-            {'Manage Your Team'}
-          </ui.MenuItem>
-          {'\n    '}
-          <ui.MenuItem>{'Invitations'}</ui.MenuItem>
-          {'\n    '}
-          <ui.MenuItem>{'Cloud Storage Environment Settings'}</ui.MenuItem>
-          {'\n    '}
-          <ui.MenuItem>{'Authentication'}</ui.MenuItem>
-          {'\n  '}
-        </ui.MenuList>
-        {'\n  '}
-        <ui.MenuLabel>{'Transactions'}</ui.MenuLabel>
-        {'\n  '}
+            Manage Your Team
+          </ui.MenuItem>{' '}
+          <ui.MenuItem>Invitations</ui.MenuItem>{' '}
+          <ui.MenuItem>Cloud Storage Environment Settings</ui.MenuItem>{' '}
+          <ui.MenuItem>Authentication</ui.MenuItem>{' '}
+        </ui.MenuList>{' '}
+        <ui.MenuLabel>Transactions</ui.MenuLabel>{' '}
         <ui.MenuList>
-          {'\n    '}
-          <ui.MenuItem>{'Payments'}</ui.MenuItem>
-          {'\n    '}
-          <ui.MenuItem>{'Transfers'}</ui.MenuItem>
-          {'\n    '}
-          <ui.MenuItem>{'Balance'}</ui.MenuItem>
-          {'\n  '}
-        </ui.MenuList>
-        {'\n'}
+          {' '}
+          <ui.MenuItem>Payments</ui.MenuItem>{' '}
+          <ui.MenuItem>Transfers</ui.MenuItem>{' '}
+          <ui.MenuItem>Balance</ui.MenuItem>{' '}
+        </ui.MenuList>{' '}
       </ui.Menu>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -603,7 +582,7 @@ export const Example001 = {
     official: { id: 'components-menu/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Menu>{"\\n  "}<ui.MenuLabel>{"General"}</ui.MenuLabel>{"\\n  "}<ui.MenuList>{"\\n    "}<ui.MenuItem>{"Dashboard"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Customers"}</ui.MenuItem>{"\\n  "}</ui.MenuList>{"\\n  "}<ui.MenuLabel>{"Administration"}</ui.MenuLabel>{"\\n  "}<ui.MenuList>{"\\n    "}<ui.MenuItem>{"Team Settings"}</ui.MenuItem>{"\\n    "}<ui.MenuItem active nested={<><ul>{"\\n        "}<li><a>{"Members"}</a></li>{"\\n        "}<li><a>{"Plugins"}</a></li>{"\\n        "}<li><a>{"Add a member"}</a></li>{"\\n      "}</ul></>}>{"Manage Your Team"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Invitations"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Cloud Storage Environment Settings"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Authentication"}</ui.MenuItem>{"\\n  "}</ui.MenuList>{"\\n  "}<ui.MenuLabel>{"Transactions"}</ui.MenuLabel>{"\\n  "}<ui.MenuList>{"\\n    "}<ui.MenuItem>{"Payments"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Transfers"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Balance"}</ui.MenuItem>{"\\n  "}</ui.MenuList>{"\\n"}</ui.Menu>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Menu>\n        {' '}\n        <ui.MenuLabel>General</ui.MenuLabel>{' '}\n        <ui.MenuList>\n          {' '}\n          <ui.MenuItem>Dashboard</ui.MenuItem>{' '}\n          <ui.MenuItem>Customers</ui.MenuItem>{' '}\n        </ui.MenuList>{' '}\n        <ui.MenuLabel>Administration</ui.MenuLabel>{' '}\n        <ui.MenuList>\n          {' '}\n          <ui.MenuItem>Team Settings</ui.MenuItem>{' '}\n          <ui.MenuItem\n            active\n            nested={\n              <>\n                <ul>\n                  {' '}\n                  <li>\n                    <a>Members</a>\n                  </li>{' '}\n                  <li>\n                    <a>Plugins</a>\n                  </li>{' '}\n                  <li>\n                    <a>Add a member</a>\n                  </li>{' '}\n                </ul>\n              </>\n            }\n          >\n            Manage Your Team\n          </ui.MenuItem>{' '}\n          <ui.MenuItem>Invitations</ui.MenuItem>{' '}\n          <ui.MenuItem>Cloud Storage Environment Settings</ui.MenuItem>{' '}\n          <ui.MenuItem>Authentication</ui.MenuItem>{' '}\n        </ui.MenuList>{' '}\n        <ui.MenuLabel>Transactions</ui.MenuLabel>{' '}\n        <ui.MenuList>\n          {' '}\n          <ui.MenuItem>Payments</ui.MenuItem>{' '}\n          <ui.MenuItem>Transfers</ui.MenuItem>{' '}\n          <ui.MenuItem>Balance</ui.MenuItem>{' '}\n        </ui.MenuList>{' '}\n      </ui.Menu>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

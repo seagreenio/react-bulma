@@ -1527,155 +1527,108 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field>
-        {'\n  '}
-        <ui.Label>{'Name'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label>Name</ui.Label>{' '}
         <ui.Control>
-          {'\n    '}
-          <ui.Input type={'text'} placeholder={'Text input'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+          {' '}
+          <ui.Input type={'text'} placeholder={'Text input'} />{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
-        <ui.Label>{'Username'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label>Username</ui.Label>{' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
+          {' '}
           <ui.Input
             type={'text'}
             placeholder={'Text input'}
             defaultValue={'bulma'}
             color={'success'}
-          />
-          {'\n    '}
+          />{' '}
           <ui.Icon size={'small'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-user'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-user'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon size={'small'} className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
-        <ui.Help color={'success'}>{'This username is available'}</ui.Help>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+            {' '}
+            <i className={'fas fa-check'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
+        <ui.Help color={'success'}>This username is available</ui.Help>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
-        <ui.Label>{'Email'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label>Email</ui.Label>{' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
+          {' '}
           <ui.Input
             type={'email'}
             placeholder={'Email input'}
             defaultValue={'hello@'}
             color={'danger'}
-          />
-          {'\n    '}
+          />{' '}
           <ui.Icon size={'small'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon size={'small'} className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-exclamation-triangle'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
-        <ui.Help color={'danger'}>{'This email is invalid'}</ui.Help>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+            {' '}
+            <i className={'fas fa-exclamation-triangle'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
+        <ui.Help color={'danger'}>This email is invalid</ui.Help>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
-        <ui.Label>{'Subject'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label>Subject</ui.Label>{' '}
         <ui.Control>
-          {'\n    '}
+          {' '}
           <ui.Select>
-            {'\n        '}
-            <option>{'Select dropdown'}</option>
-            {'\n        '}
-            <option>{'With options'}</option>
-            {'\n      '}
-          </ui.Select>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+            {' '}
+            <option>Select dropdown</option> <option>With options</option>{' '}
+          </ui.Select>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
-        <ui.Label>{'Message'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label>Message</ui.Label>{' '}
         <ui.Control>
-          {'\n    '}
-          <ui.Textarea placeholder={'Textarea'} defaultValue={''} />
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+          {' '}
+          <ui.Textarea placeholder={'Textarea'} defaultValue={''} />{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control>
-          {'\n    '}
+          {' '}
           <ui.Checkbox>
-            {'\n      I agree to the '}
-            <a href={'#'}>{'terms and conditions'}</a>
-            {'\n    '}
-          </ui.Checkbox>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+            {' '}
+            I agree to the <a href={'#'}>terms and conditions</a>{' '}
+          </ui.Checkbox>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control>
-          {'\n    '}
-          <ui.Radio name={'question'}>{'\n      Yes\n    '}</ui.Radio>
-          {'\n    '}
-          <ui.Radio name={'question'}>{'\n      No\n    '}</ui.Radio>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+          {' '}
+          <ui.Radio name={'question'}> Yes </ui.Radio>{' '}
+          <ui.Radio name={'question'}> No </ui.Radio>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field layout={'grouped'}>
-        {'\n  '}
+        {' '}
         <ui.Control>
-          {'\n    '}
-          <ui.Button color={'link'}>{'Submit'}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button color={'link'}>Submit</ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control>
-          {'\n    '}
+          {' '}
           <ui.Button color={'link'} tone={'light'}>
-            {'Cancel'}
-          </ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+            Cancel
+          </ui.Button>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1683,21 +1636,15 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field>
-        {'\n  '}
-        <ui.Label>{'Label'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label>Label</ui.Label>{' '}
         <ui.Control>
-          {'\n    '}
-          <ui.Input type={'text'} placeholder={'Text input'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
-        <ui.Help>{'This is a help text'}</ui.Help>
-        {'\n'}
+          {' '}
+          <ui.Input type={'text'} placeholder={'Text input'} />{' '}
+        </ui.Control>{' '}
+        <ui.Help>This is a help text</ui.Help>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1705,31 +1652,25 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field>
-        {'\n  '}
-        <ui.Label>{'Name'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label>Name</ui.Label>{' '}
         <ui.Control>
-          {'\n    '}
-          <ui.Input type={'text'} placeholder={'e.g Alex Smith'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+          {' '}
+          <ui.Input type={'text'} placeholder={'e.g Alex Smith'} />{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
-        <ui.Label>{'Email'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label>Email</ui.Label>{' '}
         <ui.Control>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'e.g. alexsmith@gmail.com'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.Input
+            type={'email'}
+            placeholder={'e.g. alexsmith@gmail.com'}
+          />{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1737,13 +1678,10 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Control>
-        {'\n  '}
-        <ui.Input type={'text'} placeholder={'Text input'} />
-        {'\n'}
+        {' '}
+        <ui.Input type={'text'} placeholder={'Text input'} />{' '}
       </ui.Control>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1751,19 +1689,13 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Control>
-        {'\n  '}
+        {' '}
         <ui.Select>
-          {'\n      '}
-          <option>{'Select dropdown'}</option>
-          {'\n      '}
-          <option>{'With options'}</option>
-          {'\n    '}
-        </ui.Select>
-        {'\n'}
+          {' '}
+          <option>Select dropdown</option> <option>With options</option>{' '}
+        </ui.Select>{' '}
       </ui.Control>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1771,13 +1703,10 @@ function Example005Demo() {
 function Example006Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Control>
-        {'\n  '}
-        <ui.Button color={'primary'}>{'Submit'}</ui.Button>
-        {'\n'}
+        {' '}
+        <ui.Button color={'primary'}>Submit</ui.Button>{' '}
       </ui.Control>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1785,55 +1714,39 @@ function Example006Demo() {
 function Example007Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control icons={'both'} as={'p'}>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'Email'} />
-          {'\n    '}
+          {' '}
+          <ui.Input type={'email'} placeholder={'Email'} />{' '}
           <ui.Icon size={'small'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon size={'small'} className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n'}
+            {' '}
+            <i className={'fas fa-check'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control icons={'left'} as={'p'}>
-          {'\n    '}
-          <ui.Input type={'password'} placeholder={'Password'} />
-          {'\n    '}
+          {' '}
+          <ui.Input type={'password'} placeholder={'Password'} />{' '}
           <ui.Icon size={'small'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-lock'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n'}
+            {' '}
+            <i className={'fas fa-lock'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button color={'success'}>{'\n      Login\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.Button color={'success'}> Login </ui.Button>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1841,31 +1754,21 @@ function Example007Demo() {
 function Example008Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control icons={'left'} as={'p'}>
-          {'\n    '}
+          {' '}
           <ui.Select as={'span'} defaultValue={'Country'}>
-            {'\n        '}
-            <option>{'Country'}</option>
-            {'\n        '}
-            <option>{'Select dropdown'}</option>
-            {'\n        '}
-            <option>{'With options'}</option>
-            {'\n      '}
-          </ui.Select>
-          {'\n    '}
+            {' '}
+            <option>Country</option> <option>Select dropdown</option>{' '}
+            <option>With options</option>{' '}
+          </ui.Select>{' '}
           <ui.Icon size={'small'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-globe'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+            {' '}
+            <i className={'fas fa-globe'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1873,31 +1776,22 @@ function Example008Demo() {
 function Example009Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field>
-        {'\n  '}
-        <ui.Label size={'small'}>{'Small input'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label size={'small'}>Small input</ui.Label>{' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'Normal'} size={'small'} />
-          {'\n    '}
+          {' '}
+          <ui.Input type={'email'} placeholder={'Normal'} size={'small'} />{' '}
           <ui.Icon size={'small'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon size={'small'} className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+            {' '}
+            <i className={'fas fa-check'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1905,53 +1799,37 @@ function Example009Demo() {
 function Example010Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field>
-        {'\n  '}
-        <ui.Label>{'Normal input'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label>Normal input</ui.Label>{' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'Extra small'} />
-          {'\n    '}
+          {' '}
+          <ui.Input type={'email'} placeholder={'Extra small'} />{' '}
           <ui.Icon size={'small'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope fa-xs'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope fa-xs'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon size={'small'} className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check fa-xs'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+            {' '}
+            <i className={'fas fa-check fa-xs'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'Normal'} />
-          {'\n    '}
+          {' '}
+          <ui.Input type={'email'} placeholder={'Normal'} />{' '}
           <ui.Icon className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+            {' '}
+            <i className={'fas fa-check'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1959,79 +1837,60 @@ function Example010Demo() {
 function Example011Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field>
-        {'\n  '}
-        <ui.Label size={'medium'}>{'Medium input'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label size={'medium'}>Medium input</ui.Label>{' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
+          {' '}
           <ui.Input
             type={'email'}
             placeholder={'Extra small'}
             size={'medium'}
-          />
-          {'\n    '}
+          />{' '}
           <ui.Icon size={'small'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope fa-xs'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope fa-xs'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon size={'small'} className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check fa-xs'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+            {' '}
+            <i className={'fas fa-check fa-xs'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'Small'} size={'medium'} />
-          {'\n    '}
+          {' '}
+          <ui.Input type={'email'} placeholder={'Small'} size={'medium'} />{' '}
           <ui.Icon className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope fa-sm'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope fa-sm'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check fa-sm'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+            {' '}
+            <i className={'fas fa-check fa-sm'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'Normal'} size={'medium'} />
-          {'\n    '}
+          {' '}
+          <ui.Input
+            type={'email'}
+            placeholder={'Normal'}
+            size={'medium'}
+          />{' '}
           <ui.Icon size={'medium'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon size={'medium'} className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+            {' '}
+            <i className={'fas fa-check'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2039,97 +1898,71 @@ function Example011Demo() {
 function Example012Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field>
-        {'\n  '}
-        <ui.Label size={'large'}>{'Large input'}</ui.Label>
-        {'\n  '}
+        {' '}
+        <ui.Label size={'large'}>Large input</ui.Label>{' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'Extra small'} size={'large'} />
-          {'\n    '}
+          {' '}
+          <ui.Input
+            type={'email'}
+            placeholder={'Extra small'}
+            size={'large'}
+          />{' '}
           <ui.Icon size={'small'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope fa-xs'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope fa-xs'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon size={'small'} className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check fa-xs'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+            {' '}
+            <i className={'fas fa-check fa-xs'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'Small'} size={'large'} />
-          {'\n    '}
+          {' '}
+          <ui.Input type={'email'} placeholder={'Small'} size={'large'} />{' '}
           <ui.Icon className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope fa-sm'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope fa-sm'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check fa-sm'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+            {' '}
+            <i className={'fas fa-check fa-sm'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'Normal'} size={'large'} />
-          {'\n    '}
+          {' '}
+          <ui.Input type={'email'} placeholder={'Normal'} size={'large'} />{' '}
           <ui.Icon size={'large'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon size={'large'} className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+            {' '}
+            <i className={'fas fa-check'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field>
-        {'\n  '}
+        {' '}
         <ui.Control icons={'both'}>
-          {'\n    '}
-          <ui.Input type={'email'} placeholder={'Large'} size={'large'} />
-          {'\n    '}
+          {' '}
+          <ui.Input type={'email'} placeholder={'Large'} size={'large'} />{' '}
           <ui.Icon size={'medium'} className={'rb-is-left'}>
-            {'\n      '}
-            <i className={'fas fa-envelope fa-lg'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n    '}
+            {' '}
+            <i className={'fas fa-envelope fa-lg'} />{' '}
+          </ui.Icon>{' '}
           <ui.Icon size={'medium'} className={'rb-is-right'}>
-            {'\n      '}
-            <i className={'fas fa-check fa-lg'} />
-            {'\n    '}
-          </ui.Icon>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+            {' '}
+            <i className={'fas fa-check fa-lg'} />{' '}
+          </ui.Icon>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2137,23 +1970,17 @@ function Example012Demo() {
 function Example013Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'addons'}>
-        {'\n  '}
+        {' '}
         <ui.Control>
-          {'\n    '}
-          <ui.Input type={'text'} placeholder={'Find a repository'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Input type={'text'} placeholder={'Find a repository'} />{' '}
+        </ui.Control>{' '}
         <ui.Control>
-          {'\n    '}
-          <ui.Button color={'info'}>{'\n      Search\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.Button color={'info'}> Search </ui.Button>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2161,25 +1988,20 @@ function Example013Demo() {
 function Example014Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'addons'}>
-        {'\n  '}
+        {' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Input type={'text'} placeholder={'Your email'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Input type={'text'} placeholder={'Your email'} />{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
+          {' '}
           <ui.LinkButton className={'rb-is-static'}>
-            {'\n      @gmail.com\n    '}
-          </ui.LinkButton>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+            {' '}
+            @gmail.com{' '}
+          </ui.LinkButton>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2187,67 +2009,42 @@ function Example014Demo() {
 function Example015Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'addons'}>
-        {'\n  '}
+        {' '}
         <ui.Control as={'p'}>
-          {'\n    '}
+          {' '}
           <ui.Select as={'span'}>
-            {'\n        '}
-            <option>{'$'}</option>
-            {'\n        '}
-            <option>{'£'}</option>
-            {'\n        '}
-            <option>{'€'}</option>
-            {'\n      '}
-          </ui.Select>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+            {' '}
+            <option>$</option> <option>£</option> <option>€</option>{' '}
+          </ui.Select>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Input type={'text'} placeholder={'Amount of money'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Input type={'text'} placeholder={'Amount of money'} />{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Transfer\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+          {' '}
+          <ui.Button> Transfer </ui.Button>{' '}
+        </ui.Control>{' '}
+      </ui.Field>{' '}
       <ui.Field layout={'addons'}>
-        {'\n  '}
+        {' '}
         <ui.Control as={'p'}>
-          {'\n    '}
+          {' '}
           <ui.Select as={'span'}>
-            {'\n        '}
-            <option>{'$'}</option>
-            {'\n        '}
-            <option>{'£'}</option>
-            {'\n        '}
-            <option>{'€'}</option>
-            {'\n      '}
-          </ui.Select>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+            {' '}
+            <option>$</option> <option>£</option> <option>€</option>{' '}
+          </ui.Select>{' '}
+        </ui.Control>{' '}
         <ui.Control expanded as={'p'}>
-          {'\n    '}
-          <ui.Input type={'text'} placeholder={'Amount of money'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Input type={'text'} placeholder={'Amount of money'} />{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Transfer\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.Button> Transfer </ui.Button>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2255,51 +2052,33 @@ function Example015Demo() {
 function Example016Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'addons'}>
-        {'\n  '}
+        {' '}
         <ui.Control expanded>
-          {'\n    '}
+          {' '}
           <ui.Select name={'country'} fullWidth>
-            {'\n        '}
-            <option value={'Argentina'}>{'Argentina'}</option>
-            {'\n        '}
-            <option value={'Bolivia'}>{'Bolivia'}</option>
-            {'\n        '}
-            <option value={'Brazil'}>{'Brazil'}</option>
-            {'\n        '}
-            <option value={'Chile'}>{'Chile'}</option>
-            {'\n        '}
-            <option value={'Colombia'}>{'Colombia'}</option>
-            {'\n        '}
-            <option value={'Ecuador'}>{'Ecuador'}</option>
-            {'\n        '}
-            <option value={'Guyana'}>{'Guyana'}</option>
-            {'\n        '}
-            <option value={'Paraguay'}>{'Paraguay'}</option>
-            {'\n        '}
-            <option value={'Peru'}>{'Peru'}</option>
-            {'\n        '}
-            <option value={'Suriname'}>{'Suriname'}</option>
-            {'\n        '}
-            <option value={'Uruguay'}>{'Uruguay'}</option>
-            {'\n        '}
-            <option value={'Venezuela'}>{'Venezuela'}</option>
-            {'\n      '}
-          </ui.Select>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+            {' '}
+            <option value={'Argentina'}>Argentina</option>{' '}
+            <option value={'Bolivia'}>Bolivia</option>{' '}
+            <option value={'Brazil'}>Brazil</option>{' '}
+            <option value={'Chile'}>Chile</option>{' '}
+            <option value={'Colombia'}>Colombia</option>{' '}
+            <option value={'Ecuador'}>Ecuador</option>{' '}
+            <option value={'Guyana'}>Guyana</option>{' '}
+            <option value={'Paraguay'}>Paraguay</option>{' '}
+            <option value={'Peru'}>Peru</option>{' '}
+            <option value={'Suriname'}>Suriname</option>{' '}
+            <option value={'Uruguay'}>Uruguay</option>{' '}
+            <option value={'Venezuela'}>Venezuela</option>{' '}
+          </ui.Select>{' '}
+        </ui.Control>{' '}
         <ui.Control>
-          {'\n    '}
+          {' '}
           <ui.Button type={'submit'} color={'primary'}>
-            {'Choose'}
-          </ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+            Choose
+          </ui.Button>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2307,37 +2086,24 @@ function Example016Demo() {
 function Example017Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'addons'} alignment={'centered'}>
-        {'\n  '}
+        {' '}
         <ui.Control as={'p'}>
-          {'\n    '}
+          {' '}
           <ui.Select as={'span'}>
-            {'\n        '}
-            <option>{'$'}</option>
-            {'\n        '}
-            <option>{'£'}</option>
-            {'\n        '}
-            <option>{'€'}</option>
-            {'\n      '}
-          </ui.Select>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+            {' '}
+            <option>$</option> <option>£</option> <option>€</option>{' '}
+          </ui.Select>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Input type={'text'} placeholder={'Amount of money'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Input type={'text'} placeholder={'Amount of money'} />{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button color={'primary'}>{'\n      Transfer\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.Button color={'primary'}> Transfer </ui.Button>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2345,37 +2111,24 @@ function Example017Demo() {
 function Example018Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'addons'} alignment={'right'}>
-        {'\n  '}
+        {' '}
         <ui.Control as={'p'}>
-          {'\n    '}
+          {' '}
           <ui.Select as={'span'}>
-            {'\n        '}
-            <option>{'$'}</option>
-            {'\n        '}
-            <option>{'£'}</option>
-            {'\n        '}
-            <option>{'€'}</option>
-            {'\n      '}
-          </ui.Select>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+            {' '}
+            <option>$</option> <option>£</option> <option>€</option>{' '}
+          </ui.Select>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Input type={'text'} placeholder={'Amount of money'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Input type={'text'} placeholder={'Amount of money'} />{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button color={'primary'}>{'\n      Transfer\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.Button color={'primary'}> Transfer </ui.Button>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2383,25 +2136,17 @@ function Example018Demo() {
 function Example019Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'grouped'}>
-        {'\n  '}
+        {' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button color={'primary'}>{'\n      Submit\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button color={'primary'}> Submit </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.LinkButton color={'light'}>
-            {'\n      Cancel\n    '}
-          </ui.LinkButton>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.LinkButton color={'light'}> Cancel </ui.LinkButton>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2409,25 +2154,17 @@ function Example019Demo() {
 function Example020Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'grouped'} alignment={'centered'}>
-        {'\n  '}
+        {' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button color={'primary'}>{'\n      Submit\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button color={'primary'}> Submit </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.LinkButton color={'light'}>
-            {'\n      Cancel\n    '}
-          </ui.LinkButton>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.LinkButton color={'light'}> Cancel </ui.LinkButton>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2435,25 +2172,17 @@ function Example020Demo() {
 function Example021Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'grouped'} alignment={'right'}>
-        {'\n  '}
+        {' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button color={'primary'}>{'\n      Submit\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button color={'primary'}> Submit </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.LinkButton color={'light'}>
-            {'\n      Cancel\n    '}
-          </ui.LinkButton>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.LinkButton color={'light'}> Cancel </ui.LinkButton>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2461,23 +2190,17 @@ function Example021Demo() {
 function Example022Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'grouped'}>
-        {'\n  '}
+        {' '}
         <ui.Control expanded as={'p'}>
-          {'\n    '}
-          <ui.Input type={'text'} placeholder={'Find a repository'} />
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Input type={'text'} placeholder={'Find a repository'} />{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button color={'info'}>{'\n      Search\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.Button color={'info'}> Search </ui.Button>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2485,89 +2208,61 @@ function Example022Demo() {
 function Example023Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field layout={'grouped'} multiline>
-        {'\n  '}
+        {' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      One\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> One </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Two\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Two </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Three\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Three </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Four\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Four </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Five\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Five </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Six\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Six </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Seven\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Seven </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Eight\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Eight </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Nine\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Nine </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Ten\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Ten </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Eleven\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Eleven </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Twelve\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n  '}
+          {' '}
+          <ui.Button> Twelve </ui.Button>{' '}
+        </ui.Control>{' '}
         <ui.Control as={'p'}>
-          {'\n    '}
-          <ui.Button>{'\n      Thirteen\n    '}</ui.Button>
-          {'\n  '}
-        </ui.Control>
-        {'\n'}
+          {' '}
+          <ui.Button> Thirteen </ui.Button>{' '}
+        </ui.Control>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2575,240 +2270,167 @@ function Example023Demo() {
 function Example024Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field horizontal>
-        {'\n  '}
+        {' '}
         <ui.FieldLabel size={'normal'}>
-          {'\n    '}
-          <ui.Label>{'From'}</ui.Label>
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+          {' '}
+          <ui.Label>From</ui.Label>{' '}
+        </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control expanded icons={'left'} as={'p'}>
-              {'\n        '}
-              <ui.Input type={'text'} placeholder={'Name'} />
-              {'\n        '}
+              {' '}
+              <ui.Input type={'text'} placeholder={'Name'} />{' '}
               <ui.Icon size={'small'} className={'rb-is-left'}>
-                {'\n          '}
-                <i className={'fas fa-user'} />
-                {'\n        '}
-              </ui.Icon>
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n    '}
+                {' '}
+                <i className={'fas fa-user'} />{' '}
+              </ui.Icon>{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control expanded icons={'both'} as={'p'}>
-              {'\n        '}
+              {' '}
               <ui.Input
                 type={'email'}
                 placeholder={'Email'}
                 defaultValue={'alex@smith.com'}
                 color={'success'}
-              />
-              {'\n        '}
+              />{' '}
               <ui.Icon size={'small'} className={'rb-is-left'}>
-                {'\n          '}
-                <i className={'fas fa-envelope'} />
-                {'\n        '}
-              </ui.Icon>
-              {'\n        '}
+                {' '}
+                <i className={'fas fa-envelope'} />{' '}
+              </ui.Icon>{' '}
               <ui.Icon size={'small'} className={'rb-is-right'}>
-                {'\n          '}
-                <i className={'fas fa-check'} />
-                {'\n        '}
-              </ui.Icon>
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+                {' '}
+                <i className={'fas fa-check'} />{' '}
+              </ui.Icon>{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
+      </ui.Field>{' '}
       <ui.Field horizontal>
-        {'\n  '}
-        <ui.FieldLabel />
-        {'\n  '}
+        {' '}
+        <ui.FieldLabel />{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field className={'rb-is-expanded'}>
-            {'\n      '}
+            {' '}
             <ui.Field layout={'addons'}>
-              {'\n        '}
+              {' '}
               <ui.Control as={'p'}>
-                {'\n          '}
+                {' '}
                 <ui.LinkButton className={'rb-is-static'}>
-                  {'\n            +44\n          '}
-                </ui.LinkButton>
-                {'\n        '}
-              </ui.Control>
-              {'\n        '}
+                  {' '}
+                  +44{' '}
+                </ui.LinkButton>{' '}
+              </ui.Control>{' '}
               <ui.Control expanded as={'p'}>
-                {'\n          '}
-                <ui.Input type={'tel'} placeholder={'Your phone number'} />
-                {'\n        '}
-              </ui.Control>
-              {'\n      '}
-            </ui.Field>
-            {'\n      '}
-            <ui.Help>{'Do not enter the first zero'}</ui.Help>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+                {' '}
+                <ui.Input type={'tel'} placeholder={'Your phone number'} />{' '}
+              </ui.Control>{' '}
+            </ui.Field>{' '}
+            <ui.Help>Do not enter the first zero</ui.Help>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
+      </ui.Field>{' '}
       <ui.Field horizontal>
-        {'\n  '}
+        {' '}
         <ui.FieldLabel size={'normal'}>
-          {'\n    '}
-          <ui.Label>{'Department'}</ui.Label>
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+          {' '}
+          <ui.Label>Department</ui.Label>{' '}
+        </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field narrow>
-            {'\n      '}
+            {' '}
             <ui.Control>
-              {'\n        '}
+              {' '}
               <ui.Select fullWidth>
-                {'\n            '}
-                <option>{'Business development'}</option>
-                {'\n            '}
-                <option>{'Marketing'}</option>
-                {'\n            '}
-                <option>{'Sales'}</option>
-                {'\n          '}
-              </ui.Select>
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+                {' '}
+                <option>Business development</option> <option>Marketing</option>{' '}
+                <option>Sales</option>{' '}
+              </ui.Select>{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
+      </ui.Field>{' '}
       <ui.Field horizontal>
-        {'\n  '}
+        {' '}
         <ui.FieldLabel>
-          {'\n    '}
-          <ui.Label>{'Already a member?'}</ui.Label>
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+          {' '}
+          <ui.Label>Already a member?</ui.Label>{' '}
+        </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field narrow>
-            {'\n      '}
+            {' '}
             <ui.Control>
-              {'\n        '}
-              <ui.Radio name={'member'}>{'\n          Yes\n        '}</ui.Radio>
-              {'\n        '}
-              <ui.Radio name={'member'}>{'\n          No\n        '}</ui.Radio>
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+              {' '}
+              <ui.Radio name={'member'}> Yes </ui.Radio>{' '}
+              <ui.Radio name={'member'}> No </ui.Radio>{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
+      </ui.Field>{' '}
       <ui.Field horizontal>
-        {'\n  '}
+        {' '}
         <ui.FieldLabel size={'normal'}>
-          {'\n    '}
-          <ui.Label>{'Subject'}</ui.Label>
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+          {' '}
+          <ui.Label>Subject</ui.Label>{' '}
+        </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control>
-              {'\n        '}
+              {' '}
               <ui.Input
                 type={'text'}
                 placeholder={'e.g. Partnership opportunity'}
                 color={'danger'}
-              />
-              {'\n      '}
-            </ui.Control>
-            {'\n      '}
-            <ui.Help color={'danger'}>
-              {'\n        This field is required\n      '}
-            </ui.Help>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+              />{' '}
+            </ui.Control>{' '}
+            <ui.Help color={'danger'}> This field is required </ui.Help>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
+      </ui.Field>{' '}
       <ui.Field horizontal>
-        {'\n  '}
+        {' '}
         <ui.FieldLabel size={'normal'}>
-          {'\n    '}
-          <ui.Label>{'Question'}</ui.Label>
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+          {' '}
+          <ui.Label>Question</ui.Label>{' '}
+        </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control>
-              {'\n        '}
+              {' '}
               <ui.Textarea
                 placeholder={'Explain how we can help you'}
                 defaultValue={''}
-              />
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+              />{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
+      </ui.Field>{' '}
       <ui.Field horizontal>
-        {'\n  '}
-        <ui.FieldLabel>
-          {'\n    '}
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+        {' '}
+        <ui.FieldLabel> </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control>
-              {'\n        '}
-              <ui.Button color={'primary'}>
-                {'\n          Send message\n        '}
-              </ui.Button>
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
+              {' '}
+              <ui.Button color={'primary'}> Send message </ui.Button>{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2816,139 +2438,103 @@ function Example024Demo() {
 function Example025Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Field horizontal>
-        {'\n  '}
+        {' '}
         <ui.FieldLabel>
-          {'\n    '}
-          <ui.Label>{'No padding'}</ui.Label>
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+          {' '}
+          <ui.Label>No padding</ui.Label>{' '}
+        </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control>
-              {'\n        '}
-              <ui.Checkbox>{'\n          Checkbox\n        '}</ui.Checkbox>
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+              {' '}
+              <ui.Checkbox> Checkbox </ui.Checkbox>{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
+      </ui.Field>{' '}
       <ui.Field horizontal>
-        {'\n  '}
+        {' '}
         <ui.FieldLabel size={'small'}>
-          {'\n    '}
-          <ui.Label>{'Small padding'}</ui.Label>
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+          {' '}
+          <ui.Label>Small padding</ui.Label>{' '}
+        </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control>
-              {'\n        '}
+              {' '}
               <ui.Input
                 type={'text'}
                 placeholder={'Small sized input'}
                 size={'small'}
-              />
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+              />{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
+      </ui.Field>{' '}
       <ui.Field horizontal>
-        {'\n  '}
+        {' '}
         <ui.FieldLabel size={'normal'}>
-          {'\n    '}
-          <ui.Label>{'Normal label'}</ui.Label>
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+          {' '}
+          <ui.Label>Normal label</ui.Label>{' '}
+        </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control>
-              {'\n        '}
-              <ui.Input type={'text'} placeholder={'Normal sized input'} />
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+              {' '}
+              <ui.Input type={'text'} placeholder={'Normal sized input'} />{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
+      </ui.Field>{' '}
       <ui.Field horizontal>
-        {'\n  '}
+        {' '}
         <ui.FieldLabel size={'medium'}>
-          {'\n    '}
-          <ui.Label>{'Medium label'}</ui.Label>
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+          {' '}
+          <ui.Label>Medium label</ui.Label>{' '}
+        </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control>
-              {'\n        '}
+              {' '}
               <ui.Input
                 type={'text'}
                 placeholder={'Medium sized input'}
                 size={'medium'}
-              />
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
-      </ui.Field>
-      {'\n\n'}
+              />{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
+      </ui.Field>{' '}
       <ui.Field horizontal>
-        {'\n  '}
+        {' '}
         <ui.FieldLabel size={'large'}>
-          {'\n    '}
-          <ui.Label>{'Large label'}</ui.Label>
-          {'\n  '}
-        </ui.FieldLabel>
-        {'\n  '}
+          {' '}
+          <ui.Label>Large label</ui.Label>{' '}
+        </ui.FieldLabel>{' '}
         <ui.FieldBody>
-          {'\n    '}
+          {' '}
           <ui.Field>
-            {'\n      '}
+            {' '}
             <ui.Control>
-              {'\n        '}
+              {' '}
               <ui.Input
                 type={'text'}
                 placeholder={'Large sized input'}
                 size={'large'}
-              />
-              {'\n      '}
-            </ui.Control>
-            {'\n    '}
-          </ui.Field>
-          {'\n  '}
-        </ui.FieldBody>
-        {'\n'}
+              />{' '}
+            </ui.Control>{' '}
+          </ui.Field>{' '}
+        </ui.FieldBody>{' '}
       </ui.Field>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2956,35 +2542,28 @@ function Example025Demo() {
 function Example026Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <fieldset disabled>
-        {'\n  \n'}
+        {' '}
         <ui.Field>
-          {'\n  '}
-          <ui.Label>{'Name'}</ui.Label>
-          {'\n  '}
+          {' '}
+          <ui.Label>Name</ui.Label>{' '}
           <ui.Control>
-            {'\n    '}
-            <ui.Input type={'text'} placeholder={'e.g Alex Smith'} />
-            {'\n  '}
-          </ui.Control>
-          {'\n'}
-        </ui.Field>
-        {'\n\n'}
+            {' '}
+            <ui.Input type={'text'} placeholder={'e.g Alex Smith'} />{' '}
+          </ui.Control>{' '}
+        </ui.Field>{' '}
         <ui.Field>
-          {'\n  '}
-          <ui.Label>{'Email'}</ui.Label>
-          {'\n  '}
+          {' '}
+          <ui.Label>Email</ui.Label>{' '}
           <ui.Control>
-            {'\n    '}
-            <ui.Input type={'email'} placeholder={'e.g. alexsmith@gmail.com'} />
-            {'\n  '}
-          </ui.Control>
-          {'\n'}
-        </ui.Field>
-        {'\n\n'}
+            {' '}
+            <ui.Input
+              type={'email'}
+              placeholder={'e.g. alexsmith@gmail.com'}
+            />{' '}
+          </ui.Control>{' '}
+        </ui.Field>{' '}
       </fieldset>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -2995,7 +2574,7 @@ export const Example001 = {
     official: { id: 'form-general/complete-form-example/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Label>{"Name"}</ui.Label>{"\\n  "}<ui.Control>{"\\n    "}<ui.Input type={"text"} placeholder={"Text input"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Label>{"Username"}</ui.Label>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"text"} placeholder={"Text input"} defaultValue={"bulma"} color={"success"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-user"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n  "}<ui.Help color={"success"}>{"This username is available"}</ui.Help>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Label>{"Email"}</ui.Label>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Email input"} defaultValue={"hello@"} color={"danger"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-exclamation-triangle"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n  "}<ui.Help color={"danger"}>{"This email is invalid"}</ui.Help>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Label>{"Subject"}</ui.Label>{"\\n  "}<ui.Control>{"\\n    "}<ui.Select>{"\\n        "}<option>{"Select dropdown"}</option>{"\\n        "}<option>{"With options"}</option>{"\\n      "}</ui.Select>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Label>{"Message"}</ui.Label>{"\\n  "}<ui.Control>{"\\n    "}<ui.Textarea placeholder={"Textarea"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Control>{"\\n    "}<ui.Checkbox>{"\\n      I agree to the "}<a href={"#"}>{"terms and conditions"}</a>{"\\n    "}</ui.Checkbox>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Control>{"\\n    "}<ui.Radio name={"question"}>{"\\n      Yes\\n    "}</ui.Radio>{"\\n    "}<ui.Radio name={"question"}>{"\\n      No\\n    "}</ui.Radio>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field layout={"grouped"}>{"\\n  "}<ui.Control>{"\\n    "}<ui.Button color={"link"}>{"Submit"}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control>{"\\n    "}<ui.Button color={"link"} tone={"light"}>{"Cancel"}</ui.Button>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Field>\n        {' '}\n        <ui.Label>Name</ui.Label>{' '}\n        <ui.Control>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Text input'} />{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Label>Username</ui.Label>{' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input\n            type={'text'}\n            placeholder={'Text input'}\n            defaultValue={'bulma'}\n            color={'success'}\n          />{' '}\n          <ui.Icon size={'small'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-user'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon size={'small'} className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n        <ui.Help color={'success'}>This username is available</ui.Help>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Label>Email</ui.Label>{' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input\n            type={'email'}\n            placeholder={'Email input'}\n            defaultValue={'hello@'}\n            color={'danger'}\n          />{' '}\n          <ui.Icon size={'small'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon size={'small'} className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-exclamation-triangle'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n        <ui.Help color={'danger'}>This email is invalid</ui.Help>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Label>Subject</ui.Label>{' '}\n        <ui.Control>\n          {' '}\n          <ui.Select>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Label>Message</ui.Label>{' '}\n        <ui.Control>\n          {' '}\n          <ui.Textarea placeholder={'Textarea'} defaultValue={''} />{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Control>\n          {' '}\n          <ui.Checkbox>\n            {' '}\n            I agree to the <a href={'#'}>terms and conditions</a>{' '}\n          </ui.Checkbox>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Control>\n          {' '}\n          <ui.Radio name={'question'}> Yes </ui.Radio>{' '}\n          <ui.Radio name={'question'}> No </ui.Radio>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field layout={'grouped'}>\n        {' '}\n        <ui.Control>\n          {' '}\n          <ui.Button color={'link'}>Submit</ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control>\n          {' '}\n          <ui.Button color={'link'} tone={'light'}>\n            Cancel\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3010,7 +2589,7 @@ export const Example002 = {
     official: { id: 'form-general/form-field/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Label>{"Label"}</ui.Label>{"\\n  "}<ui.Control>{"\\n    "}<ui.Input type={"text"} placeholder={"Text input"} />{"\\n  "}</ui.Control>{"\\n  "}<ui.Help>{"This is a help text"}</ui.Help>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Field>\n        {' '}\n        <ui.Label>Label</ui.Label>{' '}\n        <ui.Control>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Text input'} />{' '}\n        </ui.Control>{' '}\n        <ui.Help>This is a help text</ui.Help>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3025,7 +2604,7 @@ export const Example003 = {
     official: { id: 'form-general/form-field/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Label>{"Name"}</ui.Label>{"\\n  "}<ui.Control>{"\\n    "}<ui.Input type={"text"} placeholder={"e.g Alex Smith"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Label>{"Email"}</ui.Label>{"\\n  "}<ui.Control>{"\\n    "}<ui.Input type={"email"} placeholder={"e.g. alexsmith@gmail.com"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Field>\n        {' '}\n        <ui.Label>Name</ui.Label>{' '}\n        <ui.Control>\n          {' '}\n          <ui.Input type={'text'} placeholder={'e.g Alex Smith'} />{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Label>Email</ui.Label>{' '}\n        <ui.Control>\n          {' '}\n          <ui.Input\n            type={'email'}\n            placeholder={'e.g. alexsmith@gmail.com'}\n          />{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3040,7 +2619,7 @@ export const Example004 = {
     official: { id: 'form-general/form-control/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} placeholder={"Text input"} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Control>\n        {' '}\n        <ui.Input type={'text'} placeholder={'Text input'} />{' '}\n      </ui.Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3055,7 +2634,7 @@ export const Example005 = {
     official: { id: 'form-general/form-control/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Select>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Control>\n        {' '}\n        <ui.Select>\n          {' '}\n          <option>Select dropdown</option> <option>With options</option>{' '}\n        </ui.Select>{' '}\n      </ui.Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3070,7 +2649,7 @@ export const Example006 = {
     official: { id: 'form-general/form-control/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Button color={"primary"}>{"Submit"}</ui.Button>{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Control>\n        {' '}\n        <ui.Button color={'primary'}>Submit</ui.Button>{' '}\n      </ui.Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3085,7 +2664,7 @@ export const Example007 = {
     official: { id: 'form-general/with-icons/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Control icons={"both"} as={"p"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Email"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"left"} as={"p"}>{"\\n    "}<ui.Input type={"password"} placeholder={"Password"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-lock"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button color={"success"}>{"\\n      Login\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Field>\n        {' '}\n        <ui.Control icons={'both'} as={'p'}>\n          {' '}\n          <ui.Input type={'email'} placeholder={'Email'} />{' '}\n          <ui.Icon size={'small'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon size={'small'} className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Control icons={'left'} as={'p'}>\n          {' '}\n          <ui.Input type={'password'} placeholder={'Password'} />{' '}\n          <ui.Icon size={'small'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-lock'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button color={'success'}> Login </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3100,7 +2679,7 @@ export const Example008 = {
     official: { id: 'form-general/with-icons/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Control icons={"left"} as={"p"}>{"\\n    "}<ui.Select as={"span"} defaultValue={"Country"}>{"\\n        "}<option>{"Country"}</option>{"\\n        "}<option>{"Select dropdown"}</option>{"\\n        "}<option>{"With options"}</option>{"\\n      "}</ui.Select>{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-globe"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Field>\n        {' '}\n        <ui.Control icons={'left'} as={'p'}>\n          {' '}\n          <ui.Select as={'span'} defaultValue={'Country'}>\n            {' '}\n            <option>Country</option> <option>Select dropdown</option>{' '}\n            <option>With options</option>{' '}\n          </ui.Select>{' '}\n          <ui.Icon size={'small'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-globe'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3115,7 +2694,7 @@ export const Example009 = {
     official: { id: 'form-general/with-icons/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Label size={"small"}>{"Small input"}</ui.Label>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Normal"} size={"small"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Field>\n        {' '}\n        <ui.Label size={'small'}>Small input</ui.Label>{' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input type={'email'} placeholder={'Normal'} size={'small'} />{' '}\n          <ui.Icon size={'small'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon size={'small'} className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3130,7 +2709,7 @@ export const Example010 = {
     official: { id: 'form-general/with-icons/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Label>{"Normal input"}</ui.Label>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Extra small"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope fa-xs"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check fa-xs"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Normal"} />{"\\n    "}<ui.Icon className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Field>\n        {' '}\n        <ui.Label>Normal input</ui.Label>{' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input type={'email'} placeholder={'Extra small'} />{' '}\n          <ui.Icon size={'small'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope fa-xs'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon size={'small'} className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check fa-xs'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input type={'email'} placeholder={'Normal'} />{' '}\n          <ui.Icon className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3145,7 +2724,7 @@ export const Example011 = {
     official: { id: 'form-general/with-icons/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Label size={"medium"}>{"Medium input"}</ui.Label>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Extra small"} size={"medium"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope fa-xs"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check fa-xs"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Small"} size={"medium"} />{"\\n    "}<ui.Icon className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope fa-sm"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check fa-sm"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Normal"} size={"medium"} />{"\\n    "}<ui.Icon size={"medium"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"medium"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Field>\n        {' '}\n        <ui.Label size={'medium'}>Medium input</ui.Label>{' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input\n            type={'email'}\n            placeholder={'Extra small'}\n            size={'medium'}\n          />{' '}\n          <ui.Icon size={'small'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope fa-xs'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon size={'small'} className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check fa-xs'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input type={'email'} placeholder={'Small'} size={'medium'} />{' '}\n          <ui.Icon className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope fa-sm'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check fa-sm'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input\n            type={'email'}\n            placeholder={'Normal'}\n            size={'medium'}\n          />{' '}\n          <ui.Icon size={'medium'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon size={'medium'} className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3160,7 +2739,7 @@ export const Example012 = {
     official: { id: 'form-general/with-icons/006' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Label size={"large"}>{"Large input"}</ui.Label>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Extra small"} size={"large"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope fa-xs"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check fa-xs"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Small"} size={"large"} />{"\\n    "}<ui.Icon className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope fa-sm"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check fa-sm"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Normal"} size={"large"} />{"\\n    "}<ui.Icon size={"large"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"large"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"both"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Large"} size={"large"} />{"\\n    "}<ui.Icon size={"medium"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope fa-lg"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"medium"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check fa-lg"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Field>\n        {' '}\n        <ui.Label size={'large'}>Large input</ui.Label>{' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input\n            type={'email'}\n            placeholder={'Extra small'}\n            size={'large'}\n          />{' '}\n          <ui.Icon size={'small'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope fa-xs'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon size={'small'} className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check fa-xs'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input type={'email'} placeholder={'Small'} size={'large'} />{' '}\n          <ui.Icon className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope fa-sm'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check fa-sm'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input type={'email'} placeholder={'Normal'} size={'large'} />{' '}\n          <ui.Icon size={'large'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon size={'large'} className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field>\n        {' '}\n        <ui.Control icons={'both'}>\n          {' '}\n          <ui.Input type={'email'} placeholder={'Large'} size={'large'} />{' '}\n          <ui.Icon size={'medium'} className={'rb-is-left'}>\n            {' '}\n            <i className={'fas fa-envelope fa-lg'} />{' '}\n          </ui.Icon>{' '}\n          <ui.Icon size={'medium'} className={'rb-is-right'}>\n            {' '}\n            <i className={'fas fa-check fa-lg'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3175,7 +2754,7 @@ export const Example013 = {
     official: { id: 'form-general/form-addons/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"addons"}>{"\\n  "}<ui.Control>{"\\n    "}<ui.Input type={"text"} placeholder={"Find a repository"} />{"\\n  "}</ui.Control>{"\\n  "}<ui.Control>{"\\n    "}<ui.Button color={"info"}>{"\\n      Search\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Field layout={'addons'}>\n        {' '}\n        <ui.Control>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Find a repository'} />{' '}\n        </ui.Control>{' '}\n        <ui.Control>\n          {' '}\n          <ui.Button color={'info'}> Search </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3190,7 +2769,7 @@ export const Example014 = {
     official: { id: 'form-general/form-addons/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"addons"}>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Input type={"text"} placeholder={"Your email"} />{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.LinkButton className={"rb-is-static"}>{"\\n      @gmail.com\\n    "}</ui.LinkButton>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Field layout={'addons'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Your email'} />{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.LinkButton className={'rb-is-static'}>\n            {' '}\n            @gmail.com{' '}\n          </ui.LinkButton>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3205,7 +2784,7 @@ export const Example015 = {
     official: { id: 'form-general/form-addons/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"addons"}>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Select as={"span"}>{"\\n        "}<option>{"$"}</option>{"\\n        "}<option>{"£"}</option>{"\\n        "}<option>{"€"}</option>{"\\n      "}</ui.Select>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Input type={"text"} placeholder={"Amount of money"} />{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Transfer\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field layout={"addons"}>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Select as={"span"}>{"\\n        "}<option>{"$"}</option>{"\\n        "}<option>{"£"}</option>{"\\n        "}<option>{"€"}</option>{"\\n      "}</ui.Select>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control expanded as={"p"}>{"\\n    "}<ui.Input type={"text"} placeholder={"Amount of money"} />{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Transfer\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Field layout={'addons'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Select as={'span'}>\n            {' '}\n            <option>$</option> <option>£</option> <option>€</option>{' '}\n          </ui.Select>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Amount of money'} />{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Transfer </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field layout={'addons'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Select as={'span'}>\n            {' '}\n            <option>$</option> <option>£</option> <option>€</option>{' '}\n          </ui.Select>{' '}\n        </ui.Control>{' '}\n        <ui.Control expanded as={'p'}>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Amount of money'} />{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Transfer </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3220,7 +2799,7 @@ export const Example016 = {
     official: { id: 'form-general/form-addons/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"addons"}>{"\\n  "}<ui.Control expanded>{"\\n    "}<ui.Select name={"country"} fullWidth>{"\\n        "}<option value={"Argentina"}>{"Argentina"}</option>{"\\n        "}<option value={"Bolivia"}>{"Bolivia"}</option>{"\\n        "}<option value={"Brazil"}>{"Brazil"}</option>{"\\n        "}<option value={"Chile"}>{"Chile"}</option>{"\\n        "}<option value={"Colombia"}>{"Colombia"}</option>{"\\n        "}<option value={"Ecuador"}>{"Ecuador"}</option>{"\\n        "}<option value={"Guyana"}>{"Guyana"}</option>{"\\n        "}<option value={"Paraguay"}>{"Paraguay"}</option>{"\\n        "}<option value={"Peru"}>{"Peru"}</option>{"\\n        "}<option value={"Suriname"}>{"Suriname"}</option>{"\\n        "}<option value={"Uruguay"}>{"Uruguay"}</option>{"\\n        "}<option value={"Venezuela"}>{"Venezuela"}</option>{"\\n      "}</ui.Select>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control>{"\\n    "}<ui.Button type={"submit"} color={"primary"}>{"Choose"}</ui.Button>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <ui.Field layout={'addons'}>\n        {' '}\n        <ui.Control expanded>\n          {' '}\n          <ui.Select name={'country'} fullWidth>\n            {' '}\n            <option value={'Argentina'}>Argentina</option>{' '}\n            <option value={'Bolivia'}>Bolivia</option>{' '}\n            <option value={'Brazil'}>Brazil</option>{' '}\n            <option value={'Chile'}>Chile</option>{' '}\n            <option value={'Colombia'}>Colombia</option>{' '}\n            <option value={'Ecuador'}>Ecuador</option>{' '}\n            <option value={'Guyana'}>Guyana</option>{' '}\n            <option value={'Paraguay'}>Paraguay</option>{' '}\n            <option value={'Peru'}>Peru</option>{' '}\n            <option value={'Suriname'}>Suriname</option>{' '}\n            <option value={'Uruguay'}>Uruguay</option>{' '}\n            <option value={'Venezuela'}>Venezuela</option>{' '}\n          </ui.Select>{' '}\n        </ui.Control>{' '}\n        <ui.Control>\n          {' '}\n          <ui.Button type={'submit'} color={'primary'}>\n            Choose\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3235,7 +2814,7 @@ export const Example017 = {
     official: { id: 'form-general/form-addons/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"addons"} alignment={"centered"}>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Select as={"span"}>{"\\n        "}<option>{"$"}</option>{"\\n        "}<option>{"£"}</option>{"\\n        "}<option>{"€"}</option>{"\\n      "}</ui.Select>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Input type={"text"} placeholder={"Amount of money"} />{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button color={"primary"}>{"\\n      Transfer\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  return (\n    <>\n      <ui.Field layout={'addons'} alignment={'centered'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Select as={'span'}>\n            {' '}\n            <option>$</option> <option>£</option> <option>€</option>{' '}\n          </ui.Select>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Amount of money'} />{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button color={'primary'}> Transfer </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3250,7 +2829,7 @@ export const Example018 = {
     official: { id: 'form-general/form-addons/006' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"addons"} alignment={"right"}>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Select as={"span"}>{"\\n        "}<option>{"$"}</option>{"\\n        "}<option>{"£"}</option>{"\\n        "}<option>{"€"}</option>{"\\n      "}</ui.Select>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Input type={"text"} placeholder={"Amount of money"} />{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button color={"primary"}>{"\\n      Transfer\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  return (\n    <>\n      <ui.Field layout={'addons'} alignment={'right'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Select as={'span'}>\n            {' '}\n            <option>$</option> <option>£</option> <option>€</option>{' '}\n          </ui.Select>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Amount of money'} />{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button color={'primary'}> Transfer </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3265,7 +2844,7 @@ export const Example019 = {
     official: { id: 'form-general/form-group/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example019Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"grouped"}>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button color={"primary"}>{"\\n      Submit\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.LinkButton color={"light"}>{"\\n      Cancel\\n    "}</ui.LinkButton>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example019Demo() {\n  return (\n    <>\n      <ui.Field layout={'grouped'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button color={'primary'}> Submit </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.LinkButton color={'light'}> Cancel </ui.LinkButton>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3280,7 +2859,7 @@ export const Example020 = {
     official: { id: 'form-general/form-group/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example020Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"grouped"} alignment={"centered"}>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button color={"primary"}>{"\\n      Submit\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.LinkButton color={"light"}>{"\\n      Cancel\\n    "}</ui.LinkButton>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example020Demo() {\n  return (\n    <>\n      <ui.Field layout={'grouped'} alignment={'centered'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button color={'primary'}> Submit </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.LinkButton color={'light'}> Cancel </ui.LinkButton>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3295,7 +2874,7 @@ export const Example021 = {
     official: { id: 'form-general/form-group/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example021Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"grouped"} alignment={"right"}>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button color={"primary"}>{"\\n      Submit\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.LinkButton color={"light"}>{"\\n      Cancel\\n    "}</ui.LinkButton>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example021Demo() {\n  return (\n    <>\n      <ui.Field layout={'grouped'} alignment={'right'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button color={'primary'}> Submit </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.LinkButton color={'light'}> Cancel </ui.LinkButton>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3310,7 +2889,7 @@ export const Example022 = {
     official: { id: 'form-general/form-group/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example022Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"grouped"}>{"\\n  "}<ui.Control expanded as={"p"}>{"\\n    "}<ui.Input type={"text"} placeholder={"Find a repository"} />{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button color={"info"}>{"\\n      Search\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example022Demo() {\n  return (\n    <>\n      <ui.Field layout={'grouped'}>\n        {' '}\n        <ui.Control expanded as={'p'}>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Find a repository'} />{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button color={'info'}> Search </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3325,7 +2904,7 @@ export const Example023 = {
     official: { id: 'form-general/form-group/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example023Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field layout={"grouped"} multiline>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      One\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Two\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Three\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Four\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Five\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Six\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Seven\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Eight\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Nine\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Ten\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Eleven\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Twelve\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n  "}<ui.Control as={"p"}>{"\\n    "}<ui.Button>{"\\n      Thirteen\\n    "}</ui.Button>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example023Demo() {\n  return (\n    <>\n      <ui.Field layout={'grouped'} multiline>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> One </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Two </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Three </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Four </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Five </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Six </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Seven </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Eight </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Nine </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Ten </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Eleven </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Twelve </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button> Thirteen </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3340,7 +2919,7 @@ export const Example024 = {
     official: { id: 'form-general/horizontal-form/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example024Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"normal"}>{"\\n    "}<ui.Label>{"From"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control expanded icons={"left"} as={"p"}>{"\\n        "}<ui.Input type={"text"} placeholder={"Name"} />{"\\n        "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n          "}<i className={"fas fa-user"} />{"\\n        "}</ui.Icon>{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control expanded icons={"both"} as={"p"}>{"\\n        "}<ui.Input type={"email"} placeholder={"Email"} defaultValue={"alex@smith.com"} color={"success"} />{"\\n        "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n          "}<i className={"fas fa-envelope"} />{"\\n        "}</ui.Icon>{"\\n        "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n          "}<i className={"fas fa-check"} />{"\\n        "}</ui.Icon>{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel />{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field className={"rb-is-expanded"}>{"\\n      "}<ui.Field layout={"addons"}>{"\\n        "}<ui.Control as={"p"}>{"\\n          "}<ui.LinkButton className={"rb-is-static"}>{"\\n            +44\\n          "}</ui.LinkButton>{"\\n        "}</ui.Control>{"\\n        "}<ui.Control expanded as={"p"}>{"\\n          "}<ui.Input type={"tel"} placeholder={"Your phone number"} />{"\\n        "}</ui.Control>{"\\n      "}</ui.Field>{"\\n      "}<ui.Help>{"Do not enter the first zero"}</ui.Help>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"normal"}>{"\\n    "}<ui.Label>{"Department"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field narrow>{"\\n      "}<ui.Control>{"\\n        "}<ui.Select fullWidth>{"\\n            "}<option>{"Business development"}</option>{"\\n            "}<option>{"Marketing"}</option>{"\\n            "}<option>{"Sales"}</option>{"\\n          "}</ui.Select>{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel>{"\\n    "}<ui.Label>{"Already a member?"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field narrow>{"\\n      "}<ui.Control>{"\\n        "}<ui.Radio name={"member"}>{"\\n          Yes\\n        "}</ui.Radio>{"\\n        "}<ui.Radio name={"member"}>{"\\n          No\\n        "}</ui.Radio>{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"normal"}>{"\\n    "}<ui.Label>{"Subject"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control>{"\\n        "}<ui.Input type={"text"} placeholder={"e.g. Partnership opportunity"} color={"danger"} />{"\\n      "}</ui.Control>{"\\n      "}<ui.Help color={"danger"}>{"\\n        This field is required\\n      "}</ui.Help>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"normal"}>{"\\n    "}<ui.Label>{"Question"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control>{"\\n        "}<ui.Textarea placeholder={"Explain how we can help you"} defaultValue={""} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel>{"\\n    "}{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control>{"\\n        "}<ui.Button color={"primary"}>{"\\n          Send message\\n        "}</ui.Button>{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example024Demo() {\n  return (\n    <>\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel size={'normal'}>\n          {' '}\n          <ui.Label>From</ui.Label>{' '}\n        </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control expanded icons={'left'} as={'p'}>\n              {' '}\n              <ui.Input type={'text'} placeholder={'Name'} />{' '}\n              <ui.Icon size={'small'} className={'rb-is-left'}>\n                {' '}\n                <i className={'fas fa-user'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n          <ui.Field>\n            {' '}\n            <ui.Control expanded icons={'both'} as={'p'}>\n              {' '}\n              <ui.Input\n                type={'email'}\n                placeholder={'Email'}\n                defaultValue={'alex@smith.com'}\n                color={'success'}\n              />{' '}\n              <ui.Icon size={'small'} className={'rb-is-left'}>\n                {' '}\n                <i className={'fas fa-envelope'} />{' '}\n              </ui.Icon>{' '}\n              <ui.Icon size={'small'} className={'rb-is-right'}>\n                {' '}\n                <i className={'fas fa-check'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>{' '}\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel />{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field className={'rb-is-expanded'}>\n            {' '}\n            <ui.Field layout={'addons'}>\n              {' '}\n              <ui.Control as={'p'}>\n                {' '}\n                <ui.LinkButton className={'rb-is-static'}>\n                  {' '}\n                  +44{' '}\n                </ui.LinkButton>{' '}\n              </ui.Control>{' '}\n              <ui.Control expanded as={'p'}>\n                {' '}\n                <ui.Input type={'tel'} placeholder={'Your phone number'} />{' '}\n              </ui.Control>{' '}\n            </ui.Field>{' '}\n            <ui.Help>Do not enter the first zero</ui.Help>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>{' '}\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel size={'normal'}>\n          {' '}\n          <ui.Label>Department</ui.Label>{' '}\n        </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field narrow>\n            {' '}\n            <ui.Control>\n              {' '}\n              <ui.Select fullWidth>\n                {' '}\n                <option>Business development</option> <option>Marketing</option>{' '}\n                <option>Sales</option>{' '}\n              </ui.Select>{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>{' '}\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel>\n          {' '}\n          <ui.Label>Already a member?</ui.Label>{' '}\n        </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field narrow>\n            {' '}\n            <ui.Control>\n              {' '}\n              <ui.Radio name={'member'}> Yes </ui.Radio>{' '}\n              <ui.Radio name={'member'}> No </ui.Radio>{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>{' '}\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel size={'normal'}>\n          {' '}\n          <ui.Label>Subject</ui.Label>{' '}\n        </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control>\n              {' '}\n              <ui.Input\n                type={'text'}\n                placeholder={'e.g. Partnership opportunity'}\n                color={'danger'}\n              />{' '}\n            </ui.Control>{' '}\n            <ui.Help color={'danger'}> This field is required </ui.Help>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>{' '}\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel size={'normal'}>\n          {' '}\n          <ui.Label>Question</ui.Label>{' '}\n        </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control>\n              {' '}\n              <ui.Textarea\n                placeholder={'Explain how we can help you'}\n                defaultValue={''}\n              />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>{' '}\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel> </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control>\n              {' '}\n              <ui.Button color={'primary'}> Send message </ui.Button>{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3355,7 +2934,7 @@ export const Example025 = {
     official: { id: 'form-general/horizontal-form/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example025Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel>{"\\n    "}<ui.Label>{"No padding"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control>{"\\n        "}<ui.Checkbox>{"\\n          Checkbox\\n        "}</ui.Checkbox>{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"small"}>{"\\n    "}<ui.Label>{"Small padding"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control>{"\\n        "}<ui.Input type={"text"} placeholder={"Small sized input"} size={"small"} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"normal"}>{"\\n    "}<ui.Label>{"Normal label"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control>{"\\n        "}<ui.Input type={"text"} placeholder={"Normal sized input"} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"medium"}>{"\\n    "}<ui.Label>{"Medium label"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control>{"\\n        "}<ui.Input type={"text"} placeholder={"Medium sized input"} size={"medium"} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"large"}>{"\\n    "}<ui.Label>{"Large label"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control>{"\\n        "}<ui.Input type={"text"} placeholder={"Large sized input"} size={"large"} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example025Demo() {\n  return (\n    <>\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel>\n          {' '}\n          <ui.Label>No padding</ui.Label>{' '}\n        </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control>\n              {' '}\n              <ui.Checkbox> Checkbox </ui.Checkbox>{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>{' '}\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel size={'small'}>\n          {' '}\n          <ui.Label>Small padding</ui.Label>{' '}\n        </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control>\n              {' '}\n              <ui.Input\n                type={'text'}\n                placeholder={'Small sized input'}\n                size={'small'}\n              />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>{' '}\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel size={'normal'}>\n          {' '}\n          <ui.Label>Normal label</ui.Label>{' '}\n        </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control>\n              {' '}\n              <ui.Input type={'text'} placeholder={'Normal sized input'} />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>{' '}\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel size={'medium'}>\n          {' '}\n          <ui.Label>Medium label</ui.Label>{' '}\n        </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control>\n              {' '}\n              <ui.Input\n                type={'text'}\n                placeholder={'Medium sized input'}\n                size={'medium'}\n              />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>{' '}\n      <ui.Field horizontal>\n        {' '}\n        <ui.FieldLabel size={'large'}>\n          {' '}\n          <ui.Label>Large label</ui.Label>{' '}\n        </ui.FieldLabel>{' '}\n        <ui.FieldBody>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control>\n              {' '}\n              <ui.Input\n                type={'text'}\n                placeholder={'Large sized input'}\n                size={'large'}\n              />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.FieldBody>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -3370,7 +2949,7 @@ export const Example026 = {
     official: { id: 'form-general/disabled-form/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example026Demo() {\n  return (<>{"\\n        \\n          \\n"}<fieldset disabled>{"\\n  \\n"}<ui.Field>{"\\n  "}<ui.Label>{"Name"}</ui.Label>{"\\n  "}<ui.Control>{"\\n    "}<ui.Input type={"text"} placeholder={"e.g Alex Smith"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field>{"\\n  "}<ui.Label>{"Email"}</ui.Label>{"\\n  "}<ui.Control>{"\\n    "}<ui.Input type={"email"} placeholder={"e.g. alexsmith@gmail.com"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n"}</fieldset>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example026Demo() {\n  return (\n    <>\n      <fieldset disabled>\n        {' '}\n        <ui.Field>\n          {' '}\n          <ui.Label>Name</ui.Label>{' '}\n          <ui.Control>\n            {' '}\n            <ui.Input type={'text'} placeholder={'e.g Alex Smith'} />{' '}\n          </ui.Control>{' '}\n        </ui.Field>{' '}\n        <ui.Field>\n          {' '}\n          <ui.Label>Email</ui.Label>{' '}\n          <ui.Control>\n            {' '}\n            <ui.Input\n              type={'email'}\n              placeholder={'e.g. alexsmith@gmail.com'}\n            />{' '}\n          </ui.Control>{' '}\n        </ui.Field>{' '}\n      </fieldset>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

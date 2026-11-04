@@ -512,23 +512,16 @@ function Example001Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.\n  '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta nec\n  nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam,\n  et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -537,23 +530,16 @@ function Example002Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'link'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -562,23 +548,16 @@ function Example003Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'primary'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -587,23 +566,16 @@ function Example004Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'info'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -612,23 +584,16 @@ function Example005Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'success'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -637,23 +602,16 @@ function Example006Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'warning'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -662,23 +620,16 @@ function Example007Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'danger'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -687,23 +638,16 @@ function Example008Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'link'} tone={'light'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -712,23 +656,16 @@ function Example009Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'primary'} tone={'light'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -737,23 +674,16 @@ function Example010Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'info'} tone={'light'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -762,23 +692,16 @@ function Example011Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'success'} tone={'light'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -787,23 +710,16 @@ function Example012Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'warning'} tone={'light'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -812,23 +728,16 @@ function Example013Demo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
-      {'\n        \n          \n'}
       {visible1 && (
         <ui.Notification color={'danger'} tone={'light'}>
-          {'\n  '}
-          <ui.Delete onClick={() => setVisible1(false)} />
-          {
-            '\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\n  dolor. '
-          }
-          <strong>{'Pellentesque risus mi'}</strong>
-          {
-            ', tempus quis placerat ut, porta\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\n  diam, et dictum '
-          }
-          <a>{'felis venenatis'}</a>
-          {' efficitur.\n'}
+          {' '}
+          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
+          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
         </ui.Notification>
       )}
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -839,7 +748,7 @@ export const Example001 = {
     official: { id: 'elements-notification/basic/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.\\n  "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta nec\\n  nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam,\\n  et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Lorem ipsum dolor sit\n          amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -854,7 +763,7 @@ export const Example002 = {
     official: { id: 'elements-notification/colors/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"link"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'link'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -869,7 +778,7 @@ export const Example003 = {
     official: { id: 'elements-notification/colors/002' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"primary"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'primary'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -884,7 +793,7 @@ export const Example004 = {
     official: { id: 'elements-notification/colors/003' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"info"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'info'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -899,7 +808,7 @@ export const Example005 = {
     official: { id: 'elements-notification/colors/004' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"success"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'success'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -914,7 +823,7 @@ export const Example006 = {
     official: { id: 'elements-notification/colors/005' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"warning"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'warning'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -929,7 +838,7 @@ export const Example007 = {
     official: { id: 'elements-notification/colors/006' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"danger"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'danger'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -944,7 +853,7 @@ export const Example008 = {
     official: { id: 'elements-notification/light-colors/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"link"} tone={"light"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'link'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -959,7 +868,7 @@ export const Example009 = {
     official: { id: 'elements-notification/light-colors/002' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"primary"} tone={"light"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'primary'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -974,7 +883,7 @@ export const Example010 = {
     official: { id: 'elements-notification/light-colors/003' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"info"} tone={"light"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'info'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -989,7 +898,7 @@ export const Example011 = {
     official: { id: 'elements-notification/light-colors/004' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"success"} tone={"light"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'success'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1004,7 +913,7 @@ export const Example012 = {
     official: { id: 'elements-notification/light-colors/005' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"warning"} tone={"light"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'warning'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1019,7 +928,7 @@ export const Example013 = {
     official: { id: 'elements-notification/light-colors/006' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  const [visible1, setVisible1] = useState(true);\n  return (<>{"\\n        \\n          \\n"}{visible1 && (<ui.Notification color={"danger"} tone={"light"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum\\n  dolor. "}<strong>{"Pellentesque risus mi"}</strong>{", tempus quis placerat ut, porta\\n  nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus\\n  diam, et dictum "}<a>{"felis venenatis"}</a>{" efficitur.\\n"}</ui.Notification>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'danger'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

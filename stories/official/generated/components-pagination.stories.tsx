@@ -974,47 +974,35 @@ function OfficialDocs() {
 function Example001Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Pagination role={'navigation'} aria-label={'pagination'}>
-        {'\n  '}
-        <ui.PaginationPrevious href={'#'}>{'Previous'}</ui.PaginationPrevious>
-        {'\n  '}
-        <ui.PaginationNext href={'#'}>{'Next page'}</ui.PaginationNext>
-        {'\n  '}
+        {' '}
+        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}
+        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}
         <ui.PaginationList>
-          {'\n    '}
+          {' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>
-            {'1'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            1
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>
-            {'45'}
-          </ui.PaginationLink>
-          {'\n    '}
+            45
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink
             aria-label={'Page 46'}
             aria-current={'page'}
             current
           >
-            {'46'}
-          </ui.PaginationLink>
-          {'\n    '}
+            46
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>
-            {'47'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            47
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>
-            {'86'}
-          </ui.PaginationLink>
-          {'\n  '}
-        </ui.PaginationList>
-        {'\n'}
+            86
+          </ui.PaginationLink>{' '}
+        </ui.PaginationList>{' '}
       </ui.Pagination>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1022,37 +1010,29 @@ function Example001Demo() {
 function Example002Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Pagination role={'navigation'} aria-label={'pagination'}>
-        {'\n  '}
+        {' '}
         <ui.PaginationPrevious title={'This is the first page'} disabled>
-          {'Previous'}
-        </ui.PaginationPrevious>
-        {'\n  '}
-        <ui.PaginationNext href={'#'}>{'Next page'}</ui.PaginationNext>
-        {'\n  '}
+          Previous
+        </ui.PaginationPrevious>{' '}
+        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}
         <ui.PaginationList>
-          {'\n    '}
+          {' '}
           <ui.PaginationLink
             aria-label={'Page 1'}
             aria-current={'page'}
             current
           >
-            {'1'}
-          </ui.PaginationLink>
-          {'\n    '}
+            1
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 2'}>
-            {'2'}
-          </ui.PaginationLink>
-          {'\n    '}
+            2
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 3'}>
-            {'3'}
-          </ui.PaginationLink>
-          {'\n  '}
-        </ui.PaginationList>
-        {'\n'}
+            3
+          </ui.PaginationLink>{' '}
+        </ui.PaginationList>{' '}
       </ui.Pagination>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1060,51 +1040,39 @@ function Example002Demo() {
 function Example003Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Pagination
         role={'navigation'}
         aria-label={'pagination'}
         alignment={'centered'}
       >
-        {'\n  '}
-        <ui.PaginationPrevious href={'#'}>{'Previous'}</ui.PaginationPrevious>
-        {'\n  '}
-        <ui.PaginationNext href={'#'}>{'Next page'}</ui.PaginationNext>
-        {'\n  '}
+        {' '}
+        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}
+        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}
         <ui.PaginationList>
-          {'\n    '}
+          {' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>
-            {'1'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            1
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>
-            {'45'}
-          </ui.PaginationLink>
-          {'\n    '}
+            45
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink
             aria-label={'Page 46'}
             aria-current={'page'}
             current
           >
-            {'46'}
-          </ui.PaginationLink>
-          {'\n    '}
+            46
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>
-            {'47'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            47
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>
-            {'86'}
-          </ui.PaginationLink>
-          {'\n  '}
-        </ui.PaginationList>
-        {'\n'}
+            86
+          </ui.PaginationLink>{' '}
+        </ui.PaginationList>{' '}
       </ui.Pagination>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1112,51 +1080,39 @@ function Example003Demo() {
 function Example004Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Pagination
         role={'navigation'}
         aria-label={'pagination'}
         alignment={'right'}
       >
-        {'\n  '}
-        <ui.PaginationPrevious href={'#'}>{'Previous'}</ui.PaginationPrevious>
-        {'\n  '}
-        <ui.PaginationNext href={'#'}>{'Next page'}</ui.PaginationNext>
-        {'\n  '}
+        {' '}
+        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}
+        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}
         <ui.PaginationList>
-          {'\n    '}
+          {' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>
-            {'1'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            1
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>
-            {'45'}
-          </ui.PaginationLink>
-          {'\n    '}
+            45
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink
             aria-label={'Page 46'}
             aria-current={'page'}
             current
           >
-            {'46'}
-          </ui.PaginationLink>
-          {'\n    '}
+            46
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>
-            {'47'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            47
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>
-            {'86'}
-          </ui.PaginationLink>
-          {'\n  '}
-        </ui.PaginationList>
-        {'\n'}
+            86
+          </ui.PaginationLink>{' '}
+        </ui.PaginationList>{' '}
       </ui.Pagination>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1164,47 +1120,35 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Pagination role={'navigation'} aria-label={'pagination'} rounded>
-        {'\n  '}
-        <ui.PaginationPrevious href={'#'}>{'Previous'}</ui.PaginationPrevious>
-        {'\n  '}
-        <ui.PaginationNext href={'#'}>{'Next page'}</ui.PaginationNext>
-        {'\n  '}
+        {' '}
+        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}
+        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}
         <ui.PaginationList>
-          {'\n    '}
+          {' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>
-            {'1'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            1
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>
-            {'45'}
-          </ui.PaginationLink>
-          {'\n    '}
+            45
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink
             aria-label={'Page 46'}
             aria-current={'page'}
             current
           >
-            {'46'}
-          </ui.PaginationLink>
-          {'\n    '}
+            46
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>
-            {'47'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            47
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>
-            {'86'}
-          </ui.PaginationLink>
-          {'\n  '}
-        </ui.PaginationList>
-        {'\n'}
+            86
+          </ui.PaginationLink>{' '}
+        </ui.PaginationList>{' '}
       </ui.Pagination>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1212,51 +1156,39 @@ function Example005Demo() {
 function Example006Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Pagination
         role={'navigation'}
         aria-label={'pagination'}
         size={'small'}
       >
-        {'\n  '}
-        <ui.PaginationPrevious href={'#'}>{'Previous'}</ui.PaginationPrevious>
-        {'\n  '}
-        <ui.PaginationNext href={'#'}>{'Next page'}</ui.PaginationNext>
-        {'\n  '}
+        {' '}
+        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}
+        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}
         <ui.PaginationList>
-          {'\n    '}
+          {' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>
-            {'1'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            1
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>
-            {'45'}
-          </ui.PaginationLink>
-          {'\n    '}
+            45
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink
             aria-label={'Page 46'}
             aria-current={'page'}
             current
           >
-            {'46'}
-          </ui.PaginationLink>
-          {'\n    '}
+            46
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>
-            {'47'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            47
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>
-            {'86'}
-          </ui.PaginationLink>
-          {'\n  '}
-        </ui.PaginationList>
-        {'\n'}
+            86
+          </ui.PaginationLink>{' '}
+        </ui.PaginationList>{' '}
       </ui.Pagination>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1264,51 +1196,39 @@ function Example006Demo() {
 function Example007Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Pagination
         role={'navigation'}
         aria-label={'pagination'}
         size={'medium'}
       >
-        {'\n  '}
-        <ui.PaginationPrevious href={'#'}>{'Previous'}</ui.PaginationPrevious>
-        {'\n  '}
-        <ui.PaginationNext href={'#'}>{'Next page'}</ui.PaginationNext>
-        {'\n  '}
+        {' '}
+        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}
+        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}
         <ui.PaginationList>
-          {'\n    '}
+          {' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>
-            {'1'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            1
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>
-            {'45'}
-          </ui.PaginationLink>
-          {'\n    '}
+            45
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink
             aria-label={'Page 46'}
             aria-current={'page'}
             current
           >
-            {'46'}
-          </ui.PaginationLink>
-          {'\n    '}
+            46
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>
-            {'47'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            47
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>
-            {'86'}
-          </ui.PaginationLink>
-          {'\n  '}
-        </ui.PaginationList>
-        {'\n'}
+            86
+          </ui.PaginationLink>{' '}
+        </ui.PaginationList>{' '}
       </ui.Pagination>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1316,51 +1236,39 @@ function Example007Demo() {
 function Example008Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Pagination
         role={'navigation'}
         aria-label={'pagination'}
         size={'large'}
       >
-        {'\n  '}
-        <ui.PaginationPrevious href={'#'}>{'Previous'}</ui.PaginationPrevious>
-        {'\n  '}
-        <ui.PaginationNext href={'#'}>{'Next page'}</ui.PaginationNext>
-        {'\n  '}
+        {' '}
+        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}
+        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}
         <ui.PaginationList>
-          {'\n    '}
+          {' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>
-            {'1'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            1
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>
-            {'45'}
-          </ui.PaginationLink>
-          {'\n    '}
+            45
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink
             aria-label={'Page 46'}
             aria-current={'page'}
             current
           >
-            {'46'}
-          </ui.PaginationLink>
-          {'\n    '}
+            46
+          </ui.PaginationLink>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>
-            {'47'}
-          </ui.PaginationLink>
-          {'\n    '}
-          <ui.PaginationEllipsis>{'…'}</ui.PaginationEllipsis>
-          {'\n    '}
+            47
+          </ui.PaginationLink>{' '}
+          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}
           <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>
-            {'86'}
-          </ui.PaginationLink>
-          {'\n  '}
-        </ui.PaginationList>
-        {'\n'}
+            86
+          </ui.PaginationLink>{' '}
+        </ui.PaginationList>{' '}
       </ui.Pagination>
-      {'\n\n        \n      '}
     </>
   )
 }
@@ -1371,7 +1279,7 @@ export const Example001 = {
     official: { id: 'components-pagination/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Pagination role={"navigation"} aria-label={"pagination"}>{"\\n  "}<ui.PaginationPrevious href={"#"}>{"Previous"}</ui.PaginationPrevious>{"\\n  "}<ui.PaginationNext href={"#"}>{"Next page"}</ui.PaginationNext>{"\\n  "}<ui.PaginationList>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 1"}>{"1"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 45"}>{"45"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Page 46"} aria-current={"page"} current>{"46"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 47"}>{"47"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 86"}>{"86"}</ui.PaginationLink>{"\\n  "}</ui.PaginationList>{"\\n"}</ui.Pagination>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Pagination role={'navigation'} aria-label={'pagination'}>\n        {' '}\n        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}\n        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}\n        <ui.PaginationList>\n          {' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>\n            1\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>\n            45\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink\n            aria-label={'Page 46'}\n            aria-current={'page'}\n            current\n          >\n            46\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>\n            47\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>\n            86\n          </ui.PaginationLink>{' '}\n        </ui.PaginationList>{' '}\n      </ui.Pagination>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1386,7 +1294,7 @@ export const Example002 = {
     official: { id: 'components-pagination/basic/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Pagination role={"navigation"} aria-label={"pagination"}>{"\\n  "}<ui.PaginationPrevious title={"This is the first page"} disabled>{"Previous"}</ui.PaginationPrevious>{"\\n  "}<ui.PaginationNext href={"#"}>{"Next page"}</ui.PaginationNext>{"\\n  "}<ui.PaginationList>{"\\n    "}<ui.PaginationLink aria-label={"Page 1"} aria-current={"page"} current>{"1"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 2"}>{"2"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 3"}>{"3"}</ui.PaginationLink>{"\\n  "}</ui.PaginationList>{"\\n"}</ui.Pagination>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Pagination role={'navigation'} aria-label={'pagination'}>\n        {' '}\n        <ui.PaginationPrevious title={'This is the first page'} disabled>\n          Previous\n        </ui.PaginationPrevious>{' '}\n        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}\n        <ui.PaginationList>\n          {' '}\n          <ui.PaginationLink\n            aria-label={'Page 1'}\n            aria-current={'page'}\n            current\n          >\n            1\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 2'}>\n            2\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 3'}>\n            3\n          </ui.PaginationLink>{' '}\n        </ui.PaginationList>{' '}\n      </ui.Pagination>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1401,7 +1309,7 @@ export const Example003 = {
     official: { id: 'components-pagination/basic/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Pagination role={"navigation"} aria-label={"pagination"} alignment={"centered"}>{"\\n  "}<ui.PaginationPrevious href={"#"}>{"Previous"}</ui.PaginationPrevious>{"\\n  "}<ui.PaginationNext href={"#"}>{"Next page"}</ui.PaginationNext>{"\\n  "}<ui.PaginationList>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 1"}>{"1"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 45"}>{"45"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Page 46"} aria-current={"page"} current>{"46"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 47"}>{"47"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 86"}>{"86"}</ui.PaginationLink>{"\\n  "}</ui.PaginationList>{"\\n"}</ui.Pagination>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Pagination\n        role={'navigation'}\n        aria-label={'pagination'}\n        alignment={'centered'}\n      >\n        {' '}\n        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}\n        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}\n        <ui.PaginationList>\n          {' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>\n            1\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>\n            45\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink\n            aria-label={'Page 46'}\n            aria-current={'page'}\n            current\n          >\n            46\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>\n            47\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>\n            86\n          </ui.PaginationLink>{' '}\n        </ui.PaginationList>{' '}\n      </ui.Pagination>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1416,7 +1324,7 @@ export const Example004 = {
     official: { id: 'components-pagination/basic/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Pagination role={"navigation"} aria-label={"pagination"} alignment={"right"}>{"\\n  "}<ui.PaginationPrevious href={"#"}>{"Previous"}</ui.PaginationPrevious>{"\\n  "}<ui.PaginationNext href={"#"}>{"Next page"}</ui.PaginationNext>{"\\n  "}<ui.PaginationList>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 1"}>{"1"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 45"}>{"45"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Page 46"} aria-current={"page"} current>{"46"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 47"}>{"47"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 86"}>{"86"}</ui.PaginationLink>{"\\n  "}</ui.PaginationList>{"\\n"}</ui.Pagination>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Pagination\n        role={'navigation'}\n        aria-label={'pagination'}\n        alignment={'right'}\n      >\n        {' '}\n        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}\n        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}\n        <ui.PaginationList>\n          {' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>\n            1\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>\n            45\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink\n            aria-label={'Page 46'}\n            aria-current={'page'}\n            current\n          >\n            46\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>\n            47\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>\n            86\n          </ui.PaginationLink>{' '}\n        </ui.PaginationList>{' '}\n      </ui.Pagination>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1431,7 +1339,7 @@ export const Example005 = {
     official: { id: 'components-pagination/styles/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Pagination role={"navigation"} aria-label={"pagination"} rounded>{"\\n  "}<ui.PaginationPrevious href={"#"}>{"Previous"}</ui.PaginationPrevious>{"\\n  "}<ui.PaginationNext href={"#"}>{"Next page"}</ui.PaginationNext>{"\\n  "}<ui.PaginationList>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 1"}>{"1"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 45"}>{"45"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Page 46"} aria-current={"page"} current>{"46"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 47"}>{"47"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 86"}>{"86"}</ui.PaginationLink>{"\\n  "}</ui.PaginationList>{"\\n"}</ui.Pagination>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Pagination role={'navigation'} aria-label={'pagination'} rounded>\n        {' '}\n        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}\n        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}\n        <ui.PaginationList>\n          {' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>\n            1\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>\n            45\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink\n            aria-label={'Page 46'}\n            aria-current={'page'}\n            current\n          >\n            46\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>\n            47\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>\n            86\n          </ui.PaginationLink>{' '}\n        </ui.PaginationList>{' '}\n      </ui.Pagination>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1446,7 +1354,7 @@ export const Example006 = {
     official: { id: 'components-pagination/sizes/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Pagination role={"navigation"} aria-label={"pagination"} size={"small"}>{"\\n  "}<ui.PaginationPrevious href={"#"}>{"Previous"}</ui.PaginationPrevious>{"\\n  "}<ui.PaginationNext href={"#"}>{"Next page"}</ui.PaginationNext>{"\\n  "}<ui.PaginationList>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 1"}>{"1"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 45"}>{"45"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Page 46"} aria-current={"page"} current>{"46"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 47"}>{"47"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 86"}>{"86"}</ui.PaginationLink>{"\\n  "}</ui.PaginationList>{"\\n"}</ui.Pagination>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Pagination\n        role={'navigation'}\n        aria-label={'pagination'}\n        size={'small'}\n      >\n        {' '}\n        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}\n        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}\n        <ui.PaginationList>\n          {' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>\n            1\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>\n            45\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink\n            aria-label={'Page 46'}\n            aria-current={'page'}\n            current\n          >\n            46\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>\n            47\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>\n            86\n          </ui.PaginationLink>{' '}\n        </ui.PaginationList>{' '}\n      </ui.Pagination>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1461,7 +1369,7 @@ export const Example007 = {
     official: { id: 'components-pagination/sizes/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Pagination role={"navigation"} aria-label={"pagination"} size={"medium"}>{"\\n  "}<ui.PaginationPrevious href={"#"}>{"Previous"}</ui.PaginationPrevious>{"\\n  "}<ui.PaginationNext href={"#"}>{"Next page"}</ui.PaginationNext>{"\\n  "}<ui.PaginationList>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 1"}>{"1"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 45"}>{"45"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Page 46"} aria-current={"page"} current>{"46"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 47"}>{"47"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 86"}>{"86"}</ui.PaginationLink>{"\\n  "}</ui.PaginationList>{"\\n"}</ui.Pagination>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Pagination\n        role={'navigation'}\n        aria-label={'pagination'}\n        size={'medium'}\n      >\n        {' '}\n        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}\n        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}\n        <ui.PaginationList>\n          {' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>\n            1\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>\n            45\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink\n            aria-label={'Page 46'}\n            aria-current={'page'}\n            current\n          >\n            46\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>\n            47\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>\n            86\n          </ui.PaginationLink>{' '}\n        </ui.PaginationList>{' '}\n      </ui.Pagination>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1476,7 +1384,7 @@ export const Example008 = {
     official: { id: 'components-pagination/sizes/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Pagination role={"navigation"} aria-label={"pagination"} size={"large"}>{"\\n  "}<ui.PaginationPrevious href={"#"}>{"Previous"}</ui.PaginationPrevious>{"\\n  "}<ui.PaginationNext href={"#"}>{"Next page"}</ui.PaginationNext>{"\\n  "}<ui.PaginationList>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 1"}>{"1"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 45"}>{"45"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink aria-label={"Page 46"} aria-current={"page"} current>{"46"}</ui.PaginationLink>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 47"}>{"47"}</ui.PaginationLink>{"\\n    "}<ui.PaginationEllipsis>{"…"}</ui.PaginationEllipsis>{"\\n    "}<ui.PaginationLink href={"#"} aria-label={"Goto page 86"}>{"86"}</ui.PaginationLink>{"\\n  "}</ui.PaginationList>{"\\n"}</ui.Pagination>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Pagination\n        role={'navigation'}\n        aria-label={'pagination'}\n        size={'large'}\n      >\n        {' '}\n        <ui.PaginationPrevious href={'#'}>Previous</ui.PaginationPrevious>{' '}\n        <ui.PaginationNext href={'#'}>Next page</ui.PaginationNext>{' '}\n        <ui.PaginationList>\n          {' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 1'}>\n            1\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 45'}>\n            45\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink\n            aria-label={'Page 46'}\n            aria-current={'page'}\n            current\n          >\n            46\n          </ui.PaginationLink>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 47'}>\n            47\n          </ui.PaginationLink>{' '}\n          <ui.PaginationEllipsis>…</ui.PaginationEllipsis>{' '}\n          <ui.PaginationLink href={'#'} aria-label={'Goto page 86'}>\n            86\n          </ui.PaginationLink>{' '}\n        </ui.PaginationList>{' '}\n      </ui.Pagination>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

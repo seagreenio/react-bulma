@@ -101,31 +101,23 @@ function Example001Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'First column'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>First column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Second column'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Second column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Third column'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification is-primary'}>Third column</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification is-primary'}>{'Fourth column'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification is-primary'}>Fourth column</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -137,7 +129,7 @@ export const Example001 = {
     official: { id: 'columns-basics/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"First column"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Second column"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Third column"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Fourth column"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>First column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Second column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Third column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Fourth column</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

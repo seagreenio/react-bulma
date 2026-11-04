@@ -23,11 +23,11 @@ function FixedNavbarTarget() {
   return (
     <>
       <ui.Navbar id={'navbarBottom'} fixed={'bottom'} shadow>
-        {'\n  '}
+        {' '}
         <ui.NavbarBrand>
-          {'\n    '}
+          {' '}
           <ui.NavbarItem href={'https://bulma.io/'}>
-            {'\n      '}
+            {' '}
             <svg
               width={'640'}
               height={'160'}
@@ -35,7 +35,7 @@ function FixedNavbarTarget() {
               fill={'none'}
               xmlns={'http://www.w3.org/2000/svg'}
             >
-              {'\n  '}
+              {' '}
               <path
                 fillRule={'evenodd'}
                 clipRule={'evenodd'}
@@ -44,106 +44,92 @@ function FixedNavbarTarget() {
                 }
                 fill={'black'}
                 className={'bd-svg-black'}
-              />
-              {'\n  '}
+              />{' '}
               <path
                 fillRule={'evenodd'}
                 clipRule={'evenodd'}
                 d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                 fill={'#00D1B2'}
-              />
-              {'\n'}
-            </svg>
-            {'\n\n    '}
-          </ui.NavbarItem>
-          {'\n    '}
+              />{' '}
+            </svg>{' '}
+          </ui.NavbarItem>{' '}
           <ui.NavbarBurger data-target={'navbarExample'} as={'div'}>
-            {'\n      '}
-            <span />
-            {'\n      '}
-            <span />
-            {'\n      '}
-            <span />
-            {'\n      '}
-            <span />
-            {'\n    '}
-          </ui.NavbarBurger>
-          {'\n  '}
-        </ui.NavbarBrand>
-        {'\n\n  '}
+            {' '}
+            <span /> <span /> <span /> <span />{' '}
+          </ui.NavbarBurger>{' '}
+        </ui.NavbarBrand>{' '}
         <ui.NavbarMenu id={'navbarExample'}>
-          {'\n    '}
+          {' '}
           <ui.NavbarStart>
-            {'\n      '}
-            <ui.NavbarItem href={'https://bulma.io/'}>{' Home '}</ui.NavbarItem>
-            {'\n      '}
+            {' '}
+            <ui.NavbarItem href={'https://bulma.io/'}>
+              {' '}
+              Home{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarDropdown
               up
               hoverable
               as={'div'}
-              trigger={<>{' Docs '}</>}
+              trigger={<> Docs </>}
               triggerProps={{
                 href: 'https://bulma.io/documentation/overview/start/',
               }}
             >
-              {'\n          '}
+              {' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/overview/start/'}
               >
-                {' Overview '}
-              </ui.NavbarItem>
-              {'\n          '}
+                {' '}
+                Overview{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/overview/modifiers/'}
               >
-                {' Modifiers '}
-              </ui.NavbarItem>
-              {'\n          '}
+                {' '}
+                Modifiers{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/columns/basics/'}
               >
-                {' Columns '}
-              </ui.NavbarItem>
-              {'\n          '}
+                {' '}
+                Columns{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/layout/container/'}
               >
-                {' Layout '}
-              </ui.NavbarItem>
-              {'\n          '}
+                {' '}
+                Layout{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/form/general/'}
               >
-                {' Form '}
-              </ui.NavbarItem>
-              {'\n          '}
-              <ui.NavbarDivider />
-              {'\n          '}
+                {' '}
+                Form{' '}
+              </ui.NavbarItem>{' '}
+              <ui.NavbarDivider />{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/elements/box/'}
               >
-                {' Elements '}
-              </ui.NavbarItem>
-              {'\n          '}
+                {' '}
+                Elements{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/components/breadcrumb/'}
                 active
               >
-                {' Components '}
-              </ui.NavbarItem>
-              {'\n        '}
-            </ui.NavbarDropdown>
-            {'\n    '}
-          </ui.NavbarStart>
-          {'\n\n    '}
+                {' '}
+                Components{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarDropdown>{' '}
+          </ui.NavbarStart>{' '}
           <ui.NavbarEnd>
-            {'\n      '}
+            {' '}
             <ui.NavbarItem as={'div'}>
-              {'\n        '}
+              {' '}
               <ui.Field layout={'grouped'}>
-                {'\n          '}
+                {' '}
                 <ui.Control as={'p'}>
-                  {'\n            '}
+                  {' '}
                   <ui.LinkButton
                     data-social-network={'Twitter'}
                     data-social-action={'tweet'}
@@ -154,48 +140,34 @@ function FixedNavbarTarget() {
                     }
                     className={'bd-tw-button'}
                   >
-                    {'\n              '}
+                    {' '}
                     <ui.Icon>
-                      {'\n                '}
-                      <i className={'fab fa-twitter'} />
-                      {'\n              '}
-                    </ui.Icon>
-                    {'\n              '}
-                    <span>{' Tweet '}</span>
-                    {'\n            '}
-                  </ui.LinkButton>
-                  {'\n          '}
-                </ui.Control>
-                {'\n          '}
+                      {' '}
+                      <i className={'fab fa-twitter'} />{' '}
+                    </ui.Icon>{' '}
+                    <span> Tweet </span>{' '}
+                  </ui.LinkButton>{' '}
+                </ui.Control>{' '}
                 <ui.Control as={'p'}>
-                  {'\n            '}
+                  {' '}
                   <ui.LinkButton
                     href={
                       'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
                     }
                     color={'primary'}
                   >
-                    {'\n              '}
+                    {' '}
                     <ui.Icon>
-                      {'\n                '}
-                      <i className={'fas fa-download'} />
-                      {'\n              '}
-                    </ui.Icon>
-                    {'\n              '}
-                    <span>{'Download'}</span>
-                    {'\n            '}
-                  </ui.LinkButton>
-                  {'\n          '}
-                </ui.Control>
-                {'\n        '}
-              </ui.Field>
-              {'\n      '}
-            </ui.NavbarItem>
-            {'\n    '}
-          </ui.NavbarEnd>
-          {'\n  '}
-        </ui.NavbarMenu>
-        {'\n'}
+                      {' '}
+                      <i className={'fas fa-download'} />{' '}
+                    </ui.Icon>{' '}
+                    <span>Download</span>{' '}
+                  </ui.LinkButton>{' '}
+                </ui.Control>{' '}
+              </ui.Field>{' '}
+            </ui.NavbarItem>{' '}
+          </ui.NavbarEnd>{' '}
+        </ui.NavbarMenu>{' '}
       </ui.Navbar>
     </>
   )
@@ -2942,13 +2914,13 @@ function Example001Demo() {
   return (
     <>
       <div className={'bd-example is-paddingless'}>
-        {'\n  \n'}
+        {' '}
         <ui.Navbar role={'navigation'} aria-label={'main navigation'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -2956,7 +2928,7 @@ function Example001Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -2965,19 +2937,15 @@ function Example001Demo() {
                   }
                   fill={'black'}
                   className={'bd-svg-black'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'#00D1B2'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               role={'button'}
               aria-label={'menu'}
@@ -2985,81 +2953,46 @@ function Example001Demo() {
               data-target={'navbarBasicExample'}
               as={'a'}
             >
-              {'\n      '}
-              <span aria-hidden={'true'} />
-              {'\n      '}
-              <span aria-hidden={'true'} />
-              {'\n      '}
-              <span aria-hidden={'true'} />
-              {'\n      '}
-              <span aria-hidden={'true'} />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}
+              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navbarBasicExample'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
-              <ui.NavbarItem>{'\n        Home\n      '}</ui.NavbarItem>
-              {'\n\n      '}
-              <ui.NavbarItem>{'\n        Documentation\n      '}</ui.NavbarItem>
-              {'\n\n      '}
-              <ui.NavbarDropdown
-                hoverable
-                as={'div'}
-                trigger={<>{'\n          More\n        '}</>}
-              >
-                {'\n          '}
-                <ui.NavbarItem>
-                  {'\n            About\n          '}
-                </ui.NavbarItem>
-                {'\n          '}
+              {' '}
+              <ui.NavbarItem> Home </ui.NavbarItem>{' '}
+              <ui.NavbarItem> Documentation </ui.NavbarItem>{' '}
+              <ui.NavbarDropdown hoverable as={'div'} trigger={<> More </>}>
+                {' '}
+                <ui.NavbarItem> About </ui.NavbarItem>{' '}
                 <ui.NavbarItem className={'rb-is-selected'}>
-                  {'\n            Jobs\n          '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Jobs{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem>
-                  {'\n            Contact\n          '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
-                <ui.NavbarItem>
-                  {'\n            Report an issue\n          '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Contact{' '}
+                </ui.NavbarItem> <ui.NavbarDivider />{' '}
+                <ui.NavbarItem> Report an issue </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Buttons>
-                  {'\n          '}
                   <ui.LinkButton color={'primary'}>
-                    {'\n            '}
-                    <strong>{'Sign up'}</strong>
-                    {'\n          '}
-                  </ui.LinkButton>
-                  {'\n          '}
-                  <ui.LinkButton color={'light'}>
-                    {'\n            Log in\n          '}
-                  </ui.LinkButton>
-                  {'\n        '}
-                </ui.Buttons>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                    {' '}
+                    <strong>Sign up</strong>{' '}
+                  </ui.LinkButton>{' '}
+                  <ui.LinkButton color={'light'}> Log in </ui.LinkButton>
+                </ui.Buttons>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -3069,13 +3002,13 @@ function Example002Demo() {
   return (
     <>
       <div className={'bd-example is-paddingless'}>
-        {'\n  \n'}
+        {' '}
         <ui.Navbar role={'navigation'} aria-label={'main navigation'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -3083,7 +3016,7 @@ function Example002Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -3092,40 +3025,27 @@ function Example002Demo() {
                   }
                   fill={'black'}
                   className={'bd-svg-black'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'#00D1B2'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               role={'button'}
               aria-label={'menu'}
               aria-expanded={'false'}
               as={'a'}
             >
-              {'\n      '}
-              <span aria-hidden={'true'} />
-              {'\n      '}
-              <span aria-hidden={'true'} />
-              {'\n      '}
-              <span aria-hidden={'true'} />
-              {'\n      '}
-              <span aria-hidden={'true'} />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+              {' '}
+              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}
+              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -3135,14 +3055,14 @@ function Example003Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <div
             style={{ ...{ marginBottom: '1.5rem', width: '2.5rem' } }}
             className={'example rb-is-paddingless'}
           >
-            {'\n      '}
+            {' '}
             <ui.NavbarBurger
               role={'button'}
               aria-label={'menu'}
@@ -3150,23 +3070,14 @@ function Example003Demo() {
               style={{ ...{ display: 'flex' } }}
               as={'a'}
             >
-              {'\n        '}
-              <span aria-hidden={'true'} />
-              {'\n        '}
-              <span aria-hidden={'true'} />
-              {'\n        '}
-              <span aria-hidden={'true'} />
-              {'\n        '}
-              <span aria-hidden={'true'} />
-              {'\n      '}
-            </ui.NavbarBurger>
-            {'\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+              {' '}
+              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}
+              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}
+            </ui.NavbarBurger>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -3175,10 +3086,8 @@ function Example003Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3188,14 +3097,14 @@ function Example004Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <div
             style={{ ...{ width: '2.5rem' } }}
             className={'example rb-is-paddingless'}
           >
-            {'\n      '}
+            {' '}
             <ui.NavbarBurger
               role={'button'}
               aria-label={'menu'}
@@ -3204,23 +3113,14 @@ function Example004Demo() {
               defaultExpanded
               as={'a'}
             >
-              {'\n        '}
-              <span aria-hidden={'true'} />
-              {'\n        '}
-              <span aria-hidden={'true'} />
-              {'\n        '}
-              <span aria-hidden={'true'} />
-              {'\n        '}
-              <span aria-hidden={'true'} />
-              {'\n      '}
-            </ui.NavbarBurger>
-            {'\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+              {' '}
+              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}
+              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}
+            </ui.NavbarBurger>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -3229,10 +3129,8 @@ function Example004Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3241,13 +3139,12 @@ function Example004Demo() {
 function Example005Demo() {
   return (
     <>
-      {'\n        \n          \n'}
       <ui.Navbar transparent>
-        {'\n  '}
+        {' '}
         <ui.NavbarBrand>
-          {'\n    '}
+          {' '}
           <ui.NavbarItem href={'https://bulma.io/'}>
-            {'\n      '}
+            {' '}
             <svg
               width={'640'}
               height={'160'}
@@ -3255,7 +3152,7 @@ function Example005Demo() {
               fill={'none'}
               xmlns={'http://www.w3.org/2000/svg'}
             >
-              {'\n  '}
+              {' '}
               <path
                 fillRule={'evenodd'}
                 clipRule={'evenodd'}
@@ -3264,110 +3161,96 @@ function Example005Demo() {
                 }
                 fill={'black'}
                 className={'bd-svg-black'}
-              />
-              {'\n  '}
+              />{' '}
               <path
                 fillRule={'evenodd'}
                 clipRule={'evenodd'}
                 d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                 fill={'#00D1B2'}
-              />
-              {'\n'}
-            </svg>
-            {'\n\n    '}
-          </ui.NavbarItem>
-          {'\n    '}
+              />{' '}
+            </svg>{' '}
+          </ui.NavbarItem>{' '}
           <ui.NavbarBurger
             data-target={'navbarExampleTransparentExample'}
             className={'js-burger'}
             as={'div'}
           >
-            {'\n      '}
-            <span />
-            {'\n      '}
-            <span />
-            {'\n      '}
-            <span />
-            {'\n      '}
-            <span />
-            {'\n    '}
-          </ui.NavbarBurger>
-          {'\n  '}
-        </ui.NavbarBrand>
-        {'\n\n  '}
+            {' '}
+            <span /> <span /> <span /> <span />{' '}
+          </ui.NavbarBurger>{' '}
+        </ui.NavbarBrand>{' '}
         <ui.NavbarMenu id={'navbarExampleTransparentExample'}>
-          {'\n    '}
+          {' '}
           <ui.NavbarStart>
-            {'\n      '}
-            <ui.NavbarItem href={'https://bulma.io/'}>{' Home '}</ui.NavbarItem>
-            {'\n      '}
+            {' '}
+            <ui.NavbarItem href={'https://bulma.io/'}>
+              {' '}
+              Home{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarDropdown
               defaultOpen
               boxed
               as={'div'}
-              trigger={<>{' Docs '}</>}
+              trigger={<> Docs </>}
               triggerProps={{
                 href: 'https://bulma.io/documentation/overview/start/',
               }}
             >
-              {'\n          '}
+              {' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/overview/start/'}
               >
-                {' Overview '}
-              </ui.NavbarItem>
-              {'\n          '}
+                {' '}
+                Overview{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/overview/modifiers/'}
               >
-                {' Modifiers '}
-              </ui.NavbarItem>
-              {'\n          '}
-              <ui.NavbarDivider />
-              {'\n          '}
+                {' '}
+                Modifiers{' '}
+              </ui.NavbarItem>{' '}
+              <ui.NavbarDivider />{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/columns/basics/'}
               >
-                {' Columns '}
-              </ui.NavbarItem>
-              {'\n          '}
+                {' '}
+                Columns{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/layout/container/'}
                 className={'rb-is-selected'}
               >
-                {' Layout '}
-              </ui.NavbarItem>
-              {'\n          '}
+                {' '}
+                Layout{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/form/general/'}
               >
-                {' Form '}
-              </ui.NavbarItem>
-              {'\n          '}
+                {' '}
+                Form{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/elements/box/'}
               >
-                {' Elements '}
-              </ui.NavbarItem>
-              {'\n          '}
+                {' '}
+                Elements{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarItem
                 href={'https://bulma.io/documentation/components/breadcrumb/'}
               >
-                {' Components '}
-              </ui.NavbarItem>
-              {'\n        '}
-            </ui.NavbarDropdown>
-            {'\n    '}
-          </ui.NavbarStart>
-          {'\n\n    '}
+                {' '}
+                Components{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarDropdown>{' '}
+          </ui.NavbarStart>{' '}
           <ui.NavbarEnd>
-            {'\n      '}
+            {' '}
             <ui.NavbarItem as={'div'}>
-              {'\n        '}
+              {' '}
               <ui.Field layout={'grouped'}>
-                {'\n          '}
+                {' '}
                 <ui.Control as={'p'}>
-                  {'\n            '}
+                  {' '}
                   <ui.LinkButton
                     data-social-network={'Twitter'}
                     data-social-action={'tweet'}
@@ -3378,50 +3261,35 @@ function Example005Demo() {
                     }
                     className={'bd-tw-button'}
                   >
-                    {'\n              '}
+                    {' '}
                     <ui.Icon>
-                      {'\n                '}
-                      <i className={'fab fa-twitter'} />
-                      {'\n              '}
-                    </ui.Icon>
-                    {'\n              '}
-                    <span>{' Tweet '}</span>
-                    {'\n            '}
-                  </ui.LinkButton>
-                  {'\n          '}
-                </ui.Control>
-                {'\n          '}
+                      {' '}
+                      <i className={'fab fa-twitter'} />{' '}
+                    </ui.Icon>{' '}
+                    <span> Tweet </span>{' '}
+                  </ui.LinkButton>{' '}
+                </ui.Control>{' '}
                 <ui.Control as={'p'}>
-                  {'\n            '}
+                  {' '}
                   <ui.LinkButton
                     href={
                       'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
                     }
                     color={'primary'}
                   >
-                    {'\n              '}
+                    {' '}
                     <ui.Icon>
-                      {'\n                '}
-                      <i className={'fas fa-download'} />
-                      {'\n              '}
-                    </ui.Icon>
-                    {'\n              '}
-                    <span>{'Download'}</span>
-                    {'\n            '}
-                  </ui.LinkButton>
-                  {'\n          '}
-                </ui.Control>
-                {'\n        '}
-              </ui.Field>
-              {'\n      '}
-            </ui.NavbarItem>
-            {'\n    '}
-          </ui.NavbarEnd>
-          {'\n  '}
-        </ui.NavbarMenu>
-        {'\n'}
+                      {' '}
+                      <i className={'fas fa-download'} />{' '}
+                    </ui.Icon>{' '}
+                    <span>Download</span>{' '}
+                  </ui.LinkButton>{' '}
+                </ui.Control>{' '}
+              </ui.Field>{' '}
+            </ui.NavbarItem>{' '}
+          </ui.NavbarEnd>{' '}
+        </ui.NavbarMenu>{' '}
       </ui.Navbar>
-      {'\n\n\n        \n      '}
     </>
   )
 }
@@ -3430,17 +3298,13 @@ function Example006Demo() {
   return (
     <>
       <ui.Buttons id={'navbarToggles'}>
-        {'\n  '}
         <ui.LinkButton id={'navbarFixBottom'} color={'link'}>
-          {'\n    '}
+          {' '}
           <span>
-            <span id={'navbarFixBottomText'}>{'Show'}</span>{' '}
-            <strong>{'bottom'}</strong>
-            {' navbar'}
-          </span>
-          {'\n  '}
+            <span id={'navbarFixBottomText'}>Show</span> <strong>bottom</strong>{' '}
+            navbar
+          </span>{' '}
         </ui.LinkButton>
-        {'\n'}
       </ui.Buttons>
     </>
   )
@@ -3450,40 +3314,25 @@ function Example007Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'bd-example is-paddingless'}>
-            {'\n      \n'}
+            {' '}
             <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>
-              {'\n  '}
-              <ui.NavbarDropdown
-                as={'div'}
-                trigger={<>{'\n      Docs\n    '}</>}
-              >
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Overview\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Elements\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Components\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarDivider />
-                {'\n      '}
-                <ui.NavbarItem as={'div'}>
-                  {'\n        Version 1.0.4\n      '}
-                </ui.NavbarItem>
-                {'\n    '}
-              </ui.NavbarDropdown>
-              {'\n'}
-            </ui.Navbar>
-            {'\n\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+              {' '}
+              <ui.NavbarDropdown as={'div'} trigger={<> Docs </>}>
+                {' '}
+                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}
+                <ui.NavbarItem> Elements </ui.NavbarItem>{' '}
+                <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}
+                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.Navbar>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -3492,10 +3341,8 @@ function Example007Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3505,41 +3352,25 @@ function Example008Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'bd-example is-paddingless'}>
-            {'\n      \n'}
+            {' '}
             <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>
-              {'\n  '}
-              <ui.NavbarDropdown
-                hoverable
-                as={'div'}
-                trigger={<>{'\n      Docs\n    '}</>}
-              >
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Overview\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Elements\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Components\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarDivider />
-                {'\n      '}
-                <ui.NavbarItem as={'div'}>
-                  {'\n        Version 1.0.4\n      '}
-                </ui.NavbarItem>
-                {'\n    '}
-              </ui.NavbarDropdown>
-              {'\n'}
-            </ui.Navbar>
-            {'\n\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+              {' '}
+              <ui.NavbarDropdown hoverable as={'div'} trigger={<> Docs </>}>
+                {' '}
+                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}
+                <ui.NavbarItem> Elements </ui.NavbarItem>{' '}
+                <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}
+                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.Navbar>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -3548,10 +3379,8 @@ function Example008Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3561,41 +3390,25 @@ function Example009Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'bd-example is-paddingless'}>
-            {'\n      \n'}
+            {' '}
             <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>
-              {'\n  '}
-              <ui.NavbarDropdown
-                defaultOpen
-                as={'div'}
-                trigger={<>{'\n      Docs\n    '}</>}
-              >
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Overview\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Elements\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Components\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarDivider />
-                {'\n      '}
-                <ui.NavbarItem as={'div'}>
-                  {'\n        Version 1.0.4\n      '}
-                </ui.NavbarItem>
-                {'\n    '}
-              </ui.NavbarDropdown>
-              {'\n'}
-            </ui.Navbar>
-            {'\n\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+              {' '}
+              <ui.NavbarDropdown defaultOpen as={'div'} trigger={<> Docs </>}>
+                {' '}
+                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}
+                <ui.NavbarItem> Elements </ui.NavbarItem>{' '}
+                <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}
+                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.Navbar>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -3604,10 +3417,8 @@ function Example009Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3617,102 +3428,70 @@ function Example010Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'bd-example is-paddingless'}>
-            {'\n      \n'}
+            {' '}
             <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>
-              {'\n  '}
+              {' '}
               <ui.NavbarMenu>
-                {'\n    '}
+                {' '}
                 <ui.NavbarStart>
-                  {'\n      '}
+                  {' '}
                   <ui.NavbarDropdown
                     defaultOpen
                     as={'div'}
-                    trigger={<>{'\n          Left\n        '}</>}
+                    trigger={<> Left </>}
                   >
-                    {'\n          '}
-                    <ui.NavbarItem>
-                      {'\n            Overview\n          '}
-                    </ui.NavbarItem>
-                    {'\n          '}
-                    <ui.NavbarItem>
-                      {'\n            Elements\n          '}
-                    </ui.NavbarItem>
-                    {'\n          '}
-                    <ui.NavbarItem>
-                      {'\n            Components\n          '}
-                    </ui.NavbarItem>
-                    {'\n          '}
-                    <ui.NavbarDivider />
-                    {'\n          '}
+                    {' '}
+                    <ui.NavbarItem> Overview </ui.NavbarItem>{' '}
+                    <ui.NavbarItem> Elements </ui.NavbarItem>{' '}
+                    <ui.NavbarItem> Components </ui.NavbarItem>{' '}
+                    <ui.NavbarDivider />{' '}
                     <ui.NavbarItem as={'div'}>
-                      {'\n            Version 1.0.4\n          '}
-                    </ui.NavbarItem>
-                    {'\n        '}
-                  </ui.NavbarDropdown>
-                  {'\n    '}
-                </ui.NavbarStart>
-                {'\n\n    '}
+                      {' '}
+                      Version 1.0.4{' '}
+                    </ui.NavbarItem>{' '}
+                  </ui.NavbarDropdown>{' '}
+                </ui.NavbarStart>{' '}
                 <ui.NavbarEnd>
-                  {'\n      '}
+                  {' '}
                   <ui.NavbarDropdown
                     defaultOpen
                     right
                     as={'div'}
-                    trigger={<>{'\n          Right\n        '}</>}
+                    trigger={<> Right </>}
                   >
-                    {'\n          '}
-                    <ui.NavbarItem>
-                      {'\n            Overview\n          '}
-                    </ui.NavbarItem>
-                    {'\n          '}
-                    <ui.NavbarItem>
-                      {'\n            Elements\n          '}
-                    </ui.NavbarItem>
-                    {'\n          '}
-                    <ui.NavbarItem>
-                      {'\n            Components\n          '}
-                    </ui.NavbarItem>
-                    {'\n          '}
-                    <ui.NavbarDivider />
-                    {'\n          '}
+                    {' '}
+                    <ui.NavbarItem> Overview </ui.NavbarItem>{' '}
+                    <ui.NavbarItem> Elements </ui.NavbarItem>{' '}
+                    <ui.NavbarItem> Components </ui.NavbarItem>{' '}
+                    <ui.NavbarDivider />{' '}
                     <ui.NavbarItem as={'div'}>
-                      {'\n            Version 1.0.4\n          '}
-                    </ui.NavbarItem>
-                    {'\n        '}
-                  </ui.NavbarDropdown>
-                  {'\n    '}
-                </ui.NavbarEnd>
-                {'\n  '}
-              </ui.NavbarMenu>
-              {'\n'}
-            </ui.Navbar>
-            {'\n\n'}
+                      {' '}
+                      Version 1.0.4{' '}
+                    </ui.NavbarItem>{' '}
+                  </ui.NavbarDropdown>{' '}
+                </ui.NavbarEnd>{' '}
+              </ui.NavbarMenu>{' '}
+            </ui.Navbar>{' '}
             <ui.Hero color={'primary'}>
-              {'\n  '}
+              {' '}
               <ui.HeroBody>
-                {'\n    '}
-                <ui.Title as={'p'}>{'\n      Documentation\n    '}</ui.Title>
-                {'\n    '}
+                {' '}
+                <ui.Title as={'p'}> Documentation </ui.Title>{' '}
                 <ui.Subtitle as={'p'}>
-                  {'\n      Everything you need to '}
-                  <strong>{'create a website'}</strong>
-                  {' with Bulma\n    '}
-                </ui.Subtitle>
-                {'\n  '}
-              </ui.HeroBody>
-              {'\n'}
-            </ui.Hero>
-            {'\n\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+                  {' '}
+                  Everything you need to <strong>create a website</strong> with
+                  Bulma{' '}
+                </ui.Subtitle>{' '}
+              </ui.HeroBody>{' '}
+            </ui.Hero>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -3721,10 +3500,8 @@ function Example010Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3734,72 +3511,52 @@ function Example011Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'bd-example is-paddingless'}>
-            {'\n      \n'}
+            {' '}
             <ui.Hero color={'primary'}>
-              {'\n  '}
+              {' '}
               <ui.HeroBody>
-                {'\n    '}
-                <ui.Title as={'p'}>{'\n      Documentation\n    '}</ui.Title>
-                {'\n    '}
+                {' '}
+                <ui.Title as={'p'}> Documentation </ui.Title>{' '}
                 <ui.Subtitle as={'p'}>
-                  {'\n      Everything you need to '}
-                  <strong>{'create a website'}</strong>
-                  {' with Bulma\n    '}
-                </ui.Subtitle>
-                {'\n  '}
-              </ui.HeroBody>
-              {'\n'}
-            </ui.Hero>
-            {'\n\n'}
+                  {' '}
+                  Everything you need to <strong>create a website</strong> with
+                  Bulma{' '}
+                </ui.Subtitle>{' '}
+              </ui.HeroBody>{' '}
+            </ui.Hero>{' '}
             <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>
-              {'\n  '}
+              {' '}
               <ui.NavbarMenu>
-                {'\n    '}
+                {' '}
                 <ui.NavbarStart>
-                  {'\n      '}
+                  {' '}
                   <ui.NavbarDropdown
                     up
                     defaultOpen
                     as={'div'}
-                    trigger={<>{'\n          Dropup\n        '}</>}
+                    trigger={<> Dropup </>}
                   >
-                    {'\n          '}
-                    <ui.NavbarItem>
-                      {'\n            Overview\n          '}
-                    </ui.NavbarItem>
-                    {'\n          '}
-                    <ui.NavbarItem>
-                      {'\n            Elements\n          '}
-                    </ui.NavbarItem>
-                    {'\n          '}
-                    <ui.NavbarItem>
-                      {'\n            Components\n          '}
-                    </ui.NavbarItem>
-                    {'\n          '}
-                    <ui.NavbarDivider />
-                    {'\n          '}
+                    {' '}
+                    <ui.NavbarItem> Overview </ui.NavbarItem>{' '}
+                    <ui.NavbarItem> Elements </ui.NavbarItem>{' '}
+                    <ui.NavbarItem> Components </ui.NavbarItem>{' '}
+                    <ui.NavbarDivider />{' '}
                     <ui.NavbarItem as={'div'}>
-                      {'\n            Version 1.0.4\n          '}
-                    </ui.NavbarItem>
-                    {'\n        '}
-                  </ui.NavbarDropdown>
-                  {'\n    '}
-                </ui.NavbarStart>
-                {'\n  '}
-              </ui.NavbarMenu>
-              {'\n'}
-            </ui.Navbar>
-            {'\n\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+                      {' '}
+                      Version 1.0.4{' '}
+                    </ui.NavbarItem>{' '}
+                  </ui.NavbarDropdown>{' '}
+                </ui.NavbarStart>{' '}
+              </ui.NavbarMenu>{' '}
+            </ui.Navbar>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -3808,10 +3565,8 @@ function Example011Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3821,38 +3576,27 @@ function Example012Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'bd-example is-paddingless'}>
-            {'\n      \n'}
+            {' '}
             <ui.NavbarDropdown
               hoverable
               as={'div'}
-              trigger={<>{'\n    Link without arrow\n  '}</>}
+              trigger={<> Link without arrow </>}
               arrowless
             >
-              {'\n    '}
-              <ui.NavbarItem>{'\n      Overview\n    '}</ui.NavbarItem>
-              {'\n    '}
-              <ui.NavbarItem>{'\n      Elements\n    '}</ui.NavbarItem>
-              {'\n    '}
-              <ui.NavbarItem>{'\n      Components\n    '}</ui.NavbarItem>
-              {'\n    '}
-              <ui.NavbarDivider />
-              {'\n    '}
-              <ui.NavbarItem as={'div'}>
-                {'\n      Version 1.0.4\n    '}
-              </ui.NavbarItem>
-              {'\n  '}
-            </ui.NavbarDropdown>
-            {'\n\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+              {' '}
+              <ui.NavbarItem> Overview </ui.NavbarItem>{' '}
+              <ui.NavbarItem> Elements </ui.NavbarItem>{' '}
+              <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}
+              <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}
+            </ui.NavbarDropdown>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -3861,10 +3605,8 @@ function Example012Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3874,15 +3616,15 @@ function Example013Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'bd-example is-paddingless'}>
-            {'\n      \n'}
+            {' '}
             <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>
-              {'\n  '}
+              {' '}
               <ui.NavbarItem>
-                {'\n    '}
+                {' '}
                 <svg
                   width={'640'}
                   height={'160'}
@@ -3890,7 +3632,7 @@ function Example013Demo() {
                   fill={'none'}
                   xmlns={'http://www.w3.org/2000/svg'}
                 >
-                  {'\n  '}
+                  {' '}
                   <path
                     fillRule={'evenodd'}
                     clipRule={'evenodd'}
@@ -3899,63 +3641,39 @@ function Example013Demo() {
                     }
                     fill={'black'}
                     className={'bd-svg-black'}
-                  />
-                  {'\n  '}
+                  />{' '}
                   <path
                     fillRule={'evenodd'}
                     clipRule={'evenodd'}
                     d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                     fill={'#00D1B2'}
-                  />
-                  {'\n'}
-                </svg>
-                {'\n\n  '}
-              </ui.NavbarItem>
-              {'\n\n  '}
-              <ui.NavbarDropdown
-                defaultOpen
-                as={'div'}
-                trigger={<>{'\n      Docs\n    '}</>}
-              >
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Overview\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Elements\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Components\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarDivider />
-                {'\n      '}
-                <ui.NavbarItem as={'div'}>
-                  {'\n        Version 1.0.4\n      '}
-                </ui.NavbarItem>
-                {'\n    '}
-              </ui.NavbarDropdown>
-              {'\n'}
-            </ui.Navbar>
-            {'\n\n'}
+                  />{' '}
+                </svg>{' '}
+              </ui.NavbarItem>{' '}
+              <ui.NavbarDropdown defaultOpen as={'div'} trigger={<> Docs </>}>
+                {' '}
+                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}
+                <ui.NavbarItem> Elements </ui.NavbarItem>{' '}
+                <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}
+                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.Navbar>{' '}
             <ui.Hero color={'primary'}>
-              {'\n  '}
+              {' '}
               <ui.HeroBody>
-                {'\n    '}
-                <ui.Title as={'p'}>{'\n      Documentation\n    '}</ui.Title>
-                {'\n    '}
+                {' '}
+                <ui.Title as={'p'}> Documentation </ui.Title>{' '}
                 <ui.Subtitle as={'p'}>
-                  {'\n      Everything you need to '}
-                  <strong>{'create a website'}</strong>
-                  {' with Bulma\n    '}
-                </ui.Subtitle>
-                {'\n  '}
-              </ui.HeroBody>
-              {'\n'}
-            </ui.Hero>
-            {'\n\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+                  {' '}
+                  Everything you need to <strong>create a website</strong> with
+                  Bulma{' '}
+                </ui.Subtitle>{' '}
+              </ui.HeroBody>{' '}
+            </ui.Hero>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -3964,10 +3682,8 @@ function Example013Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -3977,19 +3693,19 @@ function Example014Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'bd-example is-paddingless'}>
-            {'\n      \n'}
+            {' '}
             <ui.Navbar
               role={'navigation'}
               aria-label={'dropdown navigation'}
               transparent
             >
-              {'\n  '}
+              {' '}
               <ui.NavbarItem>
-                {'\n    '}
+                {' '}
                 <svg
                   width={'640'}
                   height={'160'}
@@ -3997,7 +3713,7 @@ function Example014Demo() {
                   fill={'none'}
                   xmlns={'http://www.w3.org/2000/svg'}
                 >
-                  {'\n  '}
+                  {' '}
                   <path
                     fillRule={'evenodd'}
                     clipRule={'evenodd'}
@@ -4006,64 +3722,44 @@ function Example014Demo() {
                     }
                     fill={'black'}
                     className={'bd-svg-black'}
-                  />
-                  {'\n  '}
+                  />{' '}
                   <path
                     fillRule={'evenodd'}
                     clipRule={'evenodd'}
                     d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                     fill={'#00D1B2'}
-                  />
-                  {'\n'}
-                </svg>
-                {'\n\n  '}
-              </ui.NavbarItem>
-              {'\n\n  '}
+                  />{' '}
+                </svg>{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 boxed
                 as={'div'}
-                trigger={<>{'\n      Docs\n    '}</>}
+                trigger={<> Docs </>}
               >
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Overview\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Elements\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Components\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarDivider />
-                {'\n      '}
-                <ui.NavbarItem as={'div'}>
-                  {'\n        Version 1.0.4\n      '}
-                </ui.NavbarItem>
-                {'\n    '}
-              </ui.NavbarDropdown>
-              {'\n'}
-            </ui.Navbar>
-            {'\n\n'}
+                {' '}
+                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}
+                <ui.NavbarItem> Elements </ui.NavbarItem>{' '}
+                <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}
+                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.Navbar>{' '}
             <ui.Hero>
-              {'\n  '}
+              {' '}
               <ui.HeroBody>
-                {'\n    '}
-                <ui.Title as={'p'}>{'\n      Documentation\n    '}</ui.Title>
-                {'\n    '}
+                {' '}
+                <ui.Title as={'p'}> Documentation </ui.Title>{' '}
                 <ui.Subtitle as={'p'}>
-                  {'\n      Everything you need to '}
-                  <strong>{'create a website'}</strong>
-                  {' with Bulma\n    '}
-                </ui.Subtitle>
-                {'\n  '}
-              </ui.HeroBody>
-              {'\n'}
-            </ui.Hero>
-            {'\n\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+                  {' '}
+                  Everything you need to <strong>create a website</strong> with
+                  Bulma{' '}
+                </ui.Subtitle>{' '}
+              </ui.HeroBody>{' '}
+            </ui.Hero>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -4072,10 +3768,8 @@ function Example014Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -4085,15 +3779,15 @@ function Example015Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'bd-example is-paddingless'}>
-            {'\n      \n'}
+            {' '}
             <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>
-              {'\n  '}
+              {' '}
               <ui.NavbarItem>
-                {'\n    '}
+                {' '}
                 <svg
                   width={'640'}
                   height={'160'}
@@ -4101,7 +3795,7 @@ function Example015Demo() {
                   fill={'none'}
                   xmlns={'http://www.w3.org/2000/svg'}
                 >
-                  {'\n  '}
+                  {' '}
                   <path
                     fillRule={'evenodd'}
                     clipRule={'evenodd'}
@@ -4110,65 +3804,45 @@ function Example015Demo() {
                     }
                     fill={'black'}
                     className={'bd-svg-black'}
-                  />
-                  {'\n  '}
+                  />{' '}
                   <path
                     fillRule={'evenodd'}
                     clipRule={'evenodd'}
                     d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                     fill={'#00D1B2'}
-                  />
-                  {'\n'}
-                </svg>
-                {'\n\n  '}
-              </ui.NavbarItem>
-              {'\n\n  '}
-              <ui.NavbarDropdown
-                defaultOpen
-                as={'div'}
-                trigger={<>{'\n      Docs\n    '}</>}
-              >
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Overview\n      '}</ui.NavbarItem>
-                {'\n      '}
+                  />{' '}
+                </svg>{' '}
+              </ui.NavbarItem>{' '}
+              <ui.NavbarDropdown defaultOpen as={'div'} trigger={<> Docs </>}>
+                {' '}
+                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}
                 <ui.NavbarItem className={'rb-is-selected'}>
-                  {'\n        Elements\n      '}
-                </ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarItem>{'\n        Components\n      '}</ui.NavbarItem>
-                {'\n      '}
-                <ui.NavbarDivider />
-                {'\n      '}
-                <ui.NavbarItem as={'div'}>
-                  {'\n        Version 1.0.4\n      '}
-                </ui.NavbarItem>
-                {'\n    '}
-              </ui.NavbarDropdown>
-              {'\n'}
-            </ui.Navbar>
-            {'\n\n'}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarItem>
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem> <ui.NavbarDivider />{' '}
+                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.Navbar>{' '}
             <ui.Hero color={'primary'}>
-              {'\n  '}
+              {' '}
               <ui.HeroBody>
-                {'\n    '}
-                <ui.Title as={'p'}>{'\n      Documentation\n    '}</ui.Title>
-                {'\n    '}
+                {' '}
+                <ui.Title as={'p'}> Documentation </ui.Title>{' '}
                 <ui.Subtitle as={'p'}>
-                  {'\n      Everything you need to '}
-                  <strong>{'create a website'}</strong>
-                  {' with Bulma\n    '}
-                </ui.Subtitle>
-                {'\n  '}
-              </ui.HeroBody>
-              {'\n'}
-            </ui.Hero>
-            {'\n\n    '}
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n\n  '}
+                  {' '}
+                  Everything you need to <strong>create a website</strong> with
+                  Bulma{' '}
+                </ui.Subtitle>{' '}
+              </ui.HeroBody>{' '}
+            </ui.Hero>{' '}
+          </div>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <div className={'highlight'}>
             <pre>
               <code className={'language-html'}>
@@ -4177,10 +3851,8 @@ function Example015Demo() {
                 }
               </code>
             </pre>
-          </div>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </div>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -4193,13 +3865,13 @@ function Example016Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -4207,7 +3879,7 @@ function Example016Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -4216,111 +3888,95 @@ function Example016Demo() {
                   }
                   fill={'black'}
                   className={'bd-svg-black'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'#00D1B2'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navbarExample'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navbarExample'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                   className={'rb-is-selected'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -4331,50 +3987,35 @@ function Example016Demo() {
                       }
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
                       }
                       color={'primary'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -4387,13 +4028,13 @@ function Example017Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar color={'primary'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -4401,7 +4042,7 @@ function Example017Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -4409,111 +4050,95 @@ function Example017Demo() {
                     'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'
                   }
                   fill={'currentColor'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'currentColor'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navMenuColorprimary-example'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navMenuColorprimary-example'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                   active
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -4526,21 +4151,16 @@ function Example017Demo() {
                       tone={'soft'}
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
@@ -4548,29 +4168,19 @@ function Example017Demo() {
                       color={'primary'}
                       tone={'light'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -4583,13 +4193,13 @@ function Example018Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar color={'link'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -4597,7 +4207,7 @@ function Example018Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -4605,111 +4215,95 @@ function Example018Demo() {
                     'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'
                   }
                   fill={'currentColor'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'currentColor'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navMenuColorlink-example'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navMenuColorlink-example'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                   active
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -4722,21 +4316,16 @@ function Example018Demo() {
                       tone={'soft'}
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
@@ -4744,29 +4333,19 @@ function Example018Demo() {
                       color={'link'}
                       tone={'light'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -4779,13 +4358,13 @@ function Example019Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar color={'info'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -4793,7 +4372,7 @@ function Example019Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -4801,111 +4380,95 @@ function Example019Demo() {
                     'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'
                   }
                   fill={'currentColor'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'currentColor'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navMenuColorinfo-example'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navMenuColorinfo-example'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                   active
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -4918,21 +4481,16 @@ function Example019Demo() {
                       tone={'soft'}
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
@@ -4940,29 +4498,19 @@ function Example019Demo() {
                       color={'info'}
                       tone={'light'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -4975,13 +4523,13 @@ function Example020Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar color={'success'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -4989,7 +4537,7 @@ function Example020Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -4997,111 +4545,95 @@ function Example020Demo() {
                     'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'
                   }
                   fill={'currentColor'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'currentColor'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navMenuColorsuccess-example'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navMenuColorsuccess-example'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                   active
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -5114,21 +4646,16 @@ function Example020Demo() {
                       tone={'soft'}
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
@@ -5136,29 +4663,19 @@ function Example020Demo() {
                       color={'success'}
                       tone={'light'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -5171,13 +4688,13 @@ function Example021Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar color={'warning'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -5185,7 +4702,7 @@ function Example021Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -5193,111 +4710,95 @@ function Example021Demo() {
                     'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'
                   }
                   fill={'currentColor'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'currentColor'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navMenuColorwarning-example'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navMenuColorwarning-example'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                   active
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -5310,21 +4811,16 @@ function Example021Demo() {
                       tone={'soft'}
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
@@ -5332,29 +4828,19 @@ function Example021Demo() {
                       color={'warning'}
                       tone={'light'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -5367,13 +4853,13 @@ function Example022Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar color={'danger'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -5381,7 +4867,7 @@ function Example022Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -5389,111 +4875,95 @@ function Example022Demo() {
                     'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'
                   }
                   fill={'currentColor'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'currentColor'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navMenuColordanger-example'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navMenuColordanger-example'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                   active
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -5506,21 +4976,16 @@ function Example022Demo() {
                       tone={'soft'}
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
@@ -5528,29 +4993,19 @@ function Example022Demo() {
                       color={'danger'}
                       tone={'light'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -5563,13 +5018,13 @@ function Example023Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar color={'black'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -5577,7 +5032,7 @@ function Example023Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -5585,111 +5040,95 @@ function Example023Demo() {
                     'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'
                   }
                   fill={'currentColor'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'currentColor'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navMenuColorblack-example'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navMenuColorblack-example'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                   active
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -5702,21 +5141,16 @@ function Example023Demo() {
                       tone={'soft'}
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
@@ -5724,29 +5158,19 @@ function Example023Demo() {
                       color={'black'}
                       tone={'light'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -5759,13 +5183,13 @@ function Example024Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar color={'dark'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -5773,7 +5197,7 @@ function Example024Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -5781,111 +5205,95 @@ function Example024Demo() {
                     'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'
                   }
                   fill={'currentColor'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'currentColor'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navMenuColordark-example'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navMenuColordark-example'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                   active
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -5898,21 +5306,16 @@ function Example024Demo() {
                       tone={'soft'}
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
@@ -5920,29 +5323,19 @@ function Example024Demo() {
                       color={'dark'}
                       tone={'light'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -5955,13 +5348,13 @@ function Example025Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar color={'light'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -5969,7 +5362,7 @@ function Example025Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -5977,111 +5370,95 @@ function Example025Demo() {
                     'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'
                   }
                   fill={'currentColor'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'currentColor'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navMenuColorlight-example'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navMenuColorlight-example'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                   active
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -6094,50 +5471,35 @@ function Example025Demo() {
                       tone={'soft'}
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
                       }
                       color={'light'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -6150,13 +5512,13 @@ function Example026Demo() {
         style={{ ...{ height: '30rem' } }}
         className={'bd-example is-paddingless'}
       >
-        {'\n  '}
+        {' '}
         <ui.Navbar color={'white'}>
-          {'\n  '}
+          {' '}
           <ui.NavbarBrand>
-            {'\n    '}
+            {' '}
             <ui.NavbarItem href={'https://bulma.io/'}>
-              {'\n      '}
+              {' '}
               <svg
                 width={'640'}
                 height={'160'}
@@ -6164,7 +5526,7 @@ function Example026Demo() {
                 fill={'none'}
                 xmlns={'http://www.w3.org/2000/svg'}
               >
-                {'\n  '}
+                {' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
@@ -6172,111 +5534,95 @@ function Example026Demo() {
                     'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'
                   }
                   fill={'currentColor'}
-                />
-                {'\n  '}
+                />{' '}
                 <path
                   fillRule={'evenodd'}
                   clipRule={'evenodd'}
                   d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}
                   fill={'currentColor'}
-                />
-                {'\n'}
-              </svg>
-              {'\n\n    '}
-            </ui.NavbarItem>
-            {'\n    '}
+                />{' '}
+              </svg>{' '}
+            </ui.NavbarItem>{' '}
             <ui.NavbarBurger
               data-target={'navMenuColorwhite-example'}
               className={'js-burger'}
               as={'div'}
             >
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n      '}
-              <span />
-              {'\n    '}
-            </ui.NavbarBurger>
-            {'\n  '}
-          </ui.NavbarBrand>
-          {'\n\n  '}
+              {' '}
+              <span /> <span /> <span /> <span />{' '}
+            </ui.NavbarBurger>{' '}
+          </ui.NavbarBrand>{' '}
           <ui.NavbarMenu id={'navMenuColorwhite-example'}>
-            {'\n    '}
+            {' '}
             <ui.NavbarStart>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem href={'https://bulma.io/'}>
-                {' Home '}
-              </ui.NavbarItem>
-              {'\n      '}
+                {' '}
+                Home{' '}
+              </ui.NavbarItem>{' '}
               <ui.NavbarDropdown
                 defaultOpen
                 as={'div'}
-                trigger={<>{' Docs '}</>}
+                trigger={<> Docs </>}
                 triggerProps={{
                   href: 'https://bulma.io/documentation/overview/start/',
                 }}
               >
-                {'\n          '}
+                {' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/start/'}
                 >
-                  {' Overview '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Overview{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/overview/modifiers/'}
                 >
-                  {' Modifiers '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Modifiers{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/columns/basics/'}
                 >
-                  {' Columns '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Columns{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/layout/container/'}
                 >
-                  {' Layout '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Layout{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/form/general/'}
                 >
-                  {' Form '}
-                </ui.NavbarItem>
-                {'\n          '}
-                <ui.NavbarDivider />
-                {'\n          '}
+                  {' '}
+                  Form{' '}
+                </ui.NavbarItem>{' '}
+                <ui.NavbarDivider />{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/elements/box/'}
                 >
-                  {' Elements '}
-                </ui.NavbarItem>
-                {'\n          '}
+                  {' '}
+                  Elements{' '}
+                </ui.NavbarItem>{' '}
                 <ui.NavbarItem
                   href={'https://bulma.io/documentation/components/breadcrumb/'}
                   active
                 >
-                  {' Components '}
-                </ui.NavbarItem>
-                {'\n        '}
-              </ui.NavbarDropdown>
-              {'\n    '}
-            </ui.NavbarStart>
-            {'\n\n    '}
+                  {' '}
+                  Components{' '}
+                </ui.NavbarItem>{' '}
+              </ui.NavbarDropdown>{' '}
+            </ui.NavbarStart>{' '}
             <ui.NavbarEnd>
-              {'\n      '}
+              {' '}
               <ui.NavbarItem as={'div'}>
-                {'\n        '}
+                {' '}
                 <ui.Field layout={'grouped'}>
-                  {'\n          '}
+                  {' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       data-social-network={'Twitter'}
                       data-social-action={'tweet'}
@@ -6289,21 +5635,16 @@ function Example026Demo() {
                       tone={'soft'}
                       className={'bd-tw-button'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fab fa-twitter'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{' Tweet '}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n          '}
+                        {' '}
+                        <i className={'fab fa-twitter'} />{' '}
+                      </ui.Icon>{' '}
+                      <span> Tweet </span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
                   <ui.Control as={'p'}>
-                    {'\n            '}
+                    {' '}
                     <ui.LinkButton
                       href={
                         'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'
@@ -6311,29 +5652,19 @@ function Example026Demo() {
                       color={'white'}
                       tone={'light'}
                     >
-                      {'\n              '}
+                      {' '}
                       <ui.Icon>
-                        {'\n                '}
-                        <i className={'fas fa-download'} />
-                        {'\n              '}
-                      </ui.Icon>
-                      {'\n              '}
-                      <span>{'Download'}</span>
-                      {'\n            '}
-                    </ui.LinkButton>
-                    {'\n          '}
-                  </ui.Control>
-                  {'\n        '}
-                </ui.Field>
-                {'\n      '}
-              </ui.NavbarItem>
-              {'\n    '}
-            </ui.NavbarEnd>
-            {'\n  '}
-          </ui.NavbarMenu>
-          {'\n'}
-        </ui.Navbar>
-        {'\n\n'}
+                        {' '}
+                        <i className={'fas fa-download'} />{' '}
+                      </ui.Icon>{' '}
+                      <span>Download</span>{' '}
+                    </ui.LinkButton>{' '}
+                  </ui.Control>{' '}
+                </ui.Field>{' '}
+              </ui.NavbarItem>{' '}
+            </ui.NavbarEnd>{' '}
+          </ui.NavbarMenu>{' '}
+        </ui.Navbar>{' '}
       </div>
     </>
   )
@@ -6345,7 +5676,7 @@ export const Example001 = {
     official: { id: 'components-navbar/basic-navbar/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><div className={"bd-example is-paddingless"}>{"\\n  \\n"}<ui.Navbar role={"navigation"} aria-label={"main navigation"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"black"} className={"bd-svg-black"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"#00D1B2"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n\\n    "}<ui.NavbarBurger role={"button"} aria-label={"menu"} aria-expanded={"false"} data-target={"navbarBasicExample"} as={"a"}>{"\\n      "}<span aria-hidden={"true"} />{"\\n      "}<span aria-hidden={"true"} />{"\\n      "}<span aria-hidden={"true"} />{"\\n      "}<span aria-hidden={"true"} />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navbarBasicExample"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem>{"\\n        Home\\n      "}</ui.NavbarItem>{"\\n\\n      "}<ui.NavbarItem>{"\\n        Documentation\\n      "}</ui.NavbarItem>{"\\n\\n      "}<ui.NavbarDropdown hoverable as={"div"} trigger={<>{"\\n          More\\n        "}</>}>{"\\n          "}<ui.NavbarItem>{"\\n            About\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem className={"rb-is-selected"}>{"\\n            Jobs\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem>{"\\n            Contact\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem>{"\\n            Report an issue\\n          "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Buttons>{"\\n          "}<ui.LinkButton color={"primary"}>{"\\n            "}<strong>{"Sign up"}</strong>{"\\n          "}</ui.LinkButton>{"\\n          "}<ui.LinkButton color={"light"}>{"\\n            Log in\\n          "}</ui.LinkButton>{"\\n        "}</ui.Buttons>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <div className={'bd-example is-paddingless'}>\n        {' '}\n        <ui.Navbar role={'navigation'} aria-label={'main navigation'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'black'}\n                  className={'bd-svg-black'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'#00D1B2'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              role={'button'}\n              aria-label={'menu'}\n              aria-expanded={'false'}\n              data-target={'navbarBasicExample'}\n              as={'a'}\n            >\n              {' '}\n              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}\n              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navbarBasicExample'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem> Home </ui.NavbarItem>{' '}\n              <ui.NavbarItem> Documentation </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown hoverable as={'div'} trigger={<> More </>}>\n                {' '}\n                <ui.NavbarItem> About </ui.NavbarItem>{' '}\n                <ui.NavbarItem className={'rb-is-selected'}>\n                  {' '}\n                  Jobs{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem>\n                  {' '}\n                  Contact{' '}\n                </ui.NavbarItem> <ui.NavbarDivider />{' '}\n                <ui.NavbarItem> Report an issue </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Buttons>\n                  <ui.LinkButton color={'primary'}>\n                    {' '}\n                    <strong>Sign up</strong>{' '}\n                  </ui.LinkButton>{' '}\n                  <ui.LinkButton color={'light'}> Log in </ui.LinkButton>\n                </ui.Buttons>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6360,7 +5691,7 @@ export const Example002 = {
     official: { id: 'components-navbar/navbar-brand/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><div className={"bd-example is-paddingless"}>{"\\n  \\n"}<ui.Navbar role={"navigation"} aria-label={"main navigation"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"black"} className={"bd-svg-black"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"#00D1B2"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n\\n    "}<ui.NavbarBurger role={"button"} aria-label={"menu"} aria-expanded={"false"} as={"a"}>{"\\n      "}<span aria-hidden={"true"} />{"\\n      "}<span aria-hidden={"true"} />{"\\n      "}<span aria-hidden={"true"} />{"\\n      "}<span aria-hidden={"true"} />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <div className={'bd-example is-paddingless'}>\n        {' '}\n        <ui.Navbar role={'navigation'} aria-label={'main navigation'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'black'}\n                  className={'bd-svg-black'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'#00D1B2'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              role={'button'}\n              aria-label={'menu'}\n              aria-expanded={'false'}\n              as={'a'}\n            >\n              {' '}\n              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}\n              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6375,7 +5706,7 @@ export const Example003 = {
     official: { id: 'components-navbar/navbar-burger/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<div style={{ ...{ marginBottom: "1.5rem", width: "2.5rem" } }} className={"example rb-is-paddingless"}>{"\\n      "}<ui.NavbarBurger role={"button"} aria-label={"menu"} aria-expanded={"false"} style={{ ...{ display: "flex" } }} as={"a"}>{"\\n        "}<span aria-hidden={"true"} />{"\\n        "}<span aria-hidden={"true"} />{"\\n        "}<span aria-hidden={"true"} />{"\\n        "}<span aria-hidden={"true"} />{"\\n      "}</ui.NavbarBurger>{"\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<a class=\\"navbar-burger\\" role=\\"button\\" aria-label=\\"menu\\" aria-expanded=\\"false\\">\\n  <span aria-hidden=\\"true\\"></span>\\n  <span aria-hidden=\\"true\\"></span>\\n  <span aria-hidden=\\"true\\"></span>\\n  <span aria-hidden=\\"true\\"></span>\\n</a>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <div\n            style={{ ...{ marginBottom: '1.5rem', width: '2.5rem' } }}\n            className={'example rb-is-paddingless'}\n          >\n            {' '}\n            <ui.NavbarBurger\n              role={'button'}\n              aria-label={'menu'}\n              aria-expanded={'false'}\n              style={{ ...{ display: 'flex' } }}\n              as={'a'}\n            >\n              {' '}\n              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}\n              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}\n            </ui.NavbarBurger>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<a class=\"navbar-burger\" role=\"button\" aria-label=\"menu\" aria-expanded=\"false\">\\n  <span aria-hidden=\"true\"></span>\\n  <span aria-hidden=\"true\"></span>\\n  <span aria-hidden=\"true\"></span>\\n  <span aria-hidden=\"true\"></span>\\n</a>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6390,7 +5721,7 @@ export const Example004 = {
     official: { id: 'components-navbar/navbar-burger/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<div style={{ ...{ width: "2.5rem" } }} className={"example rb-is-paddingless"}>{"\\n      "}<ui.NavbarBurger role={"button"} aria-label={"menu"} aria-expanded={"false"} style={{ ...{ display: "flex" } }} defaultExpanded as={"a"}>{"\\n        "}<span aria-hidden={"true"} />{"\\n        "}<span aria-hidden={"true"} />{"\\n        "}<span aria-hidden={"true"} />{"\\n        "}<span aria-hidden={"true"} />{"\\n      "}</ui.NavbarBurger>{"\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<a class=\\"navbar-burger is-active\\" role=\\"button\\" aria-label=\\"menu\\" aria-expanded=\\"false\\">\\n  <span aria-hidden=\\"true\\"></span>\\n  <span aria-hidden=\\"true\\"></span>\\n  <span aria-hidden=\\"true\\"></span>\\n  <span aria-hidden=\\"true\\"></span>\\n</a>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <div\n            style={{ ...{ width: '2.5rem' } }}\n            className={'example rb-is-paddingless'}\n          >\n            {' '}\n            <ui.NavbarBurger\n              role={'button'}\n              aria-label={'menu'}\n              aria-expanded={'false'}\n              style={{ ...{ display: 'flex' } }}\n              defaultExpanded\n              as={'a'}\n            >\n              {' '}\n              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}\n              <span aria-hidden={'true'} /> <span aria-hidden={'true'} />{' '}\n            </ui.NavbarBurger>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<a class=\"navbar-burger is-active\" role=\"button\" aria-label=\"menu\" aria-expanded=\"false\">\\n  <span aria-hidden=\"true\"></span>\\n  <span aria-hidden=\"true\"></span>\\n  <span aria-hidden=\"true\"></span>\\n  <span aria-hidden=\"true\"></span>\\n</a>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6405,7 +5736,7 @@ export const Example005 = {
     official: { id: 'components-navbar/transparent-navbar/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Navbar transparent>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"black"} className={"bd-svg-black"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"#00D1B2"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navbarExampleTransparentExample"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navbarExampleTransparentExample"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen boxed as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"} className={"rb-is-selected"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"}>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"primary"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n\\n        \\n      "}</>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Navbar transparent>\n        {' '}\n        <ui.NavbarBrand>\n          {' '}\n          <ui.NavbarItem href={'https://bulma.io/'}>\n            {' '}\n            <svg\n              width={'640'}\n              height={'160'}\n              viewBox={'0 0 640 160'}\n              fill={'none'}\n              xmlns={'http://www.w3.org/2000/svg'}\n            >\n              {' '}\n              <path\n                fillRule={'evenodd'}\n                clipRule={'evenodd'}\n                d={\n                  'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                }\n                fill={'black'}\n                className={'bd-svg-black'}\n              />{' '}\n              <path\n                fillRule={'evenodd'}\n                clipRule={'evenodd'}\n                d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                fill={'#00D1B2'}\n              />{' '}\n            </svg>{' '}\n          </ui.NavbarItem>{' '}\n          <ui.NavbarBurger\n            data-target={'navbarExampleTransparentExample'}\n            className={'js-burger'}\n            as={'div'}\n          >\n            {' '}\n            <span /> <span /> <span /> <span />{' '}\n          </ui.NavbarBurger>{' '}\n        </ui.NavbarBrand>{' '}\n        <ui.NavbarMenu id={'navbarExampleTransparentExample'}>\n          {' '}\n          <ui.NavbarStart>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              Home{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarDropdown\n              defaultOpen\n              boxed\n              as={'div'}\n              trigger={<> Docs </>}\n              triggerProps={{\n                href: 'https://bulma.io/documentation/overview/start/',\n              }}\n            >\n              {' '}\n              <ui.NavbarItem\n                href={'https://bulma.io/documentation/overview/start/'}\n              >\n                {' '}\n                Overview{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarItem\n                href={'https://bulma.io/documentation/overview/modifiers/'}\n              >\n                {' '}\n                Modifiers{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDivider />{' '}\n              <ui.NavbarItem\n                href={'https://bulma.io/documentation/columns/basics/'}\n              >\n                {' '}\n                Columns{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarItem\n                href={'https://bulma.io/documentation/layout/container/'}\n                className={'rb-is-selected'}\n              >\n                {' '}\n                Layout{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarItem\n                href={'https://bulma.io/documentation/form/general/'}\n              >\n                {' '}\n                Form{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarItem\n                href={'https://bulma.io/documentation/elements/box/'}\n              >\n                {' '}\n                Elements{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarItem\n                href={'https://bulma.io/documentation/components/breadcrumb/'}\n              >\n                {' '}\n                Components{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarDropdown>{' '}\n          </ui.NavbarStart>{' '}\n          <ui.NavbarEnd>\n            {' '}\n            <ui.NavbarItem as={'div'}>\n              {' '}\n              <ui.Field layout={'grouped'}>\n                {' '}\n                <ui.Control as={'p'}>\n                  {' '}\n                  <ui.LinkButton\n                    data-social-network={'Twitter'}\n                    data-social-action={'tweet'}\n                    data-social-target={'https://bulma.io'}\n                    target={'_blank'}\n                    href={\n                      'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                    }\n                    className={'bd-tw-button'}\n                  >\n                    {' '}\n                    <ui.Icon>\n                      {' '}\n                      <i className={'fab fa-twitter'} />{' '}\n                    </ui.Icon>{' '}\n                    <span> Tweet </span>{' '}\n                  </ui.LinkButton>{' '}\n                </ui.Control>{' '}\n                <ui.Control as={'p'}>\n                  {' '}\n                  <ui.LinkButton\n                    href={\n                      'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                    }\n                    color={'primary'}\n                  >\n                    {' '}\n                    <ui.Icon>\n                      {' '}\n                      <i className={'fas fa-download'} />{' '}\n                    </ui.Icon>{' '}\n                    <span>Download</span>{' '}\n                  </ui.LinkButton>{' '}\n                </ui.Control>{' '}\n              </ui.Field>{' '}\n            </ui.NavbarItem>{' '}\n          </ui.NavbarEnd>{' '}\n        </ui.NavbarMenu>{' '}\n      </ui.Navbar>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6420,7 +5751,7 @@ export const Example006 = {
     official: { id: 'components-navbar/try-it-out/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<><ui.Buttons id={"navbarToggles"}>{"\\n  "}<ui.LinkButton id={"navbarFixBottom"} color={"link"}>{"\\n    "}<span><span id={"navbarFixBottomText"}>{"Show"}</span>{" "}<strong>{"bottom"}</strong>{" navbar"}</span>{"\\n  "}</ui.LinkButton>{"\\n"}</ui.Buttons></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Buttons id={'navbarToggles'}>\n        <ui.LinkButton id={'navbarFixBottom'} color={'link'}>\n          {' '}\n          <span>\n            <span id={'navbarFixBottomText'}>Show</span> <strong>bottom</strong>{' '}\n            navbar\n          </span>{' '}\n        </ui.LinkButton>\n      </ui.Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6435,7 +5766,7 @@ export const Example007 = {
     official: { id: 'components-navbar/dropdown-menu/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<div className={"bd-example is-paddingless"}>{"\\n      \\n"}<ui.Navbar role={"navigation"} aria-label={"dropdown navigation"}>{"\\n  "}<ui.NavbarDropdown as={"div"} trigger={<>{"\\n      Docs\\n    "}</>}>{"\\n      "}<ui.NavbarItem>{"\\n        Overview\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Elements\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Components\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDivider />{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        Version 1.0.4\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarDropdown>{"\\n"}</ui.Navbar>{"\\n\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<nav class=\\"navbar\\" role=\\"navigation\\" aria-label=\\"dropdown navigation\\">\\n  <div class=\\"navbar-item has-dropdown\\">\\n    <a class=\\"navbar-link\\">\\n      Docs\\n    </a>\\n\\n    <div class=\\"navbar-dropdown\\">\\n      <a class=\\"navbar-item\\">\\n        Overview\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Elements\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Components\\n      </a>\\n      <hr class=\\"navbar-divider\\">\\n      <div class=\\"navbar-item\\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <div className={'bd-example is-paddingless'}>\n            {' '}\n            <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>\n              {' '}\n              <ui.NavbarDropdown as={'div'} trigger={<> Docs </>}>\n                {' '}\n                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}\n                <ui.NavbarItem> Elements </ui.NavbarItem>{' '}\n                <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}\n                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.Navbar>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<nav class=\"navbar\" role=\"navigation\" aria-label=\"dropdown navigation\">\\n  <div class=\"navbar-item has-dropdown\">\\n    <a class=\"navbar-link\">\\n      Docs\\n    </a>\\n\\n    <div class=\"navbar-dropdown\">\\n      <a class=\"navbar-item\">\\n        Overview\\n      </a>\\n      <a class=\"navbar-item\">\\n        Elements\\n      </a>\\n      <a class=\"navbar-item\">\\n        Components\\n      </a>\\n      <hr class=\"navbar-divider\">\\n      <div class=\"navbar-item\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6452,7 +5783,7 @@ export const Example008 = {
     },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<div className={"bd-example is-paddingless"}>{"\\n      \\n"}<ui.Navbar role={"navigation"} aria-label={"dropdown navigation"}>{"\\n  "}<ui.NavbarDropdown hoverable as={"div"} trigger={<>{"\\n      Docs\\n    "}</>}>{"\\n      "}<ui.NavbarItem>{"\\n        Overview\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Elements\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Components\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDivider />{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        Version 1.0.4\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarDropdown>{"\\n"}</ui.Navbar>{"\\n\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<nav class=\\"navbar\\" role=\\"navigation\\" aria-label=\\"dropdown navigation\\">\\n  <div class=\\"navbar-item has-dropdown is-hoverable\\">\\n    <a class=\\"navbar-link\\">\\n      Docs\\n    </a>\\n\\n    <div class=\\"navbar-dropdown\\">\\n      <a class=\\"navbar-item\\">\\n        Overview\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Elements\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Components\\n      </a>\\n      <hr class=\\"navbar-divider\\">\\n      <div class=\\"navbar-item\\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <div className={'bd-example is-paddingless'}>\n            {' '}\n            <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>\n              {' '}\n              <ui.NavbarDropdown hoverable as={'div'} trigger={<> Docs </>}>\n                {' '}\n                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}\n                <ui.NavbarItem> Elements </ui.NavbarItem>{' '}\n                <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}\n                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.Navbar>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<nav class=\"navbar\" role=\"navigation\" aria-label=\"dropdown navigation\">\\n  <div class=\"navbar-item has-dropdown is-hoverable\">\\n    <a class=\"navbar-link\">\\n      Docs\\n    </a>\\n\\n    <div class=\"navbar-dropdown\">\\n      <a class=\"navbar-item\">\\n        Overview\\n      </a>\\n      <a class=\"navbar-item\">\\n        Elements\\n      </a>\\n      <a class=\"navbar-item\">\\n        Components\\n      </a>\\n      <hr class=\"navbar-divider\">\\n      <div class=\"navbar-item\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6469,7 +5800,7 @@ export const Example009 = {
     },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<div className={"bd-example is-paddingless"}>{"\\n      \\n"}<ui.Navbar role={"navigation"} aria-label={"dropdown navigation"}>{"\\n  "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{"\\n      Docs\\n    "}</>}>{"\\n      "}<ui.NavbarItem>{"\\n        Overview\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Elements\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Components\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDivider />{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        Version 1.0.4\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarDropdown>{"\\n"}</ui.Navbar>{"\\n\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<nav class=\\"navbar\\" role=\\"navigation\\" aria-label=\\"dropdown navigation\\">\\n  <div class=\\"navbar-item has-dropdown is-active\\">\\n    <a class=\\"navbar-link\\">\\n      Docs\\n    </a>\\n\\n    <div class=\\"navbar-dropdown\\">\\n      <a class=\\"navbar-item\\">\\n        Overview\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Elements\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Components\\n      </a>\\n      <hr class=\\"navbar-divider\\">\\n      <div class=\\"navbar-item\\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <div className={'bd-example is-paddingless'}>\n            {' '}\n            <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>\n              {' '}\n              <ui.NavbarDropdown defaultOpen as={'div'} trigger={<> Docs </>}>\n                {' '}\n                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}\n                <ui.NavbarItem> Elements </ui.NavbarItem>{' '}\n                <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}\n                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.Navbar>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<nav class=\"navbar\" role=\"navigation\" aria-label=\"dropdown navigation\">\\n  <div class=\"navbar-item has-dropdown is-active\">\\n    <a class=\"navbar-link\">\\n      Docs\\n    </a>\\n\\n    <div class=\"navbar-dropdown\">\\n      <a class=\"navbar-item\">\\n        Overview\\n      </a>\\n      <a class=\"navbar-item\">\\n        Elements\\n      </a>\\n      <a class=\"navbar-item\">\\n        Components\\n      </a>\\n      <hr class=\"navbar-divider\">\\n      <div class=\"navbar-item\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6484,7 +5815,7 @@ export const Example010 = {
     official: { id: 'components-navbar/right-dropdown/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<div className={"bd-example is-paddingless"}>{"\\n      \\n"}<ui.Navbar role={"navigation"} aria-label={"dropdown navigation"}>{"\\n  "}<ui.NavbarMenu>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{"\\n          Left\\n        "}</>}>{"\\n          "}<ui.NavbarItem>{"\\n            Overview\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem>{"\\n            Elements\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem>{"\\n            Components\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem as={"div"}>{"\\n            Version 1.0.4\\n          "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarDropdown defaultOpen right as={"div"} trigger={<>{"\\n          Right\\n        "}</>}>{"\\n          "}<ui.NavbarItem>{"\\n            Overview\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem>{"\\n            Elements\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem>{"\\n            Components\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem as={"div"}>{"\\n            Version 1.0.4\\n          "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}<ui.Hero color={"primary"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"\\n      Documentation\\n    "}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"\\n      Everything you need to "}<strong>{"create a website"}</strong>{" with Bulma\\n    "}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<nav class=\\"navbar\\" role=\\"navigation\\" aria-label=\\"dropdown navigation\\">\\n  <div class=\\"navbar-menu\\">\\n    <div class=\\"navbar-start\\">\\n      <div class=\\"navbar-item has-dropdown is-active\\">\\n        <a class=\\"navbar-link\\">\\n          Left\\n        </a>\\n\\n        <div class=\\"navbar-dropdown\\">\\n          <a class=\\"navbar-item\\">\\n            Overview\\n          </a>\\n          <a class=\\"navbar-item\\">\\n            Elements\\n          </a>\\n          <a class=\\"navbar-item\\">\\n            Components\\n          </a>\\n          <hr class=\\"navbar-divider\\">\\n          <div class=\\"navbar-item\\">\\n            Version 1.0.4\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n\\n    <div class=\\"navbar-end\\">\\n      <div class=\\"navbar-item has-dropdown is-active\\">\\n        <a class=\\"navbar-link\\">\\n          Right\\n        </a>\\n\\n        <div class=\\"navbar-dropdown is-right\\">\\n          <a class=\\"navbar-item\\">\\n            Overview\\n          </a>\\n          <a class=\\"navbar-item\\">\\n            Elements\\n          </a>\\n          <a class=\\"navbar-item\\">\\n            Components\\n          </a>\\n          <hr class=\\"navbar-divider\\">\\n          <div class=\\"navbar-item\\">\\n            Version 1.0.4\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n\\n<section class=\\"hero is-primary\\">\\n  <div class=\\"hero-body\\">\\n    <p class=\\"title\\">\\n      Documentation\\n    </p>\\n    <p class=\\"subtitle\\">\\n      Everything you need to <strong>create a website</strong> with Bulma\\n    </p>\\n  </div>\\n</section>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <div className={'bd-example is-paddingless'}>\n            {' '}\n            <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>\n              {' '}\n              <ui.NavbarMenu>\n                {' '}\n                <ui.NavbarStart>\n                  {' '}\n                  <ui.NavbarDropdown\n                    defaultOpen\n                    as={'div'}\n                    trigger={<> Left </>}\n                  >\n                    {' '}\n                    <ui.NavbarItem> Overview </ui.NavbarItem>{' '}\n                    <ui.NavbarItem> Elements </ui.NavbarItem>{' '}\n                    <ui.NavbarItem> Components </ui.NavbarItem>{' '}\n                    <ui.NavbarDivider />{' '}\n                    <ui.NavbarItem as={'div'}>\n                      {' '}\n                      Version 1.0.4{' '}\n                    </ui.NavbarItem>{' '}\n                  </ui.NavbarDropdown>{' '}\n                </ui.NavbarStart>{' '}\n                <ui.NavbarEnd>\n                  {' '}\n                  <ui.NavbarDropdown\n                    defaultOpen\n                    right\n                    as={'div'}\n                    trigger={<> Right </>}\n                  >\n                    {' '}\n                    <ui.NavbarItem> Overview </ui.NavbarItem>{' '}\n                    <ui.NavbarItem> Elements </ui.NavbarItem>{' '}\n                    <ui.NavbarItem> Components </ui.NavbarItem>{' '}\n                    <ui.NavbarDivider />{' '}\n                    <ui.NavbarItem as={'div'}>\n                      {' '}\n                      Version 1.0.4{' '}\n                    </ui.NavbarItem>{' '}\n                  </ui.NavbarDropdown>{' '}\n                </ui.NavbarEnd>{' '}\n              </ui.NavbarMenu>{' '}\n            </ui.Navbar>{' '}\n            <ui.Hero color={'primary'}>\n              {' '}\n              <ui.HeroBody>\n                {' '}\n                <ui.Title as={'p'}> Documentation </ui.Title>{' '}\n                <ui.Subtitle as={'p'}>\n                  {' '}\n                  Everything you need to <strong>create a website</strong> with\n                  Bulma{' '}\n                </ui.Subtitle>{' '}\n              </ui.HeroBody>{' '}\n            </ui.Hero>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<nav class=\"navbar\" role=\"navigation\" aria-label=\"dropdown navigation\">\\n  <div class=\"navbar-menu\">\\n    <div class=\"navbar-start\">\\n      <div class=\"navbar-item has-dropdown is-active\">\\n        <a class=\"navbar-link\">\\n          Left\\n        </a>\\n\\n        <div class=\"navbar-dropdown\">\\n          <a class=\"navbar-item\">\\n            Overview\\n          </a>\\n          <a class=\"navbar-item\">\\n            Elements\\n          </a>\\n          <a class=\"navbar-item\">\\n            Components\\n          </a>\\n          <hr class=\"navbar-divider\">\\n          <div class=\"navbar-item\">\\n            Version 1.0.4\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n\\n    <div class=\"navbar-end\">\\n      <div class=\"navbar-item has-dropdown is-active\">\\n        <a class=\"navbar-link\">\\n          Right\\n        </a>\\n\\n        <div class=\"navbar-dropdown is-right\">\\n          <a class=\"navbar-item\">\\n            Overview\\n          </a>\\n          <a class=\"navbar-item\">\\n            Elements\\n          </a>\\n          <a class=\"navbar-item\">\\n            Components\\n          </a>\\n          <hr class=\"navbar-divider\">\\n          <div class=\"navbar-item\">\\n            Version 1.0.4\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n\\n<section class=\"hero is-primary\">\\n  <div class=\"hero-body\">\\n    <p class=\"title\">\\n      Documentation\\n    </p>\\n    <p class=\"subtitle\">\\n      Everything you need to <strong>create a website</strong> with Bulma\\n    </p>\\n  </div>\\n</section>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6499,7 +5830,7 @@ export const Example011 = {
     official: { id: 'components-navbar/dropup/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<div className={"bd-example is-paddingless"}>{"\\n      \\n"}<ui.Hero color={"primary"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"\\n      Documentation\\n    "}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"\\n      Everything you need to "}<strong>{"create a website"}</strong>{" with Bulma\\n    "}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n"}<ui.Navbar role={"navigation"} aria-label={"dropdown navigation"}>{"\\n  "}<ui.NavbarMenu>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarDropdown up defaultOpen as={"div"} trigger={<>{"\\n          Dropup\\n        "}</>}>{"\\n          "}<ui.NavbarItem>{"\\n            Overview\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem>{"\\n            Elements\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem>{"\\n            Components\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem as={"div"}>{"\\n            Version 1.0.4\\n          "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<section class=\\"hero is-primary\\">\\n  <div class=\\"hero-body\\">\\n    <p class=\\"title\\">\\n      Documentation\\n    </p>\\n    <p class=\\"subtitle\\">\\n      Everything you need to <strong>create a website</strong> with Bulma\\n    </p>\\n  </div>\\n</section>\\n\\n<nav class=\\"navbar\\" role=\\"navigation\\" aria-label=\\"dropdown navigation\\">\\n  <div class=\\"navbar-menu\\">\\n    <div class=\\"navbar-start\\">\\n      <div class=\\"navbar-item has-dropdown has-dropdown-up is-active\\">\\n        <a class=\\"navbar-link\\">\\n          Dropup\\n        </a>\\n\\n        <div class=\\"navbar-dropdown\\">\\n          <a class=\\"navbar-item\\">\\n            Overview\\n          </a>\\n          <a class=\\"navbar-item\\">\\n            Elements\\n          </a>\\n          <a class=\\"navbar-item\\">\\n            Components\\n          </a>\\n          <hr class=\\"navbar-divider\\">\\n          <div class=\\"navbar-item\\">\\n            Version 1.0.4\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <div className={'bd-example is-paddingless'}>\n            {' '}\n            <ui.Hero color={'primary'}>\n              {' '}\n              <ui.HeroBody>\n                {' '}\n                <ui.Title as={'p'}> Documentation </ui.Title>{' '}\n                <ui.Subtitle as={'p'}>\n                  {' '}\n                  Everything you need to <strong>create a website</strong> with\n                  Bulma{' '}\n                </ui.Subtitle>{' '}\n              </ui.HeroBody>{' '}\n            </ui.Hero>{' '}\n            <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>\n              {' '}\n              <ui.NavbarMenu>\n                {' '}\n                <ui.NavbarStart>\n                  {' '}\n                  <ui.NavbarDropdown\n                    up\n                    defaultOpen\n                    as={'div'}\n                    trigger={<> Dropup </>}\n                  >\n                    {' '}\n                    <ui.NavbarItem> Overview </ui.NavbarItem>{' '}\n                    <ui.NavbarItem> Elements </ui.NavbarItem>{' '}\n                    <ui.NavbarItem> Components </ui.NavbarItem>{' '}\n                    <ui.NavbarDivider />{' '}\n                    <ui.NavbarItem as={'div'}>\n                      {' '}\n                      Version 1.0.4{' '}\n                    </ui.NavbarItem>{' '}\n                  </ui.NavbarDropdown>{' '}\n                </ui.NavbarStart>{' '}\n              </ui.NavbarMenu>{' '}\n            </ui.Navbar>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<section class=\"hero is-primary\">\\n  <div class=\"hero-body\">\\n    <p class=\"title\">\\n      Documentation\\n    </p>\\n    <p class=\"subtitle\">\\n      Everything you need to <strong>create a website</strong> with Bulma\\n    </p>\\n  </div>\\n</section>\\n\\n<nav class=\"navbar\" role=\"navigation\" aria-label=\"dropdown navigation\">\\n  <div class=\"navbar-menu\">\\n    <div class=\"navbar-start\">\\n      <div class=\"navbar-item has-dropdown has-dropdown-up is-active\">\\n        <a class=\"navbar-link\">\\n          Dropup\\n        </a>\\n\\n        <div class=\"navbar-dropdown\">\\n          <a class=\"navbar-item\">\\n            Overview\\n          </a>\\n          <a class=\"navbar-item\">\\n            Elements\\n          </a>\\n          <a class=\"navbar-item\">\\n            Components\\n          </a>\\n          <hr class=\"navbar-divider\">\\n          <div class=\"navbar-item\">\\n            Version 1.0.4\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6514,7 +5845,7 @@ export const Example012 = {
     official: { id: 'components-navbar/dropdown-without-arrow/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<div className={"bd-example is-paddingless"}>{"\\n      \\n"}<ui.NavbarDropdown hoverable as={"div"} trigger={<>{"\\n    Link without arrow\\n  "}</>} arrowless>{"\\n    "}<ui.NavbarItem>{"\\n      Overview\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarItem>{"\\n      Elements\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarItem>{"\\n      Components\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarDivider />{"\\n    "}<ui.NavbarItem as={"div"}>{"\\n      Version 1.0.4\\n    "}</ui.NavbarItem>{"\\n  "}</ui.NavbarDropdown>{"\\n\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"navbar-item has-dropdown is-hoverable\\">\\n  <a class=\\"navbar-link is-arrowless\\">\\n    Link without arrow\\n  </a>\\n  <div class=\\"navbar-dropdown\\">\\n    <a class=\\"navbar-item\\">\\n      Overview\\n    </a>\\n    <a class=\\"navbar-item\\">\\n      Elements\\n    </a>\\n    <a class=\\"navbar-item\\">\\n      Components\\n    </a>\\n    <hr class=\\"navbar-divider\\">\\n    <div class=\\"navbar-item\\">\\n      Version 1.0.4\\n    </div>\\n  </div>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <div className={'bd-example is-paddingless'}>\n            {' '}\n            <ui.NavbarDropdown\n              hoverable\n              as={'div'}\n              trigger={<> Link without arrow </>}\n              arrowless\n            >\n              {' '}\n              <ui.NavbarItem> Overview </ui.NavbarItem>{' '}\n              <ui.NavbarItem> Elements </ui.NavbarItem>{' '}\n              <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}\n              <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}\n            </ui.NavbarDropdown>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"navbar-item has-dropdown is-hoverable\">\\n  <a class=\"navbar-link is-arrowless\">\\n    Link without arrow\\n  </a>\\n  <div class=\"navbar-dropdown\">\\n    <a class=\"navbar-item\">\\n      Overview\\n    </a>\\n    <a class=\"navbar-item\">\\n      Elements\\n    </a>\\n    <a class=\"navbar-item\">\\n      Components\\n    </a>\\n    <hr class=\"navbar-divider\">\\n    <div class=\"navbar-item\">\\n      Version 1.0.4\\n    </div>\\n  </div>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6529,7 +5860,7 @@ export const Example013 = {
     official: { id: 'components-navbar/styles-for-the-dropdown-menu/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<div className={"bd-example is-paddingless"}>{"\\n      \\n"}<ui.Navbar role={"navigation"} aria-label={"dropdown navigation"}>{"\\n  "}<ui.NavbarItem>{"\\n    "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"black"} className={"bd-svg-black"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"#00D1B2"} />{"\\n"}</svg>{"\\n\\n  "}</ui.NavbarItem>{"\\n\\n  "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{"\\n      Docs\\n    "}</>}>{"\\n      "}<ui.NavbarItem>{"\\n        Overview\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Elements\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Components\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDivider />{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        Version 1.0.4\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarDropdown>{"\\n"}</ui.Navbar>{"\\n\\n"}<ui.Hero color={"primary"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"\\n      Documentation\\n    "}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"\\n      Everything you need to "}<strong>{"create a website"}</strong>{" with Bulma\\n    "}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<nav class=\\"navbar\\" role=\\"navigation\\" aria-label=\\"dropdown navigation\\">\\n  <a class=\\"navbar-item\\">\\n    <svg width=\\"640\\" height=\\"160\\" viewBox=\\"0 0 640 160\\" fill=\\"none\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n  <path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z\\" fill=\\"black\\" class=\\"bd-svg-black\\" />\\n  <path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z\\" fill=\\"#00D1B2\\"/>\\n</svg>\\n\\n  </a>\\n\\n  <div class=\\"navbar-item has-dropdown is-active\\">\\n    <a class=\\"navbar-link\\">\\n      Docs\\n    </a>\\n\\n    <div class=\\"navbar-dropdown\\">\\n      <a class=\\"navbar-item\\">\\n        Overview\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Elements\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Components\\n      </a>\\n      <hr class=\\"navbar-divider\\">\\n      <div class=\\"navbar-item\\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n\\n<section class=\\"hero is-primary\\">\\n  <div class=\\"hero-body\\">\\n    <p class=\\"title\\">\\n      Documentation\\n    </p>\\n    <p class=\\"subtitle\\">\\n      Everything you need to <strong>create a website</strong> with Bulma\\n    </p>\\n  </div>\\n</section>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <div className={'bd-example is-paddingless'}>\n            {' '}\n            <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>\n              {' '}\n              <ui.NavbarItem>\n                {' '}\n                <svg\n                  width={'640'}\n                  height={'160'}\n                  viewBox={'0 0 640 160'}\n                  fill={'none'}\n                  xmlns={'http://www.w3.org/2000/svg'}\n                >\n                  {' '}\n                  <path\n                    fillRule={'evenodd'}\n                    clipRule={'evenodd'}\n                    d={\n                      'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                    }\n                    fill={'black'}\n                    className={'bd-svg-black'}\n                  />{' '}\n                  <path\n                    fillRule={'evenodd'}\n                    clipRule={'evenodd'}\n                    d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                    fill={'#00D1B2'}\n                  />{' '}\n                </svg>{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown defaultOpen as={'div'} trigger={<> Docs </>}>\n                {' '}\n                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}\n                <ui.NavbarItem> Elements </ui.NavbarItem>{' '}\n                <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}\n                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.Navbar>{' '}\n            <ui.Hero color={'primary'}>\n              {' '}\n              <ui.HeroBody>\n                {' '}\n                <ui.Title as={'p'}> Documentation </ui.Title>{' '}\n                <ui.Subtitle as={'p'}>\n                  {' '}\n                  Everything you need to <strong>create a website</strong> with\n                  Bulma{' '}\n                </ui.Subtitle>{' '}\n              </ui.HeroBody>{' '}\n            </ui.Hero>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<nav class=\"navbar\" role=\"navigation\" aria-label=\"dropdown navigation\">\\n  <a class=\"navbar-item\">\\n    <svg width=\"640\" height=\"160\" viewBox=\"0 0 640 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z\" fill=\"black\" class=\"bd-svg-black\" />\\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z\" fill=\"#00D1B2\"/>\\n</svg>\\n\\n  </a>\\n\\n  <div class=\"navbar-item has-dropdown is-active\">\\n    <a class=\"navbar-link\">\\n      Docs\\n    </a>\\n\\n    <div class=\"navbar-dropdown\">\\n      <a class=\"navbar-item\">\\n        Overview\\n      </a>\\n      <a class=\"navbar-item\">\\n        Elements\\n      </a>\\n      <a class=\"navbar-item\">\\n        Components\\n      </a>\\n      <hr class=\"navbar-divider\">\\n      <div class=\"navbar-item\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n\\n<section class=\"hero is-primary\">\\n  <div class=\"hero-body\">\\n    <p class=\"title\">\\n      Documentation\\n    </p>\\n    <p class=\"subtitle\">\\n      Everything you need to <strong>create a website</strong> with Bulma\\n    </p>\\n  </div>\\n</section>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6544,7 +5875,7 @@ export const Example014 = {
     official: { id: 'components-navbar/styles-for-the-dropdown-menu/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<div className={"bd-example is-paddingless"}>{"\\n      \\n"}<ui.Navbar role={"navigation"} aria-label={"dropdown navigation"} transparent>{"\\n  "}<ui.NavbarItem>{"\\n    "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"black"} className={"bd-svg-black"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"#00D1B2"} />{"\\n"}</svg>{"\\n\\n  "}</ui.NavbarItem>{"\\n\\n  "}<ui.NavbarDropdown defaultOpen boxed as={"div"} trigger={<>{"\\n      Docs\\n    "}</>}>{"\\n      "}<ui.NavbarItem>{"\\n        Overview\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Elements\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Components\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDivider />{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        Version 1.0.4\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarDropdown>{"\\n"}</ui.Navbar>{"\\n\\n"}<ui.Hero>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"\\n      Documentation\\n    "}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"\\n      Everything you need to "}<strong>{"create a website"}</strong>{" with Bulma\\n    "}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<nav class=\\"navbar is-transparent\\" role=\\"navigation\\" aria-label=\\"dropdown navigation\\">\\n  <a class=\\"navbar-item\\">\\n    <svg width=\\"640\\" height=\\"160\\" viewBox=\\"0 0 640 160\\" fill=\\"none\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n  <path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z\\" fill=\\"black\\" class=\\"bd-svg-black\\" />\\n  <path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z\\" fill=\\"#00D1B2\\"/>\\n</svg>\\n\\n  </a>\\n\\n  <div class=\\"navbar-item has-dropdown is-active\\">\\n    <a class=\\"navbar-link\\">\\n      Docs\\n    </a>\\n\\n    <div class=\\"navbar-dropdown is-boxed\\">\\n      <a class=\\"navbar-item\\">\\n        Overview\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Elements\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Components\\n      </a>\\n      <hr class=\\"navbar-divider\\">\\n      <div class=\\"navbar-item\\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n\\n<section class=\\"hero\\">\\n  <div class=\\"hero-body\\">\\n    <p class=\\"title\\">\\n      Documentation\\n    </p>\\n    <p class=\\"subtitle\\">\\n      Everything you need to <strong>create a website</strong> with Bulma\\n    </p>\\n  </div>\\n</section>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <div className={'bd-example is-paddingless'}>\n            {' '}\n            <ui.Navbar\n              role={'navigation'}\n              aria-label={'dropdown navigation'}\n              transparent\n            >\n              {' '}\n              <ui.NavbarItem>\n                {' '}\n                <svg\n                  width={'640'}\n                  height={'160'}\n                  viewBox={'0 0 640 160'}\n                  fill={'none'}\n                  xmlns={'http://www.w3.org/2000/svg'}\n                >\n                  {' '}\n                  <path\n                    fillRule={'evenodd'}\n                    clipRule={'evenodd'}\n                    d={\n                      'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                    }\n                    fill={'black'}\n                    className={'bd-svg-black'}\n                  />{' '}\n                  <path\n                    fillRule={'evenodd'}\n                    clipRule={'evenodd'}\n                    d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                    fill={'#00D1B2'}\n                  />{' '}\n                </svg>{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                boxed\n                as={'div'}\n                trigger={<> Docs </>}\n              >\n                {' '}\n                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}\n                <ui.NavbarItem> Elements </ui.NavbarItem>{' '}\n                <ui.NavbarItem> Components </ui.NavbarItem> <ui.NavbarDivider />{' '}\n                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.Navbar>{' '}\n            <ui.Hero>\n              {' '}\n              <ui.HeroBody>\n                {' '}\n                <ui.Title as={'p'}> Documentation </ui.Title>{' '}\n                <ui.Subtitle as={'p'}>\n                  {' '}\n                  Everything you need to <strong>create a website</strong> with\n                  Bulma{' '}\n                </ui.Subtitle>{' '}\n              </ui.HeroBody>{' '}\n            </ui.Hero>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<nav class=\"navbar is-transparent\" role=\"navigation\" aria-label=\"dropdown navigation\">\\n  <a class=\"navbar-item\">\\n    <svg width=\"640\" height=\"160\" viewBox=\"0 0 640 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z\" fill=\"black\" class=\"bd-svg-black\" />\\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z\" fill=\"#00D1B2\"/>\\n</svg>\\n\\n  </a>\\n\\n  <div class=\"navbar-item has-dropdown is-active\">\\n    <a class=\"navbar-link\">\\n      Docs\\n    </a>\\n\\n    <div class=\"navbar-dropdown is-boxed\">\\n      <a class=\"navbar-item\">\\n        Overview\\n      </a>\\n      <a class=\"navbar-item\">\\n        Elements\\n      </a>\\n      <a class=\"navbar-item\">\\n        Components\\n      </a>\\n      <hr class=\"navbar-divider\">\\n      <div class=\"navbar-item\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n\\n<section class=\"hero\">\\n  <div class=\"hero-body\">\\n    <p class=\"title\">\\n      Documentation\\n    </p>\\n    <p class=\"subtitle\">\\n      Everything you need to <strong>create a website</strong> with Bulma\\n    </p>\\n  </div>\\n</section>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6559,7 +5890,7 @@ export const Example015 = {
     official: { id: 'components-navbar/active-dropdown-navbar-item/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<div className={"bd-example is-paddingless"}>{"\\n      \\n"}<ui.Navbar role={"navigation"} aria-label={"dropdown navigation"}>{"\\n  "}<ui.NavbarItem>{"\\n    "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"black"} className={"bd-svg-black"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"#00D1B2"} />{"\\n"}</svg>{"\\n\\n  "}</ui.NavbarItem>{"\\n\\n  "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{"\\n      Docs\\n    "}</>}>{"\\n      "}<ui.NavbarItem>{"\\n        Overview\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem className={"rb-is-selected"}>{"\\n        Elements\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarItem>{"\\n        Components\\n      "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDivider />{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        Version 1.0.4\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarDropdown>{"\\n"}</ui.Navbar>{"\\n\\n"}<ui.Hero color={"primary"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"\\n      Documentation\\n    "}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"\\n      Everything you need to "}<strong>{"create a website"}</strong>{" with Bulma\\n    "}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n    "}</div>{"\\n  "}</ui.Column>{"\\n\\n  "}<ui.Column>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<nav class=\\"navbar\\" role=\\"navigation\\" aria-label=\\"dropdown navigation\\">\\n  <a class=\\"navbar-item\\">\\n    <svg width=\\"640\\" height=\\"160\\" viewBox=\\"0 0 640 160\\" fill=\\"none\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n  <path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z\\" fill=\\"black\\" class=\\"bd-svg-black\\" />\\n  <path fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z\\" fill=\\"#00D1B2\\"/>\\n</svg>\\n\\n  </a>\\n\\n  <div class=\\"navbar-item has-dropdown is-active\\">\\n    <a class=\\"navbar-link\\">\\n      Docs\\n    </a>\\n\\n    <div class=\\"navbar-dropdown\\">\\n      <a class=\\"navbar-item\\">\\n        Overview\\n      </a>\\n      <a class=\\"navbar-item is-selected\\">\\n        Elements\\n      </a>\\n      <a class=\\"navbar-item\\">\\n        Components\\n      </a>\\n      <hr class=\\"navbar-divider\\">\\n      <div class=\\"navbar-item\\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n\\n<section class=\\"hero is-primary\\">\\n  <div class=\\"hero-body\\">\\n    <p class=\\"title\\">\\n      Documentation\\n    </p>\\n    <p class=\\"subtitle\\">\\n      Everything you need to <strong>create a website</strong> with Bulma\\n    </p>\\n  </div>\\n</section>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <div className={'bd-example is-paddingless'}>\n            {' '}\n            <ui.Navbar role={'navigation'} aria-label={'dropdown navigation'}>\n              {' '}\n              <ui.NavbarItem>\n                {' '}\n                <svg\n                  width={'640'}\n                  height={'160'}\n                  viewBox={'0 0 640 160'}\n                  fill={'none'}\n                  xmlns={'http://www.w3.org/2000/svg'}\n                >\n                  {' '}\n                  <path\n                    fillRule={'evenodd'}\n                    clipRule={'evenodd'}\n                    d={\n                      'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                    }\n                    fill={'black'}\n                    className={'bd-svg-black'}\n                  />{' '}\n                  <path\n                    fillRule={'evenodd'}\n                    clipRule={'evenodd'}\n                    d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                    fill={'#00D1B2'}\n                  />{' '}\n                </svg>{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown defaultOpen as={'div'} trigger={<> Docs </>}>\n                {' '}\n                <ui.NavbarItem> Overview </ui.NavbarItem>{' '}\n                <ui.NavbarItem className={'rb-is-selected'}>\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem>\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem> <ui.NavbarDivider />{' '}\n                <ui.NavbarItem as={'div'}> Version 1.0.4 </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.Navbar>{' '}\n            <ui.Hero color={'primary'}>\n              {' '}\n              <ui.HeroBody>\n                {' '}\n                <ui.Title as={'p'}> Documentation </ui.Title>{' '}\n                <ui.Subtitle as={'p'}>\n                  {' '}\n                  Everything you need to <strong>create a website</strong> with\n                  Bulma{' '}\n                </ui.Subtitle>{' '}\n              </ui.HeroBody>{' '}\n            </ui.Hero>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<nav class=\"navbar\" role=\"navigation\" aria-label=\"dropdown navigation\">\\n  <a class=\"navbar-item\">\\n    <svg width=\"640\" height=\"160\" viewBox=\"0 0 640 160\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z\" fill=\"black\" class=\"bd-svg-black\" />\\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z\" fill=\"#00D1B2\"/>\\n</svg>\\n\\n  </a>\\n\\n  <div class=\"navbar-item has-dropdown is-active\">\\n    <a class=\"navbar-link\">\\n      Docs\\n    </a>\\n\\n    <div class=\"navbar-dropdown\">\\n      <a class=\"navbar-item\">\\n        Overview\\n      </a>\\n      <a class=\"navbar-item is-selected\">\\n        Elements\\n      </a>\\n      <a class=\"navbar-item\">\\n        Components\\n      </a>\\n      <hr class=\"navbar-divider\">\\n      <div class=\"navbar-item\">\\n        Version 1.0.4\\n      </div>\\n    </div>\\n  </div>\\n</nav>\\n\\n<section class=\"hero is-primary\">\\n  <div class=\"hero-body\">\\n    <p class=\"title\">\\n      Documentation\\n    </p>\\n    <p class=\"subtitle\">\\n      Everything you need to <strong>create a website</strong> with Bulma\\n    </p>\\n  </div>\\n</section>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6574,7 +5905,7 @@ export const Example016 = {
     official: { id: 'components-navbar/colors/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"black"} className={"bd-svg-black"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"#00D1B2"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navbarExample"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navbarExample"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"} className={"rb-is-selected"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"}>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"primary"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'black'}\n                  className={'bd-svg-black'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'#00D1B2'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navbarExample'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navbarExample'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                  className={'rb-is-selected'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'primary'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6589,7 +5920,7 @@ export const Example017 = {
     official: { id: 'components-navbar/colors/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar color={"primary"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"currentColor"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"currentColor"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navMenuColorprimary-example"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navMenuColorprimary-example"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"} active>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} color={"primary"} tone={"soft"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"primary"} tone={"light"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar color={'primary'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'currentColor'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'currentColor'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navMenuColorprimary-example'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navMenuColorprimary-example'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                  active\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      color={'primary'}\n                      tone={'soft'}\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'primary'}\n                      tone={'light'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6604,7 +5935,7 @@ export const Example018 = {
     official: { id: 'components-navbar/colors/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar color={"link"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"currentColor"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"currentColor"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navMenuColorlink-example"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navMenuColorlink-example"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"} active>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} color={"link"} tone={"soft"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"link"} tone={"light"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar color={'link'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'currentColor'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'currentColor'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navMenuColorlink-example'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navMenuColorlink-example'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                  active\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      color={'link'}\n                      tone={'soft'}\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'link'}\n                      tone={'light'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6619,7 +5950,7 @@ export const Example019 = {
     official: { id: 'components-navbar/colors/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example019Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar color={"info"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"currentColor"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"currentColor"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navMenuColorinfo-example"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navMenuColorinfo-example"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"} active>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} color={"info"} tone={"soft"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"info"} tone={"light"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example019Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar color={'info'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'currentColor'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'currentColor'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navMenuColorinfo-example'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navMenuColorinfo-example'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                  active\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      color={'info'}\n                      tone={'soft'}\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'info'}\n                      tone={'light'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6634,7 +5965,7 @@ export const Example020 = {
     official: { id: 'components-navbar/colors/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example020Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar color={"success"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"currentColor"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"currentColor"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navMenuColorsuccess-example"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navMenuColorsuccess-example"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"} active>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} color={"success"} tone={"soft"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"success"} tone={"light"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example020Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar color={'success'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'currentColor'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'currentColor'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navMenuColorsuccess-example'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navMenuColorsuccess-example'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                  active\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      color={'success'}\n                      tone={'soft'}\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'success'}\n                      tone={'light'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6649,7 +5980,7 @@ export const Example021 = {
     official: { id: 'components-navbar/colors/006' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example021Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar color={"warning"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"currentColor"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"currentColor"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navMenuColorwarning-example"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navMenuColorwarning-example"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"} active>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} color={"warning"} tone={"soft"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"warning"} tone={"light"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example021Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar color={'warning'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'currentColor'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'currentColor'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navMenuColorwarning-example'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navMenuColorwarning-example'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                  active\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      color={'warning'}\n                      tone={'soft'}\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'warning'}\n                      tone={'light'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6664,7 +5995,7 @@ export const Example022 = {
     official: { id: 'components-navbar/colors/007' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example022Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar color={"danger"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"currentColor"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"currentColor"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navMenuColordanger-example"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navMenuColordanger-example"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"} active>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} color={"danger"} tone={"soft"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"danger"} tone={"light"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example022Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar color={'danger'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'currentColor'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'currentColor'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navMenuColordanger-example'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navMenuColordanger-example'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                  active\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      color={'danger'}\n                      tone={'soft'}\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'danger'}\n                      tone={'light'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6679,7 +6010,7 @@ export const Example023 = {
     official: { id: 'components-navbar/colors/008' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example023Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar color={"black"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"currentColor"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"currentColor"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navMenuColorblack-example"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navMenuColorblack-example"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"} active>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} color={"black"} tone={"soft"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"black"} tone={"light"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example023Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar color={'black'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'currentColor'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'currentColor'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navMenuColorblack-example'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navMenuColorblack-example'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                  active\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      color={'black'}\n                      tone={'soft'}\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'black'}\n                      tone={'light'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6694,7 +6025,7 @@ export const Example024 = {
     official: { id: 'components-navbar/colors/009' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example024Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar color={"dark"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"currentColor"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"currentColor"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navMenuColordark-example"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navMenuColordark-example"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"} active>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} color={"dark"} tone={"soft"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"dark"} tone={"light"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example024Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar color={'dark'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'currentColor'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'currentColor'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navMenuColordark-example'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navMenuColordark-example'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                  active\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      color={'dark'}\n                      tone={'soft'}\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'dark'}\n                      tone={'light'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6709,7 +6040,7 @@ export const Example025 = {
     official: { id: 'components-navbar/colors/010' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example025Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar color={"light"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"currentColor"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"currentColor"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navMenuColorlight-example"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navMenuColorlight-example"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"} active>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} color={"light"} tone={"soft"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"light"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example025Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar color={'light'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'currentColor'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'currentColor'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navMenuColorlight-example'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navMenuColorlight-example'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                  active\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      color={'light'}\n                      tone={'soft'}\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'light'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -6724,7 +6055,7 @@ export const Example026 = {
     official: { id: 'components-navbar/colors/011' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example026Demo() {\n  return (<><div style={{ ...{ height: "30rem" } }} className={"bd-example is-paddingless"}>{"\\n  "}<ui.Navbar color={"white"}>{"\\n  "}<ui.NavbarBrand>{"\\n    "}<ui.NavbarItem href={"https://bulma.io/"}>{"\\n      "}<svg width={"640"} height={"160"} viewBox={"0 0 640 160"} fill={"none"} xmlns={"http://www.w3.org/2000/svg"}>{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"} fill={"currentColor"} />{"\\n  "}<path fillRule={"evenodd"} clipRule={"evenodd"} d={"M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"} fill={"currentColor"} />{"\\n"}</svg>{"\\n\\n    "}</ui.NavbarItem>{"\\n    "}<ui.NavbarBurger data-target={"navMenuColorwhite-example"} className={"js-burger"} as={"div"}>{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n      "}<span />{"\\n    "}</ui.NavbarBurger>{"\\n  "}</ui.NavbarBrand>{"\\n\\n  "}<ui.NavbarMenu id={"navMenuColorwhite-example"}>{"\\n    "}<ui.NavbarStart>{"\\n      "}<ui.NavbarItem href={"https://bulma.io/"}>{" Home "}</ui.NavbarItem>{"\\n      "}<ui.NavbarDropdown defaultOpen as={"div"} trigger={<>{" Docs "}</>} triggerProps={{ href: "https://bulma.io/documentation/overview/start/" }}>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/start/"}>{" Overview "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/overview/modifiers/"}>{" Modifiers "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/columns/basics/"}>{" Columns "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/layout/container/"}>{" Layout "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/form/general/"}>{" Form "}</ui.NavbarItem>{"\\n          "}<ui.NavbarDivider />{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/elements/box/"}>{" Elements "}</ui.NavbarItem>{"\\n          "}<ui.NavbarItem href={"https://bulma.io/documentation/components/breadcrumb/"} active>{" Components "}</ui.NavbarItem>{"\\n        "}</ui.NavbarDropdown>{"\\n    "}</ui.NavbarStart>{"\\n\\n    "}<ui.NavbarEnd>{"\\n      "}<ui.NavbarItem as={"div"}>{"\\n        "}<ui.Field layout={"grouped"}>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton data-social-network={"Twitter"} data-social-action={"tweet"} data-social-target={"https://bulma.io"} target={"_blank"} href={"https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms"} color={"white"} tone={"soft"} className={"bd-tw-button"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fab fa-twitter"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{" Tweet "}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n          "}<ui.Control as={"p"}>{"\\n            "}<ui.LinkButton href={"https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip"} color={"white"} tone={"light"}>{"\\n              "}<ui.Icon>{"\\n                "}<i className={"fas fa-download"} />{"\\n              "}</ui.Icon>{"\\n              "}<span>{"Download"}</span>{"\\n            "}</ui.LinkButton>{"\\n          "}</ui.Control>{"\\n        "}</ui.Field>{"\\n      "}</ui.NavbarItem>{"\\n    "}</ui.NavbarEnd>{"\\n  "}</ui.NavbarMenu>{"\\n"}</ui.Navbar>{"\\n\\n"}</div></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example026Demo() {\n  return (\n    <>\n      <div\n        style={{ ...{ height: '30rem' } }}\n        className={'bd-example is-paddingless'}\n      >\n        {' '}\n        <ui.Navbar color={'white'}>\n          {' '}\n          <ui.NavbarBrand>\n            {' '}\n            <ui.NavbarItem href={'https://bulma.io/'}>\n              {' '}\n              <svg\n                width={'640'}\n                height={'160'}\n                viewBox={'0 0 640 160'}\n                fill={'none'}\n                xmlns={'http://www.w3.org/2000/svg'}\n              >\n                {' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={\n                    'M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z'\n                  }\n                  fill={'currentColor'}\n                />{' '}\n                <path\n                  fillRule={'evenodd'}\n                  clipRule={'evenodd'}\n                  d={'M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z'}\n                  fill={'currentColor'}\n                />{' '}\n              </svg>{' '}\n            </ui.NavbarItem>{' '}\n            <ui.NavbarBurger\n              data-target={'navMenuColorwhite-example'}\n              className={'js-burger'}\n              as={'div'}\n            >\n              {' '}\n              <span /> <span /> <span /> <span />{' '}\n            </ui.NavbarBurger>{' '}\n          </ui.NavbarBrand>{' '}\n          <ui.NavbarMenu id={'navMenuColorwhite-example'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem href={'https://bulma.io/'}>\n                {' '}\n                Home{' '}\n              </ui.NavbarItem>{' '}\n              <ui.NavbarDropdown\n                defaultOpen\n                as={'div'}\n                trigger={<> Docs </>}\n                triggerProps={{\n                  href: 'https://bulma.io/documentation/overview/start/',\n                }}\n              >\n                {' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/start/'}\n                >\n                  {' '}\n                  Overview{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/overview/modifiers/'}\n                >\n                  {' '}\n                  Modifiers{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/columns/basics/'}\n                >\n                  {' '}\n                  Columns{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/layout/container/'}\n                >\n                  {' '}\n                  Layout{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/form/general/'}\n                >\n                  {' '}\n                  Form{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarDivider />{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/elements/box/'}\n                >\n                  {' '}\n                  Elements{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarItem\n                  href={'https://bulma.io/documentation/components/breadcrumb/'}\n                  active\n                >\n                  {' '}\n                  Components{' '}\n                </ui.NavbarItem>{' '}\n              </ui.NavbarDropdown>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Field layout={'grouped'}>\n                  {' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      data-social-network={'Twitter'}\n                      data-social-action={'tweet'}\n                      data-social-target={'https://bulma.io'}\n                      target={'_blank'}\n                      href={\n                        'https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&hashtags=bulmaio&url=https://bulma.io&via=jgthms'\n                      }\n                      color={'white'}\n                      tone={'soft'}\n                      className={'bd-tw-button'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-twitter'} />{' '}\n                      </ui.Icon>{' '}\n                      <span> Tweet </span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                  <ui.Control as={'p'}>\n                    {' '}\n                    <ui.LinkButton\n                      href={\n                        'https://github.com/jgthms/bulma/releases/download/1.0.4/bulma-1.0.4.zip'\n                      }\n                      color={'white'}\n                      tone={'light'}\n                    >\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fas fa-download'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.Control>{' '}\n                </ui.Field>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Navbar>{' '}\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },

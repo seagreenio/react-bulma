@@ -23,10 +23,10 @@ const bundle = await loadOfficialSource(sourceRoot)
 const { corpus, documents, navigation } = bundle
 const resources = await loadSourceAssets(sourceRoot)
 corpus.assets = resources.assets
-const pages = compileCorpus(corpus, documents, navigation)
 const options = await resolveConfig(
   'stories/official/generated/example.stories.tsx',
 )
+const pages = await compileCorpus(corpus, documents, navigation, options ?? {})
 const files = new Map<string, string>()
 files.set(
   'official/source-metadata.json',
@@ -73,6 +73,7 @@ import '../.generated/default.css';
 const preview: Preview = {
   parameters: {
     layout: 'padded',
+    docs: { canvas: { sourceState: 'shown' }, codePanel: true },
     options: { storySort: { order: ${JSON.stringify(libraryStoryOrder(navigation))} } },
   },
 };

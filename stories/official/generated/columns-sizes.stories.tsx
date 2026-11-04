@@ -523,17 +523,14 @@ function Example001Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'full'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
-            <code className={'html'}>{'is-full'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            {' '}
+            <code className={'html'}>{'is-full'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -543,29 +540,22 @@ function Example002Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'four-fifths'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
-            <code className={'html'}>{'is-four-fifths'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <code className={'html'}>{'is-four-fifths'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -575,29 +565,22 @@ function Example003Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'three-quarters'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
-            <code className={'html'}>{'is-three-quarters'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <code className={'html'}>{'is-three-quarters'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -607,29 +590,22 @@ function Example004Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'two-thirds'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
-            <code className={'html'}>{'is-two-thirds'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <code className={'html'}>{'is-two-thirds'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -639,29 +615,22 @@ function Example005Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'three-fifths'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
-            <code className={'html'}>{'is-three-fifths'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <code className={'html'}>{'is-three-fifths'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -671,29 +640,22 @@ function Example006Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
-            <code className={'html'}>{'is-half'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <code className={'html'}>{'is-half'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -703,29 +665,22 @@ function Example007Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'two-fifths'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
-            <code className={'html'}>{'is-two-fifths'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <code className={'html'}>{'is-two-fifths'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -735,29 +690,22 @@ function Example008Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'one-third'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
-            <code className={'html'}>{'is-one-third'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <code className={'html'}>{'is-one-third'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -767,29 +715,22 @@ function Example009Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
-            <code className={'html'}>{'is-one-quarter'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <code className={'html'}>{'is-one-quarter'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -799,29 +740,22 @@ function Example010Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'one-fifth'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
-            <code className={'html'}>{'is-one-fifth'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            {' '}
+            <code className={'html'}>{'is-one-fifth'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
-          <p className={'bd-notification'}>{'Auto'}</p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          {' '}
+          <p className={'bd-notification'}>Auto</p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -831,147 +765,123 @@ function Example011Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={1}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-1'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -981,135 +891,113 @@ function Example012Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={2}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-2'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1119,123 +1007,103 @@ function Example013Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={3}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-3'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1245,111 +1113,93 @@ function Example014Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={4}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-4'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1359,99 +1209,83 @@ function Example015Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={5}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-5'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1461,87 +1295,73 @@ function Example016Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={6}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-6'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1551,75 +1371,63 @@ function Example017Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={7}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-7'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1629,63 +1437,53 @@ function Example018Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={8}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-8'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1695,51 +1493,43 @@ function Example019Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={9}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-9'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1749,39 +1539,33 @@ function Example020Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={10}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-10'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1791,27 +1575,23 @@ function Example021Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={11}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-11'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+          </p>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <p
             className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']
               .filter(Boolean)
               .join(' ')}
           >
-            {'1'}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            1
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1821,15 +1601,13 @@ function Example022Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={12}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
             <code>{'is-12'}</code>
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1839,20 +1617,16 @@ function Example023Demo() {
   return (
     <>
       <ui.Columns displayFrom={'mobile'}>
-        {'\n  '}
+        {' '}
         <ui.Column width={'half'} offset={'one-quarter'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
+            {' '}
             <code className={'html'}>{'is-half'}</code>
-            <br />
-            {'\n      '}
-            <code className={'html'}>{'is-offset-one-quarter'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            <br />{' '}
+            <code className={'html'}>{'is-offset-one-quarter'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1862,20 +1636,15 @@ function Example024Demo() {
   return (
     <>
       <ui.Columns displayFrom={'mobile'}>
-        {'\n  '}
+        {' '}
         <ui.Column width={'three-fifths'} offset={'one-fifth'}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
+            {' '}
             <code className={'html'}>{'is-three-fifths'}</code>
-            <br />
-            {'\n      '}
-            <code className={'html'}>{'is-offset-one-fifth'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            <br /> <code className={'html'}>{'is-offset-one-fifth'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1885,20 +1654,15 @@ function Example025Demo() {
   return (
     <>
       <ui.Columns displayFrom={'mobile'}>
-        {'\n  '}
+        {' '}
         <ui.Column width={4} offset={8}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
+            {' '}
             <code className={'html'}>{'is-4'}</code>
-            <br />
-            {'\n      '}
-            <code className={'html'}>{'is-offset-8'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            <br /> <code className={'html'}>{'is-offset-8'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1908,20 +1672,15 @@ function Example026Demo() {
   return (
     <>
       <ui.Columns displayFrom={'mobile'}>
-        {'\n  '}
+        {' '}
         <ui.Column width={11} offset={1}>
-          {'\n    '}
+          {' '}
           <p className={'bd-notification is-primary'}>
-            {'\n      '}
+            {' '}
             <code className={'html'}>{'is-11'}</code>
-            <br />
-            {'\n      '}
-            <code className={'html'}>{'is-offset-1'}</code>
-            {'\n    '}
-          </p>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+            <br /> <code className={'html'}>{'is-offset-1'}</code>{' '}
+          </p>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1931,39 +1690,31 @@ function Example027Demo() {
   return (
     <>
       <ui.Columns>
-        {'\n  '}
+        {' '}
         <ui.Column width={'narrow'}>
-          {'\n    '}
+          {' '}
           <ui.Box style={{ ...{ width: '200px' } }}>
-            {'\n      '}
+            {' '}
             <ui.Title size={5} as={'p'}>
-              {'Narrow column'}
-            </ui.Title>
-            {'\n      '}
+              Narrow column
+            </ui.Title>{' '}
             <ui.Subtitle as={'p'}>
-              {'This column is only 200px wide.'}
-            </ui.Subtitle>
-            {'\n    '}
-          </ui.Box>
-          {'\n  '}
-        </ui.Column>
-        {'\n  '}
+              This column is only 200px wide.
+            </ui.Subtitle>{' '}
+          </ui.Box>{' '}
+        </ui.Column>{' '}
         <ui.Column>
-          {'\n    '}
+          {' '}
           <ui.Box>
-            {'\n      '}
+            {' '}
             <ui.Title size={5} as={'p'}>
-              {'Flexible column'}
-            </ui.Title>
-            {'\n      '}
+              Flexible column
+            </ui.Title>{' '}
             <ui.Subtitle as={'p'}>
-              {'This column will take up the remaining space available.'}
-            </ui.Subtitle>
-            {'\n    '}
-          </ui.Box>
-          {'\n  '}
-        </ui.Column>
-        {'\n'}
+              This column will take up the remaining space available.
+            </ui.Subtitle>{' '}
+          </ui.Box>{' '}
+        </ui.Column>{' '}
       </ui.Columns>
     </>
   )
@@ -1975,7 +1726,7 @@ export const Example001 = {
     official: { id: 'columns-sizes/basic/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"full"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-full"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'full'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-full'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -1990,7 +1741,7 @@ export const Example002 = {
     official: { id: 'columns-sizes/basic/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"four-fifths"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-four-fifths"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'four-fifths'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-four-fifths'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2005,7 +1756,7 @@ export const Example003 = {
     official: { id: 'columns-sizes/basic/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"three-quarters"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-three-quarters"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'three-quarters'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-three-quarters'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2020,7 +1771,7 @@ export const Example004 = {
     official: { id: 'columns-sizes/basic/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"two-thirds"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-two-thirds"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'two-thirds'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-two-thirds'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2035,7 +1786,7 @@ export const Example005 = {
     official: { id: 'columns-sizes/basic/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"three-fifths"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-three-fifths"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'three-fifths'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-three-fifths'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2050,7 +1801,7 @@ export const Example006 = {
     official: { id: 'columns-sizes/basic/006' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-half"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-half'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2065,7 +1816,7 @@ export const Example007 = {
     official: { id: 'columns-sizes/basic/007' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"two-fifths"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-two-fifths"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'two-fifths'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-two-fifths'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2080,7 +1831,7 @@ export const Example008 = {
     official: { id: 'columns-sizes/basic/008' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-third"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-one-third"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'one-third'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-one-third'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2095,7 +1846,7 @@ export const Example009 = {
     official: { id: 'columns-sizes/basic/009' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-one-quarter"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-one-quarter'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2110,7 +1861,7 @@ export const Example010 = {
     official: { id: 'columns-sizes/basic/010' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-fifth"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-one-fifth"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'one-fifth'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-one-fifth'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2125,7 +1876,7 @@ export const Example011 = {
     official: { id: 'columns-sizes/12-columns-system/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={1}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-1"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={1}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-1'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2140,7 +1891,7 @@ export const Example012 = {
     official: { id: 'columns-sizes/12-columns-system/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={2}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-2"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={2}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-2'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2155,7 +1906,7 @@ export const Example013 = {
     official: { id: 'columns-sizes/12-columns-system/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={3}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-3"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={3}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-3'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2170,7 +1921,7 @@ export const Example014 = {
     official: { id: 'columns-sizes/12-columns-system/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-4"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={4}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-4'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2185,7 +1936,7 @@ export const Example015 = {
     official: { id: 'columns-sizes/12-columns-system/005' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={5}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-5"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={5}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-5'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2200,7 +1951,7 @@ export const Example016 = {
     official: { id: 'columns-sizes/12-columns-system/006' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-6"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={6}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-6'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2215,7 +1966,7 @@ export const Example017 = {
     official: { id: 'columns-sizes/12-columns-system/007' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={7}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-7"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={7}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-7'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2230,7 +1981,7 @@ export const Example018 = {
     official: { id: 'columns-sizes/12-columns-system/008' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={8}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-8"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={8}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-8'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2245,7 +1996,7 @@ export const Example019 = {
     official: { id: 'columns-sizes/12-columns-system/009' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example019Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={9}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-9"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example019Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={9}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-9'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2260,7 +2011,7 @@ export const Example020 = {
     official: { id: 'columns-sizes/12-columns-system/010' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example020Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={10}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-10"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example020Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={10}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-10'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2275,7 +2026,7 @@ export const Example021 = {
     official: { id: 'columns-sizes/12-columns-system/011' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example021Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={11}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-11"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example021Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={11}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-11'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p\n            className={[ui.helpers({ textAlign: 'center' }), 'bd-notification']\n              .filter(Boolean)\n              .join(' ')}\n          >\n            1\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2290,7 +2041,7 @@ export const Example022 = {
     official: { id: 'columns-sizes/12-columns-system/012' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example022Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={12}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-12"}</code></p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example022Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={12}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-12'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2305,7 +2056,7 @@ export const Example023 = {
     official: { id: 'columns-sizes/offset/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example023Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={"half"} offset={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-half"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-one-quarter"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example023Demo() {\n  return (\n    <>\n      <ui.Columns displayFrom={'mobile'}>\n        {' '}\n        <ui.Column width={'half'} offset={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-half'}</code>\n            <br />{' '}\n            <code className={'html'}>{'is-offset-one-quarter'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2320,7 +2071,7 @@ export const Example024 = {
     official: { id: 'columns-sizes/offset/002' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example024Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={"three-fifths"} offset={"one-fifth"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-three-fifths"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-one-fifth"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example024Demo() {\n  return (\n    <>\n      <ui.Columns displayFrom={'mobile'}>\n        {' '}\n        <ui.Column width={'three-fifths'} offset={'one-fifth'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-three-fifths'}</code>\n            <br /> <code className={'html'}>{'is-offset-one-fifth'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2335,7 +2086,7 @@ export const Example025 = {
     official: { id: 'columns-sizes/offset/003' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example025Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={4} offset={8}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-4"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-8"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example025Demo() {\n  return (\n    <>\n      <ui.Columns displayFrom={'mobile'}>\n        {' '}\n        <ui.Column width={4} offset={8}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-4'}</code>\n            <br /> <code className={'html'}>{'is-offset-8'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2350,7 +2101,7 @@ export const Example026 = {
     official: { id: 'columns-sizes/offset/004' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example026Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={11} offset={1}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-11"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-1"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example026Demo() {\n  return (\n    <>\n      <ui.Columns displayFrom={'mobile'}>\n        {' '}\n        <ui.Column width={11} offset={1}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-11'}</code>\n            <br /> <code className={'html'}>{'is-offset-1'}</code>{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
@@ -2365,7 +2116,7 @@ export const Example027 = {
     official: { id: 'columns-sizes/narrow-column/001' },
     docs: {
       source: {
-        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example027Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<ui.Box style={{ ...{ width: "200px" } }}>{"\\n      "}<ui.Title size={5} as={"p"}>{"Narrow column"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"This column is only 200px wide."}</ui.Subtitle>{"\\n    "}</ui.Box>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<ui.Box>{"\\n      "}<ui.Title size={5} as={"p"}>{"Flexible column"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"This column will take up the remaining space available."}</ui.Subtitle>{"\\n    "}</ui.Box>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example027Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'narrow'}>\n          {' '}\n          <ui.Box style={{ ...{ width: '200px' } }}>\n            {' '}\n            <ui.Title size={5} as={'p'}>\n              Narrow column\n            </ui.Title>{' '}\n            <ui.Subtitle as={'p'}>\n              This column is only 200px wide.\n            </ui.Subtitle>{' '}\n          </ui.Box>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <ui.Box>\n            {' '}\n            <ui.Title size={5} as={'p'}>\n              Flexible column\n            </ui.Title>{' '}\n            <ui.Subtitle as={'p'}>\n              This column will take up the remaining space available.\n            </ui.Subtitle>{' '}\n          </ui.Box>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
