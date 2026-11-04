@@ -2,12 +2,9 @@ import type { OfficialNavigation } from '../scripts/official/source'
 
 type StoryOrder = (string | StoryOrder)[]
 
-export const libraryGuide = {
-  id: 'react-bulma--usage-guide',
-  title: 'React Bulma',
-} as const
+const libraryGuideTitle = 'React Bulma'
 
-const rootOrder = [libraryGuide.title, 'CSS Library', 'Features']
+const rootOrder = [libraryGuideTitle, 'CSS Library', 'Features']
 
 export function libraryStoryOrder(
   source: Pick<OfficialNavigation, 'pages'>,
@@ -28,5 +25,5 @@ export function libraryStoryOrder(
   paths.sort(
     (left, right) => rootOrder.indexOf(left[0]!) - rootOrder.indexOf(right[0]!),
   )
-  return order([[libraryGuide.title], ...paths])
+  return order([[libraryGuideTitle], ...paths])
 }

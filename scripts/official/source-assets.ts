@@ -79,12 +79,11 @@ export async function loadSourceAssets(sourceRoot: string): Promise<{
       entry.sourcePath.slice('docs'.length),
       'https://bulma.io',
     ).href
-    assets.push({ url, file, sha256: entry.sha256 })
+    assets.push({ url, file })
     if (entry.sourcePath.startsWith('docs/assets/images/'))
       assets.push({
         url: url.replace('/assets/images/', '/images/'),
         file,
-        sha256: entry.sha256,
       })
   }
   if (!fontawesome) throw new Error('Missing pinned Font Awesome source.')

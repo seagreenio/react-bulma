@@ -3,8 +3,7 @@ import type { ReactNode } from 'react'
 import { BulmaRoot } from '../../src'
 import './document.css'
 
-export type OfficialDocumentController =
-  'column-gap' | 'skeleton-cycle' | 'fixed-navbar'
+export type OfficialDocumentController = 'skeleton-cycle' | 'fixed-navbar'
 
 type OfficialDocumentProps = {
   pageId: string
@@ -13,7 +12,6 @@ type OfficialDocumentProps = {
   children: ReactNode
 }
 
-const gapClasses = Array.from({ length: 9 }, (_, index) => `rb-is-${index}`)
 const skeletonClasses = ['rb-is-skeleton', 'rb-has-skeleton'] as const
 
 function preserveClasses(node: Element, classes: readonly string[]) {
@@ -21,61 +19,6 @@ function preserveClasses(node: Element, classes: readonly string[]) {
   return () => {
     node.classList.remove(...classes)
     node.classList.add(...original)
-  }
-}
-
-function columnGap(article: HTMLElement) {
-  let selected = 3
-  const options = new Map<HTMLElement, () => void>()
-  const columns = new Map<HTMLElement, () => void>()
-  const values = new Map<HTMLElement, string | null>()
-
-  const apply = () => {
-    const root = article.querySelector<HTMLElement>('.bd-klmn')
-    if (!root) return
-    for (const option of root.querySelectorAll<HTMLElement>(
-      '.bd-klmn-gap[data-value]',
-    )) {
-      const value = Number(option.dataset.value)
-      if (!Number.isInteger(value) || value < 0 || value > 8) continue
-      if (!options.has(option)) {
-        const restore = preserveClasses(option, ['bd-is-selected'])
-        const enter = () => {
-          selected = value
-          apply()
-        }
-        option.addEventListener('mouseenter', enter)
-        options.set(option, () => {
-          option.removeEventListener('mouseenter', enter)
-          restore()
-        })
-      }
-      option.classList.toggle('bd-is-selected', value === selected)
-    }
-    for (const column of root.querySelectorAll<HTMLElement>(
-      '.bd-klmn-columns',
-    )) {
-      if (!columns.has(column))
-        columns.set(column, preserveClasses(column, gapClasses))
-      column.classList.remove(...gapClasses)
-      column.classList.add(`rb-is-${selected}`)
-    }
-    const value = root.querySelector<HTMLElement>('#klmnValue')
-    if (value) {
-      if (!values.has(value)) values.set(value, value.textContent)
-      const text = `${selected * 0.25}rem`
-      if (value.textContent !== text) value.textContent = text
-    }
-  }
-
-  apply()
-  const observer = new MutationObserver(apply)
-  observer.observe(article, { childList: true, subtree: true })
-  return () => {
-    observer.disconnect()
-    for (const restore of options.values()) restore()
-    for (const restore of columns.values()) restore()
-    for (const [node, text] of values) node.textContent = text
   }
 }
 
@@ -229,13 +172,9 @@ export function OfficialDocument({
 }: OfficialDocumentProps) {
   const article = useRef<HTMLElement>(null)
   const [navbarVisible, setNavbarVisible] = useState(false)
-  const hasGap = controllers.includes('column-gap')
   const hasSkeleton = controllers.includes('skeleton-cycle')
   const hasNavbar = controllers.includes('fixed-navbar')
 
-  useEffect(() => {
-    if (article.current && hasGap) return columnGap(article.current)
-  }, [pageId, hasGap])
   useEffect(() => {
     if (article.current && hasSkeleton) return skeletonCycle(article.current)
   }, [pageId, hasSkeleton])

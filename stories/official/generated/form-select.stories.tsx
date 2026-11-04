@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Content, Control, Icon, Select } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,214 +23,178 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="form-select" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Select'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'The browser built-in '}
           <strong data-official-prose="">{'select dropdown'}</strong>
           {', styled accordingly'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The '}
+            {' The '}
             <code data-official-prose="">{'select'}</code>
             {' class is a simple wrapper around the '}
             <code data-official-prose="">{'<select>'}</code>
             {
-              ' HTML element, which gives\n    the styling more flexibility and support for icons.\n  '
+              ' HTML element, which gives the styling more flexibility and support for icons. '
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        <div data-official-example="form-select/basic/001">
-          <Canvas of={Example001} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/basic/001'}
+          >
+            <div data-official-example="form-select/basic/001">
+              <Canvas of={DefaultSelectStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-half bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="select">\n  <select>\n    <option>Select dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'Several '}
             <strong data-official-prose="">{'modifiers'}</strong>
             {' are supported which affect:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      the '}
+              {' the '}
               <strong data-official-prose="">
                 <a data-official-prose="" href={'#colors'}>
                   {'color'}
                 </a>
               </strong>
-              {'\n    '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      the '}
+              {' the '}
               <strong data-official-prose="">
                 <a data-official-prose="" href={'#sizes'}>
                   {'size'}
                 </a>
               </strong>
-              {'\n    '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      the '}
+              {' the '}
               <strong data-official-prose="">
                 <a data-official-prose="" href={'#states'}>
                   {'state'}
                 </a>
               </strong>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'multiple-select'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Multiple select\n  '}
-          </span>
-          {'\n  '}
+            {' Multiple select '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#multiple-select'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
-        <div data-official-example="form-select/multiple-select/001">
-          <Canvas of={Example002} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/multiple-select/001'}
+          >
+            <div data-official-example="form-select/multiple-select/001">
+              <Canvas of={MultipleSelectionStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-half bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="select is-multiple">\n  <select multiple size="8">\n    <option value="Argentina">Argentina</option>\n    <option value="Bolivia">Bolivia</option>\n    <option value="Brazil">Brazil</option>\n    <option value="Chile">Chile</option>\n    <option value="Colombia">Colombia</option>\n    <option value="Ecuador">Ecuador</option>\n    <option value="Guyana">Guyana</option>\n    <option value="Paraguay">Paraguay</option>\n    <option value="Peru">Peru</option>\n    <option value="Suriname">Suriname</option>\n    <option value="Uruguay">Uruguay</option>\n    <option value="Venezuela">Venezuela</option>\n  </select>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'colors'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Colors\n  '}
-          </span>
-          {'\n  '}
+            {' Colors '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#colors'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-select/colors/001">
-          <Canvas of={Example003} />
+          <Canvas of={LinkSelectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-select/colors/002">
-          <Canvas of={Example004} />
+          <Canvas of={PrimarySelectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-select/colors/003">
-          <Canvas of={Example005} />
+          <Canvas of={InfoSelectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-select/colors/004">
-          <Canvas of={Example006} />
+          <Canvas of={SuccessSelectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-select/colors/005">
-          <Canvas of={Example007} />
+          <Canvas of={WarningSelectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-select/colors/006">
-          <Canvas of={Example008} />
+          <Canvas of={DangerSelectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h3
           data-official-prose=""
           id={'styles'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Styles\n  '}
-          </span>
-          {'\n  '}
+            {' Styles '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#styles'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can create a '}
             <strong data-official-prose="">{'rounded dropdown'}</strong>
@@ -238,35 +202,46 @@ function OfficialDocs() {
             <code data-official-prose="">{'is-rounded'}</code>
             {' modifier:'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        <div data-official-example="form-select/styles/001">
-          <Canvas of={Example009} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/styles/001'}
+          >
+            <div data-official-example="form-select/styles/001">
+              <Canvas of={RoundedSelectStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="select is-rounded">\n  <select>\n    <option>Rounded dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The '}
             <code data-official-prose="">{'select'}</code>
@@ -274,1082 +249,952 @@ function OfficialDocs() {
             <strong data-official-prose="">{'4'}</strong>
             {' different sizes:'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-select/sizes/001">
-          <Canvas of={Example010} />
+          <Canvas of={SmallSelectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-select/sizes/002">
-          <Canvas of={Example011} />
+          <Canvas of={NormalSizeSelectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-select/sizes/003">
-          <Canvas of={Example012} />
+          <Canvas of={MediumSelectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-select/sizes/004">
-          <Canvas of={Example013} />
+          <Canvas of={LargeSelectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h3
           data-official-prose=""
           id={'states'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    States\n  '}
-          </span>
-          {'\n  '}
+            {' States '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#states'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Bulma styles the different '}
+            {' Bulma styles the different '}
             <strong data-official-prose="">{'states'}</strong>
             {' of the '}
             <code data-official-prose="">{'select'}</code>
             {
-              ' element. Each state is available as a\n    pseudo-class and a CSS class:\n  '
+              ' element. Each state is available as a pseudo-class and a CSS class: '
             }
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{':hover'}</code>
               {' and '}
               <code data-official-prose="">{'is-hovered'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{':focus'}</code>
               {' and '}
               <code data-official-prose="">{'is-focused'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{':active'}</code>
               {' and '}
               <code data-official-prose="">{'is-active'}</code>
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
             {
               'This allows you to obtain the style of a certain state without having to trigger it.'
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Normal'}
         </h4>
-        {'\n\n'}
-        <div data-official-example="form-select/normal/001">
-          <Canvas of={Example014} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/normal/001'}
+          >
+            <div data-official-example="form-select/normal/001">
+              <Canvas of={NormalStateStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="select">\n  <select>\n    <option>Select dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Hover'}
         </h4>
-        {'\n'}
-        <div data-official-example="form-select/hover/001">
-          <Canvas of={Example015} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/hover/001'}
+          >
+            <div data-official-example="form-select/hover/001">
+              <Canvas of={HoverStateStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="select">\n  <select class="is-hovered">\n    <option>Select dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Focus'}
         </h4>
-        {'\n'}
-        <div data-official-example="form-select/focus/001">
-          <Canvas of={Example016} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/focus/001'}
+          >
+            <div data-official-example="form-select/focus/001">
+              <Canvas of={FocusStateStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="select">\n  <select class="is-focused">\n    <option>Select dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Loading'}
         </h4>
-        {'\n'}
-        <div data-official-example="form-select/loading/001">
-          <Canvas of={Example017} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/loading/001'}
+          >
+            <div data-official-example="form-select/loading/001">
+              <Canvas of={LoadingSelectStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="select is-loading">\n  <select>\n    <option>Select dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'with-icons'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    With icons\n  '}
-          </span>
-          {'\n  '}
+            {' With icons '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#with-icons'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can append the '}
             <strong data-official-prose="">{'modifier'}</strong>
             {' on a control:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'has-icons-left'}</code>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
             {'You also need to add a modifier on the '}
             <strong data-official-prose="">{'icon'}</strong>
             {':'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'icon is-left'}</code>
               {' since '}
               <code data-official-prose="">{'has-icons-left'}</code>
               {' is used'}
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
             {'The size of the '}
             <strong data-official-prose="">{'select'}</strong>
             {' will define the size of the icon container.'}
           </p>
-          {'\n'}
         </div>
-        {'\n'}
-        <div data-official-example="form-select/with-icons/001">
-          <Canvas of={Example018} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/with-icons/001'}
+          >
+            <div data-official-example="form-select/with-icons/001">
+              <Canvas of={SelectWithAnIconStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control has-icons-left">\n  <div class="select">\n    <select>\n      <option selected>Country</option>\n      <option>Select dropdown</option>\n      <option>With options</option>\n    </select>\n  </div>\n  <div class="icon is-small is-left">\n    <i class="fas fa-globe"></i>\n  </div>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="form-select/with-icons/002">
-          <Canvas of={Example019} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/with-icons/002'}
+          >
+            <div data-official-example="form-select/with-icons/002">
+              <Canvas of={SmallSelectWithAnIconStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control has-icons-left">\n  <div class="select is-small">\n    <select>\n      <option selected>Country</option>\n      <option>Select dropdown</option>\n      <option>With options</option>\n    </select>\n  </div>\n  <span class="icon is-small is-left">\n    <i class="fas fa-globe"></i>\n  </span>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="form-select/with-icons/003">
-          <Canvas of={Example020} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/with-icons/003'}
+          >
+            <div data-official-example="form-select/with-icons/003">
+              <Canvas of={NormalSelectWithAnIconStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control has-icons-left">\n  <div class="select">\n    <select>\n      <option selected>Country</option>\n      <option>Select dropdown</option>\n      <option>With options</option>\n    </select>\n  </div>\n  <span class="icon is-left">\n    <i class="fas fa-globe"></i>\n  </span>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="form-select/with-icons/004">
-          <Canvas of={Example021} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/with-icons/004'}
+          >
+            <div data-official-example="form-select/with-icons/004">
+              <Canvas of={MediumSelectWithAnIconStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control has-icons-left">\n  <div class="select is-medium">\n    <select>\n      <option selected>Country</option>\n      <option>Select dropdown</option>\n      <option>With options</option>\n    </select>\n  </div>\n  <span class="icon is-medium is-left">\n    <i class="fas fa-globe"></i>\n  </span>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="form-select/with-icons/005">
-          <Canvas of={Example022} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-select/with-icons/005'}
+          >
+            <div data-official-example="form-select/with-icons/005">
+              <Canvas of={LargeSelectWithAnIconStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control has-icons-left">\n  <div class="select is-large">\n    <select>\n      <option selected>Country</option>\n      <option>Select dropdown</option>\n      <option>With options</option>\n    </select>\n  </div>\n  <span class="icon is-large is-left">\n    <i class="fas fa-globe"></i>\n  </span>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultSelectDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Select>
-            {' '}
-            <option>Select dropdown</option> <option>With options</option>{' '}
-          </ui.Select>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="select">\n  <select>\n    <option>Select dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
-    </>
-  )
-}
-
-function Example002Demo() {
-  return (
-    <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              You can style a <strong>multiple select</strong> dropdown, by
-              using the <code>{'is-multiple'}</code> modifier, and by using the{' '}
-              <code>{'multiple'}</code> HTML attribute.
-            </p>{' '}
-          </ui.Content>{' '}
-          <ui.Select multiple htmlSize={8}>
-            {' '}
-            <option value={'Argentina'}>Argentina</option>{' '}
-            <option value={'Bolivia'}>Bolivia</option>{' '}
-            <option value={'Brazil'}>Brazil</option>{' '}
-            <option value={'Chile'}>Chile</option>{' '}
-            <option value={'Colombia'}>Colombia</option>{' '}
-            <option value={'Ecuador'}>Ecuador</option>{' '}
-            <option value={'Guyana'}>Guyana</option>{' '}
-            <option value={'Paraguay'}>Paraguay</option>{' '}
-            <option value={'Peru'}>Peru</option>{' '}
-            <option value={'Suriname'}>Suriname</option>{' '}
-            <option value={'Uruguay'}>Uruguay</option>{' '}
-            <option value={'Venezuela'}>Venezuela</option>{' '}
-          </ui.Select>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="select is-multiple">\n  <select multiple size="8">\n    <option value="Argentina">Argentina</option>\n    <option value="Bolivia">Bolivia</option>\n    <option value="Brazil">Brazil</option>\n    <option value="Chile">Chile</option>\n    <option value="Colombia">Colombia</option>\n    <option value="Ecuador">Ecuador</option>\n    <option value="Guyana">Guyana</option>\n    <option value="Paraguay">Paraguay</option>\n    <option value="Peru">Peru</option>\n    <option value="Suriname">Suriname</option>\n    <option value="Uruguay">Uruguay</option>\n    <option value="Venezuela">Venezuela</option>\n  </select>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
-    </>
-  )
-}
-
-function Example003Demo() {
-  return (
-    <>
-      <ui.Select color={'link'}>
+      <Select>
         {' '}
         <option>Select dropdown</option> <option>With options</option>{' '}
-      </ui.Select>
+      </Select>
     </>
   )
 }
 
-function Example004Demo() {
+function MultipleSelectionDemo() {
   return (
     <>
-      <ui.Select color={'primary'}>
+      <Content>
+        <p>
+          You can style a <strong>multiple select</strong> dropdown, by using
+          the <code>{'is-multiple'}</code> modifier, and by using the{' '}
+          <code>{'multiple'}</code> HTML attribute.
+        </p>
+      </Content>
+      <Select multiple htmlSize={8}>
+        {' '}
+        <option value={'Argentina'}>Argentina</option>{' '}
+        <option value={'Bolivia'}>Bolivia</option>{' '}
+        <option value={'Brazil'}>Brazil</option>{' '}
+        <option value={'Chile'}>Chile</option>{' '}
+        <option value={'Colombia'}>Colombia</option>{' '}
+        <option value={'Ecuador'}>Ecuador</option>{' '}
+        <option value={'Guyana'}>Guyana</option>{' '}
+        <option value={'Paraguay'}>Paraguay</option>{' '}
+        <option value={'Peru'}>Peru</option>{' '}
+        <option value={'Suriname'}>Suriname</option>{' '}
+        <option value={'Uruguay'}>Uruguay</option>{' '}
+        <option value={'Venezuela'}>Venezuela</option>{' '}
+      </Select>
+    </>
+  )
+}
+
+function LinkSelectDemo() {
+  return (
+    <>
+      <Select color={'link'}>
         {' '}
         <option>Select dropdown</option> <option>With options</option>{' '}
-      </ui.Select>
+      </Select>
     </>
   )
 }
 
-function Example005Demo() {
+function PrimarySelectDemo() {
   return (
     <>
-      <ui.Select color={'info'}>
+      <Select color={'primary'}>
         {' '}
         <option>Select dropdown</option> <option>With options</option>{' '}
-      </ui.Select>
+      </Select>
     </>
   )
 }
 
-function Example006Demo() {
+function InfoSelectDemo() {
   return (
     <>
-      <ui.Select color={'success'}>
+      <Select color={'info'}>
         {' '}
         <option>Select dropdown</option> <option>With options</option>{' '}
-      </ui.Select>
+      </Select>
     </>
   )
 }
 
-function Example007Demo() {
+function SuccessSelectDemo() {
   return (
     <>
-      <ui.Select color={'warning'}>
+      <Select color={'success'}>
         {' '}
         <option>Select dropdown</option> <option>With options</option>{' '}
-      </ui.Select>
+      </Select>
     </>
   )
 }
 
-function Example008Demo() {
+function WarningSelectDemo() {
   return (
     <>
-      <ui.Select color={'danger'}>
+      <Select color={'warning'}>
         {' '}
         <option>Select dropdown</option> <option>With options</option>{' '}
-      </ui.Select>
+      </Select>
     </>
   )
 }
 
-function Example009Demo() {
+function DangerSelectDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Select rounded>
-            {' '}
-            <option>Rounded dropdown</option> <option>With options</option>{' '}
-          </ui.Select>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="select is-rounded">\n  <select>\n    <option>Rounded dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
-    </>
-  )
-}
-
-function Example010Demo() {
-  return (
-    <>
-      <ui.Select size={'small'}>
+      <Select color={'danger'}>
         {' '}
         <option>Select dropdown</option> <option>With options</option>{' '}
-      </ui.Select>
+      </Select>
     </>
   )
 }
 
-function Example011Demo() {
+function RoundedSelectDemo() {
   return (
     <>
-      <ui.Select size={'normal'}>
+      <Select rounded>
+        {' '}
+        <option>Rounded dropdown</option> <option>With options</option>{' '}
+      </Select>
+    </>
+  )
+}
+
+function SmallSelectDemo() {
+  return (
+    <>
+      <Select size={'small'}>
         {' '}
         <option>Select dropdown</option> <option>With options</option>{' '}
-      </ui.Select>
+      </Select>
     </>
   )
 }
 
-function Example012Demo() {
+function NormalSizeSelectDemo() {
   return (
     <>
-      <ui.Select size={'medium'}>
+      <Select size={'normal'}>
         {' '}
         <option>Select dropdown</option> <option>With options</option>{' '}
-      </ui.Select>
+      </Select>
     </>
   )
 }
 
-function Example013Demo() {
+function MediumSelectDemo() {
   return (
     <>
-      <ui.Select size={'large'}>
+      <Select size={'medium'}>
         {' '}
         <option>Select dropdown</option> <option>With options</option>{' '}
-      </ui.Select>
+      </Select>
     </>
   )
 }
 
-function Example014Demo() {
+function LargeSelectDemo() {
   return (
     <>
-      <ui.Columns>
+      <Select size={'large'}>
         {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Select>
-            {' '}
-            <option>Select dropdown</option> <option>With options</option>{' '}
-          </ui.Select>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="select">\n  <select>\n    <option>Select dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+        <option>Select dropdown</option> <option>With options</option>{' '}
+      </Select>
     </>
   )
 }
 
-function Example015Demo() {
+function NormalStateDemo() {
   return (
     <>
-      <ui.Columns>
+      <Select>
         {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Select className={'rb-is-hovered'}>
-            {' '}
-            <option>Select dropdown</option> <option>With options</option>{' '}
-          </ui.Select>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="select">\n  <select class="is-hovered">\n    <option>Select dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+        <option>Select dropdown</option> <option>With options</option>{' '}
+      </Select>
     </>
   )
 }
 
-function Example016Demo() {
+function HoverStateDemo() {
   return (
     <>
-      <ui.Columns>
+      <Select className={'rb-is-hovered'}>
         {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Select className={'rb-is-focused'}>
-            {' '}
-            <option>Select dropdown</option> <option>With options</option>{' '}
-          </ui.Select>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="select">\n  <select class="is-focused">\n    <option>Select dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+        <option>Select dropdown</option> <option>With options</option>{' '}
+      </Select>
     </>
   )
 }
 
-function Example017Demo() {
+function FocusStateDemo() {
   return (
     <>
-      <ui.Columns>
+      <Select className={'rb-is-focused'}>
         {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Select loading>
-            {' '}
-            <option>Select dropdown</option> <option>With options</option>{' '}
-          </ui.Select>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="select is-loading">\n  <select>\n    <option>Select dropdown</option>\n    <option>With options</option>\n  </select>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+        <option>Select dropdown</option> <option>With options</option>{' '}
+      </Select>
     </>
   )
 }
 
-function Example018Demo() {
+function LoadingSelectDemo() {
   return (
     <>
-      <ui.Columns>
+      <Select loading>
         {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control icons={'left'}>
-            {' '}
-            <ui.Select defaultValue={'Country'}>
-              {' '}
-              <option>Country</option> <option>Select dropdown</option>{' '}
-              <option>With options</option>{' '}
-            </ui.Select>{' '}
-            <ui.Icon size={'small'} className={'rb-is-left'} as={'div'}>
-              {' '}
-              <i className={'fas fa-globe'} />{' '}
-            </ui.Icon>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control has-icons-left">\n  <div class="select">\n    <select>\n      <option selected>Country</option>\n      <option>Select dropdown</option>\n      <option>With options</option>\n    </select>\n  </div>\n  <div class="icon is-small is-left">\n    <i class="fas fa-globe"></i>\n  </div>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+        <option>Select dropdown</option> <option>With options</option>{' '}
+      </Select>
     </>
   )
 }
 
-function Example019Demo() {
+function SelectWithAnIconDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
+      <Control icons={'left'}>
+        <Select defaultValue={'Country'}>
           {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              If the control contains an icon, Bulma will make sure the icon
-              remains <strong>centered</strong>, no matter the size of the input{' '}
-              <em>or</em> of the icon.
-            </p>{' '}
-          </ui.Content>{' '}
-          <ui.Control icons={'left'}>
-            {' '}
-            <ui.Select size={'small'} defaultValue={'Country'}>
-              {' '}
-              <option>Country</option> <option>Select dropdown</option>{' '}
-              <option>With options</option>{' '}
-            </ui.Select>{' '}
-            <ui.Icon size={'small'} className={'rb-is-left'}>
-              {' '}
-              <i className={'fas fa-globe'} />{' '}
-            </ui.Icon>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control has-icons-left">\n  <div class="select is-small">\n    <select>\n      <option selected>Country</option>\n      <option>Select dropdown</option>\n      <option>With options</option>\n    </select>\n  </div>\n  <span class="icon is-small is-left">\n    <i class="fas fa-globe"></i>\n  </span>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+          <option>Country</option> <option>Select dropdown</option>{' '}
+          <option>With options</option>{' '}
+        </Select>{' '}
+        <Icon size={'small'} className={'rb-is-left'} as={'div'}>
+          <i className={'fas fa-globe'} />
+        </Icon>
+      </Control>
     </>
   )
 }
 
-function Example020Demo() {
+function SmallSelectWithAnIconDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
+      <Content>
+        <p>
+          If the control contains an icon, Bulma will make sure the icon remains{' '}
+          <strong>centered</strong>, no matter the size of the input <em>or</em>{' '}
+          of the icon.
+        </p>
+      </Content>
+      <Control icons={'left'}>
+        <Select size={'small'} defaultValue={'Country'}>
           {' '}
-          <ui.Control icons={'left'}>
-            {' '}
-            <ui.Select defaultValue={'Country'}>
-              {' '}
-              <option>Country</option> <option>Select dropdown</option>{' '}
-              <option>With options</option>{' '}
-            </ui.Select>{' '}
-            <ui.Icon className={'rb-is-left'}>
-              {' '}
-              <i className={'fas fa-globe'} />{' '}
-            </ui.Icon>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control has-icons-left">\n  <div class="select">\n    <select>\n      <option selected>Country</option>\n      <option>Select dropdown</option>\n      <option>With options</option>\n    </select>\n  </div>\n  <span class="icon is-left">\n    <i class="fas fa-globe"></i>\n  </span>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+          <option>Country</option> <option>Select dropdown</option>{' '}
+          <option>With options</option>{' '}
+        </Select>{' '}
+        <Icon size={'small'} className={'rb-is-left'}>
+          <i className={'fas fa-globe'} />
+        </Icon>
+      </Control>
     </>
   )
 }
 
-function Example021Demo() {
+function NormalSelectWithAnIconDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
+      <Control icons={'left'}>
+        <Select defaultValue={'Country'}>
           {' '}
-          <ui.Control icons={'left'}>
-            {' '}
-            <ui.Select size={'medium'} defaultValue={'Country'}>
-              {' '}
-              <option>Country</option> <option>Select dropdown</option>{' '}
-              <option>With options</option>{' '}
-            </ui.Select>{' '}
-            <ui.Icon size={'medium'} className={'rb-is-left'}>
-              {' '}
-              <i className={'fas fa-globe'} />{' '}
-            </ui.Icon>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control has-icons-left">\n  <div class="select is-medium">\n    <select>\n      <option selected>Country</option>\n      <option>Select dropdown</option>\n      <option>With options</option>\n    </select>\n  </div>\n  <span class="icon is-medium is-left">\n    <i class="fas fa-globe"></i>\n  </span>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+          <option>Country</option> <option>Select dropdown</option>{' '}
+          <option>With options</option>{' '}
+        </Select>{' '}
+        <Icon className={'rb-is-left'}>
+          <i className={'fas fa-globe'} />
+        </Icon>
+      </Control>
     </>
   )
 }
 
-function Example022Demo() {
+function MediumSelectWithAnIconDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
+      <Control icons={'left'}>
+        <Select size={'medium'} defaultValue={'Country'}>
           {' '}
-          <ui.Control icons={'left'}>
-            {' '}
-            <ui.Select size={'large'} defaultValue={'Country'}>
-              {' '}
-              <option>Country</option> <option>Select dropdown</option>{' '}
-              <option>With options</option>{' '}
-            </ui.Select>{' '}
-            <ui.Icon size={'large'} className={'rb-is-left'}>
-              {' '}
-              <i className={'fas fa-globe'} />{' '}
-            </ui.Icon>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control has-icons-left">\n  <div class="select is-large">\n    <select>\n      <option selected>Country</option>\n      <option>Select dropdown</option>\n      <option>With options</option>\n    </select>\n  </div>\n  <span class="icon is-large is-left">\n    <i class="fas fa-globe"></i>\n  </span>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+          <option>Country</option> <option>Select dropdown</option>{' '}
+          <option>With options</option>{' '}
+        </Select>{' '}
+        <Icon size={'medium'} className={'rb-is-left'}>
+          <i className={'fas fa-globe'} />
+        </Icon>
+      </Control>
     </>
   )
 }
 
-export const Example001 = {
+function LargeSelectWithAnIconDemo() {
+  return (
+    <>
+      <Control icons={'left'}>
+        <Select size={'large'} defaultValue={'Country'}>
+          {' '}
+          <option>Country</option> <option>Select dropdown</option>{' '}
+          <option>With options</option>{' '}
+        </Select>{' '}
+        <Icon size={'large'} className={'rb-is-left'}>
+          <i className={'fas fa-globe'} />
+        </Icon>
+      </Control>
+    </>
+  )
+}
+
+export const DefaultSelectStory = {
   name: 'Default select',
   parameters: {
     official: { id: 'form-select/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction DefaultSelectDemo() {\n  return (\n    <>\n      <Select>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultSelectDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const MultipleSelectionStory = {
   name: 'Multiple selection',
   parameters: {
     official: { id: 'form-select/multiple-select/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can style a <strong>multiple select</strong> dropdown, by\n              using the <code>{'is-multiple'}</code> modifier, and by using the{' '}\n              <code>{'multiple'}</code> HTML attribute.\n            </p>{' '}\n          </ui.Content>{' '}\n          <ui.Select multiple htmlSize={8}>\n            {' '}\n            <option value={'Argentina'}>Argentina</option>{' '}\n            <option value={'Bolivia'}>Bolivia</option>{' '}\n            <option value={'Brazil'}>Brazil</option>{' '}\n            <option value={'Chile'}>Chile</option>{' '}\n            <option value={'Colombia'}>Colombia</option>{' '}\n            <option value={'Ecuador'}>Ecuador</option>{' '}\n            <option value={'Guyana'}>Guyana</option>{' '}\n            <option value={'Paraguay'}>Paraguay</option>{' '}\n            <option value={'Peru'}>Peru</option>{' '}\n            <option value={'Suriname'}>Suriname</option>{' '}\n            <option value={'Uruguay'}>Uruguay</option>{' '}\n            <option value={'Venezuela'}>Venezuela</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select is-multiple\">\\n  <select multiple size=\"8\">\\n    <option value=\"Argentina\">Argentina</option>\\n    <option value=\"Bolivia\">Bolivia</option>\\n    <option value=\"Brazil\">Brazil</option>\\n    <option value=\"Chile\">Chile</option>\\n    <option value=\"Colombia\">Colombia</option>\\n    <option value=\"Ecuador\">Ecuador</option>\\n    <option value=\"Guyana\">Guyana</option>\\n    <option value=\"Paraguay\">Paraguay</option>\\n    <option value=\"Peru\">Peru</option>\\n    <option value=\"Suriname\">Suriname</option>\\n    <option value=\"Uruguay\">Uruguay</option>\\n    <option value=\"Venezuela\">Venezuela</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Content, Select } from '@seagreenio/react-bulma'\n\nfunction MultipleSelectionDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          You can style a <strong>multiple select</strong> dropdown, by using\n          the <code>{'is-multiple'}</code> modifier, and by using the{' '}\n          <code>{'multiple'}</code> HTML attribute.\n        </p>\n      </Content>\n      <Select multiple htmlSize={8}>\n        {' '}\n        <option value={'Argentina'}>Argentina</option>{' '}\n        <option value={'Bolivia'}>Bolivia</option>{' '}\n        <option value={'Brazil'}>Brazil</option>{' '}\n        <option value={'Chile'}>Chile</option>{' '}\n        <option value={'Colombia'}>Colombia</option>{' '}\n        <option value={'Ecuador'}>Ecuador</option>{' '}\n        <option value={'Guyana'}>Guyana</option>{' '}\n        <option value={'Paraguay'}>Paraguay</option>{' '}\n        <option value={'Peru'}>Peru</option>{' '}\n        <option value={'Suriname'}>Suriname</option>{' '}\n        <option value={'Uruguay'}>Uruguay</option>{' '}\n        <option value={'Venezuela'}>Venezuela</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: MultipleSelectionDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const LinkSelectStory = {
   name: 'Link select',
   parameters: {
     official: { id: 'form-select/colors/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Select color={'link'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction LinkSelectDemo() {\n  return (\n    <>\n      <Select color={'link'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: LinkSelectDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const PrimarySelectStory = {
   name: 'Primary select',
   parameters: {
     official: { id: 'form-select/colors/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Select color={'primary'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction PrimarySelectDemo() {\n  return (\n    <>\n      <Select color={'primary'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: PrimarySelectDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const InfoSelectStory = {
   name: 'Info select',
   parameters: {
     official: { id: 'form-select/colors/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Select color={'info'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction InfoSelectDemo() {\n  return (\n    <>\n      <Select color={'info'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: InfoSelectDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const SuccessSelectStory = {
   name: 'Success select',
   parameters: {
     official: { id: 'form-select/colors/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Select color={'success'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction SuccessSelectDemo() {\n  return (\n    <>\n      <Select color={'success'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: SuccessSelectDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const WarningSelectStory = {
   name: 'Warning select',
   parameters: {
     official: { id: 'form-select/colors/005' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Select color={'warning'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction WarningSelectDemo() {\n  return (\n    <>\n      <Select color={'warning'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: WarningSelectDemo,
 } satisfies StoryObj
 
-export const Example008 = {
+export const DangerSelectStory = {
   name: 'Danger select',
   parameters: {
     official: { id: 'form-select/colors/006' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Select color={'danger'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction DangerSelectDemo() {\n  return (\n    <>\n      <Select color={'danger'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example008Demo,
+  render: DangerSelectDemo,
 } satisfies StoryObj
 
-export const Example009 = {
+export const RoundedSelectStory = {
   name: 'Rounded select',
   parameters: {
     official: { id: 'form-select/styles/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select rounded>\n            {' '}\n            <option>Rounded dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select is-rounded\">\\n  <select>\\n    <option>Rounded dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction RoundedSelectDemo() {\n  return (\n    <>\n      <Select rounded>\n        {' '}\n        <option>Rounded dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example009Demo,
+  render: RoundedSelectDemo,
 } satisfies StoryObj
 
-export const Example010 = {
+export const SmallSelectStory = {
   name: 'Small select',
   parameters: {
     official: { id: 'form-select/sizes/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Select size={'small'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction SmallSelectDemo() {\n  return (\n    <>\n      <Select size={'small'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example010Demo,
+  render: SmallSelectDemo,
 } satisfies StoryObj
 
-export const Example011 = {
+export const NormalSizeSelectStory = {
   name: 'Normal size select',
   parameters: {
     official: { id: 'form-select/sizes/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Select size={'normal'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction NormalSizeSelectDemo() {\n  return (\n    <>\n      <Select size={'normal'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example011Demo,
+  render: NormalSizeSelectDemo,
 } satisfies StoryObj
 
-export const Example012 = {
+export const MediumSelectStory = {
   name: 'Medium select',
   parameters: {
     official: { id: 'form-select/sizes/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Select size={'medium'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction MediumSelectDemo() {\n  return (\n    <>\n      <Select size={'medium'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example012Demo,
+  render: MediumSelectDemo,
 } satisfies StoryObj
 
-export const Example013 = {
+export const LargeSelectStory = {
   name: 'Large select',
   parameters: {
     official: { id: 'form-select/sizes/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Select size={'large'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </ui.Select>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction LargeSelectDemo() {\n  return (\n    <>\n      <Select size={'large'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example013Demo,
+  render: LargeSelectDemo,
 } satisfies StoryObj
 
-export const Example014 = {
+export const NormalStateStory = {
   name: 'Normal state',
   parameters: {
     official: { id: 'form-select/normal/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction NormalStateDemo() {\n  return (\n    <>\n      <Select>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example014Demo,
+  render: NormalStateDemo,
 } satisfies StoryObj
 
-export const Example015 = {
+export const HoverStateStory = {
   name: 'Hover state',
   parameters: {
     official: { id: 'form-select/hover/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select className={'rb-is-hovered'}>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select\">\\n  <select class=\"is-hovered\">\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction HoverStateDemo() {\n  return (\n    <>\n      <Select className={'rb-is-hovered'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example015Demo,
+  render: HoverStateDemo,
 } satisfies StoryObj
 
-export const Example016 = {
+export const FocusStateStory = {
   name: 'Focus state',
   parameters: {
     official: { id: 'form-select/focus/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select className={'rb-is-focused'}>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select\">\\n  <select class=\"is-focused\">\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction FocusStateDemo() {\n  return (\n    <>\n      <Select className={'rb-is-focused'}>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example016Demo,
+  render: FocusStateDemo,
 } satisfies StoryObj
 
-export const Example017 = {
+export const LoadingSelectStory = {
   name: 'Loading select',
   parameters: {
     official: { id: 'form-select/loading/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Select loading>\n            {' '}\n            <option>Select dropdown</option> <option>With options</option>{' '}\n          </ui.Select>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"select is-loading\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Select } from '@seagreenio/react-bulma'\n\nfunction LoadingSelectDemo() {\n  return (\n    <>\n      <Select loading>\n        {' '}\n        <option>Select dropdown</option> <option>With options</option>{' '}\n      </Select>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example017Demo,
+  render: LoadingSelectDemo,
 } satisfies StoryObj
 
-export const Example018 = {
+export const SelectWithAnIconStory = {
   name: 'Select with an icon',
   parameters: {
     official: { id: 'form-select/with-icons/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'left'}>\n            {' '}\n            <ui.Select defaultValue={'Country'}>\n              {' '}\n              <option>Country</option> <option>Select dropdown</option>{' '}\n              <option>With options</option>{' '}\n            </ui.Select>{' '}\n            <ui.Icon size={'small'} className={'rb-is-left'} as={'div'}>\n              {' '}\n              <i className={'fas fa-globe'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left\">\\n  <div class=\"select\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <div class=\"icon is-small is-left\">\\n    <i class=\"fas fa-globe\"></i>\\n  </div>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Icon, Select } from '@seagreenio/react-bulma'\n\nfunction SelectWithAnIconDemo() {\n  return (\n    <>\n      <Control icons={'left'}>\n        <Select defaultValue={'Country'}>\n          {' '}\n          <option>Country</option> <option>Select dropdown</option>{' '}\n          <option>With options</option>{' '}\n        </Select>{' '}\n        <Icon size={'small'} className={'rb-is-left'} as={'div'}>\n          <i className={'fas fa-globe'} />\n        </Icon>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example018Demo,
+  render: SelectWithAnIconDemo,
 } satisfies StoryObj
 
-export const Example019 = {
+export const SmallSelectWithAnIconStory = {
   name: 'Small select with an icon',
   parameters: {
     official: { id: 'form-select/with-icons/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example019Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              If the control contains an icon, Bulma will make sure the icon\n              remains <strong>centered</strong>, no matter the size of the input{' '}\n              <em>or</em> of the icon.\n            </p>{' '}\n          </ui.Content>{' '}\n          <ui.Control icons={'left'}>\n            {' '}\n            <ui.Select size={'small'} defaultValue={'Country'}>\n              {' '}\n              <option>Country</option> <option>Select dropdown</option>{' '}\n              <option>With options</option>{' '}\n            </ui.Select>{' '}\n            <ui.Icon size={'small'} className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-globe'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left\">\\n  <div class=\"select is-small\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\"icon is-small is-left\">\\n    <i class=\"fas fa-globe\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Content, Control, Icon, Select } from '@seagreenio/react-bulma'\n\nfunction SmallSelectWithAnIconDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          If the control contains an icon, Bulma will make sure the icon remains{' '}\n          <strong>centered</strong>, no matter the size of the input <em>or</em>{' '}\n          of the icon.\n        </p>\n      </Content>\n      <Control icons={'left'}>\n        <Select size={'small'} defaultValue={'Country'}>\n          {' '}\n          <option>Country</option> <option>Select dropdown</option>{' '}\n          <option>With options</option>{' '}\n        </Select>{' '}\n        <Icon size={'small'} className={'rb-is-left'}>\n          <i className={'fas fa-globe'} />\n        </Icon>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example019Demo,
+  render: SmallSelectWithAnIconDemo,
 } satisfies StoryObj
 
-export const Example020 = {
+export const NormalSelectWithAnIconStory = {
   name: 'Normal select with an icon',
   parameters: {
     official: { id: 'form-select/with-icons/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example020Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'left'}>\n            {' '}\n            <ui.Select defaultValue={'Country'}>\n              {' '}\n              <option>Country</option> <option>Select dropdown</option>{' '}\n              <option>With options</option>{' '}\n            </ui.Select>{' '}\n            <ui.Icon className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-globe'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left\">\\n  <div class=\"select\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\"icon is-left\">\\n    <i class=\"fas fa-globe\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Icon, Select } from '@seagreenio/react-bulma'\n\nfunction NormalSelectWithAnIconDemo() {\n  return (\n    <>\n      <Control icons={'left'}>\n        <Select defaultValue={'Country'}>\n          {' '}\n          <option>Country</option> <option>Select dropdown</option>{' '}\n          <option>With options</option>{' '}\n        </Select>{' '}\n        <Icon className={'rb-is-left'}>\n          <i className={'fas fa-globe'} />\n        </Icon>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example020Demo,
+  render: NormalSelectWithAnIconDemo,
 } satisfies StoryObj
 
-export const Example021 = {
+export const MediumSelectWithAnIconStory = {
   name: 'Medium select with an icon',
   parameters: {
     official: { id: 'form-select/with-icons/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example021Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'left'}>\n            {' '}\n            <ui.Select size={'medium'} defaultValue={'Country'}>\n              {' '}\n              <option>Country</option> <option>Select dropdown</option>{' '}\n              <option>With options</option>{' '}\n            </ui.Select>{' '}\n            <ui.Icon size={'medium'} className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-globe'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left\">\\n  <div class=\"select is-medium\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\"icon is-medium is-left\">\\n    <i class=\"fas fa-globe\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Icon, Select } from '@seagreenio/react-bulma'\n\nfunction MediumSelectWithAnIconDemo() {\n  return (\n    <>\n      <Control icons={'left'}>\n        <Select size={'medium'} defaultValue={'Country'}>\n          {' '}\n          <option>Country</option> <option>Select dropdown</option>{' '}\n          <option>With options</option>{' '}\n        </Select>{' '}\n        <Icon size={'medium'} className={'rb-is-left'}>\n          <i className={'fas fa-globe'} />\n        </Icon>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example021Demo,
+  render: MediumSelectWithAnIconDemo,
 } satisfies StoryObj
 
-export const Example022 = {
+export const LargeSelectWithAnIconStory = {
   name: 'Large select with an icon',
   parameters: {
     official: { id: 'form-select/with-icons/005' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example022Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'left'}>\n            {' '}\n            <ui.Select size={'large'} defaultValue={'Country'}>\n              {' '}\n              <option>Country</option> <option>Select dropdown</option>{' '}\n              <option>With options</option>{' '}\n            </ui.Select>{' '}\n            <ui.Icon size={'large'} className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-globe'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left\">\\n  <div class=\"select is-large\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\"icon is-large is-left\">\\n    <i class=\"fas fa-globe\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Icon, Select } from '@seagreenio/react-bulma'\n\nfunction LargeSelectWithAnIconDemo() {\n  return (\n    <>\n      <Control icons={'left'}>\n        <Select size={'large'} defaultValue={'Country'}>\n          {' '}\n          <option>Country</option> <option>Select dropdown</option>{' '}\n          <option>With options</option>{' '}\n        </Select>{' '}\n        <Icon size={'large'} className={'rb-is-left'}>\n          <i className={'fas fa-globe'} />\n        </Icon>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example022Demo,
+  render: LargeSelectWithAnIconDemo,
 } satisfies StoryObj

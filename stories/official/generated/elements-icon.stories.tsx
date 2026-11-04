@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Block, Content, Icon, IconText } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,305 +23,208 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="elements-icon" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Icon'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'Compatible with all icon font libraries, including '}
           <strong data-official-prose="">{'Font Awesome 5'}</strong>
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n\n\n\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The '}
+            {' The '}
             <code data-official-prose="">{'icon'}</code>
             {' element is a '}
             <strong data-official-prose="">{'container'}</strong>
             {' for any type of '}
             <strong data-official-prose="">{'icon font'}</strong>
             {
-              '. Because\n    the icons can take a few seconds to load, and because you want control over the '
+              '. Because the icons can take a few seconds to load, and because you want control over the '
             }
             <strong data-official-prose="">{'space'}</strong>
-            {' the icons\n    will take, you can use the '}
+            {' the icons will take, you can use the '}
             <code data-official-prose="">{'icon'}</code>
             {
-              ' class as a reliable square container that will prevent the page to\n    "jump" on page load.\n  '
+              ' class as a reliable square container that will prevent the page to "jump" on page load. '
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        <div data-official-example="elements-icon/basic/001">
-          <Canvas of={Example001} />
+        <div data-official-prose="" className={'block bd-icon-size'}>
+          <div data-official-example="elements-icon/basic/001">
+            <Canvas of={BasicIconStory} />
+          </div>
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'message is-info'}>
-          {'\n  '}
           <div data-official-prose="" className={'message-body'}>
-            {'\n    The '}
+            {' The '}
             <strong data-official-prose="">{'yellow background'}</strong>
             {
-              " is only here for demonstration purposes, to highlight the icon container's\n    area.\n  "
+              " is only here for demonstration purposes, to highlight the icon container's area. "
             }
           </div>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    By default, the '}
+            {' By default, the '}
             <code data-official-prose="">{'icon'}</code>
             {' container will take up '}
             <em data-official-prose="">{'exactly'}</em>{' '}
             <code data-official-prose="">{'1.5rem x 1.5rem'}</code>
             {
-              ". The icon\n    itself is sized accordingly to the icon library you're using. For example, Font Awesome 5 icons will\n    "
+              ". The icon itself is sized accordingly to the icon library you're using. For example, Font Awesome 5 icons will "
             }
             <strong data-official-prose="">{'inherit'}</strong>
-            {' the font size.\n  '}
+            {' the font size. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'icon-text'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Icon text\n  '}
-          </span>
-          {'\n  '}
+            {' Icon text '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#icon-text'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can combine an '}
+            {' You can combine an '}
             <code data-official-prose="">{'icon'}</code>
             {' with '}
             <strong data-official-prose="">{'text'}</strong>
             {', using the '}
             <code data-official-prose="">{'icon-text'}</code>
-            {' wrapper, as long\n    as all text '}
+            {' wrapper, as long as all text '}
             <em data-official-prose="">{'inside'}</em>
             {' is wrapped in its own '}
             <code data-official-prose="">{'span'}</code>
-            {' element:\n  '}
+            {' element: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-icon/icon-text/001">
-          <Canvas of={Example002} />
+          <Canvas of={IconWithTextStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can combine '}
             <strong data-official-prose="">{'as many'}</strong>{' '}
             <code data-official-prose="">{'icon'}</code>
             {' elements and text elements as you want:'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-icon/icon-text/002">
-          <Canvas of={Example003} />
+          <Canvas of={MultipleIconsAndTextStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Since '}
+            {' Since '}
             <code data-official-prose="">{'icon-text'}</code>
             {' is an '}
             <code data-official-prose="">{'inline-flex'}</code>
-            {
-              ' element, it can easily be inserted within any paragraph\n    of '
-            }
+            {' element, it can easily be inserted within any paragraph of '}
             <strong data-official-prose="">{'text'}</strong>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-icon/icon-text/003">
-          <Canvas of={Example004} />
+          <Canvas of={IconsInAParagraphStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can also turn the '}
+            {' You can also turn the '}
             <code data-official-prose="">{'icon-text'}</code>
             {' into a '}
             <code data-official-prose="">{'flex'}</code>
-            {' element simply by using a\n    '}
+            {' element simply by using a '}
             <code data-official-prose="">{'<div>'}</code>
-            {' tag instead:\n  '}
+            {' tag instead: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-icon/icon-text/004">
-          <Canvas of={Example005} />
+          <Canvas of={StatusMessagesWithIconsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'colors'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Colors\n  '}
-          </span>
-          {'\n  '}
+            {' Colors '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#colors'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Since icon fonts are simply '}
+            {' Since icon fonts are simply '}
             <strong data-official-prose="">{'text'}</strong>
-            {', you can use the\n    '}
+            {', you can use the '}
             <a
               data-official-prose=""
               href={'https://bulma.io/documentation/helpers/color-helpers/'}
             >
               {'color helpers'}
             </a>
-            {"\n    to change the icon's color.\n  "}
+            {" to change the icon's color. "}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-icon/colors/001">
-          <Canvas of={Example006} />
+          <Canvas of={ColoredIconsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The same applies to the '}
             <code data-official-prose="">{'icon-text'}</code>
             {':'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-icon/colors/002">
-          <Canvas of={Example007} />
+          <Canvas of={ColoredIconAndTextStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The Bulma '}
+            {' The Bulma '}
             <code data-official-prose="">{'icon'}</code>
             {' container comes in '}
             <strong data-official-prose="">{'4 sizes'}</strong>
-            {'. It should always be\n    '}
+            {'. It should always be '}
             <em data-official-prose="">{'slightly bigger'}</em>
             {
-              ' than the icon it contains. For example, Font Awesome 5 icons use a font-size of\n    '
+              ' than the icon it contains. For example, Font Awesome 5 icons use a font-size of '
             }
             <code data-official-prose="">{'1em'}</code>
-            {
-              ' by default (since it inherits the font size), but provides\n    '
-            }
+            {' by default (since it inherits the font size), but provides '}
             <a
               data-official-prose=""
               href={
@@ -331,458 +234,273 @@ function OfficialDocs() {
             >
               {'additional sizes'}
             </a>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <table data-official-prose="" className={'table is-bordered'}>
-          {'\n  '}
           <thead data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <th data-official-prose="">{'Container class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Container size'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Font Awesome 5 class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Icon size'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Result'}</th>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </thead>
-          {'\n  '}
           <tbody data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'icon is-small'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1rem x 1rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-small'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'fas fa-home'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i data-official-prose="" className={'fas fa-home'}></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="" rowSpan={2}>
-                {'\n        '}
                 <code data-official-prose="">{'icon'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" rowSpan={2}>
-                {'\n        '}
                 <code data-official-prose="">{'1.5rem x 1.5rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'fas fa-home'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i data-official-prose="" className={'fas fa-home'}></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas fa-lg'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1.33em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'fas fa-lg fa-home'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i
+                    data-official-prose=""
+                    className={'fas fa-lg fa-home'}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="" rowSpan={3}>
-                {'\n        '}
                 <code data-official-prose="">{'icon is-medium'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" rowSpan={3}>
-                {'\n        '}
                 <code data-official-prose="">{'2rem x 2rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-medium'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'fas fa-home'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i data-official-prose="" className={'fas fa-home'}></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas fa-lg'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1.33em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-medium'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'fas fa-lg fa-home'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i
+                    data-official-prose=""
+                    className={'fas fa-lg fa-home'}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas fa-2x'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'2em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-medium'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'fas fa-2x fa-home'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i
+                    data-official-prose=""
+                    className={'fas fa-2x fa-home'}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="" rowSpan={3}>
-                {'\n        '}
                 <code data-official-prose="">{'icon is-large'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" rowSpan={4}>
-                {'\n        '}
                 <code data-official-prose="">{'3rem x 3rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-large'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'fas fa-home'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i data-official-prose="" className={'fas fa-home'}></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas fa-lg'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1.33em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-large'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'fas fa-lg fa-home'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i
+                    data-official-prose=""
+                    className={'fas fa-lg fa-home'}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas fa-2x'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'2em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-large'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'fas fa-2x fa-home'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i
+                    data-official-prose=""
+                    className={'fas fa-2x fa-home'}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </tbody>
-          {'\n'}
         </table>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'font-awesome-variations'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Font Awesome variations\n  '}
-          </span>
-          {'\n  '}
+            {' Font Awesome variations '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#font-awesome-variations'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'Font Awesome also provides modifier classes for:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">{'fixed width icons'}</li>
-            {'\n    '}
             <li data-official-prose="">{'bordered icons'}</li>
-            {'\n    '}
             <li data-official-prose="">{'animated icons'}</li>
-            {'\n    '}
             <li data-official-prose="">{'stacked icons'}</li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
         <table data-official-prose="" className={'table is-bordered'}>
-          {'\n  '}
           <thead data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <th data-official-prose="">{'Type'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Font Awesome class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Result'}</th>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </thead>
-          {'\n  '}
           <tbody data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">{'Fixed width'}</td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas fa-fw'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'fas fa-home fa-fw'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i
+                    data-official-prose=""
+                    className={'fas fa-home fa-fw'}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">{'Bordered'}</td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas fa-border'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'fas fa-home fa-border'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">{'Animated'}</td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'fas fa-spinner fa-pulse'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'fas fa-spinner fa-pulse'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="" rowSpan={2}>
                 {'Stacked'}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <div data-official-prose="" className={'highlight'}>
                   <pre data-official-prose="">
                     <code data-official-prose="" className={'language-html'}>
@@ -792,37 +510,26 @@ function OfficialDocs() {
                     </code>
                   </pre>
                 </div>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-medium'}>
-                  {'\n          '}
+                  {' '}
                   <span data-official-prose="" className={'fa-stack fa-sm'}>
-                    {'\n            '}
+                    {' '}
                     <i
                       data-official-prose=""
                       className={'fas fa-circle fa-stack-2x'}
-                    ></i>
-                    {'\n            '}
+                    ></i>{' '}
                     <i
                       data-official-prose=""
                       className={'fas fa-flag fa-stack-1x fa-inverse'}
-                    ></i>
-                    {'\n          '}
-                  </span>
-                  {'\n        '}
+                    ></i>{' '}
+                  </span>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <div data-official-prose="" className={'highlight'}>
                   <pre data-official-prose="">
                     <code data-official-prose="" className={'language-html'}>
@@ -832,745 +539,446 @@ function OfficialDocs() {
                     </code>
                   </pre>
                 </div>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-large'}>
-                  {'\n          '}
+                  {' '}
                   <span data-official-prose="" className={'fa-stack fa-lg'}>
-                    {'\n            '}
+                    {' '}
                     <i
                       data-official-prose=""
                       className={'fas fa-camera fa-stack-1x'}
-                    ></i>
-                    {'\n            '}
+                    ></i>{' '}
                     <i
                       data-official-prose=""
                       className={'fas fa-ban fa-stack-2x has-text-danger'}
-                    ></i>
-                    {'\n          '}
-                  </span>
-                  {'\n        '}
+                    ></i>{' '}
+                  </span>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </tbody>
-          {'\n'}
         </table>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'material-design-icons'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Material Design Icons\n  '}
-          </span>
-          {'\n  '}
+            {' Material Design Icons '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#material-design-icons'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Here is how the '}
+            {' Here is how the '}
             <code data-official-prose="">{'icon'}</code>
-            {' container can be used with\n    '}
+            {' container can be used with '}
             <a data-official-prose="" href={'https://materialdesignicons.com/'}>
               {'Material Design Icons'}
             </a>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <table data-official-prose="" className={'table is-bordered'}>
-          {'\n  '}
           <thead data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <th data-official-prose="">{'Container class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Container size'}</th>
-              {'\n      '}
               <th data-official-prose="">{'MDI class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Icon size'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Result'}</th>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </thead>
-          {'\n  '}
           <tbody data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'icon is-small'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1rem x 1rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-small'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'mdi mdi-bell'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i data-official-prose="" className={'mdi mdi-bell'}></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="" rowSpan={2}>
-                {'\n        '}
                 <code data-official-prose="">{'icon'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" rowSpan={2}>
-                {'\n        '}
                 <code data-official-prose="">{'1.5rem x 1.5rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-18px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'18px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-18px mdi-bell'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-24px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'24px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-24px mdi-bell'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="" rowSpan={4}>
-                {'\n        '}
                 <code data-official-prose="">{'icon is-medium'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" rowSpan={4}>
-                {'\n        '}
                 <code data-official-prose="">{'2rem x 2rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-medium'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'mdi mdi-bell'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i data-official-prose="" className={'mdi mdi-bell'}></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-18px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'18px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-medium'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-18px mdi-bell'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-24px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'24px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-medium'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-24px mdi-bell'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-36px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'36px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-medium'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-36px mdi-bell'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="" rowSpan={5}>
-                {'\n        '}
                 <code data-official-prose="">{'icon is-large'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" rowSpan={5}>
-                {'\n        '}
                 <code data-official-prose="">{'3rem x 3rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-large'}>
-                  {'\n          '}
-                  <i data-official-prose="" className={'mdi mdi-bell'}></i>
-                  {'\n        '}
+                  {' '}
+                  <i data-official-prose="" className={'mdi mdi-bell'}></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-18px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'18px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-large'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-18px mdi-bell'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-24px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'24px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-large'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-24px mdi-bell'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-36px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'36px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-large'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-36px mdi-bell'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-48px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'48px'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-large'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-48px mdi-bell'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </tbody>
-          {'\n'}
         </table>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'MDI also provides modifier classes for:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">{'light and dark icons'}</li>
-            {'\n    '}
             <li data-official-prose="">{'rotated & flipped icons'}</li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
         <table data-official-prose="" className={'table is-bordered'}>
-          {'\n  '}
           <thead data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <th data-official-prose="">{'Type'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Material Design Icon class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Result'}</th>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </thead>
-          {'\n  '}
           <tbody data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">{'Light color'}</td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-light'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-signal-4g mdi-light'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">{'Dark color'}</td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'mdi mdi-dark'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-signal-4g mdi-dark'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">{'Light inactive color'}</td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">
                   {'mdi mdi-light mdi-inactive'}
                 </code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-signal-4g mdi-light mdi-inactive'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">{'Dark inactive color'}</td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">
                   {'mdi mdi-dark mdi-inactive'}
                 </code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-signal-4g mdi-dark mdi-inactive'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">{'Flipped'}</td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
-                <code data-official-prose="">{'mdi mdi-flip-h'}</code>
-                {'\n        '}
-                <br data-official-prose="" />
-                {'\n        '}
+                <code data-official-prose="">{'mdi mdi-flip-h'}</code>{' '}
+                <br data-official-prose="" />{' '}
                 <code data-official-prose="">{'mdi mdi-flip-v'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-signal-4g mdi-flip-h'}
-                  ></i>
-                  {'\n        '}
-                </span>
-                {'\n        '}
-                <br data-official-prose="" />
-                {'\n        '}
+                  ></i>{' '}
+                </span>{' '}
+                <br data-official-prose="" />{' '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-signal-4g mdi-flip-v'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">{'Rotated'}</td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
-                <code data-official-prose="">{'mdi mdi-rotate-45'}</code>
-                {'\n        '}
-                <br data-official-prose="" />
-                {'\n        '}
-                <code data-official-prose="">{'mdi mdi-rotate-90'}</code>
-                {'\n        '}
-                <br data-official-prose="" />
-                {'\n        '}
+                <code data-official-prose="">{'mdi mdi-rotate-45'}</code>{' '}
+                <br data-official-prose="" />{' '}
+                <code data-official-prose="">{'mdi mdi-rotate-90'}</code>{' '}
+                <br data-official-prose="" />{' '}
                 <code data-official-prose="">{'mdi mdi-rotate-180'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-signal-4g mdi-rotate-45'}
-                  ></i>
-                  {'\n        '}
-                </span>
-                {'\n        '}
-                <br data-official-prose="" />
-                {'\n        '}
+                  ></i>{' '}
+                </span>{' '}
+                <br data-official-prose="" />{' '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-signal-4g mdi-rotate-90'}
-                  ></i>
-                  {'\n        '}
-                </span>
-                {'\n        '}
-                <br data-official-prose="" />
-                {'\n        '}
+                  ></i>{' '}
+                </span>{' '}
+                <br data-official-prose="" />{' '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
+                  {' '}
                   <i
                     data-official-prose=""
                     className={'mdi mdi-signal-4g mdi-rotate-180'}
-                  ></i>
-                  {'\n        '}
+                  ></i>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </tbody>
-          {'\n'}
         </table>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'ionicons'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Ionicons\n  '}
-          </span>
-          {'\n  '}
+            {' Ionicons '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#ionicons'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'Here is how the '}
             <code data-official-prose="">{'icon'}</code>
@@ -1580,837 +988,416 @@ function OfficialDocs() {
             </a>
             {'.'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <table data-official-prose="" className={'table is-bordered'}>
-          {'\n  '}
           <thead data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <th data-official-prose="">{'Container class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Container size'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Ionicon class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Icon size'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Result'}</th>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </thead>
-          {'\n  '}
           <tbody data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'icon is-small'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1rem x 1rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'ion-ionic'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-small'}>
-                  {'\n          '}
-                  <span data-official-prose="" className={'ion-ionic'}></span>
-                  {'\n        '}
+                  {' '}
+                  <span
+                    data-official-prose=""
+                    className={'ion-ionic'}
+                  ></span>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'icon'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1.5rem x 1.5rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'ion-ionic'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon'}>
-                  {'\n          '}
-                  <span data-official-prose="" className={'ion-ionic'}></span>
-                  {'\n        '}
+                  {' '}
+                  <span
+                    data-official-prose=""
+                    className={'ion-ionic'}
+                  ></span>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'icon is-medium'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'2rem x 2rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'ion-ionic'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-medium'}>
-                  {'\n          '}
-                  <span data-official-prose="" className={'ion-ionic'}></span>
-                  {'\n        '}
+                  {' '}
+                  <span
+                    data-official-prose=""
+                    className={'ion-ionic'}
+                  ></span>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'icon is-large'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'3rem x 3rem'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'ion-ionic'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="">
-                {'\n        '}
                 <code data-official-prose="">{'1em'}</code>
-                {'\n      '}
               </td>
-              {'\n      '}
               <td data-official-prose="" className={'bd-icon-size'}>
-                {'\n        '}
                 <span data-official-prose="" className={'icon is-large'}>
-                  {'\n          '}
-                  <span data-official-prose="" className={'ion-ionic'}></span>
-                  {'\n        '}
+                  {' '}
+                  <span
+                    data-official-prose=""
+                    className={'ion-ionic'}
+                  ></span>{' '}
                 </span>
-                {'\n      '}
               </td>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </tbody>
-          {'\n'}
         </table>
-        {'\n\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$icon-dimensions'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-icon-dimensions)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$icon-dimensions-small'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-icon-dimensions-small)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$icon-dimensions-medium'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-icon-dimensions-medium)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'2rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$icon-dimensions-large'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-icon-dimensions-large)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'3rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$icon-text-spacing'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-icon-text-spacing)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.25em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function BasicIconDemo() {
   return (
     <>
-      <ui.Block className={'bd-icon-size'}>
-        {' '}
-        <div className={'bd-snippet bd-is-vertical bd-is-size-1'}>
-          {' '}
-          <div className={'bd-snippet-example'}>
-            {' '}
-            <p className={'bd-snippet-title'}>
-              {' '}
-              <span className={'bd-snippet-tag bd-is-example'}>
-                Example
-              </span>{' '}
-            </p>{' '}
-            <div className={'bd-snippet-preview'}>
-              {' '}
-              <ui.Icon>
-                {' '}
-                <i className={'fas fa-home'} />{' '}
-              </ui.Icon>{' '}
-            </div>{' '}
-          </div>{' '}
-          <div className={'bd-snippet-source bd-theme-html'}>
-            {' '}
-            <p className={'bd-snippet-title'}>
-              {' '}
-              <span className={'bd-snippet-tag bd-is-html'}>HTML</span>{' '}
-            </p>{' '}
-            <div className={'bd-snippet-code bd-highlight-full'}>
-              {' '}
-              <div className={'highlight'}>
-                <pre>
-                  <code className={'language-html'}>
-                    {
-                      '\n<span class="icon">\n  <i class="fas fa-home"></i>\n</span>\n'
-                    }
-                  </code>
-                </pre>
-              </div>{' '}
-            </div>{' '}
-          </div>{' '}
-        </div>{' '}
-      </ui.Block>
+      <Icon>
+        <i className={'fas fa-home'} />
+      </Icon>
     </>
   )
 }
 
-function Example002Demo() {
+function IconWithTextDemo() {
   return (
     <>
-      <ui.IconText>
-        {' '}
-        <ui.Icon>
-          {' '}
-          <i className={'fas fa-home'} />{' '}
-        </ui.Icon>{' '}
-        <span>Home</span>{' '}
-      </ui.IconText>
+      <IconText>
+        <Icon>
+          <i className={'fas fa-home'} />
+        </Icon>
+        <span>Home</span>
+      </IconText>
     </>
   )
 }
 
-function Example003Demo() {
+function MultipleIconsAndTextDemo() {
   return (
     <>
-      <ui.IconText>
-        {' '}
-        <ui.Icon>
-          {' '}
-          <i className={'fas fa-train'} />{' '}
-        </ui.Icon>{' '}
-        <span>Paris</span>{' '}
-        <ui.Icon>
-          {' '}
-          <i className={'fas fa-arrow-right'} />{' '}
-        </ui.Icon>{' '}
-        <span>Budapest</span>{' '}
-        <ui.Icon>
-          {' '}
-          <i className={'fas fa-arrow-right'} />{' '}
-        </ui.Icon>{' '}
-        <span>Bucharest</span>{' '}
-        <ui.Icon>
-          {' '}
-          <i className={'fas fa-arrow-right'} />{' '}
-        </ui.Icon>{' '}
-        <span>Istanbul</span>{' '}
-        <ui.Icon>
-          {' '}
-          <i className={'fas fa-flag-checkered'} />{' '}
-        </ui.Icon>{' '}
-      </ui.IconText>
+      <IconText>
+        <Icon>
+          <i className={'fas fa-train'} />
+        </Icon>
+        <span>Paris</span>
+        <Icon>
+          <i className={'fas fa-arrow-right'} />
+        </Icon>
+        <span>Budapest</span>
+        <Icon>
+          <i className={'fas fa-arrow-right'} />
+        </Icon>
+        <span>Bucharest</span>
+        <Icon>
+          <i className={'fas fa-arrow-right'} />
+        </Icon>
+        <span>Istanbul</span>
+        <Icon>
+          <i className={'fas fa-flag-checkered'} />
+        </Icon>
+      </IconText>
     </>
   )
 }
 
-function Example004Demo() {
+function IconsInAParagraphDemo() {
   return (
     <>
-      <ui.Content>
-        {' '}
+      <Content>
         <p>
           An invitation to{' '}
-          <ui.IconText>
-            {' '}
-            <ui.Icon>
-              {' '}
-              <i className={'fas fa-utensils'} />{' '}
-            </ui.Icon>{' '}
-            <span>dinner</span>{' '}
-          </ui.IconText>{' '}
+          <IconText>
+            <Icon>
+              <i className={'fas fa-utensils'} />
+            </Icon>
+            <span>dinner</span>
+          </IconText>{' '}
           was soon afterwards dispatched; and already had Mrs. Bennet planned
           the courses that were to do credit to her housekeeping, when an answer
           arrived which deferred it all. Mr. Bingley was obliged to be in{' '}
-          <ui.IconText>
-            {' '}
-            <ui.Icon>
-              {' '}
-              <i className={'fas fa-city'} />{' '}
-            </ui.Icon>{' '}
-            <span>town</span>{' '}
-          </ui.IconText>{' '}
+          <IconText>
+            <Icon>
+              <i className={'fas fa-city'} />
+            </Icon>
+            <span>town</span>
+          </IconText>{' '}
           the following day, and, consequently, unable to accept the honour of
           their{' '}
-          <ui.IconText>
-            {' '}
-            <ui.Icon>
-              {' '}
-              <i className={'fas fa-envelope-open-text'} />{' '}
-            </ui.Icon>{' '}
-            <span>invitation</span>{' '}
-          </ui.IconText>
+          <IconText>
+            <Icon>
+              <i className={'fas fa-envelope-open-text'} />
+            </Icon>
+            <span>invitation</span>
+          </IconText>
           , etc.
-        </p>{' '}
+        </p>
         <p>
           Mrs. Bennet was quite disconcerted. She could not imagine what
           business he could have in town so soon after his{' '}
-          <ui.IconText>
-            {' '}
-            <ui.Icon>
-              {' '}
-              <i className={'fas fa-flag-checkered'} />{' '}
-            </ui.Icon>{' '}
-            <span>arrival</span>{' '}
-          </ui.IconText>{' '}
+          <IconText>
+            <Icon>
+              <i className={'fas fa-flag-checkered'} />
+            </Icon>
+            <span>arrival</span>
+          </IconText>{' '}
           in Hertfordshire; and she began to fear that he might be always{' '}
-          <ui.IconText>
-            {' '}
-            <ui.Icon>
-              {' '}
-              <i className={'fas fa-plane-departure'} />{' '}
-            </ui.Icon>{' '}
-            <span>flying</span>{' '}
-          </ui.IconText>{' '}
+          <IconText>
+            <Icon>
+              <i className={'fas fa-plane-departure'} />
+            </Icon>
+            <span>flying</span>
+          </IconText>{' '}
           about from one place to another, and never settled at Netherfield as
           he ought to be.
-        </p>{' '}
-      </ui.Content>
+        </p>
+      </Content>
     </>
   )
 }
 
-function Example005Demo() {
+function StatusMessagesWithIconsDemo() {
   return (
     <>
-      <ui.IconText as={'div'}>
-        {' '}
-        <ui.Icon helpers={{ textColor: 'info' }}>
-          {' '}
-          <i className={'fas fa-info-circle'} />{' '}
-        </ui.Icon>{' '}
-        <span>Information</span>{' '}
-      </ui.IconText>{' '}
-      <ui.Block as={'p'}>
-        {' '}
-        Your package will be delivered on <strong>Tuesday at 08:00</strong>
-        .{' '}
-      </ui.Block>{' '}
-      <ui.IconText as={'div'}>
-        {' '}
-        <ui.Icon helpers={{ textColor: 'success' }}>
-          {' '}
-          <i className={'fas fa-check-square'} />{' '}
-        </ui.Icon>{' '}
-        <span>Success</span>{' '}
-      </ui.IconText>{' '}
-      <ui.Block as={'p'}>Your image has been successfully uploaded.</ui.Block>{' '}
-      <ui.IconText as={'div'}>
-        {' '}
-        <ui.Icon helpers={{ textColor: 'warning' }}>
-          {' '}
-          <i className={'fas fa-exclamation-triangle'} />{' '}
-        </ui.Icon>{' '}
-        <span>Warning</span>{' '}
-      </ui.IconText>{' '}
-      <ui.Block as={'p'}>
-        {' '}
-        Some information is missing from your <a href={'#'}>profile</a>{' '}
-        details.{' '}
-      </ui.Block>{' '}
-      <ui.IconText as={'div'}>
-        {' '}
-        <ui.Icon helpers={{ textColor: 'danger' }}>
-          {' '}
-          <i className={'fas fa-ban'} />{' '}
-        </ui.Icon>{' '}
-        <span>Danger</span>{' '}
-      </ui.IconText>{' '}
-      <ui.Block as={'p'}>
-        {' '}
+      <IconText as={'div'}>
+        <Icon helpers={{ textColor: 'info' }}>
+          <i className={'fas fa-info-circle'} />
+        </Icon>
+        <span>Information</span>
+      </IconText>
+      <Block as={'p'}>
+        Your package will be delivered on <strong>Tuesday at 08:00</strong>.
+      </Block>
+      <IconText as={'div'}>
+        <Icon helpers={{ textColor: 'success' }}>
+          <i className={'fas fa-check-square'} />
+        </Icon>
+        <span>Success</span>
+      </IconText>
+      <Block as={'p'}>Your image has been successfully uploaded.</Block>
+      <IconText as={'div'}>
+        <Icon helpers={{ textColor: 'warning' }}>
+          <i className={'fas fa-exclamation-triangle'} />
+        </Icon>
+        <span>Warning</span>
+      </IconText>
+      <Block as={'p'}>
+        Some information is missing from your <a href={'#'}>profile</a> details.
+      </Block>
+      <IconText as={'div'}>
+        <Icon helpers={{ textColor: 'danger' }}>
+          <i className={'fas fa-ban'} />
+        </Icon>
+        <span>Danger</span>
+      </IconText>
+      <Block as={'p'}>
         There was an error in your submission.{' '}
-        <a href={'#'}>Please try again</a>.{' '}
-      </ui.Block>
+        <a href={'#'}>Please try again</a>.
+      </Block>
     </>
   )
 }
 
-function Example006Demo() {
+function ColoredIconsDemo() {
   return (
     <>
-      <ui.Icon helpers={{ textColor: 'info' }}>
-        {' '}
-        <i className={'fas fa-info-circle'} />{' '}
-      </ui.Icon>{' '}
-      <ui.Icon helpers={{ textColor: 'success' }}>
-        {' '}
-        <i className={'fas fa-check-square'} />{' '}
-      </ui.Icon>{' '}
-      <ui.Icon helpers={{ textColor: 'warning' }}>
-        {' '}
-        <i className={'fas fa-exclamation-triangle'} />{' '}
-      </ui.Icon>{' '}
-      <ui.Icon helpers={{ textColor: 'danger' }}>
-        {' '}
-        <i className={'fas fa-ban'} />{' '}
-      </ui.Icon>
+      <Icon helpers={{ textColor: 'info' }}>
+        <i className={'fas fa-info-circle'} />
+      </Icon>{' '}
+      <Icon helpers={{ textColor: 'success' }}>
+        <i className={'fas fa-check-square'} />
+      </Icon>{' '}
+      <Icon helpers={{ textColor: 'warning' }}>
+        <i className={'fas fa-exclamation-triangle'} />
+      </Icon>{' '}
+      <Icon helpers={{ textColor: 'danger' }}>
+        <i className={'fas fa-ban'} />
+      </Icon>
     </>
   )
 }
 
-function Example007Demo() {
+function ColoredIconAndTextDemo() {
   return (
     <>
-      <ui.IconText helpers={{ textColor: 'info' }}>
-        {' '}
-        <ui.Icon>
-          {' '}
-          <i className={'fas fa-info-circle'} />{' '}
-        </ui.Icon>{' '}
-        <span>Info</span>{' '}
-      </ui.IconText>{' '}
-      <ui.IconText helpers={{ textColor: 'success' }}>
-        {' '}
-        <ui.Icon>
-          {' '}
-          <i className={'fas fa-check-square'} />{' '}
-        </ui.Icon>{' '}
-        <span>Success</span>{' '}
-      </ui.IconText>{' '}
-      <ui.IconText helpers={{ textColor: 'warning' }}>
-        {' '}
-        <ui.Icon>
-          {' '}
-          <i className={'fas fa-exclamation-triangle'} />{' '}
-        </ui.Icon>{' '}
-        <span>Warning</span>{' '}
-      </ui.IconText>{' '}
-      <ui.IconText helpers={{ textColor: 'danger' }}>
-        {' '}
-        <ui.Icon>
-          {' '}
-          <i className={'fas fa-ban'} />{' '}
-        </ui.Icon>{' '}
-        <span>Danger</span>{' '}
-      </ui.IconText>
+      <IconText helpers={{ textColor: 'info' }}>
+        <Icon>
+          <i className={'fas fa-info-circle'} />
+        </Icon>
+        <span>Info</span>
+      </IconText>{' '}
+      <IconText helpers={{ textColor: 'success' }}>
+        <Icon>
+          <i className={'fas fa-check-square'} />
+        </Icon>
+        <span>Success</span>
+      </IconText>{' '}
+      <IconText helpers={{ textColor: 'warning' }}>
+        <Icon>
+          <i className={'fas fa-exclamation-triangle'} />
+        </Icon>
+        <span>Warning</span>
+      </IconText>{' '}
+      <IconText helpers={{ textColor: 'danger' }}>
+        <Icon>
+          <i className={'fas fa-ban'} />
+        </Icon>
+        <span>Danger</span>
+      </IconText>
     </>
   )
 }
 
-export const Example001 = {
+export const BasicIconStory = {
   name: 'Basic icon',
   parameters: {
     official: { id: 'elements-icon/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Block className={'bd-icon-size'}>\n        {' '}\n        <div className={'bd-snippet bd-is-vertical bd-is-size-1'}>\n          {' '}\n          <div className={'bd-snippet-example'}>\n            {' '}\n            <p className={'bd-snippet-title'}>\n              {' '}\n              <span className={'bd-snippet-tag bd-is-example'}>\n                Example\n              </span>{' '}\n            </p>{' '}\n            <div className={'bd-snippet-preview'}>\n              {' '}\n              <ui.Icon>\n                {' '}\n                <i className={'fas fa-home'} />{' '}\n              </ui.Icon>{' '}\n            </div>{' '}\n          </div>{' '}\n          <div className={'bd-snippet-source bd-theme-html'}>\n            {' '}\n            <p className={'bd-snippet-title'}>\n              {' '}\n              <span className={'bd-snippet-tag bd-is-html'}>HTML</span>{' '}\n            </p>{' '}\n            <div className={'bd-snippet-code bd-highlight-full'}>\n              {' '}\n              <div className={'highlight'}>\n                <pre>\n                  <code className={'language-html'}>\n                    {\n                      '\\n<span class=\"icon\">\\n  <i class=\"fas fa-home\"></i>\\n</span>\\n'\n                    }\n                  </code>\n                </pre>\n              </div>{' '}\n            </div>{' '}\n          </div>{' '}\n        </div>{' '}\n      </ui.Block>\n    </>\n  )\n}\n",
+        code: "import { Icon } from '@seagreenio/react-bulma'\n\nfunction BasicIconDemo() {\n  return (\n    <>\n      <Icon>\n        <i className={'fas fa-home'} />\n      </Icon>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: BasicIconDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const IconWithTextStory = {
   name: 'Icon with text',
   parameters: {
     official: { id: 'elements-icon/icon-text/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.IconText>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-home'} />{' '}\n        </ui.Icon>{' '}\n        <span>Home</span>{' '}\n      </ui.IconText>\n    </>\n  )\n}\n",
+        code: "import { Icon, IconText } from '@seagreenio/react-bulma'\n\nfunction IconWithTextDemo() {\n  return (\n    <>\n      <IconText>\n        <Icon>\n          <i className={'fas fa-home'} />\n        </Icon>\n        <span>Home</span>\n      </IconText>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: IconWithTextDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const MultipleIconsAndTextStory = {
   name: 'Multiple icons and text',
   parameters: {
     official: { id: 'elements-icon/icon-text/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.IconText>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-train'} />{' '}\n        </ui.Icon>{' '}\n        <span>Paris</span>{' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-arrow-right'} />{' '}\n        </ui.Icon>{' '}\n        <span>Budapest</span>{' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-arrow-right'} />{' '}\n        </ui.Icon>{' '}\n        <span>Bucharest</span>{' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-arrow-right'} />{' '}\n        </ui.Icon>{' '}\n        <span>Istanbul</span>{' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-flag-checkered'} />{' '}\n        </ui.Icon>{' '}\n      </ui.IconText>\n    </>\n  )\n}\n",
+        code: "import { Icon, IconText } from '@seagreenio/react-bulma'\n\nfunction MultipleIconsAndTextDemo() {\n  return (\n    <>\n      <IconText>\n        <Icon>\n          <i className={'fas fa-train'} />\n        </Icon>\n        <span>Paris</span>\n        <Icon>\n          <i className={'fas fa-arrow-right'} />\n        </Icon>\n        <span>Budapest</span>\n        <Icon>\n          <i className={'fas fa-arrow-right'} />\n        </Icon>\n        <span>Bucharest</span>\n        <Icon>\n          <i className={'fas fa-arrow-right'} />\n        </Icon>\n        <span>Istanbul</span>\n        <Icon>\n          <i className={'fas fa-flag-checkered'} />\n        </Icon>\n      </IconText>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: MultipleIconsAndTextDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const IconsInAParagraphStory = {
   name: 'Icons in a paragraph',
   parameters: {
     official: { id: 'elements-icon/icon-text/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Content>\n        {' '}\n        <p>\n          An invitation to{' '}\n          <ui.IconText>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i className={'fas fa-utensils'} />{' '}\n            </ui.Icon>{' '}\n            <span>dinner</span>{' '}\n          </ui.IconText>{' '}\n          was soon afterwards dispatched; and already had Mrs. Bennet planned\n          the courses that were to do credit to her housekeeping, when an answer\n          arrived which deferred it all. Mr. Bingley was obliged to be in{' '}\n          <ui.IconText>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i className={'fas fa-city'} />{' '}\n            </ui.Icon>{' '}\n            <span>town</span>{' '}\n          </ui.IconText>{' '}\n          the following day, and, consequently, unable to accept the honour of\n          their{' '}\n          <ui.IconText>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i className={'fas fa-envelope-open-text'} />{' '}\n            </ui.Icon>{' '}\n            <span>invitation</span>{' '}\n          </ui.IconText>\n          , etc.\n        </p>{' '}\n        <p>\n          Mrs. Bennet was quite disconcerted. She could not imagine what\n          business he could have in town so soon after his{' '}\n          <ui.IconText>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i className={'fas fa-flag-checkered'} />{' '}\n            </ui.Icon>{' '}\n            <span>arrival</span>{' '}\n          </ui.IconText>{' '}\n          in Hertfordshire; and she began to fear that he might be always{' '}\n          <ui.IconText>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i className={'fas fa-plane-departure'} />{' '}\n            </ui.Icon>{' '}\n            <span>flying</span>{' '}\n          </ui.IconText>{' '}\n          about from one place to another, and never settled at Netherfield as\n          he ought to be.\n        </p>{' '}\n      </ui.Content>\n    </>\n  )\n}\n",
+        code: "import { Content, Icon, IconText } from '@seagreenio/react-bulma'\n\nfunction IconsInAParagraphDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          An invitation to{' '}\n          <IconText>\n            <Icon>\n              <i className={'fas fa-utensils'} />\n            </Icon>\n            <span>dinner</span>\n          </IconText>{' '}\n          was soon afterwards dispatched; and already had Mrs. Bennet planned\n          the courses that were to do credit to her housekeeping, when an answer\n          arrived which deferred it all. Mr. Bingley was obliged to be in{' '}\n          <IconText>\n            <Icon>\n              <i className={'fas fa-city'} />\n            </Icon>\n            <span>town</span>\n          </IconText>{' '}\n          the following day, and, consequently, unable to accept the honour of\n          their{' '}\n          <IconText>\n            <Icon>\n              <i className={'fas fa-envelope-open-text'} />\n            </Icon>\n            <span>invitation</span>\n          </IconText>\n          , etc.\n        </p>\n        <p>\n          Mrs. Bennet was quite disconcerted. She could not imagine what\n          business he could have in town so soon after his{' '}\n          <IconText>\n            <Icon>\n              <i className={'fas fa-flag-checkered'} />\n            </Icon>\n            <span>arrival</span>\n          </IconText>{' '}\n          in Hertfordshire; and she began to fear that he might be always{' '}\n          <IconText>\n            <Icon>\n              <i className={'fas fa-plane-departure'} />\n            </Icon>\n            <span>flying</span>\n          </IconText>{' '}\n          about from one place to another, and never settled at Netherfield as\n          he ought to be.\n        </p>\n      </Content>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: IconsInAParagraphDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const StatusMessagesWithIconsStory = {
   name: 'Status messages with icons',
   parameters: {
     official: { id: 'elements-icon/icon-text/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.IconText as={'div'}>\n        {' '}\n        <ui.Icon helpers={{ textColor: 'info' }}>\n          {' '}\n          <i className={'fas fa-info-circle'} />{' '}\n        </ui.Icon>{' '}\n        <span>Information</span>{' '}\n      </ui.IconText>{' '}\n      <ui.Block as={'p'}>\n        {' '}\n        Your package will be delivered on <strong>Tuesday at 08:00</strong>\n        .{' '}\n      </ui.Block>{' '}\n      <ui.IconText as={'div'}>\n        {' '}\n        <ui.Icon helpers={{ textColor: 'success' }}>\n          {' '}\n          <i className={'fas fa-check-square'} />{' '}\n        </ui.Icon>{' '}\n        <span>Success</span>{' '}\n      </ui.IconText>{' '}\n      <ui.Block as={'p'}>Your image has been successfully uploaded.</ui.Block>{' '}\n      <ui.IconText as={'div'}>\n        {' '}\n        <ui.Icon helpers={{ textColor: 'warning' }}>\n          {' '}\n          <i className={'fas fa-exclamation-triangle'} />{' '}\n        </ui.Icon>{' '}\n        <span>Warning</span>{' '}\n      </ui.IconText>{' '}\n      <ui.Block as={'p'}>\n        {' '}\n        Some information is missing from your <a href={'#'}>profile</a>{' '}\n        details.{' '}\n      </ui.Block>{' '}\n      <ui.IconText as={'div'}>\n        {' '}\n        <ui.Icon helpers={{ textColor: 'danger' }}>\n          {' '}\n          <i className={'fas fa-ban'} />{' '}\n        </ui.Icon>{' '}\n        <span>Danger</span>{' '}\n      </ui.IconText>{' '}\n      <ui.Block as={'p'}>\n        {' '}\n        There was an error in your submission.{' '}\n        <a href={'#'}>Please try again</a>.{' '}\n      </ui.Block>\n    </>\n  )\n}\n",
+        code: "import { Block, Icon, IconText } from '@seagreenio/react-bulma'\n\nfunction StatusMessagesWithIconsDemo() {\n  return (\n    <>\n      <IconText as={'div'}>\n        <Icon helpers={{ textColor: 'info' }}>\n          <i className={'fas fa-info-circle'} />\n        </Icon>\n        <span>Information</span>\n      </IconText>\n      <Block as={'p'}>\n        Your package will be delivered on <strong>Tuesday at 08:00</strong>.\n      </Block>\n      <IconText as={'div'}>\n        <Icon helpers={{ textColor: 'success' }}>\n          <i className={'fas fa-check-square'} />\n        </Icon>\n        <span>Success</span>\n      </IconText>\n      <Block as={'p'}>Your image has been successfully uploaded.</Block>\n      <IconText as={'div'}>\n        <Icon helpers={{ textColor: 'warning' }}>\n          <i className={'fas fa-exclamation-triangle'} />\n        </Icon>\n        <span>Warning</span>\n      </IconText>\n      <Block as={'p'}>\n        Some information is missing from your <a href={'#'}>profile</a> details.\n      </Block>\n      <IconText as={'div'}>\n        <Icon helpers={{ textColor: 'danger' }}>\n          <i className={'fas fa-ban'} />\n        </Icon>\n        <span>Danger</span>\n      </IconText>\n      <Block as={'p'}>\n        There was an error in your submission.{' '}\n        <a href={'#'}>Please try again</a>.\n      </Block>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: StatusMessagesWithIconsDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const ColoredIconsStory = {
   name: 'Colored icons',
   parameters: {
     official: { id: 'elements-icon/colors/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Icon helpers={{ textColor: 'info' }}>\n        {' '}\n        <i className={'fas fa-info-circle'} />{' '}\n      </ui.Icon>{' '}\n      <ui.Icon helpers={{ textColor: 'success' }}>\n        {' '}\n        <i className={'fas fa-check-square'} />{' '}\n      </ui.Icon>{' '}\n      <ui.Icon helpers={{ textColor: 'warning' }}>\n        {' '}\n        <i className={'fas fa-exclamation-triangle'} />{' '}\n      </ui.Icon>{' '}\n      <ui.Icon helpers={{ textColor: 'danger' }}>\n        {' '}\n        <i className={'fas fa-ban'} />{' '}\n      </ui.Icon>\n    </>\n  )\n}\n",
+        code: "import { Icon } from '@seagreenio/react-bulma'\n\nfunction ColoredIconsDemo() {\n  return (\n    <>\n      <Icon helpers={{ textColor: 'info' }}>\n        <i className={'fas fa-info-circle'} />\n      </Icon>{' '}\n      <Icon helpers={{ textColor: 'success' }}>\n        <i className={'fas fa-check-square'} />\n      </Icon>{' '}\n      <Icon helpers={{ textColor: 'warning' }}>\n        <i className={'fas fa-exclamation-triangle'} />\n      </Icon>{' '}\n      <Icon helpers={{ textColor: 'danger' }}>\n        <i className={'fas fa-ban'} />\n      </Icon>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: ColoredIconsDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const ColoredIconAndTextStory = {
   name: 'Colored icon and text',
   parameters: {
     official: { id: 'elements-icon/colors/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.IconText helpers={{ textColor: 'info' }}>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-info-circle'} />{' '}\n        </ui.Icon>{' '}\n        <span>Info</span>{' '}\n      </ui.IconText>{' '}\n      <ui.IconText helpers={{ textColor: 'success' }}>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-check-square'} />{' '}\n        </ui.Icon>{' '}\n        <span>Success</span>{' '}\n      </ui.IconText>{' '}\n      <ui.IconText helpers={{ textColor: 'warning' }}>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-exclamation-triangle'} />{' '}\n        </ui.Icon>{' '}\n        <span>Warning</span>{' '}\n      </ui.IconText>{' '}\n      <ui.IconText helpers={{ textColor: 'danger' }}>\n        {' '}\n        <ui.Icon>\n          {' '}\n          <i className={'fas fa-ban'} />{' '}\n        </ui.Icon>{' '}\n        <span>Danger</span>{' '}\n      </ui.IconText>\n    </>\n  )\n}\n",
+        code: "import { Icon, IconText } from '@seagreenio/react-bulma'\n\nfunction ColoredIconAndTextDemo() {\n  return (\n    <>\n      <IconText helpers={{ textColor: 'info' }}>\n        <Icon>\n          <i className={'fas fa-info-circle'} />\n        </Icon>\n        <span>Info</span>\n      </IconText>{' '}\n      <IconText helpers={{ textColor: 'success' }}>\n        <Icon>\n          <i className={'fas fa-check-square'} />\n        </Icon>\n        <span>Success</span>\n      </IconText>{' '}\n      <IconText helpers={{ textColor: 'warning' }}>\n        <Icon>\n          <i className={'fas fa-exclamation-triangle'} />\n        </Icon>\n        <span>Warning</span>\n      </IconText>{' '}\n      <IconText helpers={{ textColor: 'danger' }}>\n        <Icon>\n          <i className={'fas fa-ban'} />\n        </Icon>\n        <span>Danger</span>\n      </IconText>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: ColoredIconAndTextDemo,
 } satisfies StoryObj

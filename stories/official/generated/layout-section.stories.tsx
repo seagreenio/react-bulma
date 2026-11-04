@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Section, Subtitle, Title } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,430 +23,154 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="layout-section" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Section'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'A simple container to divide your page into '}
           <strong data-official-prose="">{'sections'}</strong>
           {", like the one you're currently reading"}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The '}
+            {' The '}
             <code data-official-prose="">{'section'}</code>
             {
-              ' components are simple layout elements with responsive padding. They are best used as\n    '
+              ' components are simple layout elements with responsive padding. They are best used as '
             }
             <strong data-official-prose="">{'direct'}</strong>
             {' children of '}
             <code data-official-prose="">{'body'}</code>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-section/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={DefaultSectionStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can use the modifiers '}
+            {' You can use the modifiers '}
             <code data-official-prose="">{'is-medium'}</code>
             {' and '}
             <code data-official-prose="">{'is-large'}</code>
             {' to change the '}
             <strong data-official-prose="">{'spacing'}</strong>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-section/sizes/001">
-          <Canvas of={Example002} />
+          <Canvas of={MediumSectionStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-section/sizes/002">
-          <Canvas of={Example003} />
+          <Canvas of={LargeSectionStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$section-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-section-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'3rem 1.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$section-padding-desktop'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-section-padding-desktop)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'3rem 3rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$section-padding-medium'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-section-padding-medium)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'9rem 4.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$section-padding-large'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-section-padding-large)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'18rem 6rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultSectionDemo() {
   return (
     <>
-      <ui.Section>
-        {' '}
-        <ui.Title level={1}>Section</ui.Title>{' '}
-        <ui.Subtitle level={2}>
-          {' '}
+      <Section>
+        <Title level={1}>Section</Title>
+        <Subtitle level={2}>
           A simple container to divide your page into <strong>sections</strong>,
-          like the one you're currently reading.{' '}
-        </ui.Subtitle>{' '}
-      </ui.Section>
+          like the one you're currently reading.
+        </Subtitle>
+      </Section>
     </>
   )
 }
 
-function Example002Demo() {
+function MediumSectionDemo() {
   return (
     <>
-      <ui.Section size={'medium'}>
-        {' '}
-        <ui.Title level={1}>Medium section</ui.Title>{' '}
-        <ui.Subtitle level={2}>
-          {' '}
+      <Section size={'medium'}>
+        <Title level={1}>Medium section</Title>
+        <Subtitle level={2}>
           A simple container to divide your page into <strong>sections</strong>,
-          like the one you're currently reading.{' '}
-        </ui.Subtitle>{' '}
-      </ui.Section>
+          like the one you're currently reading.
+        </Subtitle>
+      </Section>
     </>
   )
 }
 
-function Example003Demo() {
+function LargeSectionDemo() {
   return (
     <>
-      <ui.Section size={'large'}>
-        {' '}
-        <ui.Title level={1}>Large section</ui.Title>{' '}
-        <ui.Subtitle level={2}>
-          {' '}
+      <Section size={'large'}>
+        <Title level={1}>Large section</Title>
+        <Subtitle level={2}>
           A simple container to divide your page into <strong>sections</strong>,
-          like the one you're currently reading.{' '}
-        </ui.Subtitle>{' '}
-      </ui.Section>
+          like the one you're currently reading.
+        </Subtitle>
+      </Section>
     </>
   )
 }
 
-export const Example001 = {
+export const DefaultSectionStory = {
   name: 'Default section',
   parameters: {
     official: { id: 'layout-section/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Section>\n        {' '}\n        <ui.Title level={1}>Section</ui.Title>{' '}\n        <ui.Subtitle level={2}>\n          {' '}\n          A simple container to divide your page into <strong>sections</strong>,\n          like the one you're currently reading.{' '}\n        </ui.Subtitle>{' '}\n      </ui.Section>\n    </>\n  )\n}\n",
+        code: "import { Section, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction DefaultSectionDemo() {\n  return (\n    <>\n      <Section>\n        <Title level={1}>Section</Title>\n        <Subtitle level={2}>\n          A simple container to divide your page into <strong>sections</strong>,\n          like the one you're currently reading.\n        </Subtitle>\n      </Section>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultSectionDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const MediumSectionStory = {
   name: 'Medium section',
   parameters: {
     official: { id: 'layout-section/sizes/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Section size={'medium'}>\n        {' '}\n        <ui.Title level={1}>Medium section</ui.Title>{' '}\n        <ui.Subtitle level={2}>\n          {' '}\n          A simple container to divide your page into <strong>sections</strong>,\n          like the one you're currently reading.{' '}\n        </ui.Subtitle>{' '}\n      </ui.Section>\n    </>\n  )\n}\n",
+        code: "import { Section, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction MediumSectionDemo() {\n  return (\n    <>\n      <Section size={'medium'}>\n        <Title level={1}>Medium section</Title>\n        <Subtitle level={2}>\n          A simple container to divide your page into <strong>sections</strong>,\n          like the one you're currently reading.\n        </Subtitle>\n      </Section>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: MediumSectionDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const LargeSectionStory = {
   name: 'Large section',
   parameters: {
     official: { id: 'layout-section/sizes/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Section size={'large'}>\n        {' '}\n        <ui.Title level={1}>Large section</ui.Title>{' '}\n        <ui.Subtitle level={2}>\n          {' '}\n          A simple container to divide your page into <strong>sections</strong>,\n          like the one you're currently reading.{' '}\n        </ui.Subtitle>{' '}\n      </ui.Section>\n    </>\n  )\n}\n",
+        code: "import { Section, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction LargeSectionDemo() {\n  return (\n    <>\n      <Section size={'large'}>\n        <Title level={1}>Large section</Title>\n        <Subtitle level={2}>\n          A simple container to divide your page into <strong>sections</strong>,\n          like the one you're currently reading.\n        </Subtitle>\n      </Section>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: LargeSectionDemo,
 } satisfies StoryObj

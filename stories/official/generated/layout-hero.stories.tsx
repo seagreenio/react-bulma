@@ -1,7 +1,28 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import {
+  Buttons,
+  Container,
+  Hero,
+  HeroBody,
+  HeroFoot,
+  HeroHead,
+  Icon,
+  LinkButton,
+  Navbar,
+  NavbarBrand,
+  NavbarBurger,
+  NavbarEnd,
+  NavbarItem,
+  NavbarMenu,
+  NavbarStart,
+  Subtitle,
+  Tab,
+  Tabs,
+  TabsList,
+  Title,
+} from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,304 +44,170 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="layout-hero" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Hero'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'An imposing '}
           <strong data-official-prose="">{'hero banner'}</strong>
           {' to showcase something'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The hero component allows you to add a '}
+            {' The hero component allows you to add a '}
             <strong data-official-prose="">{'full width banner'}</strong>
             {
-              ' to your webpage, which can optionally\n    cover the full height of the page as well.\n  '
+              ' to your webpage, which can optionally cover the full height of the page as well. '
             }
           </p>
-          {'\n  '}
           <p data-official-prose="">
             {'The basic requirement of this component are:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'hero'}</code>
-              {' as the main container\n      '}
+              {' as the main container '}
               <ul data-official-prose="">
-                {'\n        '}
                 <li data-official-prose="">
                   <code data-official-prose="">{'hero-body'}</code>
                   {' as a direct child, in which you can put all your content'}
                 </li>
-                {'\n      '}
               </ul>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    For the '}
+            {' For the '}
             <a data-official-prose="" href={'#fullheight-hero'}>
               {'fullheight hero'}
             </a>
             {' to work, you will also need a '}
             <code data-official-prose="">{'hero-head'}</code>
-            {' and a\n    '}
+            {' and a '}
             <code data-official-prose="">{'hero-foot'}</code>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={DefaultHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'colors'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Colors\n  '}
-          </span>
-          {'\n  '}
+            {' Colors '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#colors'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  As with buttons, you can choose one of the\n  '}
+          {' As with buttons, you can choose one of the '}
           <strong data-official-prose="">{'8 different colors'}</strong>
-          {':\n'}
+          {': '}
         </div>
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/colors/001">
-          <Canvas of={Example002} />
+          <Canvas of={LinkHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/colors/002">
-          <Canvas of={Example003} />
+          <Canvas of={PrimaryHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/colors/003">
-          <Canvas of={Example004} />
+          <Canvas of={InfoHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/colors/004">
-          <Canvas of={Example005} />
+          <Canvas of={SuccessHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/colors/005">
-          <Canvas of={Example006} />
+          <Canvas of={WarningHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/colors/006">
-          <Canvas of={Example007} />
+          <Canvas of={DangerHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {
-              '\n    You can have even more imposing banners by using one of\n    '
-            }
+            {' You can have even more imposing banners by using one of '}
             <strong data-official-prose="">{'5 different sizes'}</strong>
-            {':\n  '}
+            {': '}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'is-small'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'is-medium'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'is-large'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'is-halfheight'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'is-fullheight'}</code>
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/sizes/001">
-          <Canvas of={Example008} />
+          <Canvas of={SmallHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/sizes/002">
-          <Canvas of={Example009} />
+          <Canvas of={MediumHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/sizes/003">
-          <Canvas of={Example010} />
+          <Canvas of={LargeHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" id={'halfheight-hero'}></div>
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/sizes/004">
-          <Canvas of={Example011} />
+          <Canvas of={HalfHeightHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" id={'fullheight-hero'}></div>
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/sizes/005">
-          <Canvas of={Example012} />
+          <Canvas of={FullHeightHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'fullheight-with-navbar'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Fullheight with navbar\n  '}
-          </span>
-          {'\n  '}
+            {' Fullheight with navbar '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#fullheight-with-navbar'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    If you are using a\n    '}
+            {' If you are using a '}
             <a
               data-official-prose=""
               href={
@@ -329,1214 +216,732 @@ function OfficialDocs() {
             >
               {'fixed navbar'}
             </a>
-            {', you can use the\n    '}
+            {', you can use the '}
             <code data-official-prose="">{'is-fullheight-with-navbar'}</code>
             {
-              ' modifier on the hero for it to occupy the viewport height minus the navbar\n    height.\n  '
+              ' modifier on the hero for it to occupy the viewport height minus the navbar height. '
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/fullheight-with-navbar/001">
-          <Canvas of={Example013} />
+          <Canvas of={FullHeightHeroBelowNavbarStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'fullheight-hero-in-3-parts'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Fullheight hero in 3 parts\n  '}
-          </span>
-          {'\n  '}
+            {' Fullheight hero in 3 parts '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#fullheight-hero-in-3-parts'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {
-              '\n    To obtain a hero that will cover the whole height of the viewport, you can split it in\n    '
+              ' To obtain a hero that will cover the whole height of the viewport, you can split it in '
             }
             <strong data-official-prose="">{'3 vertical parts'}</strong>
-            {':\n  '}
+            {': '}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'hero'}</code>
-              {'\n      '}
               <ul data-official-prose="">
-                {'\n        '}
                 <li data-official-prose="">
                   <code data-official-prose="">{'hero-head'}</code>
                   {' (always at the top)'}
                 </li>
-                {'\n        '}
                 <li data-official-prose="">
                   <code data-official-prose="">{'hero-body'}</code>
                   {' (always vertically centered)'}
                 </li>
-                {'\n        '}
                 <li data-official-prose="">
                   <code data-official-prose="">{'hero-foot'}</code>
                   {' (always at the bottom)'}
                 </li>
-                {'\n      '}
               </ul>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/fullheight-hero-in-3-parts/001">
-          <Canvas of={Example014} />
+          <Canvas of={MediumThreePartHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/fullheight-hero-in-3-parts/002">
-          <Canvas of={Example015} />
+          <Canvas of={LargeThreePartHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="layout-hero/fullheight-hero-in-3-parts/003">
-          <Canvas of={Example016} />
+          <Canvas of={FullHeightThreePartHeroStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$hero-body-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-hero-body-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'3rem 1.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$hero-body-padding-tablet'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-hero-body-padding-tablet)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'3rem 3rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$hero-body-padding-small'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-hero-body-padding-small)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$hero-body-padding-medium'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-hero-body-padding-medium)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'9rem 4.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$hero-body-padding-large'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-hero-body-padding-large)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'18rem 6rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$hero-gradient-h-offset'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-hero-gradient-h-offset)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'5deg'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$hero-gradient-s-offset'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-hero-gradient-s-offset)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'10%'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$hero-gradient-l-offset'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-hero-gradient-l-offset:)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'5%'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultHeroDemo() {
   return (
     <>
-      <ui.Hero>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Hero title</ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Hero subtitle</ui.Subtitle>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Hero>
+        <HeroBody>
+          <Title as={'p'}>Hero title</Title>
+          <Subtitle as={'p'}>Hero subtitle</Subtitle>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example002Demo() {
+function LinkHeroDemo() {
   return (
     <>
-      <ui.Hero color={'link'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Link hero</ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Link subtitle</ui.Subtitle>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Hero color={'link'}>
+        <HeroBody>
+          <Title as={'p'}>Link hero</Title>
+          <Subtitle as={'p'}>Link subtitle</Subtitle>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example003Demo() {
+function PrimaryHeroDemo() {
   return (
     <>
-      <ui.Hero color={'primary'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Primary hero</ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Primary subtitle</ui.Subtitle>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Hero color={'primary'}>
+        <HeroBody>
+          <Title as={'p'}>Primary hero</Title>
+          <Subtitle as={'p'}>Primary subtitle</Subtitle>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example004Demo() {
+function InfoHeroDemo() {
   return (
     <>
-      <ui.Hero color={'info'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Info hero</ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Info subtitle</ui.Subtitle>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Hero color={'info'}>
+        <HeroBody>
+          <Title as={'p'}>Info hero</Title>
+          <Subtitle as={'p'}>Info subtitle</Subtitle>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example005Demo() {
+function SuccessHeroDemo() {
   return (
     <>
-      <ui.Hero color={'success'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Success hero</ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Success subtitle</ui.Subtitle>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Hero color={'success'}>
+        <HeroBody>
+          <Title as={'p'}>Success hero</Title>
+          <Subtitle as={'p'}>Success subtitle</Subtitle>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example006Demo() {
+function WarningHeroDemo() {
   return (
     <>
-      <ui.Hero color={'warning'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Warning hero</ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Warning subtitle</ui.Subtitle>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Hero color={'warning'}>
+        <HeroBody>
+          <Title as={'p'}>Warning hero</Title>
+          <Subtitle as={'p'}>Warning subtitle</Subtitle>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example007Demo() {
+function DangerHeroDemo() {
   return (
     <>
-      <ui.Hero color={'danger'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Danger hero</ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Danger subtitle</ui.Subtitle>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Hero color={'danger'}>
+        <HeroBody>
+          <Title as={'p'}>Danger hero</Title>
+          <Subtitle as={'p'}>Danger subtitle</Subtitle>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example008Demo() {
+function SmallHeroDemo() {
   return (
     <>
-      <ui.Hero size={'small'} color={'primary'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Small hero</ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Small subtitle</ui.Subtitle>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Hero size={'small'} color={'primary'}>
+        <HeroBody>
+          <Title as={'p'}>Small hero</Title>
+          <Subtitle as={'p'}>Small subtitle</Subtitle>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example009Demo() {
+function MediumHeroDemo() {
   return (
     <>
-      <ui.Hero size={'medium'} color={'link'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Medium hero</ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Medium subtitle</ui.Subtitle>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Hero size={'medium'} color={'link'}>
+        <HeroBody>
+          <Title as={'p'}>Medium hero</Title>
+          <Subtitle as={'p'}>Medium subtitle</Subtitle>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example010Demo() {
+function LargeHeroDemo() {
   return (
     <>
-      <ui.Hero size={'large'} color={'info'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Large hero</ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Large subtitle</ui.Subtitle>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Hero size={'large'} color={'info'}>
+        <HeroBody>
+          <Title as={'p'}>Large hero</Title>
+          <Subtitle as={'p'}>Large subtitle</Subtitle>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example011Demo() {
+function HalfHeightHeroDemo() {
   return (
     <>
-      <ui.Hero color={'success'} height={'half'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
+      <Hero color={'success'} height={'half'}>
+        <HeroBody>
           <div>
-            <ui.Title as={'p'}>Half height hero</ui.Title>{' '}
-            <ui.Subtitle as={'p'}>Half height subtitle</ui.Subtitle>
-          </div>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+            <Title as={'p'}>Half height hero</Title>
+            <Subtitle as={'p'}>Half height subtitle</Subtitle>
+          </div>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example012Demo() {
+function FullHeightHeroDemo() {
   return (
     <>
-      <ui.Hero color={'danger'} height={'full'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
+      <Hero color={'danger'} height={'full'}>
+        <HeroBody>
           <div>
-            <ui.Title as={'p'}>Fullheight hero</ui.Title>{' '}
-            <ui.Subtitle as={'p'}>Fullheight subtitle</ui.Subtitle>
-          </div>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+            <Title as={'p'}>Fullheight hero</Title>
+            <Subtitle as={'p'}>Fullheight subtitle</Subtitle>
+          </div>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example013Demo() {
+function FullHeightHeroBelowNavbarDemo() {
   return (
     <>
-      <ui.Navbar>
-        {' '}
-        <ui.Container>
-          {' '}
-          <ui.NavbarMenu id={'navMenu'}>
-            {' '}
-            <ui.NavbarStart>
-              {' '}
-              <ui.NavbarItem> Home </ui.NavbarItem>{' '}
-              <ui.NavbarItem> Documentation </ui.NavbarItem>{' '}
-            </ui.NavbarStart>{' '}
-            <ui.NavbarEnd>
-              {' '}
-              <ui.NavbarItem as={'div'}>
-                {' '}
-                <ui.Buttons>
-                  <ui.LinkButton color={'dark'}>Github</ui.LinkButton>{' '}
-                  <ui.LinkButton color={'link'}>Download</ui.LinkButton>
-                </ui.Buttons>{' '}
-              </ui.NavbarItem>{' '}
-            </ui.NavbarEnd>{' '}
-          </ui.NavbarMenu>{' '}
-        </ui.Container>{' '}
-      </ui.Navbar>{' '}
-      <ui.Hero color={'link'} height={'full-with-navbar'}>
-        {' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Title as={'p'}>Fullheight hero with navbar</ui.Title>{' '}
-        </ui.HeroBody>{' '}
-      </ui.Hero>
+      <Navbar>
+        <Container>
+          <NavbarMenu id={'navMenu'}>
+            <NavbarStart>
+              <NavbarItem>Home</NavbarItem>
+              <NavbarItem>Documentation</NavbarItem>
+            </NavbarStart>
+            <NavbarEnd>
+              <NavbarItem as={'div'}>
+                <Buttons>
+                  <LinkButton color={'dark'}>Github</LinkButton>
+                  <LinkButton color={'link'}>Download</LinkButton>
+                </Buttons>
+              </NavbarItem>
+            </NavbarEnd>
+          </NavbarMenu>
+        </Container>
+      </Navbar>
+      <Hero color={'link'} height={'full-with-navbar'}>
+        <HeroBody>
+          <Title as={'p'}>Fullheight hero with navbar</Title>
+        </HeroBody>
+      </Hero>
     </>
   )
 }
 
-function Example014Demo() {
+function MediumThreePartHeroDemo() {
   return (
     <>
-      <ui.Hero color={'primary'} size={'medium'}>
-        {' '}
-        <ui.HeroHead>
-          {' '}
-          <ui.Navbar>
-            {' '}
-            <ui.Container>
-              {' '}
-              <ui.NavbarBrand>
-                {' '}
-                <ui.NavbarItem>
-                  {' '}
+      <Hero color={'primary'} size={'medium'}>
+        <HeroHead>
+          <Navbar>
+            <Container>
+              <NavbarBrand>
+                <NavbarItem>
                   <img
                     src={'./official-assets/bulma-type-white.png'}
                     alt={'Logo'}
-                  />{' '}
-                </ui.NavbarItem>{' '}
-                <ui.NavbarBurger data-target={'navbarMenuHeroA'} as={'span'}>
-                  {' '}
-                  <span /> <span /> <span /> <span />{' '}
-                </ui.NavbarBurger>{' '}
-              </ui.NavbarBrand>{' '}
-              <ui.NavbarMenu id={'navbarMenuHeroA'}>
-                {' '}
-                <ui.NavbarEnd>
-                  {' '}
-                  <ui.NavbarItem active> Home </ui.NavbarItem>{' '}
-                  <ui.NavbarItem> Examples </ui.NavbarItem>{' '}
-                  <ui.NavbarItem> Documentation </ui.NavbarItem>{' '}
-                  <ui.NavbarItem as={'span'}>
-                    {' '}
-                    <ui.LinkButton color={'primary'} inverted>
-                      {' '}
-                      <ui.Icon>
-                        {' '}
-                        <i className={'fab fa-github'} />{' '}
-                      </ui.Icon>{' '}
-                      <span>Download</span>{' '}
-                    </ui.LinkButton>{' '}
-                  </ui.NavbarItem>{' '}
-                </ui.NavbarEnd>{' '}
-              </ui.NavbarMenu>{' '}
-            </ui.Container>{' '}
-          </ui.Navbar>{' '}
-        </ui.HeroHead>{' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Container helpers={{ textAlign: 'center' }}>
-            {' '}
-            <ui.Title as={'p'}>Title</ui.Title>{' '}
-            <ui.Subtitle as={'p'}>Subtitle</ui.Subtitle>{' '}
-          </ui.Container>{' '}
-        </ui.HeroBody>{' '}
-        <ui.HeroFoot>
-          {' '}
-          <ui.Tabs defaultValue={'tab-1'}>
-            <ui.TabsList as={'nav'} listWrapper={<ui.Container />}>
-              <ui.Tab value={'tab-1'} as={'a'}>
+                  />
+                </NavbarItem>
+                <NavbarBurger data-target={'navbarMenuHeroA'} as={'span'}>
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+                </NavbarBurger>
+              </NavbarBrand>
+              <NavbarMenu id={'navbarMenuHeroA'}>
+                <NavbarEnd>
+                  <NavbarItem active>Home</NavbarItem>
+                  <NavbarItem>Examples</NavbarItem>
+                  <NavbarItem>Documentation</NavbarItem>
+                  <NavbarItem as={'span'}>
+                    <LinkButton color={'primary'} inverted>
+                      <Icon>
+                        <i className={'fab fa-github'} />
+                      </Icon>
+                      <span>Download</span>
+                    </LinkButton>
+                  </NavbarItem>
+                </NavbarEnd>
+              </NavbarMenu>
+            </Container>
+          </Navbar>
+        </HeroHead>
+        <HeroBody>
+          <Container helpers={{ textAlign: 'center' }}>
+            <Title as={'p'}>Title</Title>
+            <Subtitle as={'p'}>Subtitle</Subtitle>
+          </Container>
+        </HeroBody>
+        <HeroFoot>
+          <Tabs defaultValue={'tab-1'}>
+            <TabsList as={'nav'} listWrapper={<Container />}>
+              <Tab value={'tab-1'} as={'a'}>
                 Overview
-              </ui.Tab>
-              <ui.Tab value={'tab-2'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-2'} as={'a'}>
                 Modifiers
-              </ui.Tab>
-              <ui.Tab value={'tab-3'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-3'} as={'a'}>
                 Grid
-              </ui.Tab>
-              <ui.Tab value={'tab-4'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-4'} as={'a'}>
                 Elements
-              </ui.Tab>
-              <ui.Tab value={'tab-5'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-5'} as={'a'}>
                 Components
-              </ui.Tab>
-              <ui.Tab value={'tab-6'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-6'} as={'a'}>
                 Layout
-              </ui.Tab>
-            </ui.TabsList>
-          </ui.Tabs>{' '}
-        </ui.HeroFoot>{' '}
-      </ui.Hero>
+              </Tab>
+            </TabsList>
+          </Tabs>
+        </HeroFoot>
+      </Hero>
     </>
   )
 }
 
-function Example015Demo() {
+function LargeThreePartHeroDemo() {
   return (
     <>
-      <ui.Hero color={'info'} size={'large'}>
-        {' '}
-        <ui.HeroHead>
-          {' '}
-          <ui.Navbar>
-            {' '}
-            <ui.Container>
-              {' '}
-              <ui.NavbarBrand>
-                {' '}
-                <ui.NavbarItem>
-                  {' '}
+      <Hero color={'info'} size={'large'}>
+        <HeroHead>
+          <Navbar>
+            <Container>
+              <NavbarBrand>
+                <NavbarItem>
                   <img
                     src={'./official-assets/bulma-type-white.png'}
                     alt={'Logo'}
-                  />{' '}
-                </ui.NavbarItem>{' '}
-                <ui.NavbarBurger data-target={'navbarMenuHeroB'} as={'span'}>
-                  {' '}
-                  <span /> <span /> <span /> <span />{' '}
-                </ui.NavbarBurger>{' '}
-              </ui.NavbarBrand>{' '}
-              <ui.NavbarMenu id={'navbarMenuHeroB'}>
-                {' '}
-                <ui.NavbarEnd>
-                  {' '}
-                  <ui.NavbarItem active> Home </ui.NavbarItem>{' '}
-                  <ui.NavbarItem> Examples </ui.NavbarItem>{' '}
-                  <ui.NavbarItem> Documentation </ui.NavbarItem>{' '}
-                  <ui.NavbarItem as={'span'}>
-                    {' '}
-                    <ui.LinkButton color={'info'} inverted>
-                      {' '}
-                      <ui.Icon>
-                        {' '}
-                        <i className={'fab fa-github'} />{' '}
-                      </ui.Icon>{' '}
-                      <span>Download</span>{' '}
-                    </ui.LinkButton>{' '}
-                  </ui.NavbarItem>{' '}
-                </ui.NavbarEnd>{' '}
-              </ui.NavbarMenu>{' '}
-            </ui.Container>{' '}
-          </ui.Navbar>{' '}
-        </ui.HeroHead>{' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Container helpers={{ textAlign: 'center' }}>
-            {' '}
-            <ui.Title as={'p'}>Title</ui.Title>{' '}
-            <ui.Subtitle as={'p'}>Subtitle</ui.Subtitle>{' '}
-          </ui.Container>{' '}
-        </ui.HeroBody>{' '}
-        <ui.HeroFoot>
-          {' '}
-          <ui.Tabs defaultValue={'tab-1'}>
-            <ui.TabsList
+                  />
+                </NavbarItem>
+                <NavbarBurger data-target={'navbarMenuHeroB'} as={'span'}>
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+                </NavbarBurger>
+              </NavbarBrand>
+              <NavbarMenu id={'navbarMenuHeroB'}>
+                <NavbarEnd>
+                  <NavbarItem active>Home</NavbarItem>
+                  <NavbarItem>Examples</NavbarItem>
+                  <NavbarItem>Documentation</NavbarItem>
+                  <NavbarItem as={'span'}>
+                    <LinkButton color={'info'} inverted>
+                      <Icon>
+                        <i className={'fab fa-github'} />
+                      </Icon>
+                      <span>Download</span>
+                    </LinkButton>
+                  </NavbarItem>
+                </NavbarEnd>
+              </NavbarMenu>
+            </Container>
+          </Navbar>
+        </HeroHead>
+        <HeroBody>
+          <Container helpers={{ textAlign: 'center' }}>
+            <Title as={'p'}>Title</Title>
+            <Subtitle as={'p'}>Subtitle</Subtitle>
+          </Container>
+        </HeroBody>
+        <HeroFoot>
+          <Tabs defaultValue={'tab-1'}>
+            <TabsList
               variant={'boxed'}
               fullWidth
               as={'nav'}
-              listWrapper={<ui.Container />}
+              listWrapper={<Container />}
             >
-              <ui.Tab value={'tab-1'} as={'a'}>
+              <Tab value={'tab-1'} as={'a'}>
                 Overview
-              </ui.Tab>
-              <ui.Tab value={'tab-2'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-2'} as={'a'}>
                 Modifiers
-              </ui.Tab>
-              <ui.Tab value={'tab-3'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-3'} as={'a'}>
                 Grid
-              </ui.Tab>
-              <ui.Tab value={'tab-4'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-4'} as={'a'}>
                 Elements
-              </ui.Tab>
-              <ui.Tab value={'tab-5'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-5'} as={'a'}>
                 Components
-              </ui.Tab>
-              <ui.Tab value={'tab-6'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-6'} as={'a'}>
                 Layout
-              </ui.Tab>
-            </ui.TabsList>
-          </ui.Tabs>{' '}
-        </ui.HeroFoot>{' '}
-      </ui.Hero>
+              </Tab>
+            </TabsList>
+          </Tabs>
+        </HeroFoot>
+      </Hero>
     </>
   )
 }
 
-function Example016Demo() {
+function FullHeightThreePartHeroDemo() {
   return (
     <>
-      <ui.Hero color={'success'} height={'full'}>
-        {' '}
-        <ui.HeroHead>
-          {' '}
-          <ui.Navbar as={'header'}>
-            {' '}
-            <ui.Container>
-              {' '}
-              <ui.NavbarBrand>
-                {' '}
-                <ui.NavbarItem>
-                  {' '}
+      <Hero color={'success'} height={'full'}>
+        <HeroHead>
+          <Navbar as={'header'}>
+            <Container>
+              <NavbarBrand>
+                <NavbarItem>
                   <img
                     src={'./official-assets/bulma-type-white.png'}
                     alt={'Logo'}
-                  />{' '}
-                </ui.NavbarItem>{' '}
-                <ui.NavbarBurger data-target={'navbarMenuHeroC'} as={'span'}>
-                  {' '}
-                  <span /> <span /> <span /> <span />{' '}
-                </ui.NavbarBurger>{' '}
-              </ui.NavbarBrand>{' '}
-              <ui.NavbarMenu id={'navbarMenuHeroC'}>
-                {' '}
-                <ui.NavbarEnd>
-                  {' '}
-                  <ui.NavbarItem active> Home </ui.NavbarItem>{' '}
-                  <ui.NavbarItem> Examples </ui.NavbarItem>{' '}
-                  <ui.NavbarItem> Documentation </ui.NavbarItem>{' '}
-                  <ui.NavbarItem as={'span'}>
-                    {' '}
-                    <ui.LinkButton color={'success'} inverted>
-                      {' '}
-                      <ui.Icon>
-                        {' '}
-                        <i className={'fab fa-github'} />{' '}
-                      </ui.Icon>{' '}
-                      <span>Download</span>{' '}
-                    </ui.LinkButton>{' '}
-                  </ui.NavbarItem>{' '}
-                </ui.NavbarEnd>{' '}
-              </ui.NavbarMenu>{' '}
-            </ui.Container>{' '}
-          </ui.Navbar>{' '}
-        </ui.HeroHead>{' '}
-        <ui.HeroBody>
-          {' '}
-          <ui.Container helpers={{ textAlign: 'center' }}>
-            {' '}
-            <ui.Title as={'p'}>Title</ui.Title>{' '}
-            <ui.Subtitle as={'p'}>Subtitle</ui.Subtitle>{' '}
-          </ui.Container>{' '}
-        </ui.HeroBody>{' '}
-        <ui.HeroFoot>
-          {' '}
-          <ui.Tabs defaultValue={'tab-1'}>
-            <ui.TabsList
+                  />
+                </NavbarItem>
+                <NavbarBurger data-target={'navbarMenuHeroC'} as={'span'}>
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+                </NavbarBurger>
+              </NavbarBrand>
+              <NavbarMenu id={'navbarMenuHeroC'}>
+                <NavbarEnd>
+                  <NavbarItem active>Home</NavbarItem>
+                  <NavbarItem>Examples</NavbarItem>
+                  <NavbarItem>Documentation</NavbarItem>
+                  <NavbarItem as={'span'}>
+                    <LinkButton color={'success'} inverted>
+                      <Icon>
+                        <i className={'fab fa-github'} />
+                      </Icon>
+                      <span>Download</span>
+                    </LinkButton>
+                  </NavbarItem>
+                </NavbarEnd>
+              </NavbarMenu>
+            </Container>
+          </Navbar>
+        </HeroHead>
+        <HeroBody>
+          <Container helpers={{ textAlign: 'center' }}>
+            <Title as={'p'}>Title</Title>
+            <Subtitle as={'p'}>Subtitle</Subtitle>
+          </Container>
+        </HeroBody>
+        <HeroFoot>
+          <Tabs defaultValue={'tab-1'}>
+            <TabsList
               variant={'boxed'}
               fullWidth
               as={'nav'}
-              listWrapper={<ui.Container />}
+              listWrapper={<Container />}
             >
-              <ui.Tab value={'tab-1'} as={'a'}>
+              <Tab value={'tab-1'} as={'a'}>
                 Overview
-              </ui.Tab>
-              <ui.Tab value={'tab-2'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-2'} as={'a'}>
                 Modifiers
-              </ui.Tab>
-              <ui.Tab value={'tab-3'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-3'} as={'a'}>
                 Grid
-              </ui.Tab>
-              <ui.Tab value={'tab-4'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-4'} as={'a'}>
                 Elements
-              </ui.Tab>
-              <ui.Tab value={'tab-5'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-5'} as={'a'}>
                 Components
-              </ui.Tab>
-              <ui.Tab value={'tab-6'} as={'a'}>
+              </Tab>
+              <Tab value={'tab-6'} as={'a'}>
                 Layout
-              </ui.Tab>
-            </ui.TabsList>
-          </ui.Tabs>{' '}
-        </ui.HeroFoot>{' '}
-      </ui.Hero>
+              </Tab>
+            </TabsList>
+          </Tabs>
+        </HeroFoot>
+      </Hero>
     </>
   )
 }
 
-export const Example001 = {
+export const DefaultHeroStory = {
   name: 'Default hero',
   parameters: {
     official: { id: 'layout-hero/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Hero>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Hero title</ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Hero subtitle</ui.Subtitle>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction DefaultHeroDemo() {\n  return (\n    <>\n      <Hero>\n        <HeroBody>\n          <Title as={'p'}>Hero title</Title>\n          <Subtitle as={'p'}>Hero subtitle</Subtitle>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultHeroDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const LinkHeroStory = {
   name: 'Link hero',
   parameters: {
     official: { id: 'layout-hero/colors/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Hero color={'link'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Link hero</ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Link subtitle</ui.Subtitle>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction LinkHeroDemo() {\n  return (\n    <>\n      <Hero color={'link'}>\n        <HeroBody>\n          <Title as={'p'}>Link hero</Title>\n          <Subtitle as={'p'}>Link subtitle</Subtitle>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: LinkHeroDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const PrimaryHeroStory = {
   name: 'Primary hero',
   parameters: {
     official: { id: 'layout-hero/colors/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Hero color={'primary'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Primary hero</ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Primary subtitle</ui.Subtitle>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction PrimaryHeroDemo() {\n  return (\n    <>\n      <Hero color={'primary'}>\n        <HeroBody>\n          <Title as={'p'}>Primary hero</Title>\n          <Subtitle as={'p'}>Primary subtitle</Subtitle>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: PrimaryHeroDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const InfoHeroStory = {
   name: 'Info hero',
   parameters: {
     official: { id: 'layout-hero/colors/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Hero color={'info'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Info hero</ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Info subtitle</ui.Subtitle>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction InfoHeroDemo() {\n  return (\n    <>\n      <Hero color={'info'}>\n        <HeroBody>\n          <Title as={'p'}>Info hero</Title>\n          <Subtitle as={'p'}>Info subtitle</Subtitle>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: InfoHeroDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const SuccessHeroStory = {
   name: 'Success hero',
   parameters: {
     official: { id: 'layout-hero/colors/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Hero color={'success'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Success hero</ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Success subtitle</ui.Subtitle>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction SuccessHeroDemo() {\n  return (\n    <>\n      <Hero color={'success'}>\n        <HeroBody>\n          <Title as={'p'}>Success hero</Title>\n          <Subtitle as={'p'}>Success subtitle</Subtitle>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: SuccessHeroDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const WarningHeroStory = {
   name: 'Warning hero',
   parameters: {
     official: { id: 'layout-hero/colors/005' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Hero color={'warning'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Warning hero</ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Warning subtitle</ui.Subtitle>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction WarningHeroDemo() {\n  return (\n    <>\n      <Hero color={'warning'}>\n        <HeroBody>\n          <Title as={'p'}>Warning hero</Title>\n          <Subtitle as={'p'}>Warning subtitle</Subtitle>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: WarningHeroDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const DangerHeroStory = {
   name: 'Danger hero',
   parameters: {
     official: { id: 'layout-hero/colors/006' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Hero color={'danger'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Danger hero</ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Danger subtitle</ui.Subtitle>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction DangerHeroDemo() {\n  return (\n    <>\n      <Hero color={'danger'}>\n        <HeroBody>\n          <Title as={'p'}>Danger hero</Title>\n          <Subtitle as={'p'}>Danger subtitle</Subtitle>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: DangerHeroDemo,
 } satisfies StoryObj
 
-export const Example008 = {
+export const SmallHeroStory = {
   name: 'Small hero',
   parameters: {
     official: { id: 'layout-hero/sizes/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Hero size={'small'} color={'primary'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Small hero</ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Small subtitle</ui.Subtitle>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction SmallHeroDemo() {\n  return (\n    <>\n      <Hero size={'small'} color={'primary'}>\n        <HeroBody>\n          <Title as={'p'}>Small hero</Title>\n          <Subtitle as={'p'}>Small subtitle</Subtitle>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example008Demo,
+  render: SmallHeroDemo,
 } satisfies StoryObj
 
-export const Example009 = {
+export const MediumHeroStory = {
   name: 'Medium hero',
   parameters: {
     official: { id: 'layout-hero/sizes/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Hero size={'medium'} color={'link'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Medium hero</ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Medium subtitle</ui.Subtitle>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction MediumHeroDemo() {\n  return (\n    <>\n      <Hero size={'medium'} color={'link'}>\n        <HeroBody>\n          <Title as={'p'}>Medium hero</Title>\n          <Subtitle as={'p'}>Medium subtitle</Subtitle>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example009Demo,
+  render: MediumHeroDemo,
 } satisfies StoryObj
 
-export const Example010 = {
+export const LargeHeroStory = {
   name: 'Large hero',
   parameters: {
     official: { id: 'layout-hero/sizes/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Hero size={'large'} color={'info'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Large hero</ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Large subtitle</ui.Subtitle>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction LargeHeroDemo() {\n  return (\n    <>\n      <Hero size={'large'} color={'info'}>\n        <HeroBody>\n          <Title as={'p'}>Large hero</Title>\n          <Subtitle as={'p'}>Large subtitle</Subtitle>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example010Demo,
+  render: LargeHeroDemo,
 } satisfies StoryObj
 
-export const Example011 = {
+export const HalfHeightHeroStory = {
   name: 'Half-height hero',
   parameters: {
     official: { id: 'layout-hero/sizes/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Hero color={'success'} height={'half'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <div>\n            <ui.Title as={'p'}>Half height hero</ui.Title>{' '}\n            <ui.Subtitle as={'p'}>Half height subtitle</ui.Subtitle>\n          </div>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction HalfHeightHeroDemo() {\n  return (\n    <>\n      <Hero color={'success'} height={'half'}>\n        <HeroBody>\n          <div>\n            <Title as={'p'}>Half height hero</Title>\n            <Subtitle as={'p'}>Half height subtitle</Subtitle>\n          </div>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example011Demo,
+  render: HalfHeightHeroDemo,
 } satisfies StoryObj
 
-export const Example012 = {
+export const FullHeightHeroStory = {
   name: 'Full-height hero',
   parameters: {
     official: { id: 'layout-hero/sizes/005' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Hero color={'danger'} height={'full'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <div>\n            <ui.Title as={'p'}>Fullheight hero</ui.Title>{' '}\n            <ui.Subtitle as={'p'}>Fullheight subtitle</ui.Subtitle>\n          </div>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import { Hero, HeroBody, Subtitle, Title } from '@seagreenio/react-bulma'\n\nfunction FullHeightHeroDemo() {\n  return (\n    <>\n      <Hero color={'danger'} height={'full'}>\n        <HeroBody>\n          <div>\n            <Title as={'p'}>Fullheight hero</Title>\n            <Subtitle as={'p'}>Fullheight subtitle</Subtitle>\n          </div>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example012Demo,
+  render: FullHeightHeroDemo,
 } satisfies StoryObj
 
-export const Example013 = {
+export const FullHeightHeroBelowNavbarStory = {
   name: 'Full-height hero below navbar',
   parameters: {
     official: { id: 'layout-hero/fullheight-with-navbar/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Navbar>\n        {' '}\n        <ui.Container>\n          {' '}\n          <ui.NavbarMenu id={'navMenu'}>\n            {' '}\n            <ui.NavbarStart>\n              {' '}\n              <ui.NavbarItem> Home </ui.NavbarItem>{' '}\n              <ui.NavbarItem> Documentation </ui.NavbarItem>{' '}\n            </ui.NavbarStart>{' '}\n            <ui.NavbarEnd>\n              {' '}\n              <ui.NavbarItem as={'div'}>\n                {' '}\n                <ui.Buttons>\n                  <ui.LinkButton color={'dark'}>Github</ui.LinkButton>{' '}\n                  <ui.LinkButton color={'link'}>Download</ui.LinkButton>\n                </ui.Buttons>{' '}\n              </ui.NavbarItem>{' '}\n            </ui.NavbarEnd>{' '}\n          </ui.NavbarMenu>{' '}\n        </ui.Container>{' '}\n      </ui.Navbar>{' '}\n      <ui.Hero color={'link'} height={'full-with-navbar'}>\n        {' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Title as={'p'}>Fullheight hero with navbar</ui.Title>{' '}\n        </ui.HeroBody>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import {\n  Buttons,\n  Container,\n  Hero,\n  HeroBody,\n  LinkButton,\n  Navbar,\n  NavbarEnd,\n  NavbarItem,\n  NavbarMenu,\n  NavbarStart,\n  Title,\n} from '@seagreenio/react-bulma'\n\nfunction FullHeightHeroBelowNavbarDemo() {\n  return (\n    <>\n      <Navbar>\n        <Container>\n          <NavbarMenu id={'navMenu'}>\n            <NavbarStart>\n              <NavbarItem>Home</NavbarItem>\n              <NavbarItem>Documentation</NavbarItem>\n            </NavbarStart>\n            <NavbarEnd>\n              <NavbarItem as={'div'}>\n                <Buttons>\n                  <LinkButton color={'dark'}>Github</LinkButton>\n                  <LinkButton color={'link'}>Download</LinkButton>\n                </Buttons>\n              </NavbarItem>\n            </NavbarEnd>\n          </NavbarMenu>\n        </Container>\n      </Navbar>\n      <Hero color={'link'} height={'full-with-navbar'}>\n        <HeroBody>\n          <Title as={'p'}>Fullheight hero with navbar</Title>\n        </HeroBody>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example013Demo,
+  render: FullHeightHeroBelowNavbarDemo,
 } satisfies StoryObj
 
-export const Example014 = {
+export const MediumThreePartHeroStory = {
   name: 'Medium three-part hero',
   parameters: {
     official: { id: 'layout-hero/fullheight-hero-in-3-parts/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Hero color={'primary'} size={'medium'}>\n        {' '}\n        <ui.HeroHead>\n          {' '}\n          <ui.Navbar>\n            {' '}\n            <ui.Container>\n              {' '}\n              <ui.NavbarBrand>\n                {' '}\n                <ui.NavbarItem>\n                  {' '}\n                  <img\n                    src={'./official-assets/bulma-type-white.png'}\n                    alt={'Logo'}\n                  />{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarBurger data-target={'navbarMenuHeroA'} as={'span'}>\n                  {' '}\n                  <span /> <span /> <span /> <span />{' '}\n                </ui.NavbarBurger>{' '}\n              </ui.NavbarBrand>{' '}\n              <ui.NavbarMenu id={'navbarMenuHeroA'}>\n                {' '}\n                <ui.NavbarEnd>\n                  {' '}\n                  <ui.NavbarItem active> Home </ui.NavbarItem>{' '}\n                  <ui.NavbarItem> Examples </ui.NavbarItem>{' '}\n                  <ui.NavbarItem> Documentation </ui.NavbarItem>{' '}\n                  <ui.NavbarItem as={'span'}>\n                    {' '}\n                    <ui.LinkButton color={'primary'} inverted>\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-github'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.NavbarItem>{' '}\n                </ui.NavbarEnd>{' '}\n              </ui.NavbarMenu>{' '}\n            </ui.Container>{' '}\n          </ui.Navbar>{' '}\n        </ui.HeroHead>{' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Container helpers={{ textAlign: 'center' }}>\n            {' '}\n            <ui.Title as={'p'}>Title</ui.Title>{' '}\n            <ui.Subtitle as={'p'}>Subtitle</ui.Subtitle>{' '}\n          </ui.Container>{' '}\n        </ui.HeroBody>{' '}\n        <ui.HeroFoot>\n          {' '}\n          <ui.Tabs defaultValue={'tab-1'}>\n            <ui.TabsList as={'nav'} listWrapper={<ui.Container />}>\n              <ui.Tab value={'tab-1'} as={'a'}>\n                Overview\n              </ui.Tab>\n              <ui.Tab value={'tab-2'} as={'a'}>\n                Modifiers\n              </ui.Tab>\n              <ui.Tab value={'tab-3'} as={'a'}>\n                Grid\n              </ui.Tab>\n              <ui.Tab value={'tab-4'} as={'a'}>\n                Elements\n              </ui.Tab>\n              <ui.Tab value={'tab-5'} as={'a'}>\n                Components\n              </ui.Tab>\n              <ui.Tab value={'tab-6'} as={'a'}>\n                Layout\n              </ui.Tab>\n            </ui.TabsList>\n          </ui.Tabs>{' '}\n        </ui.HeroFoot>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import {\n  Container,\n  Hero,\n  HeroBody,\n  HeroFoot,\n  HeroHead,\n  Icon,\n  LinkButton,\n  Navbar,\n  NavbarBrand,\n  NavbarBurger,\n  NavbarEnd,\n  NavbarItem,\n  NavbarMenu,\n  Subtitle,\n  Tab,\n  Tabs,\n  TabsList,\n  Title,\n} from '@seagreenio/react-bulma'\n\nfunction MediumThreePartHeroDemo() {\n  return (\n    <>\n      <Hero color={'primary'} size={'medium'}>\n        <HeroHead>\n          <Navbar>\n            <Container>\n              <NavbarBrand>\n                <NavbarItem>\n                  <img\n                    src={'./official-assets/bulma-type-white.png'}\n                    alt={'Logo'}\n                  />\n                </NavbarItem>\n                <NavbarBurger data-target={'navbarMenuHeroA'} as={'span'}>\n                  <span />\n                  <span />\n                  <span />\n                  <span />\n                </NavbarBurger>\n              </NavbarBrand>\n              <NavbarMenu id={'navbarMenuHeroA'}>\n                <NavbarEnd>\n                  <NavbarItem active>Home</NavbarItem>\n                  <NavbarItem>Examples</NavbarItem>\n                  <NavbarItem>Documentation</NavbarItem>\n                  <NavbarItem as={'span'}>\n                    <LinkButton color={'primary'} inverted>\n                      <Icon>\n                        <i className={'fab fa-github'} />\n                      </Icon>\n                      <span>Download</span>\n                    </LinkButton>\n                  </NavbarItem>\n                </NavbarEnd>\n              </NavbarMenu>\n            </Container>\n          </Navbar>\n        </HeroHead>\n        <HeroBody>\n          <Container helpers={{ textAlign: 'center' }}>\n            <Title as={'p'}>Title</Title>\n            <Subtitle as={'p'}>Subtitle</Subtitle>\n          </Container>\n        </HeroBody>\n        <HeroFoot>\n          <Tabs defaultValue={'tab-1'}>\n            <TabsList as={'nav'} listWrapper={<Container />}>\n              <Tab value={'tab-1'} as={'a'}>\n                Overview\n              </Tab>\n              <Tab value={'tab-2'} as={'a'}>\n                Modifiers\n              </Tab>\n              <Tab value={'tab-3'} as={'a'}>\n                Grid\n              </Tab>\n              <Tab value={'tab-4'} as={'a'}>\n                Elements\n              </Tab>\n              <Tab value={'tab-5'} as={'a'}>\n                Components\n              </Tab>\n              <Tab value={'tab-6'} as={'a'}>\n                Layout\n              </Tab>\n            </TabsList>\n          </Tabs>\n        </HeroFoot>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example014Demo,
+  render: MediumThreePartHeroDemo,
 } satisfies StoryObj
 
-export const Example015 = {
+export const LargeThreePartHeroStory = {
   name: 'Large three-part hero',
   parameters: {
     official: { id: 'layout-hero/fullheight-hero-in-3-parts/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Hero color={'info'} size={'large'}>\n        {' '}\n        <ui.HeroHead>\n          {' '}\n          <ui.Navbar>\n            {' '}\n            <ui.Container>\n              {' '}\n              <ui.NavbarBrand>\n                {' '}\n                <ui.NavbarItem>\n                  {' '}\n                  <img\n                    src={'./official-assets/bulma-type-white.png'}\n                    alt={'Logo'}\n                  />{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarBurger data-target={'navbarMenuHeroB'} as={'span'}>\n                  {' '}\n                  <span /> <span /> <span /> <span />{' '}\n                </ui.NavbarBurger>{' '}\n              </ui.NavbarBrand>{' '}\n              <ui.NavbarMenu id={'navbarMenuHeroB'}>\n                {' '}\n                <ui.NavbarEnd>\n                  {' '}\n                  <ui.NavbarItem active> Home </ui.NavbarItem>{' '}\n                  <ui.NavbarItem> Examples </ui.NavbarItem>{' '}\n                  <ui.NavbarItem> Documentation </ui.NavbarItem>{' '}\n                  <ui.NavbarItem as={'span'}>\n                    {' '}\n                    <ui.LinkButton color={'info'} inverted>\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-github'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.NavbarItem>{' '}\n                </ui.NavbarEnd>{' '}\n              </ui.NavbarMenu>{' '}\n            </ui.Container>{' '}\n          </ui.Navbar>{' '}\n        </ui.HeroHead>{' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Container helpers={{ textAlign: 'center' }}>\n            {' '}\n            <ui.Title as={'p'}>Title</ui.Title>{' '}\n            <ui.Subtitle as={'p'}>Subtitle</ui.Subtitle>{' '}\n          </ui.Container>{' '}\n        </ui.HeroBody>{' '}\n        <ui.HeroFoot>\n          {' '}\n          <ui.Tabs defaultValue={'tab-1'}>\n            <ui.TabsList\n              variant={'boxed'}\n              fullWidth\n              as={'nav'}\n              listWrapper={<ui.Container />}\n            >\n              <ui.Tab value={'tab-1'} as={'a'}>\n                Overview\n              </ui.Tab>\n              <ui.Tab value={'tab-2'} as={'a'}>\n                Modifiers\n              </ui.Tab>\n              <ui.Tab value={'tab-3'} as={'a'}>\n                Grid\n              </ui.Tab>\n              <ui.Tab value={'tab-4'} as={'a'}>\n                Elements\n              </ui.Tab>\n              <ui.Tab value={'tab-5'} as={'a'}>\n                Components\n              </ui.Tab>\n              <ui.Tab value={'tab-6'} as={'a'}>\n                Layout\n              </ui.Tab>\n            </ui.TabsList>\n          </ui.Tabs>{' '}\n        </ui.HeroFoot>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import {\n  Container,\n  Hero,\n  HeroBody,\n  HeroFoot,\n  HeroHead,\n  Icon,\n  LinkButton,\n  Navbar,\n  NavbarBrand,\n  NavbarBurger,\n  NavbarEnd,\n  NavbarItem,\n  NavbarMenu,\n  Subtitle,\n  Tab,\n  Tabs,\n  TabsList,\n  Title,\n} from '@seagreenio/react-bulma'\n\nfunction LargeThreePartHeroDemo() {\n  return (\n    <>\n      <Hero color={'info'} size={'large'}>\n        <HeroHead>\n          <Navbar>\n            <Container>\n              <NavbarBrand>\n                <NavbarItem>\n                  <img\n                    src={'./official-assets/bulma-type-white.png'}\n                    alt={'Logo'}\n                  />\n                </NavbarItem>\n                <NavbarBurger data-target={'navbarMenuHeroB'} as={'span'}>\n                  <span />\n                  <span />\n                  <span />\n                  <span />\n                </NavbarBurger>\n              </NavbarBrand>\n              <NavbarMenu id={'navbarMenuHeroB'}>\n                <NavbarEnd>\n                  <NavbarItem active>Home</NavbarItem>\n                  <NavbarItem>Examples</NavbarItem>\n                  <NavbarItem>Documentation</NavbarItem>\n                  <NavbarItem as={'span'}>\n                    <LinkButton color={'info'} inverted>\n                      <Icon>\n                        <i className={'fab fa-github'} />\n                      </Icon>\n                      <span>Download</span>\n                    </LinkButton>\n                  </NavbarItem>\n                </NavbarEnd>\n              </NavbarMenu>\n            </Container>\n          </Navbar>\n        </HeroHead>\n        <HeroBody>\n          <Container helpers={{ textAlign: 'center' }}>\n            <Title as={'p'}>Title</Title>\n            <Subtitle as={'p'}>Subtitle</Subtitle>\n          </Container>\n        </HeroBody>\n        <HeroFoot>\n          <Tabs defaultValue={'tab-1'}>\n            <TabsList\n              variant={'boxed'}\n              fullWidth\n              as={'nav'}\n              listWrapper={<Container />}\n            >\n              <Tab value={'tab-1'} as={'a'}>\n                Overview\n              </Tab>\n              <Tab value={'tab-2'} as={'a'}>\n                Modifiers\n              </Tab>\n              <Tab value={'tab-3'} as={'a'}>\n                Grid\n              </Tab>\n              <Tab value={'tab-4'} as={'a'}>\n                Elements\n              </Tab>\n              <Tab value={'tab-5'} as={'a'}>\n                Components\n              </Tab>\n              <Tab value={'tab-6'} as={'a'}>\n                Layout\n              </Tab>\n            </TabsList>\n          </Tabs>\n        </HeroFoot>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example015Demo,
+  render: LargeThreePartHeroDemo,
 } satisfies StoryObj
 
-export const Example016 = {
+export const FullHeightThreePartHeroStory = {
   name: 'Full-height three-part hero',
   parameters: {
     official: { id: 'layout-hero/fullheight-hero-in-3-parts/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <ui.Hero color={'success'} height={'full'}>\n        {' '}\n        <ui.HeroHead>\n          {' '}\n          <ui.Navbar as={'header'}>\n            {' '}\n            <ui.Container>\n              {' '}\n              <ui.NavbarBrand>\n                {' '}\n                <ui.NavbarItem>\n                  {' '}\n                  <img\n                    src={'./official-assets/bulma-type-white.png'}\n                    alt={'Logo'}\n                  />{' '}\n                </ui.NavbarItem>{' '}\n                <ui.NavbarBurger data-target={'navbarMenuHeroC'} as={'span'}>\n                  {' '}\n                  <span /> <span /> <span /> <span />{' '}\n                </ui.NavbarBurger>{' '}\n              </ui.NavbarBrand>{' '}\n              <ui.NavbarMenu id={'navbarMenuHeroC'}>\n                {' '}\n                <ui.NavbarEnd>\n                  {' '}\n                  <ui.NavbarItem active> Home </ui.NavbarItem>{' '}\n                  <ui.NavbarItem> Examples </ui.NavbarItem>{' '}\n                  <ui.NavbarItem> Documentation </ui.NavbarItem>{' '}\n                  <ui.NavbarItem as={'span'}>\n                    {' '}\n                    <ui.LinkButton color={'success'} inverted>\n                      {' '}\n                      <ui.Icon>\n                        {' '}\n                        <i className={'fab fa-github'} />{' '}\n                      </ui.Icon>{' '}\n                      <span>Download</span>{' '}\n                    </ui.LinkButton>{' '}\n                  </ui.NavbarItem>{' '}\n                </ui.NavbarEnd>{' '}\n              </ui.NavbarMenu>{' '}\n            </ui.Container>{' '}\n          </ui.Navbar>{' '}\n        </ui.HeroHead>{' '}\n        <ui.HeroBody>\n          {' '}\n          <ui.Container helpers={{ textAlign: 'center' }}>\n            {' '}\n            <ui.Title as={'p'}>Title</ui.Title>{' '}\n            <ui.Subtitle as={'p'}>Subtitle</ui.Subtitle>{' '}\n          </ui.Container>{' '}\n        </ui.HeroBody>{' '}\n        <ui.HeroFoot>\n          {' '}\n          <ui.Tabs defaultValue={'tab-1'}>\n            <ui.TabsList\n              variant={'boxed'}\n              fullWidth\n              as={'nav'}\n              listWrapper={<ui.Container />}\n            >\n              <ui.Tab value={'tab-1'} as={'a'}>\n                Overview\n              </ui.Tab>\n              <ui.Tab value={'tab-2'} as={'a'}>\n                Modifiers\n              </ui.Tab>\n              <ui.Tab value={'tab-3'} as={'a'}>\n                Grid\n              </ui.Tab>\n              <ui.Tab value={'tab-4'} as={'a'}>\n                Elements\n              </ui.Tab>\n              <ui.Tab value={'tab-5'} as={'a'}>\n                Components\n              </ui.Tab>\n              <ui.Tab value={'tab-6'} as={'a'}>\n                Layout\n              </ui.Tab>\n            </ui.TabsList>\n          </ui.Tabs>{' '}\n        </ui.HeroFoot>{' '}\n      </ui.Hero>\n    </>\n  )\n}\n",
+        code: "import {\n  Container,\n  Hero,\n  HeroBody,\n  HeroFoot,\n  HeroHead,\n  Icon,\n  LinkButton,\n  Navbar,\n  NavbarBrand,\n  NavbarBurger,\n  NavbarEnd,\n  NavbarItem,\n  NavbarMenu,\n  Subtitle,\n  Tab,\n  Tabs,\n  TabsList,\n  Title,\n} from '@seagreenio/react-bulma'\n\nfunction FullHeightThreePartHeroDemo() {\n  return (\n    <>\n      <Hero color={'success'} height={'full'}>\n        <HeroHead>\n          <Navbar as={'header'}>\n            <Container>\n              <NavbarBrand>\n                <NavbarItem>\n                  <img\n                    src={'./official-assets/bulma-type-white.png'}\n                    alt={'Logo'}\n                  />\n                </NavbarItem>\n                <NavbarBurger data-target={'navbarMenuHeroC'} as={'span'}>\n                  <span />\n                  <span />\n                  <span />\n                  <span />\n                </NavbarBurger>\n              </NavbarBrand>\n              <NavbarMenu id={'navbarMenuHeroC'}>\n                <NavbarEnd>\n                  <NavbarItem active>Home</NavbarItem>\n                  <NavbarItem>Examples</NavbarItem>\n                  <NavbarItem>Documentation</NavbarItem>\n                  <NavbarItem as={'span'}>\n                    <LinkButton color={'success'} inverted>\n                      <Icon>\n                        <i className={'fab fa-github'} />\n                      </Icon>\n                      <span>Download</span>\n                    </LinkButton>\n                  </NavbarItem>\n                </NavbarEnd>\n              </NavbarMenu>\n            </Container>\n          </Navbar>\n        </HeroHead>\n        <HeroBody>\n          <Container helpers={{ textAlign: 'center' }}>\n            <Title as={'p'}>Title</Title>\n            <Subtitle as={'p'}>Subtitle</Subtitle>\n          </Container>\n        </HeroBody>\n        <HeroFoot>\n          <Tabs defaultValue={'tab-1'}>\n            <TabsList\n              variant={'boxed'}\n              fullWidth\n              as={'nav'}\n              listWrapper={<Container />}\n            >\n              <Tab value={'tab-1'} as={'a'}>\n                Overview\n              </Tab>\n              <Tab value={'tab-2'} as={'a'}>\n                Modifiers\n              </Tab>\n              <Tab value={'tab-3'} as={'a'}>\n                Grid\n              </Tab>\n              <Tab value={'tab-4'} as={'a'}>\n                Elements\n              </Tab>\n              <Tab value={'tab-5'} as={'a'}>\n                Components\n              </Tab>\n              <Tab value={'tab-6'} as={'a'}>\n                Layout\n              </Tab>\n            </TabsList>\n          </Tabs>\n        </HeroFoot>\n      </Hero>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example016Demo,
+  render: FullHeightThreePartHeroDemo,
 } satisfies StoryObj

@@ -9,6 +9,21 @@
   min-height: 0;
 }
 
+.official-root:has([data-official-preview] > .rb-dropdown) {
+  display: grid;
+  place-items: center;
+}
+
 [data-official-preview] {
   display: flow-root;
+}
+
+.sbdocs-preview:has(.official-root .rb-modal),
+.docs-story:has(.official-root .rb-modal) {
+  overflow: visible;
+}
+
+/* Storybook's zoom transform otherwise contains fixed-position modals. */
+.docs-story > :has(> .innerZoomElementWrapper):has(.official-root .rb-modal) {
+  transform: none;
 }

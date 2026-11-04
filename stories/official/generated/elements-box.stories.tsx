@@ -1,7 +1,23 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import {
+  Box,
+  Button,
+  Content,
+  Control,
+  Field,
+  Icon,
+  Image,
+  Input,
+  Label,
+  Level,
+  LevelItem,
+  LevelLeft,
+  Media,
+  MediaContent,
+  MediaLeft,
+} from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,28 +39,18 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="elements-box" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Box'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'A white '}
           <strong data-official-prose="">{'box'}</strong>
           {' to contain other elements'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The '}
             <code data-official-prose="">{'box'}</code>
@@ -52,21 +58,11 @@ function OfficialDocs() {
               ' element is a simple container with a white background, some padding, and a box shadow.'
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-box/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={DefaultBoxStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {
               'Because it acts as a container, you can easily include other components, like '
@@ -74,519 +70,143 @@ function OfficialDocs() {
             <strong data-official-prose="">{'form elements'}</strong>
             {':'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-box/basic/002">
-          <Canvas of={Example002} />
+          <Canvas of={SignInFormStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'Or a '}
             <code data-official-prose="">{'media'}</code>
             {' object:'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-box/basic/003">
-          <Canvas of={Example003} />
+          <Canvas of={MediaObjectStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$box-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-box-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$box-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-box-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$box-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-box-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius-large)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$box-shadow'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-box-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$box-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-box-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1.25rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$box-link-hover-shadow'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-box-link-hover-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          '0 0.5em 1em -0.125em hsla(\n  var(--bulma-scheme-h),\n  var(--bulma-scheme-s),\n  var(--bulma-scheme-invert-l),\n  0.1\n),\n0 0 0 1px var(--bulma-link)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$box-link-active-shadow'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-box-link-active-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          'inset 0 1px 2px hsla(\n  var(--bulma-scheme-h),\n  var(--bulma-scheme-s),\n  var(--bulma-scheme-invert-l),\n  0.2\n),\n0 0 0 1px var(--bulma-link)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultBoxDemo() {
   return (
     <>
-      <ui.Box>I'm in a box.</ui.Box>
+      <Box>I'm in a box.</Box>
     </>
   )
 }
 
-function Example002Demo() {
+function SignInFormDemo() {
   return (
     <>
-      <ui.Box as={'form'}>
-        {' '}
-        <ui.Field>
-          {' '}
-          <ui.Label>Email</ui.Label>{' '}
-          <ui.Control>
-            {' '}
-            <ui.Input
-              type={'email'}
-              placeholder={'e.g. alex@example.com'}
-            />{' '}
-          </ui.Control>{' '}
-        </ui.Field>{' '}
-        <ui.Field>
-          {' '}
-          <ui.Label>Password</ui.Label>{' '}
-          <ui.Control>
-            {' '}
-            <ui.Input type={'password'} placeholder={'********'} />{' '}
-          </ui.Control>{' '}
-        </ui.Field>{' '}
-        <ui.Button color={'primary'}>Sign in</ui.Button>{' '}
-      </ui.Box>
+      <Box as={'form'}>
+        <Field>
+          <Label>Email</Label>
+          <Control>
+            <Input type={'email'} placeholder={'e.g. alex@example.com'} />
+          </Control>
+        </Field>
+        <Field>
+          <Label>Password</Label>
+          <Control>
+            <Input type={'password'} placeholder={'********'} />
+          </Control>
+        </Field>
+        <Button color={'primary'}>Sign in</Button>
+      </Box>
     </>
   )
 }
 
-function Example003Demo() {
+function MediaObjectDemo() {
   return (
     <>
-      <ui.Box>
-        {' '}
-        <ui.Media>
-          {' '}
-          <ui.MediaLeft>
-            {' '}
-            <ui.Image
+      <Box>
+        <Media>
+          <MediaLeft>
+            <Image
               size={64}
               src={'./official-assets/128x128.png'}
               alt={'Image'}
-            />{' '}
-          </ui.MediaLeft>{' '}
-          <ui.MediaContent>
-            {' '}
-            <ui.Content>
-              {' '}
+            />
+          </MediaLeft>
+          <MediaContent>
+            <Content>
               <p>
                 <strong>John Smith</strong> <small>@johnsmith</small>{' '}
                 <small>31m</small> <br /> Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Aenean efficitur sit amet massa
                 fringilla egestas. Nullam condimentum luctus turpis.
-              </p>{' '}
-            </ui.Content>{' '}
-            <ui.Level mobile>
-              {' '}
-              <ui.LevelLeft>
-                {' '}
-                <ui.LevelItem aria-label={'reply'} as={'a'}>
-                  {' '}
-                  <ui.Icon size={'small'}>
-                    {' '}
-                    <i aria-hidden={'true'} className={'fas fa-reply'} />{' '}
-                  </ui.Icon>{' '}
-                </ui.LevelItem>{' '}
-                <ui.LevelItem aria-label={'retweet'} as={'a'}>
-                  {' '}
-                  <ui.Icon size={'small'}>
-                    {' '}
-                    <i aria-hidden={'true'} className={'fas fa-retweet'} />{' '}
-                  </ui.Icon>{' '}
-                </ui.LevelItem>{' '}
-                <ui.LevelItem aria-label={'like'} as={'a'}>
-                  {' '}
-                  <ui.Icon size={'small'}>
-                    {' '}
-                    <i aria-hidden={'true'} className={'fas fa-heart'} />{' '}
-                  </ui.Icon>{' '}
-                </ui.LevelItem>{' '}
-              </ui.LevelLeft>{' '}
-            </ui.Level>{' '}
-          </ui.MediaContent>{' '}
-        </ui.Media>{' '}
-      </ui.Box>
+              </p>
+            </Content>
+            <Level mobile>
+              <LevelLeft>
+                <LevelItem aria-label={'reply'} as={'a'}>
+                  <Icon size={'small'}>
+                    <i aria-hidden={'true'} className={'fas fa-reply'} />
+                  </Icon>
+                </LevelItem>
+                <LevelItem aria-label={'retweet'} as={'a'}>
+                  <Icon size={'small'}>
+                    <i aria-hidden={'true'} className={'fas fa-retweet'} />
+                  </Icon>
+                </LevelItem>
+                <LevelItem aria-label={'like'} as={'a'}>
+                  <Icon size={'small'}>
+                    <i aria-hidden={'true'} className={'fas fa-heart'} />
+                  </Icon>
+                </LevelItem>
+              </LevelLeft>
+            </Level>
+          </MediaContent>
+        </Media>
+      </Box>
     </>
   )
 }
 
-export const Example001 = {
+export const DefaultBoxStory = {
   name: 'Default box',
   parameters: {
     official: { id: 'elements-box/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Box>I'm in a box.</ui.Box>\n    </>\n  )\n}\n",
+        code: "import { Box } from '@seagreenio/react-bulma'\n\nfunction DefaultBoxDemo() {\n  return (\n    <>\n      <Box>I'm in a box.</Box>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultBoxDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const SignInFormStory = {
   name: 'Sign-in form',
   parameters: {
     official: { id: 'elements-box/basic/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Box as={'form'}>\n        {' '}\n        <ui.Field>\n          {' '}\n          <ui.Label>Email</ui.Label>{' '}\n          <ui.Control>\n            {' '}\n            <ui.Input\n              type={'email'}\n              placeholder={'e.g. alex@example.com'}\n            />{' '}\n          </ui.Control>{' '}\n        </ui.Field>{' '}\n        <ui.Field>\n          {' '}\n          <ui.Label>Password</ui.Label>{' '}\n          <ui.Control>\n            {' '}\n            <ui.Input type={'password'} placeholder={'********'} />{' '}\n          </ui.Control>{' '}\n        </ui.Field>{' '}\n        <ui.Button color={'primary'}>Sign in</ui.Button>{' '}\n      </ui.Box>\n    </>\n  )\n}\n",
+        code: "import {\n  Box,\n  Button,\n  Control,\n  Field,\n  Input,\n  Label,\n} from '@seagreenio/react-bulma'\n\nfunction SignInFormDemo() {\n  return (\n    <>\n      <Box as={'form'}>\n        <Field>\n          <Label>Email</Label>\n          <Control>\n            <Input type={'email'} placeholder={'e.g. alex@example.com'} />\n          </Control>\n        </Field>\n        <Field>\n          <Label>Password</Label>\n          <Control>\n            <Input type={'password'} placeholder={'********'} />\n          </Control>\n        </Field>\n        <Button color={'primary'}>Sign in</Button>\n      </Box>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: SignInFormDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const MediaObjectStory = {
   name: 'Media object',
   parameters: {
     official: { id: 'elements-box/basic/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Box>\n        {' '}\n        <ui.Media>\n          {' '}\n          <ui.MediaLeft>\n            {' '}\n            <ui.Image\n              size={64}\n              src={'./official-assets/128x128.png'}\n              alt={'Image'}\n            />{' '}\n          </ui.MediaLeft>{' '}\n          <ui.MediaContent>\n            {' '}\n            <ui.Content>\n              {' '}\n              <p>\n                <strong>John Smith</strong> <small>@johnsmith</small>{' '}\n                <small>31m</small> <br /> Lorem ipsum dolor sit amet,\n                consectetur adipiscing elit. Aenean efficitur sit amet massa\n                fringilla egestas. Nullam condimentum luctus turpis.\n              </p>{' '}\n            </ui.Content>{' '}\n            <ui.Level mobile>\n              {' '}\n              <ui.LevelLeft>\n                {' '}\n                <ui.LevelItem aria-label={'reply'} as={'a'}>\n                  {' '}\n                  <ui.Icon size={'small'}>\n                    {' '}\n                    <i aria-hidden={'true'} className={'fas fa-reply'} />{' '}\n                  </ui.Icon>{' '}\n                </ui.LevelItem>{' '}\n                <ui.LevelItem aria-label={'retweet'} as={'a'}>\n                  {' '}\n                  <ui.Icon size={'small'}>\n                    {' '}\n                    <i aria-hidden={'true'} className={'fas fa-retweet'} />{' '}\n                  </ui.Icon>{' '}\n                </ui.LevelItem>{' '}\n                <ui.LevelItem aria-label={'like'} as={'a'}>\n                  {' '}\n                  <ui.Icon size={'small'}>\n                    {' '}\n                    <i aria-hidden={'true'} className={'fas fa-heart'} />{' '}\n                  </ui.Icon>{' '}\n                </ui.LevelItem>{' '}\n              </ui.LevelLeft>{' '}\n            </ui.Level>{' '}\n          </ui.MediaContent>{' '}\n        </ui.Media>{' '}\n      </ui.Box>\n    </>\n  )\n}\n",
+        code: "import {\n  Box,\n  Content,\n  Icon,\n  Image,\n  Level,\n  LevelItem,\n  LevelLeft,\n  Media,\n  MediaContent,\n  MediaLeft,\n} from '@seagreenio/react-bulma'\n\nfunction MediaObjectDemo() {\n  return (\n    <>\n      <Box>\n        <Media>\n          <MediaLeft>\n            <Image\n              size={64}\n              src={'./official-assets/128x128.png'}\n              alt={'Image'}\n            />\n          </MediaLeft>\n          <MediaContent>\n            <Content>\n              <p>\n                <strong>John Smith</strong> <small>@johnsmith</small>{' '}\n                <small>31m</small> <br /> Lorem ipsum dolor sit amet,\n                consectetur adipiscing elit. Aenean efficitur sit amet massa\n                fringilla egestas. Nullam condimentum luctus turpis.\n              </p>\n            </Content>\n            <Level mobile>\n              <LevelLeft>\n                <LevelItem aria-label={'reply'} as={'a'}>\n                  <Icon size={'small'}>\n                    <i aria-hidden={'true'} className={'fas fa-reply'} />\n                  </Icon>\n                </LevelItem>\n                <LevelItem aria-label={'retweet'} as={'a'}>\n                  <Icon size={'small'}>\n                    <i aria-hidden={'true'} className={'fas fa-retweet'} />\n                  </Icon>\n                </LevelItem>\n                <LevelItem aria-label={'like'} as={'a'}>\n                  <Icon size={'small'}>\n                    <i aria-hidden={'true'} className={'fas fa-heart'} />\n                  </Icon>\n                </LevelItem>\n              </LevelLeft>\n            </Level>\n          </MediaContent>\n        </Media>\n      </Box>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: MediaObjectDemo,
 } satisfies StoryObj

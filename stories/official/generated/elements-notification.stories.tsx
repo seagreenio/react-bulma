@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
 import { useState } from 'react'
-import * as ui from '../../../src'
+import { Delete, Notification } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -24,915 +24,533 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="elements-notification" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Notification'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'Bold '}
           <strong data-official-prose="">{'notification'}</strong>
           {' blocks, to alert your users of something'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {
-              "\n    The notification is a simple colored block meant to draw the attention to the user about something. As such, it can\n    be used as a pinned notification in the corner of the viewport. That's why it supports the use of the\n    "
+              " The notification is a simple colored block meant to draw the attention to the user about something. As such, it can be used as a pinned notification in the corner of the viewport. That's why it supports the use of the "
             }
             <code data-official-prose="">{'delete'}</code>
-            {' element.\n  '}
+            {' element. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={DefaultNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'colors'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Colors\n  '}
-          </span>
-          {'\n  '}
+            {' Colors '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#colors'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The notification element is available in all the\n    '}
+            {' The notification element is available in all the '}
             <strong data-official-prose="">{'different colors'}</strong>
-            {' defined by the\n    '}
+            {' defined by the '}
             <a data-official-prose="" href={''}>
               <code data-official-prose="">{'$colors'}</code>
               {' Sass map'}
             </a>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/colors/001">
-          <Canvas of={Example002} />
+          <Canvas of={LinkNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/colors/002">
-          <Canvas of={Example003} />
+          <Canvas of={PrimaryNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/colors/003">
-          <Canvas of={Example004} />
+          <Canvas of={InfoNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/colors/004">
-          <Canvas of={Example005} />
+          <Canvas of={SuccessNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/colors/005">
-          <Canvas of={Example006} />
+          <Canvas of={WarningNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/colors/006">
-          <Canvas of={Example007} />
+          <Canvas of={DangerNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h3
           data-official-prose=""
           id={'light-colors'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Light colors\n  '}
-          </span>
-          {'\n  '}
+            {' Light colors '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#light-colors'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  Each color also comes in its '}
+          {' Each color also comes in its '}
           <strong data-official-prose="">{'light'}</strong>
           {' version. Simply append the '}
           <code data-official-prose="">{'is-light'}</code>
-          {' modifier to\n  obtain the light version of the notification.\n'}
+          {' modifier to obtain the light version of the notification. '}
         </div>
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/light-colors/001">
-          <Canvas of={Example008} />
+          <Canvas of={LightLinkNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/light-colors/002">
-          <Canvas of={Example009} />
+          <Canvas of={LightPrimaryNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/light-colors/003">
-          <Canvas of={Example010} />
+          <Canvas of={LightInfoNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/light-colors/004">
-          <Canvas of={Example011} />
+          <Canvas of={LightSuccessNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/light-colors/005">
-          <Canvas of={Example012} />
+          <Canvas of={LightWarningNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-notification/light-colors/006">
-          <Canvas of={Example013} />
+          <Canvas of={LightDangerNotificationStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'javascript-example'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    JavaScript example\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#javascript-example'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n'}
-        <div data-official-prose="" className={'content'}>
-          {'\n  '}
-          <p data-official-prose="">
-            {'\n    The Bulma package '}
-            <strong data-official-prose="">
-              {'does not come with any JavaScript'}
-            </strong>
-            {
-              '. Here is however an implementation example,\n    which sets the '
-            }
-            <code data-official-prose="">{'click'}</code>
-            {' handler for Bulma '}
-            <code data-official-prose="">{'delete'}</code>
-            {' elements, anywhere on the page, in vanilla\n    JavaScript.\n  '}
-          </p>
-          {'\n\n  '}
-          <div data-official-prose="" className={'highlight'}>
-            <pre data-official-prose="">
-              <code data-official-prose="" className={'language-html'}>
-                {
-                  '\n<div class="notification">\n  <button class="delete"></button>\n  Lorem ipsum\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>
-          {'\n  '}
-          <div data-official-prose="" className={'highlight'}>
-            <pre data-official-prose="">
-              <code data-official-prose="" className={'language-javascript'}>
-                {
-                  "\ndocument.addEventListener('DOMContentLoaded', () => {\n  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {\n    const $notification = $delete.parentNode;\n\n    $delete.addEventListener('click', () => {\n      $notification.parentNode.removeChild($notification);\n    });\n  });\n});\n"
-                }
-              </code>
-            </pre>
-          </div>
-          {'\n'}
-        </div>
-        {'\n\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$notification-code-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-notification-code-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$notification-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-notification-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$notification-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-notification-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1.375em 1.5em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Lorem ipsum dolor sit
+        <Notification>
+          <Delete onClick={() => setVisible1(false)} /> Lorem ipsum dolor sit
           amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example002Demo() {
+function LinkNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'link'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'link'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example003Demo() {
+function PrimaryNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'primary'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'primary'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example004Demo() {
+function InfoNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'info'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'info'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example005Demo() {
+function SuccessNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'success'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'success'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example006Demo() {
+function WarningNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'warning'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'warning'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example007Demo() {
+function DangerNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'danger'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'danger'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example008Demo() {
+function LightLinkNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'link'} tone={'light'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'link'} tone={'light'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example009Demo() {
+function LightPrimaryNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'primary'} tone={'light'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'primary'} tone={'light'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example010Demo() {
+function LightInfoNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'info'} tone={'light'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'info'} tone={'light'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example011Demo() {
+function LightSuccessNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'success'} tone={'light'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'success'} tone={'light'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example012Demo() {
+function LightWarningNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'warning'} tone={'light'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'warning'} tone={'light'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-function Example013Demo() {
+function LightDangerNotificationDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Notification color={'danger'} tone={'light'}>
-          {' '}
-          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum
-          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
+        <Notification color={'danger'} tone={'light'}>
+          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor
+          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}
-        </ui.Notification>
+          purus diam, et dictum <a>felis venenatis</a> efficitur.
+        </Notification>
       )}
     </>
   )
 }
 
-export const Example001 = {
+export const DefaultNotificationStory = {
   name: 'Default notification',
   parameters: {
     official: { id: 'elements-notification/basic/001' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Lorem ipsum dolor sit\n          amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction DefaultNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification>\n          <Delete onClick={() => setVisible1(false)} /> Lorem ipsum dolor sit\n          amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultNotificationDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const LinkNotificationStory = {
   name: 'Link notification',
   parameters: {
     official: { id: 'elements-notification/colors/001' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'link'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction LinkNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'link'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: LinkNotificationDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const PrimaryNotificationStory = {
   name: 'Primary notification',
   parameters: {
     official: { id: 'elements-notification/colors/002' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'primary'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction PrimaryNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'primary'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: PrimaryNotificationDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const InfoNotificationStory = {
   name: 'Info notification',
   parameters: {
     official: { id: 'elements-notification/colors/003' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'info'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction InfoNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'info'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: InfoNotificationDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const SuccessNotificationStory = {
   name: 'Success notification',
   parameters: {
     official: { id: 'elements-notification/colors/004' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'success'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction SuccessNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'success'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: SuccessNotificationDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const WarningNotificationStory = {
   name: 'Warning notification',
   parameters: {
     official: { id: 'elements-notification/colors/005' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'warning'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction WarningNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'warning'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: WarningNotificationDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const DangerNotificationStory = {
   name: 'Danger notification',
   parameters: {
     official: { id: 'elements-notification/colors/006' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'danger'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction DangerNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'danger'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: DangerNotificationDemo,
 } satisfies StoryObj
 
-export const Example008 = {
+export const LightLinkNotificationStory = {
   name: 'Light link notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/001' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'link'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction LightLinkNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'link'} tone={'light'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example008Demo,
+  render: LightLinkNotificationDemo,
 } satisfies StoryObj
 
-export const Example009 = {
+export const LightPrimaryNotificationStory = {
   name: 'Light primary notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/002' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'primary'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction LightPrimaryNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'primary'} tone={'light'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example009Demo,
+  render: LightPrimaryNotificationDemo,
 } satisfies StoryObj
 
-export const Example010 = {
+export const LightInfoNotificationStory = {
   name: 'Light info notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/003' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'info'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction LightInfoNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'info'} tone={'light'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example010Demo,
+  render: LightInfoNotificationDemo,
 } satisfies StoryObj
 
-export const Example011 = {
+export const LightSuccessNotificationStory = {
   name: 'Light success notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/004' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'success'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction LightSuccessNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'success'} tone={'light'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example011Demo,
+  render: LightSuccessNotificationDemo,
 } satisfies StoryObj
 
-export const Example012 = {
+export const LightWarningNotificationStory = {
   name: 'Light warning notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/005' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'warning'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction LightWarningNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'warning'} tone={'light'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example012Demo,
+  render: LightWarningNotificationDemo,
 } satisfies StoryObj
 
-export const Example013 = {
+export const LightDangerNotificationStory = {
   name: 'Light danger notification',
   parameters: {
     official: { id: 'elements-notification/light-colors/006' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Notification color={'danger'} tone={'light'}>\n          {' '}\n          <ui.Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum\n          dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.{' '}\n        </ui.Notification>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Delete, Notification } from '@seagreenio/react-bulma'\n\nfunction LightDangerNotificationDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Notification color={'danger'} tone={'light'}>\n          <Delete onClick={() => setVisible1(false)} /> Primar lorem ipsum dolor\n          sit amet, consectetur adipiscing elit lorem ipsum dolor.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur.\n        </Notification>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example013Demo,
+  render: LightDangerNotificationDemo,
 } satisfies StoryObj

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Cell, SmartGrid } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,30 +23,20 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="grid-smart" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Smart Grid'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'A '}
           <strong data-official-prose="">{'smart'}</strong>
           {' 2D grid with '}
           <strong data-official-prose="">{'flexible'}</strong>
           {' columns'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'Bulma v1 comes with a new '}
             <strong data-official-prose="">{'Smart Grid'}</strong>
@@ -58,59 +48,45 @@ function OfficialDocs() {
               ' as many columns as possible, given a minimum column width and a column and row gap.'
             }
           </p>
-          {'\n'}
           <p data-official-prose="">{'By default, the Smart Grid has:'}</p>
-          {'\n'}
           <ul data-official-prose="">
-            {'\n'}
             <li data-official-prose="">
               {'a minimum column width of '}
               <code data-official-prose="">{'9rem'}</code>
             </li>
-            {'\n'}
             <li data-official-prose="">
               {'a gap of '}
               <code data-official-prose="">{'0.75rem'}</code>
             </li>
-            {'\n'}
           </ul>
-          {'\n\n'}
         </div>
-        {'\n\n\n\n\n\n\n\n'}
         <div data-official-example="grid-smart/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={AutomaticallyFittedCellsStory} />
         </div>
-        {'\n\n\n'}
         <div
           data-official-prose=""
           className={
             '\n    bd-snippet\n    bd-is-horizontal\n    bd-is-fullwidth\n    \n    bd-is-size-5\n  '
           }
         >
-          {'\n  \n\n  '}
           <div
             data-official-prose=""
             className={'bd-snippet-source bd-theme-html'}
           >
-            {'\n    '}
             <p data-official-prose="" className={'bd-snippet-title'}>
-              {'\n      '}
               <span
                 data-official-prose=""
                 className={'bd-snippet-tag bd-is-html'}
               >
                 {'HTML'}
               </span>
-              {'\n    '}
             </p>
-            {'\n\n    '}
             <div
               data-official-prose=""
               className={
                 '\n        bd-snippet-code\n        bd-highlight-full\n        bd-is-more bd-is-more-clipped\n      '
               }
             >
-              {'\n      '}
               <div data-official-prose="" className={'highlight'}>
                 <pre data-official-prose="">
                   <code data-official-prose="" className={'language-html'}>
@@ -120,35 +96,26 @@ function OfficialDocs() {
                   </code>
                 </pre>
               </div>
-              {'\n    '}
             </div>
-            {'\n  '}
           </div>
-          {'\n'}
         </div>
-        {'\n\n\n'}
         <h3
           data-official-prose=""
           id={'smart-grid-modifiers'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Smart Grid modifiers\n  '}
-          </span>
-          {'\n  '}
+            {' Smart Grid modifiers '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#smart-grid-modifiers'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can change the minimum column width by increments of '}
             <code data-official-prose="">{'1.5rem'}</code>
@@ -160,415 +127,274 @@ function OfficialDocs() {
             <code data-official-prose="">{'32'}</code>
             {':'}
           </p>
-          {'\n\n'}
         </div>
-        {'\n\n\n'}
         <table data-official-prose="" className={'table is-bordered'}>
-          {'\n  '}
           <thead data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <th data-official-prose="">{'Class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Value'}</th>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </thead>
-          {'\n  '}
           <tbody data-official-prose="">
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-1'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'1.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-2'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'3rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-3'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'4.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-4'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'6rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-5'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'7.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-6'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'9rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-7'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'10.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-8'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'12rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-9'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'13.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-10'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'15rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-11'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'16.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-12'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'18rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-13'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'19.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-14'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'21rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-15'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'22.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-16'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'24rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-17'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'25.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-18'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'27rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-19'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'28.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-20'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'30rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-21'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'31.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-22'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'33rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-23'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'34.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-24'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'36rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-25'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'37.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-26'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'39rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-27'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'40.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-28'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'42rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-29'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'43.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-30'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'45rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-31'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'46.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-min-32'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'48rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n  '}
           </tbody>
-          {'\n'}
         </table>
-        {'\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can also change the '}
             <code data-official-prose="">{'gap'}</code>
@@ -580,383 +406,314 @@ function OfficialDocs() {
             <code data-official-prose="">{'0.5rem'}</code>
             {':'}
           </p>
-          {'\n\n'}
         </div>
-        {'\n\n\n'}
         <table data-official-prose="" className={'table is-bordered'}>
-          {'\n  '}
           <thead data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <th data-official-prose="">{'Gap Class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Column Gap'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Row Gap'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Value'}</th>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </thead>
-          {'\n  '}
           <tbody data-official-prose="">
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-gap-0'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-column-gap-0'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-gap-0'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'0rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-gap-1'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-column-gap-1'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-gap-1'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'0.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-gap-2'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-column-gap-2'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-gap-2'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'1rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-gap-3'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-column-gap-3'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-gap-3'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'1.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-gap-4'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-column-gap-4'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-gap-4'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'2rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-gap-5'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-column-gap-5'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-gap-5'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'2.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-gap-6'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-column-gap-6'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-gap-6'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'3rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-gap-7'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-column-gap-7'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-gap-7'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'3.5rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-gap-8'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-column-gap-8'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-gap-8'}</code>
               </td>
-              {'\n        '}
               <td data-official-prose="">
                 <code data-official-prose="">{'4rem'}</code>
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n  '}
           </tbody>
-          {'\n'}
         </table>
-        {'\n\n\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function AutomaticallyFittedCellsDemo() {
   return (
     <>
-      <ui.SmartGrid>
-        {' '}
-        <ui.Cell
+      <SmartGrid>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 1
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 2
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 3
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 4
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 5
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 6
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 7
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 8
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 9
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 10
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 11
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 12
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 13
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 14
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 15
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 16
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 17
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 18
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 19
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 20
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 21
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 22
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 23
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 24
-        </ui.Cell>{' '}
-      </ui.SmartGrid>
+        </Cell>
+      </SmartGrid>
     </>
   )
 }
 
-export const Example001 = {
+export const AutomaticallyFittedCellsStory = {
   name: 'Automatically fitted cells',
   parameters: {
     official: { id: 'grid-smart/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.SmartGrid>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 6\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 7\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 8\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 9\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 10\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 11\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 12\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 13\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 14\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 15\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 16\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 17\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 18\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 19\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 20\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 21\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 22\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 23\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 24\n        </ui.Cell>{' '}\n      </ui.SmartGrid>\n    </>\n  )\n}\n",
+        code: "import { Cell, SmartGrid } from '@seagreenio/react-bulma'\n\nfunction AutomaticallyFittedCellsDemo() {\n  return (\n    <>\n      <SmartGrid>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 1\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 3\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 4\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 5\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 6\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 7\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 8\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 9\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 10\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 11\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 12\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 13\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 14\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 15\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 16\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 17\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 18\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 19\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 20\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 21\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 22\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 23\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 24\n        </Cell>\n      </SmartGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: AutomaticallyFittedCellsDemo,
 } satisfies StoryObj

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Column, Columns } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,62 +23,45 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="columns-options" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Column options'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'Design different '}
           <strong data-official-prose="">{'types'}</strong>
           {' of column layouts'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n    '}
         <h3
           data-official-prose=""
           id={'vertical-alignment'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Vertical alignment\n  '}
-          </span>
-          {'\n  '}
+            {' Vertical alignment '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#vertical-alignment'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    To align your columns vertically, add the '}
+            {' To align your columns vertically, add the '}
             <code data-official-prose="">{'is-vcentered'}</code>
-            {' modifier\n    to the '}
+            {' modifier to the '}
             <code data-official-prose="">{'columns'}</code>
-            {' container.\n  '}
+            {' container. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="columns-options/vertical-alignment/001">
-          <Canvas of={Example001} />
+          <Canvas of={VerticallyCenteredColumnsStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -93,41 +76,31 @@ function OfficialDocs() {
           id={'multiline'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Multiline\n  '}
-          </span>
-          {'\n  '}
+            {' Multiline '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#multiline'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {
-              '\n    Whenever you want to start a new line, you can close a\n    '
-            }
+            {' Whenever you want to start a new line, you can close a '}
             <code data-official-prose="">{'columns'}</code>
-            {' container and start a new one. But you can also add the\n    '}
+            {' container and start a new one. But you can also add the '}
             <code data-official-prose="">{'is-multiline'}</code>
             {' modifier and add '}
             <strong data-official-prose="">{'more'}</strong>
-            {' column\n    elements than would fit in a single row.\n  '}
+            {' column elements than would fit in a single row. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="columns-options/multiline/001">
-          <Canvas of={Example002} />
+          <Canvas of={MultilineColumnsStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -142,43 +115,35 @@ function OfficialDocs() {
           id={'centering-columns'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Centering columns\n  '}
-          </span>
-          {'\n  '}
+            {' Centering columns '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#centering-columns'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    While you can use '}
+            {' While you can use '}
             <em data-official-prose="">{'empty columns'}</em>
-            {' (like\n    '}
+            {' (like '}
             <code data-official-prose="">{'<div class="column"></div>'}</code>
-            {') to create horizontal\n    space around '}
+            {') to create horizontal space around '}
             <code data-official-prose="">{'.column'}</code>
-            {' elements, you can also use\n    '}
+            {' elements, you can also use '}
             <code data-official-prose="">{'.is-centered'}</code>
             {' on the parent '}
             <code data-official-prose="">{'.columns'}</code>
-            {' element:\n  '}
+            {' element: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="columns-options/centering-columns/001">
-          <Canvas of={Example003} />
+          <Canvas of={CenteredHalfWidthColumnStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -188,23 +153,18 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Use with '}
+            {' Use with '}
             <code data-official-prose="">{'.is-multiline'}</code>
             {
-              ' to create a flexible, centered list (try\n    resizing to see centering in different viewport sizes):\n  '
+              ' to create a flexible, centered list (try resizing to see centering in different viewport sizes): '
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="columns-options/centering-columns/002">
-          <Canvas of={Example004} />
+          <Canvas of={CenteredMultilineColumnsStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -214,235 +174,206 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function VerticallyCenteredColumnsDemo() {
   return (
     <>
-      <ui.Columns verticallyCentered>
-        {' '}
-        <ui.Column width={8}>
-          {' '}
-          <p className={'bd-notification is-primary'}>First column</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
+      <Columns verticallyCentered>
+        <Column width={8}>
+          <p className={'bd-notification is-primary'}>First column</p>
+        </Column>
+        <Column>
           <p className={'bd-notification is-primary'}>
-            {' '}
             Second column with more content. This is so you can see the vertical
-            alignment.{' '}
-          </p>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+            alignment.
+          </p>
+        </Column>
+      </Columns>
     </>
   )
 }
 
-function Example002Demo() {
+function MultilineColumnsDemo() {
   return (
     <>
-      <ui.Columns multiline displayFrom={'mobile'}>
-        {' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+      <Columns multiline displayFrom={'mobile'}>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'half'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-half'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Auto</p>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+          </p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Auto</p>
+        </Column>
+      </Columns>
     </>
   )
 }
 
-function Example003Demo() {
+function CenteredHalfWidthColumnDemo() {
   return (
     <>
-      <ui.Columns displayFrom={'mobile'} centered>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
+      <Columns displayFrom={'mobile'} centered>
+        <Column width={'half'}>
           <p className={'bd-notification is-primary'}>
-            {' '}
             <code className={'html'}>{'is-half'}</code>
-            <br />{' '}
-          </p>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+            <br />
+          </p>
+        </Column>
+      </Columns>
     </>
   )
 }
 
-function Example004Demo() {
+function CenteredMultilineColumnsDemo() {
   return (
     <>
-      <ui.Columns displayFrom={'mobile'} multiline centered>
-        {' '}
-        <ui.Column width={'narrow'}>
-          {' '}
+      <Columns displayFrom={'mobile'} multiline centered>
+        <Column width={'narrow'}>
           <p
             style={{ ...{ padding: '1.25rem 1.5rem' } }}
             className={'bd-notification is-primary'}
           >
-            {' '}
             <code className={'html'}>{'is-narrow'}</code>
-            <br /> First Column{' '}
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'narrow'}>
-          {' '}
+            <br /> First Column
+          </p>
+        </Column>
+        <Column width={'narrow'}>
           <p
             style={{ ...{ padding: '1.25rem 1.5rem' } }}
             className={'bd-notification is-primary'}
           >
-            {' '}
             <code className={'html'}>{'is-narrow'}</code>
-            <br /> Our Second Column{' '}
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'narrow'}>
-          {' '}
+            <br /> Our Second Column
+          </p>
+        </Column>
+        <Column width={'narrow'}>
           <p
             style={{ ...{ padding: '1.25rem 1.5rem' } }}
             className={'bd-notification is-primary'}
           >
-            {' '}
             <code className={'html'}>{'is-narrow'}</code>
-            <br /> Third Column{' '}
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'narrow'}>
-          {' '}
+            <br /> Third Column
+          </p>
+        </Column>
+        <Column width={'narrow'}>
           <p
             style={{ ...{ padding: '1.25rem 1.5rem' } }}
             className={'bd-notification is-primary'}
           >
-            {' '}
             <code className={'html'}>{'is-narrow'}</code>
-            <br /> The Fourth Column{' '}
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'narrow'}>
-          {' '}
+            <br /> The Fourth Column
+          </p>
+        </Column>
+        <Column width={'narrow'}>
           <p
             style={{ ...{ padding: '1.25rem 1.5rem' } }}
             className={'bd-notification is-primary'}
           >
-            {' '}
             <code className={'html'}>{'is-narrow'}</code>
-            <br /> Fifth Column{' '}
-          </p>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+            <br /> Fifth Column
+          </p>
+        </Column>
+      </Columns>
     </>
   )
 }
 
-export const Example001 = {
+export const VerticallyCenteredColumnsStory = {
   name: 'Vertically centered columns',
   parameters: {
     official: { id: 'columns-options/vertical-alignment/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns verticallyCentered>\n        {' '}\n        <ui.Column width={8}>\n          {' '}\n          <p className={'bd-notification is-primary'}>First column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            Second column with more content. This is so you can see the vertical\n            alignment.{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Column, Columns } from '@seagreenio/react-bulma'\n\nfunction VerticallyCenteredColumnsDemo() {\n  return (\n    <>\n      <Columns verticallyCentered>\n        <Column width={8}>\n          <p className={'bd-notification is-primary'}>First column</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>\n            Second column with more content. This is so you can see the vertical\n            alignment.\n          </p>\n        </Column>\n      </Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: VerticallyCenteredColumnsDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const MultilineColumnsStory = {
   name: 'Multiline columns',
   parameters: {
     official: { id: 'columns-options/multiline/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns multiline displayFrom={'mobile'}>\n        {' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-half'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Column, Columns } from '@seagreenio/react-bulma'\n\nfunction MultilineColumnsDemo() {\n  return (\n    <>\n      <Columns multiline displayFrom={'mobile'}>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'half'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-half'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Auto</p>\n        </Column>\n      </Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: MultilineColumnsDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const CenteredHalfWidthColumnStory = {
   name: 'Centered half-width column',
   parameters: {
     official: { id: 'columns-options/centering-columns/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns displayFrom={'mobile'} centered>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            {' '}\n            <code className={'html'}>{'is-half'}</code>\n            <br />{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Column, Columns } from '@seagreenio/react-bulma'\n\nfunction CenteredHalfWidthColumnDemo() {\n  return (\n    <>\n      <Columns displayFrom={'mobile'} centered>\n        <Column width={'half'}>\n          <p className={'bd-notification is-primary'}>\n            <code className={'html'}>{'is-half'}</code>\n            <br />\n          </p>\n        </Column>\n      </Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: CenteredHalfWidthColumnDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const CenteredMultilineColumnsStory = {
   name: 'Centered multiline columns',
   parameters: {
     official: { id: 'columns-options/centering-columns/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Columns displayFrom={'mobile'} multiline centered>\n        {' '}\n        <ui.Column width={'narrow'}>\n          {' '}\n          <p\n            style={{ ...{ padding: '1.25rem 1.5rem' } }}\n            className={'bd-notification is-primary'}\n          >\n            {' '}\n            <code className={'html'}>{'is-narrow'}</code>\n            <br /> First Column{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'narrow'}>\n          {' '}\n          <p\n            style={{ ...{ padding: '1.25rem 1.5rem' } }}\n            className={'bd-notification is-primary'}\n          >\n            {' '}\n            <code className={'html'}>{'is-narrow'}</code>\n            <br /> Our Second Column{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'narrow'}>\n          {' '}\n          <p\n            style={{ ...{ padding: '1.25rem 1.5rem' } }}\n            className={'bd-notification is-primary'}\n          >\n            {' '}\n            <code className={'html'}>{'is-narrow'}</code>\n            <br /> Third Column{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'narrow'}>\n          {' '}\n          <p\n            style={{ ...{ padding: '1.25rem 1.5rem' } }}\n            className={'bd-notification is-primary'}\n          >\n            {' '}\n            <code className={'html'}>{'is-narrow'}</code>\n            <br /> The Fourth Column{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'narrow'}>\n          {' '}\n          <p\n            style={{ ...{ padding: '1.25rem 1.5rem' } }}\n            className={'bd-notification is-primary'}\n          >\n            {' '}\n            <code className={'html'}>{'is-narrow'}</code>\n            <br /> Fifth Column{' '}\n          </p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Column, Columns } from '@seagreenio/react-bulma'\n\nfunction CenteredMultilineColumnsDemo() {\n  return (\n    <>\n      <Columns displayFrom={'mobile'} multiline centered>\n        <Column width={'narrow'}>\n          <p\n            style={{ ...{ padding: '1.25rem 1.5rem' } }}\n            className={'bd-notification is-primary'}\n          >\n            <code className={'html'}>{'is-narrow'}</code>\n            <br /> First Column\n          </p>\n        </Column>\n        <Column width={'narrow'}>\n          <p\n            style={{ ...{ padding: '1.25rem 1.5rem' } }}\n            className={'bd-notification is-primary'}\n          >\n            <code className={'html'}>{'is-narrow'}</code>\n            <br /> Our Second Column\n          </p>\n        </Column>\n        <Column width={'narrow'}>\n          <p\n            style={{ ...{ padding: '1.25rem 1.5rem' } }}\n            className={'bd-notification is-primary'}\n          >\n            <code className={'html'}>{'is-narrow'}</code>\n            <br /> Third Column\n          </p>\n        </Column>\n        <Column width={'narrow'}>\n          <p\n            style={{ ...{ padding: '1.25rem 1.5rem' } }}\n            className={'bd-notification is-primary'}\n          >\n            <code className={'html'}>{'is-narrow'}</code>\n            <br /> The Fourth Column\n          </p>\n        </Column>\n        <Column width={'narrow'}>\n          <p\n            style={{ ...{ padding: '1.25rem 1.5rem' } }}\n            className={'bd-notification is-primary'}\n          >\n            <code className={'html'}>{'is-narrow'}</code>\n            <br /> Fifth Column\n          </p>\n        </Column>\n      </Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: CenteredMultilineColumnsDemo,
 } satisfies StoryObj

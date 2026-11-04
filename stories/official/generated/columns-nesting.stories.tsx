@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Column, Columns } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,117 +23,83 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="columns-nesting" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Nesting columns'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'A simple way to build '}
           <strong data-official-prose="">{'responsive columns'}</strong>
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can '}
+            {' You can '}
             <strong data-official-prose="">{'nest'}</strong>
             {
-              ' columns to have more flexibility in your\n    design. You only need to follow this structure:\n  '
+              ' columns to have more flexibility in your design. You only need to follow this structure: '
             }
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'columns'}</code>
-              {': top-level columns container\n      '}
+              {': top-level columns container '}
               <ul data-official-prose="">
-                {'\n        '}
                 <li data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'column'}</code>
-                  {'\n          '}
                   <ul data-official-prose="">
-                    {'\n            '}
                     <li data-official-prose="">
-                      {'\n              '}
                       <code data-official-prose="">{'columns'}</code>
-                      {': nested columns\n              '}
+                      {': nested columns '}
                       <ul data-official-prose="">
-                        {'\n                '}
                         <li data-official-prose="">
                           <code data-official-prose="">{'column'}</code>
                           {' and so on…'}
                         </li>
-                        {'\n              '}
                       </ul>
-                      {'\n            '}
                     </li>
-                    {'\n          '}
                   </ul>
-                  {'\n        '}
                 </li>
-                {'\n      '}
               </ul>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The difference with\n    '}
+            {' The difference with '}
             <a
               data-official-prose=""
               href={'https://bulma.io/documentation/columns/options/#multiline'}
             >
               {'multiline columns'}
             </a>
-            {'\n    is the '}
+            {' is the '}
             <strong data-official-prose="">{'order'}</strong>
-            {' in the HTML code: all the\n    '}
+            {' in the HTML code: all the '}
             <strong data-official-prose="" className={'has-text-info'}>
               {'blue'}
             </strong>
-            {' columns appear\n    '}
+            {' columns appear '}
             <em data-official-prose="">{'before'}</em>
             {' the '}
             <strong data-official-prose="" className={'has-text-danger'}>
               {'red'}
             </strong>
-            {' ones.\n    Resize to a narrower viewport to see the result.\n  '}
+            {' ones. Resize to a narrower viewport to see the result. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n \n'}
         <div data-official-example="columns-nesting/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={NestedColumnsStory} />
         </div>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Multiline columns will also have a '}
+            {' Multiline columns will also have a '}
             <strong data-official-prose="">{'gap'}</strong>
-            {' between each\n    '}
+            {' between each '}
             <strong data-official-prose="">{'line'}</strong>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'bd-highlight-full'}>
-          {'\n  '}
           <div data-official-prose="" className={'highlight'}>
             <pre data-official-prose="">
               <code data-official-prose="" className={'language-html'}>
@@ -143,73 +109,57 @@ function OfficialDocs() {
               </code>
             </pre>
           </div>
-          {'\n'}
         </div>
-        {'\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function NestedColumnsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-info'}>First column</p>{' '}
-          <ui.Columns displayFrom={'mobile'}>
-            {' '}
-            <ui.Column>
-              {' '}
-              <p className={'bd-notification is-info'}>
-                First nested column
-              </p>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
-              <p className={'bd-notification is-info'}>
-                Second nested column
-              </p>{' '}
-            </ui.Column>{' '}
-          </ui.Columns>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-danger'}>Second column</p>{' '}
-          <ui.Columns displayFrom={'mobile'}>
-            {' '}
-            <ui.Column width={'half'}>
-              {' '}
-              <p className={'bd-notification is-danger'}>50%</p>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
-              <p className={'bd-notification is-danger'}>Auto</p>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
-              <p className={'bd-notification is-danger'}>Auto</p>{' '}
-            </ui.Column>{' '}
-          </ui.Columns>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Columns>
+        <Column>
+          <p className={'bd-notification is-info'}>First column</p>
+          <Columns displayFrom={'mobile'}>
+            <Column>
+              <p className={'bd-notification is-info'}>First nested column</p>
+            </Column>
+            <Column>
+              <p className={'bd-notification is-info'}>Second nested column</p>
+            </Column>
+          </Columns>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-danger'}>Second column</p>
+          <Columns displayFrom={'mobile'}>
+            <Column width={'half'}>
+              <p className={'bd-notification is-danger'}>50%</p>
+            </Column>
+            <Column>
+              <p className={'bd-notification is-danger'}>Auto</p>
+            </Column>
+            <Column>
+              <p className={'bd-notification is-danger'}>Auto</p>
+            </Column>
+          </Columns>
+        </Column>
+      </Columns>
     </>
   )
 }
 
-export const Example001 = {
+export const NestedColumnsStory = {
   name: 'Nested columns',
   parameters: {
     official: { id: 'columns-nesting/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-info'}>First column</p>{' '}\n          <ui.Columns displayFrom={'mobile'}>\n            {' '}\n            <ui.Column>\n              {' '}\n              <p className={'bd-notification is-info'}>\n                First nested column\n              </p>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <p className={'bd-notification is-info'}>\n                Second nested column\n              </p>{' '}\n            </ui.Column>{' '}\n          </ui.Columns>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-danger'}>Second column</p>{' '}\n          <ui.Columns displayFrom={'mobile'}>\n            {' '}\n            <ui.Column width={'half'}>\n              {' '}\n              <p className={'bd-notification is-danger'}>50%</p>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <p className={'bd-notification is-danger'}>Auto</p>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <p className={'bd-notification is-danger'}>Auto</p>{' '}\n            </ui.Column>{' '}\n          </ui.Columns>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Column, Columns } from '@seagreenio/react-bulma'\n\nfunction NestedColumnsDemo() {\n  return (\n    <>\n      <Columns>\n        <Column>\n          <p className={'bd-notification is-info'}>First column</p>\n          <Columns displayFrom={'mobile'}>\n            <Column>\n              <p className={'bd-notification is-info'}>First nested column</p>\n            </Column>\n            <Column>\n              <p className={'bd-notification is-info'}>Second nested column</p>\n            </Column>\n          </Columns>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-danger'}>Second column</p>\n          <Columns displayFrom={'mobile'}>\n            <Column width={'half'}>\n              <p className={'bd-notification is-danger'}>50%</p>\n            </Column>\n            <Column>\n              <p className={'bd-notification is-danger'}>Auto</p>\n            </Column>\n            <Column>\n              <p className={'bd-notification is-danger'}>Auto</p>\n            </Column>\n          </Columns>\n        </Column>\n      </Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: NestedColumnsDemo,
 } satisfies StoryObj

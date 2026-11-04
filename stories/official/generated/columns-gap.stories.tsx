@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { useState } from 'react'
+import { Column, Columns, helpers } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -21,117 +22,91 @@ export default meta
 
 function OfficialDocs() {
   return (
-    <OfficialDocument pageId="columns-gap" controllers={['column-gap']}>
+    <OfficialDocument pageId="columns-gap" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Columns gap'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'Customize the '}
           <strong data-official-prose="">{'gap'}</strong>
           {' between the columns'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n\n'}
         <h3
           data-official-prose=""
           id={'default-gap'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Default gap\n  '}
-          </span>
-          {'\n  '}
+            {' Default gap '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#default-gap'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Each column has a '}
+            {' Each column has a '}
             <strong data-official-prose="">{'gap'}</strong>
             {' equal to the '}
             <strong data-official-prose="">{'variable'}</strong>{' '}
             <code data-official-prose="">{'$column-gap'}</code>
-            {', which has a\n    default value of '}
+            {', which has a default value of '}
             <code data-official-prose="">{'0.75rem'}</code>
-            {'.\n    '}
+            {'. '}
             <br data-official-prose="" />
-            {'\n    Since the gap is on '}
+            {' Since the gap is on '}
             <em data-official-prose="">{'each side'}</em>
             {
-              ' of a column, the gap between two adjacent columns will be twice the value of\n    '
+              ' of a column, the gap between two adjacent columns will be twice the value of '
             }
             <code data-official-prose="">{'$column-gap'}</code>
             {', or '}
             <code data-official-prose="">{'1.5rem'}</code>
-            {' by default.\n  '}
+            {' by default. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n\n'}
         <div data-official-example="columns-gap/default-gap/001">
-          <Canvas of={Example001} />
+          <Canvas of={DefaultColumnGapStory} />
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'gapless'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Gapless\n  '}
-          </span>
-          {'\n  '}
+            {' Gapless '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#gapless'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    If you want to remove the '}
+            {' If you want to remove the '}
             <strong data-official-prose="">{'space'}</strong>
             {' between the columns, add the '}
             <code data-official-prose="">{'is-gapless'}</code>
-            {' modifier on\n    the '}
+            {' modifier on the '}
             <code data-official-prose="">{'columns'}</code>
-            {' container:\n  '}
+            {' container: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="columns-gap/gapless/001">
-          <Canvas of={Example002} />
+          <Canvas of={GaplessColumnsStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'bd-highlight-full'}>
-          {'\n  '}
           <div data-official-prose="" className={'highlight'}>
             <pre data-official-prose="">
               <code data-official-prose="" className={'language-html'}>
@@ -141,25 +116,18 @@ function OfficialDocs() {
               </code>
             </pre>
           </div>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can combine it with the '}
             <code data-official-prose="">{'is-multiline'}</code>
             {' modifier:'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="columns-gap/gapless/002">
-          <Canvas of={Example003} />
+          <Canvas of={GaplessMultilineColumnsStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'bd-highlight-full'}>
-          {'\n  '}
           <div data-official-prose="" className={'highlight'}>
             <pre data-official-prose="">
               <code data-official-prose="" className={'language-html'}>
@@ -169,50 +137,40 @@ function OfficialDocs() {
               </code>
             </pre>
           </div>
-          {'\n'}
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'variable-gap'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Variable gap\n  '}
-          </span>
-          {'\n  '}
+            {' Variable gap '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#variable-gap'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can specify a '}
+            {' You can specify a '}
             <strong data-official-prose="">{'custom column gap'}</strong>
             {' by appending one of '}
             <strong data-official-prose="">{'9 modifiers'}</strong>
-            {' on the\n    '}
+            {' on the '}
             <code data-official-prose="">{'.columns'}</code>
-            {' container.\n  '}
+            {' container. '}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'is-0'}</code>
               {' will remove any gap (similar to '}
               <code data-official-prose="">{'is-gapless'}</code>
               {')'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'is-3'}</code>
               {' is the '}
@@ -221,19 +179,14 @@ function OfficialDocs() {
               <code data-official-prose="">{'0.75rem'}</code>
               {' value'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'is-8'}</code>
               {' is the maximum gap of '}
               <code data-official-prose="">{'2rem'}</code>
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'bd-highlight-full'}>
-          {'\n  '}
           <div data-official-prose="" className={'highlight'}>
             <pre data-official-prose="">
               <code data-official-prose="" className={'language-html'}>
@@ -243,56 +196,40 @@ function OfficialDocs() {
               </code>
             </pre>
           </div>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="columns-gap/variable-gap/001">
-          <Canvas of={Example004} />
+          <Canvas of={InteractiveGapSelectorStory} />
         </div>
-        {'\n\n'}
-        {'\n\n\n\n\n  '}
         <h3
           data-official-prose=""
           id={'breakpoint-based-column-gaps'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Breakpoint based column gaps\n  '}
-          </span>
-          {'\n  '}
+            {' Breakpoint based column gaps '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#breakpoint-based-column-gaps'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n  '}
         <div data-official-prose="" className={'content'}>
-          {'\n    '}
           <p data-official-prose="">
             {'You can define a column gap for each viewport size:'}
           </p>
-          {'\n\n    '}
           <p data-official-prose="">
-            {
-              "\n      For example, here's how it looks with the following modifiers:\n      "
-            }
+            {" For example, here's how it looks with the following modifiers: "}
             <code data-official-prose="">
               {
                 'is-2-mobile is-0-tablet is-3-desktop is-8-widescreen is-1-fullhd'
               }
             </code>
-            {'\n    '}
           </p>
-          {'\n  '}
         </div>
-        {'\n\n  '}
         <div data-official-prose="" className={'bd-highlight-full'}>
-          {'\n    '}
           <div data-official-prose="" className={'highlight'}>
             <pre data-official-prose="">
               <code data-official-prose="" className={'language-html'}>
@@ -302,554 +239,640 @@ function OfficialDocs() {
               </code>
             </pre>
           </div>
-          {'\n  '}
         </div>
-        {'\n\n  '}
         <div data-official-example="columns-gap/breakpoint-based-column-gaps/001">
-          <Canvas of={Example005} />
+          <Canvas of={GapsAtEachBreakpointStory} />
         </div>
-        {'\n\n  '}
         <div data-official-prose="" className={'message is-info'}>
-          {'\n    '}
           <p data-official-prose="" className={'message-body'}>
             {
-              '\n      If you want to see the difference, resize your browser and see how the\n      '
+              ' If you want to see the difference, resize your browser and see how the '
             }
             <strong data-official-prose="">{'columns gap'}</strong>
-            {' varies.\n    '}
+            {' varies. '}
           </p>
-          {'\n  '}
         </div>
-        {'\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultColumnGapDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Default gap</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Default gap</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Default gap</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Default gap</p>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Columns>
+        <Column>
+          <p className={'bd-notification is-primary'}>Default gap</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Default gap</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Default gap</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Default gap</p>
+        </Column>
+      </Columns>
     </>
   )
 }
 
-function Example002Demo() {
+function GaplessColumnsDemo() {
   return (
     <>
-      <ui.Columns gapless>
-        {' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>First column</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Second column</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Third column</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Fourth column</p>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Columns gapless>
+        <Column>
+          <p className={'bd-notification is-primary'}>First column</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Second column</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Third column</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Fourth column</p>
+        </Column>
+      </Columns>
     </>
   )
 }
 
-function Example003Demo() {
+function GaplessMultilineColumnsDemo() {
   return (
     <>
-      <ui.Columns multiline displayFrom={'mobile'} gapless>
-        {' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+      <Columns multiline displayFrom={'mobile'} gapless>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'half'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-half'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'one-quarter'}>
-          {' '}
+          </p>
+        </Column>
+        <Column width={'one-quarter'}>
           <p className={'bd-notification is-primary'}>
             <code>{'is-one-quarter'}</code>
-          </p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Auto</p>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+          </p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Auto</p>
+        </Column>
+      </Columns>
     </>
   )
 }
 
-function Example004Demo() {
+function InteractiveGapSelectorDemo() {
+  const [gap1, setGap1] = useState(3 as 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8)
   return (
     <>
       <div id={'klmn'} className={'bd-klmn'}>
-        {' '}
         <div className={'bd-klmn-gaps'}>
-          {' '}
           <strong className={'bd-klmn-label'}>
             {' '}
-            Gap: <code id={'klmnValue'} className={'bd-klmn-value'} />{' '}
-          </strong>{' '}
-          <a data-value={'0'} className={'bd-klmn-gap'}>
+            Gap:{' '}
+            <code
+              id={'klmnValue'}
+              className={'bd-klmn-value'}
+              children={gap1 * 0.25 + 'rem'}
+            />{' '}
+          </strong>
+          <a
+            data-value={'0'}
+            className={
+              gap1 === 0 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'
+            }
+            role={'button'}
+            tabIndex={0}
+            aria-pressed={gap1 === 0}
+            onMouseEnter={() => setGap1(0)}
+            onFocus={() => setGap1(0)}
+            onClick={() => setGap1(0)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                setGap1(0)
+              }
+            }}
+          >
             {' '}
             is-0{' '}
-          </a>{' '}
-          <a data-value={'1'} className={'bd-klmn-gap'}>
+          </a>
+          <a
+            data-value={'1'}
+            className={
+              gap1 === 1 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'
+            }
+            role={'button'}
+            tabIndex={0}
+            aria-pressed={gap1 === 1}
+            onMouseEnter={() => setGap1(1)}
+            onFocus={() => setGap1(1)}
+            onClick={() => setGap1(1)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                setGap1(1)
+              }
+            }}
+          >
             {' '}
             is-1{' '}
-          </a>{' '}
-          <a data-value={'2'} className={'bd-klmn-gap'}>
+          </a>
+          <a
+            data-value={'2'}
+            className={
+              gap1 === 2 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'
+            }
+            role={'button'}
+            tabIndex={0}
+            aria-pressed={gap1 === 2}
+            onMouseEnter={() => setGap1(2)}
+            onFocus={() => setGap1(2)}
+            onClick={() => setGap1(2)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                setGap1(2)
+              }
+            }}
+          >
             {' '}
             is-2{' '}
-          </a>{' '}
-          <a data-value={'3'} className={'bd-klmn-gap'}>
+          </a>
+          <a
+            data-value={'3'}
+            className={
+              gap1 === 3 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'
+            }
+            role={'button'}
+            tabIndex={0}
+            aria-pressed={gap1 === 3}
+            onMouseEnter={() => setGap1(3)}
+            onFocus={() => setGap1(3)}
+            onClick={() => setGap1(3)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                setGap1(3)
+              }
+            }}
+          >
             {' '}
             is-3{' '}
-          </a>{' '}
-          <a data-value={'4'} className={'bd-klmn-gap'}>
+          </a>
+          <a
+            data-value={'4'}
+            className={
+              gap1 === 4 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'
+            }
+            role={'button'}
+            tabIndex={0}
+            aria-pressed={gap1 === 4}
+            onMouseEnter={() => setGap1(4)}
+            onFocus={() => setGap1(4)}
+            onClick={() => setGap1(4)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                setGap1(4)
+              }
+            }}
+          >
             {' '}
             is-4{' '}
-          </a>{' '}
-          <a data-value={'5'} className={'bd-klmn-gap'}>
+          </a>
+          <a
+            data-value={'5'}
+            className={
+              gap1 === 5 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'
+            }
+            role={'button'}
+            tabIndex={0}
+            aria-pressed={gap1 === 5}
+            onMouseEnter={() => setGap1(5)}
+            onFocus={() => setGap1(5)}
+            onClick={() => setGap1(5)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                setGap1(5)
+              }
+            }}
+          >
             {' '}
             is-5{' '}
-          </a>{' '}
-          <a data-value={'6'} className={'bd-klmn-gap'}>
+          </a>
+          <a
+            data-value={'6'}
+            className={
+              gap1 === 6 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'
+            }
+            role={'button'}
+            tabIndex={0}
+            aria-pressed={gap1 === 6}
+            onMouseEnter={() => setGap1(6)}
+            onFocus={() => setGap1(6)}
+            onClick={() => setGap1(6)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                setGap1(6)
+              }
+            }}
+          >
             {' '}
             is-6{' '}
-          </a>{' '}
-          <a data-value={'7'} className={'bd-klmn-gap'}>
+          </a>
+          <a
+            data-value={'7'}
+            className={
+              gap1 === 7 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'
+            }
+            role={'button'}
+            tabIndex={0}
+            aria-pressed={gap1 === 7}
+            onMouseEnter={() => setGap1(7)}
+            onFocus={() => setGap1(7)}
+            onClick={() => setGap1(7)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                setGap1(7)
+              }
+            }}
+          >
             {' '}
             is-7{' '}
-          </a>{' '}
-          <a data-value={'8'} className={'bd-klmn-gap'}>
+          </a>
+          <a
+            data-value={'8'}
+            className={
+              gap1 === 8 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'
+            }
+            role={'button'}
+            tabIndex={0}
+            aria-pressed={gap1 === 8}
+            onMouseEnter={() => setGap1(8)}
+            onFocus={() => setGap1(8)}
+            onClick={() => setGap1(8)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                setGap1(8)
+              }
+            }}
+          >
             {' '}
             is-8{' '}
-          </a>{' '}
-        </div>{' '}
+          </a>
+        </div>
         <div className={'bd-klmn-lead'}>
-          {' '}
-          <ui.Columns className={'rb-is-variable bd-klmn-columns'}>
-            {' '}
-            <ui.Column width={3}>
-              {' '}
+          <Columns className={'rb-is-variable bd-klmn-columns'} gap={gap1}>
+            <Column width={3}>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                Side{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column width={9}>
-              {' '}
+                Side
+              </div>
+            </Column>
+            <Column width={9}>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                Main{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-          </ui.Columns>{' '}
-          <ui.Columns className={'rb-is-variable bd-klmn-columns'}>
-            {' '}
-            <ui.Column width={4}>
-              {' '}
+                Main
+              </div>
+            </Column>
+          </Columns>
+          <Columns className={'rb-is-variable bd-klmn-columns'} gap={gap1}>
+            <Column width={4}>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                Three columns{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column width={4}>
-              {' '}
+                Three columns
+              </div>
+            </Column>
+            <Column width={4}>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                Three columns{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column width={4}>
-              {' '}
+                Three columns
+              </div>
+            </Column>
+            <Column width={4}>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                Three columns{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-          </ui.Columns>{' '}
-          <ui.Columns className={'rb-is-variable bd-klmn-columns'}>
-            {' '}
-            <ui.Column>
-              {' '}
+                Three columns
+              </div>
+            </Column>
+          </Columns>
+          <Columns className={'rb-is-variable bd-klmn-columns'} gap={gap1}>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                1{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                1
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                2{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                2
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                3{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                3
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                4{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                4
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                5{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                5
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                6{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                6
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                7{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                7
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                8{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                8
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                9{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                9
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                10{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                10
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                11{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-            <ui.Column>
-              {' '}
+                11
+              </div>
+            </Column>
+            <Column>
               <div
                 className={[
-                  ui.helpers({ textAlign: 'center' }),
+                  helpers({ textAlign: 'center' }),
                   'bd-notification is-primary',
                 ]
                   .filter(Boolean)
                   .join(' ')}
               >
-                {' '}
-                12{' '}
-              </div>{' '}
-            </ui.Column>{' '}
-          </ui.Columns>{' '}
-        </div>{' '}
+                12
+              </div>
+            </Column>
+          </Columns>
+        </div>
       </div>
     </>
   )
 }
 
-function Example005Demo() {
+function GapsAtEachBreakpointDemo() {
   return (
     <>
-      <ui.Columns
+      <Columns
         gap={{ mobile: 1, tablet: 0, desktop: 3, widescreen: 8, fullhd: 2 }}
       >
-        {' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Column</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Column</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Column</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Column</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Column</p>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <p className={'bd-notification is-primary'}>Column</p>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+        <Column>
+          <p className={'bd-notification is-primary'}>Column</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Column</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Column</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Column</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Column</p>
+        </Column>
+        <Column>
+          <p className={'bd-notification is-primary'}>Column</p>
+        </Column>
+      </Columns>
     </>
   )
 }
 
-export const Example001 = {
+export const DefaultColumnGapStory = {
   name: 'Default column gap',
   parameters: {
     official: { id: 'columns-gap/default-gap/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Default gap</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Default gap</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Default gap</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Default gap</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Column, Columns } from '@seagreenio/react-bulma'\n\nfunction DefaultColumnGapDemo() {\n  return (\n    <>\n      <Columns>\n        <Column>\n          <p className={'bd-notification is-primary'}>Default gap</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Default gap</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Default gap</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Default gap</p>\n        </Column>\n      </Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultColumnGapDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const GaplessColumnsStory = {
   name: 'Gapless columns',
   parameters: {
     official: { id: 'columns-gap/gapless/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns gapless>\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>First column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Second column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Third column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Fourth column</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Column, Columns } from '@seagreenio/react-bulma'\n\nfunction GaplessColumnsDemo() {\n  return (\n    <>\n      <Columns gapless>\n        <Column>\n          <p className={'bd-notification is-primary'}>First column</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Second column</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Third column</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Fourth column</p>\n        </Column>\n      </Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: GaplessColumnsDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const GaplessMultilineColumnsStory = {
   name: 'Gapless multiline columns',
   parameters: {
     official: { id: 'columns-gap/gapless/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns multiline displayFrom={'mobile'} gapless>\n        {' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-half'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'one-quarter'}>\n          {' '}\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Auto</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Column, Columns } from '@seagreenio/react-bulma'\n\nfunction GaplessMultilineColumnsDemo() {\n  return (\n    <>\n      <Columns multiline displayFrom={'mobile'} gapless>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'half'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-half'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column width={'one-quarter'}>\n          <p className={'bd-notification is-primary'}>\n            <code>{'is-one-quarter'}</code>\n          </p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Auto</p>\n        </Column>\n      </Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: GaplessMultilineColumnsDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const InteractiveGapSelectorStory = {
   name: 'Interactive gap selector',
   parameters: {
     official: { id: 'columns-gap/variable-gap/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <div id={'klmn'} className={'bd-klmn'}>\n        {' '}\n        <div className={'bd-klmn-gaps'}>\n          {' '}\n          <strong className={'bd-klmn-label'}>\n            {' '}\n            Gap: <code id={'klmnValue'} className={'bd-klmn-value'} />{' '}\n          </strong>{' '}\n          <a data-value={'0'} className={'bd-klmn-gap'}>\n            {' '}\n            is-0{' '}\n          </a>{' '}\n          <a data-value={'1'} className={'bd-klmn-gap'}>\n            {' '}\n            is-1{' '}\n          </a>{' '}\n          <a data-value={'2'} className={'bd-klmn-gap'}>\n            {' '}\n            is-2{' '}\n          </a>{' '}\n          <a data-value={'3'} className={'bd-klmn-gap'}>\n            {' '}\n            is-3{' '}\n          </a>{' '}\n          <a data-value={'4'} className={'bd-klmn-gap'}>\n            {' '}\n            is-4{' '}\n          </a>{' '}\n          <a data-value={'5'} className={'bd-klmn-gap'}>\n            {' '}\n            is-5{' '}\n          </a>{' '}\n          <a data-value={'6'} className={'bd-klmn-gap'}>\n            {' '}\n            is-6{' '}\n          </a>{' '}\n          <a data-value={'7'} className={'bd-klmn-gap'}>\n            {' '}\n            is-7{' '}\n          </a>{' '}\n          <a data-value={'8'} className={'bd-klmn-gap'}>\n            {' '}\n            is-8{' '}\n          </a>{' '}\n        </div>{' '}\n        <div className={'bd-klmn-lead'}>\n          {' '}\n          <ui.Columns className={'rb-is-variable bd-klmn-columns'}>\n            {' '}\n            <ui.Column width={3}>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                Side{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column width={9}>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                Main{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n          </ui.Columns>{' '}\n          <ui.Columns className={'rb-is-variable bd-klmn-columns'}>\n            {' '}\n            <ui.Column width={4}>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                Three columns{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column width={4}>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                Three columns{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column width={4}>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                Three columns{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n          </ui.Columns>{' '}\n          <ui.Columns className={'rb-is-variable bd-klmn-columns'}>\n            {' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                1{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                2{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                3{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                4{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                5{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                6{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                7{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                8{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                9{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                10{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                11{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n            <ui.Column>\n              {' '}\n              <div\n                className={[\n                  ui.helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                {' '}\n                12{' '}\n              </div>{' '}\n            </ui.Column>{' '}\n          </ui.Columns>{' '}\n        </div>{' '}\n      </div>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Column, Columns, helpers } from '@seagreenio/react-bulma'\n\nfunction InteractiveGapSelectorDemo() {\n  const [gap1, setGap1] = useState(3 as 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8)\n  return (\n    <>\n      <div id={'klmn'} className={'bd-klmn'}>\n        <div className={'bd-klmn-gaps'}>\n          <strong className={'bd-klmn-label'}>\n            {' '}\n            Gap:{' '}\n            <code\n              id={'klmnValue'}\n              className={'bd-klmn-value'}\n              children={gap1 * 0.25 + 'rem'}\n            />{' '}\n          </strong>\n          <a\n            data-value={'0'}\n            className={\n              gap1 === 0 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'\n            }\n            role={'button'}\n            tabIndex={0}\n            aria-pressed={gap1 === 0}\n            onMouseEnter={() => setGap1(0)}\n            onFocus={() => setGap1(0)}\n            onClick={() => setGap1(0)}\n            onKeyDown={(event) => {\n              if (event.key === 'Enter' || event.key === ' ') {\n                event.preventDefault()\n                setGap1(0)\n              }\n            }}\n          >\n            {' '}\n            is-0{' '}\n          </a>\n          <a\n            data-value={'1'}\n            className={\n              gap1 === 1 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'\n            }\n            role={'button'}\n            tabIndex={0}\n            aria-pressed={gap1 === 1}\n            onMouseEnter={() => setGap1(1)}\n            onFocus={() => setGap1(1)}\n            onClick={() => setGap1(1)}\n            onKeyDown={(event) => {\n              if (event.key === 'Enter' || event.key === ' ') {\n                event.preventDefault()\n                setGap1(1)\n              }\n            }}\n          >\n            {' '}\n            is-1{' '}\n          </a>\n          <a\n            data-value={'2'}\n            className={\n              gap1 === 2 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'\n            }\n            role={'button'}\n            tabIndex={0}\n            aria-pressed={gap1 === 2}\n            onMouseEnter={() => setGap1(2)}\n            onFocus={() => setGap1(2)}\n            onClick={() => setGap1(2)}\n            onKeyDown={(event) => {\n              if (event.key === 'Enter' || event.key === ' ') {\n                event.preventDefault()\n                setGap1(2)\n              }\n            }}\n          >\n            {' '}\n            is-2{' '}\n          </a>\n          <a\n            data-value={'3'}\n            className={\n              gap1 === 3 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'\n            }\n            role={'button'}\n            tabIndex={0}\n            aria-pressed={gap1 === 3}\n            onMouseEnter={() => setGap1(3)}\n            onFocus={() => setGap1(3)}\n            onClick={() => setGap1(3)}\n            onKeyDown={(event) => {\n              if (event.key === 'Enter' || event.key === ' ') {\n                event.preventDefault()\n                setGap1(3)\n              }\n            }}\n          >\n            {' '}\n            is-3{' '}\n          </a>\n          <a\n            data-value={'4'}\n            className={\n              gap1 === 4 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'\n            }\n            role={'button'}\n            tabIndex={0}\n            aria-pressed={gap1 === 4}\n            onMouseEnter={() => setGap1(4)}\n            onFocus={() => setGap1(4)}\n            onClick={() => setGap1(4)}\n            onKeyDown={(event) => {\n              if (event.key === 'Enter' || event.key === ' ') {\n                event.preventDefault()\n                setGap1(4)\n              }\n            }}\n          >\n            {' '}\n            is-4{' '}\n          </a>\n          <a\n            data-value={'5'}\n            className={\n              gap1 === 5 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'\n            }\n            role={'button'}\n            tabIndex={0}\n            aria-pressed={gap1 === 5}\n            onMouseEnter={() => setGap1(5)}\n            onFocus={() => setGap1(5)}\n            onClick={() => setGap1(5)}\n            onKeyDown={(event) => {\n              if (event.key === 'Enter' || event.key === ' ') {\n                event.preventDefault()\n                setGap1(5)\n              }\n            }}\n          >\n            {' '}\n            is-5{' '}\n          </a>\n          <a\n            data-value={'6'}\n            className={\n              gap1 === 6 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'\n            }\n            role={'button'}\n            tabIndex={0}\n            aria-pressed={gap1 === 6}\n            onMouseEnter={() => setGap1(6)}\n            onFocus={() => setGap1(6)}\n            onClick={() => setGap1(6)}\n            onKeyDown={(event) => {\n              if (event.key === 'Enter' || event.key === ' ') {\n                event.preventDefault()\n                setGap1(6)\n              }\n            }}\n          >\n            {' '}\n            is-6{' '}\n          </a>\n          <a\n            data-value={'7'}\n            className={\n              gap1 === 7 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'\n            }\n            role={'button'}\n            tabIndex={0}\n            aria-pressed={gap1 === 7}\n            onMouseEnter={() => setGap1(7)}\n            onFocus={() => setGap1(7)}\n            onClick={() => setGap1(7)}\n            onKeyDown={(event) => {\n              if (event.key === 'Enter' || event.key === ' ') {\n                event.preventDefault()\n                setGap1(7)\n              }\n            }}\n          >\n            {' '}\n            is-7{' '}\n          </a>\n          <a\n            data-value={'8'}\n            className={\n              gap1 === 8 ? 'bd-klmn-gap bd-is-selected' : 'bd-klmn-gap'\n            }\n            role={'button'}\n            tabIndex={0}\n            aria-pressed={gap1 === 8}\n            onMouseEnter={() => setGap1(8)}\n            onFocus={() => setGap1(8)}\n            onClick={() => setGap1(8)}\n            onKeyDown={(event) => {\n              if (event.key === 'Enter' || event.key === ' ') {\n                event.preventDefault()\n                setGap1(8)\n              }\n            }}\n          >\n            {' '}\n            is-8{' '}\n          </a>\n        </div>\n        <div className={'bd-klmn-lead'}>\n          <Columns className={'rb-is-variable bd-klmn-columns'} gap={gap1}>\n            <Column width={3}>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                Side\n              </div>\n            </Column>\n            <Column width={9}>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                Main\n              </div>\n            </Column>\n          </Columns>\n          <Columns className={'rb-is-variable bd-klmn-columns'} gap={gap1}>\n            <Column width={4}>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                Three columns\n              </div>\n            </Column>\n            <Column width={4}>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                Three columns\n              </div>\n            </Column>\n            <Column width={4}>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                Three columns\n              </div>\n            </Column>\n          </Columns>\n          <Columns className={'rb-is-variable bd-klmn-columns'} gap={gap1}>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                1\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                2\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                3\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                4\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                5\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                6\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                7\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                8\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                9\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                10\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                11\n              </div>\n            </Column>\n            <Column>\n              <div\n                className={[\n                  helpers({ textAlign: 'center' }),\n                  'bd-notification is-primary',\n                ]\n                  .filter(Boolean)\n                  .join(' ')}\n              >\n                12\n              </div>\n            </Column>\n          </Columns>\n        </div>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: InteractiveGapSelectorDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const GapsAtEachBreakpointStory = {
   name: 'Gaps at each breakpoint',
   parameters: {
     official: { id: 'columns-gap/breakpoint-based-column-gaps/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Columns\n        gap={{ mobile: 1, tablet: 0, desktop: 3, widescreen: 8, fullhd: 2 }}\n      >\n        {' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <p className={'bd-notification is-primary'}>Column</p>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Column, Columns } from '@seagreenio/react-bulma'\n\nfunction GapsAtEachBreakpointDemo() {\n  return (\n    <>\n      <Columns\n        gap={{ mobile: 1, tablet: 0, desktop: 3, widescreen: 8, fullhd: 2 }}\n      >\n        <Column>\n          <p className={'bd-notification is-primary'}>Column</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Column</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Column</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Column</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Column</p>\n        </Column>\n        <Column>\n          <p className={'bd-notification is-primary'}>Column</p>\n        </Column>\n      </Columns>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: GapsAtEachBreakpointDemo,
 } satisfies StoryObj

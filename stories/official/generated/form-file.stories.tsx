@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
 import { useState } from 'react'
-import * as ui from '../../../src'
+import { Content, File } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -24,478 +24,363 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="form-file" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'File upload'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'A custom '}
           <strong data-official-prose="">{'file upload'}</strong>
           {' input, without JavaScript'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The '}
+            {' The '}
             <code data-official-prose="">{'file'}</code>
             {' element is a simple '}
             <strong data-official-prose="">{'interactive label'}</strong>
-            {' that wraps an\n    '}
+            {' that wraps an '}
             <code data-official-prose="">{'<input type="file">'}</code>
-            {'. It comprises several sub-elements:\n  '}
+            {'. It comprises several sub-elements: '}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'file'}</code>
               {' the main '}
               <strong data-official-prose="">{'container'}</strong>
-              {'\n      '}
               <ul data-official-prose="">
-                {'\n        '}
                 <li data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'file-label'}</code>
                   {' the actual '}
                   <strong data-official-prose="">{'interactive'}</strong>
-                  {' and clickable part of the element\n          '}
+                  {' and clickable part of the element '}
                   <ul data-official-prose="">
-                    {'\n            '}
                     <li data-official-prose="">
                       <code data-official-prose="">{'file-input'}</code>
                       {' the '}
                       <strong data-official-prose="">{'native'}</strong>
                       {' file input, hidden for styling purposes'}
                     </li>
-                    {'\n            '}
                     <li data-official-prose="">
-                      {'\n              '}
                       <code data-official-prose="">{'file-cta'}</code>
                       {' the upload '}
                       <strong data-official-prose="">{'call-to-action'}</strong>
-                      {'\n              '}
                       <ul data-official-prose="">
-                        {'\n                '}
                         <li data-official-prose="">
                           <code data-official-prose="">{'file-icon'}</code>
                           {' an optional '}
                           <strong data-official-prose="">{'upload'}</strong>
                           {' icon'}
                         </li>
-                        {'\n                '}
                         <li data-official-prose="">
                           <code data-official-prose="">{'file-label'}</code>
                           {' the "Choose a file…" text'}
                         </li>
-                        {'\n              '}
                       </ul>
-                      {'\n            '}
                     </li>
-                    {'\n            '}
                     <li data-official-prose="">
                       <code data-official-prose="">{'file-name'}</code>
                       {' a container for the '}
                       <strong data-official-prose="">{'chosen file'}</strong>
                       {' name'}
                     </li>
-                    {'\n          '}
                   </ul>
-                  {'\n        '}
                 </li>
-                {'\n      '}
               </ul>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={DefaultFileUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'modifiers'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Modifiers\n  '}
-          </span>
-          {'\n  '}
+            {' Modifiers '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#modifiers'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
-        <div data-official-example="form-file/modifiers/001">
-          <Canvas of={Example002} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-6'}
+            data-source-example={'form-file/modifiers/001'}
+          >
+            <div data-official-example="form-file/modifiers/001">
+              <Canvas of={FilenameLabelStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-6 bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="file has-name">\n  <label class="file-label">\n    <input class="file-input" type="file" name="resume" />\n    <span class="file-cta">\n      <span class="file-icon">\n        <i class="fas fa-upload"></i>\n      </span>\n      <span class="file-label"> Choose a file… </span>\n    </span>\n    <span class="file-name"> Screen Shot 2017-07-29 at 15.54.25.png </span>\n  </label>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="form-file/modifiers/002">
-          <Canvas of={Example003} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-6'}
+            data-source-example={'form-file/modifiers/002'}
+          >
+            <div data-official-example="form-file/modifiers/002">
+              <Canvas of={FilenameWithCTAOnTheRightStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-6 bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="file has-name is-right">\n  <label class="file-label">\n    <input class="file-input" type="file" name="resume" />\n    <span class="file-cta">\n      <span class="file-icon">\n        <i class="fas fa-upload"></i>\n      </span>\n      <span class="file-label"> Choose a file… </span>\n    </span>\n    <span class="file-name"> Screen Shot 2017-07-29 at 15.54.25.png </span>\n  </label>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="form-file/modifiers/003">
-          <Canvas of={Example004} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-6'}
+            data-source-example={'form-file/modifiers/003'}
+          >
+            <div data-official-example="form-file/modifiers/003">
+              <Canvas of={FullWidthFilenameStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-6 bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="file has-name is-fullwidth">\n  <label class="file-label">\n    <input class="file-input" type="file" name="resume" />\n    <span class="file-cta">\n      <span class="file-icon">\n        <i class="fas fa-upload"></i>\n      </span>\n      <span class="file-label"> Choose a file… </span>\n    </span>\n    <span class="file-name"> Screen Shot 2017-07-29 at 15.54.25.png </span>\n  </label>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="form-file/modifiers/004">
-          <Canvas of={Example005} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-6'}
+            data-source-example={'form-file/modifiers/004'}
+          >
+            <div data-official-example="form-file/modifiers/004">
+              <Canvas of={BoxedFileUploadStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-6 bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="file is-boxed">\n  <label class="file-label">\n    <input class="file-input" type="file" name="resume" />\n    <span class="file-cta">\n      <span class="file-icon">\n        <i class="fas fa-upload"></i>\n      </span>\n      <span class="file-label"> Choose a file… </span>\n    </span>\n  </label>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="form-file/modifiers/005">
-          <Canvas of={Example006} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-6'}
+            data-source-example={'form-file/modifiers/005'}
+          >
+            <div data-official-example="form-file/modifiers/005">
+              <Canvas of={BoxedUploadWithFilenameStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-6 bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="file has-name is-boxed">\n  <label class="file-label">\n    <input class="file-input" type="file" name="resume" />\n    <span class="file-cta">\n      <span class="file-icon">\n        <i class="fas fa-upload"></i>\n      </span>\n      <span class="file-label"> Choose a file… </span>\n    </span>\n    <span class="file-name"> Screen Shot 2017-07-29 at 15.54.25.png </span>\n  </label>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'colors'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Colors\n  '}
-          </span>
-          {'\n  '}
+            {' Colors '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#colors'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {
-              '\n    You can style the file element by appending one of the\n    '
-            }
+            {' You can style the file element by appending one of the '}
             <strong data-official-prose="">{'0 color modifiers'}</strong>
-            {':\n  '}
+            {': '}
           </p>
-          {'\n  '}
-          <ul data-official-prose="">{'\n    \n  '}</ul>
-          {'\n'}
+          <ul data-official-prose=""></ul>
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/colors/001">
-          <Canvas of={Example007} />
+          <Canvas of={PrimaryFileUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/colors/002">
-          <Canvas of={Example008} />
+          <Canvas of={InfoUploadWithFilenameStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/colors/003">
-          <Canvas of={Example009} />
+          <Canvas of={WarningBoxedUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/colors/004">
-          <Canvas of={Example010} />
+          <Canvas of={DangerBoxedUploadWithFilenameStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can append one of the '}
             <strong data-official-prose="">{'4 available sizes'}</strong>
             {':'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'is-small'}</code>
-              {'\n    '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'is-normal'}</code>
               {' (default)'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'is-medium'}</code>
-              {'\n    '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'is-large'}</code>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/001">
-          <Canvas of={Example011} />
+          <Canvas of={SmallFileUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/002">
-          <Canvas of={Example012} />
+          <Canvas of={NormalFileUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/003">
-          <Canvas of={Example013} />
+          <Canvas of={MediumFileUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/004">
-          <Canvas of={Example014} />
+          <Canvas of={LargeFileUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/005">
-          <Canvas of={Example015} />
+          <Canvas of={SmallUploadWithFilenameStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/006">
-          <Canvas of={Example016} />
+          <Canvas of={NormalUploadWithFilenameStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/007">
-          <Canvas of={Example017} />
+          <Canvas of={MediumUploadWithFilenameStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/008">
-          <Canvas of={Example018} />
+          <Canvas of={LargeUploadWithFilenameStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/009">
-          <Canvas of={Example019} />
+          <Canvas of={SmallBoxedUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/010">
-          <Canvas of={Example020} />
+          <Canvas of={NormalBoxedUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/011">
-          <Canvas of={Example021} />
+          <Canvas of={MediumBoxedUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/012">
-          <Canvas of={Example022} />
+          <Canvas of={LargeBoxedUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/013">
-          <Canvas of={Example023} />
+          <Canvas of={SmallBoxedUploadWithFilenameStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/014">
-          <Canvas of={Example024} />
+          <Canvas of={NormalBoxedUploadWithFilenameStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/015">
-          <Canvas of={Example025} />
+          <Canvas of={MediumBoxedUploadWithFilenameStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/sizes/016">
-          <Canvas of={Example026} />
+          <Canvas of={LargeBoxedUploadWithFilenameStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h3
           data-official-prose=""
           id={'alignment'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Alignment\n  '}
-          </span>
-          {'\n  '}
+            {' Alignment '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#alignment'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can '}
             <strong data-official-prose="">{'align'}</strong>
             {' the file input:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               {'to the '}
               <strong data-official-prose="">{'center'}</strong>
@@ -503,7 +388,6 @@ function OfficialDocs() {
               <code data-official-prose="">{'is-centered'}</code>
               {' modifier'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               {'to the '}
               <strong data-official-prose="">{'right'}</strong>
@@ -511,776 +395,264 @@ function OfficialDocs() {
               <code data-official-prose="">{'is-right'}</code>
               {' modifier'}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/alignment/001">
-          <Canvas of={Example027} />
+          <Canvas of={CenteredBoxedUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/alignment/002">
-          <Canvas of={Example028} />
+          <Canvas of={RightAlignedUploadStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'javascript'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    JavaScript\n  '}
-          </span>
-          {'\n  '}
+            {' JavaScript '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#javascript'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    A file upload input requires JavaScript to '}
+            {' A file upload input requires JavaScript to '}
             <strong data-official-prose="">{'retrieve'}</strong>
             {' the '}
             <strong data-official-prose="">{'selected file name'}</strong>
-            {'. Here\n    is an example of how this could be done:\n  '}
+            {'. Here is an example of how this could be done: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-file/javascript/001">
-          <Canvas of={Example029} />
+          <Canvas of={LiveFilenameUpdateStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$file-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-file-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$file-cta-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$file-cta-hover-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-strong)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$file-cta-active-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-strong)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$file-name-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-file-name-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$file-name-border-style'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-file-name-border-style)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'solid'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$file-name-border-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-file-name-border-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1px 1px 1px 0'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$file-name-max-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-file-name-max-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'16em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultFileUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
       >
-        {' '}
-        Choose a file…{' '}
-      </ui.File>
+        Choose a file…
+      </File>
     </>
   )
 }
 
-function Example002Demo() {
+function FilenameLabelDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={6}>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              With the <code>{'has-name'}</code> modifier combined with the{' '}
-              <code>{'file-name'}</code> element, you can add a{' '}
-              <strong>placeholder</strong> for the selected file name.
-            </p>{' '}
-          </ui.Content>{' '}
-          <div className={'bd-example'}>
-            {' '}
-            <ui.File
-              name={'resume'}
-              icon={
-                <>
-                  {' '}
-                  <i className={'fas fa-upload'} />{' '}
-                </>
-              }
-              filename={filename1}
-              onChange={(event) =>
-                setFilename1(
-                  event.currentTarget.files?.[0]?.name ??
-                    ' Screen Shot 2017-07-29 at 15.54.25.png ',
-                )
-              }
-            >
-              {' '}
-              Choose a file…{' '}
-            </ui.File>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={6} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="file has-name">\n  <label class="file-label">\n    <input class="file-input" type="file" name="resume" />\n    <span class="file-cta">\n      <span class="file-icon">\n        <i class="fas fa-upload"></i>\n      </span>\n      <span class="file-label"> Choose a file… </span>\n    </span>\n    <span class="file-name"> Screen Shot 2017-07-29 at 15.54.25.png </span>\n  </label>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          With the <code>{'has-name'}</code> modifier combined with the{' '}
+          <code>{'file-name'}</code> element, you can add a{' '}
+          <strong>placeholder</strong> for the selected file name.
+        </p>
+      </Content>
+      <div className={'bd-example'}>
+        <File
+          name={'resume'}
+          icon={
+            <>
+              <i className={'fas fa-upload'} />
+            </>
+          }
+          filename={filename1}
+          onChange={(event) =>
+            setFilename1(
+              event.currentTarget.files?.[0]?.name ??
+                ' Screen Shot 2017-07-29 at 15.54.25.png ',
+            )
+          }
+        >
+          Choose a file…
+        </File>
+      </div>
     </>
   )
 }
 
-function Example003Demo() {
+function FilenameWithCTAOnTheRightDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={6}>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              You can move the CTA to the <strong>right side</strong> with the{' '}
-              <code>{'is-right'}</code> modifier.
-            </p>{' '}
-          </ui.Content>{' '}
-          <div className={'bd-example'}>
-            {' '}
-            <ui.File
-              name={'resume'}
-              alignment={'right'}
-              icon={
-                <>
-                  {' '}
-                  <i className={'fas fa-upload'} />{' '}
-                </>
-              }
-              filename={filename1}
-              onChange={(event) =>
-                setFilename1(
-                  event.currentTarget.files?.[0]?.name ??
-                    ' Screen Shot 2017-07-29 at 15.54.25.png ',
-                )
-              }
-            >
-              {' '}
-              Choose a file…{' '}
-            </ui.File>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={6} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="file has-name is-right">\n  <label class="file-label">\n    <input class="file-input" type="file" name="resume" />\n    <span class="file-cta">\n      <span class="file-icon">\n        <i class="fas fa-upload"></i>\n      </span>\n      <span class="file-label"> Choose a file… </span>\n    </span>\n    <span class="file-name"> Screen Shot 2017-07-29 at 15.54.25.png </span>\n  </label>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          You can move the CTA to the <strong>right side</strong> with the{' '}
+          <code>{'is-right'}</code> modifier.
+        </p>
+      </Content>
+      <div className={'bd-example'}>
+        <File
+          name={'resume'}
+          alignment={'right'}
+          icon={
+            <>
+              <i className={'fas fa-upload'} />
+            </>
+          }
+          filename={filename1}
+          onChange={(event) =>
+            setFilename1(
+              event.currentTarget.files?.[0]?.name ??
+                ' Screen Shot 2017-07-29 at 15.54.25.png ',
+            )
+          }
+        >
+          Choose a file…
+        </File>
+      </div>
     </>
   )
 }
 
-function Example004Demo() {
+function FullWidthFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={6}>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              You can also <strong>expand</strong> the name to fill up the space
-              with the <code>{'is-fullwidth'}</code> modifier.
-            </p>{' '}
-          </ui.Content>{' '}
-          <div className={'bd-example'}>
-            {' '}
-            <ui.File
-              name={'resume'}
-              fullWidth
-              icon={
-                <>
-                  {' '}
-                  <i className={'fas fa-upload'} />{' '}
-                </>
-              }
-              filename={filename1}
-              onChange={(event) =>
-                setFilename1(
-                  event.currentTarget.files?.[0]?.name ??
-                    ' Screen Shot 2017-07-29 at 15.54.25.png ',
-                )
-              }
-            >
-              {' '}
-              Choose a file…{' '}
-            </ui.File>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={6} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="file has-name is-fullwidth">\n  <label class="file-label">\n    <input class="file-input" type="file" name="resume" />\n    <span class="file-cta">\n      <span class="file-icon">\n        <i class="fas fa-upload"></i>\n      </span>\n      <span class="file-label"> Choose a file… </span>\n    </span>\n    <span class="file-name"> Screen Shot 2017-07-29 at 15.54.25.png </span>\n  </label>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          You can also <strong>expand</strong> the name to fill up the space
+          with the <code>{'is-fullwidth'}</code> modifier.
+        </p>
+      </Content>
+      <div className={'bd-example'}>
+        <File
+          name={'resume'}
+          fullWidth
+          icon={
+            <>
+              <i className={'fas fa-upload'} />
+            </>
+          }
+          filename={filename1}
+          onChange={(event) =>
+            setFilename1(
+              event.currentTarget.files?.[0]?.name ??
+                ' Screen Shot 2017-07-29 at 15.54.25.png ',
+            )
+          }
+        >
+          Choose a file…
+        </File>
+      </div>
     </>
   )
 }
 
-function Example005Demo() {
+function BoxedFileUploadDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={6}>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              You can have a <strong>boxed block</strong> with the{' '}
-              <code>{'is-boxed'}</code> modifier.
-            </p>{' '}
-          </ui.Content>{' '}
-          <div className={'bd-example'}>
-            {' '}
-            <ui.File
-              name={'resume'}
-              boxed
-              icon={
-                <>
-                  {' '}
-                  <i className={'fas fa-upload'} />{' '}
-                </>
-              }
-            >
-              {' '}
-              Choose a file…{' '}
-            </ui.File>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={6} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="file is-boxed">\n  <label class="file-label">\n    <input class="file-input" type="file" name="resume" />\n    <span class="file-cta">\n      <span class="file-icon">\n        <i class="fas fa-upload"></i>\n      </span>\n      <span class="file-label"> Choose a file… </span>\n    </span>\n  </label>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          You can have a <strong>boxed block</strong> with the{' '}
+          <code>{'is-boxed'}</code> modifier.
+        </p>
+      </Content>
+      <div className={'bd-example'}>
+        <File
+          name={'resume'}
+          boxed
+          icon={
+            <>
+              <i className={'fas fa-upload'} />
+            </>
+          }
+        >
+          Choose a file…
+        </File>
+      </div>
     </>
   )
 }
 
-function Example006Demo() {
+function BoxedUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={6}>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              You can <strong>combine</strong> <code>{'has-name'}</code> and{' '}
-              <code>{'is-boxed'}</code>.
-            </p>{' '}
-          </ui.Content>{' '}
-          <div className={'bd-example'}>
-            {' '}
-            <ui.File
-              name={'resume'}
-              boxed
-              icon={
-                <>
-                  {' '}
-                  <i className={'fas fa-upload'} />{' '}
-                </>
-              }
-              filename={filename1}
-              onChange={(event) =>
-                setFilename1(
-                  event.currentTarget.files?.[0]?.name ??
-                    ' Screen Shot 2017-07-29 at 15.54.25.png ',
-                )
-              }
-            >
-              {' '}
-              Choose a file…{' '}
-            </ui.File>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={6} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="file has-name is-boxed">\n  <label class="file-label">\n    <input class="file-input" type="file" name="resume" />\n    <span class="file-cta">\n      <span class="file-icon">\n        <i class="fas fa-upload"></i>\n      </span>\n      <span class="file-label"> Choose a file… </span>\n    </span>\n    <span class="file-name"> Screen Shot 2017-07-29 at 15.54.25.png </span>\n  </label>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          You can <strong>combine</strong> <code>{'has-name'}</code> and{' '}
+          <code>{'is-boxed'}</code>.
+        </p>
+      </Content>
+      <div className={'bd-example'}>
+        <File
+          name={'resume'}
+          boxed
+          icon={
+            <>
+              <i className={'fas fa-upload'} />
+            </>
+          }
+          filename={filename1}
+          onChange={(event) =>
+            setFilename1(
+              event.currentTarget.files?.[0]?.name ??
+                ' Screen Shot 2017-07-29 at 15.54.25.png ',
+            )
+          }
+        >
+          Choose a file…
+        </File>
+      </div>
     </>
   )
 }
 
-function Example007Demo() {
+function PrimaryFileUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         color={'primary'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
       >
-        {' '}
-        Primary file…{' '}
-      </ui.File>
+        Primary file…
+      </File>
     </>
   )
 }
 
-function Example008Demo() {
+function InfoUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         color={'info'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1291,48 +663,44 @@ function Example008Demo() {
           )
         }
       >
-        {' '}
-        Info file…{' '}
-      </ui.File>
+        Info file…
+      </File>
     </>
   )
 }
 
-function Example009Demo() {
+function WarningBoxedUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         color={'warning'}
         boxed
         icon={
           <>
-            {' '}
-            <i className={'fas fa-cloud-upload-alt'} />{' '}
+            <i className={'fas fa-cloud-upload-alt'} />
           </>
         }
       >
-        {' '}
-        Warning file…{' '}
-      </ui.File>
+        Warning file…
+      </File>
     </>
   )
 }
 
-function Example010Demo() {
+function DangerBoxedUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         color={'danger'}
         boxed
         icon={
           <>
-            {' '}
-            <i className={'fas fa-cloud-upload-alt'} />{' '}
+            <i className={'fas fa-cloud-upload-alt'} />
           </>
         }
         filename={filename1}
@@ -1343,106 +711,96 @@ function Example010Demo() {
           )
         }
       >
-        {' '}
-        Danger file…{' '}
-      </ui.File>
+        Danger file…
+      </File>
     </>
   )
 }
 
-function Example011Demo() {
+function SmallFileUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'small'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
       >
-        {' '}
-        Small file…{' '}
-      </ui.File>
+        Small file…
+      </File>
     </>
   )
 }
 
-function Example012Demo() {
+function NormalFileUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'normal'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
       >
-        {' '}
-        Normal file…{' '}
-      </ui.File>
+        Normal file…
+      </File>
     </>
   )
 }
 
-function Example013Demo() {
+function MediumFileUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'medium'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
       >
-        {' '}
-        Medium file…{' '}
-      </ui.File>
+        Medium file…
+      </File>
     </>
   )
 }
 
-function Example014Demo() {
+function LargeFileUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'large'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
       >
-        {' '}
-        Large file…{' '}
-      </ui.File>
+        Large file…
+      </File>
     </>
   )
 }
 
-function Example015Demo() {
+function SmallUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'small'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1453,26 +811,24 @@ function Example015Demo() {
           )
         }
       >
-        {' '}
-        Small file…{' '}
-      </ui.File>
+        Small file…
+      </File>
     </>
   )
 }
 
-function Example016Demo() {
+function NormalUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'normal'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1483,26 +839,24 @@ function Example016Demo() {
           )
         }
       >
-        {' '}
-        Normal file…{' '}
-      </ui.File>
+        Normal file…
+      </File>
     </>
   )
 }
 
-function Example017Demo() {
+function MediumUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'medium'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1513,26 +867,24 @@ function Example017Demo() {
           )
         }
       >
-        {' '}
-        Medium file…{' '}
-      </ui.File>
+        Medium file…
+      </File>
     </>
   )
 }
 
-function Example018Demo() {
+function LargeUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'large'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1543,111 +895,101 @@ function Example018Demo() {
           )
         }
       >
-        {' '}
-        Large file…{' '}
-      </ui.File>
+        Large file…
+      </File>
     </>
   )
 }
 
-function Example019Demo() {
+function SmallBoxedUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'small'}
         boxed
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
       >
-        {' '}
-        Small file…{' '}
-      </ui.File>
+        Small file…
+      </File>
     </>
   )
 }
 
-function Example020Demo() {
+function NormalBoxedUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'normal'}
         boxed
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
       >
-        {' '}
-        Normal file…{' '}
-      </ui.File>
+        Normal file…
+      </File>
     </>
   )
 }
 
-function Example021Demo() {
+function MediumBoxedUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'medium'}
         boxed
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
       >
-        {' '}
-        Medium file…{' '}
-      </ui.File>
+        Medium file…
+      </File>
     </>
   )
 }
 
-function Example022Demo() {
+function LargeBoxedUploadDemo() {
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'large'}
         boxed
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
       >
-        {' '}
-        Large file…{' '}
-      </ui.File>
+        Large file…
+      </File>
     </>
   )
 }
 
-function Example023Demo() {
+function SmallBoxedUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'small'}
         boxed
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1658,27 +1000,25 @@ function Example023Demo() {
           )
         }
       >
-        {' '}
-        Small file…{' '}
-      </ui.File>
+        Small file…
+      </File>
     </>
   )
 }
 
-function Example024Demo() {
+function NormalBoxedUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'normal'}
         boxed
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1689,27 +1029,25 @@ function Example024Demo() {
           )
         }
       >
-        {' '}
-        Normal file…{' '}
-      </ui.File>
+        Normal file…
+      </File>
     </>
   )
 }
 
-function Example025Demo() {
+function MediumBoxedUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'medium'}
         boxed
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1720,27 +1058,25 @@ function Example025Demo() {
           )
         }
       >
-        {' '}
-        Medium file…{' '}
-      </ui.File>
+        Medium file…
+      </File>
     </>
   )
 }
 
-function Example026Demo() {
+function LargeBoxedUploadWithFilenameDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         size={'large'}
         boxed
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1751,28 +1087,26 @@ function Example026Demo() {
           )
         }
       >
-        {' '}
-        Large file…{' '}
-      </ui.File>
+        Large file…
+      </File>
     </>
   )
 }
 
-function Example027Demo() {
+function CenteredBoxedUploadDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         alignment={'centered'}
         boxed
         color={'success'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1783,27 +1117,25 @@ function Example027Demo() {
           )
         }
       >
-        {' '}
-        Centered file…{' '}
-      </ui.File>
+        Centered file…
+      </File>
     </>
   )
 }
 
-function Example028Demo() {
+function RightAlignedUploadDemo() {
   const [filename1, setFilename1] = useState(
     ' Screen Shot 2017-07-29 at 15.54.25.png ',
   )
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         alignment={'right'}
         color={'info'}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1814,24 +1146,22 @@ function Example028Demo() {
           )
         }
       >
-        {' '}
-        Right file…{' '}
-      </ui.File>
+        Right file…
+      </File>
     </>
   )
 }
 
-function Example029Demo() {
+function LiveFilenameUpdateDemo() {
   const [filename1, setFilename1] = useState(' No file uploaded ')
   return (
     <>
-      <ui.File
+      <File
         name={'resume'}
         wrapperProps={{ id: 'file-js-example' }}
         icon={
           <>
-            {' '}
-            <i className={'fas fa-upload'} />{' '}
+            <i className={'fas fa-upload'} />
           </>
         }
         filename={filename1}
@@ -1841,444 +1171,443 @@ function Example029Demo() {
           )
         }
       >
-        {' '}
-        Choose a file…{' '}
-      </ui.File>{' '}
+        Choose a file…
+      </File>
     </>
   )
 }
 
-export const Example001 = {
+export const DefaultFileUploadStory = {
   name: 'Default file upload',
   parameters: {
     official: { id: 'form-file/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Choose a file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction DefaultFileUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n      >\n        Choose a file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultFileUploadDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const FilenameLabelStory = {
   name: 'Filename label',
   parameters: {
     official: { id: 'form-file/modifiers/001' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={6}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              With the <code>{'has-name'}</code> modifier combined with the{' '}\n              <code>{'file-name'}</code> element, you can add a{' '}\n              <strong>placeholder</strong> for the selected file name.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.File\n              name={'resume'}\n              icon={\n                <>\n                  {' '}\n                  <i className={'fas fa-upload'} />{' '}\n                </>\n              }\n              filename={filename1}\n              onChange={(event) =>\n                setFilename1(\n                  event.currentTarget.files?.[0]?.name ??\n                    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n                )\n              }\n            >\n              {' '}\n              Choose a file…{' '}\n            </ui.File>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"file has-name\">\\n  <label class=\"file-label\">\\n    <input class=\"file-input\" type=\"file\" name=\"resume\" />\\n    <span class=\"file-cta\">\\n      <span class=\"file-icon\">\\n        <i class=\"fas fa-upload\"></i>\\n      </span>\\n      <span class=\"file-label\"> Choose a file… </span>\\n    </span>\\n    <span class=\"file-name\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Content, File } from '@seagreenio/react-bulma'\n\nfunction FilenameLabelDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <Content>\n        <p>\n          With the <code>{'has-name'}</code> modifier combined with the{' '}\n          <code>{'file-name'}</code> element, you can add a{' '}\n          <strong>placeholder</strong> for the selected file name.\n        </p>\n      </Content>\n      <div className={'bd-example'}>\n        <File\n          name={'resume'}\n          icon={\n            <>\n              <i className={'fas fa-upload'} />\n            </>\n          }\n          filename={filename1}\n          onChange={(event) =>\n            setFilename1(\n              event.currentTarget.files?.[0]?.name ??\n                ' Screen Shot 2017-07-29 at 15.54.25.png ',\n            )\n          }\n        >\n          Choose a file…\n        </File>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: FilenameLabelDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const FilenameWithCTAOnTheRightStory = {
   name: 'Filename with CTA on the right',
   parameters: {
     official: { id: 'form-file/modifiers/002' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={6}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can move the CTA to the <strong>right side</strong> with the{' '}\n              <code>{'is-right'}</code> modifier.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.File\n              name={'resume'}\n              alignment={'right'}\n              icon={\n                <>\n                  {' '}\n                  <i className={'fas fa-upload'} />{' '}\n                </>\n              }\n              filename={filename1}\n              onChange={(event) =>\n                setFilename1(\n                  event.currentTarget.files?.[0]?.name ??\n                    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n                )\n              }\n            >\n              {' '}\n              Choose a file…{' '}\n            </ui.File>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"file has-name is-right\">\\n  <label class=\"file-label\">\\n    <input class=\"file-input\" type=\"file\" name=\"resume\" />\\n    <span class=\"file-cta\">\\n      <span class=\"file-icon\">\\n        <i class=\"fas fa-upload\"></i>\\n      </span>\\n      <span class=\"file-label\"> Choose a file… </span>\\n    </span>\\n    <span class=\"file-name\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Content, File } from '@seagreenio/react-bulma'\n\nfunction FilenameWithCTAOnTheRightDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <Content>\n        <p>\n          You can move the CTA to the <strong>right side</strong> with the{' '}\n          <code>{'is-right'}</code> modifier.\n        </p>\n      </Content>\n      <div className={'bd-example'}>\n        <File\n          name={'resume'}\n          alignment={'right'}\n          icon={\n            <>\n              <i className={'fas fa-upload'} />\n            </>\n          }\n          filename={filename1}\n          onChange={(event) =>\n            setFilename1(\n              event.currentTarget.files?.[0]?.name ??\n                ' Screen Shot 2017-07-29 at 15.54.25.png ',\n            )\n          }\n        >\n          Choose a file…\n        </File>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: FilenameWithCTAOnTheRightDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const FullWidthFilenameStory = {
   name: 'Full-width filename',
   parameters: {
     official: { id: 'form-file/modifiers/003' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={6}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can also <strong>expand</strong> the name to fill up the space\n              with the <code>{'is-fullwidth'}</code> modifier.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.File\n              name={'resume'}\n              fullWidth\n              icon={\n                <>\n                  {' '}\n                  <i className={'fas fa-upload'} />{' '}\n                </>\n              }\n              filename={filename1}\n              onChange={(event) =>\n                setFilename1(\n                  event.currentTarget.files?.[0]?.name ??\n                    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n                )\n              }\n            >\n              {' '}\n              Choose a file…{' '}\n            </ui.File>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"file has-name is-fullwidth\">\\n  <label class=\"file-label\">\\n    <input class=\"file-input\" type=\"file\" name=\"resume\" />\\n    <span class=\"file-cta\">\\n      <span class=\"file-icon\">\\n        <i class=\"fas fa-upload\"></i>\\n      </span>\\n      <span class=\"file-label\"> Choose a file… </span>\\n    </span>\\n    <span class=\"file-name\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Content, File } from '@seagreenio/react-bulma'\n\nfunction FullWidthFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <Content>\n        <p>\n          You can also <strong>expand</strong> the name to fill up the space\n          with the <code>{'is-fullwidth'}</code> modifier.\n        </p>\n      </Content>\n      <div className={'bd-example'}>\n        <File\n          name={'resume'}\n          fullWidth\n          icon={\n            <>\n              <i className={'fas fa-upload'} />\n            </>\n          }\n          filename={filename1}\n          onChange={(event) =>\n            setFilename1(\n              event.currentTarget.files?.[0]?.name ??\n                ' Screen Shot 2017-07-29 at 15.54.25.png ',\n            )\n          }\n        >\n          Choose a file…\n        </File>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: FullWidthFilenameDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const BoxedFileUploadStory = {
   name: 'Boxed file upload',
   parameters: {
     official: { id: 'form-file/modifiers/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={6}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can have a <strong>boxed block</strong> with the{' '}\n              <code>{'is-boxed'}</code> modifier.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.File\n              name={'resume'}\n              boxed\n              icon={\n                <>\n                  {' '}\n                  <i className={'fas fa-upload'} />{' '}\n                </>\n              }\n            >\n              {' '}\n              Choose a file…{' '}\n            </ui.File>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"file is-boxed\">\\n  <label class=\"file-label\">\\n    <input class=\"file-input\" type=\"file\" name=\"resume\" />\\n    <span class=\"file-cta\">\\n      <span class=\"file-icon\">\\n        <i class=\"fas fa-upload\"></i>\\n      </span>\\n      <span class=\"file-label\"> Choose a file… </span>\\n    </span>\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Content, File } from '@seagreenio/react-bulma'\n\nfunction BoxedFileUploadDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          You can have a <strong>boxed block</strong> with the{' '}\n          <code>{'is-boxed'}</code> modifier.\n        </p>\n      </Content>\n      <div className={'bd-example'}>\n        <File\n          name={'resume'}\n          boxed\n          icon={\n            <>\n              <i className={'fas fa-upload'} />\n            </>\n          }\n        >\n          Choose a file…\n        </File>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: BoxedFileUploadDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const BoxedUploadWithFilenameStory = {
   name: 'Boxed upload with filename',
   parameters: {
     official: { id: 'form-file/modifiers/005' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={6}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can <strong>combine</strong> <code>{'has-name'}</code> and{' '}\n              <code>{'is-boxed'}</code>.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.File\n              name={'resume'}\n              boxed\n              icon={\n                <>\n                  {' '}\n                  <i className={'fas fa-upload'} />{' '}\n                </>\n              }\n              filename={filename1}\n              onChange={(event) =>\n                setFilename1(\n                  event.currentTarget.files?.[0]?.name ??\n                    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n                )\n              }\n            >\n              {' '}\n              Choose a file…{' '}\n            </ui.File>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={6} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"file has-name is-boxed\">\\n  <label class=\"file-label\">\\n    <input class=\"file-input\" type=\"file\" name=\"resume\" />\\n    <span class=\"file-cta\">\\n      <span class=\"file-icon\">\\n        <i class=\"fas fa-upload\"></i>\\n      </span>\\n      <span class=\"file-label\"> Choose a file… </span>\\n    </span>\\n    <span class=\"file-name\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { Content, File } from '@seagreenio/react-bulma'\n\nfunction BoxedUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <Content>\n        <p>\n          You can <strong>combine</strong> <code>{'has-name'}</code> and{' '}\n          <code>{'is-boxed'}</code>.\n        </p>\n      </Content>\n      <div className={'bd-example'}>\n        <File\n          name={'resume'}\n          boxed\n          icon={\n            <>\n              <i className={'fas fa-upload'} />\n            </>\n          }\n          filename={filename1}\n          onChange={(event) =>\n            setFilename1(\n              event.currentTarget.files?.[0]?.name ??\n                ' Screen Shot 2017-07-29 at 15.54.25.png ',\n            )\n          }\n        >\n          Choose a file…\n        </File>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: BoxedUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const PrimaryFileUploadStory = {
   name: 'Primary file upload',
   parameters: {
     official: { id: 'form-file/colors/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        color={'primary'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Primary file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction PrimaryFileUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        color={'primary'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n      >\n        Primary file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: PrimaryFileUploadDemo,
 } satisfies StoryObj
 
-export const Example008 = {
+export const InfoUploadWithFilenameStory = {
   name: 'Info upload with filename',
   parameters: {
     official: { id: 'form-file/colors/002' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        color={'info'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Info file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction InfoUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        color={'info'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Info file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example008Demo,
+  render: InfoUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example009 = {
+export const WarningBoxedUploadStory = {
   name: 'Warning boxed upload',
   parameters: {
     official: { id: 'form-file/colors/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        color={'warning'}\n        boxed\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-cloud-upload-alt'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Warning file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction WarningBoxedUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        color={'warning'}\n        boxed\n        icon={\n          <>\n            <i className={'fas fa-cloud-upload-alt'} />\n          </>\n        }\n      >\n        Warning file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example009Demo,
+  render: WarningBoxedUploadDemo,
 } satisfies StoryObj
 
-export const Example010 = {
+export const DangerBoxedUploadWithFilenameStory = {
   name: 'Danger boxed upload with filename',
   parameters: {
     official: { id: 'form-file/colors/004' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        color={'danger'}\n        boxed\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-cloud-upload-alt'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Danger file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction DangerBoxedUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        color={'danger'}\n        boxed\n        icon={\n          <>\n            <i className={'fas fa-cloud-upload-alt'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Danger file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example010Demo,
+  render: DangerBoxedUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example011 = {
+export const SmallFileUploadStory = {
   name: 'Small file upload',
   parameters: {
     official: { id: 'form-file/sizes/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'small'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Small file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction SmallFileUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'small'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n      >\n        Small file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example011Demo,
+  render: SmallFileUploadDemo,
 } satisfies StoryObj
 
-export const Example012 = {
+export const NormalFileUploadStory = {
   name: 'Normal file upload',
   parameters: {
     official: { id: 'form-file/sizes/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'normal'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Normal file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction NormalFileUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'normal'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n      >\n        Normal file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example012Demo,
+  render: NormalFileUploadDemo,
 } satisfies StoryObj
 
-export const Example013 = {
+export const MediumFileUploadStory = {
   name: 'Medium file upload',
   parameters: {
     official: { id: 'form-file/sizes/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'medium'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Medium file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction MediumFileUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'medium'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n      >\n        Medium file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example013Demo,
+  render: MediumFileUploadDemo,
 } satisfies StoryObj
 
-export const Example014 = {
+export const LargeFileUploadStory = {
   name: 'Large file upload',
   parameters: {
     official: { id: 'form-file/sizes/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'large'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Large file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction LargeFileUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'large'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n      >\n        Large file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example014Demo,
+  render: LargeFileUploadDemo,
 } satisfies StoryObj
 
-export const Example015 = {
+export const SmallUploadWithFilenameStory = {
   name: 'Small upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/005' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'small'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Small file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction SmallUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'small'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Small file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example015Demo,
+  render: SmallUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example016 = {
+export const NormalUploadWithFilenameStory = {
   name: 'Normal upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/006' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'normal'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Normal file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction NormalUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'normal'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Normal file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example016Demo,
+  render: NormalUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example017 = {
+export const MediumUploadWithFilenameStory = {
   name: 'Medium upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/007' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'medium'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Medium file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction MediumUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'medium'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Medium file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example017Demo,
+  render: MediumUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example018 = {
+export const LargeUploadWithFilenameStory = {
   name: 'Large upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/008' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'large'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Large file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction LargeUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'large'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Large file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example018Demo,
+  render: LargeUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example019 = {
+export const SmallBoxedUploadStory = {
   name: 'Small boxed upload',
   parameters: {
     official: { id: 'form-file/sizes/009' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example019Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'small'}\n        boxed\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Small file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction SmallBoxedUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'small'}\n        boxed\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n      >\n        Small file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example019Demo,
+  render: SmallBoxedUploadDemo,
 } satisfies StoryObj
 
-export const Example020 = {
+export const NormalBoxedUploadStory = {
   name: 'Normal boxed upload',
   parameters: {
     official: { id: 'form-file/sizes/010' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example020Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'normal'}\n        boxed\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Normal file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction NormalBoxedUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'normal'}\n        boxed\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n      >\n        Normal file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example020Demo,
+  render: NormalBoxedUploadDemo,
 } satisfies StoryObj
 
-export const Example021 = {
+export const MediumBoxedUploadStory = {
   name: 'Medium boxed upload',
   parameters: {
     official: { id: 'form-file/sizes/011' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example021Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'medium'}\n        boxed\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Medium file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction MediumBoxedUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'medium'}\n        boxed\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n      >\n        Medium file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example021Demo,
+  render: MediumBoxedUploadDemo,
 } satisfies StoryObj
 
-export const Example022 = {
+export const LargeBoxedUploadStory = {
   name: 'Large boxed upload',
   parameters: {
     official: { id: 'form-file/sizes/012' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example022Demo() {\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'large'}\n        boxed\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n      >\n        {' '}\n        Large file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { File } from '@seagreenio/react-bulma'\n\nfunction LargeBoxedUploadDemo() {\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'large'}\n        boxed\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n      >\n        Large file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example022Demo,
+  render: LargeBoxedUploadDemo,
 } satisfies StoryObj
 
-export const Example023 = {
+export const SmallBoxedUploadWithFilenameStory = {
   name: 'Small boxed upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/013' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example023Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'small'}\n        boxed\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Small file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction SmallBoxedUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'small'}\n        boxed\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Small file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example023Demo,
+  render: SmallBoxedUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example024 = {
+export const NormalBoxedUploadWithFilenameStory = {
   name: 'Normal boxed upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/014' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example024Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'normal'}\n        boxed\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Normal file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction NormalBoxedUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'normal'}\n        boxed\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Normal file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example024Demo,
+  render: NormalBoxedUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example025 = {
+export const MediumBoxedUploadWithFilenameStory = {
   name: 'Medium boxed upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/015' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example025Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'medium'}\n        boxed\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Medium file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction MediumBoxedUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'medium'}\n        boxed\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Medium file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example025Demo,
+  render: MediumBoxedUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example026 = {
+export const LargeBoxedUploadWithFilenameStory = {
   name: 'Large boxed upload with filename',
   parameters: {
     official: { id: 'form-file/sizes/016' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example026Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        size={'large'}\n        boxed\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Large file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction LargeBoxedUploadWithFilenameDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        size={'large'}\n        boxed\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Large file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example026Demo,
+  render: LargeBoxedUploadWithFilenameDemo,
 } satisfies StoryObj
 
-export const Example027 = {
+export const CenteredBoxedUploadStory = {
   name: 'Centered boxed upload',
   parameters: {
     official: { id: 'form-file/alignment/001' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example027Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        alignment={'centered'}\n        boxed\n        color={'success'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Centered file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction CenteredBoxedUploadDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        alignment={'centered'}\n        boxed\n        color={'success'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Centered file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example027Demo,
+  render: CenteredBoxedUploadDemo,
 } satisfies StoryObj
 
-export const Example028 = {
+export const RightAlignedUploadStory = {
   name: 'Right-aligned upload',
   parameters: {
     official: { id: 'form-file/alignment/002' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example028Demo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        alignment={'right'}\n        color={'info'}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        {' '}\n        Right file…{' '}\n      </ui.File>\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction RightAlignedUploadDemo() {\n  const [filename1, setFilename1] = useState(\n    ' Screen Shot 2017-07-29 at 15.54.25.png ',\n  )\n  return (\n    <>\n      <File\n        name={'resume'}\n        alignment={'right'}\n        color={'info'}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ??\n              ' Screen Shot 2017-07-29 at 15.54.25.png ',\n          )\n        }\n      >\n        Right file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example028Demo,
+  render: RightAlignedUploadDemo,
 } satisfies StoryObj
 
-export const Example029 = {
+export const LiveFilenameUpdateStory = {
   name: 'Live filename update',
   parameters: {
     official: { id: 'form-file/javascript/001' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example029Demo() {\n  const [filename1, setFilename1] = useState(' No file uploaded ')\n  return (\n    <>\n      <ui.File\n        name={'resume'}\n        wrapperProps={{ id: 'file-js-example' }}\n        icon={\n          <>\n            {' '}\n            <i className={'fas fa-upload'} />{' '}\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ?? ' No file uploaded ',\n          )\n        }\n      >\n        {' '}\n        Choose a file…{' '}\n      </ui.File>{' '}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport { File } from '@seagreenio/react-bulma'\n\nfunction LiveFilenameUpdateDemo() {\n  const [filename1, setFilename1] = useState(' No file uploaded ')\n  return (\n    <>\n      <File\n        name={'resume'}\n        wrapperProps={{ id: 'file-js-example' }}\n        icon={\n          <>\n            <i className={'fas fa-upload'} />\n          </>\n        }\n        filename={filename1}\n        onChange={(event) =>\n          setFilename1(\n            event.currentTarget.files?.[0]?.name ?? ' No file uploaded ',\n          )\n        }\n      >\n        Choose a file…\n      </File>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example029Demo,
+  render: LiveFilenameUpdateDemo,
 } satisfies StoryObj

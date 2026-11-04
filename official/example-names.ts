@@ -225,10 +225,9 @@ export const exampleNames: Record<string, Record<string, readonly string[]>> = {
     ],
   },
   'components-modal': {
-    '2-add-the-html-for-the-trigger': [
-      'Unstyled button trigger',
-      'Primary button trigger',
-    ],
+    basic: ['Content modal'],
+    'image-modal': ['Image modal'],
+    'modal-card': ['Modal card'],
   },
   'components-navbar': {
     'basic-navbar': ['Complete navbar'],

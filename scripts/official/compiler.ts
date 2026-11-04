@@ -1,4 +1,6 @@
-import { load } from 'cheerio'
+import { load, type CheerioAPI } from 'cheerio'
+import postcss from 'postcss'
+import selectorParser from 'postcss-selector-parser'
 import { format, type Options } from 'prettier'
 import { basename } from 'node:path'
 import { isTag, type AnyNode, type Element } from 'domhandler'
@@ -19,9 +21,11 @@ type Context = {
   page: OfficialPage
   assets: ReadonlyMap<string, string>
   example: OfficialExample
-  components: Set<string>
+  imports: Set<string>
   states: string[]
   overrides: Map<Element, Props>
+  layout: ReadonlyMap<Element, Layout>
+  modalPairs: ReadonlyMap<Element, Element>
   modal?: boolean
 }
 
@@ -508,8 +512,8 @@ function component(ctx: Context, name: string, props: Props, children = '') {
       `${ctx.example.id}: ${name} has no supported as=${props.as} adapter`,
     )
   }
-  ctx.components.add(name)
-  return jsx(`ui.${name}`, props, children)
+  ctx.imports.add(name)
+  return jsx(name, props, children)
 }
 function nativeProps(node: Element, ctx: Context, omit: string[] = []): Props {
   const result: Props = {}
@@ -908,7 +912,10 @@ function styleProps(
   }
   if (Object.keys(helpers).length) {
     if (name) props.helpers = q(helpers)
-    else props.className = `ui.helpers(${q(helpers)})`
+    else {
+      ctx.imports.add('helpers')
+      props.className = `helpers(${q(helpers)})`
+    }
   }
   if (remaining.length)
     props.className = props.className
@@ -961,6 +968,37 @@ function wrapProps(props: Props, key: string, childProps: Props) {
 
 function emit(node: Element, ctx: Context): string {
   const tokens = classes(node)
+  if (tokens.includes('bd-klmn')) {
+    const [gap, setGap] = state(
+      ctx,
+      '3 as 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8',
+      'gap',
+    )
+    for (const child of descendants(node)) {
+      if (has(child, 'bd-klmn-gap')) {
+        const value = child.attribs['data-value']
+        if (!value || !/^[0-8]$/.test(value))
+          fail(ctx, child, 'column gap option requires a value from 0 to 8')
+        const className = classes(child)
+          .filter((name) => name !== 'bd-is-selected')
+          .join(' ')
+        ctx.overrides.set(child, {
+          role: q('button'),
+          tabIndex: '0',
+          'aria-pressed': `${gap} === ${value}`,
+          className: `${gap} === ${value} ? ${q(`${className} bd-is-selected`)} : ${q(className)}`,
+          onMouseEnter: `() => ${setGap}(${value})`,
+          onFocus: `() => ${setGap}(${value})`,
+          onClick: `() => ${setGap}(${value})`,
+          onKeyDown: `(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); ${setGap}(${value}); } }`,
+        })
+      } else if (has(child, 'bd-klmn-columns')) {
+        ctx.overrides.set(child, { gap })
+      } else if (child.attribs.id === 'klmnValue') {
+        ctx.overrides.set(child, { children: `${gap} * 0.25 + 'rem'` })
+      }
+    }
+  }
   const base = tokens.find((token) => components[token])
   const definition = base ? components[base] : undefined
   let name = definition?.name
@@ -1404,11 +1442,158 @@ function modal(node: Element, trigger: Element | undefined, ctx: Context) {
       : '') + component(ctx, surfaceName, props, children(surface, inner)),
   )
 }
+const blockTags = new Set(
+  'address article aside blockquote dd details dialog div dl dt fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 header hgroup hr li main menu nav ol p pre section summary table tbody td tfoot th thead tr ul'.split(
+    ' ',
+  ),
+)
+
+const structuralPseudos = new Set([
+  ':not',
+  ':is',
+  ':where',
+  ':has',
+  ':empty',
+  ':first-child',
+  ':last-child',
+  ':only-child',
+  ':nth-child',
+  ':nth-last-child',
+  ':first-of-type',
+  ':last-of-type',
+  ':only-of-type',
+  ':nth-of-type',
+  ':nth-last-of-type',
+])
+
+type DisplayRule = { selector: string; display: string; conditional: boolean }
+type Layout = { blockBoundary: boolean; separateChildren: boolean }
+
+export function compileDisplayRules(stylesheet: string): DisplayRule[] {
+  const rules: DisplayRule[] = []
+  postcss.parse(stylesheet).walkDecls('display', (declaration) => {
+    const rule = declaration.parent
+    if (rule?.type !== 'rule') return
+    selectorParser((root) => {
+      for (const selector of root.nodes) {
+        let pseudoElement = false
+        let conditional = rule.parent?.type !== 'root'
+        selector.walkPseudos((pseudo) => {
+          if (
+            /^::|^:(?:before|after|first-line|first-letter)$/.test(pseudo.value)
+          )
+            pseudoElement = true
+        })
+        if (pseudoElement) continue
+        for (const node of [...selector.nodes]) {
+          if (node.type !== 'pseudo') continue
+          let structural = structuralPseudos.has(node.value.toLowerCase())
+          node.walkPseudos((nested) => {
+            structural &&= structuralPseudos.has(nested.value.toLowerCase())
+          })
+          if (structural) continue
+          conditional = true
+          node.replaceWith(selectorParser.universal())
+        }
+        rules.push({
+          selector: selector.toString(),
+          display: declaration.value.toLowerCase(),
+          conditional,
+        })
+      }
+    }).processSync(rule.selector)
+  })
+  return rules
+}
+
+function exampleLayout($: CheerioAPI, rules: readonly DisplayRule[]) {
+  const displayHelpers = Object.entries(helperClasses.display).sort(
+    ([, a], [, b]) => b.length - a.length,
+  )
+  const candidates = new Map<
+    Element,
+    { values: string[]; unconditional: boolean }
+  >()
+  for (const rule of rules) {
+    $(rule.selector).each((_, node) => {
+      if (!isTag(node)) return
+      const current = candidates.get(node) ?? {
+        values: [],
+        unconditional: false,
+      }
+      current.values.push(rule.display)
+      current.unconditional ||= !rule.conditional && rule.display !== 'none'
+      candidates.set(node, current)
+    })
+  }
+  const result = new Map<Element, Layout>()
+  $('*').each((_, node) => {
+    if (!isTag(node)) return
+    const candidate = candidates.get(node)
+    const values = candidate?.values.slice() ?? []
+    if (!candidate?.unconditional)
+      values.push(blockTags.has(node.name) ? 'block' : 'inline')
+    const tokens = classes(node)
+    const helpers: string[] = []
+    let unconditionalHelper = false
+    for (const token of tokens) {
+      const helper = displayHelpers.find(
+        ([, value]) => token === value || token.startsWith(`${value}-`),
+      )
+      if (!helper) continue
+      helpers.push(helper[0])
+      unconditionalHelper ||= token === helper[1]
+    }
+    const inline = [
+      ...(node.attribs.style ?? '').matchAll(
+        /(?:^|;)\s*display\s*:\s*([^;]+)/gi,
+      ),
+    ].map(([, value]) =>
+      value!
+        .replace(/\s*!important\s*$/i, '')
+        .trim()
+        .toLowerCase(),
+    )
+    const displays = [
+      ...(inline.length || unconditionalHelper
+        ? (candidate?.values ?? [])
+        : values),
+      ...inline,
+      ...helpers,
+    ]
+    const visible = displays.filter((value) => value !== 'none')
+    result.set(node, {
+      blockBoundary:
+        displays.length > 0 &&
+        displays.every((value) =>
+          /^(?:block|flow-root|flex|grid|table|list-item)$/.test(value),
+        ),
+      separateChildren:
+        visible.length > 0 &&
+        visible.every((value) => /^(?:inline-)?(?:flex|grid)$/.test(value)),
+    })
+  })
+  return result
+}
+
+function blockBoundary(
+  node: AnyNode | null | undefined,
+  ctx: Context,
+): boolean {
+  if (!node) return false
+  if (node.type === 'root') return true
+  return isTag(node) && ctx.layout.get(node)?.blockBoundary === true
+}
+
 function nodes(input: AnyNode[], ctx: Context): string {
-  const consumed = new Set<AnyNode>()
   return input
     .map((node) => {
-      if (consumed.has(node)) return ''
+      if (
+        isTag(node) &&
+        has(node, 'modal') &&
+        [...ctx.modalPairs.values()].includes(node)
+      )
+        return ''
       if (node.type === 'text') {
         for (let ancestor = node.parent; ancestor; ancestor = ancestor.parent) {
           if (
@@ -1431,38 +1616,36 @@ function nodes(input: AnyNode[], ctx: Context): string {
           )
         )
           return ''
-        const boundary =
-          parent?.type === 'root' ||
-          (parent &&
-            isTag(parent) &&
-            !parent.attribs.style &&
-            (has(parent, 'buttons') ||
-              (!parent.attribs.class &&
-                [
-                  'div',
-                  'p',
-                  'section',
-                  'article',
-                  'header',
-                  'footer',
-                  'main',
-                  'aside',
-                  'nav',
-                  'blockquote',
-                  'h1',
-                  'h2',
-                  'h3',
-                  'h4',
-                  'h5',
-                  'h6',
-                  'li',
-                  'td',
-                  'th',
-                ].includes(parent.name))))
+        let previous = node.prev
+        let next = node.next
+        while (
+          previous &&
+          (previous.type === 'comment' ||
+            (previous.type === 'text' && /^[\t\n\f\r ]*$/.test(previous.data)))
+        )
+          previous = previous.prev
+        while (
+          next &&
+          (next.type === 'comment' ||
+            (next.type === 'text' && /^[\t\n\f\r ]*$/.test(next.data)))
+        )
+          next = next.next
+        const separateChildren =
+          parent && isTag(parent) && ctx.layout.get(parent)?.separateChildren
+        if (
+          whitespaceOnly &&
+          ((separateChildren &&
+            !(previous?.type === 'text' && next?.type === 'text')) ||
+            blockBoundary(previous, ctx) ||
+            blockBoundary(next, ctx))
+        )
+          return ''
         let text = node.data.replace(/[\t\n\f\r ]+/g, ' ')
-        if (boundary) {
-          if (!node.prev) text = text.replace(/^ /, '')
-          if (!node.next) text = text.replace(/ $/, '')
+        if (blockBoundary(parent, ctx) || separateChildren) {
+          if (!previous || (separateChildren && previous.type !== 'text'))
+            text = text.replace(/^ /, '')
+          if (!next || (separateChildren && next.type !== 'text'))
+            text = text.replace(/ $/, '')
         }
         if (!text) return ''
         if (text === ' ') return "{' '}"
@@ -1485,7 +1668,7 @@ function nodes(input: AnyNode[], ctx: Context): string {
       if (
         node.name === 'script' &&
         ctx.page.id === 'form-file' &&
-        ctx.components.has('File')
+        ctx.imports.has('File')
       ) {
         const source =
           'const fileInput = document.querySelector("#file-js-example input[type=file]"); fileInput.onchange = () => { if (fileInput.files.length > 0) { const fileName = document.querySelector("#file-js-example .file-name"); fileName.textContent = fileInput.files[0].name; } };'
@@ -1498,25 +1681,17 @@ function nodes(input: AnyNode[], ctx: Context): string {
           node,
           'inline script/style requires a source documentation adapter',
         )
-      const target = node.attribs['data-target']
-      if (
-        target &&
-        (has(node, 'modal-button') || has(node, 'js-modal-trigger'))
-      ) {
-        const dialog = input.find(
-          (candidate) =>
-            isTag(candidate) &&
-            candidate.attribs.id === target &&
-            has(candidate, 'modal'),
-        )
-        if (dialog && isTag(dialog)) {
-          consumed.add(dialog)
-          return modal(dialog, node, ctx)
-        }
-      }
+      const dialog = ctx.modalPairs.get(node)
+      if (dialog) return modal(dialog, node, ctx)
       return emit(node, ctx)
     })
     .join('')
+}
+
+function namedImport(names: ReadonlySet<string>, from: string) {
+  return names.size
+    ? `import { ${[...names].sort().join(', ')} } from ${q(from)};\n`
+    : ''
 }
 
 export async function compilePage(
@@ -1525,6 +1700,7 @@ export async function compilePage(
   title = page.title,
   document?: string,
   formatOptions: Options = {},
+  displayRules: readonly DisplayRule[] = [],
 ): Promise<CompiledPage> {
   const assetPaths = new Map(
     assets.map((asset) => [
@@ -1534,43 +1710,66 @@ export async function compilePage(
   )
   const functions: string[] = []
   const stories: string[] = []
+  const pageImports = new Set<string>()
   let usesState = false
   const compileDemo = (example: OfficialExample, name: string) => {
+    const $ = load(example.html, {}, false)
+    const modalPairs = new Map<Element, Element>()
     const ctx: Context = {
       page,
       assets: assetPaths,
       example,
-      components: new Set(),
+      imports: new Set(),
       states: [],
       overrides: new Map(),
+      layout: exampleLayout($, displayRules),
+      modalPairs,
     }
-    const $ = load(example.html, {}, false)
+    for (const trigger of $(
+      '.js-modal-trigger[data-target],.modal-button[data-target]',
+    ).toArray()) {
+      const dialogs = $('.modal')
+        .toArray()
+        .filter(
+          (dialog) => dialog.attribs.id === trigger.attribs['data-target'],
+        )
+      if (dialogs.length !== 1)
+        fail(ctx, trigger, 'modal trigger requires exactly one matching dialog')
+      modalPairs.set(trigger, dialogs[0]!)
+    }
     const body = nodes($.root().contents().toArray(), ctx)
+    for (const name of ctx.imports) pageImports.add(name)
     if (ctx.states.length) usesState = true
     const fn = `function ${name}() {\n${ctx.states.map((line) => `  ${line}\n`).join('')}  return (<>${body}</>);\n}`
     return { fn, ctx }
   }
   const examples: CompiledExample[] = []
-  for (const [index, example] of page.examples.entries()) {
-    const exportName = `Example${String(index + 1).padStart(3, '0')}`
-    const { fn: rawFunction, ctx } = compileDemo(example, `${exportName}Demo`)
-    const fn = await format(rawFunction, {
-      ...formatOptions,
-      parser: 'typescript',
-    })
+  const names = new Set<string>()
+  for (const example of page.examples) {
+    const words = example.name.match(/[A-Za-z0-9]+/g)
+    if (!words?.length)
+      throw new Error(`Example needs a descriptive name: ${example.id}`)
+    const name = words
+      .map((word) => word[0]!.toUpperCase() + word.slice(1))
+      .join('')
+    const baseName = /^\d/.test(name) ? `With${name}` : name
+    if (names.has(baseName))
+      throw new Error(`Duplicate example name in ${page.id}: ${example.name}`)
+    names.add(baseName)
+    const exportName = `${baseName}Story`
+    const functionName = `${baseName}Demo`
+    const { fn, ctx } = compileDemo(example, functionName)
     const source = await format(
-      `${ctx.states.length ? "import { useState } from 'react';\n" : ''}import * as ui from '@seagreenio/react-bulma';\n\n${fn}\n`,
+      `${ctx.states.length ? "import { useState } from 'react';\n" : ''}${namedImport(ctx.imports, '@seagreenio/react-bulma')}\n${fn}\n`,
       { ...formatOptions, parser: 'typescript' },
     )
     functions.push(fn)
     stories.push(
-      `export const ${exportName} = {\n  name: ${q(example.name)},\n  parameters: { official: { id: ${q(example.id)} }, docs: { source: { code: ${q(source)}, language: 'tsx', type: 'code' } } },\n  render: ${exportName}Demo,\n} satisfies StoryObj;`,
+      `export const ${exportName} = {\n  name: ${q(example.name)},\n  parameters: { official: { id: ${q(example.id)} }, docs: { source: { code: ${q(source)}, language: 'tsx', type: 'code' } } },\n  render: ${functionName},\n} satisfies StoryObj;`,
     )
     examples.push({
       id: example.id,
       exportName,
-      source,
-      components: [...ctx.components].sort(),
     })
   }
   const docs =
@@ -1588,7 +1787,6 @@ export async function compilePage(
                 name,
                 html,
                 selector: '#navbarBottom',
-                section: '',
                 kind: 'demo',
                 sha256: '',
               },
@@ -1597,7 +1795,7 @@ export async function compilePage(
         )
   return {
     id: page.id,
-    source: `import type { Meta, StoryObj } from '@storybook/react-vite';\n${docs ? "import { Canvas } from '@storybook/addon-docs/blocks';\nimport { OfficialDocument } from '../document';\n" : ''}${usesState ? "import { useState } from 'react';\n" : ''}import * as ui from '../../../src';\nimport { officialPage } from '../support';\n\nconst meta = { ...officialPage(${q({ id: page.id, title: page.title, url: page.url })}${docs ? ', OfficialDocs' : ''}), tags: ['autodocs'], id: ${q('official-' + page.id)}, title: ${q(title)} } satisfies Meta;\nexport default meta;\n\n${docs}\n\n${functions.join('\n\n')}\n\n${stories.join('\n\n')}\n`,
+    source: `import type { Meta, StoryObj } from '@storybook/react-vite';\n${docs ? "import { Canvas } from '@storybook/addon-docs/blocks';\nimport { OfficialDocument } from '../document';\n" : ''}${usesState ? "import { useState } from 'react';\n" : ''}${namedImport(pageImports, '../../../src')}import { officialPage } from '../support';\n\nconst meta = { ...officialPage(${q({ id: page.id, title: page.title, url: page.url })}${docs ? ', OfficialDocs' : ''}), tags: ['autodocs'], id: ${q('official-' + page.id)}, title: ${q(title)} } satisfies Meta;\nexport default meta;\n\n${docs}\n\n${functions.join('\n\n')}\n\n${stories.join('\n\n')}\n`,
     examples,
   }
 }
@@ -1607,7 +1805,9 @@ export async function compileCorpus(
   documents: OfficialDocuments,
   navigation?: OfficialNavigation,
   formatOptions: Options = {},
+  stylesheet = '',
 ): Promise<CompiledPage[]> {
+  const displayRules = compileDisplayRules(stylesheet)
   return Promise.all(
     corpus.pages.map((page) => {
       const document = documents.get(page.id)
@@ -1621,6 +1821,7 @@ export async function compileCorpus(
           ?.path.join('/') ?? page.title,
         document,
         formatOptions,
+        displayRules,
       )
     }),
   )

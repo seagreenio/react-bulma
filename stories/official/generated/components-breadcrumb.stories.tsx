@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Breadcrumb, BreadcrumbItem, Icon } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,976 +23,538 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="components-breadcrumb" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Breadcrumb'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'A simple '}
           <strong data-official-prose="">{'breadcrumb'}</strong>
           {' component to improve your navigation experience'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n          \n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The Bulma '}
+            {' The Bulma '}
             <strong data-official-prose="">{'breadcrumb'}</strong>
-            {' is a simple navigation component that\n    only requires a '}
+            {' is a simple navigation component that only requires a '}
             <code data-official-prose="">{'breadcrumb'}</code>
-            {' container and a\n    '}
+            {' container and a '}
             <code data-official-prose="">{'ul'}</code>
             {
-              ' list. The dividers are automatically created in the content\n    of the '
+              ' list. The dividers are automatically created in the content of the '
             }
             <code data-official-prose="">{'::before'}</code>
             {' pseudo-element of '}
             <code data-official-prose="">{'li'}</code>
-            {' tags.\n  '}
+            {' tags. '}
           </p>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can inform the current page using the '}
+            {' You can inform the current page using the '}
             <code data-official-prose="">{'is-active'}</code>
-            {' modifier in\n    a '}
+            {' modifier in a '}
             <code data-official-prose="">{'li'}</code>
-            {' tag. It will disable the navigation of inner links.\n  '}
+            {' tag. It will disable the navigation of inner links. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <hr data-official-prose="" />
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={DefaultBreadcrumbStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h3
           data-official-prose=""
           id={'alignment'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Alignment\n  '}
-          </span>
-          {'\n  '}
+            {' Alignment '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#alignment'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    For alternative alignments, use the '}
+            {' For alternative alignments, use the '}
             <code data-official-prose="">{'is-centered'}</code>
-            {' and\n    '}
+            {' and '}
             <code data-official-prose="">{'is-right'}</code>
             {' modifiers on the '}
             <code data-official-prose="">{'breadcrumb'}</code>
-            {' container.\n  '}
+            {' container. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/alignment/001">
-          <Canvas of={Example002} />
+          <Canvas of={CenteredBreadcrumbStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/alignment/002">
-          <Canvas of={Example003} />
+          <Canvas of={RightAlignedBreadcrumbStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'icons'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Icons\n  '}
-          </span>
-          {'\n  '}
+            {' Icons '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#icons'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can use any of the\n    '}
+            {' You can use any of the '}
             <a
               data-official-prose=""
               href={'https://fontawesome.com/'}
               target={'_blank'}
             >
               {'Font Awesome'}
-            </a>
-            {'\n    '}
+            </a>{' '}
             <strong data-official-prose="">{'icons'}</strong>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/icons/001">
-          <Canvas of={Example004} />
+          <Canvas of={BreadcrumbWithIconsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'alternative-separators'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Alternative separators\n  '}
-          </span>
-          {'\n  '}
+            {' Alternative separators '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#alternative-separators'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can choose between '}
+            {' You can choose between '}
             <strong data-official-prose="">{'4 additional separators'}</strong>
-            {':\n    '}
+            {': '}
             <code data-official-prose="">{'has-arrow-separator'}</code>{' '}
-            <code data-official-prose="">{'has-bullet-separator'}</code>
-            {'\n    '}
+            <code data-official-prose="">{'has-bullet-separator'}</code>{' '}
             <code data-official-prose="">{'has-dot-separator'}</code>
             {' and '}
             <code data-official-prose="">{'has-succeeds-separator'}</code>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/alternative-separators/001">
-          <Canvas of={Example005} />
+          <Canvas of={ArrowSeparatorStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/alternative-separators/002">
-          <Canvas of={Example006} />
+          <Canvas of={BulletSeparatorStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/alternative-separators/003">
-          <Canvas of={Example007} />
+          <Canvas of={DotSeparatorStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/alternative-separators/004">
-          <Canvas of={Example008} />
+          <Canvas of={SucceedsSeparatorStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can choose between '}
+            {' You can choose between '}
             <strong data-official-prose="">{'3 additional sizes'}</strong>
-            {':\n    '}
+            {': '}
             <code data-official-prose="">{'is-small'}</code>{' '}
             <code data-official-prose="">{'is-medium'}</code>
             {' and '}
             <code data-official-prose="">{'is-large'}</code>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/sizes/001">
-          <Canvas of={Example009} />
+          <Canvas of={SmallBreadcrumbStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/sizes/002">
-          <Canvas of={Example010} />
+          <Canvas of={MediumBreadcrumbStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-breadcrumb/sizes/003">
-          <Canvas of={Example011} />
+          <Canvas of={LargeBreadcrumbStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$breadcrumb-item-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-breadcrumb-item-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$breadcrumb-item-hover-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-breadcrumb-item-hover-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link-text-hover)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$breadcrumb-item-active-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-breadcrumb-item-active-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link-text-active)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$breadcrumb-item-padding-vertical'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-breadcrumb-item-padding-vertical)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$breadcrumb-item-padding-horizontal'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-breadcrumb-item-padding-horizontal)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.75em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$breadcrumb-item-separator-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-breadcrumb-item-separator-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultBreadcrumbDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>
+      <Breadcrumb aria-label={'breadcrumbs'}>
+        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>
+        <BreadcrumbItem href={'#'} aria-current={'page'} active>
           Breadcrumb
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-function Example002Demo() {
+function CenteredBreadcrumbDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'} alignment={'centered'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>
+      <Breadcrumb aria-label={'breadcrumbs'} alignment={'centered'}>
+        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>
+        <BreadcrumbItem href={'#'} aria-current={'page'} active>
           Breadcrumb
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-function Example003Demo() {
+function RightAlignedBreadcrumbDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'} alignment={'right'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>
+      <Breadcrumb aria-label={'breadcrumbs'} alignment={'right'}>
+        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>
+        <BreadcrumbItem href={'#'} aria-current={'page'} active>
           Breadcrumb
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-function Example004Demo() {
+function BreadcrumbWithIconsDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>
-          {' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-home'} />{' '}
-          </ui.Icon>{' '}
-          <span>Bulma</span>{' '}
-        </ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>
-          {' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}
-          </ui.Icon>{' '}
-          <span>Documentation</span>{' '}
-        </ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>
-          {' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-puzzle-piece'} />{' '}
-          </ui.Icon>{' '}
-          <span>Components</span>{' '}
-        </ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} active>
-          {' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-thumbs-up'} />{' '}
-          </ui.Icon>{' '}
-          <span>Breadcrumb</span>{' '}
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+      <Breadcrumb aria-label={'breadcrumbs'}>
+        <BreadcrumbItem href={'#'}>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-home'} />
+          </Icon>
+          <span>Bulma</span>
+        </BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-book'} />
+          </Icon>
+          <span>Documentation</span>
+        </BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-puzzle-piece'} />
+          </Icon>
+          <span>Components</span>
+        </BreadcrumbItem>
+        <BreadcrumbItem href={'#'} active>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-thumbs-up'} />
+          </Icon>
+          <span>Breadcrumb</span>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-function Example005Demo() {
+function ArrowSeparatorDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'} separator={'arrow'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>
+      <Breadcrumb aria-label={'breadcrumbs'} separator={'arrow'}>
+        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>
+        <BreadcrumbItem href={'#'} aria-current={'page'} active>
           Breadcrumb
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-function Example006Demo() {
+function BulletSeparatorDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'} separator={'bullet'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>
+      <Breadcrumb aria-label={'breadcrumbs'} separator={'bullet'}>
+        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>
+        <BreadcrumbItem href={'#'} aria-current={'page'} active>
           Breadcrumb
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-function Example007Demo() {
+function DotSeparatorDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'} separator={'dot'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>
+      <Breadcrumb aria-label={'breadcrumbs'} separator={'dot'}>
+        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>
+        <BreadcrumbItem href={'#'} aria-current={'page'} active>
           Breadcrumb
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-function Example008Demo() {
+function SucceedsSeparatorDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'} separator={'succeeds'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>
+      <Breadcrumb aria-label={'breadcrumbs'} separator={'succeeds'}>
+        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>
+        <BreadcrumbItem href={'#'} aria-current={'page'} active>
           Breadcrumb
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-function Example009Demo() {
+function SmallBreadcrumbDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'} size={'small'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>
+      <Breadcrumb aria-label={'breadcrumbs'} size={'small'}>
+        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>
+        <BreadcrumbItem href={'#'} aria-current={'page'} active>
           Breadcrumb
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-function Example010Demo() {
+function MediumBreadcrumbDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'} size={'medium'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>
+      <Breadcrumb aria-label={'breadcrumbs'} size={'medium'}>
+        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>
+        <BreadcrumbItem href={'#'} aria-current={'page'} active>
           Breadcrumb
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-function Example011Demo() {
+function LargeBreadcrumbDemo() {
   return (
     <>
-      <ui.Breadcrumb aria-label={'breadcrumbs'} size={'large'}>
-        {' '}
-        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}
-        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>
+      <Breadcrumb aria-label={'breadcrumbs'} size={'large'}>
+        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>
+        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>
+        <BreadcrumbItem href={'#'} aria-current={'page'} active>
           Breadcrumb
-        </ui.BreadcrumbItem>{' '}
-      </ui.Breadcrumb>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </>
   )
 }
 
-export const Example001 = {
+export const DefaultBreadcrumbStory = {
   name: 'Default breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem } from '@seagreenio/react-bulma'\n\nfunction DefaultBreadcrumbDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'}>\n        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>\n        <BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultBreadcrumbDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const CenteredBreadcrumbStory = {
   name: 'Centered breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/alignment/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'} alignment={'centered'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem } from '@seagreenio/react-bulma'\n\nfunction CenteredBreadcrumbDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'} alignment={'centered'}>\n        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>\n        <BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: CenteredBreadcrumbDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const RightAlignedBreadcrumbStory = {
   name: 'Right-aligned breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/alignment/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'} alignment={'right'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem } from '@seagreenio/react-bulma'\n\nfunction RightAlignedBreadcrumbDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'} alignment={'right'}>\n        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>\n        <BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: RightAlignedBreadcrumbDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const BreadcrumbWithIconsStory = {
   name: 'Breadcrumb with icons',
   parameters: {
     official: { id: 'components-breadcrumb/icons/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>\n          {' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-home'} />{' '}\n          </ui.Icon>{' '}\n          <span>Bulma</span>{' '}\n        </ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>\n          {' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-book'} />{' '}\n          </ui.Icon>{' '}\n          <span>Documentation</span>{' '}\n        </ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>\n          {' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-puzzle-piece'} />{' '}\n          </ui.Icon>{' '}\n          <span>Components</span>{' '}\n        </ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} active>\n          {' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-thumbs-up'} />{' '}\n          </ui.Icon>{' '}\n          <span>Breadcrumb</span>{' '}\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem, Icon } from '@seagreenio/react-bulma'\n\nfunction BreadcrumbWithIconsDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'}>\n        <BreadcrumbItem href={'#'}>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-home'} />\n          </Icon>\n          <span>Bulma</span>\n        </BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-book'} />\n          </Icon>\n          <span>Documentation</span>\n        </BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-puzzle-piece'} />\n          </Icon>\n          <span>Components</span>\n        </BreadcrumbItem>\n        <BreadcrumbItem href={'#'} active>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-thumbs-up'} />\n          </Icon>\n          <span>Breadcrumb</span>\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: BreadcrumbWithIconsDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const ArrowSeparatorStory = {
   name: 'Arrow separator',
   parameters: {
     official: { id: 'components-breadcrumb/alternative-separators/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'} separator={'arrow'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem } from '@seagreenio/react-bulma'\n\nfunction ArrowSeparatorDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'} separator={'arrow'}>\n        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>\n        <BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: ArrowSeparatorDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const BulletSeparatorStory = {
   name: 'Bullet separator',
   parameters: {
     official: { id: 'components-breadcrumb/alternative-separators/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'} separator={'bullet'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem } from '@seagreenio/react-bulma'\n\nfunction BulletSeparatorDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'} separator={'bullet'}>\n        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>\n        <BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: BulletSeparatorDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const DotSeparatorStory = {
   name: 'Dot separator',
   parameters: {
     official: { id: 'components-breadcrumb/alternative-separators/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'} separator={'dot'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem } from '@seagreenio/react-bulma'\n\nfunction DotSeparatorDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'} separator={'dot'}>\n        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>\n        <BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: DotSeparatorDemo,
 } satisfies StoryObj
 
-export const Example008 = {
+export const SucceedsSeparatorStory = {
   name: 'Succeeds separator',
   parameters: {
     official: { id: 'components-breadcrumb/alternative-separators/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'} separator={'succeeds'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem } from '@seagreenio/react-bulma'\n\nfunction SucceedsSeparatorDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'} separator={'succeeds'}>\n        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>\n        <BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example008Demo,
+  render: SucceedsSeparatorDemo,
 } satisfies StoryObj
 
-export const Example009 = {
+export const SmallBreadcrumbStory = {
   name: 'Small breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/sizes/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'} size={'small'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem } from '@seagreenio/react-bulma'\n\nfunction SmallBreadcrumbDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'} size={'small'}>\n        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>\n        <BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example009Demo,
+  render: SmallBreadcrumbDemo,
 } satisfies StoryObj
 
-export const Example010 = {
+export const MediumBreadcrumbStory = {
   name: 'Medium breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/sizes/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'} size={'medium'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem } from '@seagreenio/react-bulma'\n\nfunction MediumBreadcrumbDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'} size={'medium'}>\n        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>\n        <BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example010Demo,
+  render: MediumBreadcrumbDemo,
 } satisfies StoryObj
 
-export const Example011 = {
+export const LargeBreadcrumbStory = {
   name: 'Large breadcrumb',
   parameters: {
     official: { id: 'components-breadcrumb/sizes/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Breadcrumb aria-label={'breadcrumbs'} size={'large'}>\n        {' '}\n        <ui.BreadcrumbItem href={'#'}>Bulma</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Documentation</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'}>Components</ui.BreadcrumbItem>{' '}\n        <ui.BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </ui.BreadcrumbItem>{' '}\n      </ui.Breadcrumb>\n    </>\n  )\n}\n",
+        code: "import { Breadcrumb, BreadcrumbItem } from '@seagreenio/react-bulma'\n\nfunction LargeBreadcrumbDemo() {\n  return (\n    <>\n      <Breadcrumb aria-label={'breadcrumbs'} size={'large'}>\n        <BreadcrumbItem href={'#'}>Bulma</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Documentation</BreadcrumbItem>\n        <BreadcrumbItem href={'#'}>Components</BreadcrumbItem>\n        <BreadcrumbItem href={'#'} aria-current={'page'} active>\n          Breadcrumb\n        </BreadcrumbItem>\n      </Breadcrumb>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example011Demo,
+  render: LargeBreadcrumbDemo,
 } satisfies StoryObj

@@ -1,7 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import {
+  Button,
+  Buttons,
+  Content,
+  Control,
+  Field,
+  Icon,
+  LinkButton,
+  Message,
+  MessageBody,
+} from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,175 +33,108 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="elements-button" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Button'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'The classic '}
           <strong data-official-prose="">{'button'}</strong>
           {', in different colors, sizes, and states'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The '}
+            {' The '}
             <strong data-official-prose="">{'button'}</strong>
             {
-              " is an essential element of any design. It's meant to look and behave as an\n    "
+              " is an essential element of any design. It's meant to look and behave as an "
             }
             <strong data-official-prose="">{'interactive'}</strong>
-            {' element of your page.\n  '}
+            {' element of your page. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={DefaultButtonStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The '}
             <code data-official-prose="">{'button'}</code>
             {' class can be used on:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'<a>'}</code>
               {' anchor links'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'<button>'}</code>
               {' form buttons'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'<input type="submit">'}</code>
               {' submit inputs'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'<input type="reset">'}</code>
               {' reset inputs'}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/basic/002">
-          <Canvas of={Example002} />
+          <Canvas of={NativeButtonElementsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'colors'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Colors\n  '}
-          </span>
-          {'\n  '}
+            {' Colors '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#colors'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The button is available in all the '}
+            {' The button is available in all the '}
             <strong data-official-prose="">{'different colors'}</strong>
-            {' defined by the\n    '}
+            {' defined by the '}
             <a data-official-prose="" href={''}>
               <code data-official-prose="">{'$colors'}</code>
               {' Sass map'}
             </a>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/colors/001">
-          <Canvas of={Example003} />
+          <Canvas of={NeutralAndTextButtonsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/colors/002">
-          <Canvas of={Example004} />
+          <Canvas of={SemanticColorsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Each color also comes in its '}
+            {' Each color also comes in its '}
             <strong data-official-prose="">{'light version'}</strong>
             {'. Simply append the modifier '}
             <code data-official-prose="">{'is-light'}</code>
             {
-              ' to the\n    color modifier to apply the light version of the button.\n  '
+              ' to the color modifier to apply the light version of the button. '
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/colors/003">
-          <Canvas of={Example005} />
+          <Canvas of={LightColorsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'A '}
             <strong data-official-prose="">{'dark version'}</strong>
@@ -199,194 +142,121 @@ function OfficialDocs() {
             <code data-official-prose="">{'is-dark'}</code>
             {'.'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/colors/004">
-          <Canvas of={Example006} />
+          <Canvas of={DarkColorsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h3
           data-official-prose=""
           id={'sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The button comes in '}
             <strong data-official-prose="">{'4 different sizes:'}</strong>
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">{'small'}</li>
-            {'\n    '}
             <li data-official-prose="">{'normal'}</li>
-            {'\n    '}
             <li data-official-prose="">{'medium'}</li>
-            {'\n    '}
             <li data-official-prose="">{'large'}</li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    While the default size is the '}
+            {' While the default size is the '}
             <strong data-official-prose="">{'normal'}</strong>
             {' one, the '}
             <code data-official-prose="">{'is-normal'}</code>
             {
-              ' modifier exists in case you\n    need to reset the button to its normal size.\n  '
+              ' modifier exists in case you need to reset the button to its normal size. '
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/sizes/001">
-          <Canvas of={Example007} />
+          <Canvas of={ButtonSizesStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can change the size of '}
+            {' You can change the size of '}
             <strong data-official-prose="">{'multiple buttons'}</strong>
-            {' at once by wrapping them in a\n    '}
+            {' at once by wrapping them in a '}
             <code data-official-prose="">{'buttons'}</code>
-            {' parent, and applying one of 3 modifiers:\n  '}
+            {' parent, and applying one of 3 modifiers: '}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'buttons are-small'}</code>
-              {'\n    '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'buttons are-medium'}</code>
-              {'\n    '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'buttons are-large'}</code>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/sizes/002">
-          <Canvas of={Example008} />
+          <Canvas of={SharedMediumSizeStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can change the size of only a '}
+            {' You can change the size of only a '}
             <strong data-official-prose="">{'subset of buttons'}</strong>
-            {' by simply applying a modifier class to them.\n    '}
+            {' by simply applying a modifier class to them. '}
             <br data-official-prose="" />
-            {'\n    For example, if you want all buttons to be '}
+            {' For example, if you want all buttons to be '}
             <strong data-official-prose="">{'small'}</strong>
-            {' but still have one in its\n    '}
+            {' but still have one in its '}
             <strong data-official-prose="">{'normal'}</strong>
-            {' size, simply do the following:\n  '}
+            {' size, simply do the following: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/sizes/003">
-          <Canvas of={Example009} />
+          <Canvas of={IndividualSizeOverrideStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'responsive-sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Responsive sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Responsive sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#responsive-sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {
-              "\n    If you want different button sizes for each breakpoint, you can use Bulma's\n    "
+              " If you want different button sizes for each breakpoint, you can use Bulma's "
             }
             <strong data-official-prose="">{'responsive'}</strong>
             {' buttons. Simply append the '}
             <code data-official-prose="">{'is-responsive'}</code>
-            {' modifier:\n  '}
+            {' modifier: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n\n\n'}
         <table data-official-prose="" className={'table is-bordered'}>
-          {'\n  '}
           <thead data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <th data-official-prose="">{'Name'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Fixed size'}</th>
-              {'\n      '}
               <th data-official-prose="">
                 {'Responsive size '}
                 <small
@@ -396,40 +266,26 @@ function OfficialDocs() {
                   {'(resize window to see in action)'}
                 </small>
               </th>
-              {'\n      '}
               <th data-official-prose="">{'Code'}</th>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </thead>
-          {'\n  '}
           <tbody data-official-prose="">
-            {'\n    \n\n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">{'Default'}</td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          '}
                 <button data-official-prose="" className={'button is-default'}>
-                  {'\n            Default\n          '}
+                  {' Default '}
                 </button>
-                {'\n        '}
               </td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          \n'}
                 <button
                   data-official-prose=""
                   className={'button is-responsive'}
                 >
-                  {'\n  Default\n'}
+                  {' Default '}
                 </button>
-                {'\n\n        '}
               </td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          '}
                 <div data-official-prose="" className={'highlight'}>
                   <pre data-official-prose="">
                     <code data-official-prose="" className={'language-html'}>
@@ -439,36 +295,24 @@ function OfficialDocs() {
                     </code>
                   </pre>
                 </div>
-                {'\n        '}
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n\n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">{'Small'}</td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          '}
                 <button data-official-prose="" className={'button is-small'}>
-                  {'\n            Small\n          '}
+                  {' Small '}
                 </button>
-                {'\n        '}
               </td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          \n'}
                 <button
                   data-official-prose=""
                   className={'button is-small is-responsive'}
                 >
-                  {'\n  Small\n'}
+                  {' Small '}
                 </button>
-                {'\n\n        '}
               </td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          '}
                 <div data-official-prose="" className={'highlight'}>
                   <pre data-official-prose="">
                     <code data-official-prose="" className={'language-html'}>
@@ -478,36 +322,24 @@ function OfficialDocs() {
                     </code>
                   </pre>
                 </div>
-                {'\n        '}
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n\n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">{'Normal'}</td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          '}
                 <button data-official-prose="" className={'button is-normal'}>
-                  {'\n            Normal\n          '}
+                  {' Normal '}
                 </button>
-                {'\n        '}
               </td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          \n'}
                 <button
                   data-official-prose=""
                   className={'button is-normal is-responsive'}
                 >
-                  {'\n  Normal\n'}
+                  {' Normal '}
                 </button>
-                {'\n\n        '}
               </td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          '}
                 <div data-official-prose="" className={'highlight'}>
                   <pre data-official-prose="">
                     <code data-official-prose="" className={'language-html'}>
@@ -517,36 +349,24 @@ function OfficialDocs() {
                     </code>
                   </pre>
                 </div>
-                {'\n        '}
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n\n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">{'Medium'}</td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          '}
                 <button data-official-prose="" className={'button is-medium'}>
-                  {'\n            Medium\n          '}
+                  {' Medium '}
                 </button>
-                {'\n        '}
               </td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          \n'}
                 <button
                   data-official-prose=""
                   className={'button is-medium is-responsive'}
                 >
-                  {'\n  Medium\n'}
+                  {' Medium '}
                 </button>
-                {'\n\n        '}
               </td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          '}
                 <div data-official-prose="" className={'highlight'}>
                   <pre data-official-prose="">
                     <code data-official-prose="" className={'language-html'}>
@@ -556,36 +376,24 @@ function OfficialDocs() {
                     </code>
                   </pre>
                 </div>
-                {'\n        '}
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n\n      '}
             <tr data-official-prose="">
-              {'\n        '}
               <td data-official-prose="">{'Large'}</td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          '}
                 <button data-official-prose="" className={'button is-large'}>
-                  {'\n            Large\n          '}
+                  {' Large '}
                 </button>
-                {'\n        '}
               </td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          \n'}
                 <button
                   data-official-prose=""
                   className={'button is-large is-responsive'}
                 >
-                  {'\n  Large\n'}
+                  {' Large '}
                 </button>
-                {'\n\n        '}
               </td>
-              {'\n        '}
               <td data-official-prose="">
-                {'\n          '}
                 <div data-official-prose="" className={'highlight'}>
                   <pre data-official-prose="">
                     <code data-official-prose="" className={'language-html'}>
@@ -595,265 +403,251 @@ function OfficialDocs() {
                     </code>
                   </pre>
                 </div>
-                {'\n        '}
               </td>
-              {'\n      '}
             </tr>
-            {'\n    \n  '}
           </tbody>
-          {'\n'}
         </table>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can customise the sizes by overwriting the\n    '}
+            {' You can customise the sizes by overwriting the '}
             <code data-official-prose="">{'$button-responsive-sizes'}</code>
-            {' Sass variable.\n  '}
+            {' Sass variable. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'displays'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Displays\n  '}
-          </span>
-          {'\n  '}
+            {' Displays '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#displays'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/displays/001">
-          <Canvas of={Example010} />
+          <Canvas of={FullWidthButtonsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'styles'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Styles\n  '}
-          </span>
-          {'\n  '}
+            {' Styles '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#styles'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Outlined'}
         </h4>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/outlined/001">
-          <Canvas of={Example011} />
+          <Canvas of={OutlinedButtonsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {
             'Inverted (the text color becomes the background color, and vice-versa)'
           }
         </h4>
-        {'\n\n'}
-        <div data-official-example="elements-button/inverted-the-text-color-becomes-the-background-color-and-vice-versa/001">
-          <Canvas of={Example012} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={
+              'elements-button/inverted-the-text-color-becomes-the-background-color-and-vice-versa/001'
+            }
+          >
+            <div data-official-example="elements-button/inverted-the-text-color-becomes-the-background-color-and-vice-versa/001">
+              <Canvas of={InvertedButtonsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<button class="button is-link is-inverted">Inverted</button>\n<button class="button is-primary is-inverted">Inverted</button>\n<button class="button is-info is-inverted">Inverted</button>\n<button class="button is-success is-inverted">Inverted</button>\n<button class="button is-danger is-inverted">Inverted</button>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Rounded buttons'}
         </h4>
-        {'\n\n'}
-        <div data-official-example="elements-button/rounded-buttons/001">
-          <Canvas of={Example013} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={'elements-button/rounded-buttons/001'}
+          >
+            <div data-official-example="elements-button/rounded-buttons/001">
+              <Canvas of={RoundedButtonsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<button class="button is-rounded">Rounded</button>\n<button class="button is-link is-rounded">Rounded</button>\n<button class="button is-primary is-rounded">Rounded</button>\n<button class="button is-info is-rounded">Rounded</button>\n<button class="button is-success is-rounded">Rounded</button>\n<button class="button is-danger is-rounded">Rounded</button>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'states'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    States\n  '}
-          </span>
-          {'\n  '}
+            {' States '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#states'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Bulma styles the different '}
+            {' Bulma styles the different '}
             <strong data-official-prose="">{'states'}</strong>
             {
-              ' of its buttons. Each state is available as a pseudo-class and a\n    CSS class:\n  '
+              ' of its buttons. Each state is available as a pseudo-class and a CSS class: '
             }
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{':hover'}</code>
               {' and '}
               <code data-official-prose="">{'is-hovered'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{':focus'}</code>
               {' and '}
               <code data-official-prose="">{'is-focused'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{':active'}</code>
               {' and '}
               <code data-official-prose="">{'is-active'}</code>
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
             {
               'This allows you to obtain the style of a certain state without having to trigger it.'
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Normal'}
         </h4>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/normal/001">
-          <Canvas of={Example014} />
+          <Canvas of={NormalStateStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Hover'}
         </h4>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/hover/001">
-          <Canvas of={Example015} />
+          <Canvas of={HoverStateStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Focus'}
         </h4>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/focus/001">
-          <Canvas of={Example016} />
+          <Canvas of={FocusStateStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Active'}
         </h4>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/active/001">
-          <Canvas of={Example017} />
+          <Canvas of={ActiveStateStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Loading'}
         </h4>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can very easily turn a button into its '}
+            {' You can very easily turn a button into its '}
             <strong data-official-prose="">{'loading'}</strong>
-            {' version by appending the\n    '}
+            {' version by appending the '}
             <code data-official-prose="">{'is-loading'}</code>
             {
-              " modifier. You don't even need to remove the inner text, which allows the button to maintain\n    its "
+              " modifier. You don't even need to remove the inner text, which allows the button to maintain its "
             }
             <strong data-official-prose="">{'original size'}</strong>
-            {' between its default and loading states.\n  '}
+            {' between its default and loading states. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        <div data-official-example="elements-button/loading/001">
-          <Canvas of={Example018} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={'elements-button/loading/001'}
+          >
+            <div data-official-example="elements-button/loading/001">
+              <Canvas of={LoadingStateStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<button class="button is-loading">Loading</button>\n<button class="button is-link is-loading">Loading</button>\n<button class="button is-primary is-loading">Loading</button>\n<button class="button is-info is-loading">Loading</button>\n<button class="button is-success is-loading">Loading</button>\n<button class="button is-warning is-loading">Loading</button>\n<button class="button is-danger is-loading">Loading</button>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" id={'static-button'} className={'subtitle'}>
           {'Static'}
         </h4>
-        {'\n\n'}
-        <div data-official-example="elements-button/static-button/001">
-          <Canvas of={Example019} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={'elements-button/static-button/001'}
+          >
+            <div data-official-example="elements-button/static-button/001">
+              <Canvas of={StaticButtonStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {'\n<span class="button is-static">Static</span>\n'}
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'Disabled'}
         </h4>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Bulma supports the use of the '}
-            <code data-official-prose="">{'disabled'}</code>
-            {'\n    '}
+            {' Bulma supports the use of the '}
+            <code data-official-prose="">{'disabled'}</code>{' '}
             <a
               data-official-prose=""
               href={
@@ -863,261 +657,317 @@ function OfficialDocs() {
             >
               {'Boolean HTML attribute'}
             </a>
-            {', which prevents the user from interacting with the button.\n  '}
+            {', which prevents the user from interacting with the button. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        <div data-official-example="elements-button/disabled/001">
-          <Canvas of={Example020} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={'elements-button/disabled/001'}
+          >
+            <div data-official-example="elements-button/disabled/001">
+              <Canvas of={DisabledButtonsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<button class="button" title="Disabled button" disabled>Disabled</button>\n<button class="button is-link" title="Disabled button" disabled>\n  Disabled\n</button>\n<button class="button is-primary" title="Disabled button" disabled>\n  Disabled\n</button>\n<button class="button is-info" title="Disabled button" disabled>\n  Disabled\n</button>\n<button class="button is-success" title="Disabled button" disabled>\n  Disabled\n</button>\n<button class="button is-warning" title="Disabled button" disabled>\n  Disabled\n</button>\n<button class="button is-danger" title="Disabled button" disabled>\n  Disabled\n</button>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'subtitle'}>
           {'With Font Awesome icons'}
         </h4>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Bulma buttons can easily be enhanced by adding a\n    '}
+            {' Bulma buttons can easily be enhanced by adding a '}
             <strong data-official-prose="">{'Font Awesome icon'}</strong>
-            {'. For the best results, wrap the inner text in a separate\n    '}
+            {'. For the best results, wrap the inner text in a separate '}
             <code data-official-prose="">{'<span>'}</code>
-            {' element.\n  '}
+            {' element. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/with-font-awesome-icons/001">
-          <Canvas of={Example021} />
+          <Canvas of={ButtonsWithIconsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
-        <div data-official-example="elements-button/with-font-awesome-icons/002">
-          <Canvas of={Example022} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={'elements-button/with-font-awesome-icons/002'}
+          >
+            <div data-official-example="elements-button/with-font-awesome-icons/002">
+              <Canvas of={IconOnlyButtonsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<p class="buttons">\n  <button class="button is-small">\n    <span class="icon is-small">\n      <i class="fas fa-heading"></i>\n    </span>\n  </button>\n</p>\n<p class="buttons">\n  <button class="button">\n    <span class="icon is-small">\n      <i class="fas fa-heading"></i>\n    </span>\n  </button>\n  <button class="button">\n    <span class="icon">\n      <i class="fas fa-heading fa-lg"></i>\n    </span>\n  </button>\n</p>\n<p class="buttons">\n  <button class="button is-medium">\n    <span class="icon is-small">\n      <i class="fas fa-heading"></i>\n    </span>\n  </button>\n  <button class="button is-medium">\n    <span class="icon">\n      <i class="fas fa-heading fa-lg"></i>\n    </span>\n  </button>\n  <button class="button is-medium">\n    <span class="icon is-medium">\n      <i class="fas fa-heading fa-2x"></i>\n    </span>\n  </button>\n</p>\n<p class="buttons">\n  <button class="button is-large">\n    <span class="icon is-small">\n      <i class="fas fa-heading"></i>\n    </span>\n  </button>\n  <button class="button is-large">\n    <span class="icon">\n      <i class="fas fa-heading fa-lg"></i>\n    </span>\n  </button>\n  <button class="button is-large">\n    <span class="icon is-medium">\n      <i class="fas fa-heading fa-2x"></i>\n    </span>\n  </button>\n</p>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'button-group'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Button group\n  '}
-          </span>
-          {'\n  '}
+            {' Button group '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#button-group'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    If you want to '}
+            {' If you want to '}
             <strong data-official-prose="">{'group'}</strong>
             {' buttons together on a '}
             <strong data-official-prose="">{'single line'}</strong>
-            {', use the\n    '}
+            {', use the '}
             <code data-official-prose="">{'is-grouped'}</code>
             {' modifier on the '}
             <code data-official-prose="">{'field'}</code>
-            {' container:\n  '}
+            {' container: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/button-group/001">
-          <Canvas of={Example023} />
+          <Canvas of={GroupedButtonsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'button-addons'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Button addons\n  '}
-          </span>
-          {'\n  '}
+            {' Button addons '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#button-addons'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    If you want to use buttons as '}
+            {' If you want to use buttons as '}
             <strong data-official-prose="">{'addons'}</strong>
             {', use the '}
             <code data-official-prose="">{'has-addons'}</code>
-            {' modifier on the\n    '}
+            {' modifier on the '}
             <code data-official-prose="">{'field'}</code>
-            {' container:\n  '}
+            {' container: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/button-addons/001">
-          <Canvas of={Example024} />
+          <Canvas of={AttachedButtonsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'button-group-with-addons'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Button group with addons\n  '}
-          </span>
-          {'\n  '}
+            {' Button group with addons '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#button-group-with-addons'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can group together addons as well:'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="elements-button/button-group-with-addons/001">
-          <Canvas of={Example025} />
+          <Canvas of={GroupedButtonAddonsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'list-of-buttons'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    List of buttons\n  '}
-          </span>
-          {'\n  '}
+            {' List of buttons '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#list-of-buttons'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
-        <div data-official-example="elements-button/list-of-buttons/001">
-          <Canvas of={Example026} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={'elements-button/list-of-buttons/001'}
+          >
+            <div data-official-example="elements-button/list-of-buttons/001">
+              <Canvas of={ButtonListStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="buttons">\n  <button class="button is-success">Save changes</button>\n  <button class="button is-info">Save and continue</button>\n  <button class="button is-danger">Cancel</button>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="elements-button/list-of-buttons/002">
-          <Canvas of={Example027} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={'elements-button/list-of-buttons/002'}
+          >
+            <div data-official-example="elements-button/list-of-buttons/002">
+              <Canvas of={WrappingButtonListStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column bd-highlight-full'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="buttons">\n  <button class="button">One</button>\n  <button class="button">Two</button>\n  <button class="button">Three</button>\n  <button class="button">Four</button>\n  <button class="button">Five</button>\n  <button class="button">Six</button>\n  <button class="button">Seven</button>\n  <button class="button">Eight</button>\n  <button class="button">Nine</button>\n  <button class="button">Ten</button>\n  <button class="button">Eleven</button>\n  <button class="button">Twelve</button>\n  <button class="button">Thirteen</button>\n  <button class="button">Fourteen</button>\n  <button class="button">Fifteen</button>\n  <button class="button">Sixteen</button>\n  <button class="button">Seventeen</button>\n  <button class="button">Eighteen</button>\n  <button class="button">Nineteen</button>\n  <button class="button">Twenty</button>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="elements-button/list-of-buttons/003">
-          <Canvas of={Example028} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={'elements-button/list-of-buttons/003'}
+          >
+            <div data-official-example="elements-button/list-of-buttons/003">
+              <Canvas of={AttachedButtonListStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column bd-highlight-full'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="buttons has-addons">\n  <button class="button">Yes</button>\n  <button class="button">Maybe</button>\n  <button class="button">No</button>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="elements-button/list-of-buttons/004">
-          <Canvas of={Example029} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={'elements-button/list-of-buttons/004'}
+          >
+            <div data-official-example="elements-button/list-of-buttons/004">
+              <Canvas of={AlignedButtonAddonsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column bd-highlight-full'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="buttons has-addons is-centered">\n  <button class="button">Yes</button>\n  <button class="button">Maybe</button>\n  <button class="button">No</button>\n</div>\n\n<div class="buttons has-addons is-right">\n  <button class="button">Yes</button>\n  <button class="button">Maybe</button>\n  <button class="button">No</button>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="elements-button/list-of-buttons/005">
-          <Canvas of={Example030} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column'}
+            data-source-example={'elements-button/list-of-buttons/005'}
+          >
+            <div data-official-example="elements-button/list-of-buttons/005">
+              <Canvas of={SelectedButtonAddonsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column bd-highlight-full'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="buttons has-addons">\n  <button class="button is-success is-selected">Yes</button>\n  <button class="button">Maybe</button>\n  <button class="button">No</button>\n</div>\n\n<div class="buttons has-addons">\n  <button class="button">Yes</button>\n  <button class="button is-info is-selected">Maybe</button>\n  <button class="button">No</button>\n</div>\n\n<div class="buttons has-addons">\n  <button class="button">Yes</button>\n  <button class="button">Maybe</button>\n  <button class="button is-danger is-selected">No</button>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'message is-info'}>
-          {'\n  '}
           <div data-official-prose="" className={'message-header'}>
-            {'\n    '}
             <p data-official-prose="">
-              {'\n      Difference between\n      '}
+              {' Difference between '}
               <a
                 data-official-prose=""
                 href={'https://bulma.io/documentation/form/general/#form-group'}
               >
                 {'form groups'}
               </a>
-              {'\n      and '}
+              {' and '}
               <strong data-official-prose="">{'list of buttons'}</strong>
-              {'\n    '}
             </p>
-            {'\n  '}
           </div>
-          {'\n  '}
           <div data-official-prose="" className={'message-body'}>
-            {'\n    '}
             <div data-official-prose="" className={'content'}>
-              {'\n      '}
               <p data-official-prose="">
                 {
-                  '\n        While this list of buttons style can be achieved with either\n        '
+                  ' While this list of buttons style can be achieved with either '
                 }
                 <code data-official-prose="">{'field is-grouped'}</code>
                 {' or the new '}
                 <code data-official-prose="">{'buttons'}</code>
-                {' class, there are a few differences:\n      '}
+                {' class, there are a few differences: '}
               </p>
-              {'\n      '}
               <ul data-official-prose="">
-                {'\n        '}
                 <li data-official-prose="">
                   <code data-official-prose="">{'buttons'}</code>
                   {' has a '}
                   <strong data-official-prose="">{'simpler markup'}</strong>
                 </li>
-                {'\n        '}
                 <li data-official-prose="">
                   <code data-official-prose="">{'buttons'}</code>
                   {' can only contain '}
                   <code data-official-prose="">{'button'}</code>
                   {' elements'}
                 </li>
-                {'\n        '}
                 <li data-official-prose="">
                   <code data-official-prose="">{'field is-grouped'}</code>
                   {' can contain '}
@@ -1126,15 +976,11 @@ function OfficialDocs() {
                   <code data-official-prose="">{'control'}</code>
                   {' inputs'}
                 </li>
-                {'\n        '}
                 <li data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'field is-grouped'}</code>
-                  {' can be forced to fit all controls on a\n          '}
+                  {' can be forced to fit all controls on a '}
                   <strong data-official-prose="">{'single line'}</strong>
-                  {'\n        '}
                 </li>
-                {'\n        '}
                 <li data-official-prose="">
                   {'with '}
                   <code data-official-prose="">{'field is-grouped'}</code>
@@ -1142,16 +988,14 @@ function OfficialDocs() {
                   <strong data-official-prose="">{'expand'}</strong>
                   {' one of the controls'}
                 </li>
-                {'\n      '}
               </ul>
-              {'\n      '}
               <p data-official-prose="">
-                {'\n        Basically, if you only want a list of '}
+                {' Basically, if you only want a list of '}
                 <em data-official-prose="">{'buttons'}</em>
                 {', using '}
                 <code data-official-prose="">{'buttons'}</code>
                 {
-                  ' is recommended. If you need\n        more control on the styling and the elements, use a\n        '
+                  ' is recommended. If you need more control on the styling and the elements, use a '
                 }
                 <a
                   data-official-prose=""
@@ -1161,2387 +1005,1023 @@ function OfficialDocs() {
                 >
                   {'form group'}
                 </a>
-                {'.\n      '}
+                {'. '}
               </p>
-              {'\n    '}
             </div>
-            {'\n  '}
           </div>
-          {'\n'}
         </div>
-        {'\n\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-weight'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-weight)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-weight-medium)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-family'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-family)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'false'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-border-style'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-border-style)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'solid'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-border-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-border-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-control-border-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-padding-vertical'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-padding-vertical)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.5em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-padding-horizontal'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-padding-horizontal)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-focus-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-focus-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link-focus-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-focus-box-shadow-size'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-focus-box-shadow-size)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0 0 0 0.125em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-focus-box-shadow-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-focus-box-shadow-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          'hsla(\n  var(--bulma-link-h),\n  var(--bulma-link-s),\n  var(--bulma-link-on-scheme-l),\n  0.25\n)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-active-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-active-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link-active)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-active-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-active-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link-active-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-text-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-text-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-text-decoration'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-text-decoration)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'underline'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-text-hover-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-text-hover-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-background)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-text-hover-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-text-hover-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-strong)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-ghost-background'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-ghost-background)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'none'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-ghost-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-ghost-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'transparent'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-ghost-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-ghost-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-ghost-decoration'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-ghost-decoration)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'none'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-ghost-hover-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-ghost-hover-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-ghost-hover-decoration'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-ghost-hover-decoration)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'underline'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-disabled-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-disabled-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-disabled-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-disabled-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-disabled-shadow'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-disabled-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'none'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-disabled-opacity'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-disabled-opacity)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.5'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-static-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-static-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-weak)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-static-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-static-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main-ter)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$button-static-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-button-static-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultButtonDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button>Button</ui.Button>
-      </ui.Buttons>
+      <Buttons>
+        <Button>Button</Button>
+      </Buttons>
     </>
   )
 }
 
-function Example002Demo() {
+function NativeButtonElementsDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.LinkButton>Anchor</ui.LinkButton> <ui.Button>Button</ui.Button>{' '}
-        <ui.Button type={'submit'} value={'Submit input'} as={'input'} />{' '}
-        <ui.Button type={'reset'} value={'Reset input'} as={'input'} />
-      </ui.Buttons>
+      <Buttons>
+        <LinkButton>Anchor</LinkButton>
+        <Button>Button</Button>
+        <Button type={'submit'} value={'Submit input'} as={'input'} />
+        <Button type={'reset'} value={'Reset input'} as={'input'} />
+      </Buttons>
     </>
   )
 }
 
-function Example003Demo() {
+function NeutralAndTextButtonsDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button color={'white'}>White</ui.Button>{' '}
-        <ui.Button color={'light'}>Light</ui.Button>{' '}
-        <ui.Button color={'dark'}>Dark</ui.Button>{' '}
-        <ui.Button color={'black'}>Black</ui.Button>{' '}
-        <ui.Button variant={'text'}>Text</ui.Button>{' '}
-        <ui.Button variant={'ghost'}>Ghost</ui.Button>
-      </ui.Buttons>
+      <Buttons>
+        <Button color={'white'}>White</Button>
+        <Button color={'light'}>Light</Button>
+        <Button color={'dark'}>Dark</Button>
+        <Button color={'black'}>Black</Button>
+        <Button variant={'text'}>Text</Button>
+        <Button variant={'ghost'}>Ghost</Button>
+      </Buttons>
     </>
   )
 }
 
-function Example004Demo() {
+function SemanticColorsDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button color={'primary'}>Primary</ui.Button>{' '}
-        <ui.Button color={'link'}>Link</ui.Button>
-      </ui.Buttons>{' '}
-      <ui.Buttons>
-        <ui.Button color={'info'}>Info</ui.Button>{' '}
-        <ui.Button color={'success'}>Success</ui.Button>{' '}
-        <ui.Button color={'warning'}>Warning</ui.Button>{' '}
-        <ui.Button color={'danger'}>Danger</ui.Button>
-      </ui.Buttons>
+      <Buttons>
+        <Button color={'primary'}>Primary</Button>
+        <Button color={'link'}>Link</Button>
+      </Buttons>
+      <Buttons>
+        <Button color={'info'}>Info</Button>
+        <Button color={'success'}>Success</Button>
+        <Button color={'warning'}>Warning</Button>
+        <Button color={'danger'}>Danger</Button>
+      </Buttons>
     </>
   )
 }
 
-function Example005Demo() {
+function LightColorsDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button color={'primary'} tone={'light'}>
+      <Buttons>
+        <Button color={'primary'} tone={'light'}>
           Primary
-        </ui.Button>{' '}
-        <ui.Button color={'link'} tone={'light'}>
+        </Button>
+        <Button color={'link'} tone={'light'}>
           Link
-        </ui.Button>
-      </ui.Buttons>{' '}
-      <ui.Buttons>
-        <ui.Button color={'info'} tone={'light'}>
+        </Button>
+      </Buttons>
+      <Buttons>
+        <Button color={'info'} tone={'light'}>
           Info
-        </ui.Button>{' '}
-        <ui.Button color={'success'} tone={'light'}>
+        </Button>
+        <Button color={'success'} tone={'light'}>
           Success
-        </ui.Button>{' '}
-        <ui.Button color={'warning'} tone={'light'}>
+        </Button>
+        <Button color={'warning'} tone={'light'}>
           Warning
-        </ui.Button>{' '}
-        <ui.Button color={'danger'} tone={'light'}>
+        </Button>
+        <Button color={'danger'} tone={'light'}>
           Danger
-        </ui.Button>
-      </ui.Buttons>
+        </Button>
+      </Buttons>
     </>
   )
 }
 
-function Example006Demo() {
+function DarkColorsDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button color={'primary'} tone={'dark'}>
+      <Buttons>
+        <Button color={'primary'} tone={'dark'}>
           Primary
-        </ui.Button>{' '}
-        <ui.Button color={'link'} tone={'dark'}>
+        </Button>
+        <Button color={'link'} tone={'dark'}>
           Link
-        </ui.Button>
-      </ui.Buttons>{' '}
-      <ui.Buttons>
-        <ui.Button color={'info'} tone={'dark'}>
+        </Button>
+      </Buttons>
+      <Buttons>
+        <Button color={'info'} tone={'dark'}>
           Info
-        </ui.Button>{' '}
-        <ui.Button color={'success'} tone={'dark'}>
+        </Button>
+        <Button color={'success'} tone={'dark'}>
           Success
-        </ui.Button>{' '}
-        <ui.Button color={'warning'} tone={'dark'}>
+        </Button>
+        <Button color={'warning'} tone={'dark'}>
           Warning
-        </ui.Button>{' '}
-        <ui.Button color={'danger'} tone={'dark'}>
+        </Button>
+        <Button color={'danger'} tone={'dark'}>
           Danger
-        </ui.Button>
-      </ui.Buttons>
+        </Button>
+      </Buttons>
     </>
   )
 }
 
-function Example007Demo() {
+function ButtonSizesDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button size={'small'}>Small</ui.Button>{' '}
-        <ui.Button>Default</ui.Button>{' '}
-        <ui.Button size={'normal'}>Normal</ui.Button>{' '}
-        <ui.Button size={'medium'}>Medium</ui.Button>{' '}
-        <ui.Button size={'large'}>Large</ui.Button>
-      </ui.Buttons>
+      <Buttons>
+        <Button size={'small'}>Small</Button>
+        <Button>Default</Button>
+        <Button size={'normal'}>Normal</Button>
+        <Button size={'medium'}>Medium</Button>
+        <Button size={'large'}>Large</Button>
+      </Buttons>
     </>
   )
 }
 
-function Example008Demo() {
+function SharedMediumSizeDemo() {
   return (
     <>
-      <ui.Buttons size={'medium'}>
-        <ui.Button>All</ui.Button> <ui.Button>Medium</ui.Button>{' '}
-        <ui.Button>Size</ui.Button>
-      </ui.Buttons>
+      <Buttons size={'medium'}>
+        <Button>All</Button>
+        <Button>Medium</Button>
+        <Button>Size</Button>
+      </Buttons>
     </>
   )
 }
 
-function Example009Demo() {
+function IndividualSizeOverrideDemo() {
   return (
     <>
-      <ui.Buttons size={'small'}>
-        <ui.Button>Small</ui.Button> <ui.Button>Small</ui.Button>{' '}
-        <ui.Button>Small</ui.Button>{' '}
-        <ui.Button size={'normal'}>Normal</ui.Button>{' '}
-        <ui.Button>Small</ui.Button>
-      </ui.Buttons>
+      <Buttons size={'small'}>
+        <Button>Small</Button>
+        <Button>Small</Button>
+        <Button>Small</Button>
+        <Button size={'normal'}>Normal</Button>
+        <Button>Small</Button>
+      </Buttons>
     </>
   )
 }
 
-function Example010Demo() {
+function FullWidthButtonsDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button size={'small'} fullWidth>
+      <Buttons>
+        <Button size={'small'} fullWidth>
           Small
-        </ui.Button>{' '}
-        <ui.Button fullWidth>Normal</ui.Button>{' '}
-        <ui.Button size={'medium'} fullWidth>
+        </Button>
+        <Button fullWidth>Normal</Button>
+        <Button size={'medium'} fullWidth>
           Medium
-        </ui.Button>{' '}
-        <ui.Button size={'large'} fullWidth>
+        </Button>
+        <Button size={'large'} fullWidth>
           Large
-        </ui.Button>
-      </ui.Buttons>
+        </Button>
+      </Buttons>
     </>
   )
 }
 
-function Example011Demo() {
+function OutlinedButtonsDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button color={'link'} outlined>
+      <Buttons>
+        <Button color={'link'} outlined>
           Outlined
-        </ui.Button>{' '}
-        <ui.Button color={'primary'} outlined>
+        </Button>
+        <Button color={'primary'} outlined>
           Outlined
-        </ui.Button>{' '}
-        <ui.Button color={'info'} outlined>
+        </Button>
+        <Button color={'info'} outlined>
           Outlined
-        </ui.Button>{' '}
-        <ui.Button color={'success'} outlined>
+        </Button>
+        <Button color={'success'} outlined>
           Outlined
-        </ui.Button>{' '}
-        <ui.Button color={'danger'} outlined>
+        </Button>
+        <Button color={'danger'} outlined>
           Outlined
-        </ui.Button>
-      </ui.Buttons>
+        </Button>
+      </Buttons>
     </>
   )
 }
 
-function Example012Demo() {
+function InvertedButtonsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <div className={'bd-callout is-primary'}>
-            {' '}
-            <ui.Buttons>
-              <ui.Button color={'link'} inverted>
-                Inverted
-              </ui.Button>{' '}
-              <ui.Button color={'primary'} inverted>
-                Inverted
-              </ui.Button>{' '}
-              <ui.Button color={'info'} inverted>
-                Inverted
-              </ui.Button>{' '}
-              <ui.Button color={'success'} inverted>
-                Inverted
-              </ui.Button>{' '}
-              <ui.Button color={'danger'} inverted>
-                Inverted
-              </ui.Button>
-            </ui.Buttons>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<button class="button is-link is-inverted">Inverted</button>\n<button class="button is-primary is-inverted">Inverted</button>\n<button class="button is-info is-inverted">Inverted</button>\n<button class="button is-success is-inverted">Inverted</button>\n<button class="button is-danger is-inverted">Inverted</button>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <div className={'bd-callout is-primary'}>
+        <Buttons>
+          <Button color={'link'} inverted>
+            Inverted
+          </Button>
+          <Button color={'primary'} inverted>
+            Inverted
+          </Button>
+          <Button color={'info'} inverted>
+            Inverted
+          </Button>
+          <Button color={'success'} inverted>
+            Inverted
+          </Button>
+          <Button color={'danger'} inverted>
+            Inverted
+          </Button>
+        </Buttons>
+      </div>
     </>
   )
 }
 
-function Example013Demo() {
+function RoundedButtonsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <ui.Buttons>
-            <ui.Button rounded>Rounded</ui.Button>{' '}
-            <ui.Button color={'link'} rounded>
-              Rounded
-            </ui.Button>{' '}
-            <ui.Button color={'primary'} rounded>
-              Rounded
-            </ui.Button>{' '}
-            <ui.Button color={'info'} rounded>
-              Rounded
-            </ui.Button>{' '}
-            <ui.Button color={'success'} rounded>
-              Rounded
-            </ui.Button>{' '}
-            <ui.Button color={'danger'} rounded>
-              Rounded
-            </ui.Button>
-          </ui.Buttons>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<button class="button is-rounded">Rounded</button>\n<button class="button is-link is-rounded">Rounded</button>\n<button class="button is-primary is-rounded">Rounded</button>\n<button class="button is-info is-rounded">Rounded</button>\n<button class="button is-success is-rounded">Rounded</button>\n<button class="button is-danger is-rounded">Rounded</button>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Buttons>
+        <Button rounded>Rounded</Button>
+        <Button color={'link'} rounded>
+          Rounded
+        </Button>
+        <Button color={'primary'} rounded>
+          Rounded
+        </Button>
+        <Button color={'info'} rounded>
+          Rounded
+        </Button>
+        <Button color={'success'} rounded>
+          Rounded
+        </Button>
+        <Button color={'danger'} rounded>
+          Rounded
+        </Button>
+      </Buttons>
     </>
   )
 }
 
-function Example014Demo() {
+function NormalStateDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button>Normal</ui.Button>{' '}
-        <ui.Button color={'link'}>Normal</ui.Button>{' '}
-        <ui.Button color={'primary'}>Normal</ui.Button>{' '}
-        <ui.Button color={'info'}>Normal</ui.Button>{' '}
-        <ui.Button color={'success'}>Normal</ui.Button>{' '}
-        <ui.Button color={'warning'}>Normal</ui.Button>{' '}
-        <ui.Button color={'danger'}>Normal</ui.Button>
-      </ui.Buttons>
+      <Buttons>
+        <Button>Normal</Button>
+        <Button color={'link'}>Normal</Button>
+        <Button color={'primary'}>Normal</Button>
+        <Button color={'info'}>Normal</Button>
+        <Button color={'success'}>Normal</Button>
+        <Button color={'warning'}>Normal</Button>
+        <Button color={'danger'}>Normal</Button>
+      </Buttons>
     </>
   )
 }
 
-function Example015Demo() {
+function HoverStateDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button state={'hovered'}>Hover</ui.Button>{' '}
-        <ui.Button color={'link'} state={'hovered'}>
+      <Buttons>
+        <Button state={'hovered'}>Hover</Button>
+        <Button color={'link'} state={'hovered'}>
           Hover
-        </ui.Button>{' '}
-        <ui.Button color={'primary'} state={'hovered'}>
+        </Button>
+        <Button color={'primary'} state={'hovered'}>
           Hover
-        </ui.Button>{' '}
-        <ui.Button color={'info'} state={'hovered'}>
+        </Button>
+        <Button color={'info'} state={'hovered'}>
           Hover
-        </ui.Button>{' '}
-        <ui.Button color={'success'} state={'hovered'}>
+        </Button>
+        <Button color={'success'} state={'hovered'}>
           Hover
-        </ui.Button>{' '}
-        <ui.Button color={'warning'} state={'hovered'}>
+        </Button>
+        <Button color={'warning'} state={'hovered'}>
           Hover
-        </ui.Button>{' '}
-        <ui.Button color={'danger'} state={'hovered'}>
+        </Button>
+        <Button color={'danger'} state={'hovered'}>
           Hover
-        </ui.Button>
-      </ui.Buttons>
+        </Button>
+      </Buttons>
     </>
   )
 }
 
-function Example016Demo() {
+function FocusStateDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button state={'focused'}>Focus</ui.Button>{' '}
-        <ui.Button color={'link'} state={'focused'}>
+      <Buttons>
+        <Button state={'focused'}>Focus</Button>
+        <Button color={'link'} state={'focused'}>
           Focus
-        </ui.Button>{' '}
-        <ui.Button color={'primary'} state={'focused'}>
+        </Button>
+        <Button color={'primary'} state={'focused'}>
           Focus
-        </ui.Button>{' '}
-        <ui.Button color={'info'} state={'focused'}>
+        </Button>
+        <Button color={'info'} state={'focused'}>
           Focus
-        </ui.Button>{' '}
-        <ui.Button color={'success'} state={'focused'}>
+        </Button>
+        <Button color={'success'} state={'focused'}>
           Focus
-        </ui.Button>{' '}
-        <ui.Button color={'warning'} state={'focused'}>
+        </Button>
+        <Button color={'warning'} state={'focused'}>
           Focus
-        </ui.Button>{' '}
-        <ui.Button color={'danger'} state={'focused'}>
+        </Button>
+        <Button color={'danger'} state={'focused'}>
           Focus
-        </ui.Button>
-      </ui.Buttons>
+        </Button>
+      </Buttons>
     </>
   )
 }
 
-function Example017Demo() {
+function ActiveStateDemo() {
   return (
     <>
-      <ui.Buttons>
-        <ui.Button state={'active'}>Active</ui.Button>{' '}
-        <ui.Button color={'link'} state={'active'}>
+      <Buttons>
+        <Button state={'active'}>Active</Button>
+        <Button color={'link'} state={'active'}>
           Active
-        </ui.Button>{' '}
-        <ui.Button color={'primary'} state={'active'}>
+        </Button>
+        <Button color={'primary'} state={'active'}>
           Active
-        </ui.Button>{' '}
-        <ui.Button color={'info'} state={'active'}>
+        </Button>
+        <Button color={'info'} state={'active'}>
           Active
-        </ui.Button>{' '}
-        <ui.Button color={'success'} state={'active'}>
+        </Button>
+        <Button color={'success'} state={'active'}>
           Active
-        </ui.Button>{' '}
-        <ui.Button color={'warning'} state={'active'}>
+        </Button>
+        <Button color={'warning'} state={'active'}>
           Active
-        </ui.Button>{' '}
-        <ui.Button color={'danger'} state={'active'}>
+        </Button>
+        <Button color={'danger'} state={'active'}>
           Active
-        </ui.Button>
-      </ui.Buttons>
+        </Button>
+      </Buttons>
     </>
   )
 }
 
-function Example018Demo() {
+function LoadingStateDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <ui.Buttons>
-            <ui.Button loading>Loading</ui.Button>{' '}
-            <ui.Button color={'link'} loading>
-              Loading
-            </ui.Button>{' '}
-            <ui.Button color={'primary'} loading>
-              Loading
-            </ui.Button>{' '}
-            <ui.Button color={'info'} loading>
-              Loading
-            </ui.Button>{' '}
-            <ui.Button color={'success'} loading>
-              Loading
-            </ui.Button>{' '}
-            <ui.Button color={'warning'} loading>
-              Loading
-            </ui.Button>{' '}
-            <ui.Button color={'danger'} loading>
-              Loading
-            </ui.Button>
-          </ui.Buttons>{' '}
-          <ui.Message color={'info'} as={'div'}>
-            {' '}
-            <ui.MessageBody>
-              {' '}
-              <p>
-                Since the loading spinner is implemented using the{' '}
-                <code>{'::after'}</code> pseudo-element, it is not supported by
-                the <code>{'<input type="submit">'}</code> element. Consider
-                using <code>{'<button type="submit">'}</code> instead.
-              </p>{' '}
-            </ui.MessageBody>{' '}
-          </ui.Message>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<button class="button is-loading">Loading</button>\n<button class="button is-link is-loading">Loading</button>\n<button class="button is-primary is-loading">Loading</button>\n<button class="button is-info is-loading">Loading</button>\n<button class="button is-success is-loading">Loading</button>\n<button class="button is-warning is-loading">Loading</button>\n<button class="button is-danger is-loading">Loading</button>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Buttons>
+        <Button loading>Loading</Button>
+        <Button color={'link'} loading>
+          Loading
+        </Button>
+        <Button color={'primary'} loading>
+          Loading
+        </Button>
+        <Button color={'info'} loading>
+          Loading
+        </Button>
+        <Button color={'success'} loading>
+          Loading
+        </Button>
+        <Button color={'warning'} loading>
+          Loading
+        </Button>
+        <Button color={'danger'} loading>
+          Loading
+        </Button>
+      </Buttons>
+      <Message color={'info'} as={'div'}>
+        <MessageBody>
+          <p>
+            Since the loading spinner is implemented using the{' '}
+            <code>{'::after'}</code> pseudo-element, it is not supported by the{' '}
+            <code>{'<input type="submit">'}</code> element. Consider using{' '}
+            <code>{'<button type="submit">'}</code> instead.
+          </p>
+        </MessageBody>
+      </Message>
     </>
   )
 }
 
-function Example019Demo() {
+function StaticButtonDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              You can create a <strong>non-interactive button</strong> by using
-              the <code>{'is-static'}</code> modifier. This is useful to align a
-              text label with an input, for example when using{' '}
-              <a
-                href={'https://bulma.io/documentation/form/general#form-addons'}
-              >
-                form addons
-              </a>
-              .
-            </p>{' '}
-          </ui.Content>{' '}
-          <ui.Button className={'rb-is-static'} as={'span'}>
-            Static
-          </ui.Button>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {'\n<span class="button is-static">Static</span>\n'}
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          You can create a <strong>non-interactive button</strong> by using the{' '}
+          <code>{'is-static'}</code> modifier. This is useful to align a text
+          label with an input, for example when using{' '}
+          <a href={'https://bulma.io/documentation/form/general#form-addons'}>
+            form addons
+          </a>
+          .
+        </p>
+      </Content>
+      <Button className={'rb-is-static'} as={'span'}>
+        Static
+      </Button>
     </>
   )
 }
 
-function Example020Demo() {
+function DisabledButtonsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <ui.Buttons>
-            <ui.Button title={'Disabled button'} disabled>
-              Disabled
-            </ui.Button>{' '}
-            <ui.Button title={'Disabled button'} disabled color={'link'}>
-              {' '}
-              Disabled{' '}
-            </ui.Button>{' '}
-            <ui.Button title={'Disabled button'} disabled color={'primary'}>
-              {' '}
-              Disabled{' '}
-            </ui.Button>{' '}
-            <ui.Button title={'Disabled button'} disabled color={'info'}>
-              {' '}
-              Disabled{' '}
-            </ui.Button>{' '}
-            <ui.Button title={'Disabled button'} disabled color={'success'}>
-              {' '}
-              Disabled{' '}
-            </ui.Button>{' '}
-            <ui.Button title={'Disabled button'} disabled color={'warning'}>
-              {' '}
-              Disabled{' '}
-            </ui.Button>{' '}
-            <ui.Button title={'Disabled button'} disabled color={'danger'}>
-              {' '}
-              Disabled{' '}
-            </ui.Button>
-          </ui.Buttons>{' '}
-          <ui.Message color={'danger'} as={'div'}>
-            {' '}
-            <ui.MessageBody>
-              {' '}
-              <p>
-                The <code>{'is-disabled'}</code> CSS class has been deprecated
-                in favor of the <code>{'disabled'}</code> HTML attribute.{' '}
-                <a href={'https://github.com/jgthms/bulma/issues/276'}>
-                  Learn more
-                </a>
-              </p>{' '}
-            </ui.MessageBody>{' '}
-          </ui.Message>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<button class="button" title="Disabled button" disabled>Disabled</button>\n<button class="button is-link" title="Disabled button" disabled>\n  Disabled\n</button>\n<button class="button is-primary" title="Disabled button" disabled>\n  Disabled\n</button>\n<button class="button is-info" title="Disabled button" disabled>\n  Disabled\n</button>\n<button class="button is-success" title="Disabled button" disabled>\n  Disabled\n</button>\n<button class="button is-warning" title="Disabled button" disabled>\n  Disabled\n</button>\n<button class="button is-danger" title="Disabled button" disabled>\n  Disabled\n</button>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Buttons>
+        <Button title={'Disabled button'} disabled>
+          Disabled
+        </Button>
+        <Button title={'Disabled button'} disabled color={'link'}>
+          Disabled
+        </Button>
+        <Button title={'Disabled button'} disabled color={'primary'}>
+          Disabled
+        </Button>
+        <Button title={'Disabled button'} disabled color={'info'}>
+          Disabled
+        </Button>
+        <Button title={'Disabled button'} disabled color={'success'}>
+          Disabled
+        </Button>
+        <Button title={'Disabled button'} disabled color={'warning'}>
+          Disabled
+        </Button>
+        <Button title={'Disabled button'} disabled color={'danger'}>
+          Disabled
+        </Button>
+      </Buttons>
+      <Message color={'danger'} as={'div'}>
+        <MessageBody>
+          <p>
+            The <code>{'is-disabled'}</code> CSS class has been deprecated in
+            favor of the <code>{'disabled'}</code> HTML attribute.{' '}
+            <a href={'https://github.com/jgthms/bulma/issues/276'}>
+              Learn more
+            </a>
+          </p>
+        </MessageBody>
+      </Message>
     </>
   )
 }
 
-function Example021Demo() {
+function ButtonsWithIconsDemo() {
   return (
     <>
-      <ui.Buttons as={'p'}>
-        <ui.Button>
-          {' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i className={'fas fa-bold'} />{' '}
-          </ui.Icon>{' '}
-        </ui.Button>{' '}
-        <ui.Button>
-          {' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i className={'fas fa-italic'} />{' '}
-          </ui.Icon>{' '}
-        </ui.Button>{' '}
-        <ui.Button>
-          {' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i className={'fas fa-underline'} />{' '}
-          </ui.Icon>{' '}
-        </ui.Button>
-      </ui.Buttons>{' '}
-      <ui.Buttons as={'p'}>
-        <ui.Button>
-          {' '}
-          <ui.Icon>
-            {' '}
-            <i className={'fab fa-github'} />{' '}
-          </ui.Icon>{' '}
-          <span>GitHub</span>{' '}
-        </ui.Button>{' '}
-        <ui.Button color={'primary'}>
-          {' '}
-          <ui.Icon>
-            {' '}
-            <i className={'fab fa-twitter'} />{' '}
-          </ui.Icon>{' '}
-          <span>@jgthms</span>{' '}
-        </ui.Button>{' '}
-        <ui.Button color={'success'}>
-          {' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i className={'fas fa-check'} />{' '}
-          </ui.Icon>{' '}
-          <span>Save</span>{' '}
-        </ui.Button>{' '}
-        <ui.Button color={'danger'} outlined>
-          {' '}
-          <span>Delete</span>{' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i className={'fas fa-times'} />{' '}
-          </ui.Icon>{' '}
-        </ui.Button>
-      </ui.Buttons>{' '}
-      <ui.Buttons as={'p'}>
-        <ui.Button size={'small'}>
-          {' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i className={'fab fa-github'} />{' '}
-          </ui.Icon>{' '}
-          <span>GitHub</span>{' '}
-        </ui.Button>{' '}
-        <ui.Button>
-          {' '}
-          <ui.Icon>
-            {' '}
-            <i className={'fab fa-github'} />{' '}
-          </ui.Icon>{' '}
-          <span>GitHub</span>{' '}
-        </ui.Button>{' '}
-        <ui.Button size={'medium'}>
-          {' '}
-          <ui.Icon>
-            {' '}
-            <i className={'fab fa-github'} />{' '}
-          </ui.Icon>{' '}
-          <span>GitHub</span>{' '}
-        </ui.Button>{' '}
-        <ui.Button size={'large'}>
-          {' '}
-          <ui.Icon size={'medium'}>
-            {' '}
-            <i className={'fab fa-github'} />{' '}
-          </ui.Icon>{' '}
-          <span>GitHub</span>{' '}
-        </ui.Button>
-      </ui.Buttons>
+      <Buttons as={'p'}>
+        <Button>
+          <Icon size={'small'}>
+            <i className={'fas fa-bold'} />
+          </Icon>
+        </Button>
+        <Button>
+          <Icon size={'small'}>
+            <i className={'fas fa-italic'} />
+          </Icon>
+        </Button>
+        <Button>
+          <Icon size={'small'}>
+            <i className={'fas fa-underline'} />
+          </Icon>
+        </Button>
+      </Buttons>
+      <Buttons as={'p'}>
+        <Button>
+          <Icon>
+            <i className={'fab fa-github'} />
+          </Icon>
+          <span>GitHub</span>
+        </Button>
+        <Button color={'primary'}>
+          <Icon>
+            <i className={'fab fa-twitter'} />
+          </Icon>
+          <span>@jgthms</span>
+        </Button>
+        <Button color={'success'}>
+          <Icon size={'small'}>
+            <i className={'fas fa-check'} />
+          </Icon>
+          <span>Save</span>
+        </Button>
+        <Button color={'danger'} outlined>
+          <span>Delete</span>
+          <Icon size={'small'}>
+            <i className={'fas fa-times'} />
+          </Icon>
+        </Button>
+      </Buttons>
+      <Buttons as={'p'}>
+        <Button size={'small'}>
+          <Icon size={'small'}>
+            <i className={'fab fa-github'} />
+          </Icon>
+          <span>GitHub</span>
+        </Button>
+        <Button>
+          <Icon>
+            <i className={'fab fa-github'} />
+          </Icon>
+          <span>GitHub</span>
+        </Button>
+        <Button size={'medium'}>
+          <Icon>
+            <i className={'fab fa-github'} />
+          </Icon>
+          <span>GitHub</span>
+        </Button>
+        <Button size={'large'}>
+          <Icon size={'medium'}>
+            <i className={'fab fa-github'} />
+          </Icon>
+          <span>GitHub</span>
+        </Button>
+      </Buttons>
     </>
   )
 }
 
-function Example022Demo() {
+function IconOnlyButtonsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              If the button only contains an icon, Bulma will make sure the
-              button remains <strong>square</strong>, no matter the size of the
-              button <em>or</em> of the icon.
-            </p>{' '}
-          </ui.Content>{' '}
-          <ui.Buttons as={'p'}>
-            <ui.Button size={'small'}>
-              {' '}
-              <ui.Icon size={'small'}>
-                {' '}
-                <i className={'fas fa-heading'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Button>
-          </ui.Buttons>{' '}
-          <ui.Buttons as={'p'}>
-            <ui.Button>
-              {' '}
-              <ui.Icon size={'small'}>
-                {' '}
-                <i className={'fas fa-heading'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Button>{' '}
-            <ui.Button>
-              {' '}
-              <ui.Icon>
-                {' '}
-                <i className={'fas fa-heading fa-lg'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Button>
-          </ui.Buttons>{' '}
-          <ui.Buttons as={'p'}>
-            <ui.Button size={'medium'}>
-              {' '}
-              <ui.Icon size={'small'}>
-                {' '}
-                <i className={'fas fa-heading'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Button>{' '}
-            <ui.Button size={'medium'}>
-              {' '}
-              <ui.Icon>
-                {' '}
-                <i className={'fas fa-heading fa-lg'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Button>{' '}
-            <ui.Button size={'medium'}>
-              {' '}
-              <ui.Icon size={'medium'}>
-                {' '}
-                <i className={'fas fa-heading fa-2x'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Button>
-          </ui.Buttons>{' '}
-          <ui.Buttons as={'p'}>
-            <ui.Button size={'large'}>
-              {' '}
-              <ui.Icon size={'small'}>
-                {' '}
-                <i className={'fas fa-heading'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Button>{' '}
-            <ui.Button size={'large'}>
-              {' '}
-              <ui.Icon>
-                {' '}
-                <i className={'fas fa-heading fa-lg'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Button>{' '}
-            <ui.Button size={'large'}>
-              {' '}
-              <ui.Icon size={'medium'}>
-                {' '}
-                <i className={'fas fa-heading fa-2x'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Button>
-          </ui.Buttons>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<p class="buttons">\n  <button class="button is-small">\n    <span class="icon is-small">\n      <i class="fas fa-heading"></i>\n    </span>\n  </button>\n</p>\n<p class="buttons">\n  <button class="button">\n    <span class="icon is-small">\n      <i class="fas fa-heading"></i>\n    </span>\n  </button>\n  <button class="button">\n    <span class="icon">\n      <i class="fas fa-heading fa-lg"></i>\n    </span>\n  </button>\n</p>\n<p class="buttons">\n  <button class="button is-medium">\n    <span class="icon is-small">\n      <i class="fas fa-heading"></i>\n    </span>\n  </button>\n  <button class="button is-medium">\n    <span class="icon">\n      <i class="fas fa-heading fa-lg"></i>\n    </span>\n  </button>\n  <button class="button is-medium">\n    <span class="icon is-medium">\n      <i class="fas fa-heading fa-2x"></i>\n    </span>\n  </button>\n</p>\n<p class="buttons">\n  <button class="button is-large">\n    <span class="icon is-small">\n      <i class="fas fa-heading"></i>\n    </span>\n  </button>\n  <button class="button is-large">\n    <span class="icon">\n      <i class="fas fa-heading fa-lg"></i>\n    </span>\n  </button>\n  <button class="button is-large">\n    <span class="icon is-medium">\n      <i class="fas fa-heading fa-2x"></i>\n    </span>\n  </button>\n</p>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          If the button only contains an icon, Bulma will make sure the button
+          remains <strong>square</strong>, no matter the size of the button{' '}
+          <em>or</em> of the icon.
+        </p>
+      </Content>
+      <Buttons as={'p'}>
+        <Button size={'small'}>
+          <Icon size={'small'}>
+            <i className={'fas fa-heading'} />
+          </Icon>
+        </Button>
+      </Buttons>
+      <Buttons as={'p'}>
+        <Button>
+          <Icon size={'small'}>
+            <i className={'fas fa-heading'} />
+          </Icon>
+        </Button>
+        <Button>
+          <Icon>
+            <i className={'fas fa-heading fa-lg'} />
+          </Icon>
+        </Button>
+      </Buttons>
+      <Buttons as={'p'}>
+        <Button size={'medium'}>
+          <Icon size={'small'}>
+            <i className={'fas fa-heading'} />
+          </Icon>
+        </Button>
+        <Button size={'medium'}>
+          <Icon>
+            <i className={'fas fa-heading fa-lg'} />
+          </Icon>
+        </Button>
+        <Button size={'medium'}>
+          <Icon size={'medium'}>
+            <i className={'fas fa-heading fa-2x'} />
+          </Icon>
+        </Button>
+      </Buttons>
+      <Buttons as={'p'}>
+        <Button size={'large'}>
+          <Icon size={'small'}>
+            <i className={'fas fa-heading'} />
+          </Icon>
+        </Button>
+        <Button size={'large'}>
+          <Icon>
+            <i className={'fas fa-heading fa-lg'} />
+          </Icon>
+        </Button>
+        <Button size={'large'}>
+          <Icon size={'medium'}>
+            <i className={'fas fa-heading fa-2x'} />
+          </Icon>
+        </Button>
+      </Buttons>
     </>
   )
 }
 
-function Example023Demo() {
+function GroupedButtonsDemo() {
   return (
     <>
-      <ui.Field layout={'grouped'}>
-        {' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button color={'link'}>Save changes</ui.Button>{' '}
-        </ui.Control>{' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button>Cancel</ui.Button>{' '}
-        </ui.Control>{' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button color={'danger'}>Delete post</ui.Button>{' '}
-        </ui.Control>{' '}
-      </ui.Field>
+      <Field layout={'grouped'}>
+        <Control as={'p'}>
+          <Button color={'link'}>Save changes</Button>
+        </Control>
+        <Control as={'p'}>
+          <Button>Cancel</Button>
+        </Control>
+        <Control as={'p'}>
+          <Button color={'danger'}>Delete post</Button>
+        </Control>
+      </Field>
     </>
   )
 }
 
-function Example024Demo() {
+function AttachedButtonsDemo() {
   return (
     <>
-      <ui.Field layout={'addons'}>
-        {' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button>
-            {' '}
-            <ui.Icon size={'small'}>
-              {' '}
-              <i className={'fas fa-align-left'} />{' '}
-            </ui.Icon>{' '}
-            <span>Left</span>{' '}
-          </ui.Button>{' '}
-        </ui.Control>{' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button>
-            {' '}
-            <ui.Icon size={'small'}>
-              {' '}
-              <i className={'fas fa-align-center'} />{' '}
-            </ui.Icon>{' '}
-            <span>Center</span>{' '}
-          </ui.Button>{' '}
-        </ui.Control>{' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button>
-            {' '}
-            <ui.Icon size={'small'}>
-              {' '}
-              <i className={'fas fa-align-right'} />{' '}
-            </ui.Icon>{' '}
-            <span>Right</span>{' '}
-          </ui.Button>{' '}
-        </ui.Control>{' '}
-      </ui.Field>
+      <Field layout={'addons'}>
+        <Control as={'p'}>
+          <Button>
+            <Icon size={'small'}>
+              <i className={'fas fa-align-left'} />
+            </Icon>
+            <span>Left</span>
+          </Button>
+        </Control>
+        <Control as={'p'}>
+          <Button>
+            <Icon size={'small'}>
+              <i className={'fas fa-align-center'} />
+            </Icon>
+            <span>Center</span>
+          </Button>
+        </Control>
+        <Control as={'p'}>
+          <Button>
+            <Icon size={'small'}>
+              <i className={'fas fa-align-right'} />
+            </Icon>
+            <span>Right</span>
+          </Button>
+        </Control>
+      </Field>
     </>
   )
 }
 
-function Example025Demo() {
+function GroupedButtonAddonsDemo() {
   return (
     <>
-      <ui.Field layout={'addons'}>
-        {' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button>
-            {' '}
-            <ui.Icon size={'small'}>
-              {' '}
-              <i className={'fas fa-bold'} />{' '}
-            </ui.Icon>{' '}
-            <span>Bold</span>{' '}
-          </ui.Button>{' '}
-        </ui.Control>{' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button>
-            {' '}
-            <ui.Icon size={'small'}>
-              {' '}
-              <i className={'fas fa-italic'} />{' '}
-            </ui.Icon>{' '}
-            <span>Italic</span>{' '}
-          </ui.Button>{' '}
-        </ui.Control>{' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button>
-            {' '}
-            <ui.Icon size={'small'}>
-              {' '}
-              <i className={'fas fa-underline'} />{' '}
-            </ui.Icon>{' '}
-            <span>Underline</span>{' '}
-          </ui.Button>{' '}
-        </ui.Control>{' '}
-      </ui.Field>{' '}
-      <ui.Field layout={'addons'}>
-        {' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button>
-            {' '}
-            <ui.Icon size={'small'}>
-              {' '}
-              <i className={'fas fa-align-left'} />{' '}
-            </ui.Icon>{' '}
-            <span>Left</span>{' '}
-          </ui.Button>{' '}
-        </ui.Control>{' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button>
-            {' '}
-            <ui.Icon size={'small'}>
-              {' '}
-              <i className={'fas fa-align-center'} />{' '}
-            </ui.Icon>{' '}
-            <span>Center</span>{' '}
-          </ui.Button>{' '}
-        </ui.Control>{' '}
-        <ui.Control as={'p'}>
-          {' '}
-          <ui.Button>
-            {' '}
-            <ui.Icon size={'small'}>
-              {' '}
-              <i className={'fas fa-align-right'} />{' '}
-            </ui.Icon>{' '}
-            <span>Right</span>{' '}
-          </ui.Button>{' '}
-        </ui.Control>{' '}
-      </ui.Field>
+      <Field layout={'addons'}>
+        <Control as={'p'}>
+          <Button>
+            <Icon size={'small'}>
+              <i className={'fas fa-bold'} />
+            </Icon>
+            <span>Bold</span>
+          </Button>
+        </Control>
+        <Control as={'p'}>
+          <Button>
+            <Icon size={'small'}>
+              <i className={'fas fa-italic'} />
+            </Icon>
+            <span>Italic</span>
+          </Button>
+        </Control>
+        <Control as={'p'}>
+          <Button>
+            <Icon size={'small'}>
+              <i className={'fas fa-underline'} />
+            </Icon>
+            <span>Underline</span>
+          </Button>
+        </Control>
+      </Field>
+      <Field layout={'addons'}>
+        <Control as={'p'}>
+          <Button>
+            <Icon size={'small'}>
+              <i className={'fas fa-align-left'} />
+            </Icon>
+            <span>Left</span>
+          </Button>
+        </Control>
+        <Control as={'p'}>
+          <Button>
+            <Icon size={'small'}>
+              <i className={'fas fa-align-center'} />
+            </Icon>
+            <span>Center</span>
+          </Button>
+        </Control>
+        <Control as={'p'}>
+          <Button>
+            <Icon size={'small'}>
+              <i className={'fas fa-align-right'} />
+            </Icon>
+            <span>Right</span>
+          </Button>
+        </Control>
+      </Field>
     </>
   )
 }
 
-function Example026Demo() {
+function ButtonListDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              You can create a <strong>list of buttons</strong> by using the{' '}
-              <code>{'buttons'}</code> container.
-            </p>{' '}
-          </ui.Content>{' '}
-          <div className={'bd-example'}>
-            {' '}
-            <ui.Buttons>
-              <ui.Button color={'success'}>Save changes</ui.Button>{' '}
-              <ui.Button color={'info'}>Save and continue</ui.Button>{' '}
-              <ui.Button color={'danger'}>Cancel</ui.Button>
-            </ui.Buttons>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="buttons">\n  <button class="button is-success">Save changes</button>\n  <button class="button is-info">Save and continue</button>\n  <button class="button is-danger">Cancel</button>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          You can create a <strong>list of buttons</strong> by using the{' '}
+          <code>{'buttons'}</code> container.
+        </p>
+      </Content>
+      <div className={'bd-example'}>
+        <Buttons>
+          <Button color={'success'}>Save changes</Button>
+          <Button color={'info'}>Save and continue</Button>
+          <Button color={'danger'}>Cancel</Button>
+        </Buttons>
+      </div>
     </>
   )
 }
 
-function Example027Demo() {
+function WrappingButtonListDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              If the list is <strong>very long</strong>, it will automatically
-              wrap on <strong>multiple lines</strong>, while keeping all buttons{' '}
-              <strong>evenly spaced</strong>.
-            </p>{' '}
-          </ui.Content>{' '}
-          <div className={'bd-example'}>
-            {' '}
-            <ui.Buttons>
-              <ui.Button>One</ui.Button> <ui.Button>Two</ui.Button>{' '}
-              <ui.Button>Three</ui.Button> <ui.Button>Four</ui.Button>{' '}
-              <ui.Button>Five</ui.Button> <ui.Button>Six</ui.Button>{' '}
-              <ui.Button>Seven</ui.Button> <ui.Button>Eight</ui.Button>{' '}
-              <ui.Button>Nine</ui.Button> <ui.Button>Ten</ui.Button>{' '}
-              <ui.Button>Eleven</ui.Button> <ui.Button>Twelve</ui.Button>{' '}
-              <ui.Button>Thirteen</ui.Button> <ui.Button>Fourteen</ui.Button>{' '}
-              <ui.Button>Fifteen</ui.Button> <ui.Button>Sixteen</ui.Button>{' '}
-              <ui.Button>Seventeen</ui.Button> <ui.Button>Eighteen</ui.Button>{' '}
-              <ui.Button>Nineteen</ui.Button> <ui.Button>Twenty</ui.Button>
-            </ui.Buttons>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="buttons">\n  <button class="button">One</button>\n  <button class="button">Two</button>\n  <button class="button">Three</button>\n  <button class="button">Four</button>\n  <button class="button">Five</button>\n  <button class="button">Six</button>\n  <button class="button">Seven</button>\n  <button class="button">Eight</button>\n  <button class="button">Nine</button>\n  <button class="button">Ten</button>\n  <button class="button">Eleven</button>\n  <button class="button">Twelve</button>\n  <button class="button">Thirteen</button>\n  <button class="button">Fourteen</button>\n  <button class="button">Fifteen</button>\n  <button class="button">Sixteen</button>\n  <button class="button">Seventeen</button>\n  <button class="button">Eighteen</button>\n  <button class="button">Nineteen</button>\n  <button class="button">Twenty</button>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          If the list is <strong>very long</strong>, it will automatically wrap
+          on <strong>multiple lines</strong>, while keeping all buttons{' '}
+          <strong>evenly spaced</strong>.
+        </p>
+      </Content>
+      <div className={'bd-example'}>
+        <Buttons>
+          <Button>One</Button>
+          <Button>Two</Button>
+          <Button>Three</Button>
+          <Button>Four</Button>
+          <Button>Five</Button>
+          <Button>Six</Button>
+          <Button>Seven</Button>
+          <Button>Eight</Button>
+          <Button>Nine</Button>
+          <Button>Ten</Button>
+          <Button>Eleven</Button>
+          <Button>Twelve</Button>
+          <Button>Thirteen</Button>
+          <Button>Fourteen</Button>
+          <Button>Fifteen</Button>
+          <Button>Sixteen</Button>
+          <Button>Seventeen</Button>
+          <Button>Eighteen</Button>
+          <Button>Nineteen</Button>
+          <Button>Twenty</Button>
+        </Buttons>
+      </div>
     </>
   )
 }
 
-function Example028Demo() {
+function AttachedButtonListDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              You can <strong>attach buttons together</strong> with the{' '}
-              <code>{'has-addons'}</code> modifier.
-            </p>{' '}
-          </ui.Content>{' '}
-          <div className={'bd-example'}>
-            {' '}
-            <ui.Buttons addons>
-              <ui.Button>Yes</ui.Button> <ui.Button>Maybe</ui.Button>{' '}
-              <ui.Button>No</ui.Button>
-            </ui.Buttons>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="buttons has-addons">\n  <button class="button">Yes</button>\n  <button class="button">Maybe</button>\n  <button class="button">No</button>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          You can <strong>attach buttons together</strong> with the{' '}
+          <code>{'has-addons'}</code> modifier.
+        </p>
+      </Content>
+      <div className={'bd-example'}>
+        <Buttons addons>
+          <Button>Yes</Button>
+          <Button>Maybe</Button>
+          <Button>No</Button>
+        </Buttons>
+      </div>
     </>
   )
 }
 
-function Example029Demo() {
+function AlignedButtonAddonsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              Use the <code>{'is-centered'}</code> or the{' '}
-              <code>{'is-right'}</code> modifiers to alter the{' '}
-              <strong>alignment</strong>.
-            </p>{' '}
-          </ui.Content>{' '}
-          <div className={'bd-example'}>
-            {' '}
-            <ui.Buttons addons align={'center'}>
-              <ui.Button>Yes</ui.Button> <ui.Button>Maybe</ui.Button>{' '}
-              <ui.Button>No</ui.Button>
-            </ui.Buttons>{' '}
-            <ui.Buttons addons align={'right'}>
-              <ui.Button>Yes</ui.Button> <ui.Button>Maybe</ui.Button>{' '}
-              <ui.Button>No</ui.Button>
-            </ui.Buttons>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="buttons has-addons is-centered">\n  <button class="button">Yes</button>\n  <button class="button">Maybe</button>\n  <button class="button">No</button>\n</div>\n\n<div class="buttons has-addons is-right">\n  <button class="button">Yes</button>\n  <button class="button">Maybe</button>\n  <button class="button">No</button>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          Use the <code>{'is-centered'}</code> or the <code>{'is-right'}</code>{' '}
+          modifiers to alter the <strong>alignment</strong>.
+        </p>
+      </Content>
+      <div className={'bd-example'}>
+        <Buttons addons align={'center'}>
+          <Button>Yes</Button>
+          <Button>Maybe</Button>
+          <Button>No</Button>
+        </Buttons>
+        <Buttons addons align={'right'}>
+          <Button>Yes</Button>
+          <Button>Maybe</Button>
+          <Button>No</Button>
+        </Buttons>
+      </div>
     </>
   )
 }
 
-function Example030Demo() {
+function SelectedButtonAddonsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              You can use any <strong>modifier</strong> class on each button to
-              differentiate them. Make sure to add the{' '}
-              <code>{'is-selected'}</code> modifier as well to make sure the
-              selected button is <em>above</em> its siblings.
-            </p>{' '}
-          </ui.Content>{' '}
-          <div className={'bd-example'}>
-            {' '}
-            <ui.Buttons addons>
-              <ui.Button color={'success'} selected>
-                Yes
-              </ui.Button>{' '}
-              <ui.Button>Maybe</ui.Button> <ui.Button>No</ui.Button>
-            </ui.Buttons>{' '}
-            <ui.Buttons addons>
-              <ui.Button>Yes</ui.Button>{' '}
-              <ui.Button color={'info'} selected>
-                Maybe
-              </ui.Button>{' '}
-              <ui.Button>No</ui.Button>
-            </ui.Buttons>{' '}
-            <ui.Buttons addons>
-              <ui.Button>Yes</ui.Button> <ui.Button>Maybe</ui.Button>{' '}
-              <ui.Button color={'danger'} selected>
-                No
-              </ui.Button>
-            </ui.Buttons>{' '}
-          </div>{' '}
-        </ui.Column>{' '}
-        <ui.Column className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="buttons has-addons">\n  <button class="button is-success is-selected">Yes</button>\n  <button class="button">Maybe</button>\n  <button class="button">No</button>\n</div>\n\n<div class="buttons has-addons">\n  <button class="button">Yes</button>\n  <button class="button is-info is-selected">Maybe</button>\n  <button class="button">No</button>\n</div>\n\n<div class="buttons has-addons">\n  <button class="button">Yes</button>\n  <button class="button">Maybe</button>\n  <button class="button is-danger is-selected">No</button>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          You can use any <strong>modifier</strong> class on each button to
+          differentiate them. Make sure to add the <code>{'is-selected'}</code>{' '}
+          modifier as well to make sure the selected button is <em>above</em>{' '}
+          its siblings.
+        </p>
+      </Content>
+      <div className={'bd-example'}>
+        <Buttons addons>
+          <Button color={'success'} selected>
+            Yes
+          </Button>
+          <Button>Maybe</Button>
+          <Button>No</Button>
+        </Buttons>
+        <Buttons addons>
+          <Button>Yes</Button>
+          <Button color={'info'} selected>
+            Maybe
+          </Button>
+          <Button>No</Button>
+        </Buttons>
+        <Buttons addons>
+          <Button>Yes</Button>
+          <Button>Maybe</Button>
+          <Button color={'danger'} selected>
+            No
+          </Button>
+        </Buttons>
+      </div>
     </>
   )
 }
 
-export const Example001 = {
+export const DefaultButtonStory = {
   name: 'Default button',
   parameters: {
     official: { id: 'elements-button/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button>Button</ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction DefaultButtonDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button>Button</Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultButtonDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const NativeButtonElementsStory = {
   name: 'Native button elements',
   parameters: {
     official: { id: 'elements-button/basic/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.LinkButton>Anchor</ui.LinkButton> <ui.Button>Button</ui.Button>{' '}\n        <ui.Button type={'submit'} value={'Submit input'} as={'input'} />{' '}\n        <ui.Button type={'reset'} value={'Reset input'} as={'input'} />\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons, LinkButton } from '@seagreenio/react-bulma'\n\nfunction NativeButtonElementsDemo() {\n  return (\n    <>\n      <Buttons>\n        <LinkButton>Anchor</LinkButton>\n        <Button>Button</Button>\n        <Button type={'submit'} value={'Submit input'} as={'input'} />\n        <Button type={'reset'} value={'Reset input'} as={'input'} />\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: NativeButtonElementsDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const NeutralAndTextButtonsStory = {
   name: 'Neutral and text buttons',
   parameters: {
     official: { id: 'elements-button/colors/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button color={'white'}>White</ui.Button>{' '}\n        <ui.Button color={'light'}>Light</ui.Button>{' '}\n        <ui.Button color={'dark'}>Dark</ui.Button>{' '}\n        <ui.Button color={'black'}>Black</ui.Button>{' '}\n        <ui.Button variant={'text'}>Text</ui.Button>{' '}\n        <ui.Button variant={'ghost'}>Ghost</ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction NeutralAndTextButtonsDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button color={'white'}>White</Button>\n        <Button color={'light'}>Light</Button>\n        <Button color={'dark'}>Dark</Button>\n        <Button color={'black'}>Black</Button>\n        <Button variant={'text'}>Text</Button>\n        <Button variant={'ghost'}>Ghost</Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: NeutralAndTextButtonsDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const SemanticColorsStory = {
   name: 'Semantic colors',
   parameters: {
     official: { id: 'elements-button/colors/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button color={'primary'}>Primary</ui.Button>{' '}\n        <ui.Button color={'link'}>Link</ui.Button>\n      </ui.Buttons>{' '}\n      <ui.Buttons>\n        <ui.Button color={'info'}>Info</ui.Button>{' '}\n        <ui.Button color={'success'}>Success</ui.Button>{' '}\n        <ui.Button color={'warning'}>Warning</ui.Button>{' '}\n        <ui.Button color={'danger'}>Danger</ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction SemanticColorsDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button color={'primary'}>Primary</Button>\n        <Button color={'link'}>Link</Button>\n      </Buttons>\n      <Buttons>\n        <Button color={'info'}>Info</Button>\n        <Button color={'success'}>Success</Button>\n        <Button color={'warning'}>Warning</Button>\n        <Button color={'danger'}>Danger</Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: SemanticColorsDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const LightColorsStory = {
   name: 'Light colors',
   parameters: {
     official: { id: 'elements-button/colors/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button color={'primary'} tone={'light'}>\n          Primary\n        </ui.Button>{' '}\n        <ui.Button color={'link'} tone={'light'}>\n          Link\n        </ui.Button>\n      </ui.Buttons>{' '}\n      <ui.Buttons>\n        <ui.Button color={'info'} tone={'light'}>\n          Info\n        </ui.Button>{' '}\n        <ui.Button color={'success'} tone={'light'}>\n          Success\n        </ui.Button>{' '}\n        <ui.Button color={'warning'} tone={'light'}>\n          Warning\n        </ui.Button>{' '}\n        <ui.Button color={'danger'} tone={'light'}>\n          Danger\n        </ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction LightColorsDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button color={'primary'} tone={'light'}>\n          Primary\n        </Button>\n        <Button color={'link'} tone={'light'}>\n          Link\n        </Button>\n      </Buttons>\n      <Buttons>\n        <Button color={'info'} tone={'light'}>\n          Info\n        </Button>\n        <Button color={'success'} tone={'light'}>\n          Success\n        </Button>\n        <Button color={'warning'} tone={'light'}>\n          Warning\n        </Button>\n        <Button color={'danger'} tone={'light'}>\n          Danger\n        </Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: LightColorsDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const DarkColorsStory = {
   name: 'Dark colors',
   parameters: {
     official: { id: 'elements-button/colors/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button color={'primary'} tone={'dark'}>\n          Primary\n        </ui.Button>{' '}\n        <ui.Button color={'link'} tone={'dark'}>\n          Link\n        </ui.Button>\n      </ui.Buttons>{' '}\n      <ui.Buttons>\n        <ui.Button color={'info'} tone={'dark'}>\n          Info\n        </ui.Button>{' '}\n        <ui.Button color={'success'} tone={'dark'}>\n          Success\n        </ui.Button>{' '}\n        <ui.Button color={'warning'} tone={'dark'}>\n          Warning\n        </ui.Button>{' '}\n        <ui.Button color={'danger'} tone={'dark'}>\n          Danger\n        </ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction DarkColorsDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button color={'primary'} tone={'dark'}>\n          Primary\n        </Button>\n        <Button color={'link'} tone={'dark'}>\n          Link\n        </Button>\n      </Buttons>\n      <Buttons>\n        <Button color={'info'} tone={'dark'}>\n          Info\n        </Button>\n        <Button color={'success'} tone={'dark'}>\n          Success\n        </Button>\n        <Button color={'warning'} tone={'dark'}>\n          Warning\n        </Button>\n        <Button color={'danger'} tone={'dark'}>\n          Danger\n        </Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: DarkColorsDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const ButtonSizesStory = {
   name: 'Button sizes',
   parameters: {
     official: { id: 'elements-button/sizes/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button size={'small'}>Small</ui.Button>{' '}\n        <ui.Button>Default</ui.Button>{' '}\n        <ui.Button size={'normal'}>Normal</ui.Button>{' '}\n        <ui.Button size={'medium'}>Medium</ui.Button>{' '}\n        <ui.Button size={'large'}>Large</ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction ButtonSizesDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button size={'small'}>Small</Button>\n        <Button>Default</Button>\n        <Button size={'normal'}>Normal</Button>\n        <Button size={'medium'}>Medium</Button>\n        <Button size={'large'}>Large</Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: ButtonSizesDemo,
 } satisfies StoryObj
 
-export const Example008 = {
+export const SharedMediumSizeStory = {
   name: 'Shared medium size',
   parameters: {
     official: { id: 'elements-button/sizes/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Buttons size={'medium'}>\n        <ui.Button>All</ui.Button> <ui.Button>Medium</ui.Button>{' '}\n        <ui.Button>Size</ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction SharedMediumSizeDemo() {\n  return (\n    <>\n      <Buttons size={'medium'}>\n        <Button>All</Button>\n        <Button>Medium</Button>\n        <Button>Size</Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example008Demo,
+  render: SharedMediumSizeDemo,
 } satisfies StoryObj
 
-export const Example009 = {
+export const IndividualSizeOverrideStory = {
   name: 'Individual size override',
   parameters: {
     official: { id: 'elements-button/sizes/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Buttons size={'small'}>\n        <ui.Button>Small</ui.Button> <ui.Button>Small</ui.Button>{' '}\n        <ui.Button>Small</ui.Button>{' '}\n        <ui.Button size={'normal'}>Normal</ui.Button>{' '}\n        <ui.Button>Small</ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction IndividualSizeOverrideDemo() {\n  return (\n    <>\n      <Buttons size={'small'}>\n        <Button>Small</Button>\n        <Button>Small</Button>\n        <Button>Small</Button>\n        <Button size={'normal'}>Normal</Button>\n        <Button>Small</Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example009Demo,
+  render: IndividualSizeOverrideDemo,
 } satisfies StoryObj
 
-export const Example010 = {
+export const FullWidthButtonsStory = {
   name: 'Full-width buttons',
   parameters: {
     official: { id: 'elements-button/displays/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button size={'small'} fullWidth>\n          Small\n        </ui.Button>{' '}\n        <ui.Button fullWidth>Normal</ui.Button>{' '}\n        <ui.Button size={'medium'} fullWidth>\n          Medium\n        </ui.Button>{' '}\n        <ui.Button size={'large'} fullWidth>\n          Large\n        </ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction FullWidthButtonsDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button size={'small'} fullWidth>\n          Small\n        </Button>\n        <Button fullWidth>Normal</Button>\n        <Button size={'medium'} fullWidth>\n          Medium\n        </Button>\n        <Button size={'large'} fullWidth>\n          Large\n        </Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example010Demo,
+  render: FullWidthButtonsDemo,
 } satisfies StoryObj
 
-export const Example011 = {
+export const OutlinedButtonsStory = {
   name: 'Outlined buttons',
   parameters: {
     official: { id: 'elements-button/outlined/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button color={'link'} outlined>\n          Outlined\n        </ui.Button>{' '}\n        <ui.Button color={'primary'} outlined>\n          Outlined\n        </ui.Button>{' '}\n        <ui.Button color={'info'} outlined>\n          Outlined\n        </ui.Button>{' '}\n        <ui.Button color={'success'} outlined>\n          Outlined\n        </ui.Button>{' '}\n        <ui.Button color={'danger'} outlined>\n          Outlined\n        </ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction OutlinedButtonsDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button color={'link'} outlined>\n          Outlined\n        </Button>\n        <Button color={'primary'} outlined>\n          Outlined\n        </Button>\n        <Button color={'info'} outlined>\n          Outlined\n        </Button>\n        <Button color={'success'} outlined>\n          Outlined\n        </Button>\n        <Button color={'danger'} outlined>\n          Outlined\n        </Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example011Demo,
+  render: OutlinedButtonsDemo,
 } satisfies StoryObj
 
-export const Example012 = {
+export const InvertedButtonsStory = {
   name: 'Inverted buttons',
   parameters: {
     official: {
@@ -3549,281 +2029,281 @@ export const Example012 = {
     },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <div className={'bd-callout is-primary'}>\n            {' '}\n            <ui.Buttons>\n              <ui.Button color={'link'} inverted>\n                Inverted\n              </ui.Button>{' '}\n              <ui.Button color={'primary'} inverted>\n                Inverted\n              </ui.Button>{' '}\n              <ui.Button color={'info'} inverted>\n                Inverted\n              </ui.Button>{' '}\n              <ui.Button color={'success'} inverted>\n                Inverted\n              </ui.Button>{' '}\n              <ui.Button color={'danger'} inverted>\n                Inverted\n              </ui.Button>\n            </ui.Buttons>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<button class=\"button is-link is-inverted\">Inverted</button>\\n<button class=\"button is-primary is-inverted\">Inverted</button>\\n<button class=\"button is-info is-inverted\">Inverted</button>\\n<button class=\"button is-success is-inverted\">Inverted</button>\\n<button class=\"button is-danger is-inverted\">Inverted</button>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction InvertedButtonsDemo() {\n  return (\n    <>\n      <div className={'bd-callout is-primary'}>\n        <Buttons>\n          <Button color={'link'} inverted>\n            Inverted\n          </Button>\n          <Button color={'primary'} inverted>\n            Inverted\n          </Button>\n          <Button color={'info'} inverted>\n            Inverted\n          </Button>\n          <Button color={'success'} inverted>\n            Inverted\n          </Button>\n          <Button color={'danger'} inverted>\n            Inverted\n          </Button>\n        </Buttons>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example012Demo,
+  render: InvertedButtonsDemo,
 } satisfies StoryObj
 
-export const Example013 = {
+export const RoundedButtonsStory = {
   name: 'Rounded buttons',
   parameters: {
     official: { id: 'elements-button/rounded-buttons/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Buttons>\n            <ui.Button rounded>Rounded</ui.Button>{' '}\n            <ui.Button color={'link'} rounded>\n              Rounded\n            </ui.Button>{' '}\n            <ui.Button color={'primary'} rounded>\n              Rounded\n            </ui.Button>{' '}\n            <ui.Button color={'info'} rounded>\n              Rounded\n            </ui.Button>{' '}\n            <ui.Button color={'success'} rounded>\n              Rounded\n            </ui.Button>{' '}\n            <ui.Button color={'danger'} rounded>\n              Rounded\n            </ui.Button>\n          </ui.Buttons>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<button class=\"button is-rounded\">Rounded</button>\\n<button class=\"button is-link is-rounded\">Rounded</button>\\n<button class=\"button is-primary is-rounded\">Rounded</button>\\n<button class=\"button is-info is-rounded\">Rounded</button>\\n<button class=\"button is-success is-rounded\">Rounded</button>\\n<button class=\"button is-danger is-rounded\">Rounded</button>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction RoundedButtonsDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button rounded>Rounded</Button>\n        <Button color={'link'} rounded>\n          Rounded\n        </Button>\n        <Button color={'primary'} rounded>\n          Rounded\n        </Button>\n        <Button color={'info'} rounded>\n          Rounded\n        </Button>\n        <Button color={'success'} rounded>\n          Rounded\n        </Button>\n        <Button color={'danger'} rounded>\n          Rounded\n        </Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example013Demo,
+  render: RoundedButtonsDemo,
 } satisfies StoryObj
 
-export const Example014 = {
+export const NormalStateStory = {
   name: 'Normal state',
   parameters: {
     official: { id: 'elements-button/normal/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button>Normal</ui.Button>{' '}\n        <ui.Button color={'link'}>Normal</ui.Button>{' '}\n        <ui.Button color={'primary'}>Normal</ui.Button>{' '}\n        <ui.Button color={'info'}>Normal</ui.Button>{' '}\n        <ui.Button color={'success'}>Normal</ui.Button>{' '}\n        <ui.Button color={'warning'}>Normal</ui.Button>{' '}\n        <ui.Button color={'danger'}>Normal</ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction NormalStateDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button>Normal</Button>\n        <Button color={'link'}>Normal</Button>\n        <Button color={'primary'}>Normal</Button>\n        <Button color={'info'}>Normal</Button>\n        <Button color={'success'}>Normal</Button>\n        <Button color={'warning'}>Normal</Button>\n        <Button color={'danger'}>Normal</Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example014Demo,
+  render: NormalStateDemo,
 } satisfies StoryObj
 
-export const Example015 = {
+export const HoverStateStory = {
   name: 'Hover state',
   parameters: {
     official: { id: 'elements-button/hover/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button state={'hovered'}>Hover</ui.Button>{' '}\n        <ui.Button color={'link'} state={'hovered'}>\n          Hover\n        </ui.Button>{' '}\n        <ui.Button color={'primary'} state={'hovered'}>\n          Hover\n        </ui.Button>{' '}\n        <ui.Button color={'info'} state={'hovered'}>\n          Hover\n        </ui.Button>{' '}\n        <ui.Button color={'success'} state={'hovered'}>\n          Hover\n        </ui.Button>{' '}\n        <ui.Button color={'warning'} state={'hovered'}>\n          Hover\n        </ui.Button>{' '}\n        <ui.Button color={'danger'} state={'hovered'}>\n          Hover\n        </ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction HoverStateDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button state={'hovered'}>Hover</Button>\n        <Button color={'link'} state={'hovered'}>\n          Hover\n        </Button>\n        <Button color={'primary'} state={'hovered'}>\n          Hover\n        </Button>\n        <Button color={'info'} state={'hovered'}>\n          Hover\n        </Button>\n        <Button color={'success'} state={'hovered'}>\n          Hover\n        </Button>\n        <Button color={'warning'} state={'hovered'}>\n          Hover\n        </Button>\n        <Button color={'danger'} state={'hovered'}>\n          Hover\n        </Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example015Demo,
+  render: HoverStateDemo,
 } satisfies StoryObj
 
-export const Example016 = {
+export const FocusStateStory = {
   name: 'Focus state',
   parameters: {
     official: { id: 'elements-button/focus/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button state={'focused'}>Focus</ui.Button>{' '}\n        <ui.Button color={'link'} state={'focused'}>\n          Focus\n        </ui.Button>{' '}\n        <ui.Button color={'primary'} state={'focused'}>\n          Focus\n        </ui.Button>{' '}\n        <ui.Button color={'info'} state={'focused'}>\n          Focus\n        </ui.Button>{' '}\n        <ui.Button color={'success'} state={'focused'}>\n          Focus\n        </ui.Button>{' '}\n        <ui.Button color={'warning'} state={'focused'}>\n          Focus\n        </ui.Button>{' '}\n        <ui.Button color={'danger'} state={'focused'}>\n          Focus\n        </ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction FocusStateDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button state={'focused'}>Focus</Button>\n        <Button color={'link'} state={'focused'}>\n          Focus\n        </Button>\n        <Button color={'primary'} state={'focused'}>\n          Focus\n        </Button>\n        <Button color={'info'} state={'focused'}>\n          Focus\n        </Button>\n        <Button color={'success'} state={'focused'}>\n          Focus\n        </Button>\n        <Button color={'warning'} state={'focused'}>\n          Focus\n        </Button>\n        <Button color={'danger'} state={'focused'}>\n          Focus\n        </Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example016Demo,
+  render: FocusStateDemo,
 } satisfies StoryObj
 
-export const Example017 = {
+export const ActiveStateStory = {
   name: 'Active state',
   parameters: {
     official: { id: 'elements-button/active/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  return (\n    <>\n      <ui.Buttons>\n        <ui.Button state={'active'}>Active</ui.Button>{' '}\n        <ui.Button color={'link'} state={'active'}>\n          Active\n        </ui.Button>{' '}\n        <ui.Button color={'primary'} state={'active'}>\n          Active\n        </ui.Button>{' '}\n        <ui.Button color={'info'} state={'active'}>\n          Active\n        </ui.Button>{' '}\n        <ui.Button color={'success'} state={'active'}>\n          Active\n        </ui.Button>{' '}\n        <ui.Button color={'warning'} state={'active'}>\n          Active\n        </ui.Button>{' '}\n        <ui.Button color={'danger'} state={'active'}>\n          Active\n        </ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons } from '@seagreenio/react-bulma'\n\nfunction ActiveStateDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button state={'active'}>Active</Button>\n        <Button color={'link'} state={'active'}>\n          Active\n        </Button>\n        <Button color={'primary'} state={'active'}>\n          Active\n        </Button>\n        <Button color={'info'} state={'active'}>\n          Active\n        </Button>\n        <Button color={'success'} state={'active'}>\n          Active\n        </Button>\n        <Button color={'warning'} state={'active'}>\n          Active\n        </Button>\n        <Button color={'danger'} state={'active'}>\n          Active\n        </Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example017Demo,
+  render: ActiveStateDemo,
 } satisfies StoryObj
 
-export const Example018 = {
+export const LoadingStateStory = {
   name: 'Loading state',
   parameters: {
     official: { id: 'elements-button/loading/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Buttons>\n            <ui.Button loading>Loading</ui.Button>{' '}\n            <ui.Button color={'link'} loading>\n              Loading\n            </ui.Button>{' '}\n            <ui.Button color={'primary'} loading>\n              Loading\n            </ui.Button>{' '}\n            <ui.Button color={'info'} loading>\n              Loading\n            </ui.Button>{' '}\n            <ui.Button color={'success'} loading>\n              Loading\n            </ui.Button>{' '}\n            <ui.Button color={'warning'} loading>\n              Loading\n            </ui.Button>{' '}\n            <ui.Button color={'danger'} loading>\n              Loading\n            </ui.Button>\n          </ui.Buttons>{' '}\n          <ui.Message color={'info'} as={'div'}>\n            {' '}\n            <ui.MessageBody>\n              {' '}\n              <p>\n                Since the loading spinner is implemented using the{' '}\n                <code>{'::after'}</code> pseudo-element, it is not supported by\n                the <code>{'<input type=\"submit\">'}</code> element. Consider\n                using <code>{'<button type=\"submit\">'}</code> instead.\n              </p>{' '}\n            </ui.MessageBody>{' '}\n          </ui.Message>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<button class=\"button is-loading\">Loading</button>\\n<button class=\"button is-link is-loading\">Loading</button>\\n<button class=\"button is-primary is-loading\">Loading</button>\\n<button class=\"button is-info is-loading\">Loading</button>\\n<button class=\"button is-success is-loading\">Loading</button>\\n<button class=\"button is-warning is-loading\">Loading</button>\\n<button class=\"button is-danger is-loading\">Loading</button>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons, Message, MessageBody } from '@seagreenio/react-bulma'\n\nfunction LoadingStateDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button loading>Loading</Button>\n        <Button color={'link'} loading>\n          Loading\n        </Button>\n        <Button color={'primary'} loading>\n          Loading\n        </Button>\n        <Button color={'info'} loading>\n          Loading\n        </Button>\n        <Button color={'success'} loading>\n          Loading\n        </Button>\n        <Button color={'warning'} loading>\n          Loading\n        </Button>\n        <Button color={'danger'} loading>\n          Loading\n        </Button>\n      </Buttons>\n      <Message color={'info'} as={'div'}>\n        <MessageBody>\n          <p>\n            Since the loading spinner is implemented using the{' '}\n            <code>{'::after'}</code> pseudo-element, it is not supported by the{' '}\n            <code>{'<input type=\"submit\">'}</code> element. Consider using{' '}\n            <code>{'<button type=\"submit\">'}</code> instead.\n          </p>\n        </MessageBody>\n      </Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example018Demo,
+  render: LoadingStateDemo,
 } satisfies StoryObj
 
-export const Example019 = {
+export const StaticButtonStory = {
   name: 'Static button',
   parameters: {
     official: { id: 'elements-button/static-button/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example019Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can create a <strong>non-interactive button</strong> by using\n              the <code>{'is-static'}</code> modifier. This is useful to align a\n              text label with an input, for example when using{' '}\n              <a\n                href={'https://bulma.io/documentation/form/general#form-addons'}\n              >\n                form addons\n              </a>\n              .\n            </p>{' '}\n          </ui.Content>{' '}\n          <ui.Button className={'rb-is-static'} as={'span'}>\n            Static\n          </ui.Button>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {'\\n<span class=\"button is-static\">Static</span>\\n'}\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Content } from '@seagreenio/react-bulma'\n\nfunction StaticButtonDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          You can create a <strong>non-interactive button</strong> by using the{' '}\n          <code>{'is-static'}</code> modifier. This is useful to align a text\n          label with an input, for example when using{' '}\n          <a href={'https://bulma.io/documentation/form/general#form-addons'}>\n            form addons\n          </a>\n          .\n        </p>\n      </Content>\n      <Button className={'rb-is-static'} as={'span'}>\n        Static\n      </Button>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example019Demo,
+  render: StaticButtonDemo,
 } satisfies StoryObj
 
-export const Example020 = {
+export const DisabledButtonsStory = {
   name: 'Disabled buttons',
   parameters: {
     official: { id: 'elements-button/disabled/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example020Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Buttons>\n            <ui.Button title={'Disabled button'} disabled>\n              Disabled\n            </ui.Button>{' '}\n            <ui.Button title={'Disabled button'} disabled color={'link'}>\n              {' '}\n              Disabled{' '}\n            </ui.Button>{' '}\n            <ui.Button title={'Disabled button'} disabled color={'primary'}>\n              {' '}\n              Disabled{' '}\n            </ui.Button>{' '}\n            <ui.Button title={'Disabled button'} disabled color={'info'}>\n              {' '}\n              Disabled{' '}\n            </ui.Button>{' '}\n            <ui.Button title={'Disabled button'} disabled color={'success'}>\n              {' '}\n              Disabled{' '}\n            </ui.Button>{' '}\n            <ui.Button title={'Disabled button'} disabled color={'warning'}>\n              {' '}\n              Disabled{' '}\n            </ui.Button>{' '}\n            <ui.Button title={'Disabled button'} disabled color={'danger'}>\n              {' '}\n              Disabled{' '}\n            </ui.Button>\n          </ui.Buttons>{' '}\n          <ui.Message color={'danger'} as={'div'}>\n            {' '}\n            <ui.MessageBody>\n              {' '}\n              <p>\n                The <code>{'is-disabled'}</code> CSS class has been deprecated\n                in favor of the <code>{'disabled'}</code> HTML attribute.{' '}\n                <a href={'https://github.com/jgthms/bulma/issues/276'}>\n                  Learn more\n                </a>\n              </p>{' '}\n            </ui.MessageBody>{' '}\n          </ui.Message>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<button class=\"button\" title=\"Disabled button\" disabled>Disabled</button>\\n<button class=\"button is-link\" title=\"Disabled button\" disabled>\\n  Disabled\\n</button>\\n<button class=\"button is-primary\" title=\"Disabled button\" disabled>\\n  Disabled\\n</button>\\n<button class=\"button is-info\" title=\"Disabled button\" disabled>\\n  Disabled\\n</button>\\n<button class=\"button is-success\" title=\"Disabled button\" disabled>\\n  Disabled\\n</button>\\n<button class=\"button is-warning\" title=\"Disabled button\" disabled>\\n  Disabled\\n</button>\\n<button class=\"button is-danger\" title=\"Disabled button\" disabled>\\n  Disabled\\n</button>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons, Message, MessageBody } from '@seagreenio/react-bulma'\n\nfunction DisabledButtonsDemo() {\n  return (\n    <>\n      <Buttons>\n        <Button title={'Disabled button'} disabled>\n          Disabled\n        </Button>\n        <Button title={'Disabled button'} disabled color={'link'}>\n          Disabled\n        </Button>\n        <Button title={'Disabled button'} disabled color={'primary'}>\n          Disabled\n        </Button>\n        <Button title={'Disabled button'} disabled color={'info'}>\n          Disabled\n        </Button>\n        <Button title={'Disabled button'} disabled color={'success'}>\n          Disabled\n        </Button>\n        <Button title={'Disabled button'} disabled color={'warning'}>\n          Disabled\n        </Button>\n        <Button title={'Disabled button'} disabled color={'danger'}>\n          Disabled\n        </Button>\n      </Buttons>\n      <Message color={'danger'} as={'div'}>\n        <MessageBody>\n          <p>\n            The <code>{'is-disabled'}</code> CSS class has been deprecated in\n            favor of the <code>{'disabled'}</code> HTML attribute.{' '}\n            <a href={'https://github.com/jgthms/bulma/issues/276'}>\n              Learn more\n            </a>\n          </p>\n        </MessageBody>\n      </Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example020Demo,
+  render: DisabledButtonsDemo,
 } satisfies StoryObj
 
-export const Example021 = {
+export const ButtonsWithIconsStory = {
   name: 'Buttons with icons',
   parameters: {
     official: { id: 'elements-button/with-font-awesome-icons/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example021Demo() {\n  return (\n    <>\n      <ui.Buttons as={'p'}>\n        <ui.Button>\n          {' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i className={'fas fa-bold'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Button>{' '}\n        <ui.Button>\n          {' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i className={'fas fa-italic'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Button>{' '}\n        <ui.Button>\n          {' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i className={'fas fa-underline'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Button>\n      </ui.Buttons>{' '}\n      <ui.Buttons as={'p'}>\n        <ui.Button>\n          {' '}\n          <ui.Icon>\n            {' '}\n            <i className={'fab fa-github'} />{' '}\n          </ui.Icon>{' '}\n          <span>GitHub</span>{' '}\n        </ui.Button>{' '}\n        <ui.Button color={'primary'}>\n          {' '}\n          <ui.Icon>\n            {' '}\n            <i className={'fab fa-twitter'} />{' '}\n          </ui.Icon>{' '}\n          <span>@jgthms</span>{' '}\n        </ui.Button>{' '}\n        <ui.Button color={'success'}>\n          {' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i className={'fas fa-check'} />{' '}\n          </ui.Icon>{' '}\n          <span>Save</span>{' '}\n        </ui.Button>{' '}\n        <ui.Button color={'danger'} outlined>\n          {' '}\n          <span>Delete</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i className={'fas fa-times'} />{' '}\n          </ui.Icon>{' '}\n        </ui.Button>\n      </ui.Buttons>{' '}\n      <ui.Buttons as={'p'}>\n        <ui.Button size={'small'}>\n          {' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i className={'fab fa-github'} />{' '}\n          </ui.Icon>{' '}\n          <span>GitHub</span>{' '}\n        </ui.Button>{' '}\n        <ui.Button>\n          {' '}\n          <ui.Icon>\n            {' '}\n            <i className={'fab fa-github'} />{' '}\n          </ui.Icon>{' '}\n          <span>GitHub</span>{' '}\n        </ui.Button>{' '}\n        <ui.Button size={'medium'}>\n          {' '}\n          <ui.Icon>\n            {' '}\n            <i className={'fab fa-github'} />{' '}\n          </ui.Icon>{' '}\n          <span>GitHub</span>{' '}\n        </ui.Button>{' '}\n        <ui.Button size={'large'}>\n          {' '}\n          <ui.Icon size={'medium'}>\n            {' '}\n            <i className={'fab fa-github'} />{' '}\n          </ui.Icon>{' '}\n          <span>GitHub</span>{' '}\n        </ui.Button>\n      </ui.Buttons>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons, Icon } from '@seagreenio/react-bulma'\n\nfunction ButtonsWithIconsDemo() {\n  return (\n    <>\n      <Buttons as={'p'}>\n        <Button>\n          <Icon size={'small'}>\n            <i className={'fas fa-bold'} />\n          </Icon>\n        </Button>\n        <Button>\n          <Icon size={'small'}>\n            <i className={'fas fa-italic'} />\n          </Icon>\n        </Button>\n        <Button>\n          <Icon size={'small'}>\n            <i className={'fas fa-underline'} />\n          </Icon>\n        </Button>\n      </Buttons>\n      <Buttons as={'p'}>\n        <Button>\n          <Icon>\n            <i className={'fab fa-github'} />\n          </Icon>\n          <span>GitHub</span>\n        </Button>\n        <Button color={'primary'}>\n          <Icon>\n            <i className={'fab fa-twitter'} />\n          </Icon>\n          <span>@jgthms</span>\n        </Button>\n        <Button color={'success'}>\n          <Icon size={'small'}>\n            <i className={'fas fa-check'} />\n          </Icon>\n          <span>Save</span>\n        </Button>\n        <Button color={'danger'} outlined>\n          <span>Delete</span>\n          <Icon size={'small'}>\n            <i className={'fas fa-times'} />\n          </Icon>\n        </Button>\n      </Buttons>\n      <Buttons as={'p'}>\n        <Button size={'small'}>\n          <Icon size={'small'}>\n            <i className={'fab fa-github'} />\n          </Icon>\n          <span>GitHub</span>\n        </Button>\n        <Button>\n          <Icon>\n            <i className={'fab fa-github'} />\n          </Icon>\n          <span>GitHub</span>\n        </Button>\n        <Button size={'medium'}>\n          <Icon>\n            <i className={'fab fa-github'} />\n          </Icon>\n          <span>GitHub</span>\n        </Button>\n        <Button size={'large'}>\n          <Icon size={'medium'}>\n            <i className={'fab fa-github'} />\n          </Icon>\n          <span>GitHub</span>\n        </Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example021Demo,
+  render: ButtonsWithIconsDemo,
 } satisfies StoryObj
 
-export const Example022 = {
+export const IconOnlyButtonsStory = {
   name: 'Icon-only buttons',
   parameters: {
     official: { id: 'elements-button/with-font-awesome-icons/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example022Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              If the button only contains an icon, Bulma will make sure the\n              button remains <strong>square</strong>, no matter the size of the\n              button <em>or</em> of the icon.\n            </p>{' '}\n          </ui.Content>{' '}\n          <ui.Buttons as={'p'}>\n            <ui.Button size={'small'}>\n              {' '}\n              <ui.Icon size={'small'}>\n                {' '}\n                <i className={'fas fa-heading'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Button>\n          </ui.Buttons>{' '}\n          <ui.Buttons as={'p'}>\n            <ui.Button>\n              {' '}\n              <ui.Icon size={'small'}>\n                {' '}\n                <i className={'fas fa-heading'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Button>{' '}\n            <ui.Button>\n              {' '}\n              <ui.Icon>\n                {' '}\n                <i className={'fas fa-heading fa-lg'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Button>\n          </ui.Buttons>{' '}\n          <ui.Buttons as={'p'}>\n            <ui.Button size={'medium'}>\n              {' '}\n              <ui.Icon size={'small'}>\n                {' '}\n                <i className={'fas fa-heading'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Button>{' '}\n            <ui.Button size={'medium'}>\n              {' '}\n              <ui.Icon>\n                {' '}\n                <i className={'fas fa-heading fa-lg'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Button>{' '}\n            <ui.Button size={'medium'}>\n              {' '}\n              <ui.Icon size={'medium'}>\n                {' '}\n                <i className={'fas fa-heading fa-2x'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Button>\n          </ui.Buttons>{' '}\n          <ui.Buttons as={'p'}>\n            <ui.Button size={'large'}>\n              {' '}\n              <ui.Icon size={'small'}>\n                {' '}\n                <i className={'fas fa-heading'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Button>{' '}\n            <ui.Button size={'large'}>\n              {' '}\n              <ui.Icon>\n                {' '}\n                <i className={'fas fa-heading fa-lg'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Button>{' '}\n            <ui.Button size={'large'}>\n              {' '}\n              <ui.Icon size={'medium'}>\n                {' '}\n                <i className={'fas fa-heading fa-2x'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Button>\n          </ui.Buttons>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<p class=\"buttons\">\\n  <button class=\"button is-small\">\\n    <span class=\"icon is-small\">\\n      <i class=\"fas fa-heading\"></i>\\n    </span>\\n  </button>\\n</p>\\n<p class=\"buttons\">\\n  <button class=\"button\">\\n    <span class=\"icon is-small\">\\n      <i class=\"fas fa-heading\"></i>\\n    </span>\\n  </button>\\n  <button class=\"button\">\\n    <span class=\"icon\">\\n      <i class=\"fas fa-heading fa-lg\"></i>\\n    </span>\\n  </button>\\n</p>\\n<p class=\"buttons\">\\n  <button class=\"button is-medium\">\\n    <span class=\"icon is-small\">\\n      <i class=\"fas fa-heading\"></i>\\n    </span>\\n  </button>\\n  <button class=\"button is-medium\">\\n    <span class=\"icon\">\\n      <i class=\"fas fa-heading fa-lg\"></i>\\n    </span>\\n  </button>\\n  <button class=\"button is-medium\">\\n    <span class=\"icon is-medium\">\\n      <i class=\"fas fa-heading fa-2x\"></i>\\n    </span>\\n  </button>\\n</p>\\n<p class=\"buttons\">\\n  <button class=\"button is-large\">\\n    <span class=\"icon is-small\">\\n      <i class=\"fas fa-heading\"></i>\\n    </span>\\n  </button>\\n  <button class=\"button is-large\">\\n    <span class=\"icon\">\\n      <i class=\"fas fa-heading fa-lg\"></i>\\n    </span>\\n  </button>\\n  <button class=\"button is-large\">\\n    <span class=\"icon is-medium\">\\n      <i class=\"fas fa-heading fa-2x\"></i>\\n    </span>\\n  </button>\\n</p>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons, Content, Icon } from '@seagreenio/react-bulma'\n\nfunction IconOnlyButtonsDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          If the button only contains an icon, Bulma will make sure the button\n          remains <strong>square</strong>, no matter the size of the button{' '}\n          <em>or</em> of the icon.\n        </p>\n      </Content>\n      <Buttons as={'p'}>\n        <Button size={'small'}>\n          <Icon size={'small'}>\n            <i className={'fas fa-heading'} />\n          </Icon>\n        </Button>\n      </Buttons>\n      <Buttons as={'p'}>\n        <Button>\n          <Icon size={'small'}>\n            <i className={'fas fa-heading'} />\n          </Icon>\n        </Button>\n        <Button>\n          <Icon>\n            <i className={'fas fa-heading fa-lg'} />\n          </Icon>\n        </Button>\n      </Buttons>\n      <Buttons as={'p'}>\n        <Button size={'medium'}>\n          <Icon size={'small'}>\n            <i className={'fas fa-heading'} />\n          </Icon>\n        </Button>\n        <Button size={'medium'}>\n          <Icon>\n            <i className={'fas fa-heading fa-lg'} />\n          </Icon>\n        </Button>\n        <Button size={'medium'}>\n          <Icon size={'medium'}>\n            <i className={'fas fa-heading fa-2x'} />\n          </Icon>\n        </Button>\n      </Buttons>\n      <Buttons as={'p'}>\n        <Button size={'large'}>\n          <Icon size={'small'}>\n            <i className={'fas fa-heading'} />\n          </Icon>\n        </Button>\n        <Button size={'large'}>\n          <Icon>\n            <i className={'fas fa-heading fa-lg'} />\n          </Icon>\n        </Button>\n        <Button size={'large'}>\n          <Icon size={'medium'}>\n            <i className={'fas fa-heading fa-2x'} />\n          </Icon>\n        </Button>\n      </Buttons>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example022Demo,
+  render: IconOnlyButtonsDemo,
 } satisfies StoryObj
 
-export const Example023 = {
+export const GroupedButtonsStory = {
   name: 'Grouped buttons',
   parameters: {
     official: { id: 'elements-button/button-group/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example023Demo() {\n  return (\n    <>\n      <ui.Field layout={'grouped'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button color={'link'}>Save changes</ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button>Cancel</ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button color={'danger'}>Delete post</ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
+        code: "import { Button, Control, Field } from '@seagreenio/react-bulma'\n\nfunction GroupedButtonsDemo() {\n  return (\n    <>\n      <Field layout={'grouped'}>\n        <Control as={'p'}>\n          <Button color={'link'}>Save changes</Button>\n        </Control>\n        <Control as={'p'}>\n          <Button>Cancel</Button>\n        </Control>\n        <Control as={'p'}>\n          <Button color={'danger'}>Delete post</Button>\n        </Control>\n      </Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example023Demo,
+  render: GroupedButtonsDemo,
 } satisfies StoryObj
 
-export const Example024 = {
+export const AttachedButtonsStory = {
   name: 'Attached buttons',
   parameters: {
     official: { id: 'elements-button/button-addons/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example024Demo() {\n  return (\n    <>\n      <ui.Field layout={'addons'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button>\n            {' '}\n            <ui.Icon size={'small'}>\n              {' '}\n              <i className={'fas fa-align-left'} />{' '}\n            </ui.Icon>{' '}\n            <span>Left</span>{' '}\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button>\n            {' '}\n            <ui.Icon size={'small'}>\n              {' '}\n              <i className={'fas fa-align-center'} />{' '}\n            </ui.Icon>{' '}\n            <span>Center</span>{' '}\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button>\n            {' '}\n            <ui.Icon size={'small'}>\n              {' '}\n              <i className={'fas fa-align-right'} />{' '}\n            </ui.Icon>{' '}\n            <span>Right</span>{' '}\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
+        code: "import { Button, Control, Field, Icon } from '@seagreenio/react-bulma'\n\nfunction AttachedButtonsDemo() {\n  return (\n    <>\n      <Field layout={'addons'}>\n        <Control as={'p'}>\n          <Button>\n            <Icon size={'small'}>\n              <i className={'fas fa-align-left'} />\n            </Icon>\n            <span>Left</span>\n          </Button>\n        </Control>\n        <Control as={'p'}>\n          <Button>\n            <Icon size={'small'}>\n              <i className={'fas fa-align-center'} />\n            </Icon>\n            <span>Center</span>\n          </Button>\n        </Control>\n        <Control as={'p'}>\n          <Button>\n            <Icon size={'small'}>\n              <i className={'fas fa-align-right'} />\n            </Icon>\n            <span>Right</span>\n          </Button>\n        </Control>\n      </Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example024Demo,
+  render: AttachedButtonsDemo,
 } satisfies StoryObj
 
-export const Example025 = {
+export const GroupedButtonAddonsStory = {
   name: 'Grouped button addons',
   parameters: {
     official: { id: 'elements-button/button-group-with-addons/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example025Demo() {\n  return (\n    <>\n      <ui.Field layout={'addons'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button>\n            {' '}\n            <ui.Icon size={'small'}>\n              {' '}\n              <i className={'fas fa-bold'} />{' '}\n            </ui.Icon>{' '}\n            <span>Bold</span>{' '}\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button>\n            {' '}\n            <ui.Icon size={'small'}>\n              {' '}\n              <i className={'fas fa-italic'} />{' '}\n            </ui.Icon>{' '}\n            <span>Italic</span>{' '}\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button>\n            {' '}\n            <ui.Icon size={'small'}>\n              {' '}\n              <i className={'fas fa-underline'} />{' '}\n            </ui.Icon>{' '}\n            <span>Underline</span>{' '}\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>{' '}\n      <ui.Field layout={'addons'}>\n        {' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button>\n            {' '}\n            <ui.Icon size={'small'}>\n              {' '}\n              <i className={'fas fa-align-left'} />{' '}\n            </ui.Icon>{' '}\n            <span>Left</span>{' '}\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button>\n            {' '}\n            <ui.Icon size={'small'}>\n              {' '}\n              <i className={'fas fa-align-center'} />{' '}\n            </ui.Icon>{' '}\n            <span>Center</span>{' '}\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n        <ui.Control as={'p'}>\n          {' '}\n          <ui.Button>\n            {' '}\n            <ui.Icon size={'small'}>\n              {' '}\n              <i className={'fas fa-align-right'} />{' '}\n            </ui.Icon>{' '}\n            <span>Right</span>{' '}\n          </ui.Button>{' '}\n        </ui.Control>{' '}\n      </ui.Field>\n    </>\n  )\n}\n",
+        code: "import { Button, Control, Field, Icon } from '@seagreenio/react-bulma'\n\nfunction GroupedButtonAddonsDemo() {\n  return (\n    <>\n      <Field layout={'addons'}>\n        <Control as={'p'}>\n          <Button>\n            <Icon size={'small'}>\n              <i className={'fas fa-bold'} />\n            </Icon>\n            <span>Bold</span>\n          </Button>\n        </Control>\n        <Control as={'p'}>\n          <Button>\n            <Icon size={'small'}>\n              <i className={'fas fa-italic'} />\n            </Icon>\n            <span>Italic</span>\n          </Button>\n        </Control>\n        <Control as={'p'}>\n          <Button>\n            <Icon size={'small'}>\n              <i className={'fas fa-underline'} />\n            </Icon>\n            <span>Underline</span>\n          </Button>\n        </Control>\n      </Field>\n      <Field layout={'addons'}>\n        <Control as={'p'}>\n          <Button>\n            <Icon size={'small'}>\n              <i className={'fas fa-align-left'} />\n            </Icon>\n            <span>Left</span>\n          </Button>\n        </Control>\n        <Control as={'p'}>\n          <Button>\n            <Icon size={'small'}>\n              <i className={'fas fa-align-center'} />\n            </Icon>\n            <span>Center</span>\n          </Button>\n        </Control>\n        <Control as={'p'}>\n          <Button>\n            <Icon size={'small'}>\n              <i className={'fas fa-align-right'} />\n            </Icon>\n            <span>Right</span>\n          </Button>\n        </Control>\n      </Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example025Demo,
+  render: GroupedButtonAddonsDemo,
 } satisfies StoryObj
 
-export const Example026 = {
+export const ButtonListStory = {
   name: 'Button list',
   parameters: {
     official: { id: 'elements-button/list-of-buttons/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example026Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can create a <strong>list of buttons</strong> by using the{' '}\n              <code>{'buttons'}</code> container.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Buttons>\n              <ui.Button color={'success'}>Save changes</ui.Button>{' '}\n              <ui.Button color={'info'}>Save and continue</ui.Button>{' '}\n              <ui.Button color={'danger'}>Cancel</ui.Button>\n            </ui.Buttons>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"buttons\">\\n  <button class=\"button is-success\">Save changes</button>\\n  <button class=\"button is-info\">Save and continue</button>\\n  <button class=\"button is-danger\">Cancel</button>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons, Content } from '@seagreenio/react-bulma'\n\nfunction ButtonListDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          You can create a <strong>list of buttons</strong> by using the{' '}\n          <code>{'buttons'}</code> container.\n        </p>\n      </Content>\n      <div className={'bd-example'}>\n        <Buttons>\n          <Button color={'success'}>Save changes</Button>\n          <Button color={'info'}>Save and continue</Button>\n          <Button color={'danger'}>Cancel</Button>\n        </Buttons>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example026Demo,
+  render: ButtonListDemo,
 } satisfies StoryObj
 
-export const Example027 = {
+export const WrappingButtonListStory = {
   name: 'Wrapping button list',
   parameters: {
     official: { id: 'elements-button/list-of-buttons/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example027Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              If the list is <strong>very long</strong>, it will automatically\n              wrap on <strong>multiple lines</strong>, while keeping all buttons{' '}\n              <strong>evenly spaced</strong>.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Buttons>\n              <ui.Button>One</ui.Button> <ui.Button>Two</ui.Button>{' '}\n              <ui.Button>Three</ui.Button> <ui.Button>Four</ui.Button>{' '}\n              <ui.Button>Five</ui.Button> <ui.Button>Six</ui.Button>{' '}\n              <ui.Button>Seven</ui.Button> <ui.Button>Eight</ui.Button>{' '}\n              <ui.Button>Nine</ui.Button> <ui.Button>Ten</ui.Button>{' '}\n              <ui.Button>Eleven</ui.Button> <ui.Button>Twelve</ui.Button>{' '}\n              <ui.Button>Thirteen</ui.Button> <ui.Button>Fourteen</ui.Button>{' '}\n              <ui.Button>Fifteen</ui.Button> <ui.Button>Sixteen</ui.Button>{' '}\n              <ui.Button>Seventeen</ui.Button> <ui.Button>Eighteen</ui.Button>{' '}\n              <ui.Button>Nineteen</ui.Button> <ui.Button>Twenty</ui.Button>\n            </ui.Buttons>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"buttons\">\\n  <button class=\"button\">One</button>\\n  <button class=\"button\">Two</button>\\n  <button class=\"button\">Three</button>\\n  <button class=\"button\">Four</button>\\n  <button class=\"button\">Five</button>\\n  <button class=\"button\">Six</button>\\n  <button class=\"button\">Seven</button>\\n  <button class=\"button\">Eight</button>\\n  <button class=\"button\">Nine</button>\\n  <button class=\"button\">Ten</button>\\n  <button class=\"button\">Eleven</button>\\n  <button class=\"button\">Twelve</button>\\n  <button class=\"button\">Thirteen</button>\\n  <button class=\"button\">Fourteen</button>\\n  <button class=\"button\">Fifteen</button>\\n  <button class=\"button\">Sixteen</button>\\n  <button class=\"button\">Seventeen</button>\\n  <button class=\"button\">Eighteen</button>\\n  <button class=\"button\">Nineteen</button>\\n  <button class=\"button\">Twenty</button>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons, Content } from '@seagreenio/react-bulma'\n\nfunction WrappingButtonListDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          If the list is <strong>very long</strong>, it will automatically wrap\n          on <strong>multiple lines</strong>, while keeping all buttons{' '}\n          <strong>evenly spaced</strong>.\n        </p>\n      </Content>\n      <div className={'bd-example'}>\n        <Buttons>\n          <Button>One</Button>\n          <Button>Two</Button>\n          <Button>Three</Button>\n          <Button>Four</Button>\n          <Button>Five</Button>\n          <Button>Six</Button>\n          <Button>Seven</Button>\n          <Button>Eight</Button>\n          <Button>Nine</Button>\n          <Button>Ten</Button>\n          <Button>Eleven</Button>\n          <Button>Twelve</Button>\n          <Button>Thirteen</Button>\n          <Button>Fourteen</Button>\n          <Button>Fifteen</Button>\n          <Button>Sixteen</Button>\n          <Button>Seventeen</Button>\n          <Button>Eighteen</Button>\n          <Button>Nineteen</Button>\n          <Button>Twenty</Button>\n        </Buttons>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example027Demo,
+  render: WrappingButtonListDemo,
 } satisfies StoryObj
 
-export const Example028 = {
+export const AttachedButtonListStory = {
   name: 'Attached button list',
   parameters: {
     official: { id: 'elements-button/list-of-buttons/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example028Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can <strong>attach buttons together</strong> with the{' '}\n              <code>{'has-addons'}</code> modifier.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Buttons addons>\n              <ui.Button>Yes</ui.Button> <ui.Button>Maybe</ui.Button>{' '}\n              <ui.Button>No</ui.Button>\n            </ui.Buttons>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"buttons has-addons\">\\n  <button class=\"button\">Yes</button>\\n  <button class=\"button\">Maybe</button>\\n  <button class=\"button\">No</button>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons, Content } from '@seagreenio/react-bulma'\n\nfunction AttachedButtonListDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          You can <strong>attach buttons together</strong> with the{' '}\n          <code>{'has-addons'}</code> modifier.\n        </p>\n      </Content>\n      <div className={'bd-example'}>\n        <Buttons addons>\n          <Button>Yes</Button>\n          <Button>Maybe</Button>\n          <Button>No</Button>\n        </Buttons>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example028Demo,
+  render: AttachedButtonListDemo,
 } satisfies StoryObj
 
-export const Example029 = {
+export const AlignedButtonAddonsStory = {
   name: 'Aligned button addons',
   parameters: {
     official: { id: 'elements-button/list-of-buttons/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example029Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              Use the <code>{'is-centered'}</code> or the{' '}\n              <code>{'is-right'}</code> modifiers to alter the{' '}\n              <strong>alignment</strong>.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Buttons addons align={'center'}>\n              <ui.Button>Yes</ui.Button> <ui.Button>Maybe</ui.Button>{' '}\n              <ui.Button>No</ui.Button>\n            </ui.Buttons>{' '}\n            <ui.Buttons addons align={'right'}>\n              <ui.Button>Yes</ui.Button> <ui.Button>Maybe</ui.Button>{' '}\n              <ui.Button>No</ui.Button>\n            </ui.Buttons>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"buttons has-addons is-centered\">\\n  <button class=\"button\">Yes</button>\\n  <button class=\"button\">Maybe</button>\\n  <button class=\"button\">No</button>\\n</div>\\n\\n<div class=\"buttons has-addons is-right\">\\n  <button class=\"button\">Yes</button>\\n  <button class=\"button\">Maybe</button>\\n  <button class=\"button\">No</button>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons, Content } from '@seagreenio/react-bulma'\n\nfunction AlignedButtonAddonsDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          Use the <code>{'is-centered'}</code> or the <code>{'is-right'}</code>{' '}\n          modifiers to alter the <strong>alignment</strong>.\n        </p>\n      </Content>\n      <div className={'bd-example'}>\n        <Buttons addons align={'center'}>\n          <Button>Yes</Button>\n          <Button>Maybe</Button>\n          <Button>No</Button>\n        </Buttons>\n        <Buttons addons align={'right'}>\n          <Button>Yes</Button>\n          <Button>Maybe</Button>\n          <Button>No</Button>\n        </Buttons>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example029Demo,
+  render: AlignedButtonAddonsDemo,
 } satisfies StoryObj
 
-export const Example030 = {
+export const SelectedButtonAddonsStory = {
   name: 'Selected button addons',
   parameters: {
     official: { id: 'elements-button/list-of-buttons/005' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example030Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can use any <strong>modifier</strong> class on each button to\n              differentiate them. Make sure to add the{' '}\n              <code>{'is-selected'}</code> modifier as well to make sure the\n              selected button is <em>above</em> its siblings.\n            </p>{' '}\n          </ui.Content>{' '}\n          <div className={'bd-example'}>\n            {' '}\n            <ui.Buttons addons>\n              <ui.Button color={'success'} selected>\n                Yes\n              </ui.Button>{' '}\n              <ui.Button>Maybe</ui.Button> <ui.Button>No</ui.Button>\n            </ui.Buttons>{' '}\n            <ui.Buttons addons>\n              <ui.Button>Yes</ui.Button>{' '}\n              <ui.Button color={'info'} selected>\n                Maybe\n              </ui.Button>{' '}\n              <ui.Button>No</ui.Button>\n            </ui.Buttons>{' '}\n            <ui.Buttons addons>\n              <ui.Button>Yes</ui.Button> <ui.Button>Maybe</ui.Button>{' '}\n              <ui.Button color={'danger'} selected>\n                No\n              </ui.Button>\n            </ui.Buttons>{' '}\n          </div>{' '}\n        </ui.Column>{' '}\n        <ui.Column className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"buttons has-addons\">\\n  <button class=\"button is-success is-selected\">Yes</button>\\n  <button class=\"button\">Maybe</button>\\n  <button class=\"button\">No</button>\\n</div>\\n\\n<div class=\"buttons has-addons\">\\n  <button class=\"button\">Yes</button>\\n  <button class=\"button is-info is-selected\">Maybe</button>\\n  <button class=\"button\">No</button>\\n</div>\\n\\n<div class=\"buttons has-addons\">\\n  <button class=\"button\">Yes</button>\\n  <button class=\"button\">Maybe</button>\\n  <button class=\"button is-danger is-selected\">No</button>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Button, Buttons, Content } from '@seagreenio/react-bulma'\n\nfunction SelectedButtonAddonsDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          You can use any <strong>modifier</strong> class on each button to\n          differentiate them. Make sure to add the <code>{'is-selected'}</code>{' '}\n          modifier as well to make sure the selected button is <em>above</em>{' '}\n          its siblings.\n        </p>\n      </Content>\n      <div className={'bd-example'}>\n        <Buttons addons>\n          <Button color={'success'} selected>\n            Yes\n          </Button>\n          <Button>Maybe</Button>\n          <Button>No</Button>\n        </Buttons>\n        <Buttons addons>\n          <Button>Yes</Button>\n          <Button color={'info'} selected>\n            Maybe\n          </Button>\n          <Button>No</Button>\n        </Buttons>\n        <Buttons addons>\n          <Button>Yes</Button>\n          <Button>Maybe</Button>\n          <Button color={'danger'} selected>\n            No\n          </Button>\n        </Buttons>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example030Demo,
+  render: SelectedButtonAddonsDemo,
 } satisfies StoryObj

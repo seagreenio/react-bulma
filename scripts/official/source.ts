@@ -3,7 +3,8 @@ import { readFile, readdir, writeFile, mkdir } from 'node:fs/promises'
 import { join, relative } from 'node:path'
 import { Liquid } from 'liquidjs'
 import { marked } from 'marked'
-import { load } from 'cheerio'
+import { load, type CheerioAPI } from 'cheerio'
+import type { Element } from 'domhandler'
 import { compileAsync } from 'sass'
 import postcss from 'postcss'
 import selectorParser from 'postcss-selector-parser'
@@ -11,15 +12,11 @@ import { helperClasses } from '../../src/helpers'
 import { homedir } from 'node:os'
 import lock from '../../official/source-lock.json'
 import { exampleNames } from '../../official/example-names'
-import type { OfficialCorpus, OfficialExample } from './types'
+import type { OfficialCorpus, OfficialExample, OfficialPreview } from './types'
 import type { OfficialDocuments } from './documents'
 
-export interface SourceReference {
-  file: string
-  revision: string
-}
 export interface OfficialNavigation {
-  pages: { page: string; path: string[]; source: SourceReference }[]
+  pages: { page: string; path: string[] }[]
   excluded: { page: string; reason: string }[]
 }
 export interface OfficialSource {
@@ -87,8 +84,20 @@ function frontmatter(source: string): {
     body: source.slice(match[0].length),
   }
 }
-export function compileDecorations(css: string): string {
+export function compileDecorations(css: string, baseCss = ''): string {
   const root = postcss.parse(css)
+  const inherited = new Set<string>()
+  postcss.parse(baseCss).walkDecls(/^--/, (declaration) => {
+    inherited.add(declaration.prop)
+  })
+  const variables = new Map<string, string>()
+  root.walkRules((rule) => {
+    if (rule.selector !== ':root' || rule.parent?.type !== 'root') return
+    rule.walkDecls(/^--/, (declaration) => {
+      if (!inherited.has(declaration.prop))
+        variables.set(declaration.prop, declaration.value)
+    })
+  })
   root.walkRules((rule) => {
     if (rule.parent?.type === 'atrule' && /keyframes$/.test(rule.parent.name))
       return
@@ -135,7 +144,25 @@ export function compileDecorations(css: string): string {
     )
       rule.remove()
   })
+  const required = new Map<string, string>()
+  const collect = (value: string) => {
+    for (const [, name] of value.matchAll(/var\(\s*(--[\w-]+)/g)) {
+      if (!name || required.has(name)) continue
+      const dependency = variables.get(name)
+      if (dependency === undefined) continue
+      required.set(name, dependency)
+      collect(dependency)
+    }
+  }
+  root.walkDecls((declaration) => collect(declaration.value))
+  if (required.size) {
+    const defaults = postcss.rule({ selector: '.official-root' })
+    for (const [prop, value] of required)
+      defaults.append(postcss.decl({ prop, value }))
+    root.prepend(defaults)
+  }
   root.walkDecls((declaration) => {
+    declaration.prop = declaration.prop.replace(/^--bulma-/, '--rb-')
     declaration.value = declaration.value.replace(/--bulma-/g, '--rb-')
   })
   return `/* Compiled from the pinned Bulma website Sass source. */\n${root}`
@@ -146,6 +173,128 @@ export function officialSourceRoot(): string {
     join(homedir(), '.cache/react-bulma/bulma', lock.revision, 'source')
   )
 }
+export function findExampleRoots($: CheerioAPI): Element[] {
+  const roots = new Set<Element>()
+  $('.bd-snippet-preview').each((_, node) => {
+    if ($(node).text().trim() || $(node).children().length) roots.add(node)
+  })
+  $('.bd-docs-content .js-modal-trigger[data-target]').each((_, node) => {
+    if ($(node).closest('pre,code').length) return
+    if (
+      $('.modal')
+        .toArray()
+        .some((modal) => modal.attribs.id === node.attribs['data-target'])
+    )
+      roots.add(node)
+  })
+  const candidates = [...baseClasses].map((name) => `.${name}`).join(',')
+  const documentColumns = new Set<Element>()
+  $('.bd-docs-content .columns').each((_, row) => {
+    if ($(row).closest('.bd-snippet-preview,.bd-example,.example').length)
+      return
+    const columns = $(row).children('.column')
+    const sources = columns.filter(
+      (_, column) => $(column).children('.highlight').length > 0,
+    )
+    if (!sources.length) return
+    for (const column of columns.toArray()) documentColumns.add(column)
+    columns.not(sources).each((_, column) => {
+      const components = $(column)
+        .find(candidates)
+        .filter(
+          (_, node) => !$(node).closest('.content,.message,pre,code').length,
+        )
+      if (components.length) roots.add(column)
+    })
+  })
+  $('.bd-docs-content')
+    .find(candidates)
+    .each((_, node) => {
+      if (
+        roots.has(node) ||
+        documentColumns.has(node) ||
+        $(node)
+          .find('*')
+          .toArray()
+          .some((child) => roots.has(child))
+      )
+        return
+      if (
+        /^h[1-6]$/.test(node.name) &&
+        !$(node).closest('.bd-snippet-preview,.bd-example,.example').length
+      )
+        return
+      if (
+        $(node).closest(
+          '.bd-snippet,.bd-anchor-title,.bd-subnav,pre,code,.content,.message',
+        ).length
+      )
+        return
+      if (
+        $(node).closest('table,.table-container').length &&
+        !$(node).closest('.bd-example,.example').length
+      )
+        return
+      if (
+        $(node)
+          .parents()
+          .toArray()
+          .some((parent) => roots.has(parent as Element))
+      )
+        return
+      let rootNode = node
+      for (const ancestor of $(node)
+        .parentsUntil('.bd-docs-content')
+        .toArray()) {
+        if ($(ancestor).is('.content')) return
+        if (
+          $(ancestor).find('h1,h2,h3,h4,h5,h6').length &&
+          !$(ancestor).is('.bd-example,.example')
+        )
+          break
+        rootNode = ancestor
+      }
+      roots.add(rootNode)
+    })
+  return $('.bd-docs-content *')
+    .toArray()
+    .filter(
+      (node) =>
+        roots.has(node) &&
+        !$(node)
+          .parents()
+          .toArray()
+          .some((parent) => roots.has(parent as Element)),
+    )
+}
+
+export function readExamplePreview(
+  $: CheerioAPI,
+  node: Element,
+): OfficialPreview | undefined {
+  if (!$(node).is('.bd-snippet-preview')) return
+  const snippet = $(node).closest('.bd-snippet')
+  if (!snippet.length) return
+  const classNames = (value: string) => value.trim().split(/\s+/)
+  const ancestors = snippet
+    .parentsUntil('.bd-docs-content')
+    .toArray()
+    .reverse()
+    .map((ancestor) => classNames(ancestor.attribs.class ?? ''))
+    .filter((names) => names.some((name) => name.startsWith('bd-')))
+    .map((names) =>
+      names
+        .map((name) =>
+          baseClasses.has(name) || helperTokens.has(name) ? `rb-${name}` : name,
+        )
+        .join(' '),
+    )
+  return {
+    className: classNames(snippet.attr('class') ?? '').join(' '),
+    ...(ancestors.length ? { ancestors } : {}),
+  }
+}
+
 export async function loadOfficialSource(
   root = officialSourceRoot(),
 ): Promise<OfficialSource> {
@@ -254,74 +403,41 @@ export async function loadOfficialSource(
         hide_carbon: true,
       },
     })
-    const variables = page.meta?.variables
-      ? await engine.renderFile('docs/components/variables.html', context)
-      : ''
     const modalTargets = await Promise.all(
       (page.modals ?? []).map((target: string) =>
         engine.renderFile(target, context),
       ),
     )
-    const raw = `<html class="bd-theme-${page.theme}"><body>${hero}<div class="bd-docs-content">${page.markdown ? `<div class="content">${renderMarkdownPage(content)}</div>` : content}${variables}</div>${modalTargets.join('')}</body></html>`
+    const raw = `<html class="bd-theme-${page.theme}"><body>${hero}<div class="bd-docs-content">${page.markdown ? `<div class="content">${renderMarkdownPage(content)}</div>` : content}</div>${modalTargets.join('')}</body></html>`
     const $ = load(raw)
-    const examples: OfficialExample[] = []
-    const roots = new Set<import('domhandler').Element>()
-    $('.bd-snippet-preview').each((_, node) => {
-      if ($(node).text().trim() || $(node).children().length) roots.add(node)
-    })
-    const candidates = [...baseClasses].map((name) => `.${name}`).join(',')
-    $('.bd-docs-content')
-      .find(candidates)
-      .each((_, node) => {
-        if (
-          /^h[1-6]$/.test(node.name) &&
-          !$(node).closest('.bd-snippet-preview,.bd-example,.example').length
-        )
-          return
-        if (
-          $(node).closest(
-            '.bd-snippet,.bd-vars-table,.bd-anchor-title,.bd-subnav,pre,code,.content,.message',
-          ).length
-        )
-          return
-        if (
-          $(node).closest('table,.table-container').length &&
-          !$(node).closest('.bd-example,.example').length
-        )
-          return
-        if (
-          $(node)
-            .parents()
-            .toArray()
-            .some((parent) => roots.has(parent as import('domhandler').Element))
-        )
-          return
-        let rootNode = node
-        for (const ancestor of $(node)
-          .parentsUntil('.bd-docs-content')
-          .toArray()) {
-          if ($(ancestor).is('.content,.bd-vars-table')) return
-          if (
-            $(ancestor).find('h1,h2,h3,h4,h5,h6').length &&
-            !$(ancestor).is('.bd-example,.example')
-          )
-            break
-          rootNode = ancestor
-        }
-        roots.add(rootNode)
-      })
-    const ordered = $('.bd-docs-content *')
-      .toArray()
-      .filter(
-        (node) =>
-          roots.has(node) &&
-          !$(node)
-            .parents()
-            .toArray()
-            .some((parent) =>
-              roots.has(parent as import('domhandler').Element),
-            ),
+    $('.bd-vars-table,#sass-and-css-variables').remove()
+    if (id === 'components-modal') {
+      const tutorial = $('#javascript-implementation-example')
+      tutorial.nextAll().remove()
+      tutorial.remove()
+      $(
+        '.bd-docs-content .highlight,.bd-docs-content .bd-highlight-full',
+      ).remove()
+      $(
+        '.bd-docs-content .message:has(a[href="#javascript-implementation-example"])',
+      ).remove()
+      $('.bd-docs-content > .content')
+        .filter((_, node) => /^To\s+activate/.test($(node).text().trim()))
+        .remove()
+      const intro = $('.bd-docs-content > .content').first()
+      intro.children('p,ul').not(':has(.js-modal-trigger)').remove()
+      intro.prepend(
+        '<p>Use <code>Modal</code> with <code>ModalTrigger</code> and <code>ModalContent</code>. The components handle opening, closing, keyboard interaction, and focus. Use <code>ModalClose</code> for a close button.</p>',
       )
+    }
+    if (id === 'elements-notification') {
+      const tutorial = $('#javascript-example')
+      tutorial.nextAll().remove()
+      tutorial.remove()
+    }
+    $('#navbarJsExample').remove()
+    const examples: OfficialExample[] = []
+    const ordered = findExampleRoots($)
     let section = 'basic'
     const sectionCounts = new Map<string, number>()
     $('.bd-docs-content *').each((_, node) => {
@@ -347,7 +463,9 @@ export async function loadOfficialSource(
       const modal = target
         ? $(`[id="${target}"]`).filter('.modal').first()
         : undefined
-      let html = snippet ? $(node).html()! : $.html(node)
+      let html = $(node).is('.bd-snippet-preview,.column')
+        ? $(node).html()!
+        : $.html(node)
       let kind: OfficialExample['kind'] = snippet ? 'snippet' : 'demo'
       if (modal?.length) {
         kind = 'modal'
@@ -359,12 +477,11 @@ export async function loadOfficialSource(
       examples.push({
         id: key,
         name,
-        section,
         kind,
         selector: `[data-source-example="${key}"]`,
         html,
         sha256: hash(html),
-        source: sourceRef,
+        preview: readExamplePreview($, node),
       })
     })
     if (!examples.length)
@@ -385,7 +502,6 @@ export async function loadOfficialSource(
       title: page.title,
       url: `https://bulma.io${link.path}`,
       examples,
-      excluded: [],
       source: sourceRef,
     })
     const group = id.split('-')[0]!
@@ -395,7 +511,6 @@ export async function loadOfficialSource(
         group === 'features'
           ? [featuresLabel, link.name]
           : [libraryLabel, byId[group]!.name, link.name],
-      source: sourceRef,
     })
   }
   const sassFiles = (await files(root)).filter(
@@ -441,6 +556,12 @@ export async function loadOfficialSource(
     documents,
     navigation,
     stylesheet: stylesheet + '\n' + inlineStyles,
-    decorations: compileDecorations(stylesheet),
+    decorations: compileDecorations(
+      stylesheet,
+      await readFile(
+        new URL(import.meta.resolve('bulma/css/bulma.min.css')),
+        'utf8',
+      ),
+    ),
   }
 }

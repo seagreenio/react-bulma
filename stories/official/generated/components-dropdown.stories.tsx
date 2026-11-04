@@ -1,7 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import {
+  Dropdown,
+  DropdownContent,
+  DropdownDivider,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger,
+  Icon,
+} from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,1151 +31,564 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="components-dropdown" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Dropdown'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'An interactive '}
           <strong data-official-prose="">{'dropdown menu'}</strong>
           {' for discoverable content'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n      \n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The '}
+            {' The '}
             <code data-official-prose="">{'dropdown'}</code>
             {
-              ' component is a container for a dropdown button and\n    a dropdown menu.\n  '
+              ' component is a container for a dropdown button and a dropdown menu. '
             }
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'dropdown'}</code>
               {' the '}
               <strong data-official-prose="">{'main'}</strong>
-              {' container\n      '}
+              {' container '}
               <ul data-official-prose="">
-                {'\n        '}
                 <li data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'dropdown-trigger'}</code>
                   {' the container for a '}
                   <code data-official-prose="">{'button'}</code>
-                  {'\n        '}
                 </li>
-                {'\n        '}
                 <li data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'dropdown-menu'}</code>
-                  {' the toggable menu,\n          '}
+                  {' the toggable menu, '}
                   <strong data-official-prose="">{'hidden'}</strong>
-                  {' by default\n          '}
+                  {' by default '}
                   <ul data-official-prose="">
-                    {'\n            '}
                     <li data-official-prose="">
-                      {'\n              '}
                       <code data-official-prose="">{'dropdown-content'}</code>
                       {' the dropdown '}
                       <strong data-official-prose="">{'box'}</strong>
-                      {
-                        ',\n              with a white background and a shadow\n              '
-                      }
+                      {', with a white background and a shadow '}
                       <ul data-official-prose="">
-                        {'\n                '}
                         <li data-official-prose="">
-                          {'\n                  '}
                           <code data-official-prose="">{'dropdown-item'}</code>
-                          {' each\n                  '}
+                          {' each '}
                           <strong data-official-prose="">
                             {'single item'}
                           </strong>
-                          {
-                            ' of the dropdown, which can either\n                  be a '
-                          }
+                          {' of the dropdown, which can either be a '}
                           <code data-official-prose="">{'a'}</code>
                           {' or a '}
                           <code data-official-prose="">{'div'}</code>
-                          {'\n                '}
                         </li>
-                        {'\n                '}
                         <li data-official-prose="">
-                          {'\n                  '}
                           <code data-official-prose="">
                             {'dropdown-divider'}
                           </code>
-                          {' a\n                  '}
+                          {' a '}
                           <strong data-official-prose="">
                             {'horizontal line'}
                           </strong>
-                          {' to separate dropdown items\n                '}
+                          {' to separate dropdown items '}
                         </li>
-                        {'\n              '}
                       </ul>
-                      {'\n            '}
                     </li>
-                    {'\n          '}
                   </ul>
-                  {'\n        '}
                 </li>
-                {'\n      '}
               </ul>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-dropdown/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={OpenDropdownStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'dropdown-content'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Dropdown content\n  '}
-          </span>
-          {'\n  '}
+            {' Dropdown content '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#dropdown-content'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    While the '}
+            {' While the '}
             <code data-official-prose="">{'dropdown-item'}</code>
-            {' can be used as an anchor link\n    '}
+            {' can be used as an anchor link '}
             <code data-official-prose="">{'<a>'}</code>
             {', you can also use a '}
             <code data-official-prose="">{'<div>'}</code>
-            {' and\n    insert almost '}
+            {' and insert almost '}
             <strong data-official-prose="">{'any type of content'}</strong>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-dropdown/dropdown-content/001">
-          <Canvas of={Example002} />
+          <Canvas of={RichDropdownContentStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'hoverable-or-toggable'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Hoverable or Toggable\n  '}
-          </span>
-          {'\n  '}
+            {' Hoverable or Toggable '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#hoverable-or-toggable'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The '}
+            {' The '}
             <code data-official-prose="">{'dropdown'}</code>
-            {' component has\n    '}
+            {' component has '}
             <strong data-official-prose="">{'2 additional modifiers'}</strong>
-            {'\n  '}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'is-hoverable'}</code>
-              {': the dropdown will show up when\n      '}
+              {': the dropdown will show up when '}
               <strong data-official-prose="">{'hovering'}</strong>
               {' the '}
               <code data-official-prose="">{'dropdown-trigger'}</code>
-              {'\n    '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'is-active'}</code>
-              {': the dropdown will show up\n      '}
+              {': the dropdown will show up '}
               <strong data-official-prose="">{'all the time'}</strong>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'message is-success'}>
-          {'\n  '}
           <p data-official-prose="" className={'message-body'}>
-            {'\n    While the CSS '}
+            {' While the CSS '}
             <code data-official-prose="">{':hover'}</code>
-            {' implementation works perfectly, the\n    '}
+            {' implementation works perfectly, the '}
             <code data-official-prose="">{'is-active'}</code>
             {
-              ' class is available for users who want to control the\n    display of the dropdown with '
+              ' class is available for users who want to control the display of the dropdown with '
             }
             <strong data-official-prose="">{'JavaScript'}</strong>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-dropdown/hoverable-or-toggable/001">
-          <Canvas of={Example003} />
+          <Canvas of={ClickToToggleStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-dropdown/hoverable-or-toggable/002">
-          <Canvas of={Example004} />
+          <Canvas of={HoverToOpenStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'right-aligned'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Right aligned\n  '}
-          </span>
-          {'\n  '}
+            {' Right aligned '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#right-aligned'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can add the '}
+            {' You can add the '}
             <code data-official-prose="">{'is-right'}</code>
-            {' modifier to have a\n    '}
+            {' modifier to have a '}
             <strong data-official-prose="">{'right-aligned'}</strong>
-            {' dropdown.\n  '}
+            {' dropdown. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-dropdown/right-aligned/001">
-          <Canvas of={Example005} />
+          <Canvas of={LeftAlignedDropdownStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-dropdown/right-aligned/002">
-          <Canvas of={Example006} />
+          <Canvas of={RightAlignedDropdownStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'dropup'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Dropup\n  '}
-          </span>
-          {'\n  '}
+            {' Dropup '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#dropup'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can add the '}
+            {' You can add the '}
             <code data-official-prose="">{'is-up'}</code>
             {
-              ' modifier to have a dropdown menu that\n    appears above the dropdown button.\n  '
+              ' modifier to have a dropdown menu that appears above the dropdown button. '
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-dropdown/dropup/001">
-          <Canvas of={Example007} />
+          <Canvas of={DropupMenuStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$dropdown-menu-min-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-dropdown-menu-min-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'12rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$dropdown-content-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-dropdown-content-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$dropdown-content-offset'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-dropdown-content-offset)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.25rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$dropdown-content-padding-bottom'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-dropdown-content-padding-bottom)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$dropdown-content-padding-top'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-dropdown-content-padding-top)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$dropdown-content-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-dropdown-content-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$dropdown-content-shadow'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-dropdown-content-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$dropdown-content-z'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-dropdown-content-z)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'20'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$dropdown-divider-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-dropdown-divider-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border-weak)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function OpenDropdownDemo() {
   return (
     <>
-      <ui.Dropdown defaultOpen>
-        {' '}
-        <ui.DropdownTrigger
-          aria-haspopup={'true'}
-          aria-controls={'dropdown-menu'}
-        >
-          {' '}
-          <span>Dropdown button</span>{' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
-          </ui.Icon>{' '}
-        </ui.DropdownTrigger>{' '}
-        <ui.DropdownMenu id={'dropdown-menu'} role={'menu'}>
-          {' '}
-          <ui.DropdownContent>
-            {' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              Dropdown item{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownItem as={'a'}>
-              {' '}
-              Other dropdown item{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownItem href={'#'} active as={'a'}>
-              {' '}
-              Active dropdown item{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              Other dropdown item{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownDivider />{' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              With a divider{' '}
-            </ui.DropdownItem>{' '}
-          </ui.DropdownContent>{' '}
-        </ui.DropdownMenu>{' '}
-      </ui.Dropdown>
+      <Dropdown defaultOpen>
+        <DropdownTrigger aria-haspopup={'true'} aria-controls={'dropdown-menu'}>
+          <span>Dropdown button</span>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
+          </Icon>
+        </DropdownTrigger>
+        <DropdownMenu id={'dropdown-menu'} role={'menu'}>
+          <DropdownContent>
+            <DropdownItem href={'#'} as={'a'}>
+              Dropdown item
+            </DropdownItem>
+            <DropdownItem as={'a'}>Other dropdown item</DropdownItem>
+            <DropdownItem href={'#'} active as={'a'}>
+              Active dropdown item
+            </DropdownItem>
+            <DropdownItem href={'#'} as={'a'}>
+              Other dropdown item
+            </DropdownItem>
+            <DropdownDivider />
+            <DropdownItem href={'#'} as={'a'}>
+              With a divider
+            </DropdownItem>
+          </DropdownContent>
+        </DropdownMenu>
+      </Dropdown>
     </>
   )
 }
 
-function Example002Demo() {
+function RichDropdownContentDemo() {
   return (
     <>
-      <ui.Dropdown defaultOpen>
-        {' '}
-        <ui.DropdownTrigger
+      <Dropdown defaultOpen>
+        <DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu2'}
         >
-          {' '}
-          <span>Content</span>{' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
-          </ui.Icon>{' '}
-        </ui.DropdownTrigger>{' '}
-        <ui.DropdownMenu id={'dropdown-menu2'} role={'menu'}>
-          {' '}
-          <ui.DropdownContent>
-            {' '}
-            <ui.DropdownItem as={'div'}>
-              {' '}
+          <span>Content</span>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
+          </Icon>
+        </DropdownTrigger>
+        <DropdownMenu id={'dropdown-menu2'} role={'menu'}>
+          <DropdownContent>
+            <DropdownItem as={'div'}>
               <p>
                 You can insert <strong>any type of content</strong> within the
                 dropdown menu.
-              </p>{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownDivider />{' '}
-            <ui.DropdownItem as={'div'}>
-              {' '}
+              </p>
+            </DropdownItem>
+            <DropdownDivider />
+            <DropdownItem as={'div'}>
               <p>
                 You simply need to use a <code>{'<div>'}</code> instead.
-              </p>{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownDivider />{' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              This is a link{' '}
-            </ui.DropdownItem>{' '}
-          </ui.DropdownContent>{' '}
-        </ui.DropdownMenu>{' '}
-      </ui.Dropdown>
+              </p>
+            </DropdownItem>
+            <DropdownDivider />
+            <DropdownItem href={'#'} as={'a'}>
+              This is a link
+            </DropdownItem>
+          </DropdownContent>
+        </DropdownMenu>
+      </Dropdown>
     </>
   )
 }
 
-function Example003Demo() {
+function ClickToToggleDemo() {
   return (
     <>
-      <ui.Dropdown>
-        {' '}
-        <ui.DropdownTrigger
+      <Dropdown>
+        <DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu3'}
         >
-          {' '}
-          <span>Click me</span>{' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
-          </ui.Icon>{' '}
-        </ui.DropdownTrigger>{' '}
-        <ui.DropdownMenu id={'dropdown-menu3'} role={'menu'}>
-          {' '}
-          <ui.DropdownContent>
-            {' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              Overview{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              Modifiers{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              Grid{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              Form{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              Elements{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              Components{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              Layout{' '}
-            </ui.DropdownItem>{' '}
-            <ui.DropdownDivider />{' '}
-            <ui.DropdownItem href={'#'} as={'a'}>
-              {' '}
-              More{' '}
-            </ui.DropdownItem>{' '}
-          </ui.DropdownContent>{' '}
-        </ui.DropdownMenu>{' '}
-      </ui.Dropdown>
+          <span>Click me</span>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
+          </Icon>
+        </DropdownTrigger>
+        <DropdownMenu id={'dropdown-menu3'} role={'menu'}>
+          <DropdownContent>
+            <DropdownItem href={'#'} as={'a'}>
+              Overview
+            </DropdownItem>
+            <DropdownItem href={'#'} as={'a'}>
+              Modifiers
+            </DropdownItem>
+            <DropdownItem href={'#'} as={'a'}>
+              Grid
+            </DropdownItem>
+            <DropdownItem href={'#'} as={'a'}>
+              Form
+            </DropdownItem>
+            <DropdownItem href={'#'} as={'a'}>
+              Elements
+            </DropdownItem>
+            <DropdownItem href={'#'} as={'a'}>
+              Components
+            </DropdownItem>
+            <DropdownItem href={'#'} as={'a'}>
+              Layout
+            </DropdownItem>
+            <DropdownDivider />
+            <DropdownItem href={'#'} as={'a'}>
+              More
+            </DropdownItem>
+          </DropdownContent>
+        </DropdownMenu>
+      </Dropdown>
     </>
   )
 }
 
-function Example004Demo() {
+function HoverToOpenDemo() {
   return (
     <>
-      <ui.Dropdown hoverable>
-        {' '}
-        <ui.DropdownTrigger
+      <Dropdown hoverable>
+        <DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu4'}
         >
-          {' '}
-          <span>Hover me</span>{' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
-          </ui.Icon>{' '}
-        </ui.DropdownTrigger>{' '}
-        <ui.DropdownMenu id={'dropdown-menu4'} role={'menu'}>
-          {' '}
-          <ui.DropdownContent>
-            {' '}
-            <ui.DropdownItem as={'div'}>
-              {' '}
+          <span>Hover me</span>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
+          </Icon>
+        </DropdownTrigger>
+        <DropdownMenu id={'dropdown-menu4'} role={'menu'}>
+          <DropdownContent>
+            <DropdownItem as={'div'}>
               <p>
                 You can insert <strong>any type of content</strong> within the
                 dropdown menu.
-              </p>{' '}
-            </ui.DropdownItem>{' '}
-          </ui.DropdownContent>{' '}
-        </ui.DropdownMenu>{' '}
-      </ui.Dropdown>
+              </p>
+            </DropdownItem>
+          </DropdownContent>
+        </DropdownMenu>
+      </Dropdown>
     </>
   )
 }
 
-function Example005Demo() {
+function LeftAlignedDropdownDemo() {
   return (
     <>
-      <ui.Dropdown defaultOpen>
-        {' '}
-        <ui.DropdownTrigger
+      <Dropdown defaultOpen>
+        <DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu5'}
         >
-          {' '}
-          <span>Left aligned</span>{' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
-          </ui.Icon>{' '}
-        </ui.DropdownTrigger>{' '}
-        <ui.DropdownMenu id={'dropdown-menu5'} role={'menu'}>
-          {' '}
-          <ui.DropdownContent>
-            {' '}
-            <ui.DropdownItem as={'div'}>
-              {' '}
+          <span>Left aligned</span>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
+          </Icon>
+        </DropdownTrigger>
+        <DropdownMenu id={'dropdown-menu5'} role={'menu'}>
+          <DropdownContent>
+            <DropdownItem as={'div'}>
               <p>
                 The dropdown is <strong>left-aligned</strong> by default.
-              </p>{' '}
-            </ui.DropdownItem>{' '}
-          </ui.DropdownContent>{' '}
-        </ui.DropdownMenu>{' '}
-      </ui.Dropdown>
+              </p>
+            </DropdownItem>
+          </DropdownContent>
+        </DropdownMenu>
+      </Dropdown>
     </>
   )
 }
 
-function Example006Demo() {
+function RightAlignedDropdownDemo() {
   return (
     <>
-      <ui.Dropdown right defaultOpen>
-        {' '}
-        <ui.DropdownTrigger
+      <Dropdown right defaultOpen>
+        <DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu6'}
         >
-          {' '}
-          <span>Right aligned</span>{' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
-          </ui.Icon>{' '}
-        </ui.DropdownTrigger>{' '}
-        <ui.DropdownMenu id={'dropdown-menu6'} role={'menu'}>
-          {' '}
-          <ui.DropdownContent>
-            {' '}
-            <ui.DropdownItem as={'div'}>
-              {' '}
+          <span>Right aligned</span>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-angle-down'} />
+          </Icon>
+        </DropdownTrigger>
+        <DropdownMenu id={'dropdown-menu6'} role={'menu'}>
+          <DropdownContent>
+            <DropdownItem as={'div'}>
               <p>
                 Add the <code>{'is-right'}</code> modifier for a{' '}
                 <strong>right-aligned</strong> dropdown.
-              </p>{' '}
-            </ui.DropdownItem>{' '}
-          </ui.DropdownContent>{' '}
-        </ui.DropdownMenu>{' '}
-      </ui.Dropdown>
+              </p>
+            </DropdownItem>
+          </DropdownContent>
+        </DropdownMenu>
+      </Dropdown>
     </>
   )
 }
 
-function Example007Demo() {
+function DropupMenuDemo() {
   return (
     <>
-      <ui.Dropdown up>
-        {' '}
-        <ui.DropdownTrigger
+      <Dropdown up>
+        <DropdownTrigger
           aria-haspopup={'true'}
           aria-controls={'dropdown-menu7'}
         >
-          {' '}
-          <span>Dropup button</span>{' '}
-          <ui.Icon size={'small'}>
-            {' '}
-            <i aria-hidden={'true'} className={'fas fa-angle-up'} />{' '}
-          </ui.Icon>{' '}
-        </ui.DropdownTrigger>{' '}
-        <ui.DropdownMenu id={'dropdown-menu7'} role={'menu'}>
-          {' '}
-          <ui.DropdownContent>
-            {' '}
-            <ui.DropdownItem as={'div'}>
-              {' '}
+          <span>Dropup button</span>
+          <Icon size={'small'}>
+            <i aria-hidden={'true'} className={'fas fa-angle-up'} />
+          </Icon>
+        </DropdownTrigger>
+        <DropdownMenu id={'dropdown-menu7'} role={'menu'}>
+          <DropdownContent>
+            <DropdownItem as={'div'}>
               <p>
                 You can add the <code>{'is-up'}</code> modifier to have a
                 dropdown menu that appears above the dropdown button.
-              </p>{' '}
-            </ui.DropdownItem>{' '}
-          </ui.DropdownContent>{' '}
-        </ui.DropdownMenu>{' '}
-      </ui.Dropdown>
+              </p>
+            </DropdownItem>
+          </DropdownContent>
+        </DropdownMenu>
+      </Dropdown>
     </>
   )
 }
 
-export const Example001 = {
+export const OpenDropdownStory = {
   name: 'Open dropdown',
   parameters: {
     official: { id: 'components-dropdown/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Dropdown defaultOpen>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu'}\n        >\n          {' '}\n          <span>Dropdown button</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Dropdown item{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem as={'a'}>\n              {' '}\n              Other dropdown item{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} active as={'a'}>\n              {' '}\n              Active dropdown item{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Other dropdown item{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownDivider />{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              With a divider{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
+        code: "import {\n  Dropdown,\n  DropdownContent,\n  DropdownDivider,\n  DropdownItem,\n  DropdownMenu,\n  DropdownTrigger,\n  Icon,\n} from '@seagreenio/react-bulma'\n\nfunction OpenDropdownDemo() {\n  return (\n    <>\n      <Dropdown defaultOpen>\n        <DropdownTrigger aria-haspopup={'true'} aria-controls={'dropdown-menu'}>\n          <span>Dropdown button</span>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />\n          </Icon>\n        </DropdownTrigger>\n        <DropdownMenu id={'dropdown-menu'} role={'menu'}>\n          <DropdownContent>\n            <DropdownItem href={'#'} as={'a'}>\n              Dropdown item\n            </DropdownItem>\n            <DropdownItem as={'a'}>Other dropdown item</DropdownItem>\n            <DropdownItem href={'#'} active as={'a'}>\n              Active dropdown item\n            </DropdownItem>\n            <DropdownItem href={'#'} as={'a'}>\n              Other dropdown item\n            </DropdownItem>\n            <DropdownDivider />\n            <DropdownItem href={'#'} as={'a'}>\n              With a divider\n            </DropdownItem>\n          </DropdownContent>\n        </DropdownMenu>\n      </Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: OpenDropdownDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const RichDropdownContentStory = {
   name: 'Rich dropdown content',
   parameters: {
     official: { id: 'components-dropdown/dropdown-content/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Dropdown defaultOpen>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu2'}\n        >\n          {' '}\n          <span>Content</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu2'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                You can insert <strong>any type of content</strong> within the\n                dropdown menu.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownDivider />{' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                You simply need to use a <code>{'<div>'}</code> instead.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownDivider />{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              This is a link{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
+        code: "import {\n  Dropdown,\n  DropdownContent,\n  DropdownDivider,\n  DropdownItem,\n  DropdownMenu,\n  DropdownTrigger,\n  Icon,\n} from '@seagreenio/react-bulma'\n\nfunction RichDropdownContentDemo() {\n  return (\n    <>\n      <Dropdown defaultOpen>\n        <DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu2'}\n        >\n          <span>Content</span>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />\n          </Icon>\n        </DropdownTrigger>\n        <DropdownMenu id={'dropdown-menu2'} role={'menu'}>\n          <DropdownContent>\n            <DropdownItem as={'div'}>\n              <p>\n                You can insert <strong>any type of content</strong> within the\n                dropdown menu.\n              </p>\n            </DropdownItem>\n            <DropdownDivider />\n            <DropdownItem as={'div'}>\n              <p>\n                You simply need to use a <code>{'<div>'}</code> instead.\n              </p>\n            </DropdownItem>\n            <DropdownDivider />\n            <DropdownItem href={'#'} as={'a'}>\n              This is a link\n            </DropdownItem>\n          </DropdownContent>\n        </DropdownMenu>\n      </Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: RichDropdownContentDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const ClickToToggleStory = {
   name: 'Click to toggle',
   parameters: {
     official: { id: 'components-dropdown/hoverable-or-toggable/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Dropdown>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu3'}\n        >\n          {' '}\n          <span>Click me</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu3'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Overview{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Modifiers{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Grid{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Form{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Elements{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Components{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              Layout{' '}\n            </ui.DropdownItem>{' '}\n            <ui.DropdownDivider />{' '}\n            <ui.DropdownItem href={'#'} as={'a'}>\n              {' '}\n              More{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
+        code: "import {\n  Dropdown,\n  DropdownContent,\n  DropdownDivider,\n  DropdownItem,\n  DropdownMenu,\n  DropdownTrigger,\n  Icon,\n} from '@seagreenio/react-bulma'\n\nfunction ClickToToggleDemo() {\n  return (\n    <>\n      <Dropdown>\n        <DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu3'}\n        >\n          <span>Click me</span>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />\n          </Icon>\n        </DropdownTrigger>\n        <DropdownMenu id={'dropdown-menu3'} role={'menu'}>\n          <DropdownContent>\n            <DropdownItem href={'#'} as={'a'}>\n              Overview\n            </DropdownItem>\n            <DropdownItem href={'#'} as={'a'}>\n              Modifiers\n            </DropdownItem>\n            <DropdownItem href={'#'} as={'a'}>\n              Grid\n            </DropdownItem>\n            <DropdownItem href={'#'} as={'a'}>\n              Form\n            </DropdownItem>\n            <DropdownItem href={'#'} as={'a'}>\n              Elements\n            </DropdownItem>\n            <DropdownItem href={'#'} as={'a'}>\n              Components\n            </DropdownItem>\n            <DropdownItem href={'#'} as={'a'}>\n              Layout\n            </DropdownItem>\n            <DropdownDivider />\n            <DropdownItem href={'#'} as={'a'}>\n              More\n            </DropdownItem>\n          </DropdownContent>\n        </DropdownMenu>\n      </Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: ClickToToggleDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const HoverToOpenStory = {
   name: 'Hover to open',
   parameters: {
     official: { id: 'components-dropdown/hoverable-or-toggable/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Dropdown hoverable>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu4'}\n        >\n          {' '}\n          <span>Hover me</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu4'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                You can insert <strong>any type of content</strong> within the\n                dropdown menu.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
+        code: "import {\n  Dropdown,\n  DropdownContent,\n  DropdownItem,\n  DropdownMenu,\n  DropdownTrigger,\n  Icon,\n} from '@seagreenio/react-bulma'\n\nfunction HoverToOpenDemo() {\n  return (\n    <>\n      <Dropdown hoverable>\n        <DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu4'}\n        >\n          <span>Hover me</span>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />\n          </Icon>\n        </DropdownTrigger>\n        <DropdownMenu id={'dropdown-menu4'} role={'menu'}>\n          <DropdownContent>\n            <DropdownItem as={'div'}>\n              <p>\n                You can insert <strong>any type of content</strong> within the\n                dropdown menu.\n              </p>\n            </DropdownItem>\n          </DropdownContent>\n        </DropdownMenu>\n      </Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: HoverToOpenDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const LeftAlignedDropdownStory = {
   name: 'Left-aligned dropdown',
   parameters: {
     official: { id: 'components-dropdown/right-aligned/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Dropdown defaultOpen>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu5'}\n        >\n          {' '}\n          <span>Left aligned</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu5'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                The dropdown is <strong>left-aligned</strong> by default.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
+        code: "import {\n  Dropdown,\n  DropdownContent,\n  DropdownItem,\n  DropdownMenu,\n  DropdownTrigger,\n  Icon,\n} from '@seagreenio/react-bulma'\n\nfunction LeftAlignedDropdownDemo() {\n  return (\n    <>\n      <Dropdown defaultOpen>\n        <DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu5'}\n        >\n          <span>Left aligned</span>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />\n          </Icon>\n        </DropdownTrigger>\n        <DropdownMenu id={'dropdown-menu5'} role={'menu'}>\n          <DropdownContent>\n            <DropdownItem as={'div'}>\n              <p>\n                The dropdown is <strong>left-aligned</strong> by default.\n              </p>\n            </DropdownItem>\n          </DropdownContent>\n        </DropdownMenu>\n      </Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: LeftAlignedDropdownDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const RightAlignedDropdownStory = {
   name: 'Right-aligned dropdown',
   parameters: {
     official: { id: 'components-dropdown/right-aligned/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Dropdown right defaultOpen>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu6'}\n        >\n          {' '}\n          <span>Right aligned</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu6'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                Add the <code>{'is-right'}</code> modifier for a{' '}\n                <strong>right-aligned</strong> dropdown.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
+        code: "import {\n  Dropdown,\n  DropdownContent,\n  DropdownItem,\n  DropdownMenu,\n  DropdownTrigger,\n  Icon,\n} from '@seagreenio/react-bulma'\n\nfunction RightAlignedDropdownDemo() {\n  return (\n    <>\n      <Dropdown right defaultOpen>\n        <DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu6'}\n        >\n          <span>Right aligned</span>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-angle-down'} />\n          </Icon>\n        </DropdownTrigger>\n        <DropdownMenu id={'dropdown-menu6'} role={'menu'}>\n          <DropdownContent>\n            <DropdownItem as={'div'}>\n              <p>\n                Add the <code>{'is-right'}</code> modifier for a{' '}\n                <strong>right-aligned</strong> dropdown.\n              </p>\n            </DropdownItem>\n          </DropdownContent>\n        </DropdownMenu>\n      </Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: RightAlignedDropdownDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const DropupMenuStory = {
   name: 'Dropup menu',
   parameters: {
     official: { id: 'components-dropdown/dropup/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Dropdown up>\n        {' '}\n        <ui.DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu7'}\n        >\n          {' '}\n          <span>Dropup button</span>{' '}\n          <ui.Icon size={'small'}>\n            {' '}\n            <i aria-hidden={'true'} className={'fas fa-angle-up'} />{' '}\n          </ui.Icon>{' '}\n        </ui.DropdownTrigger>{' '}\n        <ui.DropdownMenu id={'dropdown-menu7'} role={'menu'}>\n          {' '}\n          <ui.DropdownContent>\n            {' '}\n            <ui.DropdownItem as={'div'}>\n              {' '}\n              <p>\n                You can add the <code>{'is-up'}</code> modifier to have a\n                dropdown menu that appears above the dropdown button.\n              </p>{' '}\n            </ui.DropdownItem>{' '}\n          </ui.DropdownContent>{' '}\n        </ui.DropdownMenu>{' '}\n      </ui.Dropdown>\n    </>\n  )\n}\n",
+        code: "import {\n  Dropdown,\n  DropdownContent,\n  DropdownItem,\n  DropdownMenu,\n  DropdownTrigger,\n  Icon,\n} from '@seagreenio/react-bulma'\n\nfunction DropupMenuDemo() {\n  return (\n    <>\n      <Dropdown up>\n        <DropdownTrigger\n          aria-haspopup={'true'}\n          aria-controls={'dropdown-menu7'}\n        >\n          <span>Dropup button</span>\n          <Icon size={'small'}>\n            <i aria-hidden={'true'} className={'fas fa-angle-up'} />\n          </Icon>\n        </DropdownTrigger>\n        <DropdownMenu id={'dropdown-menu7'} role={'menu'}>\n          <DropdownContent>\n            <DropdownItem as={'div'}>\n              <p>\n                You can add the <code>{'is-up'}</code> modifier to have a\n                dropdown menu that appears above the dropdown button.\n              </p>\n            </DropdownItem>\n          </DropdownContent>\n        </DropdownMenu>\n      </Dropdown>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: DropupMenuDemo,
 } satisfies StoryObj

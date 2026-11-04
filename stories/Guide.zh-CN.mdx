@@ -102,7 +102,7 @@ export function App() {
 </Button>
 ```
 
-上面的 `mt: 0` 会生成 `rb-mt-0`，将上外边距设为 0。设置 `hidden: false` 时，不会添加隐藏类。你传入的 `className="save-action"` 会与组件的类名一起使用，保持原样，不会变成 `rb-save-action`。
+上面的 `mt: 0` 会生成 `rb-mt-0`，将上外边距设为 0。你传入的 `className="save-action"` 会与组件的类名一起使用，保持原样，不会变成 `rb-save-action`。
 
 给 `div`、`p` 等 HTML 元素设置相同的样式时，可以调用 `helpers()`，再把返回的类名传给 `className`。这个函数只生成类名，不会修改元素或插入 CSS。生成的类名默认以 `rb-` 开头；如果从生成的自定义前缀模块导入 `helpers`，则会使用你配置的前缀：
 

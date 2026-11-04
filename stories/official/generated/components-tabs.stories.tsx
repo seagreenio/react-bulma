@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Icon, Tab, Tabs, TabsList } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,2038 +23,926 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="components-tabs" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Tabs'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'Simple responsive horizontal navigation '}
           <strong data-official-prose="">{'tabs'}</strong>
           {', with different styles'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n              \n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The Bulma '}
+            {' The Bulma '}
             <code data-official-prose="">{'tabs'}</code>
             {
-              ' are a straightforward navigation component that\n    come in a variety of versions. They only require the following structure:\n  '
+              ' are a straightforward navigation component that come in a variety of versions. They only require the following structure: '
             }
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               {'a '}
               <code data-official-prose="">{'tabs'}</code>
               {' container'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               {'a '}
               <code data-official-prose="">{'<ul>'}</code>
               {' HTML element'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               {'a list of '}
               <code data-official-prose="">{'<li>'}</code>
               {' HTML element'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'<a>'}</code>
               {' HTML anchor elements for each link'}
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The '}
+            {' The '}
             <strong data-official-prose="">{'default'}</strong>
-            {' tabs style has a single border at the bottom.\n  '}
+            {' tabs style has a single border at the bottom. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={DefaultTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'alignment'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Alignment\n  '}
-          </span>
-          {'\n  '}
+            {' Alignment '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#alignment'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    To align the tabs list, use the '}
+            {' To align the tabs list, use the '}
             <code data-official-prose="">{'is-centered'}</code>
-            {' or\n    '}
+            {' or '}
             <code data-official-prose="">{'is-right'}</code>
             {' modifier on the '}
             <code data-official-prose="">{'.tabs'}</code>
-            {' container:\n  '}
+            {' container: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/alignment/001">
-          <Canvas of={Example002} />
+          <Canvas of={CenteredTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/alignment/002">
-          <Canvas of={Example003} />
+          <Canvas of={RightAlignedTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'icons'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Icons\n  '}
-          </span>
-          {'\n  '}
+            {' Icons '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#icons'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can use any of the '}
+            {' You can use any of the '}
             <a data-official-prose="" href={'https://fontawesome.com/'}>
               {'Font Awesome'}
-            </a>
-            {'\n    '}
+            </a>{' '}
             <strong data-official-prose="">{'icons'}</strong>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/icons/001">
-          <Canvas of={Example004} />
+          <Canvas of={TabsWithIconsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can choose between '}
+            {' You can choose between '}
             <strong data-official-prose="">{'3 additional sizes'}</strong>
-            {':\n    '}
+            {': '}
             <code data-official-prose="">{'is-small'}</code>{' '}
             <code data-official-prose="">{'is-medium'}</code>
             {' and '}
             <code data-official-prose="">{'is-large'}</code>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/sizes/001">
-          <Canvas of={Example005} />
+          <Canvas of={SmallTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/sizes/002">
-          <Canvas of={Example006} />
+          <Canvas of={MediumTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/sizes/003">
-          <Canvas of={Example007} />
+          <Canvas of={LargeTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'styles'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Styles\n  '}
-          </span>
-          {'\n  '}
+            {' Styles '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#styles'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  If you want a more classic style with '}
+          {' If you want a more classic style with '}
           <strong data-official-prose="">{'borders'}</strong>
-          {', just append\n  the '}
+          {', just append the '}
           <code data-official-prose="">{'is-boxed'}</code>
-          {' modifier.\n'}
+          {' modifier. '}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/styles/001">
-          <Canvas of={Example008} />
+          <Canvas of={BoxedTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <p data-official-prose="" className={'content'}>
-          {'\n  If you want '}
+          {' If you want '}
           <strong data-official-prose="">{'mutually exclusive'}</strong>
           {
-            ' tabs (like radio buttons where\n  clicking one deselects all other ones), use the\n  '
+            ' tabs (like radio buttons where clicking one deselects all other ones), use the '
           }
           <code data-official-prose="">{'is-toggle'}</code>
-          {' modifier.\n'}
+          {' modifier. '}
         </p>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/styles/002">
-          <Canvas of={Example009} />
+          <Canvas of={ToggleTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <p data-official-prose="" className={'content'}>
-          {'\n  If you use both '}
+          {' If you use both '}
           <code data-official-prose="">{'is-toggle'}</code>
           {' and '}
           <code data-official-prose="">{'is-toggle-rounded'}</code>
-          {', the\n  first and last items will be '}
+          {', the first and last items will be '}
           <strong data-official-prose="">{'rounded'}</strong>
-          {'.\n'}
+          {'. '}
         </p>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/styles/003">
-          <Canvas of={Example010} />
+          <Canvas of={RoundedToggleTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <p data-official-prose="" className={'content'}>
-          {'\n  If you want the tabs to take up the '}
+          {' If you want the tabs to take up the '}
           <strong data-official-prose="">{'whole width'}</strong>
-          {' available,\n  use '}
+          {' available, use '}
           <code data-official-prose="">{'is-fullwidth'}</code>
-          {'.\n'}
+          {'. '}
         </p>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/styles/004">
-          <Canvas of={Example011} />
+          <Canvas of={FullWidthTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'combining'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Combining\n  '}
-          </span>
-          {'\n  '}
+            {' Combining '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#combining'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can '}
+            {' You can '}
             <strong data-official-prose="">{'combine'}</strong>
-            {' different modifiers. For example, you can\n    have '}
+            {' different modifiers. For example, you can have '}
             <strong data-official-prose="">{'centered boxed'}</strong>
-            {' tabs, or\n    '}
+            {' tabs, or '}
             <strong data-official-prose="">{'fullwidth toggle'}</strong>
-            {' ones.\n  '}
+            {' ones. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/combining/001">
-          <Canvas of={Example012} />
+          <Canvas of={CenteredBoxedTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/combining/002">
-          <Canvas of={Example013} />
+          <Canvas of={FullWidthToggleTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/combining/003">
-          <Canvas of={Example014} />
+          <Canvas of={MediumCenteredBoxedTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-tabs/combining/004">
-          <Canvas of={Example015} />
+          <Canvas of={LargeFullWidthToggleTabsStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-border-bottom-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-border-bottom-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-border-bottom-style'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-border-bottom-style)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'solid'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-border-bottom-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-border-bottom-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1px'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-link-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-link-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-link-hover-border-bottom-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-link-hover-border-bottom-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-strong)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-link-hover-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-link-hover-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-strong)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-link-active-border-bottom-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-link-active-border-bottom-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-link-active-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-link-active-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-link-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-link-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.5em 1em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-boxed-link-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-boxed-link-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-boxed-link-hover-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-boxed-link-hover-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-background)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-boxed-link-hover-border-bottom-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          'var(--bulma-tabs-boxed-link-hover-border-bottom-color)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-boxed-link-active-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-boxed-link-active-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-boxed-link-active-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-boxed-link-active-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-boxed-link-active-border-bottom-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          'var(--bulma-tabs-boxed-link-active-border-bottom-color)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'transparent'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-toggle-link-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-toggle-link-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-toggle-link-border-style'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-toggle-link-border-style)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'solid'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-toggle-link-border-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-toggle-link-border-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1px'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-toggle-link-hover-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-toggle-link-hover-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-background)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-toggle-link-hover-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-toggle-link-hover-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border-hover)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-toggle-link-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-toggle-link-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-toggle-link-active-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          'var(--bulma-tabs-toggle-link-active-background-color)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-toggle-link-active-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-toggle-link-active-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$tabs-toggle-link-active-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-tabs-toggle-link-active-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link-invert)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList>
-          <ui.Tab value={'tab-1'} as={'a'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList>
+          <Tab value={'tab-1'} as={'a'}>
             Pictures
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
             Music
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
             Videos
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
             Documents
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example002Demo() {
+function CenteredTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList alignment={'centered'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList alignment={'centered'}>
+          <Tab value={'tab-1'} as={'a'}>
             Pictures
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
             Music
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
             Videos
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
             Documents
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example003Demo() {
+function RightAlignedTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList alignment={'right'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList alignment={'right'}>
+          <Tab value={'tab-1'} as={'a'}>
             Pictures
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
             Music
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
             Videos
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
             Documents
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example004Demo() {
+function TabsWithIconsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList alignment={'centered'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList alignment={'centered'}>
+          <Tab value={'tab-1'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>{' '}
-            <span>Pictures</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Pictures</span>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>{' '}
-            <span>Music</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Music</span>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>{' '}
-            <span>Videos</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Videos</span>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>{' '}
-            <span>Documents</span>{' '}
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+            </Icon>
+            <span>Documents</span>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example005Demo() {
+function SmallTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList size={'small'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList size={'small'}>
+          <Tab value={'tab-1'} as={'a'}>
             Pictures
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
             Music
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
             Videos
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
             Documents
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example006Demo() {
+function MediumTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList size={'medium'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList size={'medium'}>
+          <Tab value={'tab-1'} as={'a'}>
             Pictures
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
             Music
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
             Videos
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
             Documents
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example007Demo() {
+function LargeTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList size={'large'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList size={'large'}>
+          <Tab value={'tab-1'} as={'a'}>
             Pictures
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
             Music
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
             Videos
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
             Documents
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example008Demo() {
+function BoxedTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList variant={'boxed'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList variant={'boxed'}>
+          <Tab value={'tab-1'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>{' '}
-            <span>Pictures</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Pictures</span>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>{' '}
-            <span>Music</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Music</span>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>{' '}
-            <span>Videos</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Videos</span>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>{' '}
-            <span>Documents</span>{' '}
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+            </Icon>
+            <span>Documents</span>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example009Demo() {
+function ToggleTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList variant={'toggle'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList variant={'toggle'}>
+          <Tab value={'tab-1'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>{' '}
-            <span>Pictures</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Pictures</span>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>{' '}
-            <span>Music</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Music</span>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>{' '}
-            <span>Videos</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Videos</span>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>{' '}
-            <span>Documents</span>{' '}
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+            </Icon>
+            <span>Documents</span>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example010Demo() {
+function RoundedToggleTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList variant={'toggle-rounded'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList variant={'toggle-rounded'}>
+          <Tab value={'tab-1'} as={'a'}>
+            <Icon size={'small'}>
               <i className={'fas fa-image'} />
-            </ui.Icon>{' '}
-            <span>Pictures</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Pictures</span>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
+            <Icon size={'small'}>
               <i className={'fas fa-music'} />
-            </ui.Icon>{' '}
-            <span>Music</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Music</span>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
+            <Icon size={'small'}>
               <i className={'fas fa-film'} />
-            </ui.Icon>{' '}
-            <span>Videos</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Videos</span>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
+            <Icon size={'small'}>
               <i className={'fas fa-file-alt'} />
-            </ui.Icon>{' '}
-            <span>Documents</span>{' '}
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+            </Icon>
+            <span>Documents</span>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example011Demo() {
+function FullWidthTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={null}>
-        <ui.TabsList fullWidth>
-          <ui.Tab value={'tab-1'} as={'a'}>
-            {' '}
-            <ui.Icon>
+      <Tabs defaultValue={null}>
+        <TabsList fullWidth>
+          <Tab value={'tab-1'} as={'a'}>
+            <Icon>
               <i aria-hidden={'true'} className={'fas fa-angle-left'} />
-            </ui.Icon>{' '}
-            <span>Left</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
-            {' '}
-            <ui.Icon>
+            </Icon>
+            <span>Left</span>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
+            <Icon>
               <i aria-hidden={'true'} className={'fas fa-angle-up'} />
-            </ui.Icon>{' '}
-            <span>Up</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
-            {' '}
-            <span>Right</span>{' '}
-            <ui.Icon>
+            </Icon>
+            <span>Up</span>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
+            <span>Right</span>
+            <Icon>
               <i aria-hidden={'true'} className={'fas fa-angle-right'} />
-            </ui.Icon>{' '}
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+            </Icon>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example012Demo() {
+function CenteredBoxedTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList alignment={'centered'} variant={'boxed'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList alignment={'centered'} variant={'boxed'}>
+          <Tab value={'tab-1'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>{' '}
-            <span>Pictures</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Pictures</span>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>{' '}
-            <span>Music</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Music</span>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>{' '}
-            <span>Videos</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Videos</span>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>{' '}
-            <span>Documents</span>{' '}
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+            </Icon>
+            <span>Documents</span>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example013Demo() {
+function FullWidthToggleTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList variant={'toggle'} fullWidth>
-          <ui.Tab value={'tab-1'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList variant={'toggle'} fullWidth>
+          <Tab value={'tab-1'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>{' '}
-            <span>Pictures</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Pictures</span>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>{' '}
-            <span>Music</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Music</span>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>{' '}
-            <span>Videos</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Videos</span>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>{' '}
-            <span>Documents</span>{' '}
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+            </Icon>
+            <span>Documents</span>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example014Demo() {
+function MediumCenteredBoxedTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList alignment={'centered'} variant={'boxed'} size={'medium'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList alignment={'centered'} variant={'boxed'} size={'medium'}>
+          <Tab value={'tab-1'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>{' '}
-            <span>Pictures</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Pictures</span>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>{' '}
-            <span>Music</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Music</span>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>{' '}
-            <span>Videos</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
-            {' '}
-            <ui.Icon size={'small'}>
+            </Icon>
+            <span>Videos</span>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
+            <Icon size={'small'}>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>{' '}
-            <span>Documents</span>{' '}
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+            </Icon>
+            <span>Documents</span>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-function Example015Demo() {
+function LargeFullWidthToggleTabsDemo() {
   return (
     <>
-      <ui.Tabs defaultValue={'tab-1'}>
-        <ui.TabsList variant={'toggle'} fullWidth size={'large'}>
-          <ui.Tab value={'tab-1'} as={'a'}>
-            {' '}
-            <ui.Icon>
+      <Tabs defaultValue={'tab-1'}>
+        <TabsList variant={'toggle'} fullWidth size={'large'}>
+          <Tab value={'tab-1'} as={'a'}>
+            <Icon>
               <i aria-hidden={'true'} className={'fas fa-image'} />
-            </ui.Icon>{' '}
-            <span>Pictures</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-2'} as={'a'}>
-            {' '}
-            <ui.Icon>
+            </Icon>
+            <span>Pictures</span>
+          </Tab>
+          <Tab value={'tab-2'} as={'a'}>
+            <Icon>
               <i aria-hidden={'true'} className={'fas fa-music'} />
-            </ui.Icon>{' '}
-            <span>Music</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-3'} as={'a'}>
-            {' '}
-            <ui.Icon>
+            </Icon>
+            <span>Music</span>
+          </Tab>
+          <Tab value={'tab-3'} as={'a'}>
+            <Icon>
               <i aria-hidden={'true'} className={'fas fa-film'} />
-            </ui.Icon>{' '}
-            <span>Videos</span>{' '}
-          </ui.Tab>
-          <ui.Tab value={'tab-4'} as={'a'}>
-            {' '}
-            <ui.Icon>
+            </Icon>
+            <span>Videos</span>
+          </Tab>
+          <Tab value={'tab-4'} as={'a'}>
+            <Icon>
               <i aria-hidden={'true'} className={'far fa-file-alt'} />
-            </ui.Icon>{' '}
-            <span>Documents</span>{' '}
-          </ui.Tab>
-        </ui.TabsList>
-      </ui.Tabs>
+            </Icon>
+            <span>Documents</span>
+          </Tab>
+        </TabsList>
+      </Tabs>
     </>
   )
 }
 
-export const Example001 = {
+export const DefaultTabsStory = {
   name: 'Default tabs',
   parameters: {
     official: { id: 'components-tabs/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction DefaultTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList>\n          <Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            Music\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            Videos\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            Documents\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultTabsDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const CenteredTabsStory = {
   name: 'Centered tabs',
   parameters: {
     official: { id: 'components-tabs/alignment/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList alignment={'centered'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction CenteredTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList alignment={'centered'}>\n          <Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            Music\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            Videos\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            Documents\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: CenteredTabsDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const RightAlignedTabsStory = {
   name: 'Right-aligned tabs',
   parameters: {
     official: { id: 'components-tabs/alignment/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList alignment={'right'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction RightAlignedTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList alignment={'right'}>\n          <Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            Music\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            Videos\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            Documents\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: RightAlignedTabsDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const TabsWithIconsStory = {
   name: 'Tabs with icons',
   parameters: {
     official: { id: 'components-tabs/icons/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList alignment={'centered'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Icon, Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction TabsWithIconsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList alignment={'centered'}>\n          <Tab value={'tab-1'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </Icon>\n            <span>Pictures</span>\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </Icon>\n            <span>Music</span>\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </Icon>\n            <span>Videos</span>\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </Icon>\n            <span>Documents</span>\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: TabsWithIconsDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const SmallTabsStory = {
   name: 'Small tabs',
   parameters: {
     official: { id: 'components-tabs/sizes/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList size={'small'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction SmallTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList size={'small'}>\n          <Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            Music\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            Videos\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            Documents\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: SmallTabsDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const MediumTabsStory = {
   name: 'Medium tabs',
   parameters: {
     official: { id: 'components-tabs/sizes/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList size={'medium'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction MediumTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList size={'medium'}>\n          <Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            Music\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            Videos\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            Documents\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: MediumTabsDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const LargeTabsStory = {
   name: 'Large tabs',
   parameters: {
     official: { id: 'components-tabs/sizes/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList size={'large'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            Music\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            Videos\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            Documents\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction LargeTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList size={'large'}>\n          <Tab value={'tab-1'} as={'a'}>\n            Pictures\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            Music\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            Videos\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            Documents\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: LargeTabsDemo,
 } satisfies StoryObj
 
-export const Example008 = {
+export const BoxedTabsStory = {
   name: 'Boxed tabs',
   parameters: {
     official: { id: 'components-tabs/styles/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList variant={'boxed'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Icon, Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction BoxedTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList variant={'boxed'}>\n          <Tab value={'tab-1'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </Icon>\n            <span>Pictures</span>\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </Icon>\n            <span>Music</span>\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </Icon>\n            <span>Videos</span>\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </Icon>\n            <span>Documents</span>\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example008Demo,
+  render: BoxedTabsDemo,
 } satisfies StoryObj
 
-export const Example009 = {
+export const ToggleTabsStory = {
   name: 'Toggle tabs',
   parameters: {
     official: { id: 'components-tabs/styles/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList variant={'toggle'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Icon, Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction ToggleTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList variant={'toggle'}>\n          <Tab value={'tab-1'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </Icon>\n            <span>Pictures</span>\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </Icon>\n            <span>Music</span>\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </Icon>\n            <span>Videos</span>\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </Icon>\n            <span>Documents</span>\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example009Demo,
+  render: ToggleTabsDemo,
 } satisfies StoryObj
 
-export const Example010 = {
+export const RoundedToggleTabsStory = {
   name: 'Rounded toggle tabs',
   parameters: {
     official: { id: 'components-tabs/styles/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList variant={'toggle-rounded'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i className={'fas fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Icon, Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction RoundedToggleTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList variant={'toggle-rounded'}>\n          <Tab value={'tab-1'} as={'a'}>\n            <Icon size={'small'}>\n              <i className={'fas fa-image'} />\n            </Icon>\n            <span>Pictures</span>\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            <Icon size={'small'}>\n              <i className={'fas fa-music'} />\n            </Icon>\n            <span>Music</span>\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            <Icon size={'small'}>\n              <i className={'fas fa-film'} />\n            </Icon>\n            <span>Videos</span>\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            <Icon size={'small'}>\n              <i className={'fas fa-file-alt'} />\n            </Icon>\n            <span>Documents</span>\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example010Demo,
+  render: RoundedToggleTabsDemo,
 } satisfies StoryObj
 
-export const Example011 = {
+export const FullWidthTabsStory = {
   name: 'Full-width tabs',
   parameters: {
     official: { id: 'components-tabs/styles/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={null}>\n        <ui.TabsList fullWidth>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-left'} />\n            </ui.Icon>{' '}\n            <span>Left</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-up'} />\n            </ui.Icon>{' '}\n            <span>Up</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <span>Right</span>{' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-right'} />\n            </ui.Icon>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Icon, Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction FullWidthTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={null}>\n        <TabsList fullWidth>\n          <Tab value={'tab-1'} as={'a'}>\n            <Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-left'} />\n            </Icon>\n            <span>Left</span>\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            <Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-up'} />\n            </Icon>\n            <span>Up</span>\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            <span>Right</span>\n            <Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-right'} />\n            </Icon>\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example011Demo,
+  render: FullWidthTabsDemo,
 } satisfies StoryObj
 
-export const Example012 = {
+export const CenteredBoxedTabsStory = {
   name: 'Centered boxed tabs',
   parameters: {
     official: { id: 'components-tabs/combining/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList alignment={'centered'} variant={'boxed'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Icon, Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction CenteredBoxedTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList alignment={'centered'} variant={'boxed'}>\n          <Tab value={'tab-1'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </Icon>\n            <span>Pictures</span>\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </Icon>\n            <span>Music</span>\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </Icon>\n            <span>Videos</span>\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </Icon>\n            <span>Documents</span>\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example012Demo,
+  render: CenteredBoxedTabsDemo,
 } satisfies StoryObj
 
-export const Example013 = {
+export const FullWidthToggleTabsStory = {
   name: 'Full-width toggle tabs',
   parameters: {
     official: { id: 'components-tabs/combining/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList variant={'toggle'} fullWidth>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Icon, Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction FullWidthToggleTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList variant={'toggle'} fullWidth>\n          <Tab value={'tab-1'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </Icon>\n            <span>Pictures</span>\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </Icon>\n            <span>Music</span>\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </Icon>\n            <span>Videos</span>\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </Icon>\n            <span>Documents</span>\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example013Demo,
+  render: FullWidthToggleTabsDemo,
 } satisfies StoryObj
 
-export const Example014 = {
+export const MediumCenteredBoxedTabsStory = {
   name: 'Medium centered boxed tabs',
   parameters: {
     official: { id: 'components-tabs/combining/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList alignment={'centered'} variant={'boxed'} size={'medium'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Icon, Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction MediumCenteredBoxedTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList alignment={'centered'} variant={'boxed'} size={'medium'}>\n          <Tab value={'tab-1'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </Icon>\n            <span>Pictures</span>\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </Icon>\n            <span>Music</span>\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </Icon>\n            <span>Videos</span>\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            <Icon size={'small'}>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </Icon>\n            <span>Documents</span>\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example014Demo,
+  render: MediumCenteredBoxedTabsDemo,
 } satisfies StoryObj
 
-export const Example015 = {
+export const LargeFullWidthToggleTabsStory = {
   name: 'Large full-width toggle tabs',
   parameters: {
     official: { id: 'components-tabs/combining/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Tabs defaultValue={'tab-1'}>\n        <ui.TabsList variant={'toggle'} fullWidth size={'large'}>\n          <ui.Tab value={'tab-1'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </ui.Icon>{' '}\n            <span>Pictures</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-2'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </ui.Icon>{' '}\n            <span>Music</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-3'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </ui.Icon>{' '}\n            <span>Videos</span>{' '}\n          </ui.Tab>\n          <ui.Tab value={'tab-4'} as={'a'}>\n            {' '}\n            <ui.Icon>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </ui.Icon>{' '}\n            <span>Documents</span>{' '}\n          </ui.Tab>\n        </ui.TabsList>\n      </ui.Tabs>\n    </>\n  )\n}\n",
+        code: "import { Icon, Tab, Tabs, TabsList } from '@seagreenio/react-bulma'\n\nfunction LargeFullWidthToggleTabsDemo() {\n  return (\n    <>\n      <Tabs defaultValue={'tab-1'}>\n        <TabsList variant={'toggle'} fullWidth size={'large'}>\n          <Tab value={'tab-1'} as={'a'}>\n            <Icon>\n              <i aria-hidden={'true'} className={'fas fa-image'} />\n            </Icon>\n            <span>Pictures</span>\n          </Tab>\n          <Tab value={'tab-2'} as={'a'}>\n            <Icon>\n              <i aria-hidden={'true'} className={'fas fa-music'} />\n            </Icon>\n            <span>Music</span>\n          </Tab>\n          <Tab value={'tab-3'} as={'a'}>\n            <Icon>\n              <i aria-hidden={'true'} className={'fas fa-film'} />\n            </Icon>\n            <span>Videos</span>\n          </Tab>\n          <Tab value={'tab-4'} as={'a'}>\n            <Icon>\n              <i aria-hidden={'true'} className={'far fa-file-alt'} />\n            </Icon>\n            <span>Documents</span>\n          </Tab>\n        </TabsList>\n      </Tabs>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example015Demo,
+  render: LargeFullWidthToggleTabsDemo,
 } satisfies StoryObj

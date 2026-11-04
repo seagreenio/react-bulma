@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
 import { useState } from 'react'
-import * as ui from '../../../src'
+import { Delete, Message, MessageBody, MessageHeader } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -24,1317 +24,197 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="components-message" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Message'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'Colored '}
           <strong data-official-prose="">{'message'}</strong>
           {' blocks, to emphasize part of your page'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n       \n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The Bulma '}
             <code data-official-prose="">{'message'}</code>
             {' is a multi-part component:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               {'the '}
               <code data-official-prose="">{'message'}</code>
               {' container'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      the optional '}
+              {' the optional '}
               <code data-official-prose="">{'message-header'}</code>
-              {' that can hold a title and a\n      '}
+              {' that can hold a title and a '}
               <code data-official-prose="">{'delete'}</code>
-              {' element\n    '}
+              {' element '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               {'the '}
               <code data-official-prose="">{'message-body'}</code>
               {' for the longer body of the message'}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={DefaultMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
         <h3
           data-official-prose=""
           id={'colors'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Colors\n  '}
-          </span>
-          {'\n  '}
+            {' Colors '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#colors'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The message component is available in all the\n    '}
+            {' The message component is available in all the '}
             <strong data-official-prose="">{'different colors'}</strong>
-            {' defined by the\n    '}
+            {' defined by the '}
             <a data-official-prose="" href={''}>
               <code data-official-prose="">{'$colors'}</code>
               {' Sass map'}
             </a>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/colors/001">
-          <Canvas of={Example002} />
+          <Canvas of={DarkMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/colors/002">
-          <Canvas of={Example003} />
+          <Canvas of={LinkMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/colors/003">
-          <Canvas of={Example004} />
+          <Canvas of={PrimaryMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/colors/004">
-          <Canvas of={Example005} />
+          <Canvas of={InfoMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/colors/005">
-          <Canvas of={Example006} />
+          <Canvas of={SuccessMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/colors/006">
-          <Canvas of={Example007} />
+          <Canvas of={WarningMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/colors/007">
-          <Canvas of={Example008} />
+          <Canvas of={DangerMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n  '}
         <h3
           data-official-prose=""
           id={'message-body-only'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Message body only\n  '}
-          </span>
-          {'\n  '}
+            {' Message body only '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#message-body-only'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can remove the '}
+            {' You can remove the '}
             <code data-official-prose="">{'message-header'}</code>
-            {" if you don't need it, which\n    will add a left border to the "}
+            {" if you don't need it, which will add a left border to the "}
             <code data-official-prose="">{'message-body'}</code>
-            {':\n  '}
+            {': '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/message-body-only/001">
-          <Canvas of={Example009} />
+          <Canvas of={BodyOnlyMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/message-body-only/002">
-          <Canvas of={Example010} />
+          <Canvas of={DarkBodyOnlyMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/message-body-only/003">
-          <Canvas of={Example011} />
+          <Canvas of={LinkBodyOnlyMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/message-body-only/004">
-          <Canvas of={Example012} />
+          <Canvas of={PrimaryBodyOnlyMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/message-body-only/005">
-          <Canvas of={Example013} />
+          <Canvas of={InfoBodyOnlyMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/message-body-only/006">
-          <Canvas of={Example014} />
+          <Canvas of={SuccessBodyOnlyMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/message-body-only/007">
-          <Canvas of={Example015} />
+          <Canvas of={WarningBodyOnlyMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n   '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/message-body-only/008">
-          <Canvas of={Example016} />
+          <Canvas of={DangerBodyOnlyMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n  '}
         <h3
           data-official-prose=""
           id={'sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can add one of '}
+            {' You can add one of '}
             <strong data-official-prose="">{'3 size modifiers'}</strong>
-            {' to the\n    '}
+            {' to the '}
             <code data-official-prose="">{'message'}</code>
-            {' component:\n  '}
+            {' component: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/sizes/001">
-          <Canvas of={Example017} />
+          <Canvas of={SmallMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/sizes/002">
-          <Canvas of={Example018} />
+          <Canvas of={NormalMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/sizes/003">
-          <Canvas of={Example019} />
+          <Canvas of={MediumMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-message/sizes/004">
-          <Canvas of={Example020} />
+          <Canvas of={LargeMessageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n \n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-border-l-delta'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-border-l-delta)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'-20%'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-header-weight'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-header-weight)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-weight-semibold)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-header-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-header-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1em 1.25em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-header-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-header-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-body-border-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-body-border-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0 0 0 4px'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-body-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-body-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-body-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-body-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1.25em 1.5em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-body-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-body-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius-small)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-body-pre-code-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-body-pre-code-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'transparent'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-header-body-border-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-header-body-border-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-border-l-delta'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-border-l-delta)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'-20%'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-header-weight'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-header-weight)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-weight-semibold)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-header-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-header-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1em 1.25em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-header-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-header-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-body-border-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-body-border-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0 0 0 4px'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-body-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-body-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-body-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-body-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1.25em 1.5em'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-body-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-body-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius-small)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-body-pre-code-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-body-pre-code-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'transparent'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$message-header-body-border-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-message-header-body-border-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function DefaultMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Hello World</p>{' '}
-            <ui.Delete
-              aria-label={'delete'}
-              onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+        <Message>
+          <MessageHeader>
+            <p>Hello World</p>
+            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
@@ -1342,31 +222,25 @@ function Example001Demo() {
             Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
             arcu et sollicitudin porttitor, tortor urna tempor ligula, id
             porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-            facilisis sodales sem.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            facilisis sodales sem.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example002Demo() {
+function DarkMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message color={'dark'}>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Dark</p>{' '}
-            <ui.Delete
-              aria-label={'delete'}
-              onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+        <Message color={'dark'}>
+          <MessageHeader>
+            <p>Dark</p>
+            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
@@ -1374,31 +248,25 @@ function Example002Demo() {
             Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
             arcu et sollicitudin porttitor, tortor urna tempor ligula, id
             porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-            facilisis sodales sem.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            facilisis sodales sem.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example003Demo() {
+function LinkMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message color={'link'}>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Link</p>{' '}
-            <ui.Delete
-              aria-label={'delete'}
-              onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+        <Message color={'link'}>
+          <MessageHeader>
+            <p>Link</p>
+            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
@@ -1406,31 +274,25 @@ function Example003Demo() {
             Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
             arcu et sollicitudin porttitor, tortor urna tempor ligula, id
             porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-            facilisis sodales sem.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            facilisis sodales sem.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example004Demo() {
+function PrimaryMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message color={'primary'}>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Primary</p>{' '}
-            <ui.Delete
-              aria-label={'delete'}
-              onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+        <Message color={'primary'}>
+          <MessageHeader>
+            <p>Primary</p>
+            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
@@ -1438,31 +300,25 @@ function Example004Demo() {
             Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
             arcu et sollicitudin porttitor, tortor urna tempor ligula, id
             porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-            facilisis sodales sem.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            facilisis sodales sem.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example005Demo() {
+function InfoMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message color={'info'}>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Info</p>{' '}
-            <ui.Delete
-              aria-label={'delete'}
-              onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+        <Message color={'info'}>
+          <MessageHeader>
+            <p>Info</p>
+            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
@@ -1470,31 +326,25 @@ function Example005Demo() {
             Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
             arcu et sollicitudin porttitor, tortor urna tempor ligula, id
             porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-            facilisis sodales sem.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            facilisis sodales sem.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example006Demo() {
+function SuccessMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message color={'success'}>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Success</p>{' '}
-            <ui.Delete
-              aria-label={'delete'}
-              onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+        <Message color={'success'}>
+          <MessageHeader>
+            <p>Success</p>
+            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
@@ -1502,31 +352,25 @@ function Example006Demo() {
             Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
             arcu et sollicitudin porttitor, tortor urna tempor ligula, id
             porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-            facilisis sodales sem.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            facilisis sodales sem.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example007Demo() {
+function WarningMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message color={'warning'}>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Warning</p>{' '}
-            <ui.Delete
-              aria-label={'delete'}
-              onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+        <Message color={'warning'}>
+          <MessageHeader>
+            <p>Warning</p>
+            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
@@ -1534,31 +378,25 @@ function Example007Demo() {
             Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
             arcu et sollicitudin porttitor, tortor urna tempor ligula, id
             porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-            facilisis sodales sem.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            facilisis sodales sem.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example008Demo() {
+function DangerMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message color={'danger'}>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Danger</p>{' '}
-            <ui.Delete
-              aria-label={'delete'}
-              onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+        <Message color={'danger'}>
+          <MessageHeader>
+            <p>Danger</p>
+            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
@@ -1566,21 +404,19 @@ function Example008Demo() {
             Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
             arcu et sollicitudin porttitor, tortor urna tempor ligula, id
             porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-            facilisis sodales sem.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            facilisis sodales sem.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example009Demo() {
+function BodyOnlyMessageDemo() {
   return (
     <>
-      <ui.Message>
-        {' '}
-        <ui.MessageBody>
-          {' '}
+      <Message>
+        <MessageBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
@@ -1588,20 +424,18 @@ function Example009Demo() {
           <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
           sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
           magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
-          sem.{' '}
-        </ui.MessageBody>{' '}
-      </ui.Message>
+          sem.
+        </MessageBody>
+      </Message>
     </>
   )
 }
 
-function Example010Demo() {
+function DarkBodyOnlyMessageDemo() {
   return (
     <>
-      <ui.Message color={'dark'}>
-        {' '}
-        <ui.MessageBody>
-          {' '}
+      <Message color={'dark'}>
+        <MessageBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
@@ -1609,20 +443,18 @@ function Example010Demo() {
           <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
           sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
           magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
-          sem.{' '}
-        </ui.MessageBody>{' '}
-      </ui.Message>
+          sem.
+        </MessageBody>
+      </Message>
     </>
   )
 }
 
-function Example011Demo() {
+function LinkBodyOnlyMessageDemo() {
   return (
     <>
-      <ui.Message color={'link'}>
-        {' '}
-        <ui.MessageBody>
-          {' '}
+      <Message color={'link'}>
+        <MessageBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
@@ -1630,20 +462,18 @@ function Example011Demo() {
           <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
           sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
           magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
-          sem.{' '}
-        </ui.MessageBody>{' '}
-      </ui.Message>
+          sem.
+        </MessageBody>
+      </Message>
     </>
   )
 }
 
-function Example012Demo() {
+function PrimaryBodyOnlyMessageDemo() {
   return (
     <>
-      <ui.Message color={'primary'}>
-        {' '}
-        <ui.MessageBody>
-          {' '}
+      <Message color={'primary'}>
+        <MessageBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
@@ -1651,20 +481,18 @@ function Example012Demo() {
           <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
           sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
           magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
-          sem.{' '}
-        </ui.MessageBody>{' '}
-      </ui.Message>
+          sem.
+        </MessageBody>
+      </Message>
     </>
   )
 }
 
-function Example013Demo() {
+function InfoBodyOnlyMessageDemo() {
   return (
     <>
-      <ui.Message color={'info'}>
-        {' '}
-        <ui.MessageBody>
-          {' '}
+      <Message color={'info'}>
+        <MessageBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
@@ -1672,20 +500,18 @@ function Example013Demo() {
           <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
           sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
           magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
-          sem.{' '}
-        </ui.MessageBody>{' '}
-      </ui.Message>
+          sem.
+        </MessageBody>
+      </Message>
     </>
   )
 }
 
-function Example014Demo() {
+function SuccessBodyOnlyMessageDemo() {
   return (
     <>
-      <ui.Message color={'success'}>
-        {' '}
-        <ui.MessageBody>
-          {' '}
+      <Message color={'success'}>
+        <MessageBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
@@ -1693,20 +519,18 @@ function Example014Demo() {
           <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
           sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
           magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
-          sem.{' '}
-        </ui.MessageBody>{' '}
-      </ui.Message>
+          sem.
+        </MessageBody>
+      </Message>
     </>
   )
 }
 
-function Example015Demo() {
+function WarningBodyOnlyMessageDemo() {
   return (
     <>
-      <ui.Message color={'warning'}>
-        {' '}
-        <ui.MessageBody>
-          {' '}
+      <Message color={'warning'}>
+        <MessageBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
@@ -1714,20 +538,18 @@ function Example015Demo() {
           <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
           sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
           magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
-          sem.{' '}
-        </ui.MessageBody>{' '}
-      </ui.Message>
+          sem.
+        </MessageBody>
+      </Message>
     </>
   )
 }
 
-function Example016Demo() {
+function DangerBodyOnlyMessageDemo() {
   return (
     <>
-      <ui.Message color={'danger'}>
-        {' '}
-        <ui.MessageBody>
-          {' '}
+      <Message color={'danger'}>
+        <MessageBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
           <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
           nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
@@ -1735,428 +557,413 @@ function Example016Demo() {
           <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
           sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
           magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
-          sem.{' '}
-        </ui.MessageBody>{' '}
-      </ui.Message>
+          sem.
+        </MessageBody>
+      </Message>
     </>
   )
 }
 
-function Example017Demo() {
+function SmallMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message size={'small'}>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Small message</p>{' '}
-            <ui.Delete
+        <Message size={'small'}>
+          <MessageHeader>
+            <p>Small message</p>
+            <Delete
               aria-label={'delete'}
               size={'small'}
               onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+            />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla.Nullam gravida purus diam, et dictum{' '}
             <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,
-            in mollis lectus.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            in mollis lectus.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example018Demo() {
+function NormalMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Normal message</p>{' '}
-            <ui.Delete
-              aria-label={'delete'}
-              onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+        <Message>
+          <MessageHeader>
+            <p>Normal message</p>
+            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla.Nullam gravida purus diam, et dictum{' '}
             <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,
-            in mollis lectus.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            in mollis lectus.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example019Demo() {
+function MediumMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message size={'medium'}>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Medium message</p>{' '}
-            <ui.Delete
+        <Message size={'medium'}>
+          <MessageHeader>
+            <p>Medium message</p>
+            <Delete
               aria-label={'delete'}
               size={'medium'}
               onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+            />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla.Nullam gravida purus diam, et dictum{' '}
             <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,
-            in mollis lectus.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            in mollis lectus.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-function Example020Demo() {
+function LargeMessageDemo() {
   const [visible1, setVisible1] = useState(true)
   return (
     <>
       {visible1 && (
-        <ui.Message size={'large'}>
-          {' '}
-          <ui.MessageHeader>
-            {' '}
-            <p>Large message</p>{' '}
-            <ui.Delete
+        <Message size={'large'}>
+          <MessageHeader>
+            <p>Large message</p>
+            <Delete
               aria-label={'delete'}
               size={'large'}
               onClick={() => setVisible1(false)}
-            />{' '}
-          </ui.MessageHeader>{' '}
-          <ui.MessageBody>
-            {' '}
+            />
+          </MessageHeader>
+          <MessageBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,
             porta nec nulla.Nullam gravida purus diam, et dictum{' '}
             <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,
-            in mollis lectus.{' '}
-          </ui.MessageBody>{' '}
-        </ui.Message>
+            in mollis lectus.
+          </MessageBody>
+        </Message>
       )}
     </>
   )
 }
 
-export const Example001 = {
+export const DefaultMessageStory = {
   name: 'Default message',
   parameters: {
     official: { id: 'components-message/basic/001' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Hello World</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction DefaultMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message>\n          <MessageHeader>\n            <p>Hello World</p>\n            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: DefaultMessageDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const DarkMessageStory = {
   name: 'Dark message',
   parameters: {
     official: { id: 'components-message/colors/001' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'dark'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Dark</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction DarkMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message color={'dark'}>\n          <MessageHeader>\n            <p>Dark</p>\n            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: DarkMessageDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const LinkMessageStory = {
   name: 'Link message',
   parameters: {
     official: { id: 'components-message/colors/002' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'link'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Link</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction LinkMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message color={'link'}>\n          <MessageHeader>\n            <p>Link</p>\n            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: LinkMessageDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const PrimaryMessageStory = {
   name: 'Primary message',
   parameters: {
     official: { id: 'components-message/colors/003' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'primary'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Primary</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction PrimaryMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message color={'primary'}>\n          <MessageHeader>\n            <p>Primary</p>\n            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: PrimaryMessageDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const InfoMessageStory = {
   name: 'Info message',
   parameters: {
     official: { id: 'components-message/colors/004' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'info'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Info</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction InfoMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message color={'info'}>\n          <MessageHeader>\n            <p>Info</p>\n            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: InfoMessageDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const SuccessMessageStory = {
   name: 'Success message',
   parameters: {
     official: { id: 'components-message/colors/005' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'success'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Success</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction SuccessMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message color={'success'}>\n          <MessageHeader>\n            <p>Success</p>\n            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: SuccessMessageDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const WarningMessageStory = {
   name: 'Warning message',
   parameters: {
     official: { id: 'components-message/colors/006' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'warning'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Warning</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction WarningMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message color={'warning'}>\n          <MessageHeader>\n            <p>Warning</p>\n            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: WarningMessageDemo,
 } satisfies StoryObj
 
-export const Example008 = {
+export const DangerMessageStory = {
   name: 'Danger message',
   parameters: {
     official: { id: 'components-message/colors/007' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message color={'danger'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Danger</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction DangerMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message color={'danger'}>\n          <MessageHeader>\n            <p>Danger</p>\n            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam\n            gravida purus diam, et dictum <a>felis venenatis</a> efficitur.\n            Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,\n            arcu et sollicitudin porttitor, tortor urna tempor ligula, id\n            porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,\n            facilisis sodales sem.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example008Demo,
+  render: DangerMessageDemo,
 } satisfies StoryObj
 
-export const Example009 = {
+export const BodyOnlyMessageStory = {
   name: 'Body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Message>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
+        code: "import { Message, MessageBody } from '@seagreenio/react-bulma'\n\nfunction BodyOnlyMessageDemo() {\n  return (\n    <>\n      <Message>\n        <MessageBody>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.\n        </MessageBody>\n      </Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example009Demo,
+  render: BodyOnlyMessageDemo,
 } satisfies StoryObj
 
-export const Example010 = {
+export const DarkBodyOnlyMessageStory = {
   name: 'Dark body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Message color={'dark'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
+        code: "import { Message, MessageBody } from '@seagreenio/react-bulma'\n\nfunction DarkBodyOnlyMessageDemo() {\n  return (\n    <>\n      <Message color={'dark'}>\n        <MessageBody>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.\n        </MessageBody>\n      </Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example010Demo,
+  render: DarkBodyOnlyMessageDemo,
 } satisfies StoryObj
 
-export const Example011 = {
+export const LinkBodyOnlyMessageStory = {
   name: 'Link body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Message color={'link'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
+        code: "import { Message, MessageBody } from '@seagreenio/react-bulma'\n\nfunction LinkBodyOnlyMessageDemo() {\n  return (\n    <>\n      <Message color={'link'}>\n        <MessageBody>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.\n        </MessageBody>\n      </Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example011Demo,
+  render: LinkBodyOnlyMessageDemo,
 } satisfies StoryObj
 
-export const Example012 = {
+export const PrimaryBodyOnlyMessageStory = {
   name: 'Primary body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Message color={'primary'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
+        code: "import { Message, MessageBody } from '@seagreenio/react-bulma'\n\nfunction PrimaryBodyOnlyMessageDemo() {\n  return (\n    <>\n      <Message color={'primary'}>\n        <MessageBody>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.\n        </MessageBody>\n      </Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example012Demo,
+  render: PrimaryBodyOnlyMessageDemo,
 } satisfies StoryObj
 
-export const Example013 = {
+export const InfoBodyOnlyMessageStory = {
   name: 'Info body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/005' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Message color={'info'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
+        code: "import { Message, MessageBody } from '@seagreenio/react-bulma'\n\nfunction InfoBodyOnlyMessageDemo() {\n  return (\n    <>\n      <Message color={'info'}>\n        <MessageBody>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.\n        </MessageBody>\n      </Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example013Demo,
+  render: InfoBodyOnlyMessageDemo,
 } satisfies StoryObj
 
-export const Example014 = {
+export const SuccessBodyOnlyMessageStory = {
   name: 'Success body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/006' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Message color={'success'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
+        code: "import { Message, MessageBody } from '@seagreenio/react-bulma'\n\nfunction SuccessBodyOnlyMessageDemo() {\n  return (\n    <>\n      <Message color={'success'}>\n        <MessageBody>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.\n        </MessageBody>\n      </Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example014Demo,
+  render: SuccessBodyOnlyMessageDemo,
 } satisfies StoryObj
 
-export const Example015 = {
+export const WarningBodyOnlyMessageStory = {
   name: 'Warning body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/007' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Message color={'warning'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
+        code: "import { Message, MessageBody } from '@seagreenio/react-bulma'\n\nfunction WarningBodyOnlyMessageDemo() {\n  return (\n    <>\n      <Message color={'warning'}>\n        <MessageBody>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.\n        </MessageBody>\n      </Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example015Demo,
+  render: WarningBodyOnlyMessageDemo,
 } satisfies StoryObj
 
-export const Example016 = {
+export const DangerBodyOnlyMessageStory = {
   name: 'Danger body-only message',
   parameters: {
     official: { id: 'components-message/message-body-only/008' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <ui.Message color={'danger'}>\n        {' '}\n        <ui.MessageBody>\n          {' '}\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.{' '}\n        </ui.MessageBody>{' '}\n      </ui.Message>\n    </>\n  )\n}\n",
+        code: "import { Message, MessageBody } from '@seagreenio/react-bulma'\n\nfunction DangerBodyOnlyMessageDemo() {\n  return (\n    <>\n      <Message color={'danger'}>\n        <MessageBody>\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta\n          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida\n          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac{' '}\n          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et\n          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi\n          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales\n          sem.\n        </MessageBody>\n      </Message>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example016Demo,
+  render: DangerBodyOnlyMessageDemo,
 } satisfies StoryObj
 
-export const Example017 = {
+export const SmallMessageStory = {
   name: 'Small message',
   parameters: {
     official: { id: 'components-message/sizes/001' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message size={'small'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Small message</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              size={'small'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction SmallMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message size={'small'}>\n          <MessageHeader>\n            <p>Small message</p>\n            <Delete\n              aria-label={'delete'}\n              size={'small'}\n              onClick={() => setVisible1(false)}\n            />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example017Demo,
+  render: SmallMessageDemo,
 } satisfies StoryObj
 
-export const Example018 = {
+export const NormalMessageStory = {
   name: 'Normal message',
   parameters: {
     official: { id: 'components-message/sizes/002' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Normal message</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction NormalMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message>\n          <MessageHeader>\n            <p>Normal message</p>\n            <Delete aria-label={'delete'} onClick={() => setVisible1(false)} />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example018Demo,
+  render: NormalMessageDemo,
 } satisfies StoryObj
 
-export const Example019 = {
+export const MediumMessageStory = {
   name: 'Medium message',
   parameters: {
     official: { id: 'components-message/sizes/003' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example019Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message size={'medium'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Medium message</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              size={'medium'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction MediumMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message size={'medium'}>\n          <MessageHeader>\n            <p>Medium message</p>\n            <Delete\n              aria-label={'delete'}\n              size={'medium'}\n              onClick={() => setVisible1(false)}\n            />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example019Demo,
+  render: MediumMessageDemo,
 } satisfies StoryObj
 
-export const Example020 = {
+export const LargeMessageStory = {
   name: 'Large message',
   parameters: {
     official: { id: 'components-message/sizes/004' },
     docs: {
       source: {
-        code: "import { useState } from 'react'\nimport * as ui from '@seagreenio/react-bulma'\n\nfunction Example020Demo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <ui.Message size={'large'}>\n          {' '}\n          <ui.MessageHeader>\n            {' '}\n            <p>Large message</p>{' '}\n            <ui.Delete\n              aria-label={'delete'}\n              size={'large'}\n              onClick={() => setVisible1(false)}\n            />{' '}\n          </ui.MessageHeader>{' '}\n          <ui.MessageBody>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.{' '}\n          </ui.MessageBody>{' '}\n        </ui.Message>\n      )}\n    </>\n  )\n}\n",
+        code: "import { useState } from 'react'\nimport {\n  Delete,\n  Message,\n  MessageBody,\n  MessageHeader,\n} from '@seagreenio/react-bulma'\n\nfunction LargeMessageDemo() {\n  const [visible1, setVisible1] = useState(true)\n  return (\n    <>\n      {visible1 && (\n        <Message size={'large'}>\n          <MessageHeader>\n            <p>Large message</p>\n            <Delete\n              aria-label={'delete'}\n              size={'large'}\n              onClick={() => setVisible1(false)}\n            />\n          </MessageHeader>\n          <MessageBody>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}\n            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut,\n            porta nec nulla.Nullam gravida purus diam, et dictum{' '}\n            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,\n            in mollis lectus.\n          </MessageBody>\n        </Message>\n      )}\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example020Demo,
+  render: LargeMessageDemo,
 } satisfies StoryObj

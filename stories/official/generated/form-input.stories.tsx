@@ -1,7 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import {
+  Content,
+  Control,
+  Field,
+  FieldBody,
+  FieldLabel,
+  Icon,
+  Input,
+  Label,
+} from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,34 +32,24 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="form-input" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Input'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'The '}
           <strong data-official-prose="">{'text input'}</strong>
           {' and its variations'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The Bulma '}
+            {' The Bulma '}
             <code data-official-prose="">{'input'}</code>
             {' CSS class is meant for '}
             <code data-official-prose="">{'<input>'}</code>
-            {' HTML elements. The following\n    '}
+            {' HTML elements. The following '}
             <a
               data-official-prose=""
               href={'http://htmlreference.io/element/input/'}
@@ -58,345 +57,394 @@ function OfficialDocs() {
             >
               {'type attributes'}
             </a>
-            {'\n    are supported:\n  '}
+            {' are supported: '}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'type="text"'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'type="password"'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'type="email"'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'type="tel"'}</code>
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
             {'Several '}
             <strong data-official-prose="">{'modifiers'}</strong>
             {' are supported which affect:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      the '}
+              {' the '}
               <strong data-official-prose="">
                 <a data-official-prose="" href={'#colors'}>
                   {'color'}
                 </a>
               </strong>
-              {'\n    '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      the '}
+              {' the '}
               <strong data-official-prose="">
                 <a data-official-prose="" href={'#sizes'}>
                   {'size'}
                 </a>
               </strong>
-              {'\n    '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      the '}
+              {' the '}
               <strong data-official-prose="">
                 <a data-official-prose="" href={'#states'}>
                   {'state'}
                 </a>
               </strong>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
-        <div data-official-example="form-input/basic/001">
-          <Canvas of={Example001} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/basic/001'}
+          >
+            <div data-official-example="form-input/basic/001">
+              <Canvas of={TextInputStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-half bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<input class="input" type="text" placeholder="Text input" />\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'colors'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Colors\n  '}
-          </span>
-          {'\n  '}
+            {' Colors '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#colors'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-input/colors/001">
-          <Canvas of={Example002} />
+          <Canvas of={LinkInputStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-input/colors/002">
-          <Canvas of={Example003} />
+          <Canvas of={PrimaryInputStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-input/colors/003">
-          <Canvas of={Example004} />
+          <Canvas of={InfoInputStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-input/colors/004">
-          <Canvas of={Example005} />
+          <Canvas of={SuccessInputStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-input/colors/005">
-          <Canvas of={Example006} />
+          <Canvas of={WarningInputStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-input/colors/006">
-          <Canvas of={Example007} />
+          <Canvas of={DangerInputStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h3
           data-official-prose=""
           id={'sizes'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sizes\n  '}
-          </span>
-          {'\n  '}
+            {' Sizes '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#sizes'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-input/sizes/001">
-          <Canvas of={Example008} />
+          <Canvas of={SmallInputStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-input/sizes/002">
-          <Canvas of={Example009} />
+          <Canvas of={NormalSizeInputStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-input/sizes/003">
-          <Canvas of={Example010} />
+          <Canvas of={MediumInputStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n  \n  '}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="form-input/sizes/004">
-          <Canvas of={Example011} />
+          <Canvas of={LargeInputStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <h3
           data-official-prose=""
           id={'styles'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Styles\n  '}
-          </span>
-          {'\n  '}
+            {' Styles '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#styles'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
-        <div data-official-example="form-input/styles/001">
-          <Canvas of={Example012} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/styles/001'}
+          >
+            <div data-official-example="form-input/styles/001">
+              <Canvas of={RoundedInputStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<input class="input is-rounded" type="text" placeholder="Rounded input" />\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'states'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    States\n  '}
-          </span>
-          {'\n  '}
+            {' States '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#states'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <h4 data-official-prose="" className={'title is-5'}>
           {'Normal'}
         </h4>
-        {'\n\n'}
-        <div data-official-example="form-input/normal/001">
-          <Canvas of={Example013} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/normal/001'}
+          >
+            <div data-official-example="form-input/normal/001">
+              <Canvas of={NormalStateStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control">\n  <input class="input" type="text" placeholder="Normal input" />\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'title is-5'}>
           {'Hover'}
         </h4>
-        {'\n\n'}
-        <div data-official-example="form-input/hover/001">
-          <Canvas of={Example014} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/hover/001'}
+          >
+            <div data-official-example="form-input/hover/001">
+              <Canvas of={HoverStateStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control">\n  <input class="input is-hovered" type="text" placeholder="Hovered input" />\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'title is-5'}>
           {'Focus'}
         </h4>
-        {'\n\n'}
-        <div data-official-example="form-input/focus/001">
-          <Canvas of={Example015} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/focus/001'}
+          >
+            <div data-official-example="form-input/focus/001">
+              <Canvas of={FocusStateStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control">\n  <input class="input is-focused" type="text" placeholder="Focused input" />\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'title is-5'}>
           {'Loading'}
         </h4>
-        {'\n\n'}
-        <div data-official-example="form-input/loading/001">
-          <Canvas of={Example016} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/loading/001'}
+          >
+            <div data-official-example="form-input/loading/001">
+              <Canvas of={LoadingInputStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control is-loading">\n  <input class="input" type="text" placeholder="Loading input" />\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-example="form-input/loading/002">
-          <Canvas of={Example017} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/loading/002'}
+          >
+            <div data-official-example="form-input/loading/002">
+              <Canvas of={LoadingSpinnerSizesStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="field">\n  <div class="control is-small is-loading">\n    <input\n      class="input is-small"\n      type="text"\n      placeholder="Small loading input"\n    />\n  </div>\n</div>\n<div class="field">\n  <div class="control is-loading">\n    <input class="input" type="text" placeholder="Normal loading input" />\n  </div>\n</div>\n<div class="field">\n  <div class="control is-medium is-loading">\n    <input\n      class="input is-medium"\n      type="text"\n      placeholder="Medium loading input"\n    />\n  </div>\n</div>\n<div class="field">\n  <div class="control is-large is-loading">\n    <input\n      class="input is-large"\n      type="text"\n      placeholder="Large loading input"\n    />\n  </div>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'title is-5'}>
           {'Disabled'}
         </h4>
-        {'\n\n'}
-        <div data-official-example="form-input/disabled/001">
-          <Canvas of={Example018} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/disabled/001'}
+          >
+            <div data-official-example="form-input/disabled/001">
+              <Canvas of={DisabledInputStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control">\n  <input class="input" type="text" placeholder="Disabled input" disabled />\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h4 data-official-prose="" className={'title is-5'}>
           {'Readonly and static inputs'}
         </h4>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    If you use the '}
+            {' If you use the '}
             <code data-official-prose="">{'readonly'}</code>
             {
-              ' HTML attribute, the input will look similar to a normal one, but is not\n    editable and has no shadow.\n  '
+              ' HTML attribute, the input will look similar to a normal one, but is not editable and has no shadow. '
             }
           </p>
-          {'\n'}
         </div>
-        {'\n'}
-        <div data-official-example="form-input/readonly-and-static-inputs/001">
-          <Canvas of={Example019} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/readonly-and-static-inputs/001'}
+          >
+            <div data-official-example="form-input/readonly-and-static-inputs/001">
+              <Canvas of={ReadOnlyInputStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control">\n  <input class="input" type="text" value="This text is readonly" readonly />\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    If you '}
+            {' If you '}
             <em data-official-prose="">{'also'}</em>
             {' append the '}
             <code data-official-prose="">{'is-static'}</code>
             {
-              ' modifier, it removes the background, border, shadow, and\n    horizontal padding, while maintaining the '
+              ' modifier, it removes the background, border, shadow, and horizontal padding, while maintaining the '
             }
             <strong data-official-prose="">{'vertical spacing'}</strong>
             {
-              ' so you can easily align the input in any\n    context, like a horizontal form.\n  '
+              ' so you can easily align the input in any context, like a horizontal form. '
             }
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="form-input/readonly-and-static-inputs/002">
-          <Canvas of={Example020} />
+          <Canvas of={StaticInputStory} />
         </div>
-        {'\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -406,2164 +454,885 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'with-font-awesome-icons'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    With Font Awesome icons\n  '}
-          </span>
-          {'\n  '}
+            {' With Font Awesome icons '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#with-font-awesome-icons'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can append one of 2 '}
             <strong data-official-prose="">{'modifiers'}</strong>
             {' on a control:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'has-icons-left'}</code>
-              {'\n    '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               {'and/or '}
               <code data-official-prose="">{'has-icons-right'}</code>
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
             {'You also need to add a modifier on the '}
             <strong data-official-prose="">{'icon'}</strong>
             {':'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'icon is-left'}</code>
               {' if '}
               <code data-official-prose="">{'has-icons-left'}</code>
               {' is used'}
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'icon is-right'}</code>
               {' if '}
               <code data-official-prose="">{'has-icons-right'}</code>
               {' is used'}
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
             {'The size of the '}
             <strong data-official-prose="">{'input'}</strong>
             {' will define the size of the icon container.'}
           </p>
-          {'\n'}
         </div>
-        {'\n'}
-        <div data-official-example="form-input/with-font-awesome-icons/001">
-          <Canvas of={Example021} />
-        </div>
-        {'\n\n'}
-        <div data-official-example="form-input/with-font-awesome-icons/002">
-          <Canvas of={Example022} />
-        </div>
-        {'\n\n'}
-        <div data-official-example="form-input/with-font-awesome-icons/003">
-          <Canvas of={Example023} />
-        </div>
-        {'\n\n'}
-        <div data-official-example="form-input/with-font-awesome-icons/004">
-          <Canvas of={Example024} />
-        </div>
-        {'\n\n'}
-        <div data-official-example="form-input/with-font-awesome-icons/005">
-          <Canvas of={Example025} />
-        </div>
-        {'\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
+        <div data-official-prose="" className={'columns'}>
+          <div
             data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
+            className={'column is-half'}
+            data-source-example={'form-input/with-font-awesome-icons/001'}
           >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-h'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-h)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-h)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-s'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-s)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-s)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-l'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-l)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main-l)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-border-l'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-border-l)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-border-l)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-border-l-delta'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-border-l-delta)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0%'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-hover-border-l-delta'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-hover-border-l-delta)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-hover-border-l-delta)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-active-border-l-delta'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-active-border-l-delta)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-active-border-l-delta)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-color-l'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-color-l)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-strong-l)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-background-l'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-background-l)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main-l)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-background-l-delta'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-background-l-delta)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0%'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-height'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-height)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-control-height)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-shadow'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          'inset 0 0.0625em 0.125em hsla(\n  var(--bulma-scheme-h),\n  var(--bulma-scheme-s),\n  var(--bulma-scheme-invert-l),\n  0.05\n)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-placeholder-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-placeholder-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          'hsla(\n  var(--bulma-text-h),\n  var(--bulma-text-s),\n  var(--bulma-text-strong-l),\n  0.3\n)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-focus-h'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-focus-h)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-focus-h)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-focus-s'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-focus-s)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-focus-s)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-focus-l'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-focus-l)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-focus-l)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-focus-shadow-size'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-focus-shadow-size)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-focus-shadow-size)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-focus-shadow-alpha'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-focus-shadow-alpha)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-focus-shadow-alpha)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-disabled-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-disabled-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-weak)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-disabled-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-disabled-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-background)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-disabled-border-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-disabled-border-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-background)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-disabled-placeholder-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-disabled-placeholder-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          'hsla(\n  var(--bulma-text-h),\n  var(--bulma-text-s),\n  var(--bulma-text-weak-l),\n  0.3\n)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-arrow'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-arrow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-icon-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-icon-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-light)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-icon-hover-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-icon-hover-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-weak)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-icon-focus-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-icon-focus-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-link)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$input-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-input-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
+            <div data-official-example="form-input/with-font-awesome-icons/001">
+              <Canvas of={InputsWithIconsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="field">\n  <p class="control has-icons-left has-icons-right">\n    <input class="input" type="email" placeholder="Email" />\n    <span class="icon is-small is-left">\n      <i class="fas fa-envelope"></i>\n    </span>\n    <span class="icon is-small is-right">\n      <i class="fas fa-check"></i>\n    </span>\n  </p>\n</div>\n<div class="field">\n  <p class="control has-icons-left">\n    <input class="input" type="password" placeholder="Password" />\n    <span class="icon is-small is-left">\n      <i class="fas fa-lock"></i>\n    </span>\n  </p>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n\n'}
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/with-font-awesome-icons/002'}
+          >
+            <div data-official-example="form-input/with-font-awesome-icons/002">
+              <Canvas of={SmallInputWithIconsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control has-icons-left has-icons-right">\n  <input class="input is-small" type="email" placeholder="Email" />\n  <span class="icon is-small is-left">\n    <i class="fas fa-envelope"></i>\n  </span>\n  <span class="icon is-small is-right">\n    <i class="fas fa-check"></i>\n  </span>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/with-font-awesome-icons/003'}
+          >
+            <div data-official-example="form-input/with-font-awesome-icons/003">
+              <Canvas of={NormalInputWithIconsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control has-icons-left has-icons-right">\n  <input class="input" type="email" placeholder="Email" />\n  <span class="icon is-small is-left">\n    <i class="fas fa-envelope"></i>\n  </span>\n  <span class="icon is-small is-right">\n    <i class="fas fa-check"></i>\n  </span>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/with-font-awesome-icons/004'}
+          >
+            <div data-official-example="form-input/with-font-awesome-icons/004">
+              <Canvas of={MediumInputWithIconsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control has-icons-left has-icons-right">\n  <input class="input is-medium" type="email" placeholder="Email" />\n  <span class="icon is-left">\n    <i class="fas fa-envelope"></i>\n  </span>\n  <span class="icon is-right">\n    <i class="fas fa-check"></i>\n  </span>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-input/with-font-awesome-icons/005'}
+          >
+            <div data-official-example="form-input/with-font-awesome-icons/005">
+              <Canvas of={LargeInputWithIconsStory} />
+            </div>
+          </div>
+          <div data-official-prose="" className={'column is-half'}>
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control has-icons-left has-icons-right">\n  <input class="input is-large" type="email" placeholder="Email" />\n  <span class="icon is-medium is-left">\n    <i class="fas fa-envelope"></i>\n  </span>\n  <span class="icon is-medium is-right">\n    <i class="fas fa-check"></i>\n  </span>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function TextInputDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Input type={'text'} placeholder={'Text input'} />{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<input class="input" type="text" placeholder="Text input" />\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Input type={'text'} placeholder={'Text input'} />
     </>
   )
 }
 
-function Example002Demo() {
+function LinkInputDemo() {
   return (
     <>
-      <ui.Input type={'text'} placeholder={'Link input'} color={'link'} />
+      <Input type={'text'} placeholder={'Link input'} color={'link'} />
     </>
   )
 }
 
-function Example003Demo() {
+function PrimaryInputDemo() {
   return (
     <>
-      <ui.Input type={'text'} placeholder={'Primary input'} color={'primary'} />
+      <Input type={'text'} placeholder={'Primary input'} color={'primary'} />
     </>
   )
 }
 
-function Example004Demo() {
+function InfoInputDemo() {
   return (
     <>
-      <ui.Input type={'text'} placeholder={'Info input'} color={'info'} />
+      <Input type={'text'} placeholder={'Info input'} color={'info'} />
     </>
   )
 }
 
-function Example005Demo() {
+function SuccessInputDemo() {
   return (
     <>
-      <ui.Input type={'text'} placeholder={'Success input'} color={'success'} />
+      <Input type={'text'} placeholder={'Success input'} color={'success'} />
     </>
   )
 }
 
-function Example006Demo() {
+function WarningInputDemo() {
   return (
     <>
-      <ui.Input type={'text'} placeholder={'Warning input'} color={'warning'} />
+      <Input type={'text'} placeholder={'Warning input'} color={'warning'} />
     </>
   )
 }
 
-function Example007Demo() {
+function DangerInputDemo() {
   return (
     <>
-      <ui.Input type={'text'} placeholder={'Danger input'} color={'danger'} />
+      <Input type={'text'} placeholder={'Danger input'} color={'danger'} />
     </>
   )
 }
 
-function Example008Demo() {
+function SmallInputDemo() {
   return (
     <>
-      <ui.Input type={'text'} placeholder={'Small input'} size={'small'} />
+      <Input type={'text'} placeholder={'Small input'} size={'small'} />
     </>
   )
 }
 
-function Example009Demo() {
+function NormalSizeInputDemo() {
   return (
     <>
-      <ui.Input type={'text'} placeholder={'Normal input'} size={'normal'} />
+      <Input type={'text'} placeholder={'Normal input'} size={'normal'} />
     </>
   )
 }
 
-function Example010Demo() {
+function MediumInputDemo() {
   return (
     <>
-      <ui.Input type={'text'} placeholder={'Medium input'} size={'medium'} />
+      <Input type={'text'} placeholder={'Medium input'} size={'medium'} />
     </>
   )
 }
 
-function Example011Demo() {
+function LargeInputDemo() {
   return (
     <>
-      <ui.Input type={'text'} placeholder={'Large input'} size={'large'} />
+      <Input type={'text'} placeholder={'Large input'} size={'large'} />
     </>
   )
 }
 
-function Example012Demo() {
+function RoundedInputDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Input type={'text'} placeholder={'Rounded input'} rounded />{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<input class="input is-rounded" type="text" placeholder="Rounded input" />\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Input type={'text'} placeholder={'Rounded input'} rounded />
     </>
   )
 }
 
-function Example013Demo() {
+function NormalStateDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control>
-            {' '}
-            <ui.Input type={'text'} placeholder={'Normal input'} />{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control">\n  <input class="input" type="text" placeholder="Normal input" />\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Control>
+        <Input type={'text'} placeholder={'Normal input'} />
+      </Control>
     </>
   )
 }
 
-function Example014Demo() {
+function HoverStateDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control>
-            {' '}
-            <ui.Input
-              type={'text'}
-              placeholder={'Hovered input'}
-              state={'hovered'}
-            />{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control">\n  <input class="input is-hovered" type="text" placeholder="Hovered input" />\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Control>
+        <Input type={'text'} placeholder={'Hovered input'} state={'hovered'} />
+      </Control>
     </>
   )
 }
 
-function Example015Demo() {
+function FocusStateDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control>
-            {' '}
-            <ui.Input
-              type={'text'}
-              placeholder={'Focused input'}
-              state={'focused'}
-            />{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control">\n  <input class="input is-focused" type="text" placeholder="Focused input" />\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Control>
+        <Input type={'text'} placeholder={'Focused input'} state={'focused'} />
+      </Control>
     </>
   )
 }
 
-function Example016Demo() {
+function LoadingInputDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control loading>
-            {' '}
-            <ui.Input type={'text'} placeholder={'Loading input'} />{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control is-loading">\n  <input class="input" type="text" placeholder="Loading input" />\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Control loading>
+        <Input type={'text'} placeholder={'Loading input'} />
+      </Control>
     </>
   )
 }
 
-function Example017Demo() {
+function LoadingSpinnerSizesDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              You can resize the loading spinner by appending{' '}
-              <code>{'is-small'}</code>, <code>{'is-medium'}</code> or{' '}
-              <code>{'is-large'}</code> to the <code>{'control'}</code>{' '}
-              container.
-            </p>{' '}
-          </ui.Content>{' '}
-          <ui.Field>
-            {' '}
-            <ui.Control size={'small'} loading>
-              {' '}
-              <ui.Input
-                type={'text'}
-                placeholder={'Small loading input'}
-                size={'small'}
-              />{' '}
-            </ui.Control>{' '}
-          </ui.Field>{' '}
-          <ui.Field>
-            {' '}
-            <ui.Control loading>
-              {' '}
-              <ui.Input
-                type={'text'}
-                placeholder={'Normal loading input'}
-              />{' '}
-            </ui.Control>{' '}
-          </ui.Field>{' '}
-          <ui.Field>
-            {' '}
-            <ui.Control size={'medium'} loading>
-              {' '}
-              <ui.Input
-                type={'text'}
-                placeholder={'Medium loading input'}
-                size={'medium'}
-              />{' '}
-            </ui.Control>{' '}
-          </ui.Field>{' '}
-          <ui.Field>
-            {' '}
-            <ui.Control size={'large'} loading>
-              {' '}
-              <ui.Input
-                type={'text'}
-                placeholder={'Large loading input'}
-                size={'large'}
-              />{' '}
-            </ui.Control>{' '}
-          </ui.Field>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="field">\n  <div class="control is-small is-loading">\n    <input\n      class="input is-small"\n      type="text"\n      placeholder="Small loading input"\n    />\n  </div>\n</div>\n<div class="field">\n  <div class="control is-loading">\n    <input class="input" type="text" placeholder="Normal loading input" />\n  </div>\n</div>\n<div class="field">\n  <div class="control is-medium is-loading">\n    <input\n      class="input is-medium"\n      type="text"\n      placeholder="Medium loading input"\n    />\n  </div>\n</div>\n<div class="field">\n  <div class="control is-large is-loading">\n    <input\n      class="input is-large"\n      type="text"\n      placeholder="Large loading input"\n    />\n  </div>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          You can resize the loading spinner by appending{' '}
+          <code>{'is-small'}</code>, <code>{'is-medium'}</code> or{' '}
+          <code>{'is-large'}</code> to the <code>{'control'}</code> container.
+        </p>
+      </Content>
+      <Field>
+        <Control size={'small'} loading>
+          <Input
+            type={'text'}
+            placeholder={'Small loading input'}
+            size={'small'}
+          />
+        </Control>
+      </Field>
+      <Field>
+        <Control loading>
+          <Input type={'text'} placeholder={'Normal loading input'} />
+        </Control>
+      </Field>
+      <Field>
+        <Control size={'medium'} loading>
+          <Input
+            type={'text'}
+            placeholder={'Medium loading input'}
+            size={'medium'}
+          />
+        </Control>
+      </Field>
+      <Field>
+        <Control size={'large'} loading>
+          <Input
+            type={'text'}
+            placeholder={'Large loading input'}
+            size={'large'}
+          />
+        </Control>
+      </Field>
     </>
   )
 }
 
-function Example018Demo() {
+function DisabledInputDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control>
-            {' '}
-            <ui.Input
-              type={'text'}
-              placeholder={'Disabled input'}
-              disabled
-            />{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control">\n  <input class="input" type="text" placeholder="Disabled input" disabled />\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Control>
+        <Input type={'text'} placeholder={'Disabled input'} disabled />
+      </Control>
     </>
   )
 }
 
-function Example019Demo() {
+function ReadOnlyInputDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control>
-            {' '}
-            <ui.Input
-              type={'text'}
-              defaultValue={'This text is readonly'}
-              readOnly
-            />{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control">\n  <input class="input" type="text" value="This text is readonly" readonly />\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Control>
+        <Input type={'text'} defaultValue={'This text is readonly'} readOnly />
+      </Control>
     </>
   )
 }
 
-function Example020Demo() {
+function StaticInputDemo() {
   return (
     <>
       <div className={'bd-example'}>
-        {' '}
-        <ui.Field horizontal>
-          {' '}
-          <ui.FieldLabel size={'normal'}>
-            {' '}
-            <ui.Label>From</ui.Label>{' '}
-          </ui.FieldLabel>{' '}
-          <ui.FieldBody>
-            {' '}
-            <ui.Field>
-              {' '}
-              <ui.Control as={'p'}>
-                {' '}
-                <ui.Input
+        <Field horizontal>
+          <FieldLabel size={'normal'}>
+            <Label>From</Label>
+          </FieldLabel>
+          <FieldBody>
+            <Field>
+              <Control as={'p'}>
+                <Input
                   type={'email'}
                   defaultValue={'me@example.com'}
                   readOnly
                   static
-                />{' '}
-              </ui.Control>{' '}
-            </ui.Field>{' '}
-          </ui.FieldBody>{' '}
-        </ui.Field>{' '}
-        <ui.Field horizontal>
-          {' '}
-          <ui.FieldLabel size={'normal'}>
-            {' '}
-            <ui.Label>To</ui.Label>{' '}
-          </ui.FieldLabel>{' '}
-          <ui.FieldBody>
-            {' '}
-            <ui.Field>
-              {' '}
-              <ui.Control as={'p'}>
-                {' '}
-                <ui.Input type={'email'} placeholder={'Recipient email'} />{' '}
-              </ui.Control>{' '}
-            </ui.Field>{' '}
-          </ui.FieldBody>{' '}
-        </ui.Field>{' '}
+                />
+              </Control>
+            </Field>
+          </FieldBody>
+        </Field>
+        <Field horizontal>
+          <FieldLabel size={'normal'}>
+            <Label>To</Label>
+          </FieldLabel>
+          <FieldBody>
+            <Field>
+              <Control as={'p'}>
+                <Input type={'email'} placeholder={'Recipient email'} />
+              </Control>
+            </Field>
+          </FieldBody>
+        </Field>
       </div>
     </>
   )
 }
 
-function Example021Demo() {
+function InputsWithIconsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Field>
-            {' '}
-            <ui.Control icons={'both'} as={'p'}>
-              {' '}
-              <ui.Input type={'email'} placeholder={'Email'} />{' '}
-              <ui.Icon size={'small'} className={'rb-is-left'}>
-                {' '}
-                <i className={'fas fa-envelope'} />{' '}
-              </ui.Icon>{' '}
-              <ui.Icon size={'small'} className={'rb-is-right'}>
-                {' '}
-                <i className={'fas fa-check'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Control>{' '}
-          </ui.Field>{' '}
-          <ui.Field>
-            {' '}
-            <ui.Control icons={'left'} as={'p'}>
-              {' '}
-              <ui.Input type={'password'} placeholder={'Password'} />{' '}
-              <ui.Icon size={'small'} className={'rb-is-left'}>
-                {' '}
-                <i className={'fas fa-lock'} />{' '}
-              </ui.Icon>{' '}
-            </ui.Control>{' '}
-          </ui.Field>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="field">\n  <p class="control has-icons-left has-icons-right">\n    <input class="input" type="email" placeholder="Email" />\n    <span class="icon is-small is-left">\n      <i class="fas fa-envelope"></i>\n    </span>\n    <span class="icon is-small is-right">\n      <i class="fas fa-check"></i>\n    </span>\n  </p>\n</div>\n<div class="field">\n  <p class="control has-icons-left">\n    <input class="input" type="password" placeholder="Password" />\n    <span class="icon is-small is-left">\n      <i class="fas fa-lock"></i>\n    </span>\n  </p>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Field>
+        <Control icons={'both'} as={'p'}>
+          <Input type={'email'} placeholder={'Email'} />{' '}
+          <Icon size={'small'} className={'rb-is-left'}>
+            <i className={'fas fa-envelope'} />
+          </Icon>{' '}
+          <Icon size={'small'} className={'rb-is-right'}>
+            <i className={'fas fa-check'} />
+          </Icon>
+        </Control>
+      </Field>
+      <Field>
+        <Control icons={'left'} as={'p'}>
+          <Input type={'password'} placeholder={'Password'} />{' '}
+          <Icon size={'small'} className={'rb-is-left'}>
+            <i className={'fas fa-lock'} />
+          </Icon>
+        </Control>
+      </Field>
     </>
   )
 }
 
-function Example022Demo() {
+function SmallInputWithIconsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Content>
-            {' '}
-            <p>
-              If the control contains an icon, Bulma will make sure the icon
-              remains <strong>centered</strong>, no matter the size of the input{' '}
-              <em>or</em> of the icon.
-            </p>{' '}
-          </ui.Content>{' '}
-          <ui.Control icons={'both'}>
-            {' '}
-            <ui.Input
-              type={'email'}
-              placeholder={'Email'}
-              size={'small'}
-            />{' '}
-            <ui.Icon size={'small'} className={'rb-is-left'}>
-              {' '}
-              <i className={'fas fa-envelope'} />{' '}
-            </ui.Icon>{' '}
-            <ui.Icon size={'small'} className={'rb-is-right'}>
-              {' '}
-              <i className={'fas fa-check'} />{' '}
-            </ui.Icon>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control has-icons-left has-icons-right">\n  <input class="input is-small" type="email" placeholder="Email" />\n  <span class="icon is-small is-left">\n    <i class="fas fa-envelope"></i>\n  </span>\n  <span class="icon is-small is-right">\n    <i class="fas fa-check"></i>\n  </span>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Content>
+        <p>
+          If the control contains an icon, Bulma will make sure the icon remains{' '}
+          <strong>centered</strong>, no matter the size of the input <em>or</em>{' '}
+          of the icon.
+        </p>
+      </Content>
+      <Control icons={'both'}>
+        <Input type={'email'} placeholder={'Email'} size={'small'} />{' '}
+        <Icon size={'small'} className={'rb-is-left'}>
+          <i className={'fas fa-envelope'} />
+        </Icon>{' '}
+        <Icon size={'small'} className={'rb-is-right'}>
+          <i className={'fas fa-check'} />
+        </Icon>
+      </Control>
     </>
   )
 }
 
-function Example023Demo() {
+function NormalInputWithIconsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control icons={'both'}>
-            {' '}
-            <ui.Input type={'email'} placeholder={'Email'} />{' '}
-            <ui.Icon size={'small'} className={'rb-is-left'}>
-              {' '}
-              <i className={'fas fa-envelope'} />{' '}
-            </ui.Icon>{' '}
-            <ui.Icon size={'small'} className={'rb-is-right'}>
-              {' '}
-              <i className={'fas fa-check'} />{' '}
-            </ui.Icon>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control has-icons-left has-icons-right">\n  <input class="input" type="email" placeholder="Email" />\n  <span class="icon is-small is-left">\n    <i class="fas fa-envelope"></i>\n  </span>\n  <span class="icon is-small is-right">\n    <i class="fas fa-check"></i>\n  </span>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Control icons={'both'}>
+        <Input type={'email'} placeholder={'Email'} />{' '}
+        <Icon size={'small'} className={'rb-is-left'}>
+          <i className={'fas fa-envelope'} />
+        </Icon>{' '}
+        <Icon size={'small'} className={'rb-is-right'}>
+          <i className={'fas fa-check'} />
+        </Icon>
+      </Control>
     </>
   )
 }
 
-function Example024Demo() {
+function MediumInputWithIconsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control icons={'both'}>
-            {' '}
-            <ui.Input
-              type={'email'}
-              placeholder={'Email'}
-              size={'medium'}
-            />{' '}
-            <ui.Icon className={'rb-is-left'}>
-              {' '}
-              <i className={'fas fa-envelope'} />{' '}
-            </ui.Icon>{' '}
-            <ui.Icon className={'rb-is-right'}>
-              {' '}
-              <i className={'fas fa-check'} />{' '}
-            </ui.Icon>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control has-icons-left has-icons-right">\n  <input class="input is-medium" type="email" placeholder="Email" />\n  <span class="icon is-left">\n    <i class="fas fa-envelope"></i>\n  </span>\n  <span class="icon is-right">\n    <i class="fas fa-check"></i>\n  </span>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Control icons={'both'}>
+        <Input type={'email'} placeholder={'Email'} size={'medium'} />{' '}
+        <Icon className={'rb-is-left'}>
+          <i className={'fas fa-envelope'} />
+        </Icon>{' '}
+        <Icon className={'rb-is-right'}>
+          <i className={'fas fa-check'} />
+        </Icon>
+      </Control>
     </>
   )
 }
 
-function Example025Demo() {
+function LargeInputWithIconsDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control icons={'both'}>
-            {' '}
-            <ui.Input
-              type={'email'}
-              placeholder={'Email'}
-              size={'large'}
-            />{' '}
-            <ui.Icon size={'medium'} className={'rb-is-left'}>
-              {' '}
-              <i className={'fas fa-envelope'} />{' '}
-            </ui.Icon>{' '}
-            <ui.Icon size={'medium'} className={'rb-is-right'}>
-              {' '}
-              <i className={'fas fa-check'} />{' '}
-            </ui.Icon>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control has-icons-left has-icons-right">\n  <input class="input is-large" type="email" placeholder="Email" />\n  <span class="icon is-medium is-left">\n    <i class="fas fa-envelope"></i>\n  </span>\n  <span class="icon is-medium is-right">\n    <i class="fas fa-check"></i>\n  </span>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Control icons={'both'}>
+        <Input type={'email'} placeholder={'Email'} size={'large'} />{' '}
+        <Icon size={'medium'} className={'rb-is-left'}>
+          <i className={'fas fa-envelope'} />
+        </Icon>{' '}
+        <Icon size={'medium'} className={'rb-is-right'}>
+          <i className={'fas fa-check'} />
+        </Icon>
+      </Control>
     </>
   )
 }
 
-export const Example001 = {
+export const TextInputStory = {
   name: 'Text input',
   parameters: {
     official: { id: 'form-input/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Text input'} />{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<input class=\"input\" type=\"text\" placeholder=\"Text input\" />\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction TextInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Text input'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: TextInputDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const LinkInputStory = {
   name: 'Link input',
   parameters: {
     official: { id: 'form-input/colors/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Input type={'text'} placeholder={'Link input'} color={'link'} />\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction LinkInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Link input'} color={'link'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: LinkInputDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const PrimaryInputStory = {
   name: 'Primary input',
   parameters: {
     official: { id: 'form-input/colors/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Input type={'text'} placeholder={'Primary input'} color={'primary'} />\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction PrimaryInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Primary input'} color={'primary'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: PrimaryInputDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const InfoInputStory = {
   name: 'Info input',
   parameters: {
     official: { id: 'form-input/colors/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Input type={'text'} placeholder={'Info input'} color={'info'} />\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction InfoInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Info input'} color={'info'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: InfoInputDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const SuccessInputStory = {
   name: 'Success input',
   parameters: {
     official: { id: 'form-input/colors/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Input type={'text'} placeholder={'Success input'} color={'success'} />\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction SuccessInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Success input'} color={'success'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: SuccessInputDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const WarningInputStory = {
   name: 'Warning input',
   parameters: {
     official: { id: 'form-input/colors/005' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Input type={'text'} placeholder={'Warning input'} color={'warning'} />\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction WarningInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Warning input'} color={'warning'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: WarningInputDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const DangerInputStory = {
   name: 'Danger input',
   parameters: {
     official: { id: 'form-input/colors/006' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Input type={'text'} placeholder={'Danger input'} color={'danger'} />\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction DangerInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Danger input'} color={'danger'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: DangerInputDemo,
 } satisfies StoryObj
 
-export const Example008 = {
+export const SmallInputStory = {
   name: 'Small input',
   parameters: {
     official: { id: 'form-input/sizes/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example008Demo() {\n  return (\n    <>\n      <ui.Input type={'text'} placeholder={'Small input'} size={'small'} />\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction SmallInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Small input'} size={'small'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example008Demo,
+  render: SmallInputDemo,
 } satisfies StoryObj
 
-export const Example009 = {
+export const NormalSizeInputStory = {
   name: 'Normal size input',
   parameters: {
     official: { id: 'form-input/sizes/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example009Demo() {\n  return (\n    <>\n      <ui.Input type={'text'} placeholder={'Normal input'} size={'normal'} />\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction NormalSizeInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Normal input'} size={'normal'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example009Demo,
+  render: NormalSizeInputDemo,
 } satisfies StoryObj
 
-export const Example010 = {
+export const MediumInputStory = {
   name: 'Medium input',
   parameters: {
     official: { id: 'form-input/sizes/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example010Demo() {\n  return (\n    <>\n      <ui.Input type={'text'} placeholder={'Medium input'} size={'medium'} />\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction MediumInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Medium input'} size={'medium'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example010Demo,
+  render: MediumInputDemo,
 } satisfies StoryObj
 
-export const Example011 = {
+export const LargeInputStory = {
   name: 'Large input',
   parameters: {
     official: { id: 'form-input/sizes/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example011Demo() {\n  return (\n    <>\n      <ui.Input type={'text'} placeholder={'Large input'} size={'large'} />\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction LargeInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Large input'} size={'large'} />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example011Demo,
+  render: LargeInputDemo,
 } satisfies StoryObj
 
-export const Example012 = {
+export const RoundedInputStory = {
   name: 'Rounded input',
   parameters: {
     official: { id: 'form-input/styles/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example012Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Input type={'text'} placeholder={'Rounded input'} rounded />{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<input class=\"input is-rounded\" type=\"text\" placeholder=\"Rounded input\" />\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Input } from '@seagreenio/react-bulma'\n\nfunction RoundedInputDemo() {\n  return (\n    <>\n      <Input type={'text'} placeholder={'Rounded input'} rounded />\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example012Demo,
+  render: RoundedInputDemo,
 } satisfies StoryObj
 
-export const Example013 = {
+export const NormalStateStory = {
   name: 'Normal state',
   parameters: {
     official: { id: 'form-input/normal/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example013Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Input type={'text'} placeholder={'Normal input'} />{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <input class=\"input\" type=\"text\" placeholder=\"Normal input\" />\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Input } from '@seagreenio/react-bulma'\n\nfunction NormalStateDemo() {\n  return (\n    <>\n      <Control>\n        <Input type={'text'} placeholder={'Normal input'} />\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example013Demo,
+  render: NormalStateDemo,
 } satisfies StoryObj
 
-export const Example014 = {
+export const HoverStateStory = {
   name: 'Hover state',
   parameters: {
     official: { id: 'form-input/hover/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example014Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Input\n              type={'text'}\n              placeholder={'Hovered input'}\n              state={'hovered'}\n            />{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <input class=\"input is-hovered\" type=\"text\" placeholder=\"Hovered input\" />\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Input } from '@seagreenio/react-bulma'\n\nfunction HoverStateDemo() {\n  return (\n    <>\n      <Control>\n        <Input type={'text'} placeholder={'Hovered input'} state={'hovered'} />\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example014Demo,
+  render: HoverStateDemo,
 } satisfies StoryObj
 
-export const Example015 = {
+export const FocusStateStory = {
   name: 'Focus state',
   parameters: {
     official: { id: 'form-input/focus/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example015Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Input\n              type={'text'}\n              placeholder={'Focused input'}\n              state={'focused'}\n            />{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <input class=\"input is-focused\" type=\"text\" placeholder=\"Focused input\" />\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Input } from '@seagreenio/react-bulma'\n\nfunction FocusStateDemo() {\n  return (\n    <>\n      <Control>\n        <Input type={'text'} placeholder={'Focused input'} state={'focused'} />\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example015Demo,
+  render: FocusStateDemo,
 } satisfies StoryObj
 
-export const Example016 = {
+export const LoadingInputStory = {
   name: 'Loading input',
   parameters: {
     official: { id: 'form-input/loading/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example016Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control loading>\n            {' '}\n            <ui.Input type={'text'} placeholder={'Loading input'} />{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control is-loading\">\\n  <input class=\"input\" type=\"text\" placeholder=\"Loading input\" />\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Input } from '@seagreenio/react-bulma'\n\nfunction LoadingInputDemo() {\n  return (\n    <>\n      <Control loading>\n        <Input type={'text'} placeholder={'Loading input'} />\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example016Demo,
+  render: LoadingInputDemo,
 } satisfies StoryObj
 
-export const Example017 = {
+export const LoadingSpinnerSizesStory = {
   name: 'Loading spinner sizes',
   parameters: {
     official: { id: 'form-input/loading/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example017Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              You can resize the loading spinner by appending{' '}\n              <code>{'is-small'}</code>, <code>{'is-medium'}</code> or{' '}\n              <code>{'is-large'}</code> to the <code>{'control'}</code>{' '}\n              container.\n            </p>{' '}\n          </ui.Content>{' '}\n          <ui.Field>\n            {' '}\n            <ui.Control size={'small'} loading>\n              {' '}\n              <ui.Input\n                type={'text'}\n                placeholder={'Small loading input'}\n                size={'small'}\n              />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n          <ui.Field>\n            {' '}\n            <ui.Control loading>\n              {' '}\n              <ui.Input\n                type={'text'}\n                placeholder={'Normal loading input'}\n              />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n          <ui.Field>\n            {' '}\n            <ui.Control size={'medium'} loading>\n              {' '}\n              <ui.Input\n                type={'text'}\n                placeholder={'Medium loading input'}\n                size={'medium'}\n              />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n          <ui.Field>\n            {' '}\n            <ui.Control size={'large'} loading>\n              {' '}\n              <ui.Input\n                type={'text'}\n                placeholder={'Large loading input'}\n                size={'large'}\n              />{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"field\">\\n  <div class=\"control is-small is-loading\">\\n    <input\\n      class=\"input is-small\"\\n      type=\"text\"\\n      placeholder=\"Small loading input\"\\n    />\\n  </div>\\n</div>\\n<div class=\"field\">\\n  <div class=\"control is-loading\">\\n    <input class=\"input\" type=\"text\" placeholder=\"Normal loading input\" />\\n  </div>\\n</div>\\n<div class=\"field\">\\n  <div class=\"control is-medium is-loading\">\\n    <input\\n      class=\"input is-medium\"\\n      type=\"text\"\\n      placeholder=\"Medium loading input\"\\n    />\\n  </div>\\n</div>\\n<div class=\"field\">\\n  <div class=\"control is-large is-loading\">\\n    <input\\n      class=\"input is-large\"\\n      type=\"text\"\\n      placeholder=\"Large loading input\"\\n    />\\n  </div>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Content, Control, Field, Input } from '@seagreenio/react-bulma'\n\nfunction LoadingSpinnerSizesDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          You can resize the loading spinner by appending{' '}\n          <code>{'is-small'}</code>, <code>{'is-medium'}</code> or{' '}\n          <code>{'is-large'}</code> to the <code>{'control'}</code> container.\n        </p>\n      </Content>\n      <Field>\n        <Control size={'small'} loading>\n          <Input\n            type={'text'}\n            placeholder={'Small loading input'}\n            size={'small'}\n          />\n        </Control>\n      </Field>\n      <Field>\n        <Control loading>\n          <Input type={'text'} placeholder={'Normal loading input'} />\n        </Control>\n      </Field>\n      <Field>\n        <Control size={'medium'} loading>\n          <Input\n            type={'text'}\n            placeholder={'Medium loading input'}\n            size={'medium'}\n          />\n        </Control>\n      </Field>\n      <Field>\n        <Control size={'large'} loading>\n          <Input\n            type={'text'}\n            placeholder={'Large loading input'}\n            size={'large'}\n          />\n        </Control>\n      </Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example017Demo,
+  render: LoadingSpinnerSizesDemo,
 } satisfies StoryObj
 
-export const Example018 = {
+export const DisabledInputStory = {
   name: 'Disabled input',
   parameters: {
     official: { id: 'form-input/disabled/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example018Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Input\n              type={'text'}\n              placeholder={'Disabled input'}\n              disabled\n            />{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <input class=\"input\" type=\"text\" placeholder=\"Disabled input\" disabled />\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Input } from '@seagreenio/react-bulma'\n\nfunction DisabledInputDemo() {\n  return (\n    <>\n      <Control>\n        <Input type={'text'} placeholder={'Disabled input'} disabled />\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example018Demo,
+  render: DisabledInputDemo,
 } satisfies StoryObj
 
-export const Example019 = {
+export const ReadOnlyInputStory = {
   name: 'Read-only input',
   parameters: {
     official: { id: 'form-input/readonly-and-static-inputs/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example019Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Input\n              type={'text'}\n              defaultValue={'This text is readonly'}\n              readOnly\n            />{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <input class=\"input\" type=\"text\" value=\"This text is readonly\" readonly />\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Input } from '@seagreenio/react-bulma'\n\nfunction ReadOnlyInputDemo() {\n  return (\n    <>\n      <Control>\n        <Input type={'text'} defaultValue={'This text is readonly'} readOnly />\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example019Demo,
+  render: ReadOnlyInputDemo,
 } satisfies StoryObj
 
-export const Example020 = {
+export const StaticInputStory = {
   name: 'Static input',
   parameters: {
     official: { id: 'form-input/readonly-and-static-inputs/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example020Demo() {\n  return (\n    <>\n      <div className={'bd-example'}>\n        {' '}\n        <ui.Field horizontal>\n          {' '}\n          <ui.FieldLabel size={'normal'}>\n            {' '}\n            <ui.Label>From</ui.Label>{' '}\n          </ui.FieldLabel>{' '}\n          <ui.FieldBody>\n            {' '}\n            <ui.Field>\n              {' '}\n              <ui.Control as={'p'}>\n                {' '}\n                <ui.Input\n                  type={'email'}\n                  defaultValue={'me@example.com'}\n                  readOnly\n                  static\n                />{' '}\n              </ui.Control>{' '}\n            </ui.Field>{' '}\n          </ui.FieldBody>{' '}\n        </ui.Field>{' '}\n        <ui.Field horizontal>\n          {' '}\n          <ui.FieldLabel size={'normal'}>\n            {' '}\n            <ui.Label>To</ui.Label>{' '}\n          </ui.FieldLabel>{' '}\n          <ui.FieldBody>\n            {' '}\n            <ui.Field>\n              {' '}\n              <ui.Control as={'p'}>\n                {' '}\n                <ui.Input type={'email'} placeholder={'Recipient email'} />{' '}\n              </ui.Control>{' '}\n            </ui.Field>{' '}\n          </ui.FieldBody>{' '}\n        </ui.Field>{' '}\n      </div>\n    </>\n  )\n}\n",
+        code: "import {\n  Control,\n  Field,\n  FieldBody,\n  FieldLabel,\n  Input,\n  Label,\n} from '@seagreenio/react-bulma'\n\nfunction StaticInputDemo() {\n  return (\n    <>\n      <div className={'bd-example'}>\n        <Field horizontal>\n          <FieldLabel size={'normal'}>\n            <Label>From</Label>\n          </FieldLabel>\n          <FieldBody>\n            <Field>\n              <Control as={'p'}>\n                <Input\n                  type={'email'}\n                  defaultValue={'me@example.com'}\n                  readOnly\n                  static\n                />\n              </Control>\n            </Field>\n          </FieldBody>\n        </Field>\n        <Field horizontal>\n          <FieldLabel size={'normal'}>\n            <Label>To</Label>\n          </FieldLabel>\n          <FieldBody>\n            <Field>\n              <Control as={'p'}>\n                <Input type={'email'} placeholder={'Recipient email'} />\n              </Control>\n            </Field>\n          </FieldBody>\n        </Field>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example020Demo,
+  render: StaticInputDemo,
 } satisfies StoryObj
 
-export const Example021 = {
+export const InputsWithIconsStory = {
   name: 'Inputs with icons',
   parameters: {
     official: { id: 'form-input/with-font-awesome-icons/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example021Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Field>\n            {' '}\n            <ui.Control icons={'both'} as={'p'}>\n              {' '}\n              <ui.Input type={'email'} placeholder={'Email'} />{' '}\n              <ui.Icon size={'small'} className={'rb-is-left'}>\n                {' '}\n                <i className={'fas fa-envelope'} />{' '}\n              </ui.Icon>{' '}\n              <ui.Icon size={'small'} className={'rb-is-right'}>\n                {' '}\n                <i className={'fas fa-check'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n          <ui.Field>\n            {' '}\n            <ui.Control icons={'left'} as={'p'}>\n              {' '}\n              <ui.Input type={'password'} placeholder={'Password'} />{' '}\n              <ui.Icon size={'small'} className={'rb-is-left'}>\n                {' '}\n                <i className={'fas fa-lock'} />{' '}\n              </ui.Icon>{' '}\n            </ui.Control>{' '}\n          </ui.Field>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"field\">\\n  <p class=\"control has-icons-left has-icons-right\">\\n    <input class=\"input\" type=\"email\" placeholder=\"Email\" />\\n    <span class=\"icon is-small is-left\">\\n      <i class=\"fas fa-envelope\"></i>\\n    </span>\\n    <span class=\"icon is-small is-right\">\\n      <i class=\"fas fa-check\"></i>\\n    </span>\\n  </p>\\n</div>\\n<div class=\"field\">\\n  <p class=\"control has-icons-left\">\\n    <input class=\"input\" type=\"password\" placeholder=\"Password\" />\\n    <span class=\"icon is-small is-left\">\\n      <i class=\"fas fa-lock\"></i>\\n    </span>\\n  </p>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Field, Icon, Input } from '@seagreenio/react-bulma'\n\nfunction InputsWithIconsDemo() {\n  return (\n    <>\n      <Field>\n        <Control icons={'both'} as={'p'}>\n          <Input type={'email'} placeholder={'Email'} />{' '}\n          <Icon size={'small'} className={'rb-is-left'}>\n            <i className={'fas fa-envelope'} />\n          </Icon>{' '}\n          <Icon size={'small'} className={'rb-is-right'}>\n            <i className={'fas fa-check'} />\n          </Icon>\n        </Control>\n      </Field>\n      <Field>\n        <Control icons={'left'} as={'p'}>\n          <Input type={'password'} placeholder={'Password'} />{' '}\n          <Icon size={'small'} className={'rb-is-left'}>\n            <i className={'fas fa-lock'} />\n          </Icon>\n        </Control>\n      </Field>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example021Demo,
+  render: InputsWithIconsDemo,
 } satisfies StoryObj
 
-export const Example022 = {
+export const SmallInputWithIconsStory = {
   name: 'Small input with icons',
   parameters: {
     official: { id: 'form-input/with-font-awesome-icons/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example022Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Content>\n            {' '}\n            <p>\n              If the control contains an icon, Bulma will make sure the icon\n              remains <strong>centered</strong>, no matter the size of the input{' '}\n              <em>or</em> of the icon.\n            </p>{' '}\n          </ui.Content>{' '}\n          <ui.Control icons={'both'}>\n            {' '}\n            <ui.Input\n              type={'email'}\n              placeholder={'Email'}\n              size={'small'}\n            />{' '}\n            <ui.Icon size={'small'} className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-envelope'} />{' '}\n            </ui.Icon>{' '}\n            <ui.Icon size={'small'} className={'rb-is-right'}>\n              {' '}\n              <i className={'fas fa-check'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left has-icons-right\">\\n  <input class=\"input is-small\" type=\"email\" placeholder=\"Email\" />\\n  <span class=\"icon is-small is-left\">\\n    <i class=\"fas fa-envelope\"></i>\\n  </span>\\n  <span class=\"icon is-small is-right\">\\n    <i class=\"fas fa-check\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Content, Control, Icon, Input } from '@seagreenio/react-bulma'\n\nfunction SmallInputWithIconsDemo() {\n  return (\n    <>\n      <Content>\n        <p>\n          If the control contains an icon, Bulma will make sure the icon remains{' '}\n          <strong>centered</strong>, no matter the size of the input <em>or</em>{' '}\n          of the icon.\n        </p>\n      </Content>\n      <Control icons={'both'}>\n        <Input type={'email'} placeholder={'Email'} size={'small'} />{' '}\n        <Icon size={'small'} className={'rb-is-left'}>\n          <i className={'fas fa-envelope'} />\n        </Icon>{' '}\n        <Icon size={'small'} className={'rb-is-right'}>\n          <i className={'fas fa-check'} />\n        </Icon>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example022Demo,
+  render: SmallInputWithIconsDemo,
 } satisfies StoryObj
 
-export const Example023 = {
+export const NormalInputWithIconsStory = {
   name: 'Normal input with icons',
   parameters: {
     official: { id: 'form-input/with-font-awesome-icons/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example023Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'both'}>\n            {' '}\n            <ui.Input type={'email'} placeholder={'Email'} />{' '}\n            <ui.Icon size={'small'} className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-envelope'} />{' '}\n            </ui.Icon>{' '}\n            <ui.Icon size={'small'} className={'rb-is-right'}>\n              {' '}\n              <i className={'fas fa-check'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left has-icons-right\">\\n  <input class=\"input\" type=\"email\" placeholder=\"Email\" />\\n  <span class=\"icon is-small is-left\">\\n    <i class=\"fas fa-envelope\"></i>\\n  </span>\\n  <span class=\"icon is-small is-right\">\\n    <i class=\"fas fa-check\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Icon, Input } from '@seagreenio/react-bulma'\n\nfunction NormalInputWithIconsDemo() {\n  return (\n    <>\n      <Control icons={'both'}>\n        <Input type={'email'} placeholder={'Email'} />{' '}\n        <Icon size={'small'} className={'rb-is-left'}>\n          <i className={'fas fa-envelope'} />\n        </Icon>{' '}\n        <Icon size={'small'} className={'rb-is-right'}>\n          <i className={'fas fa-check'} />\n        </Icon>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example023Demo,
+  render: NormalInputWithIconsDemo,
 } satisfies StoryObj
 
-export const Example024 = {
+export const MediumInputWithIconsStory = {
   name: 'Medium input with icons',
   parameters: {
     official: { id: 'form-input/with-font-awesome-icons/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example024Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'both'}>\n            {' '}\n            <ui.Input\n              type={'email'}\n              placeholder={'Email'}\n              size={'medium'}\n            />{' '}\n            <ui.Icon className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-envelope'} />{' '}\n            </ui.Icon>{' '}\n            <ui.Icon className={'rb-is-right'}>\n              {' '}\n              <i className={'fas fa-check'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left has-icons-right\">\\n  <input class=\"input is-medium\" type=\"email\" placeholder=\"Email\" />\\n  <span class=\"icon is-left\">\\n    <i class=\"fas fa-envelope\"></i>\\n  </span>\\n  <span class=\"icon is-right\">\\n    <i class=\"fas fa-check\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Icon, Input } from '@seagreenio/react-bulma'\n\nfunction MediumInputWithIconsDemo() {\n  return (\n    <>\n      <Control icons={'both'}>\n        <Input type={'email'} placeholder={'Email'} size={'medium'} />{' '}\n        <Icon className={'rb-is-left'}>\n          <i className={'fas fa-envelope'} />\n        </Icon>{' '}\n        <Icon className={'rb-is-right'}>\n          <i className={'fas fa-check'} />\n        </Icon>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example024Demo,
+  render: MediumInputWithIconsDemo,
 } satisfies StoryObj
 
-export const Example025 = {
+export const LargeInputWithIconsStory = {
   name: 'Large input with icons',
   parameters: {
     official: { id: 'form-input/with-font-awesome-icons/005' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example025Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control icons={'both'}>\n            {' '}\n            <ui.Input\n              type={'email'}\n              placeholder={'Email'}\n              size={'large'}\n            />{' '}\n            <ui.Icon size={'medium'} className={'rb-is-left'}>\n              {' '}\n              <i className={'fas fa-envelope'} />{' '}\n            </ui.Icon>{' '}\n            <ui.Icon size={'medium'} className={'rb-is-right'}>\n              {' '}\n              <i className={'fas fa-check'} />{' '}\n            </ui.Icon>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control has-icons-left has-icons-right\">\\n  <input class=\"input is-large\" type=\"email\" placeholder=\"Email\" />\\n  <span class=\"icon is-medium is-left\">\\n    <i class=\"fas fa-envelope\"></i>\\n  </span>\\n  <span class=\"icon is-medium is-right\">\\n    <i class=\"fas fa-check\"></i>\\n  </span>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Icon, Input } from '@seagreenio/react-bulma'\n\nfunction LargeInputWithIconsDemo() {\n  return (\n    <>\n      <Control icons={'both'}>\n        <Input type={'email'} placeholder={'Email'} size={'large'} />{' '}\n        <Icon size={'medium'} className={'rb-is-left'}>\n          <i className={'fas fa-envelope'} />\n        </Icon>{' '}\n        <Icon size={'medium'} className={'rb-is-right'}>\n          <i className={'fas fa-check'} />\n        </Icon>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example025Demo,
+  render: LargeInputWithIconsDemo,
 } satisfies StoryObj

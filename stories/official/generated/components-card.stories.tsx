@@ -1,7 +1,24 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardFooterItem,
+  CardHeader,
+  CardHeaderIcon,
+  CardHeaderTitle,
+  CardImage,
+  Content,
+  Icon,
+  Image,
+  Media,
+  MediaContent,
+  MediaLeft,
+  Subtitle,
+  Title,
+} from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,26 +40,16 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="components-card" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Card'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'An all-around flexible and composable component'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The '}
             <strong data-official-prose="">{'card'}</strong>
@@ -50,72 +57,50 @@ function OfficialDocs() {
               ' component comprises several elements that you can mix and match:'
             }
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'card'}</code>
-              {': the main container\n      '}
+              {': the main container '}
               <ul data-official-prose="">
-                {'\n        '}
                 <li data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'card-header'}</code>
-                  {': a horizontal bar with a shadow\n          '}
+                  {': a horizontal bar with a shadow '}
                   <ul data-official-prose="">
-                    {'\n            '}
                     <li data-official-prose="">
                       <code data-official-prose="">{'card-header-title'}</code>
                       {': a left-aligned bold text'}
                     </li>
-                    {'\n            '}
                     <li data-official-prose="">
                       <code data-official-prose="">{'card-header-icon'}</code>
                       {': a placeholder for an icon'}
                     </li>
-                    {'\n          '}
                   </ul>
-                  {'\n        '}
                 </li>
-                {'\n        '}
                 <li data-official-prose="">
                   <code data-official-prose="">{'card-image'}</code>
                   {': a fullwidth container for a responsive image'}
                 </li>
-                {'\n        '}
                 <li data-official-prose="">
                   <code data-official-prose="">{'card-content'}</code>
                   {': a multi-purpose container for '}
                   <em data-official-prose="">{'any'}</em>
                   {' other element'}
                 </li>
-                {'\n        '}
                 <li data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'card-footer'}</code>
-                  {': a horizontal list of controls\n          '}
+                  {': a horizontal list of controls '}
                   <ul data-official-prose="">
-                    {'\n            '}
                     <li data-official-prose="">
                       <code data-official-prose="">{'card-footer-item'}</code>
                       {': a repeatable list item'}
                     </li>
-                    {'\n          '}
                   </ul>
-                  {'\n        '}
                 </li>
-                {'\n      '}
               </ul>
-              {'\n    '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'You can center the '}
             <code data-official-prose="">{'card-header-title'}</code>
@@ -123,42 +108,27 @@ function OfficialDocs() {
             <code data-official-prose="">{'is-centered'}</code>
             {' modifier.'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-card/basic/001">
-          <Canvas of={Example001} />
+          <Canvas of={ProfileCardStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'card-parts'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Card parts\n  '}
-          </span>
-          {'\n  '}
+            {' Card parts '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#card-parts'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The '}
             <code data-official-prose="">{'card-header'}</code>
@@ -168,21 +138,11 @@ function OfficialDocs() {
             <code data-official-prose="">{'icon'}</code>
             {':'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-card/card-parts/001">
-          <Canvas of={Example002} />
+          <Canvas of={CardHeaderStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The '}
             <code data-official-prose="">{'card-image'}</code>
@@ -190,21 +150,11 @@ function OfficialDocs() {
             <code data-official-prose="">{'image'}</code>
             {' element:'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-card/card-parts/002">
-          <Canvas of={Example003} />
+          <Canvas of={CardImageStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The '}
             <code data-official-prose="">{'card-content'}</code>
@@ -212,21 +162,11 @@ function OfficialDocs() {
             <strong data-official-prose="">{'text content'}</strong>
             {', thanks to its padding:'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-card/card-parts/003">
-          <Canvas of={Example004} />
+          <Canvas of={CardContentStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'The '}
             <code data-official-prose="">{'card-footer'}</code>
@@ -234,848 +174,185 @@ function OfficialDocs() {
             <code data-official-prose="">{'card-footer-item'}</code>
             {' elements:'}
           </p>
-          {'\n'}
         </div>
-        {'\n\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-card/card-parts/004">
-          <Canvas of={Example005} />
+          <Canvas of={CardFooterStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'examples'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Examples\n  '}
-          </span>
-          {'\n  '}
+            {' Examples '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#examples'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-card/examples/001">
-          <Canvas of={Example006} />
+          <Canvas of={CardWithHeaderAndFooterStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n'}
-        {'\n  \n    '}
-        {'\n      '}
-        {'\n\n      '}
         <div data-official-example="components-card/examples/002">
-          <Canvas of={Example007} />
+          <Canvas of={QuoteCardStory} />
         </div>
-        {'\n    '}
-        {'\n  \n\n  '}
-        {'\n'}
-        {'\n\n\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-shadow'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.75rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-header-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-header-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'transparent'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-header-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-header-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-strong)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-header-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-header-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.75rem 1rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-header-shadow'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-header-shadow)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          '0 0.125em 0.25em hsla(\n  var(--bulma-scheme-h),\n  var(--bulma-scheme-s),\n  var(--bulma-scheme-invert-l),\n  0.1\n)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-header-weight'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-header-weight)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-weight-bold)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-content-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-content-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'transparent'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-content-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-content-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-footer-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-footer-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'transparent'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-footer-border-top'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-footer-border-top)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1px solid var(--bulma-border-weak)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-footer-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-footer-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'0.75rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$card-media-margin'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-card-media-margin)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-block-spacing)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function ProfileCardDemo() {
   return (
     <>
-      <ui.Card>
-        {' '}
-        <ui.CardImage>
-          {' '}
-          <ui.Image
+      <Card>
+        <CardImage>
+          <Image
             ratio={'4by3'}
             src={'./official-assets/1280x960.png'}
             alt={'Placeholder image'}
-          />{' '}
-        </ui.CardImage>{' '}
-        <ui.CardContent>
-          {' '}
-          <ui.Media as={'div'}>
-            {' '}
-            <ui.MediaLeft>
-              {' '}
-              <ui.Image
+          />
+        </CardImage>
+        <CardContent>
+          <Media as={'div'}>
+            <MediaLeft>
+              <Image
                 size={48}
                 src={'./official-assets/96x96.png'}
                 alt={'Placeholder image'}
-              />{' '}
-            </ui.MediaLeft>{' '}
-            <ui.MediaContent>
-              {' '}
-              <ui.Title size={4} as={'p'}>
+              />
+            </MediaLeft>
+            <MediaContent>
+              <Title size={4} as={'p'}>
                 John Smith
-              </ui.Title>{' '}
-              <ui.Subtitle size={6} as={'p'}>
+              </Title>
+              <Subtitle size={6} as={'p'}>
                 @johnsmith
-              </ui.Subtitle>{' '}
-            </ui.MediaContent>{' '}
-          </ui.Media>{' '}
-          <ui.Content>
-            {' '}
+              </Subtitle>
+            </MediaContent>
+          </Media>
+          <Content>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             nec iaculis mauris. <a>@bulmaio</a>. <a href={'#'}>#css</a>{' '}
             <a href={'#'}>#responsive</a> <br />{' '}
-            <time dateTime={'2016-1-1'}>11:09 PM - 1 Jan 2016</time>{' '}
-          </ui.Content>{' '}
-        </ui.CardContent>{' '}
-      </ui.Card>
+            <time dateTime={'2016-1-1'}>11:09 PM - 1 Jan 2016</time>
+          </Content>
+        </CardContent>
+      </Card>
     </>
   )
 }
 
-function Example002Demo() {
+function CardHeaderDemo() {
   return (
     <>
-      <ui.Card>
-        {' '}
-        <ui.CardHeader>
-          {' '}
-          <ui.CardHeaderTitle>Card header</ui.CardHeaderTitle>{' '}
-          <ui.CardHeaderIcon aria-label={'more options'}>
-            {' '}
-            <ui.Icon>
-              {' '}
-              <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
-            </ui.Icon>{' '}
-          </ui.CardHeaderIcon>{' '}
-        </ui.CardHeader>{' '}
-      </ui.Card>
+      <Card>
+        <CardHeader>
+          <CardHeaderTitle>Card header</CardHeaderTitle>
+          <CardHeaderIcon aria-label={'more options'}>
+            <Icon>
+              <i aria-hidden={'true'} className={'fas fa-angle-down'} />
+            </Icon>
+          </CardHeaderIcon>
+        </CardHeader>
+      </Card>
     </>
   )
 }
 
-function Example003Demo() {
+function CardImageDemo() {
   return (
     <>
-      <ui.Card>
-        {' '}
-        <ui.CardImage>
-          {' '}
-          <ui.Image
+      <Card>
+        <CardImage>
+          <Image
             ratio={'4by3'}
             src={'./official-assets/1280x960.png'}
             alt={'Placeholder image'}
-          />{' '}
-        </ui.CardImage>{' '}
-      </ui.Card>
+          />
+        </CardImage>
+      </Card>
     </>
   )
 }
 
-function Example004Demo() {
+function CardContentDemo() {
   return (
     <>
-      <ui.Card>
-        {' '}
-        <ui.CardContent>
-          {' '}
-          <ui.Content>
-            {' '}
+      <Card>
+        <CardContent>
+          <Content>
             Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros.
             Donec id elit non mi porta gravida at eget metus. Cum sociis natoque
             penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Cras mattis consectetur purus sit amet fermentum.{' '}
-          </ui.Content>{' '}
-        </ui.CardContent>{' '}
-      </ui.Card>
+            Cras mattis consectetur purus sit amet fermentum.
+          </Content>
+        </CardContent>
+      </Card>
     </>
   )
 }
 
-function Example005Demo() {
+function CardFooterDemo() {
   return (
     <>
-      <ui.Card>
-        {' '}
-        <ui.CardFooter>
-          {' '}
-          <ui.CardFooterItem href={'#'}>Save</ui.CardFooterItem>{' '}
-          <ui.CardFooterItem href={'#'}>Edit</ui.CardFooterItem>{' '}
-          <ui.CardFooterItem href={'#'}>Delete</ui.CardFooterItem>{' '}
-        </ui.CardFooter>{' '}
-      </ui.Card>
+      <Card>
+        <CardFooter>
+          <CardFooterItem href={'#'}>Save</CardFooterItem>
+          <CardFooterItem href={'#'}>Edit</CardFooterItem>
+          <CardFooterItem href={'#'}>Delete</CardFooterItem>
+        </CardFooter>
+      </Card>
     </>
   )
 }
 
-function Example006Demo() {
+function CardWithHeaderAndFooterDemo() {
   return (
     <>
-      <ui.Card>
-        {' '}
-        <ui.CardHeader>
-          {' '}
-          <ui.CardHeaderTitle>Component</ui.CardHeaderTitle>{' '}
-          <ui.CardHeaderIcon aria-label={'more options'}>
-            {' '}
-            <ui.Icon>
-              {' '}
-              <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}
-            </ui.Icon>{' '}
-          </ui.CardHeaderIcon>{' '}
-        </ui.CardHeader>{' '}
-        <ui.CardContent>
-          {' '}
-          <ui.Content>
-            {' '}
+      <Card>
+        <CardHeader>
+          <CardHeaderTitle>Component</CardHeaderTitle>
+          <CardHeaderIcon aria-label={'more options'}>
+            <Icon>
+              <i aria-hidden={'true'} className={'fas fa-angle-down'} />
+            </Icon>
+          </CardHeaderIcon>
+        </CardHeader>
+        <CardContent>
+          <Content>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             nec iaculis mauris. <a href={'#'}>@bulmaio</a>.{' '}
             <a href={'#'}>#css</a> <a href={'#'}>#responsive</a> <br />{' '}
-            <time dateTime={'2016-1-1'}>11:09 PM - 1 Jan 2016</time>{' '}
-          </ui.Content>{' '}
-        </ui.CardContent>{' '}
-        <ui.CardFooter>
-          {' '}
-          <ui.CardFooterItem href={'#'}>Save</ui.CardFooterItem>{' '}
-          <ui.CardFooterItem href={'#'}>Edit</ui.CardFooterItem>{' '}
-          <ui.CardFooterItem href={'#'}>Delete</ui.CardFooterItem>{' '}
-        </ui.CardFooter>{' '}
-      </ui.Card>
+            <time dateTime={'2016-1-1'}>11:09 PM - 1 Jan 2016</time>
+          </Content>
+        </CardContent>
+        <CardFooter>
+          <CardFooterItem href={'#'}>Save</CardFooterItem>
+          <CardFooterItem href={'#'}>Edit</CardFooterItem>
+          <CardFooterItem href={'#'}>Delete</CardFooterItem>
+        </CardFooter>
+      </Card>
     </>
   )
 }
 
-function Example007Demo() {
+function QuoteCardDemo() {
   return (
     <>
-      <ui.Card>
-        {' '}
-        <ui.CardContent>
-          {' '}
-          <ui.Title as={'p'}>
-            {' '}
+      <Card>
+        <CardContent>
+          <Title as={'p'}>
             “There are two hard things in computer science: cache invalidation,
-            naming things, and off-by-one errors.”{' '}
-          </ui.Title>{' '}
-          <ui.Subtitle as={'p'}>Jeff Atwood</ui.Subtitle>{' '}
-        </ui.CardContent>{' '}
-        <ui.CardFooter>
-          {' '}
-          <ui.CardFooterItem as={'p'}>
-            {' '}
+            naming things, and off-by-one errors.”
+          </Title>
+          <Subtitle as={'p'}>Jeff Atwood</Subtitle>
+        </CardContent>
+        <CardFooter>
+          <CardFooterItem as={'p'}>
             <span>
               {' '}
               View on{' '}
@@ -1086,122 +363,121 @@ function Example007Demo() {
               >
                 Twitter
               </a>{' '}
-            </span>{' '}
-          </ui.CardFooterItem>{' '}
-          <ui.CardFooterItem as={'p'}>
-            {' '}
+            </span>
+          </CardFooterItem>
+          <CardFooterItem as={'p'}>
             <span>
               {' '}
               Share on <a href={'#'}>Facebook</a>{' '}
-            </span>{' '}
-          </ui.CardFooterItem>{' '}
-        </ui.CardFooter>{' '}
-      </ui.Card>
+            </span>
+          </CardFooterItem>
+        </CardFooter>
+      </Card>
     </>
   )
 }
 
-export const Example001 = {
+export const ProfileCardStory = {
   name: 'Profile card',
   parameters: {
     official: { id: 'components-card/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Card>\n        {' '}\n        <ui.CardImage>\n          {' '}\n          <ui.Image\n            ratio={'4by3'}\n            src={'./official-assets/1280x960.png'}\n            alt={'Placeholder image'}\n          />{' '}\n        </ui.CardImage>{' '}\n        <ui.CardContent>\n          {' '}\n          <ui.Media as={'div'}>\n            {' '}\n            <ui.MediaLeft>\n              {' '}\n              <ui.Image\n                size={48}\n                src={'./official-assets/96x96.png'}\n                alt={'Placeholder image'}\n              />{' '}\n            </ui.MediaLeft>{' '}\n            <ui.MediaContent>\n              {' '}\n              <ui.Title size={4} as={'p'}>\n                John Smith\n              </ui.Title>{' '}\n              <ui.Subtitle size={6} as={'p'}>\n                @johnsmith\n              </ui.Subtitle>{' '}\n            </ui.MediaContent>{' '}\n          </ui.Media>{' '}\n          <ui.Content>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus\n            nec iaculis mauris. <a>@bulmaio</a>. <a href={'#'}>#css</a>{' '}\n            <a href={'#'}>#responsive</a> <br />{' '}\n            <time dateTime={'2016-1-1'}>11:09 PM - 1 Jan 2016</time>{' '}\n          </ui.Content>{' '}\n        </ui.CardContent>{' '}\n      </ui.Card>\n    </>\n  )\n}\n",
+        code: "import {\n  Card,\n  CardContent,\n  CardImage,\n  Content,\n  Image,\n  Media,\n  MediaContent,\n  MediaLeft,\n  Subtitle,\n  Title,\n} from '@seagreenio/react-bulma'\n\nfunction ProfileCardDemo() {\n  return (\n    <>\n      <Card>\n        <CardImage>\n          <Image\n            ratio={'4by3'}\n            src={'./official-assets/1280x960.png'}\n            alt={'Placeholder image'}\n          />\n        </CardImage>\n        <CardContent>\n          <Media as={'div'}>\n            <MediaLeft>\n              <Image\n                size={48}\n                src={'./official-assets/96x96.png'}\n                alt={'Placeholder image'}\n              />\n            </MediaLeft>\n            <MediaContent>\n              <Title size={4} as={'p'}>\n                John Smith\n              </Title>\n              <Subtitle size={6} as={'p'}>\n                @johnsmith\n              </Subtitle>\n            </MediaContent>\n          </Media>\n          <Content>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus\n            nec iaculis mauris. <a>@bulmaio</a>. <a href={'#'}>#css</a>{' '}\n            <a href={'#'}>#responsive</a> <br />{' '}\n            <time dateTime={'2016-1-1'}>11:09 PM - 1 Jan 2016</time>\n          </Content>\n        </CardContent>\n      </Card>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: ProfileCardDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const CardHeaderStory = {
   name: 'Card header',
   parameters: {
     official: { id: 'components-card/card-parts/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Card>\n        {' '}\n        <ui.CardHeader>\n          {' '}\n          <ui.CardHeaderTitle>Card header</ui.CardHeaderTitle>{' '}\n          <ui.CardHeaderIcon aria-label={'more options'}>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n            </ui.Icon>{' '}\n          </ui.CardHeaderIcon>{' '}\n        </ui.CardHeader>{' '}\n      </ui.Card>\n    </>\n  )\n}\n",
+        code: "import {\n  Card,\n  CardHeader,\n  CardHeaderIcon,\n  CardHeaderTitle,\n  Icon,\n} from '@seagreenio/react-bulma'\n\nfunction CardHeaderDemo() {\n  return (\n    <>\n      <Card>\n        <CardHeader>\n          <CardHeaderTitle>Card header</CardHeaderTitle>\n          <CardHeaderIcon aria-label={'more options'}>\n            <Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-down'} />\n            </Icon>\n          </CardHeaderIcon>\n        </CardHeader>\n      </Card>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: CardHeaderDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const CardImageStory = {
   name: 'Card image',
   parameters: {
     official: { id: 'components-card/card-parts/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Card>\n        {' '}\n        <ui.CardImage>\n          {' '}\n          <ui.Image\n            ratio={'4by3'}\n            src={'./official-assets/1280x960.png'}\n            alt={'Placeholder image'}\n          />{' '}\n        </ui.CardImage>{' '}\n      </ui.Card>\n    </>\n  )\n}\n",
+        code: "import { Card, CardImage, Image } from '@seagreenio/react-bulma'\n\nfunction CardImageDemo() {\n  return (\n    <>\n      <Card>\n        <CardImage>\n          <Image\n            ratio={'4by3'}\n            src={'./official-assets/1280x960.png'}\n            alt={'Placeholder image'}\n          />\n        </CardImage>\n      </Card>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: CardImageDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const CardContentStory = {
   name: 'Card content',
   parameters: {
     official: { id: 'components-card/card-parts/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Card>\n        {' '}\n        <ui.CardContent>\n          {' '}\n          <ui.Content>\n            {' '}\n            Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros.\n            Donec id elit non mi porta gravida at eget metus. Cum sociis natoque\n            penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n            Cras mattis consectetur purus sit amet fermentum.{' '}\n          </ui.Content>{' '}\n        </ui.CardContent>{' '}\n      </ui.Card>\n    </>\n  )\n}\n",
+        code: "import { Card, CardContent, Content } from '@seagreenio/react-bulma'\n\nfunction CardContentDemo() {\n  return (\n    <>\n      <Card>\n        <CardContent>\n          <Content>\n            Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros.\n            Donec id elit non mi porta gravida at eget metus. Cum sociis natoque\n            penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n            Cras mattis consectetur purus sit amet fermentum.\n          </Content>\n        </CardContent>\n      </Card>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: CardContentDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const CardFooterStory = {
   name: 'Card footer',
   parameters: {
     official: { id: 'components-card/card-parts/004' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.Card>\n        {' '}\n        <ui.CardFooter>\n          {' '}\n          <ui.CardFooterItem href={'#'}>Save</ui.CardFooterItem>{' '}\n          <ui.CardFooterItem href={'#'}>Edit</ui.CardFooterItem>{' '}\n          <ui.CardFooterItem href={'#'}>Delete</ui.CardFooterItem>{' '}\n        </ui.CardFooter>{' '}\n      </ui.Card>\n    </>\n  )\n}\n",
+        code: "import { Card, CardFooter, CardFooterItem } from '@seagreenio/react-bulma'\n\nfunction CardFooterDemo() {\n  return (\n    <>\n      <Card>\n        <CardFooter>\n          <CardFooterItem href={'#'}>Save</CardFooterItem>\n          <CardFooterItem href={'#'}>Edit</CardFooterItem>\n          <CardFooterItem href={'#'}>Delete</CardFooterItem>\n        </CardFooter>\n      </Card>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: CardFooterDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const CardWithHeaderAndFooterStory = {
   name: 'Card with header and footer',
   parameters: {
     official: { id: 'components-card/examples/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.Card>\n        {' '}\n        <ui.CardHeader>\n          {' '}\n          <ui.CardHeaderTitle>Component</ui.CardHeaderTitle>{' '}\n          <ui.CardHeaderIcon aria-label={'more options'}>\n            {' '}\n            <ui.Icon>\n              {' '}\n              <i aria-hidden={'true'} className={'fas fa-angle-down'} />{' '}\n            </ui.Icon>{' '}\n          </ui.CardHeaderIcon>{' '}\n        </ui.CardHeader>{' '}\n        <ui.CardContent>\n          {' '}\n          <ui.Content>\n            {' '}\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus\n            nec iaculis mauris. <a href={'#'}>@bulmaio</a>.{' '}\n            <a href={'#'}>#css</a> <a href={'#'}>#responsive</a> <br />{' '}\n            <time dateTime={'2016-1-1'}>11:09 PM - 1 Jan 2016</time>{' '}\n          </ui.Content>{' '}\n        </ui.CardContent>{' '}\n        <ui.CardFooter>\n          {' '}\n          <ui.CardFooterItem href={'#'}>Save</ui.CardFooterItem>{' '}\n          <ui.CardFooterItem href={'#'}>Edit</ui.CardFooterItem>{' '}\n          <ui.CardFooterItem href={'#'}>Delete</ui.CardFooterItem>{' '}\n        </ui.CardFooter>{' '}\n      </ui.Card>\n    </>\n  )\n}\n",
+        code: "import {\n  Card,\n  CardContent,\n  CardFooter,\n  CardFooterItem,\n  CardHeader,\n  CardHeaderIcon,\n  CardHeaderTitle,\n  Content,\n  Icon,\n} from '@seagreenio/react-bulma'\n\nfunction CardWithHeaderAndFooterDemo() {\n  return (\n    <>\n      <Card>\n        <CardHeader>\n          <CardHeaderTitle>Component</CardHeaderTitle>\n          <CardHeaderIcon aria-label={'more options'}>\n            <Icon>\n              <i aria-hidden={'true'} className={'fas fa-angle-down'} />\n            </Icon>\n          </CardHeaderIcon>\n        </CardHeader>\n        <CardContent>\n          <Content>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus\n            nec iaculis mauris. <a href={'#'}>@bulmaio</a>.{' '}\n            <a href={'#'}>#css</a> <a href={'#'}>#responsive</a> <br />{' '}\n            <time dateTime={'2016-1-1'}>11:09 PM - 1 Jan 2016</time>\n          </Content>\n        </CardContent>\n        <CardFooter>\n          <CardFooterItem href={'#'}>Save</CardFooterItem>\n          <CardFooterItem href={'#'}>Edit</CardFooterItem>\n          <CardFooterItem href={'#'}>Delete</CardFooterItem>\n        </CardFooter>\n      </Card>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: CardWithHeaderAndFooterDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const QuoteCardStory = {
   name: 'Quote card',
   parameters: {
     official: { id: 'components-card/examples/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <ui.Card>\n        {' '}\n        <ui.CardContent>\n          {' '}\n          <ui.Title as={'p'}>\n            {' '}\n            “There are two hard things in computer science: cache invalidation,\n            naming things, and off-by-one errors.”{' '}\n          </ui.Title>{' '}\n          <ui.Subtitle as={'p'}>Jeff Atwood</ui.Subtitle>{' '}\n        </ui.CardContent>{' '}\n        <ui.CardFooter>\n          {' '}\n          <ui.CardFooterItem as={'p'}>\n            {' '}\n            <span>\n              {' '}\n              View on{' '}\n              <a\n                href={\n                  'https://twitter.com/codinghorror/status/506010907021828096'\n                }\n              >\n                Twitter\n              </a>{' '}\n            </span>{' '}\n          </ui.CardFooterItem>{' '}\n          <ui.CardFooterItem as={'p'}>\n            {' '}\n            <span>\n              {' '}\n              Share on <a href={'#'}>Facebook</a>{' '}\n            </span>{' '}\n          </ui.CardFooterItem>{' '}\n        </ui.CardFooter>{' '}\n      </ui.Card>\n    </>\n  )\n}\n",
+        code: "import {\n  Card,\n  CardContent,\n  CardFooter,\n  CardFooterItem,\n  Subtitle,\n  Title,\n} from '@seagreenio/react-bulma'\n\nfunction QuoteCardDemo() {\n  return (\n    <>\n      <Card>\n        <CardContent>\n          <Title as={'p'}>\n            “There are two hard things in computer science: cache invalidation,\n            naming things, and off-by-one errors.”\n          </Title>\n          <Subtitle as={'p'}>Jeff Atwood</Subtitle>\n        </CardContent>\n        <CardFooter>\n          <CardFooterItem as={'p'}>\n            <span>\n              {' '}\n              View on{' '}\n              <a\n                href={\n                  'https://twitter.com/codinghorror/status/506010907021828096'\n                }\n              >\n                Twitter\n              </a>{' '}\n            </span>\n          </CardFooterItem>\n          <CardFooterItem as={'p'}>\n            <span>\n              {' '}\n              Share on <a href={'#'}>Facebook</a>{' '}\n            </span>\n          </CardFooterItem>\n        </CardFooter>\n      </Card>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: QuoteCardDemo,
 } satisfies StoryObj

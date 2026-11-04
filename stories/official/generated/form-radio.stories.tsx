@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Block, Control, Radio, Radios } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,126 +23,160 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="form-radio" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Radio button'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'The mutually exclusive '}
           <strong data-official-prose="">{'radio buttons'}</strong>
           {' in their native format'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n   \n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The '}
+            {' The '}
             <code data-official-prose="">{'radio'}</code>
-            {' class is a simple wrapper around the\n    '}
+            {' class is a simple wrapper around the '}
             <code data-official-prose="">{'<input type="radio">'}</code>
             {
-              ' HTML elements. It is intentionally\n    not styled, to preserve cross-browser compatibility and the user experience.\n  '
+              ' HTML elements. It is intentionally not styled, to preserve cross-browser compatibility and the user experience. '
             }
           </p>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Make sure the linked radio buttons have the '}
+            {' Make sure the linked radio buttons have the '}
             <strong data-official-prose="">{'same value'}</strong>
-            {' for\n    their '}
+            {' for their '}
             <code data-official-prose="">{'name'}</code>
-            {' HTML attribute.\n  '}
+            {' HTML attribute. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        <div data-official-example="form-radio/basic/001">
-          <Canvas of={Example001} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-radio/basic/001'}
+          >
+            <div data-official-example="form-radio/basic/001">
+              <Canvas of={RadioGroupStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-half bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control">\n  <label class="radio">\n    <input type="radio" name="answer" />\n    Yes\n  </label>\n  <label class="radio">\n    <input type="radio" name="answer" />\n    No\n  </label>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can check a radio button by '}
+            {' You can check a radio button by '}
             <strong data-official-prose="">{'default'}</strong>
-            {' by adding the\n    '}
+            {' by adding the '}
             <code data-official-prose="">{'checked'}</code>
-            {' HTML attribute to the\n    '}
+            {' HTML attribute to the '}
             <code data-official-prose="">{'<input>'}</code>
-            {' element.\n  '}
+            {' element. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        <div data-official-example="form-radio/basic/002">
-          <Canvas of={Example002} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-radio/basic/002'}
+          >
+            <div data-official-example="form-radio/basic/002">
+              <Canvas of={PreselectedRadioStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-half bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control">\n  <label class="radio">\n    <input type="radio" name="foobar" />\n    Foo\n  </label>\n  <label class="radio">\n    <input type="radio" name="foobar" checked />\n    Bar\n  </label>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    You can '}
+            {' You can '}
             <strong data-official-prose="">{'disable'}</strong>
-            {' a radio button by adding the\n    '}
+            {' a radio button by adding the '}
             <code data-official-prose="">{'disabled'}</code>
-            {' HTML attribute to both the\n    '}
+            {' HTML attribute to both the '}
             <code data-official-prose="">{'<label>'}</code>
             {' and the '}
             <code data-official-prose="">{'<input>'}</code>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        <div data-official-example="form-radio/basic/003">
-          <Canvas of={Example003} />
+        <div data-official-prose="" className={'columns'}>
+          <div
+            data-official-prose=""
+            className={'column is-half'}
+            data-source-example={'form-radio/basic/003'}
+          >
+            <div data-official-example="form-radio/basic/003">
+              <Canvas of={DisabledRadioStory} />
+            </div>
+          </div>
+          <div
+            data-official-prose=""
+            className={'column is-half bd-highlight-full'}
+          >
+            <div data-official-prose="" className={'highlight'}>
+              <pre data-official-prose="">
+                <code data-official-prose="" className={'language-html'}>
+                  {
+                    '\n<div class="control">\n  <label class="radio">\n    <input type="radio" name="rsvp" />\n    Going\n  </label>\n  <label class="radio">\n    <input type="radio" name="rsvp" />\n    Not going\n  </label>\n  <label class="radio" disabled>\n    <input type="radio" name="rsvp" disabled />\n    Maybe\n  </label>\n</div>\n'
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'list-of-radio-buttons'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    List of Radio Buttons\n  '}
-          </span>
-          {'\n  '}
+            {' List of Radio Buttons '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#list-of-radio-buttons'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {
-              '\n    If you want to list several radio buttons, wrap them in a\n    '
-            }
+            {' If you want to list several radio buttons, wrap them in a '}
             <code data-official-prose="">{'<div class="radios">'}</code>
-            {' element:\n  '}
+            {' element: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="form-radio/list-of-radio-buttons/001">
-          <Canvas of={Example004} />
+          <Canvas of={RadioButtonListStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -152,192 +186,127 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function RadioGroupDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
-          {' '}
-          <ui.Control>
-            {' '}
-            <ui.Radio name={'answer'}> Yes </ui.Radio>{' '}
-            <ui.Radio name={'answer'}> No </ui.Radio>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control">\n  <label class="radio">\n    <input type="radio" name="answer" />\n    Yes\n  </label>\n  <label class="radio">\n    <input type="radio" name="answer" />\n    No\n  </label>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+      <Control>
+        <Radio name={'answer'}> Yes </Radio> <Radio name={'answer'}> No </Radio>
+      </Control>
     </>
   )
 }
 
-function Example002Demo() {
+function PreselectedRadioDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
+      <Control>
+        <Radio name={'foobar'}> Foo </Radio>{' '}
+        <Radio name={'foobar'} defaultChecked>
           {' '}
-          <ui.Control>
-            {' '}
-            <ui.Radio name={'foobar'}> Foo </ui.Radio>{' '}
-            <ui.Radio name={'foobar'} defaultChecked>
-              {' '}
-              Bar{' '}
-            </ui.Radio>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control">\n  <label class="radio">\n    <input type="radio" name="foobar" />\n    Foo\n  </label>\n  <label class="radio">\n    <input type="radio" name="foobar" checked />\n    Bar\n  </label>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+          Bar{' '}
+        </Radio>
+      </Control>
     </>
   )
 }
 
-function Example003Demo() {
+function DisabledRadioDemo() {
   return (
     <>
-      <ui.Columns>
-        {' '}
-        <ui.Column width={'half'}>
+      <Control>
+        <Radio name={'rsvp'}> Going </Radio>{' '}
+        <Radio name={'rsvp'}> Not going </Radio>{' '}
+        <Radio name={'rsvp'} disabled wrapperProps={{ 'aria-disabled': true }}>
           {' '}
-          <ui.Control>
-            {' '}
-            <ui.Radio name={'rsvp'}> Going </ui.Radio>{' '}
-            <ui.Radio name={'rsvp'}> Not going </ui.Radio>{' '}
-            <ui.Radio
-              name={'rsvp'}
-              disabled
-              wrapperProps={{ 'aria-disabled': true }}
-            >
-              {' '}
-              Maybe{' '}
-            </ui.Radio>{' '}
-          </ui.Control>{' '}
-        </ui.Column>{' '}
-        <ui.Column width={'half'} className={'bd-highlight-full'}>
-          {' '}
-          <div className={'highlight'}>
-            <pre>
-              <code className={'language-html'}>
-                {
-                  '\n<div class="control">\n  <label class="radio">\n    <input type="radio" name="rsvp" />\n    Going\n  </label>\n  <label class="radio">\n    <input type="radio" name="rsvp" />\n    Not going\n  </label>\n  <label class="radio" disabled>\n    <input type="radio" name="rsvp" disabled />\n    Maybe\n  </label>\n</div>\n'
-                }
-              </code>
-            </pre>
-          </div>{' '}
-        </ui.Column>{' '}
-      </ui.Columns>
+          Maybe{' '}
+        </Radio>
+      </Control>
     </>
   )
 }
 
-function Example004Demo() {
+function RadioButtonListDemo() {
   return (
     <>
-      <ui.Block>
-        {' '}
-        <ui.Radios>
-          {' '}
-          <ui.Radio name={'rsvp'}> Going </ui.Radio>{' '}
-          <ui.Radio name={'rsvp'}> Not going </ui.Radio>{' '}
-          <ui.Radio
+      <Block>
+        <Radios>
+          <Radio name={'rsvp'}> Going </Radio>
+          <Radio name={'rsvp'}> Not going </Radio>
+          <Radio
             name={'rsvp'}
             disabled
             wrapperProps={{ 'aria-disabled': true }}
           >
             {' '}
             Maybe{' '}
-          </ui.Radio>{' '}
-        </ui.Radios>{' '}
-      </ui.Block>
+          </Radio>
+        </Radios>
+      </Block>
     </>
   )
 }
 
-export const Example001 = {
+export const RadioGroupStory = {
   name: 'Radio group',
   parameters: {
     official: { id: 'form-radio/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Radio name={'answer'}> Yes </ui.Radio>{' '}\n            <ui.Radio name={'answer'}> No </ui.Radio>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"answer\" />\\n    Yes\\n  </label>\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"answer\" />\\n    No\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Radio } from '@seagreenio/react-bulma'\n\nfunction RadioGroupDemo() {\n  return (\n    <>\n      <Control>\n        <Radio name={'answer'}> Yes </Radio> <Radio name={'answer'}> No </Radio>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: RadioGroupDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const PreselectedRadioStory = {
   name: 'Preselected radio',
   parameters: {
     official: { id: 'form-radio/basic/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Radio name={'foobar'}> Foo </ui.Radio>{' '}\n            <ui.Radio name={'foobar'} defaultChecked>\n              {' '}\n              Bar{' '}\n            </ui.Radio>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"foobar\" />\\n    Foo\\n  </label>\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"foobar\" checked />\\n    Bar\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Radio } from '@seagreenio/react-bulma'\n\nfunction PreselectedRadioDemo() {\n  return (\n    <>\n      <Control>\n        <Radio name={'foobar'}> Foo </Radio>{' '}\n        <Radio name={'foobar'} defaultChecked>\n          {' '}\n          Bar{' '}\n        </Radio>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: PreselectedRadioDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const DisabledRadioStory = {
   name: 'Disabled radio',
   parameters: {
     official: { id: 'form-radio/basic/003' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.Columns>\n        {' '}\n        <ui.Column width={'half'}>\n          {' '}\n          <ui.Control>\n            {' '}\n            <ui.Radio name={'rsvp'}> Going </ui.Radio>{' '}\n            <ui.Radio name={'rsvp'}> Not going </ui.Radio>{' '}\n            <ui.Radio\n              name={'rsvp'}\n              disabled\n              wrapperProps={{ 'aria-disabled': true }}\n            >\n              {' '}\n              Maybe{' '}\n            </ui.Radio>{' '}\n          </ui.Control>{' '}\n        </ui.Column>{' '}\n        <ui.Column width={'half'} className={'bd-highlight-full'}>\n          {' '}\n          <div className={'highlight'}>\n            <pre>\n              <code className={'language-html'}>\n                {\n                  '\\n<div class=\"control\">\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"rsvp\" />\\n    Going\\n  </label>\\n  <label class=\"radio\">\\n    <input type=\"radio\" name=\"rsvp\" />\\n    Not going\\n  </label>\\n  <label class=\"radio\" disabled>\\n    <input type=\"radio\" name=\"rsvp\" disabled />\\n    Maybe\\n  </label>\\n</div>\\n'\n                }\n              </code>\n            </pre>\n          </div>{' '}\n        </ui.Column>{' '}\n      </ui.Columns>\n    </>\n  )\n}\n",
+        code: "import { Control, Radio } from '@seagreenio/react-bulma'\n\nfunction DisabledRadioDemo() {\n  return (\n    <>\n      <Control>\n        <Radio name={'rsvp'}> Going </Radio>{' '}\n        <Radio name={'rsvp'}> Not going </Radio>{' '}\n        <Radio name={'rsvp'} disabled wrapperProps={{ 'aria-disabled': true }}>\n          {' '}\n          Maybe{' '}\n        </Radio>\n      </Control>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: DisabledRadioDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const RadioButtonListStory = {
   name: 'Radio button list',
   parameters: {
     official: { id: 'form-radio/list-of-radio-buttons/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.Block>\n        {' '}\n        <ui.Radios>\n          {' '}\n          <ui.Radio name={'rsvp'}> Going </ui.Radio>{' '}\n          <ui.Radio name={'rsvp'}> Not going </ui.Radio>{' '}\n          <ui.Radio\n            name={'rsvp'}\n            disabled\n            wrapperProps={{ 'aria-disabled': true }}\n          >\n            {' '}\n            Maybe{' '}\n          </ui.Radio>{' '}\n        </ui.Radios>{' '}\n      </ui.Block>\n    </>\n  )\n}\n",
+        code: "import { Block, Radio, Radios } from '@seagreenio/react-bulma'\n\nfunction RadioButtonListDemo() {\n  return (\n    <>\n      <Block>\n        <Radios>\n          <Radio name={'rsvp'}> Going </Radio>\n          <Radio name={'rsvp'}> Not going </Radio>\n          <Radio\n            name={'rsvp'}\n            disabled\n            wrapperProps={{ 'aria-disabled': true }}\n          >\n            {' '}\n            Maybe{' '}\n          </Radio>\n        </Radios>\n      </Block>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: RadioButtonListDemo,
 } satisfies StoryObj

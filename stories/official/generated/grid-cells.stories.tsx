@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Cell, FixedGrid } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,27 +23,17 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="grid-cells" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Grid Cells'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'Adjust the width and height of each '}
           <strong data-official-prose="">{'individual cell'}</strong>
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'Each Bulma grid is comprised of several '}
             <strong data-official-prose="">{'cells'}</strong>
@@ -51,39 +41,25 @@ function OfficialDocs() {
               '. You can adjust the width and height of each of these cells individually, and for each separate breakpoint.'
             }
           </p>
-          {'\n\n'}
         </div>
-        {'\n\n\n'}
         <table data-official-prose="" className={'table is-bordered'}>
-          {'\n  '}
           <thead data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <th data-official-prose="">{'Description'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Class'}</th>
-              {'\n      '}
               <th data-official-prose="">{'Example'}</th>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </thead>
-          {'\n  '}
           <tbody data-official-prose="">
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
                 {'Which column the cell '}
                 <strong data-official-prose="">{'starts'}</strong>
                 {' at'}
               </td>
-              {'\n      '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-start'}</code>
               </td>
-              {'\n      '}
               <td
                 data-official-prose=""
                 className={'p-0'}
@@ -97,22 +73,17 @@ function OfficialDocs() {
                   </pre>
                 </div>
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
                 {'Which column the cell '}
                 <strong data-official-prose="">{'ends'}</strong>
                 {' at, counting '}
                 <em data-official-prose="">{'from the end'}</em>
               </td>
-              {'\n      '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-from-end'}</code>
               </td>
-              {'\n      '}
               <td
                 data-official-prose=""
                 className={'p-0'}
@@ -126,20 +97,15 @@ function OfficialDocs() {
                   </pre>
                 </div>
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
                 <strong data-official-prose="">{'How many columns'}</strong>
                 {' the cell will span'}
               </td>
-              {'\n      '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-col-span'}</code>
               </td>
-              {'\n      '}
               <td
                 data-official-prose=""
                 className={'p-0'}
@@ -153,21 +119,16 @@ function OfficialDocs() {
                   </pre>
                 </div>
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
                 {'Which row the cell '}
                 <strong data-official-prose="">{'starts'}</strong>
                 {' at'}
               </td>
-              {'\n      '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-start'}</code>
               </td>
-              {'\n      '}
               <td
                 data-official-prose=""
                 className={'p-0'}
@@ -181,22 +142,17 @@ function OfficialDocs() {
                   </pre>
                 </div>
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
                 {'Which row the cell '}
                 <strong data-official-prose="">{'ends'}</strong>
                 {' at, counting '}
                 <em data-official-prose="">{'from the end'}</em>
               </td>
-              {'\n      '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-from-end'}</code>
               </td>
-              {'\n      '}
               <td
                 data-official-prose=""
                 className={'p-0'}
@@ -210,20 +166,15 @@ function OfficialDocs() {
                   </pre>
                 </div>
               </td>
-              {'\n    '}
             </tr>
-            {'\n    '}
             <tr data-official-prose="">
-              {'\n      '}
               <td data-official-prose="">
                 <strong data-official-prose="">{'How many rows'}</strong>
                 {' the cell will span'}
               </td>
-              {'\n      '}
               <td data-official-prose="">
                 <code data-official-prose="">{'is-row-span'}</code>
               </td>
-              {'\n      '}
               <td
                 data-official-prose=""
                 className={'p-0'}
@@ -237,75 +188,57 @@ function OfficialDocs() {
                   </pre>
                 </div>
               </td>
-              {'\n    '}
             </tr>
-            {'\n  '}
           </tbody>
-          {'\n'}
         </table>
-        {'\n\n\n\n'}
         <h3
           data-official-prose=""
           id={'column-start'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Column Start\n  '}
-          </span>
-          {'\n  '}
+            {' Column Start '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#column-start'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n\n\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'Change which column a cell starts at.'}
           </p>
-          {'\n\n'}
         </div>
-        {'\n\n\n\n'}
         <div data-official-example="grid-cells/column-start/001">
-          <Canvas of={Example001} />
+          <Canvas of={ColumnStartPositionStory} />
         </div>
-        {'\n\n\n'}
         <div
           data-official-prose=""
           className={
             '\n    bd-snippet\n    bd-is-horizontal\n    bd-is-fullwidth\n    \n    bd-is-size-5\n  '
           }
         >
-          {'\n  \n\n  '}
           <div
             data-official-prose=""
             className={'bd-snippet-source bd-theme-html'}
           >
-            {'\n    '}
             <p data-official-prose="" className={'bd-snippet-title'}>
-              {'\n      '}
               <span
                 data-official-prose=""
                 className={'bd-snippet-tag bd-is-html'}
               >
                 {'HTML'}
               </span>
-              {'\n    '}
             </p>
-            {'\n\n    '}
             <div
               data-official-prose=""
               className={
                 '\n        bd-snippet-code\n        bd-highlight-full\n        bd-is-more bd-is-more-clipped\n      '
               }
             >
-              {'\n      '}
               <div data-official-prose="" className={'highlight'}>
                 <pre data-official-prose="">
                   <code data-official-prose="" className={'language-html'}>
@@ -315,75 +248,57 @@ function OfficialDocs() {
                   </code>
                 </pre>
               </div>
-              {'\n    '}
             </div>
-            {'\n  '}
           </div>
-          {'\n'}
         </div>
-        {'\n\n\n\n\n'}
         <h3
           data-official-prose=""
           id={'column-from-end'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Column From End\n  '}
-          </span>
-          {'\n  '}
+            {' Column From End '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#column-from-end'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n\n\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'Change which column a cell ends at, counting from the end.'}
           </p>
-          {'\n\n'}
         </div>
-        {'\n\n\n\n'}
         <div data-official-example="grid-cells/column-from-end/001">
-          <Canvas of={Example002} />
+          <Canvas of={ColumnEndPositionStory} />
         </div>
-        {'\n\n\n'}
         <div
           data-official-prose=""
           className={
             '\n    bd-snippet\n    bd-is-horizontal\n    bd-is-fullwidth\n    \n    bd-is-size-5\n  '
           }
         >
-          {'\n  \n\n  '}
           <div
             data-official-prose=""
             className={'bd-snippet-source bd-theme-html'}
           >
-            {'\n    '}
             <p data-official-prose="" className={'bd-snippet-title'}>
-              {'\n      '}
               <span
                 data-official-prose=""
                 className={'bd-snippet-tag bd-is-html'}
               >
                 {'HTML'}
               </span>
-              {'\n    '}
             </p>
-            {'\n\n    '}
             <div
               data-official-prose=""
               className={
                 '\n        bd-snippet-code\n        bd-highlight-full\n        bd-is-more bd-is-more-clipped\n      '
               }
             >
-              {'\n      '}
               <div data-official-prose="" className={'highlight'}>
                 <pre data-official-prose="">
                   <code data-official-prose="" className={'language-html'}>
@@ -393,75 +308,57 @@ function OfficialDocs() {
                   </code>
                 </pre>
               </div>
-              {'\n    '}
             </div>
-            {'\n  '}
           </div>
-          {'\n'}
         </div>
-        {'\n\n\n\n\n'}
         <h3
           data-official-prose=""
           id={'column-span'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Column Span\n  '}
-          </span>
-          {'\n  '}
+            {' Column Span '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#column-span'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n\n\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'Change how many columns a cell spans.'}
           </p>
-          {'\n\n'}
         </div>
-        {'\n\n\n\n'}
         <div data-official-example="grid-cells/column-span/001">
-          <Canvas of={Example003} />
+          <Canvas of={ColumnSpanStory} />
         </div>
-        {'\n\n\n'}
         <div
           data-official-prose=""
           className={
             '\n    bd-snippet\n    bd-is-horizontal\n    bd-is-fullwidth\n    \n    bd-is-size-5\n  '
           }
         >
-          {'\n  \n\n  '}
           <div
             data-official-prose=""
             className={'bd-snippet-source bd-theme-html'}
           >
-            {'\n    '}
             <p data-official-prose="" className={'bd-snippet-title'}>
-              {'\n      '}
               <span
                 data-official-prose=""
                 className={'bd-snippet-tag bd-is-html'}
               >
                 {'HTML'}
               </span>
-              {'\n    '}
             </p>
-            {'\n\n    '}
             <div
               data-official-prose=""
               className={
                 '\n        bd-snippet-code\n        bd-highlight-full\n        bd-is-more bd-is-more-clipped\n      '
               }
             >
-              {'\n      '}
               <div data-official-prose="" className={'highlight'}>
                 <pre data-official-prose="">
                   <code data-official-prose="" className={'language-html'}>
@@ -471,73 +368,55 @@ function OfficialDocs() {
                   </code>
                 </pre>
               </div>
-              {'\n    '}
             </div>
-            {'\n  '}
           </div>
-          {'\n'}
         </div>
-        {'\n\n\n\n\n\n\n'}
         <h3
           data-official-prose=""
           id={'row-start'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Row Start\n  '}
-          </span>
-          {'\n  '}
+            {' Row Start '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#row-start'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n\n\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">{'Change which row a cell starts at.'}</p>
-          {'\n\n'}
         </div>
-        {'\n\n\n\n'}
         <div data-official-example="grid-cells/row-start/001">
-          <Canvas of={Example004} />
+          <Canvas of={RowStartPositionStory} />
         </div>
-        {'\n\n\n'}
         <div
           data-official-prose=""
           className={
             '\n    bd-snippet\n    bd-is-horizontal\n    bd-is-fullwidth\n    \n    bd-is-size-5\n  '
           }
         >
-          {'\n  \n\n  '}
           <div
             data-official-prose=""
             className={'bd-snippet-source bd-theme-html'}
           >
-            {'\n    '}
             <p data-official-prose="" className={'bd-snippet-title'}>
-              {'\n      '}
               <span
                 data-official-prose=""
                 className={'bd-snippet-tag bd-is-html'}
               >
                 {'HTML'}
               </span>
-              {'\n    '}
             </p>
-            {'\n\n    '}
             <div
               data-official-prose=""
               className={
                 '\n        bd-snippet-code\n        bd-highlight-full\n        bd-is-more bd-is-more-clipped\n      '
               }
             >
-              {'\n      '}
               <div data-official-prose="" className={'highlight'}>
                 <pre data-official-prose="">
                   <code data-official-prose="" className={'language-html'}>
@@ -547,75 +426,57 @@ function OfficialDocs() {
                   </code>
                 </pre>
               </div>
-              {'\n    '}
             </div>
-            {'\n  '}
           </div>
-          {'\n'}
         </div>
-        {'\n\n\n\n\n'}
         <h3
           data-official-prose=""
           id={'row-from-end'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Row From End\n  '}
-          </span>
-          {'\n  '}
+            {' Row From End '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#row-from-end'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n\n\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {'Change which row a cell ends at, counting from the end.'}
           </p>
-          {'\n\n'}
         </div>
-        {'\n\n\n\n'}
         <div data-official-example="grid-cells/row-from-end/001">
-          <Canvas of={Example005} />
+          <Canvas of={RowEndPositionStory} />
         </div>
-        {'\n\n\n'}
         <div
           data-official-prose=""
           className={
             '\n    bd-snippet\n    bd-is-horizontal\n    bd-is-fullwidth\n    \n    bd-is-size-5\n  '
           }
         >
-          {'\n  \n\n  '}
           <div
             data-official-prose=""
             className={'bd-snippet-source bd-theme-html'}
           >
-            {'\n    '}
             <p data-official-prose="" className={'bd-snippet-title'}>
-              {'\n      '}
               <span
                 data-official-prose=""
                 className={'bd-snippet-tag bd-is-html'}
               >
                 {'HTML'}
               </span>
-              {'\n    '}
             </p>
-            {'\n\n    '}
             <div
               data-official-prose=""
               className={
                 '\n        bd-snippet-code\n        bd-highlight-full\n        bd-is-more bd-is-more-clipped\n      '
               }
             >
-              {'\n      '}
               <div data-official-prose="" className={'highlight'}>
                 <pre data-official-prose="">
                   <code data-official-prose="" className={'language-html'}>
@@ -625,73 +486,55 @@ function OfficialDocs() {
                   </code>
                 </pre>
               </div>
-              {'\n    '}
             </div>
-            {'\n  '}
           </div>
-          {'\n'}
         </div>
-        {'\n\n\n\n\n'}
         <h3
           data-official-prose=""
           id={'row-span'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Row Span\n  '}
-          </span>
-          {'\n  '}
+            {' Row Span '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#row-span'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n\n\n\n\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">{'Change how many rows a cell spans.'}</p>
-          {'\n\n'}
         </div>
-        {'\n\n\n\n'}
         <div data-official-example="grid-cells/row-span/001">
-          <Canvas of={Example006} />
+          <Canvas of={RowSpanStory} />
         </div>
-        {'\n\n\n'}
         <div
           data-official-prose=""
           className={
             '\n    bd-snippet\n    bd-is-horizontal\n    bd-is-fullwidth\n    \n    bd-is-size-5\n  '
           }
         >
-          {'\n  \n\n  '}
           <div
             data-official-prose=""
             className={'bd-snippet-source bd-theme-html'}
           >
-            {'\n    '}
             <p data-official-prose="" className={'bd-snippet-title'}>
-              {'\n      '}
               <span
                 data-official-prose=""
                 className={'bd-snippet-tag bd-is-html'}
               >
                 {'HTML'}
               </span>
-              {'\n    '}
             </p>
-            {'\n\n    '}
             <div
               data-official-prose=""
               className={
                 '\n        bd-snippet-code\n        bd-highlight-full\n        bd-is-more bd-is-more-clipped\n      '
               }
             >
-              {'\n      '}
               <div data-official-prose="" className={'highlight'}>
                 <pre data-official-prose="">
                   <code data-official-prose="" className={'language-html'}>
@@ -701,446 +544,436 @@ function OfficialDocs() {
                   </code>
                 </pre>
               </div>
-              {'\n    '}
             </div>
-            {'\n  '}
           </div>
-          {'\n'}
         </div>
-        {'\n\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function ColumnStartPositionDemo() {
   return (
     <>
-      <ui.FixedGrid columns={4}>
-        {' '}
-        <ui.Cell
+      <FixedGrid columns={4}>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 1
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           columnStart={3}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 2
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 3
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 4
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 5
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 6
-        </ui.Cell>{' '}
-      </ui.FixedGrid>
+        </Cell>
+      </FixedGrid>
     </>
   )
 }
 
-function Example002Demo() {
+function ColumnEndPositionDemo() {
   return (
     <>
-      <ui.FixedGrid columns={4}>
-        {' '}
-        <ui.Cell
+      <FixedGrid columns={4}>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 1
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           columnFromEnd={2}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 2
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 3
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 4
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 5
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 6
-        </ui.Cell>{' '}
-      </ui.FixedGrid>
+        </Cell>
+      </FixedGrid>
     </>
   )
 }
 
-function Example003Demo() {
+function ColumnSpanDemo() {
   return (
     <>
-      <ui.FixedGrid columns={4}>
-        {' '}
-        <ui.Cell
+      <FixedGrid columns={4}>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 1
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           columnSpan={2}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 2
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 3
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 4
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 5
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 6
-        </ui.Cell>{' '}
-      </ui.FixedGrid>
+        </Cell>
+      </FixedGrid>
     </>
   )
 }
 
-function Example004Demo() {
+function RowStartPositionDemo() {
   return (
     <>
-      <ui.FixedGrid columns={4}>
-        {' '}
-        <ui.Cell
+      <FixedGrid columns={4}>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 1
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           rowStart={3}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 2
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 3
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 4
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 5
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 6
-        </ui.Cell>{' '}
-      </ui.FixedGrid>
+        </Cell>
+      </FixedGrid>
     </>
   )
 }
 
-function Example005Demo() {
+function RowEndPositionDemo() {
   return (
     <>
-      <ui.FixedGrid columns={4}>
-        {' '}
-        <ui.Cell
+      <FixedGrid columns={4}>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 1
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           rowFromEnd={1}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 2
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 3
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 4
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 5
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 6
-        </ui.Cell>{' '}
-      </ui.FixedGrid>
+        </Cell>
+      </FixedGrid>
     </>
   )
 }
 
-function Example006Demo() {
+function RowSpanDemo() {
   return (
     <>
-      <ui.FixedGrid columns={4}>
-        {' '}
-        <ui.Cell
+      <FixedGrid columns={4}>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 1
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           rowSpan={2}
           helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}
           className={'rb-has-text-primary-invert rb-has-radius-normal'}
         >
           Cell 2
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 3
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 4
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 5
-        </ui.Cell>{' '}
-        <ui.Cell
+        </Cell>
+        <Cell
           helpers={{ py: 3, px: 4 }}
           className={
             'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'
           }
         >
           Cell 6
-        </ui.Cell>{' '}
-      </ui.FixedGrid>
+        </Cell>
+      </FixedGrid>
     </>
   )
 }
 
-export const Example001 = {
+export const ColumnStartPositionStory = {
   name: 'Column start position',
   parameters: {
     official: { id: 'grid-cells/column-start/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          columnStart={3}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
+        code: "import { Cell, FixedGrid } from '@seagreenio/react-bulma'\n\nfunction ColumnStartPositionDemo() {\n  return (\n    <>\n      <FixedGrid columns={4}>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </Cell>\n        <Cell\n          columnStart={3}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </Cell>\n      </FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: ColumnStartPositionDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const ColumnEndPositionStory = {
   name: 'Column end position',
   parameters: {
     official: { id: 'grid-cells/column-from-end/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          columnFromEnd={2}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
+        code: "import { Cell, FixedGrid } from '@seagreenio/react-bulma'\n\nfunction ColumnEndPositionDemo() {\n  return (\n    <>\n      <FixedGrid columns={4}>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </Cell>\n        <Cell\n          columnFromEnd={2}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </Cell>\n      </FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: ColumnEndPositionDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const ColumnSpanStory = {
   name: 'Column span',
   parameters: {
     official: { id: 'grid-cells/column-span/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          columnSpan={2}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
+        code: "import { Cell, FixedGrid } from '@seagreenio/react-bulma'\n\nfunction ColumnSpanDemo() {\n  return (\n    <>\n      <FixedGrid columns={4}>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </Cell>\n        <Cell\n          columnSpan={2}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </Cell>\n      </FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: ColumnSpanDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const RowStartPositionStory = {
   name: 'Row start position',
   parameters: {
     official: { id: 'grid-cells/row-start/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          rowStart={3}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
+        code: "import { Cell, FixedGrid } from '@seagreenio/react-bulma'\n\nfunction RowStartPositionDemo() {\n  return (\n    <>\n      <FixedGrid columns={4}>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </Cell>\n        <Cell\n          rowStart={3}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </Cell>\n      </FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: RowStartPositionDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const RowEndPositionStory = {
   name: 'Row end position',
   parameters: {
     official: { id: 'grid-cells/row-from-end/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          rowFromEnd={1}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
+        code: "import { Cell, FixedGrid } from '@seagreenio/react-bulma'\n\nfunction RowEndPositionDemo() {\n  return (\n    <>\n      <FixedGrid columns={4}>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </Cell>\n        <Cell\n          rowFromEnd={1}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </Cell>\n      </FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: RowEndPositionDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const RowSpanStory = {
   name: 'Row span',
   parameters: {
     official: { id: 'grid-cells/row-span/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <ui.FixedGrid columns={4}>\n        {' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </ui.Cell>{' '}\n        <ui.Cell\n          rowSpan={2}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </ui.Cell>{' '}\n        <ui.Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </ui.Cell>{' '}\n      </ui.FixedGrid>\n    </>\n  )\n}\n",
+        code: "import { Cell, FixedGrid } from '@seagreenio/react-bulma'\n\nfunction RowSpanDemo() {\n  return (\n    <>\n      <FixedGrid columns={4}>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 1\n        </Cell>\n        <Cell\n          rowSpan={2}\n          helpers={{ py: 3, px: 4, backgroundColor: 'primary' }}\n          className={'rb-has-text-primary-invert rb-has-radius-normal'}\n        >\n          Cell 2\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 3\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 4\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 5\n        </Cell>\n        <Cell\n          helpers={{ py: 3, px: 4 }}\n          className={\n            'rb-has-background-primary-light rb-has-text-primary-light-invert rb-has-radius-normal'\n          }\n        >\n          Cell 6\n        </Cell>\n      </FixedGrid>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: RowSpanDemo,
 } satisfies StoryObj

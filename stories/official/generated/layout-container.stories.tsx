@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import { Container, Notification } from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,142 +23,100 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="layout-container" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Container'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'A simple '}
           <strong data-official-prose="">{'container'}</strong>
           {' to center your content horizontally'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n            \n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The '}
+            {' The '}
             <code data-official-prose="">{'container'}</code>
-            {' is a simple utility element that allows you to\n    '}
+            {' is a simple utility element that allows you to '}
             <strong data-official-prose="">{'center'}</strong>
             {
-              ' content on larger viewports. It can be used in any\n    context, but mostly as a '
+              ' content on larger viewports. It can be used in any context, but mostly as a '
             }
             <strong data-official-prose="">{'direct child'}</strong>
-            {' of one of the\n    following:\n  '}
+            {' of one of the following: '}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'navbar'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'hero'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'section'}</code>
             </li>
-            {'\n    '}
             <li data-official-prose="">
               <code data-official-prose="">{'footer'}</code>
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'overview'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Overview\n  '}
-          </span>
-          {'\n  '}
+            {' Overview '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#overview'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'table-container'}>
-          {'\n  '}
           <table data-official-prose="" className={'table is-bordered'}>
-            {'\n    '}
             <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">{'\n        \n'}</tr>
+              <tr data-official-prose=""></tr>
             </thead>
             <thead data-official-prose="">
-              {'\n  '}
               <tr data-official-prose="">
-                {'\n    '}
                 <th data-official-prose="" className={'bd-is-empty'}></th>
-                {'\n         \n    '}
                 <th data-official-prose="">
-                  {'\n      Below\n      '}
-                  <br data-official-prose="" />
-                  {'\n      '}
+                  {' Below '}
+                  <br data-official-prose="" />{' '}
                   <code data-official-prose="">{'1023px'}</code>
-                  {'\n    '}
                 </th>
-                {'\n       \n    '}
                 <th data-official-prose="">
-                  {'\n      Desktop\n      '}
+                  {' Desktop '}
                   <br data-official-prose="" />
-                  {'\n       Between\n      '}
+                  {' Between '}
                   <code data-official-prose="">{'1024px'}</code>
-                  {' and\n      '}
+                  {' and '}
                   <code data-official-prose="">{'1215px'}</code>
-                  {'\n      \n    '}
                 </th>
-                {'\n       \n    '}
                 <th data-official-prose="">
-                  {'\n      Widescreen\n      '}
+                  {' Widescreen '}
                   <br data-official-prose="" />
-                  {'\n       Between\n      '}
+                  {' Between '}
                   <code data-official-prose="">{'1216px'}</code>
-                  {' and\n      '}
+                  {' and '}
                   <code data-official-prose="">{'1407px'}</code>
-                  {'\n      \n    '}
                 </th>
-                {'\n       \n    '}
                 <th data-official-prose="">
-                  {'\n      FullHD\n      '}
-                  <br data-official-prose="" />
-                  {'\n      \n      '}
+                  {' FullHD '}
+                  <br data-official-prose="" />{' '}
                   <code data-official-prose="">{'1408px'}</code>
-                  {' and above \n    '}
+                  {' and above '}
                 </th>
-                {'\n     \n  '}
               </tr>
-              {'\n'}
             </thead>
-            {'\n\n      \n      '}
             <tbody data-official-prose="">
               <tr data-official-prose="">
-                {'\n        '}
                 <th data-official-prose="">{'Class'}</th>
-                {'\n        '}
                 <th
                   data-official-prose=""
                   colSpan={4}
@@ -166,258 +124,188 @@ function OfficialDocs() {
                 >
                   <code data-official-prose="">{'max-width'}</code>
                 </th>
-                {'\n      '}
               </tr>
-              {'\n    \n    '}
             </tbody>
             <tbody data-official-prose="">
-              {'\n      '}
               <tr data-official-prose="">
-                {'\n        '}
                 <td data-official-prose="">
                   <code data-official-prose="">{'.container'}</code>
                 </td>
-                {'\n        '}
                 <td
                   data-official-prose=""
                   className={'has-text-grey-light has-background-white-ter'}
                 >
                   {'Full width'}
                 </td>
-                {'\n        '}
                 <td data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'960px'}</code>
-                  {'\n        '}
                 </td>
-                {'\n        '}
                 <td data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'1152px'}</code>
-                  {'\n        '}
                 </td>
-                {'\n        '}
                 <td data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'1344px'}</code>
-                  {'\n        '}
                 </td>
-                {'\n      '}
               </tr>
-              {'\n      '}
               <tr data-official-prose="">
-                {'\n        '}
                 <td data-official-prose="">
                   <code data-official-prose="">
                     {'.container.is-widescreen'}
                   </code>
                 </td>
-                {'\n        '}
                 <td
                   data-official-prose=""
                   colSpan={2}
                   className={'has-text-grey-light has-background-white-ter'}
                 >
-                  {'\n          Full width\n        '}
+                  {' Full width '}
                 </td>
-                {'\n        '}
                 <td data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'1152px'}</code>
-                  {'\n        '}
                 </td>
-                {'\n        '}
                 <td data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'1344px'}</code>
-                  {'\n        '}
                 </td>
-                {'\n      '}
               </tr>
-              {'\n      '}
               <tr data-official-prose="">
-                {'\n        '}
                 <td data-official-prose="">
                   <code data-official-prose="">{'.container.is-fullhd'}</code>
                 </td>
-                {'\n        '}
                 <td
                   data-official-prose=""
                   colSpan={3}
                   className={'has-text-grey-light has-background-white-ter'}
                 >
-                  {'\n          Full width\n        '}
+                  {' Full width '}
                 </td>
-                {'\n        '}
                 <td data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'1344px'}</code>
-                  {'\n        '}
                 </td>
-                {'\n      '}
               </tr>
-              {'\n      '}
               <tr data-official-prose="">
-                {'\n        '}
                 <td data-official-prose="">
                   <code data-official-prose="">
                     {'.container.is-max-desktop'}
                   </code>
                 </td>
-                {'\n        '}
                 <td
                   data-official-prose=""
                   className={'has-text-grey-light has-background-white-ter'}
                 >
                   {'Full width'}
                 </td>
-                {'\n        '}
                 <td data-official-prose="" colSpan={3}>
-                  {'\n          '}
                   <code data-official-prose="">{'960px'}</code>
-                  {'\n        '}
                 </td>
-                {'\n      '}
               </tr>
-              {'\n      '}
               <tr data-official-prose="">
-                {'\n        '}
                 <td data-official-prose="">
                   <code data-official-prose="">
                     {'.container.is-max-widescreen'}
                   </code>
                 </td>
-                {'\n        '}
                 <td
                   data-official-prose=""
                   className={'has-text-grey-light has-background-white-ter'}
                 >
                   {'Full width'}
                 </td>
-                {'\n        '}
                 <td data-official-prose="">
-                  {'\n          '}
                   <code data-official-prose="">{'960px'}</code>
-                  {'\n        '}
                 </td>
-                {'\n        '}
                 <td data-official-prose="" colSpan={2}>
-                  {'\n          '}
                   <code data-official-prose="">{'1152px'}</code>
-                  {'\n        '}
                 </td>
-                {'\n      '}
               </tr>
-              {'\n    '}
             </tbody>
-            {'\n  '}
           </table>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'default-behavior'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Default behavior\n  '}
-          </span>
-          {'\n  '}
+            {' Default behavior '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#default-behavior'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    By default, the '}
+            {' By default, the '}
             <code data-official-prose="">{'container'}</code>
-            {' will only be activated from the\n    '}
+            {' will only be activated from the '}
             <code data-official-prose="">{'$desktop'}</code>
-            {' breakpoint. It will increase its\n    '}
+            {' breakpoint. It will increase its '}
             <code data-official-prose="">{'max-width'}</code>
             {' after reaching the '}
             <code data-official-prose="">{'$widescreen'}</code>
-            {' and\n    '}
+            {' and '}
             <code data-official-prose="">{'$fullhd'}</code>
-            {' breakpoints.\n  '}
+            {' breakpoints. '}
           </p>
-          {'\n  '}
           <p data-official-prose="">
-            {"\n    The container's "}
+            {" The container's "}
             <strong data-official-prose="">{'width'}</strong>
-            {' for each\n    '}
+            {' for each '}
             <strong data-official-prose="">{'breakpoint'}</strong>
-            {' is the result of:\n    '}
+            {' is the result of: '}
             <code data-official-prose="">{'$device - (2 * $gap)'}</code>
             {'. The '}
             <code data-official-prose="">{'$gap'}</code>
-            {' variable has a\n    default value of '}
+            {' variable has a default value of '}
             <code data-official-prose="">{' 32px'}</code>
-            {' but can be modified.\n  '}
+            {' but can be modified. '}
           </p>
-          {'\n  '}
           <p data-official-prose="">
             {'This is how the container will behave:'}
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      on '}
+              {' on '}
               <code data-official-prose="">{'$desktop'}</code>
-              {' it will have a maximum width of\n      '}
+              {' it will have a maximum width of '}
               <strong data-official-prose="">{'960px'}</strong>
-              {'.\n    '}
+              {'. '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      on '}
+              {' on '}
               <code data-official-prose="">{'$widescreen'}</code>
-              {' it will have a maximum width of\n      '}
+              {' it will have a maximum width of '}
               <strong data-official-prose="">{'1152px'}</strong>
-              {'.\n    '}
+              {'. '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      on '}
+              {' on '}
               <code data-official-prose="">{'$fullhd'}</code>
-              {' it will have a maximum width of\n      '}
+              {' it will have a maximum width of '}
               <strong data-official-prose="">{'1344px'}</strong>
-              {'.\n    '}
+              {'. '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    The values '}
+            {' The values '}
             <strong data-official-prose="">{'960'}</strong>
             {', '}
             <strong data-official-prose="">{'1152'}</strong>
-            {' and\n    '}
+            {' and '}
             <strong data-official-prose="">{'1344'}</strong>
-            {' have been chosen because they are divisible by both\n    '}
+            {' have been chosen because they are divisible by both '}
             <strong data-official-prose="">{'12'}</strong>
             {' and '}
             <strong data-official-prose="">{'16'}</strong>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="layout-container/default-behavior/001">
-          <Canvas of={Example001} />
+          <Canvas of={CenteredContainerStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -427,48 +315,38 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'widescreen-or-fullhd-only'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Widescreen or FullHD only\n  '}
-          </span>
-          {'\n  '}
+            {' Widescreen or FullHD only '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#widescreen-or-fullhd-only'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    With the two modifiers '}
+            {' With the two modifiers '}
             <code data-official-prose="">{'is-widescreen'}</code>
-            {' and\n    '}
+            {' and '}
             <code data-official-prose="">{'is-fullhd'}</code>
             {', you can have a '}
             <em data-official-prose="">{'fullwidth'}</em>
-            {' container\n    '}
+            {' container '}
             <strong data-official-prose="">{'until'}</strong>
-            {' those specific breakpoints.\n  '}
+            {' those specific breakpoints. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="layout-container/widescreen-or-fullhd-only/001">
-          <Canvas of={Example002} />
+          <Canvas of={ContainerFromWidescreenStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -478,11 +356,9 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n\n'}
         <div data-official-example="layout-container/widescreen-or-fullhd-only/002">
-          <Canvas of={Example003} />
+          <Canvas of={ContainerFromFullHDStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -492,68 +368,50 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'tablet-desktop-and-widescreen-maximum-widths'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Tablet, Desktop and Widescreen\nmaximum widths\n  '}
-          </span>
-          {'\n  '}
+            {' Tablet, Desktop and Widescreen maximum widths '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#tablet-desktop-and-widescreen-maximum-widths'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Sometimes, you might want a '}
+            {' Sometimes, you might want a '}
             <strong data-official-prose="">{'narrow'}</strong>
             {
-              " container on larger\n    viewports. That's why Bulma provides 3 modifier classes:\n  "
+              " container on larger viewports. That's why Bulma provides 3 modifier classes: "
             }
           </p>
-          {'\n  '}
           <ul data-official-prose="">
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'.container.is-max-tablet'}</code>
-              {' will behave like a tablet container\n    '}
+              {' will behave like a tablet container '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">{'.container.is-max-desktop'}</code>
-              {' will behave like a desktop\n      container\n    '}
+              {' will behave like a desktop container '}
             </li>
-            {'\n    '}
             <li data-official-prose="">
-              {'\n      '}
               <code data-official-prose="">
                 {'.container.is-max-widescreen'}
               </code>
-              {' will behave like a widescreen\n      container\n    '}
+              {' will behave like a widescreen container '}
             </li>
-            {'\n  '}
           </ul>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="layout-container/tablet-desktop-and-widescreen-maximum-widths/001">
-          <Canvas of={Example004} />
+          <Canvas of={TabletMaximumWidthStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -563,11 +421,9 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n\n'}
         <div data-official-example="layout-container/tablet-desktop-and-widescreen-maximum-widths/002">
-          <Canvas of={Example005} />
+          <Canvas of={DesktopMaximumWidthStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -577,11 +433,9 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n\n'}
         <div data-official-example="layout-container/tablet-desktop-and-widescreen-maximum-widths/003">
-          <Canvas of={Example006} />
+          <Canvas of={WidescreenMaximumWidthStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -591,95 +445,74 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'absolute-maximum-width'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Absolute maximum width\n  '}
-          </span>
-          {'\n  '}
+            {' Absolute maximum width '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#absolute-maximum-width'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    If you want to change the maximum width of '}
+            {' If you want to change the maximum width of '}
             <strong data-official-prose="">{'all'}</strong>
-            {
-              ' containers,\n    you can do so by updating the values of the\n    '
-            }
+            {' containers, you can do so by updating the values of the '}
             <code data-official-prose="">{'$container-max-width'}</code>
-            {' Sass variable.\n  '}
+            {' Sass variable. '}
           </p>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    By default, the '}
+            {' By default, the '}
             <code data-official-prose="">{'$fullhd'}</code>
-            {' breakpoint value is used to calculate\n    the '}
+            {' breakpoint value is used to calculate the '}
             <strong data-official-prose="">{'absolute'}</strong>
             {' maximum width of the '}
             <code data-official-prose="">{'container'}</code>
-            {'.\n    Simply change it to a smaller value like '}
+            {'. Simply change it to a smaller value like '}
             <code data-official-prose="">{'$widescreen'}</code>
-            {',\n    '}
+            {', '}
             <code data-official-prose="">{'$desktop'}</code>
             {', or any value in '}
             <strong data-official-prose="">{'pixels'}</strong>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
-        {'\n'}
         <h3
           data-official-prose=""
           id={'fluid-container'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Fluid container\n  '}
-          </span>
-          {'\n  '}
+            {' Fluid container '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#fluid-container'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
             {
-              "\n    If you don't want to have a maximum width but want to keep the 32px margin\n    on the left and right sides, add the\n    "
+              " If you don't want to have a maximum width but want to keep the 32px margin on the left and right sides, add the "
             }
             <code data-official-prose="">{'is-fluid'}</code>
-            {' modifier:\n  '}
+            {' modifier: '}
           </p>
-          {'\n'}
         </div>
-        {'\n\n'}
         <div data-official-example="layout-container/fluid-container/001">
-          <Canvas of={Example007} />
+          <Canvas of={FluidContainerStory} />
         </div>
-        {'\n\n'}
         <div data-official-prose="" className={'highlight'}>
           <pre data-official-prose="">
             <code data-official-prose="" className={'language-html'}>
@@ -689,310 +522,163 @@ function OfficialDocs() {
             </code>
           </pre>
         </div>
-        {'\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$container-offset'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'64px'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$container-max-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1408px'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function CenteredContainerDemo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {' '}
-        <ui.Container>
-          {' '}
-          <ui.Notification color={'primary'}>
-            {' '}
+        <Container>
+          <Notification color={'primary'}>
             This container is <strong>centered</strong> on desktop and larger
-            viewports.{' '}
-          </ui.Notification>{' '}
-        </ui.Container>{' '}
+            viewports.
+          </Notification>
+        </Container>
       </div>
     </>
   )
 }
 
-function Example002Demo() {
+function ContainerFromWidescreenDemo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {' '}
-        <ui.Container width={'widescreen'}>
-          {' '}
-          <ui.Notification color={'primary'}>
-            {' '}
+        <Container width={'widescreen'}>
+          <Notification color={'primary'}>
             This container is <strong>fullwidth</strong> <em>until</em> the{' '}
-            <code>{'$widescreen'}</code> breakpoint.{' '}
-          </ui.Notification>{' '}
-        </ui.Container>{' '}
+            <code>{'$widescreen'}</code> breakpoint.
+          </Notification>
+        </Container>
       </div>
     </>
   )
 }
 
-function Example003Demo() {
+function ContainerFromFullHDDemo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {' '}
-        <ui.Container width={'fullhd'}>
-          {' '}
-          <ui.Notification color={'primary'}>
-            {' '}
+        <Container width={'fullhd'}>
+          <Notification color={'primary'}>
             This container is <strong>fullwidth</strong> <em>until</em> the{' '}
-            <code>{'$fullhd'}</code> breakpoint.{' '}
-          </ui.Notification>{' '}
-        </ui.Container>{' '}
+            <code>{'$fullhd'}</code> breakpoint.
+          </Notification>
+        </Container>
       </div>
     </>
   )
 }
 
-function Example004Demo() {
+function TabletMaximumWidthDemo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {' '}
-        <ui.Container maxWidth={'tablet'}>
-          {' '}
-          <ui.Notification color={'primary'}>
-            {' '}
+        <Container maxWidth={'tablet'}>
+          <Notification color={'primary'}>
             This container has a <code>{'max-width'}</code> of{' '}
-            <code>{'$tablet - $container-offset'}</code>.{' '}
-          </ui.Notification>{' '}
-        </ui.Container>{' '}
+            <code>{'$tablet - $container-offset'}</code>.
+          </Notification>
+        </Container>
       </div>
     </>
   )
 }
 
-function Example005Demo() {
+function DesktopMaximumWidthDemo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {' '}
-        <ui.Container maxWidth={'desktop'}>
-          {' '}
-          <ui.Notification color={'primary'}>
-            {' '}
+        <Container maxWidth={'desktop'}>
+          <Notification color={'primary'}>
             This container has a <code>{'max-width'}</code> of{' '}
             <code>{'$desktop - $container-offset'}</code> on widescreen and
-            fullhd.{' '}
-          </ui.Notification>{' '}
-        </ui.Container>{' '}
+            fullhd.
+          </Notification>
+        </Container>
       </div>
     </>
   )
 }
 
-function Example006Demo() {
+function WidescreenMaximumWidthDemo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {' '}
-        <ui.Container maxWidth={'widescreen'}>
-          {' '}
-          <ui.Notification color={'primary'}>
-            {' '}
+        <Container maxWidth={'widescreen'}>
+          <Notification color={'primary'}>
             This container has a <code>{'max-width'}</code> of{' '}
-            <code>{'$widescreen - $container-offset'}</code> on fullhd.{' '}
-          </ui.Notification>{' '}
-        </ui.Container>{' '}
+            <code>{'$widescreen - $container-offset'}</code> on fullhd.
+          </Notification>
+        </Container>
       </div>
     </>
   )
 }
 
-function Example007Demo() {
+function FluidContainerDemo() {
   return (
     <>
       <div className={'bd-example is-fullwidth'}>
-        {' '}
-        <ui.Container width={'fluid'}>
-          {' '}
-          <ui.Notification color={'primary'}>
-            {' '}
+        <Container width={'fluid'}>
+          <Notification color={'primary'}>
             This container is <strong>fluid</strong>: it will have a 32px gap on
-            either side, on any viewport size.{' '}
-          </ui.Notification>{' '}
-        </ui.Container>{' '}
+            either side, on any viewport size.
+          </Notification>
+        </Container>
       </div>
     </>
   )
 }
 
-export const Example001 = {
+export const CenteredContainerStory = {
   name: 'Centered container',
   parameters: {
     official: { id: 'layout-container/default-behavior/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container is <strong>centered</strong> on desktop and larger\n            viewports.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
+        code: "import { Container, Notification } from '@seagreenio/react-bulma'\n\nfunction CenteredContainerDemo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        <Container>\n          <Notification color={'primary'}>\n            This container is <strong>centered</strong> on desktop and larger\n            viewports.\n          </Notification>\n        </Container>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: CenteredContainerDemo,
 } satisfies StoryObj
 
-export const Example002 = {
+export const ContainerFromWidescreenStory = {
   name: 'Container from widescreen',
   parameters: {
     official: { id: 'layout-container/widescreen-or-fullhd-only/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container width={'widescreen'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container is <strong>fullwidth</strong> <em>until</em> the{' '}\n            <code>{'$widescreen'}</code> breakpoint.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
+        code: "import { Container, Notification } from '@seagreenio/react-bulma'\n\nfunction ContainerFromWidescreenDemo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        <Container width={'widescreen'}>\n          <Notification color={'primary'}>\n            This container is <strong>fullwidth</strong> <em>until</em> the{' '}\n            <code>{'$widescreen'}</code> breakpoint.\n          </Notification>\n        </Container>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: ContainerFromWidescreenDemo,
 } satisfies StoryObj
 
-export const Example003 = {
+export const ContainerFromFullHDStory = {
   name: 'Container from full HD',
   parameters: {
     official: { id: 'layout-container/widescreen-or-fullhd-only/002' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example003Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container width={'fullhd'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container is <strong>fullwidth</strong> <em>until</em> the{' '}\n            <code>{'$fullhd'}</code> breakpoint.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
+        code: "import { Container, Notification } from '@seagreenio/react-bulma'\n\nfunction ContainerFromFullHDDemo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        <Container width={'fullhd'}>\n          <Notification color={'primary'}>\n            This container is <strong>fullwidth</strong> <em>until</em> the{' '}\n            <code>{'$fullhd'}</code> breakpoint.\n          </Notification>\n        </Container>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example003Demo,
+  render: ContainerFromFullHDDemo,
 } satisfies StoryObj
 
-export const Example004 = {
+export const TabletMaximumWidthStory = {
   name: 'Tablet maximum width',
   parameters: {
     official: {
@@ -1000,16 +686,16 @@ export const Example004 = {
     },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example004Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container maxWidth={'tablet'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container has a <code>{'max-width'}</code> of{' '}\n            <code>{'$tablet - $container-offset'}</code>.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
+        code: "import { Container, Notification } from '@seagreenio/react-bulma'\n\nfunction TabletMaximumWidthDemo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        <Container maxWidth={'tablet'}>\n          <Notification color={'primary'}>\n            This container has a <code>{'max-width'}</code> of{' '}\n            <code>{'$tablet - $container-offset'}</code>.\n          </Notification>\n        </Container>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example004Demo,
+  render: TabletMaximumWidthDemo,
 } satisfies StoryObj
 
-export const Example005 = {
+export const DesktopMaximumWidthStory = {
   name: 'Desktop maximum width',
   parameters: {
     official: {
@@ -1017,16 +703,16 @@ export const Example005 = {
     },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example005Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container maxWidth={'desktop'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container has a <code>{'max-width'}</code> of{' '}\n            <code>{'$desktop - $container-offset'}</code> on widescreen and\n            fullhd.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
+        code: "import { Container, Notification } from '@seagreenio/react-bulma'\n\nfunction DesktopMaximumWidthDemo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        <Container maxWidth={'desktop'}>\n          <Notification color={'primary'}>\n            This container has a <code>{'max-width'}</code> of{' '}\n            <code>{'$desktop - $container-offset'}</code> on widescreen and\n            fullhd.\n          </Notification>\n        </Container>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example005Demo,
+  render: DesktopMaximumWidthDemo,
 } satisfies StoryObj
 
-export const Example006 = {
+export const WidescreenMaximumWidthStory = {
   name: 'Widescreen maximum width',
   parameters: {
     official: {
@@ -1034,26 +720,26 @@ export const Example006 = {
     },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example006Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container maxWidth={'widescreen'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container has a <code>{'max-width'}</code> of{' '}\n            <code>{'$widescreen - $container-offset'}</code> on fullhd.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
+        code: "import { Container, Notification } from '@seagreenio/react-bulma'\n\nfunction WidescreenMaximumWidthDemo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        <Container maxWidth={'widescreen'}>\n          <Notification color={'primary'}>\n            This container has a <code>{'max-width'}</code> of{' '}\n            <code>{'$widescreen - $container-offset'}</code> on fullhd.\n          </Notification>\n        </Container>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example006Demo,
+  render: WidescreenMaximumWidthDemo,
 } satisfies StoryObj
 
-export const Example007 = {
+export const FluidContainerStory = {
   name: 'Fluid container',
   parameters: {
     official: { id: 'layout-container/fluid-container/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example007Demo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        {' '}\n        <ui.Container width={'fluid'}>\n          {' '}\n          <ui.Notification color={'primary'}>\n            {' '}\n            This container is <strong>fluid</strong>: it will have a 32px gap on\n            either side, on any viewport size.{' '}\n          </ui.Notification>{' '}\n        </ui.Container>{' '}\n      </div>\n    </>\n  )\n}\n",
+        code: "import { Container, Notification } from '@seagreenio/react-bulma'\n\nfunction FluidContainerDemo() {\n  return (\n    <>\n      <div className={'bd-example is-fullwidth'}>\n        <Container width={'fluid'}>\n          <Notification color={'primary'}>\n            This container is <strong>fluid</strong>: it will have a 32px gap on\n            either side, on any viewport size.\n          </Notification>\n        </Container>\n      </div>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example007Demo,
+  render: FluidContainerDemo,
 } satisfies StoryObj

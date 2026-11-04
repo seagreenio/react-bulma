@@ -15,7 +15,12 @@ export type OfficialDocuments = ReadonlyMap<string, string>
 const hash = (value: string) => createHash('sha256').update(value).digest('hex')
 const quote = JSON.stringify
 
-type Part = { jsx: string; block: boolean; meaningful: boolean }
+type Part = {
+  jsx: string
+  block: boolean
+  meaningful: boolean
+  indentation?: boolean
+}
 const voidTags = new Set(['br', 'hr', 'img', 'input', 'wbr', 'col'])
 const inlineTags = new Set([
   'a',
@@ -87,7 +92,7 @@ const attributes: Record<string, string> = {
   'clip-rule': 'clipRule',
   viewbox: 'viewBox',
 }
-type DocumentController = 'column-gap' | 'skeleton-cycle' | 'fixed-navbar'
+type DocumentController = 'skeleton-cycle' | 'fixed-navbar'
 const ordinaryAttributes = new Set([
   'id',
   'title',
@@ -262,8 +267,7 @@ export function compileDocument(
             declaration.important ||
             /(?:url\s*\(|expression\s*\(|@|\\)/i.test(declaration.value)
           )
-            fail(node, 'unsupported active inline style')
-          if (declaration.type !== 'decl') continue
+            return fail(node, 'unsupported active inline style')
           const key = declaration.prop.startsWith('--')
             ? declaration.prop
             : declaration.prop.replace(/-([a-z])/g, (_, letter: string) =>
@@ -298,7 +302,11 @@ export function compileDocument(
     return output.join(' ')
   }
   const emitted: string[] = []
-  const render = (node: AnyNode, heading = false): Part[] => {
+  const render = (
+    node: AnyNode,
+    heading = false,
+    preserveWhitespace = false,
+  ): Part[] => {
     const removedReason = removed.get(node)
     if (removedReason) return []
     const slot = isTag(node) ? slots.get(node) : undefined
@@ -324,39 +332,48 @@ export function compileDocument(
     }
     if (node.type === 'text') {
       own(node, 'text')
+      if (
+        /^[\t\n\f\r ]*$/.test(node.data) &&
+        node.parent &&
+        isTag(node.parent) &&
+        ['table', 'thead', 'tbody', 'tfoot', 'tr', 'colgroup'].includes(
+          node.parent.name,
+        )
+      )
+        return []
+      const text = preserveWhitespace
+        ? node.data
+        : node.data.replace(/[\t\f\r ]*[\n\r][\t\n\f\r ]*/g, ' ')
       return [
         {
-          jsx: `{${quote(node.data)}}`,
+          jsx: `{${quote(text)}}`,
           block: false,
-          meaningful: !!node.data.trim(),
+          meaningful: /[^\t\n\f\r ]/.test(text),
+          indentation:
+            !preserveWhitespace &&
+            /^[\t\n\f\r ]*[\n\r][\t\n\f\r ]*$/.test(node.data),
         },
       ]
     }
     if (!isTag(node)) return fail(node, 'unsupported document node')
     if (['script', 'style'].includes(node.name)) {
       const controller =
-        node.name === 'script' && page.id === 'components-modal'
-          ? { page: page.id, reason: 'modal examples use React dialog state' }
-          : node.name === 'script' && page.id === 'columns-gap'
+        node.name === 'script' && page.id === 'columns-gap'
+          ? {
+              reason: 'column gap examples use React state',
+            }
+          : page.id === 'components-navbar'
             ? {
-                page: page.id,
-                reason: 'source column gap controller',
-                controller: 'column-gap' as const,
+                reason: 'source navbar controller',
+                controller: 'fixed-navbar' as const,
               }
-            : page.id === 'components-navbar'
+            : page.id === 'features-skeletons'
               ? {
-                  page: page.id,
-                  reason: 'source navbar controller',
-                  controller: 'fixed-navbar' as const,
+                  reason: 'source skeleton controller',
+                  controller: 'skeleton-cycle' as const,
                 }
-              : page.id === 'features-skeletons'
-                ? {
-                    page: page.id,
-                    reason: 'source skeleton controller',
-                    controller: 'skeleton-cycle' as const,
-                  }
-                : undefined
-      if (!controller || controller.page !== page.id)
+              : undefined
+      if (!controller)
         return fail(node, 'unknown active document content requires an adapter')
       if (controller.controller) controllers.add(controller.controller)
       own(node, controller.reason, true)
@@ -365,9 +382,23 @@ export function compileDocument(
     if (!allowedTags.has(node.name)) fail(node, 'unsupported document element')
     own(node, 'markup')
     const isHeading = /^h[1-6]$/.test(node.name)
-    const children = node.children.flatMap((child) =>
-      render(child, heading || isHeading),
-    )
+    const children = node.children
+      .flatMap((child) =>
+        render(
+          child,
+          heading || isHeading,
+          preserveWhitespace || node.name === 'pre' || node.name === 'code',
+        ),
+      )
+      .filter(
+        (part, index, parts) =>
+          !part.indentation ||
+          inlineTags.has(node.name) ||
+          (index > 0 &&
+            index < parts.length - 1 &&
+            !parts[index - 1]!.block &&
+            !parts[index + 1]!.block),
+      )
     if (
       (heading && node.name === 'p') ||
       ($(node).is('.bd-snippet,.bd-snippet-example') &&
@@ -551,7 +582,8 @@ export function compileDocumentStyles(
   output.walkAtRules((rule) => {
     if (!rule.nodes?.length) rule.remove()
   })
-  const base = `[data-official-document] { --scale: 1; --theme-h: var(--bulma-primary-h); --theme-s: var(--bulma-primary-s); --theme-l: var(--bulma-primary-l); --theme-color: hsl(var(--theme-h), var(--theme-s), var(--theme-l)); font-family: var(--bulma-family-primary); color: var(--bulma-text); font-size: 16px; font-weight: 400; line-height: 1.5; }\n[data-official-prose] { box-sizing: border-box; margin: 0; padding: 0; }\n`
+  // Adapt the site's html clipping without making the embedded document a scroll container.
+  const base = `[data-official-document] { overflow-x: clip; --scale: 1; --theme-h: var(--bulma-primary-h); --theme-s: var(--bulma-primary-s); --theme-l: var(--bulma-primary-l); --theme-color: hsl(var(--theme-h), var(--theme-s), var(--theme-l)); font-family: var(--bulma-family-primary); color: var(--bulma-text); font-size: 16px; font-weight: 400; line-height: 1.5; }\n[data-official-prose] { box-sizing: border-box; margin: 0; padding: 0; }\n`
   const required = new Map<string, string>()
   const collect = (value: string) => {
     for (const [, name] of value.matchAll(/var\(\s*(--[\w-]+)/g)) {

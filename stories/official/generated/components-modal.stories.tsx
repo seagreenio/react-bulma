@@ -1,7 +1,28 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import * as ui from '../../../src'
+import {
+  Box,
+  Buttons,
+  Content,
+  Icon,
+  Image,
+  Level,
+  LevelItem,
+  LevelLeft,
+  Media,
+  MediaContent,
+  MediaLeft,
+  Modal,
+  ModalCard,
+  ModalCardBody,
+  ModalCardFoot,
+  ModalCardHead,
+  ModalClose,
+  ModalContent,
+  ModalTitle,
+  ModalTrigger,
+} from '../../../src'
 import { officialPage } from '../support'
 
 const meta = {
@@ -23,1298 +44,376 @@ function OfficialDocs() {
   return (
     <OfficialDocument pageId="components-modal" controllers={[]}>
       <div data-official-prose="" className={'bd-hero-body'}>
-        {'\n    '}
         <h1 data-official-prose="" className={'bd-hero-title algolia-lvl0'}>
-          {'\n      '}
           {'Modal'}
-          {'\n\n    '}
         </h1>
-        {'\n\n    '}
         <hr data-official-prose="" className={'bd-hr'} />
-        {'\n\n    '}
         <h2 data-official-prose="" className={'bd-hero-subtitle algolia-lvl1'}>
-          {'\n      '}
           {'A classic '}
           <strong data-official-prose="">{'modal'}</strong>
           {' overlay, in which you can include '}
           <em data-official-prose="">{'any'}</em>
           {' content you want'}
-          {'\n\n    '}
         </h2>
-        {'\n\n    \n  '}
       </div>
       <div data-official-prose="" className={'bd-docs-content'}>
-        {'\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}
-        {'\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
-          <p data-official-prose="">{'The modal structure is very simple:'}</p>
-          {'\n  '}
-          <ul data-official-prose="">
-            {'\n    '}
-            <li data-official-prose="">
-              {'\n      '}
-              <code data-official-prose="">{'modal'}</code>
-              {': the main container\n      '}
-              <ul data-official-prose="">
-                {'\n        '}
-                <li data-official-prose="">
-                  <code data-official-prose="">{'modal-background'}</code>
-                  {
-                    ': a transparent overlay that can act as a click target to close the modal'
-                  }
-                </li>
-                {'\n        '}
-                <li data-official-prose="">
-                  {'\n          '}
-                  <code data-official-prose="">{'modal-content'}</code>
-                  {
-                    ': a horizontally and vertically centered container, with a maximum width of 640px,\n          in which you can include '
-                  }
-                  <em data-official-prose="">{'any'}</em>
-                  {' content\n        '}
-                </li>
-                {'\n        '}
-                <li data-official-prose="">
-                  <code data-official-prose="">{'modal-close'}</code>
-                  {': a simple cross located in the top right corner'}
-                </li>
-                {'\n      '}
-              </ul>
-              {'\n    '}
-            </li>
-            {'\n  '}
-          </ul>
-          {'\n  '}
-          <button
-            data-official-prose=""
-            className={
-              'button is-primary is-large modal-button js-modal-trigger'
-            }
-            data-target={'modal'}
-            aria-haspopup={'true'}
-          >
-            {'\n      Launch example modal\n    '}
-          </button>
-          {'\n'}
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'highlight'}>
-          <pre data-official-prose="">
-            <code data-official-prose="" className={'language-html'}>
-              {
-                '\n<div class="modal">\n  <div class="modal-background"></div>\n  <div class="modal-content">\n    <!-- Any other Bulma elements you want -->\n  </div>\n  <button class="modal-close is-large" aria-label="close"></button>\n</div>\n'
-              }
-            </code>
-          </pre>
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    To '}
-            <strong data-official-prose="">{'activate'}</strong>
-            {' the modal, just add the '}
-            <code data-official-prose="">{'is-active'}</code>
-            {' modifier on the\n    '}
-            <code data-official-prose="">{'.modal'}</code>
-            {' container. You may also want to add '}
-            <code data-official-prose="">{'is-clipped'}</code>
-            {' modifier to a containing element\n    (usually '}
-            <code data-official-prose="">{'html'}</code>
-            {') to stop scroll overflow.\n  '}
-          </p>
-          {'\n'}
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'message is-info'}>
-          {'\n  '}
-          <div data-official-prose="" className={'message-header'}>
-            {'JavaScript implementation example'}
-          </div>
-          {'\n  '}
-          <div data-official-prose="" className={'message-body'}>
+            {'Use '}
+            <code data-official-prose="">{'Modal'}</code>
+            {' with '}
+            <code data-official-prose="">{'ModalTrigger'}</code>
+            {' and '}
+            <code data-official-prose="">{'ModalContent'}</code>
             {
-              '\n    Bulma does not include any JavaScript. However, this documentation provides a\n    '
+              '. The components handle opening, closing, keyboard interaction, and focus. Use '
             }
-            <a
-              data-official-prose=""
-              href={'#javascript-implementation-example'}
-            >
-              {'JS implementation example'}
-            </a>
-            {' that you are free to use.\n  '}
+            <code data-official-prose="">{'ModalClose'}</code>
+            {' for a close button.'}
+          </p>
+          <div data-official-example="components-modal/basic/001">
+            <Canvas of={ContentModalStory} />
           </div>
-          {'\n'}
         </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'image-modal'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Image modal\n  '}
-          </span>
-          {'\n  '}
+            {' Image modal '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#image-modal'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    Because a modal can contain '}
+            {' Because a modal can contain '}
             <strong data-official-prose="">{'anything you want'}</strong>
             {
-              ', you can very simply use it to build an image gallery\n    for example:\n  '
+              ', you can very simply use it to build an image gallery for example: '
             }
           </p>
-          {'\n  '}
-          <p data-official-prose="">
-            {'\n    '}
-            <a
-              data-official-prose=""
-              className={
-                'button is-primary is-large modal-button js-modal-trigger'
-              }
-              data-target={'modal-bis'}
-            >
-              {'Launch image modal'}
-            </a>
-            {'\n  '}
-          </p>
-          {'\n'}
+          <div data-official-example="components-modal/image-modal/001">
+            <Canvas of={ImageModalStory} />
+          </div>
         </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'highlight'}>
-          <pre data-official-prose="">
-            <code data-official-prose="" className={'language-html'}>
-              {
-                '\n<div class="modal">\n  <div class="modal-background"></div>\n  <div class="modal-content">\n    <p class="image is-4by3">\n      <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="">\n    </p>\n  </div>\n  <button class="modal-close is-large" aria-label="close"></button>\n</div>\n'
-              }
-            </code>
-          </pre>
-        </div>
-        {'\n\n'}
         <h3
           data-official-prose=""
           id={'modal-card'}
           className={'title is-4 is-spaced bd-anchor-title '}
         >
-          {'\n  '}
           <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Modal card\n  '}
-          </span>
-          {'\n  '}
+            {' Modal card '}
+          </span>{' '}
           <a
             data-official-prose=""
             className={'bd-anchor-link'}
             href={'#modal-card'}
           >
-            {'\n    #\n  '}
+            {' # '}
           </a>
-          {'\n  \n'}
         </h3>
-        {'\n\n\n'}
         <div data-official-prose="" className={'content'}>
-          {'\n  '}
           <p data-official-prose="">
-            {'\n    If you want a more classic modal, with a '}
+            {' If you want a more classic modal, with a '}
             <strong data-official-prose="">{'head'}</strong>
             {', a '}
             <strong data-official-prose="">{'body'}</strong>
             {' and a '}
             <strong data-official-prose="">{'foot'}</strong>
-            {',\n    use the '}
+            {', use the '}
             <code data-official-prose="">{'modal-card'}</code>
-            {'.\n  '}
+            {'. '}
           </p>
-          {'\n  '}
-          <button
-            data-official-prose=""
-            className={
-              'button is-primary is-large modal-button js-modal-trigger'
-            }
-            data-target={'modal-ter'}
-            aria-haspopup={'true'}
-          >
-            {'\n      Launch card modal\n    '}
-          </button>
-          {'\n'}
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'bd-highlight-full'}>
-          {'\n  '}
-          <div data-official-prose="" className={'highlight'}>
-            <pre data-official-prose="">
-              <code data-official-prose="" className={'language-html'}>
-                {
-                  '\n<div class="modal">\n  <div class="modal-background"></div>\n  <div class="modal-card">\n    <header class="modal-card-head">\n      <p class="modal-card-title">Modal title</p>\n      <button class="delete" aria-label="close"></button>\n    </header>\n    <section class="modal-card-body">\n      <!-- Content ... -->\n    </section>\n    <footer class="modal-card-foot">\n      <div class="buttons">\n        <button class="button is-success">Save changes</button>\n        <button class="button">Cancel</button>\n      </div>\n    </footer>\n  </div>\n</div>\n'
-                }
-              </code>
-            </pre>
+          <div data-official-example="components-modal/modal-card/001">
+            <Canvas of={ModalCardStory} />
           </div>
-          {'\n'}
         </div>
-        {'\n\n'}
-        <h3
-          data-official-prose=""
-          id={'javascript-implementation-example'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    JavaScript implementation example\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#javascript-implementation-example'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n'}
-        <div data-official-prose="" className={'content'}>
-          {'\n  '}
-          <p data-official-prose="">
-            {'\n    The Bulma package '}
-            <strong data-official-prose="">
-              {'does not come with any JavaScript'}
-            </strong>
-            {
-              '. Here is however an implementation example,\n    which sets the '
-            }
-            <code data-official-prose="">{'click'}</code>
-            {' handlers for custom elements, in vanilla JavaScript.\n  '}
-          </p>
-          {'\n\n  '}
-          <p data-official-prose="">
-            {'There are 3 parts to this implementation:'}
-          </p>
-          {'\n\n  '}
-          <ul data-official-prose="">
-            {'\n    '}
-            <li data-official-prose="">
-              {'add the HTML for the '}
-              <strong data-official-prose="">{'modal'}</strong>
-              {' (this modal is hidden by default)'}
-            </li>
-            {'\n    '}
-            <li data-official-prose="">
-              {'\n      add the HTML for a button to '}
-              <strong data-official-prose="">{'trigger'}</strong>
-              {' the modal (you can style this button however you want)\n    '}
-            </li>
-            {'\n    '}
-            <li data-official-prose="">
-              {'\n      add the JS code to add the '}
-              <code data-official-prose="">{'click'}</code>
-              {' event on the '}
-              <strong data-official-prose="">{'trigger'}</strong>
-              {' to open the\n      '}
-              <strong data-official-prose="">{'modal'}</strong>
-              {'\n    '}
-            </li>
-            {'\n  '}
-          </ul>
-          {'\n'}
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'content'}>
-          {'\n  '}
-          <h4 data-official-prose="">{'1. Add the HTML for the modal'}</h4>
-          {'\n\n  '}
-          <p data-official-prose="">
-            {'At the end of your page, before the closing '}
-            <code data-official-prose="">{'</body>'}</code>
-            {' tag, at the following HTML snippet:'}
-          </p>
-          {'\n'}
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'highlight'}>
-          <pre data-official-prose="">
-            <code data-official-prose="" className={'language-html'}>
-              {
-                '\n<div id="modal-js-example" class="modal">\n  <div class="modal-background"></div>\n\n  <div class="modal-content">\n    <div class="box">\n      <p>Modal JS example</p>\n      <!-- Your content -->\n    </div>\n  </div>\n\n  <button class="modal-close is-large" aria-label="close"></button>\n</div>\n'
-              }
-            </code>
-          </pre>
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'content'}>
-          {'\n  '}
-          <p data-official-prose="">
-            {'The '}
-            <code data-official-prose="">{'id'}</code>
-            {" attribute's value must be "}
-            <strong data-official-prose="">{'unique'}</strong>
-            {'.'}
-          </p>
-          {'\n'}
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'content'}>
-          {'\n  '}
-          <h4 data-official-prose="">{'2. Add the HTML for the trigger'}</h4>
-          {'\n\n  '}
-          <p data-official-prose="">
-            {'Somewhere on your page, add the following HTML button:'}
-          </p>
-          {'\n'}
-        </div>
-        {'\n\n'}
-        <div data-official-example="components-modal/2-add-the-html-for-the-trigger/001">
-          <Canvas of={Example001} />
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'highlight'}>
-          <pre data-official-prose="">
-            <code data-official-prose="" className={'language-html'}>
-              {
-                '\n<button class="js-modal-trigger" data-target="modal-js-example">\n  Open JS example modal\n</button>\n'
-              }
-            </code>
-          </pre>
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'content'}>
-          {'\n  '}
-          <p data-official-prose="">
-            {'\n    You can style it however you want, as long as it has the '}
-            <code data-official-prose="">{'js-modal-trigger'}</code>
-            {' CSS class and the appropriate\n    '}
-            <code data-official-prose="">{'data-target'}</code>
-            {' value. For example, you can add the '}
-            <code data-official-prose="">{'button is-primary'}</code>
-            {' Bulma classes:\n  '}
-          </p>
-          {'\n'}
-        </div>
-        {'\n\n'}
-        <div data-official-example="components-modal/2-add-the-html-for-the-trigger/002">
-          <Canvas of={Example002} />
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'content'}>
-          {'\n  '}
-          <h4 data-official-prose="">{'3. Add the JS for the trigger'}</h4>
-          {'\n\n  '}
-          <p data-official-prose="">
-            {'In a '}
-            <code data-official-prose="">{'script'}</code>
-            {' element (or in a separate '}
-            <code data-official-prose="">{'.js'}</code>
-            {' file), add the following JS code:'}
-          </p>
-          {'\n'}
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'highlight'}>
-          <pre data-official-prose="">
-            <code data-official-prose="" className={'language-javascript'}>
-              {
-                "\ndocument.addEventListener('DOMContentLoaded', () => {\n  // Functions to open and close a modal\n  function openModal($el) {\n    $el.classList.add('is-active');\n  }\n\n  function closeModal($el) {\n    $el.classList.remove('is-active');\n  }\n\n  function closeAllModals() {\n    (document.querySelectorAll('.modal') || []).forEach(($modal) => {\n      closeModal($modal);\n    });\n  }\n\n  // Add a click event on buttons to open a specific modal\n  (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {\n    const modal = $trigger.dataset.target;\n    const $target = document.getElementById(modal);\n\n    $trigger.addEventListener('click', () => {\n      openModal($target);\n    });\n  });\n\n  // Add a click event on various child elements to close the parent modal\n  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {\n    const $target = $close.closest('.modal');\n\n    $close.addEventListener('click', () => {\n      closeModal($target);\n    });\n  });\n\n  // Add a keyboard event to close all modals\n  document.addEventListener('keydown', (event) => {\n    if(event.key === \"Escape\") {\n      closeAllModals();\n    }\n  });\n});\n"
-              }
-            </code>
-          </pre>
-        </div>
-        {'\n\n'}
-        <div data-official-prose="" className={'content'}>
-          {'\n  '}
-          <p data-official-prose="">
-            {'\n    As long as you can toggle the '}
-            <code data-official-prose="">{'is-active'}</code>
-            {' modifier class on the '}
-            <code data-official-prose="">{'modal'}</code>
-            {' element, you can\n    choose how you want to implement it.\n  '}
-          </p>
-          {'\n'}
-        </div>
-        {'\n\n\n\n'}
-        {'\n\n\n\n\n\n\n\n\n\n'}
-        <h3
-          data-official-prose=""
-          id={'sass-and-css-variables'}
-          className={'title is-4 is-spaced bd-anchor-title '}
-        >
-          {'\n  '}
-          <span data-official-prose="" className={'bd-anchor-name'}>
-            {'\n    Sass and CSS variables\n  '}
-          </span>
-          {'\n  '}
-          <a
-            data-official-prose=""
-            className={'bd-anchor-link'}
-            href={'#sass-and-css-variables'}
-          >
-            {'\n    #\n  '}
-          </a>
-          {'\n  \n'}
-        </h3>
-        {'\n\n\n\n'}
-        <div
-          data-official-prose=""
-          className={'bd-vars-table block table-container'}
-        >
-          {'\n  '}
-          <table data-official-prose="">
-            {'\n    '}
-            <thead data-official-prose="">
-              {'\n      '}
-              <tr data-official-prose="">
-                {'\n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-sass'}
-                    >
-                      <i data-official-prose="" className={'fab fa-sass'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Sass Variable'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n        \n          '}
-                <th data-official-prose="">
-                  {'\n            '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n              '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-link'}
-                    >
-                      <i data-official-prose="" className={'fab fa-css3'}></i>
-                    </span>
-                    {'\n              '}
-                    <span data-official-prose="">{'CSS Variable'}</span>
-                    {'\n            '}
-                  </div>
-                  {'\n          '}
-                </th>
-                {'\n        \n        '}
-                <th data-official-prose="">
-                  {'\n          '}
-                  <div data-official-prose="" className={'icon-text'}>
-                    {'\n            '}
-                    <span
-                      data-official-prose=""
-                      className={'icon has-text-success'}
-                    >
-                      <i data-official-prose="" className={'fas fa-code'}></i>
-                    </span>
-                    {'\n            '}
-                    <span data-official-prose="">{'Value'}</span>
-                    {'\n          '}
-                  </div>
-                  {'\n        '}
-                </th>
-                {'\n      '}
-              </tr>
-              {'\n    '}
-            </thead>
-            {'\n\n    '}
-            <tbody data-official-prose="">
-              {'\n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-z'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-z)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'40'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-background-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-background-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {
-                          'hsla(\n  var(--bulma-scheme-h),\n  var(--bulma-scheme-s),\n  var(--bulma-scheme-invert-l),\n  0.86\n)'
-                        }
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-content-width'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-content-width)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'40rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-content-margin-mobile'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-content-margin-mobile)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1.25rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-content-spacing-mobile'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-content-spacing-mobile)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'10rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-content-spacing-tablet'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-content-spacing-tablet)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'2.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-close-dimensions'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-close-dimensions)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'2.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-close-right'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-close-right)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1.25rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-close-top'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-close-top)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1.25rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-spacing'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-spacing)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'2.5rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-head-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-head-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-head-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-head-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'2rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-head-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-head-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius-large)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-title-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-title-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-text-strong)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-title-line-height'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-title-line-height)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'1'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-title-size'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-title-size)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-size-4)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-foot-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-foot-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main-bis)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-foot-radius'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-foot-radius)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-radius-large)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-body-background-color'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-body-background-color)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-scheme-main)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n        \n        '}
-              <tr data-official-prose="">
-                {'\n          '}
-                <td data-official-prose="" className={'bd-theme-sass'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-sass'}>
-                        {'$modal-card-body-padding'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n            '}
-                <td data-official-prose="" className={'bd-theme-code'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'var(--bulma-modal-card-body-padding)'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n          \n          '}
-                <td data-official-prose="" className={'bd-theme-docs'}>
-                  <div data-official-prose="" className={'highlight'}>
-                    <pre data-official-prose="">
-                      <code data-official-prose="" className={'language-css'}>
-                        {'2rem'}
-                      </code>
-                    </pre>
-                  </div>
-                </td>
-                {'\n        '}
-              </tr>
-              {'\n        \n      \n    '}
-            </tbody>
-            {'\n  '}
-          </table>
-          {'\n'}
-        </div>
-        {'\n\n\n'}
       </div>
     </OfficialDocument>
   )
 }
 
-function Example001Demo() {
+function ContentModalDemo() {
   return (
     <>
-      <ui.Block data-target={'modal-js-example'}>
-        {' '}
-        <button data-target={'modal-js-example'} className={'js-modal-trigger'}>
-          {' '}
-          Open JS example modal{' '}
-        </button>{' '}
-      </ui.Block>
-      <ui.Modal defaultOpen={false}>
-        <ui.ModalContent
-          wrapperProps={{ id: 'modal-js-example' }}
+      <Modal defaultOpen={false}>
+        <ModalTrigger
+          data-target={'modal'}
+          aria-haspopup={'true'}
+          className={'rb-is-primary rb-is-large'}
+        >
+          Launch example modal
+        </ModalTrigger>
+        <ModalContent
+          wrapperProps={{ id: 'modal' }}
           close={
             <>
-              <ui.ModalClose aria-label={'close'} className={'rb-is-large'} />
+              <ModalClose aria-label={'close'} className={'rb-is-large'} />
             </>
           }
         >
-          {' '}
-          <ui.Box>
-            {' '}
-            <p>Modal JS example</p>{' '}
-          </ui.Box>{' '}
-        </ui.ModalContent>
-      </ui.Modal>
+          <Box>
+            <Media>
+              <MediaLeft>
+                <Image
+                  size={64}
+                  src={'./official-assets/128x128.png'}
+                  alt={'Image'}
+                />
+              </MediaLeft>
+              <MediaContent>
+                <Content>
+                  <p>
+                    <strong>John Smith</strong> <small>@johnsmith</small>{' '}
+                    <small>31m</small> <br /> Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Aenean efficitur sit amet massa
+                    fringilla egestas. Nullam condimentum luctus turpis.
+                  </p>
+                </Content>
+                <Level mobile>
+                  <LevelLeft>
+                    <LevelItem aria-label={'retweet'} as={'a'}>
+                      <Icon size={'small'}>
+                        <i aria-hidden={'true'} className={'fas fa-retweet'} />
+                      </Icon>
+                    </LevelItem>
+                    <LevelItem aria-label={'like'} as={'a'}>
+                      <Icon size={'small'}>
+                        <i aria-hidden={'true'} className={'fas fa-heart'} />
+                      </Icon>
+                    </LevelItem>
+                  </LevelLeft>
+                </Level>
+              </MediaContent>
+            </Media>
+          </Box>
+        </ModalContent>
+      </Modal>
     </>
   )
 }
 
-function Example002Demo() {
+function ImageModalDemo() {
   return (
     <>
-      <ui.Block data-target={'modal-js-example'}>
-        {' '}
-        <ui.Button
-          data-target={'modal-js-example'}
-          color={'primary'}
-          className={'js-modal-trigger'}
+      <Modal defaultOpen={false}>
+        <ModalTrigger
+          data-target={'modal-bis'}
+          className={'rb-is-primary rb-is-large'}
+          as={'a'}
         >
-          {' '}
-          Open JS example modal{' '}
-        </ui.Button>{' '}
-      </ui.Block>
-      <ui.Modal defaultOpen={false}>
-        <ui.ModalContent
-          wrapperProps={{ id: 'modal-js-example' }}
+          Launch image modal
+        </ModalTrigger>
+        <ModalContent
+          wrapperProps={{ id: 'modal-bis' }}
           close={
             <>
-              <ui.ModalClose aria-label={'close'} className={'rb-is-large'} />
+              <ModalClose aria-label={'close'} className={'rb-is-large'} />
             </>
           }
         >
-          {' '}
-          <ui.Box>
-            {' '}
-            <p>Modal JS example</p>{' '}
-          </ui.Box>{' '}
-        </ui.ModalContent>
-      </ui.Modal>
+          <Image
+            ratio={'4by3'}
+            as={'p'}
+            src={'./official-assets/1280x960.png'}
+            alt={''}
+          />
+        </ModalContent>
+      </Modal>
     </>
   )
 }
 
-export const Example001 = {
-  name: 'Unstyled button trigger',
+function ModalCardDemo() {
+  return (
+    <>
+      <Modal defaultOpen={false}>
+        <ModalTrigger
+          data-target={'modal-ter'}
+          aria-haspopup={'true'}
+          className={'rb-is-primary rb-is-large'}
+        >
+          Launch card modal
+        </ModalTrigger>
+        <ModalCard wrapperProps={{ id: 'modal-ter' }}>
+          <ModalCardHead>
+            <ModalTitle as={'p'}>Modal title</ModalTitle>
+            <ModalClose aria-label={'close'} variant={'delete'} />
+          </ModalCardHead>
+          <ModalCardBody>
+            <Content>
+              <h1>Hello World</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                accumsan, metus ultrices eleifend gravida, nulla nunc varius
+                lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper
+                dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis
+                neque.
+              </p>
+              <h2>Second level</h2>
+              <p>
+                Curabitur accumsan turpis pharetra{' '}
+                <strong>augue tincidunt</strong> blandit. Quisque condimentum
+                maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna
+                vel cursus venenatis. Suspendisse potenti. Etiam mattis sem
+                rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et
+                neque nisl.
+              </p>
+              <ul>
+                <li>
+                  In fermentum leo eu lectus mollis, quis dictum mi aliquet.
+                </li>
+                <li>
+                  Morbi eu nulla lobortis, lobortis est in, fringilla felis.
+                </li>
+                <li>
+                  Aliquam nec felis in sapien venenatis viverra fermentum nec
+                  lectus.
+                </li>
+                <li>Ut non enim metus.</li>
+              </ul>
+              <h3>Third level</h3>
+              <p>
+                Quisque ante lacus, malesuada ac auctor vitae, congue{' '}
+                <a href={'#'}>non ante</a>. Phasellus lacus ex, semper ac tortor
+                nec, fringilla condimentum orci. Fusce eu rutrum tellus.
+              </p>
+              <ol>
+                <li>Donec blandit a lorem id convallis.</li>
+                <li>Cras gravida arcu at diam gravida gravida.</li>
+                <li>Integer in volutpat libero.</li>
+                <li>Donec a diam tellus.</li>
+                <li>Aenean nec tortor orci.</li>
+                <li>
+                  Quisque aliquam cursus urna, non bibendum massa viverra eget.
+                </li>
+                <li>Vivamus maximus ultricies pulvinar.</li>
+              </ol>
+              <blockquote>
+                Ut venenatis, nisl scelerisque sollicitudin fermentum, quam
+                libero hendrerit ipsum, ut blandit est tellus sit amet turpis.
+              </blockquote>
+              <p>
+                Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et{' '}
+                <em>justo sodales</em> elementum. Maecenas ultrices lacus quis
+                neque consectetur, et lobortis nisi molestie.
+              </p>
+              <p>
+                Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi.
+                Donec mattis vulputate risus in luctus. Maecenas vestibulum
+                interdum commodo.
+              </p>
+              <p>
+                Suspendisse egestas sapien non felis placerat elementum. Morbi
+                tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla.
+                Nulla facilisi. Nullam ac erat ante.
+              </p>
+              <h4>Fourth level</h4>
+              <p>
+                Nulla efficitur eleifend nisi, sit amet bibendum sapien
+                fringilla ac. Mauris euismod metus a tellus laoreet, at
+                elementum ex efficitur.
+              </p>
+              <p>
+                Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue
+                cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est
+                maximus est porta condimentum in eu justo. Nulla id iaculis
+                sapien.
+              </p>
+              <p>
+                Phasellus porttitor enim id metus volutpat ultricies. Ut nisi
+                nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis
+                lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula
+                sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus,
+                mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac
+                posuere est. Nunc ultricies nunc neque, vitae ultricies ex
+                sodales quis. Aliquam eu nibh in libero accumsan pulvinar.
+                Nullam nec nisl placerat, pretium metus vel, euismod ipsum.
+                Proin tempor cursus nisl vel condimentum. Nam pharetra varius
+                metus non pellentesque.
+              </p>
+              <h5>Fifth level</h5>
+              <p>
+                Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed
+                tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet
+                ligula mi, in luctus elit volutpat porta. Phasellus molestie
+                diam vel nisi sodales, a eleifend augue laoreet. Sed nec
+                eleifend justo. Nam et sollicitudin odio.
+              </p>
+              <h6>Sixth level</h6>
+              <p>
+                Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec
+                pulvinar lacus sed diam dignissim, ut eleifend eros accumsan.
+                Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus
+                nunc, scelerisque quis enim vitae, malesuada ultrices turpis.
+                Nunc vitae maximus purus, nec consectetur dui. Suspendisse
+                euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed
+                varius sapien odio vitae est. Etiam at cursus metus.
+              </p>
+            </Content>
+          </ModalCardBody>
+          <ModalCardFoot>
+            <Buttons>
+              <ModalClose className={'rb-is-success'} variant={'button'}>
+                Save changes
+              </ModalClose>
+              <ModalClose variant={'button'}>Cancel</ModalClose>
+            </Buttons>
+          </ModalCardFoot>
+        </ModalCard>
+      </Modal>
+    </>
+  )
+}
+
+export const ContentModalStory = {
+  name: 'Content modal',
   parameters: {
-    official: { id: 'components-modal/2-add-the-html-for-the-trigger/001' },
+    official: { id: 'components-modal/basic/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example001Demo() {\n  return (\n    <>\n      <ui.Block data-target={'modal-js-example'}>\n        {' '}\n        <button data-target={'modal-js-example'} className={'js-modal-trigger'}>\n          {' '}\n          Open JS example modal{' '}\n        </button>{' '}\n      </ui.Block>\n      <ui.Modal defaultOpen={false}>\n        <ui.ModalContent\n          wrapperProps={{ id: 'modal-js-example' }}\n          close={\n            <>\n              <ui.ModalClose aria-label={'close'} className={'rb-is-large'} />\n            </>\n          }\n        >\n          {' '}\n          <ui.Box>\n            {' '}\n            <p>Modal JS example</p>{' '}\n          </ui.Box>{' '}\n        </ui.ModalContent>\n      </ui.Modal>\n    </>\n  )\n}\n",
+        code: "import {\n  Box,\n  Content,\n  Icon,\n  Image,\n  Level,\n  LevelItem,\n  LevelLeft,\n  Media,\n  MediaContent,\n  MediaLeft,\n  Modal,\n  ModalClose,\n  ModalContent,\n  ModalTrigger,\n} from '@seagreenio/react-bulma'\n\nfunction ContentModalDemo() {\n  return (\n    <>\n      <Modal defaultOpen={false}>\n        <ModalTrigger\n          data-target={'modal'}\n          aria-haspopup={'true'}\n          className={'rb-is-primary rb-is-large'}\n        >\n          Launch example modal\n        </ModalTrigger>\n        <ModalContent\n          wrapperProps={{ id: 'modal' }}\n          close={\n            <>\n              <ModalClose aria-label={'close'} className={'rb-is-large'} />\n            </>\n          }\n        >\n          <Box>\n            <Media>\n              <MediaLeft>\n                <Image\n                  size={64}\n                  src={'./official-assets/128x128.png'}\n                  alt={'Image'}\n                />\n              </MediaLeft>\n              <MediaContent>\n                <Content>\n                  <p>\n                    <strong>John Smith</strong> <small>@johnsmith</small>{' '}\n                    <small>31m</small> <br /> Lorem ipsum dolor sit amet,\n                    consectetur adipiscing elit. Aenean efficitur sit amet massa\n                    fringilla egestas. Nullam condimentum luctus turpis.\n                  </p>\n                </Content>\n                <Level mobile>\n                  <LevelLeft>\n                    <LevelItem aria-label={'retweet'} as={'a'}>\n                      <Icon size={'small'}>\n                        <i aria-hidden={'true'} className={'fas fa-retweet'} />\n                      </Icon>\n                    </LevelItem>\n                    <LevelItem aria-label={'like'} as={'a'}>\n                      <Icon size={'small'}>\n                        <i aria-hidden={'true'} className={'fas fa-heart'} />\n                      </Icon>\n                    </LevelItem>\n                  </LevelLeft>\n                </Level>\n              </MediaContent>\n            </Media>\n          </Box>\n        </ModalContent>\n      </Modal>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example001Demo,
+  render: ContentModalDemo,
 } satisfies StoryObj
 
-export const Example002 = {
-  name: 'Primary button trigger',
+export const ImageModalStory = {
+  name: 'Image modal',
   parameters: {
-    official: { id: 'components-modal/2-add-the-html-for-the-trigger/002' },
+    official: { id: 'components-modal/image-modal/001' },
     docs: {
       source: {
-        code: "import * as ui from '@seagreenio/react-bulma'\n\nfunction Example002Demo() {\n  return (\n    <>\n      <ui.Block data-target={'modal-js-example'}>\n        {' '}\n        <ui.Button\n          data-target={'modal-js-example'}\n          color={'primary'}\n          className={'js-modal-trigger'}\n        >\n          {' '}\n          Open JS example modal{' '}\n        </ui.Button>{' '}\n      </ui.Block>\n      <ui.Modal defaultOpen={false}>\n        <ui.ModalContent\n          wrapperProps={{ id: 'modal-js-example' }}\n          close={\n            <>\n              <ui.ModalClose aria-label={'close'} className={'rb-is-large'} />\n            </>\n          }\n        >\n          {' '}\n          <ui.Box>\n            {' '}\n            <p>Modal JS example</p>{' '}\n          </ui.Box>{' '}\n        </ui.ModalContent>\n      </ui.Modal>\n    </>\n  )\n}\n",
+        code: "import {\n  Image,\n  Modal,\n  ModalClose,\n  ModalContent,\n  ModalTrigger,\n} from '@seagreenio/react-bulma'\n\nfunction ImageModalDemo() {\n  return (\n    <>\n      <Modal defaultOpen={false}>\n        <ModalTrigger\n          data-target={'modal-bis'}\n          className={'rb-is-primary rb-is-large'}\n          as={'a'}\n        >\n          Launch image modal\n        </ModalTrigger>\n        <ModalContent\n          wrapperProps={{ id: 'modal-bis' }}\n          close={\n            <>\n              <ModalClose aria-label={'close'} className={'rb-is-large'} />\n            </>\n          }\n        >\n          <Image\n            ratio={'4by3'}\n            as={'p'}\n            src={'./official-assets/1280x960.png'}\n            alt={''}\n          />\n        </ModalContent>\n      </Modal>\n    </>\n  )\n}\n",
         language: 'tsx',
         type: 'code',
       },
     },
   },
-  render: Example002Demo,
+  render: ImageModalDemo,
+} satisfies StoryObj
+
+export const ModalCardStory = {
+  name: 'Modal card',
+  parameters: {
+    official: { id: 'components-modal/modal-card/001' },
+    docs: {
+      source: {
+        code: "import {\n  Buttons,\n  Content,\n  Modal,\n  ModalCard,\n  ModalCardBody,\n  ModalCardFoot,\n  ModalCardHead,\n  ModalClose,\n  ModalTitle,\n  ModalTrigger,\n} from '@seagreenio/react-bulma'\n\nfunction ModalCardDemo() {\n  return (\n    <>\n      <Modal defaultOpen={false}>\n        <ModalTrigger\n          data-target={'modal-ter'}\n          aria-haspopup={'true'}\n          className={'rb-is-primary rb-is-large'}\n        >\n          Launch card modal\n        </ModalTrigger>\n        <ModalCard wrapperProps={{ id: 'modal-ter' }}>\n          <ModalCardHead>\n            <ModalTitle as={'p'}>Modal title</ModalTitle>\n            <ModalClose aria-label={'close'} variant={'delete'} />\n          </ModalCardHead>\n          <ModalCardBody>\n            <Content>\n              <h1>Hello World</h1>\n              <p>\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla\n                accumsan, metus ultrices eleifend gravida, nulla nunc varius\n                lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper\n                dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis\n                neque.\n              </p>\n              <h2>Second level</h2>\n              <p>\n                Curabitur accumsan turpis pharetra{' '}\n                <strong>augue tincidunt</strong> blandit. Quisque condimentum\n                maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna\n                vel cursus venenatis. Suspendisse potenti. Etiam mattis sem\n                rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et\n                neque nisl.\n              </p>\n              <ul>\n                <li>\n                  In fermentum leo eu lectus mollis, quis dictum mi aliquet.\n                </li>\n                <li>\n                  Morbi eu nulla lobortis, lobortis est in, fringilla felis.\n                </li>\n                <li>\n                  Aliquam nec felis in sapien venenatis viverra fermentum nec\n                  lectus.\n                </li>\n                <li>Ut non enim metus.</li>\n              </ul>\n              <h3>Third level</h3>\n              <p>\n                Quisque ante lacus, malesuada ac auctor vitae, congue{' '}\n                <a href={'#'}>non ante</a>. Phasellus lacus ex, semper ac tortor\n                nec, fringilla condimentum orci. Fusce eu rutrum tellus.\n              </p>\n              <ol>\n                <li>Donec blandit a lorem id convallis.</li>\n                <li>Cras gravida arcu at diam gravida gravida.</li>\n                <li>Integer in volutpat libero.</li>\n                <li>Donec a diam tellus.</li>\n                <li>Aenean nec tortor orci.</li>\n                <li>\n                  Quisque aliquam cursus urna, non bibendum massa viverra eget.\n                </li>\n                <li>Vivamus maximus ultricies pulvinar.</li>\n              </ol>\n              <blockquote>\n                Ut venenatis, nisl scelerisque sollicitudin fermentum, quam\n                libero hendrerit ipsum, ut blandit est tellus sit amet turpis.\n              </blockquote>\n              <p>\n                Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et{' '}\n                <em>justo sodales</em> elementum. Maecenas ultrices lacus quis\n                neque consectetur, et lobortis nisi molestie.\n              </p>\n              <p>\n                Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi.\n                Donec mattis vulputate risus in luctus. Maecenas vestibulum\n                interdum commodo.\n              </p>\n              <p>\n                Suspendisse egestas sapien non felis placerat elementum. Morbi\n                tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla.\n                Nulla facilisi. Nullam ac erat ante.\n              </p>\n              <h4>Fourth level</h4>\n              <p>\n                Nulla efficitur eleifend nisi, sit amet bibendum sapien\n                fringilla ac. Mauris euismod metus a tellus laoreet, at\n                elementum ex efficitur.\n              </p>\n              <p>\n                Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue\n                cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est\n                maximus est porta condimentum in eu justo. Nulla id iaculis\n                sapien.\n              </p>\n              <p>\n                Phasellus porttitor enim id metus volutpat ultricies. Ut nisi\n                nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis\n                lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula\n                sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus,\n                mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac\n                posuere est. Nunc ultricies nunc neque, vitae ultricies ex\n                sodales quis. Aliquam eu nibh in libero accumsan pulvinar.\n                Nullam nec nisl placerat, pretium metus vel, euismod ipsum.\n                Proin tempor cursus nisl vel condimentum. Nam pharetra varius\n                metus non pellentesque.\n              </p>\n              <h5>Fifth level</h5>\n              <p>\n                Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed\n                tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet\n                ligula mi, in luctus elit volutpat porta. Phasellus molestie\n                diam vel nisi sodales, a eleifend augue laoreet. Sed nec\n                eleifend justo. Nam et sollicitudin odio.\n              </p>\n              <h6>Sixth level</h6>\n              <p>\n                Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec\n                pulvinar lacus sed diam dignissim, ut eleifend eros accumsan.\n                Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus\n                nunc, scelerisque quis enim vitae, malesuada ultrices turpis.\n                Nunc vitae maximus purus, nec consectetur dui. Suspendisse\n                euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed\n                varius sapien odio vitae est. Etiam at cursus metus.\n              </p>\n            </Content>\n          </ModalCardBody>\n          <ModalCardFoot>\n            <Buttons>\n              <ModalClose className={'rb-is-success'} variant={'button'}>\n                Save changes\n              </ModalClose>\n              <ModalClose variant={'button'}>Cancel</ModalClose>\n            </Buttons>\n          </ModalCardFoot>\n        </ModalCard>\n      </Modal>\n    </>\n  )\n}\n",
+        language: 'tsx',
+        type: 'code',
+      },
+    },
+  },
+  render: ModalCardDemo,
 } satisfies StoryObj
