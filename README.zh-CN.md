@@ -369,10 +369,10 @@ bun install --frozen-lockfile
 | `bun run build-storybook` | 将静态 Storybook 构建到 `storybook-static/`。        |
 | `bun run format`          | 格式化仓库文件。                                     |
 
-发布 RC 版本时，在同一仓库根目录运行：
+发布时，在同一仓库根目录运行：
 
 ```sh
-npm publish --tag rc
+npm publish
 ```
 
 `prepack` 会在打包或发布前自动构建组件库。

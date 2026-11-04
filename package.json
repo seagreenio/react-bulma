@@ -1,6 +1,6 @@
 {
   "name": "@seagreenio/react-bulma",
-  "version": "1.0.0-rc.0",
+  "version": "1.0.0",
   "description": "A Bulma component library for modern React.",
   "license": "MIT",
   "type": "module",
@@ -88,6 +88,6 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag": "rc"
+    "tag": "latest"
   }
 }

@@ -369,10 +369,10 @@ Then choose the command you need:
 | `bun run build-storybook` | Build static Storybook into `storybook-static/`.                  |
 | `bun run format`          | Format repository files.                                          |
 
-To publish a release candidate, run this from the same repository root:
+To publish, run this from the same repository root:
 
 ```sh
-npm publish --tag rc
+npm publish
 ```
 
 The `prepack` hook builds the library before packing or publishing.

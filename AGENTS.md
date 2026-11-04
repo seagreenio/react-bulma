@@ -48,7 +48,7 @@ Use existing commands for the affected behavior. Documentation-only changes do n
 
 Format only files touched by the task with the existing Prettier configuration. `bun run format` formats the entire repository.
 
-For a requested package dry run, use `npm publish --dry-run --tag rc`. The existing `prepack` script builds the package. Commit, push, or publish only when requested.
+For a requested package dry run, use `npm publish --dry-run`. The existing `prepack` script builds the package. Commit, push, or publish only when requested.
 
 ## Caches and temporary output
 
