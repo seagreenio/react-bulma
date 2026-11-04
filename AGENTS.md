@@ -16,6 +16,7 @@ React Bulma is a React component library built on Bulma. Use `package.json` for 
 ## Documentation and examples
 
 - Write project documentation in English. Communicate with the user in Chinese.
+- End release notes with `**Full Changelog**: https://github.com/seagreenio/react-bulma/commits/<tag>`, using the release's exact tag, such as `1.0.0`. Bold the label and keep the URL visible instead of using a Markdown link or a version comparison URL.
 - Keep `README.md` and `README.zh-CN.md` aligned in structure, paragraphs, facts, commands, examples, and caveats. Use natural Chinese rather than literal translations.
 - Keep both READMEs and Storybook documentation, including `stories/Guide.mdx` and component docs, consistent in shared component usage, consumer configuration, examples, and caveats. When shared information changes, update every affected document in the same change.
 - Keep Storybook focused on component presentation and usage. Keep library development, testing, publishing, and official example generation instructions in the READMEs.
@@ -33,6 +34,8 @@ React Bulma is a React component library built on Bulma. Use `package.json` for 
 ## Tests and commands
 
 Test observable component behavior and public type contracts. Keep coverage for interaction, native semantics, prefix isolation, and responsive behavior where relevant. Avoid tests that duplicate Bulma constants, mirror implementation details, or compare generated inventories with themselves.
+
+Add or extend tests only when necessary to cover library behavior or public type contracts changed by the task. Do not add tests for documentation, guides, Storybook configuration, stories, example generators, or formatting and naming changes unless the user explicitly requests tests. Reuse existing checks and inspect rendered documentation where appropriate. Do not expand the task with unrelated or redundant tests.
 
 Use existing commands for the affected behavior. Documentation-only changes do not require the full build and browser suite. Do not add a general Storybook checker or new verification infrastructure without a concrete need.
 

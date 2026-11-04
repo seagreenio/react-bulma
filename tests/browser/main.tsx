@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { Button, BulmaRoot } from '../../src'
-import * as custom from './custom-ui'
+import * as custom from '../../.generated/custom-ui'
 import '../../.generated/default.css'
 import '../../.generated/custom.css'
 import './host.css'

@@ -1,6 +1,6 @@
 import { createElement } from 'react'
 import { defaultPrefix, type Prefix } from './config'
-import { helperNames, type Helpers } from './helpers'
+import type { Helpers } from './helpers'
 import {
   classNames,
   forwardRefComponent,
@@ -37,7 +37,6 @@ export interface BulmaRootProps extends NativeProps<'div'> {
 }
 
 export function createButton(prefix: Prefix) {
-  const helpers = (values?: Helpers) => helperNames(prefix, values)
   return forwardRefComponent(function Button({
     as,
     color,
@@ -59,23 +58,6 @@ export function createButton(prefix: Prefix) {
     'aria-busy': ariaBusy,
     ...nativeProps
   }: ButtonProps) {
-    const modifiers = [
-      color,
-      tone,
-      variant,
-      state,
-      selected && 'selected',
-      expanded && 'expanded',
-      size,
-      outlined && 'outlined',
-      inverted && 'inverted',
-      rounded && 'rounded',
-      fullWidth && 'fullwidth',
-      responsive && 'responsive',
-      loading && 'loading',
-    ]
-      .filter(Boolean)
-      .map((value) => `${prefix}is-${value}`)
     return createElement(as ?? 'button', {
       ...nativeProps,
       type:
@@ -94,9 +76,27 @@ export function createButton(prefix: Prefix) {
           : nativeProps['aria-disabled'],
       'aria-busy': loading || ariaBusy,
       'data-loading-disabled': loading && !disabled ? '' : undefined,
-      className: [`${prefix}button`, ...modifiers, helpers(values), className]
-        .filter(Boolean)
-        .join(' '),
+      className: classNames(
+        prefix,
+        [
+          'button',
+          color && `is-${color}`,
+          tone && `is-${tone}`,
+          variant && `is-${variant}`,
+          state && `is-${state}`,
+          selected && 'is-selected',
+          expanded && 'is-expanded',
+          size && `is-${size}`,
+          outlined && 'is-outlined',
+          inverted && 'is-inverted',
+          rounded && 'is-rounded',
+          fullWidth && 'is-fullwidth',
+          responsive && 'is-responsive',
+          loading && 'is-loading',
+        ],
+        values,
+        className,
+      ),
     })
   })
 }

@@ -80,7 +80,7 @@ You can set a button's color with `color` and round its corners with `rounded`. 
 </Button>
 ```
 
-In this example, `mt: 0` generates `rb-mt-0`, which sets the top margin to zero. Setting `hidden: false` adds no hiding class. Your `className="save-action"` is added alongside the component classes exactly as written; it does not become `rb-save-action`.
+In this example, `mt: 0` generates `rb-mt-0`, which sets the top margin to zero. Your `className="save-action"` is added alongside the component classes exactly as written; it does not become `rb-save-action`.
 
 For HTML elements such as `div` and `p`, call `helpers()` with the same style options and pass the returned class names to `className`. The function only generates class names; it does not change elements or insert CSS. Those names start with `rb-` by default. If you import `helpers` from a generated custom-prefix module, it uses your configured prefix:
 

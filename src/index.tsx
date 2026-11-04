@@ -216,6 +216,8 @@ export {
   DropdownContent,
   DropdownItem,
   DropdownDivider,
+} from './interactive/dropdown'
+export {
   Modal,
   ModalTrigger,
   ModalContent,
@@ -226,10 +228,9 @@ export {
   ModalCardHead,
   ModalCardBody,
   ModalCardFoot,
-  Tabs,
-  TabsList,
-  Tab,
-  TabPanel,
+} from './interactive/modal'
+export { Tabs, TabsList, Tab, TabPanel } from './interactive/tabs'
+export {
   Navbar,
   NavbarBrand,
   NavbarBurger,
@@ -240,5 +241,5 @@ export {
   NavbarLink,
   NavbarDropdown,
   NavbarDivider,
-} from './interactive'
-export type * from './interactive'
+} from './interactive/navbar'
+export type * from './interactive/types'
