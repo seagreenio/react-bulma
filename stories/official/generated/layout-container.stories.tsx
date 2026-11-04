@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -980,7 +978,7 @@ export const Example001 = {
     official: { id: 'layout-container/default-behavior/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"centered"}</strong>{" on desktop and larger viewports.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"centered"}</strong>{" on desktop and larger viewports.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -995,7 +993,7 @@ export const Example002 = {
     official: { id: 'layout-container/widescreen-or-fullhd-only/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container width={"widescreen"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"fullwidth"}</strong>{" "}<em>{"until"}</em>{" the\\n    "}<code>{"$widescreen"}</code>{" breakpoint.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container width={"widescreen"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"fullwidth"}</strong>{" "}<em>{"until"}</em>{" the\\n    "}<code>{"$widescreen"}</code>{" breakpoint.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1010,7 +1008,7 @@ export const Example003 = {
     official: { id: 'layout-container/widescreen-or-fullhd-only/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container width={"fullhd"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"fullwidth"}</strong>{" "}<em>{"until"}</em>{" the\\n    "}<code>{"$fullhd"}</code>{" breakpoint.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container width={"fullhd"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"fullwidth"}</strong>{" "}<em>{"until"}</em>{" the\\n    "}<code>{"$fullhd"}</code>{" breakpoint.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1027,7 +1025,7 @@ export const Example004 = {
     },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container maxWidth={"tablet"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container has a "}<code>{"max-width"}</code>{" of\\n    "}<code>{"$tablet - $container-offset"}</code>{".\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container maxWidth={"tablet"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container has a "}<code>{"max-width"}</code>{" of\\n    "}<code>{"$tablet - $container-offset"}</code>{".\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1044,7 +1042,7 @@ export const Example005 = {
     },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container maxWidth={"desktop"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container has a "}<code>{"max-width"}</code>{" of\\n    "}<code>{"$desktop - $container-offset"}</code>{" on widescreen and fullhd.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container maxWidth={"desktop"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container has a "}<code>{"max-width"}</code>{" of\\n    "}<code>{"$desktop - $container-offset"}</code>{" on widescreen and fullhd.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1061,7 +1059,7 @@ export const Example006 = {
     },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n  \\n"}<ui.Container maxWidth={"widescreen"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container has a "}<code>{"max-width"}</code>{" of\\n    "}<code>{"$widescreen - $container-offset"}</code>{" on fullhd.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n\\n"}</div></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n  \\n"}<ui.Container maxWidth={"widescreen"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container has a "}<code>{"max-width"}</code>{" of\\n    "}<code>{"$widescreen - $container-offset"}</code>{" on fullhd.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n\\n"}</div></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1076,7 +1074,7 @@ export const Example007 = {
     official: { id: 'layout-container/fluid-container/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container width={"fluid"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"fluid"}</strong>{": it will have a 32px gap on either\\n    side, on any viewport size.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<><div className={"bd-example is-fullwidth"}>{"\\n"}<ui.Container width={"fluid"}>{"\\n  "}<ui.Notification color={"primary"}>{"\\n    This container is "}<strong>{"fluid"}</strong>{": it will have a 32px gap on either\\n    side, on any viewport size.\\n  "}</ui.Notification>{"\\n"}</ui.Container>{"\\n"}</div></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

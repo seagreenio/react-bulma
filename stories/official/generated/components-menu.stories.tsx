@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -605,7 +603,7 @@ export const Example001 = {
     official: { id: 'components-menu/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Menu>{"\\n  "}<ui.MenuLabel>{"General"}</ui.MenuLabel>{"\\n  "}<ui.MenuList>{"\\n    "}<ui.MenuItem>{"Dashboard"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Customers"}</ui.MenuItem>{"\\n  "}</ui.MenuList>{"\\n  "}<ui.MenuLabel>{"Administration"}</ui.MenuLabel>{"\\n  "}<ui.MenuList>{"\\n    "}<ui.MenuItem>{"Team Settings"}</ui.MenuItem>{"\\n    "}<ui.MenuItem active nested={<><ul>{"\\n        "}<li><a>{"Members"}</a></li>{"\\n        "}<li><a>{"Plugins"}</a></li>{"\\n        "}<li><a>{"Add a member"}</a></li>{"\\n      "}</ul></>}>{"Manage Your Team"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Invitations"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Cloud Storage Environment Settings"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Authentication"}</ui.MenuItem>{"\\n  "}</ui.MenuList>{"\\n  "}<ui.MenuLabel>{"Transactions"}</ui.MenuLabel>{"\\n  "}<ui.MenuList>{"\\n    "}<ui.MenuItem>{"Payments"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Transfers"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Balance"}</ui.MenuItem>{"\\n  "}</ui.MenuList>{"\\n"}</ui.Menu>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Menu>{"\\n  "}<ui.MenuLabel>{"General"}</ui.MenuLabel>{"\\n  "}<ui.MenuList>{"\\n    "}<ui.MenuItem>{"Dashboard"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Customers"}</ui.MenuItem>{"\\n  "}</ui.MenuList>{"\\n  "}<ui.MenuLabel>{"Administration"}</ui.MenuLabel>{"\\n  "}<ui.MenuList>{"\\n    "}<ui.MenuItem>{"Team Settings"}</ui.MenuItem>{"\\n    "}<ui.MenuItem active nested={<><ul>{"\\n        "}<li><a>{"Members"}</a></li>{"\\n        "}<li><a>{"Plugins"}</a></li>{"\\n        "}<li><a>{"Add a member"}</a></li>{"\\n      "}</ul></>}>{"Manage Your Team"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Invitations"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Cloud Storage Environment Settings"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Authentication"}</ui.MenuItem>{"\\n  "}</ui.MenuList>{"\\n  "}<ui.MenuLabel>{"Transactions"}</ui.MenuLabel>{"\\n  "}<ui.MenuList>{"\\n    "}<ui.MenuItem>{"Payments"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Transfers"}</ui.MenuItem>{"\\n    "}<ui.MenuItem>{"Balance"}</ui.MenuItem>{"\\n  "}</ui.MenuList>{"\\n"}</ui.Menu>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

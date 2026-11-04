@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -1092,7 +1090,7 @@ export const Example001 = {
     official: { id: 'elements-image/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/128x128.png"} alt={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/128x128.png"} alt={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1107,7 +1105,7 @@ export const Example002 = {
     official: { id: 'elements-image/rounded-images/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/128x128.png"} alt={""} rounded />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/128x128.png"} alt={""} rounded />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1122,7 +1120,7 @@ export const Example003 = {
     official: { id: 'elements-image/retina-images/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/256x256.png"} alt={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/256x256.png"} alt={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1137,7 +1135,7 @@ export const Example004 = {
     official: { id: 'elements-image/arbitrary-ratios-with-any-element/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image ratio={"16by9"}><iframe width={"640"} height={"360"} src={"https://www.youtube.com/embed/YE7VzlLtp-4"} frameBorder={"0"} allowFullScreen className={"rb-has-ratio"} /></ui.Image>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image ratio={"16by9"}><iframe width={"640"} height={"360"} src={"https://www.youtube.com/embed/YE7VzlLtp-4"} frameBorder={"0"} allowFullScreen className={"rb-has-ratio"} /></ui.Image>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

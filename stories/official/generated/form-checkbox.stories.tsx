@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -264,7 +262,7 @@ export const Example001 = {
     official: { id: 'form-checkbox/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Checkbox>{"\\n  Remember me\\n"}</ui.Checkbox>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<label class=\\"checkbox\\">\\n  <input type=\\"checkbox\\" />\\n  Remember me\\n</label>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Checkbox>{"\\n  Remember me\\n"}</ui.Checkbox>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<label class=\\"checkbox\\">\\n  <input type=\\"checkbox\\" />\\n  Remember me\\n</label>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -279,7 +277,7 @@ export const Example002 = {
     official: { id: 'form-checkbox/basic/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Checkbox>{"\\n  I agree to the "}<a href={"#"}>{"terms and conditions"}</a>{"\\n"}</ui.Checkbox>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<label class=\\"checkbox\\">\\n  <input type=\\"checkbox\\" />\\n  I agree to the <a href=\\"#\\">terms and conditions</a>\\n</label>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Checkbox>{"\\n  I agree to the "}<a href={"#"}>{"terms and conditions"}</a>{"\\n"}</ui.Checkbox>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<label class=\\"checkbox\\">\\n  <input type=\\"checkbox\\" />\\n  I agree to the <a href=\\"#\\">terms and conditions</a>\\n</label>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -294,7 +292,7 @@ export const Example003 = {
     official: { id: 'form-checkbox/basic/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Checkbox disabled wrapperProps={{ "aria-disabled": true }}>{"\\n  Save my preferences\\n"}</ui.Checkbox>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<label class=\\"checkbox\\" disabled>\\n  <input type=\\"checkbox\\" disabled />\\n  Save my preferences\\n</label>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Checkbox disabled wrapperProps={{ "aria-disabled": true }}>{"\\n  Save my preferences\\n"}</ui.Checkbox>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<label class=\\"checkbox\\" disabled>\\n  <input type=\\"checkbox\\" disabled />\\n  Save my preferences\\n</label>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -309,7 +307,7 @@ export const Example004 = {
     official: { id: 'form-checkbox/list-of-checkboxes/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<><ui.Block>{"\\n"}<ui.Checkboxes>{"\\n  "}<ui.Checkbox>{"\\n    Monday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Tuesday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Wednesday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Thursday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Friday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox defaultChecked>{"\\n    Saturday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox defaultChecked>{"\\n    Sunday\\n  "}</ui.Checkbox>{"\\n"}</ui.Checkboxes>{"\\n"}</ui.Block></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.Block>{"\\n"}<ui.Checkboxes>{"\\n  "}<ui.Checkbox>{"\\n    Monday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Tuesday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Wednesday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Thursday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox>{"\\n    Friday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox defaultChecked>{"\\n    Saturday\\n  "}</ui.Checkbox>{"\\n\\n  "}<ui.Checkbox defaultChecked>{"\\n    Sunday\\n  "}</ui.Checkbox>{"\\n"}</ui.Checkboxes>{"\\n"}</ui.Block></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

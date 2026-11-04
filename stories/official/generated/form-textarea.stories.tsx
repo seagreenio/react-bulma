@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -1001,7 +999,7 @@ export const Example001 = {
     official: { id: 'form-textarea/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"e.g. Hello world"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"e.g. Hello world"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1016,7 +1014,7 @@ export const Example002 = {
     official: { id: 'form-textarea/basic/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"10 lines of textarea"} rows={10} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"10 lines of textarea"} rows={10} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1031,7 +1029,7 @@ export const Example003 = {
     official: { id: 'form-textarea/colors/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Link textarea"} color={"link"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Link textarea"} color={"link"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1046,7 +1044,7 @@ export const Example004 = {
     official: { id: 'form-textarea/colors/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Primary textarea"} color={"primary"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Primary textarea"} color={"primary"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1061,7 +1059,7 @@ export const Example005 = {
     official: { id: 'form-textarea/colors/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Info textarea"} color={"info"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Info textarea"} color={"info"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1076,7 +1074,7 @@ export const Example006 = {
     official: { id: 'form-textarea/colors/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Success textarea"} color={"success"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Success textarea"} color={"success"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1091,7 +1089,7 @@ export const Example007 = {
     official: { id: 'form-textarea/colors/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Warning textarea"} color={"warning"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Warning textarea"} color={"warning"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1106,7 +1104,7 @@ export const Example008 = {
     official: { id: 'form-textarea/colors/006' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Danger textarea"} color={"danger"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea placeholder={"Danger textarea"} color={"danger"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1121,7 +1119,7 @@ export const Example009 = {
     official: { id: 'form-textarea/sizes/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Control>{"\\n    "}<ui.Textarea placeholder={"Small textarea"} size={"small"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control>{"\\n    "}<ui.Textarea placeholder={"Normal textarea"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control>{"\\n    "}<ui.Textarea placeholder={"Medium textarea"} size={"medium"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control>{"\\n    "}<ui.Textarea placeholder={"Large textarea"} size={"large"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Field>{"\\n  "}<ui.Control>{"\\n    "}<ui.Textarea placeholder={"Small textarea"} size={"small"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control>{"\\n    "}<ui.Textarea placeholder={"Normal textarea"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control>{"\\n    "}<ui.Textarea placeholder={"Medium textarea"} size={"medium"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control>{"\\n    "}<ui.Textarea placeholder={"Large textarea"} size={"large"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1136,7 +1134,7 @@ export const Example010 = {
     official: { id: 'form-textarea/normal/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea placeholder={"Normal textarea"} defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea placeholder={"Normal textarea"} defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1151,7 +1149,7 @@ export const Example011 = {
     official: { id: 'form-textarea/hover/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea placeholder={"Hovered textarea"} state={"hovered"} defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea placeholder={"Hovered textarea"} state={"hovered"} defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1166,7 +1164,7 @@ export const Example012 = {
     official: { id: 'form-textarea/focus/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea placeholder={"Focused textarea"} state={"focused"} defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea placeholder={"Focused textarea"} state={"focused"} defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1181,7 +1179,7 @@ export const Example013 = {
     official: { id: 'form-textarea/loading/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control loading>{"\\n  "}<ui.Textarea placeholder={"Loading textarea"} defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control loading>{"\\n  "}<ui.Textarea placeholder={"Loading textarea"} defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1196,7 +1194,7 @@ export const Example014 = {
     official: { id: 'form-textarea/loading/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        You can resize the loading spinner by appending "}<code>{"is-small"}</code>{", "}<code>{"is-medium"}</code>{" or\\n        "}<code>{"is-large"}</code>{" to the "}<code>{"control"}</code>{" container.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Field>{"\\n  "}<ui.Control size={"small"} loading>{"\\n    "}<ui.Textarea placeholder={"Small loading textarea"} size={"small"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control loading>{"\\n    "}<ui.Textarea placeholder={"Normal loading textarea"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control size={"medium"} loading>{"\\n    "}<ui.Textarea placeholder={"Medium loading textarea"} size={"medium"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control size={"large"} loading>{"\\n    "}<ui.Textarea placeholder={"Large loading textarea"} size={"large"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"field\\">\\n  <div class=\\"control is-small is-loading\\">\\n    <textarea\\n      class=\\"textarea is-small\\"\\n      placeholder=\\"Small loading textarea\\"\\n    ></textarea>\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-loading\\">\\n    <textarea class=\\"textarea\\" placeholder=\\"Normal loading textarea\\"></textarea>\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-medium is-loading\\">\\n    <textarea\\n      class=\\"textarea is-medium\\"\\n      placeholder=\\"Medium loading textarea\\"\\n    ></textarea>\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-large is-loading\\">\\n    <textarea\\n      class=\\"textarea is-large\\"\\n      placeholder=\\"Large loading textarea\\"\\n    ></textarea>\\n  </div>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        You can resize the loading spinner by appending "}<code>{"is-small"}</code>{", "}<code>{"is-medium"}</code>{" or\\n        "}<code>{"is-large"}</code>{" to the "}<code>{"control"}</code>{" container.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Field>{"\\n  "}<ui.Control size={"small"} loading>{"\\n    "}<ui.Textarea placeholder={"Small loading textarea"} size={"small"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control loading>{"\\n    "}<ui.Textarea placeholder={"Normal loading textarea"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control size={"medium"} loading>{"\\n    "}<ui.Textarea placeholder={"Medium loading textarea"} size={"medium"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control size={"large"} loading>{"\\n    "}<ui.Textarea placeholder={"Large loading textarea"} size={"large"} defaultValue={""} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"field\\">\\n  <div class=\\"control is-small is-loading\\">\\n    <textarea\\n      class=\\"textarea is-small\\"\\n      placeholder=\\"Small loading textarea\\"\\n    ></textarea>\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-loading\\">\\n    <textarea class=\\"textarea\\" placeholder=\\"Normal loading textarea\\"></textarea>\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-medium is-loading\\">\\n    <textarea\\n      class=\\"textarea is-medium\\"\\n      placeholder=\\"Medium loading textarea\\"\\n    ></textarea>\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-large is-loading\\">\\n    <textarea\\n      class=\\"textarea is-large\\"\\n      placeholder=\\"Large loading textarea\\"\\n    ></textarea>\\n  </div>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1211,7 +1209,7 @@ export const Example015 = {
     official: { id: 'form-textarea/disabled/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example015Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea placeholder={"Disabled textarea"} disabled defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea placeholder={"Disabled textarea"} disabled defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1226,7 +1224,7 @@ export const Example016 = {
     official: { id: 'form-textarea/readonly/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example016Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea readOnly defaultValue={"This content is readonly"} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea readOnly defaultValue={"This content is readonly"} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1241,7 +1239,7 @@ export const Example017 = {
     official: { id: 'form-textarea/fixed-size/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example017Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea placeholder={"Fixed size textarea"} fixedSize defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Control>{"\\n  "}<ui.Textarea placeholder={"Fixed size textarea"} fixedSize defaultValue={""} />{"\\n"}</ui.Control>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

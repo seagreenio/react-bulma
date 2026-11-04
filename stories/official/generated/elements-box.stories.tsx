@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -588,7 +586,7 @@ export const Example001 = {
     official: { id: 'elements-box/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Box>{"I\'m in a box."}</ui.Box>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Box>{"I\'m in a box."}</ui.Box>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -603,7 +601,7 @@ export const Example002 = {
     official: { id: 'elements-box/basic/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Box as={"form"}>{"\\n  "}<ui.Field>{"\\n    "}<ui.Label>{"Email"}</ui.Label>{"\\n    "}<ui.Control>{"\\n      "}<ui.Input type={"email"} placeholder={"e.g. alex@example.com"} />{"\\n    "}</ui.Control>{"\\n  "}</ui.Field>{"\\n\\n  "}<ui.Field>{"\\n    "}<ui.Label>{"Password"}</ui.Label>{"\\n    "}<ui.Control>{"\\n      "}<ui.Input type={"password"} placeholder={"********"} />{"\\n    "}</ui.Control>{"\\n  "}</ui.Field>{"\\n\\n  "}<ui.Button color={"primary"}>{"Sign in"}</ui.Button>{"\\n"}</ui.Box>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Box as={"form"}>{"\\n  "}<ui.Field>{"\\n    "}<ui.Label>{"Email"}</ui.Label>{"\\n    "}<ui.Control>{"\\n      "}<ui.Input type={"email"} placeholder={"e.g. alex@example.com"} />{"\\n    "}</ui.Control>{"\\n  "}</ui.Field>{"\\n\\n  "}<ui.Field>{"\\n    "}<ui.Label>{"Password"}</ui.Label>{"\\n    "}<ui.Control>{"\\n      "}<ui.Input type={"password"} placeholder={"********"} />{"\\n    "}</ui.Control>{"\\n  "}</ui.Field>{"\\n\\n  "}<ui.Button color={"primary"}>{"Sign in"}</ui.Button>{"\\n"}</ui.Box>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -618,7 +616,7 @@ export const Example003 = {
     official: { id: 'elements-box/basic/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Box>{"\\n  "}<ui.Media>{"\\n    "}<ui.MediaLeft>{"\\n      "}<ui.Image size={64} src={"./official-assets/128x128.png"} alt={"Image"} />{"\\n    "}</ui.MediaLeft>{"\\n    "}<ui.MediaContent>{"\\n      "}<ui.Content>{"\\n        "}<p>{"\\n          "}<strong>{"John Smith"}</strong>{" "}<small>{"@johnsmith"}</small>{"\\n          "}<small>{"31m"}</small>{"\\n          "}<br />{"\\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean\\n          efficitur sit amet massa fringilla egestas. Nullam condimentum luctus\\n          turpis.\\n        "}</p>{"\\n      "}</ui.Content>{"\\n      "}<ui.Level mobile>{"\\n        "}<ui.LevelLeft>{"\\n          "}<ui.LevelItem aria-label={"reply"} as={"a"}>{"\\n            "}<ui.Icon size={"small"}>{"\\n              "}<i aria-hidden={"true"} className={"fas fa-reply"} />{"\\n            "}</ui.Icon>{"\\n          "}</ui.LevelItem>{"\\n          "}<ui.LevelItem aria-label={"retweet"} as={"a"}>{"\\n            "}<ui.Icon size={"small"}>{"\\n              "}<i aria-hidden={"true"} className={"fas fa-retweet"} />{"\\n            "}</ui.Icon>{"\\n          "}</ui.LevelItem>{"\\n          "}<ui.LevelItem aria-label={"like"} as={"a"}>{"\\n            "}<ui.Icon size={"small"}>{"\\n              "}<i aria-hidden={"true"} className={"fas fa-heart"} />{"\\n            "}</ui.Icon>{"\\n          "}</ui.LevelItem>{"\\n        "}</ui.LevelLeft>{"\\n      "}</ui.Level>{"\\n    "}</ui.MediaContent>{"\\n  "}</ui.Media>{"\\n"}</ui.Box>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Box>{"\\n  "}<ui.Media>{"\\n    "}<ui.MediaLeft>{"\\n      "}<ui.Image size={64} src={"./official-assets/128x128.png"} alt={"Image"} />{"\\n    "}</ui.MediaLeft>{"\\n    "}<ui.MediaContent>{"\\n      "}<ui.Content>{"\\n        "}<p>{"\\n          "}<strong>{"John Smith"}</strong>{" "}<small>{"@johnsmith"}</small>{"\\n          "}<small>{"31m"}</small>{"\\n          "}<br />{"\\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean\\n          efficitur sit amet massa fringilla egestas. Nullam condimentum luctus\\n          turpis.\\n        "}</p>{"\\n      "}</ui.Content>{"\\n      "}<ui.Level mobile>{"\\n        "}<ui.LevelLeft>{"\\n          "}<ui.LevelItem aria-label={"reply"} as={"a"}>{"\\n            "}<ui.Icon size={"small"}>{"\\n              "}<i aria-hidden={"true"} className={"fas fa-reply"} />{"\\n            "}</ui.Icon>{"\\n          "}</ui.LevelItem>{"\\n          "}<ui.LevelItem aria-label={"retweet"} as={"a"}>{"\\n            "}<ui.Icon size={"small"}>{"\\n              "}<i aria-hidden={"true"} className={"fas fa-retweet"} />{"\\n            "}</ui.Icon>{"\\n          "}</ui.LevelItem>{"\\n          "}<ui.LevelItem aria-label={"like"} as={"a"}>{"\\n            "}<ui.Icon size={"small"}>{"\\n              "}<i aria-hidden={"true"} className={"fas fa-heart"} />{"\\n            "}</ui.Icon>{"\\n          "}</ui.LevelItem>{"\\n        "}</ui.LevelLeft>{"\\n      "}</ui.Level>{"\\n    "}</ui.MediaContent>{"\\n  "}</ui.Media>{"\\n"}</ui.Box>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

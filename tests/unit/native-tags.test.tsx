@@ -1,8 +1,8 @@
 import { expect, test } from 'bun:test'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { createBulma } from '../../src'
+import { generateTestUI } from './configured-ui'
 
-const ui = createBulma({ prefix: 'example-' })
+const ui = await generateTestUI({ prefix: 'example-' })
 
 test('alternate tags retain the official element hierarchy and Bulma classes', () => {
   const markup = renderToStaticMarkup(

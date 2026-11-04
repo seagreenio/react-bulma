@@ -2,10 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
 import { useState } from 'react'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -1956,7 +1954,7 @@ export const Example001 = {
     official: { id: 'form-file/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Choose a file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Choose a file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1971,7 +1969,7 @@ export const Example002 = {
     official: { id: 'form-file/modifiers/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        With the "}<code>{"has-name"}</code>{" modifier combined with the "}<code>{"file-name"}</code>{" element, you can add a\\n        "}<strong>{"placeholder"}</strong>{" for the selected file name.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.File name={"resume"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Choose a file… "}</ui.File>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"file has-name\\">\\n  <label class=\\"file-label\\">\\n    <input class=\\"file-input\\" type=\\"file\\" name=\\"resume\\" />\\n    <span class=\\"file-cta\\">\\n      <span class=\\"file-icon\\">\\n        <i class=\\"fas fa-upload\\"></i>\\n      </span>\\n      <span class=\\"file-label\\"> Choose a file… </span>\\n    </span>\\n    <span class=\\"file-name\\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        With the "}<code>{"has-name"}</code>{" modifier combined with the "}<code>{"file-name"}</code>{" element, you can add a\\n        "}<strong>{"placeholder"}</strong>{" for the selected file name.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.File name={"resume"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Choose a file… "}</ui.File>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"file has-name\\">\\n  <label class=\\"file-label\\">\\n    <input class=\\"file-input\\" type=\\"file\\" name=\\"resume\\" />\\n    <span class=\\"file-cta\\">\\n      <span class=\\"file-icon\\">\\n        <i class=\\"fas fa-upload\\"></i>\\n      </span>\\n      <span class=\\"file-label\\"> Choose a file… </span>\\n    </span>\\n    <span class=\\"file-name\\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1986,7 +1984,7 @@ export const Example003 = {
     official: { id: 'form-file/modifiers/002' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"You can move the CTA to the "}<strong>{"right side"}</strong>{" with the "}<code>{"is-right"}</code>{" modifier."}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.File name={"resume"} alignment={"right"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Choose a file… "}</ui.File>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"file has-name is-right\\">\\n  <label class=\\"file-label\\">\\n    <input class=\\"file-input\\" type=\\"file\\" name=\\"resume\\" />\\n    <span class=\\"file-cta\\">\\n      <span class=\\"file-icon\\">\\n        <i class=\\"fas fa-upload\\"></i>\\n      </span>\\n      <span class=\\"file-label\\"> Choose a file… </span>\\n    </span>\\n    <span class=\\"file-name\\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"You can move the CTA to the "}<strong>{"right side"}</strong>{" with the "}<code>{"is-right"}</code>{" modifier."}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.File name={"resume"} alignment={"right"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Choose a file… "}</ui.File>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"file has-name is-right\\">\\n  <label class=\\"file-label\\">\\n    <input class=\\"file-input\\" type=\\"file\\" name=\\"resume\\" />\\n    <span class=\\"file-cta\\">\\n      <span class=\\"file-icon\\">\\n        <i class=\\"fas fa-upload\\"></i>\\n      </span>\\n      <span class=\\"file-label\\"> Choose a file… </span>\\n    </span>\\n    <span class=\\"file-name\\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2001,7 +1999,7 @@ export const Example004 = {
     official: { id: 'form-file/modifiers/003' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        You can also "}<strong>{"expand"}</strong>{" the name to fill up the space with the "}<code>{"is-fullwidth"}</code>{" modifier.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.File name={"resume"} fullWidth icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Choose a file… "}</ui.File>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"file has-name is-fullwidth\\">\\n  <label class=\\"file-label\\">\\n    <input class=\\"file-input\\" type=\\"file\\" name=\\"resume\\" />\\n    <span class=\\"file-cta\\">\\n      <span class=\\"file-icon\\">\\n        <i class=\\"fas fa-upload\\"></i>\\n      </span>\\n      <span class=\\"file-label\\"> Choose a file… </span>\\n    </span>\\n    <span class=\\"file-name\\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        You can also "}<strong>{"expand"}</strong>{" the name to fill up the space with the "}<code>{"is-fullwidth"}</code>{" modifier.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.File name={"resume"} fullWidth icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Choose a file… "}</ui.File>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"file has-name is-fullwidth\\">\\n  <label class=\\"file-label\\">\\n    <input class=\\"file-input\\" type=\\"file\\" name=\\"resume\\" />\\n    <span class=\\"file-cta\\">\\n      <span class=\\"file-icon\\">\\n        <i class=\\"fas fa-upload\\"></i>\\n      </span>\\n      <span class=\\"file-label\\"> Choose a file… </span>\\n    </span>\\n    <span class=\\"file-name\\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2016,7 +2014,7 @@ export const Example005 = {
     official: { id: 'form-file/modifiers/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"You can have a "}<strong>{"boxed block"}</strong>{" with the "}<code>{"is-boxed"}</code>{" modifier."}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.File name={"resume"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Choose a file… "}</ui.File>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"file is-boxed\\">\\n  <label class=\\"file-label\\">\\n    <input class=\\"file-input\\" type=\\"file\\" name=\\"resume\\" />\\n    <span class=\\"file-cta\\">\\n      <span class=\\"file-icon\\">\\n        <i class=\\"fas fa-upload\\"></i>\\n      </span>\\n      <span class=\\"file-label\\"> Choose a file… </span>\\n    </span>\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"You can have a "}<strong>{"boxed block"}</strong>{" with the "}<code>{"is-boxed"}</code>{" modifier."}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.File name={"resume"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Choose a file… "}</ui.File>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"file is-boxed\\">\\n  <label class=\\"file-label\\">\\n    <input class=\\"file-input\\" type=\\"file\\" name=\\"resume\\" />\\n    <span class=\\"file-cta\\">\\n      <span class=\\"file-icon\\">\\n        <i class=\\"fas fa-upload\\"></i>\\n      </span>\\n      <span class=\\"file-label\\"> Choose a file… </span>\\n    </span>\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2031,7 +2029,7 @@ export const Example006 = {
     official: { id: 'form-file/modifiers/005' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"You can "}<strong>{"combine"}</strong>{" "}<code>{"has-name"}</code>{" and "}<code>{"is-boxed"}</code>{"."}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.File name={"resume"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Choose a file… "}</ui.File>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"file has-name is-boxed\\">\\n  <label class=\\"file-label\\">\\n    <input class=\\"file-input\\" type=\\"file\\" name=\\"resume\\" />\\n    <span class=\\"file-cta\\">\\n      <span class=\\"file-icon\\">\\n        <i class=\\"fas fa-upload\\"></i>\\n      </span>\\n      <span class=\\"file-label\\"> Choose a file… </span>\\n    </span>\\n    <span class=\\"file-name\\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"You can "}<strong>{"combine"}</strong>{" "}<code>{"has-name"}</code>{" and "}<code>{"is-boxed"}</code>{"."}</p>{"\\n    "}</ui.Content>{"\\n    "}<div className={"bd-example"}>{"\\n"}<ui.File name={"resume"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Choose a file… "}</ui.File>{"\\n"}</div>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={6} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"file has-name is-boxed\\">\\n  <label class=\\"file-label\\">\\n    <input class=\\"file-input\\" type=\\"file\\" name=\\"resume\\" />\\n    <span class=\\"file-cta\\">\\n      <span class=\\"file-icon\\">\\n        <i class=\\"fas fa-upload\\"></i>\\n      </span>\\n      <span class=\\"file-label\\"> Choose a file… </span>\\n    </span>\\n    <span class=\\"file-name\\"> Screen Shot 2017-07-29 at 15.54.25.png </span>\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2046,7 +2044,7 @@ export const Example007 = {
     official: { id: 'form-file/colors/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} color={"primary"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Primary file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} color={"primary"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Primary file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2061,7 +2059,7 @@ export const Example008 = {
     official: { id: 'form-file/colors/002' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example008Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} color={"info"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Info file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} color={"info"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Info file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2076,7 +2074,7 @@ export const Example009 = {
     official: { id: 'form-file/colors/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} color={"warning"} boxed icon={<>{"\\n        "}<i className={"fas fa-cloud-upload-alt"} />{"\\n      "}</>}>{" Warning file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} color={"warning"} boxed icon={<>{"\\n        "}<i className={"fas fa-cloud-upload-alt"} />{"\\n      "}</>}>{" Warning file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2091,7 +2089,7 @@ export const Example010 = {
     official: { id: 'form-file/colors/004' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example010Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} color={"danger"} boxed icon={<>{"\\n        "}<i className={"fas fa-cloud-upload-alt"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Danger file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} color={"danger"} boxed icon={<>{"\\n        "}<i className={"fas fa-cloud-upload-alt"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Danger file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2106,7 +2104,7 @@ export const Example011 = {
     official: { id: 'form-file/sizes/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"small"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Small file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"small"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Small file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2121,7 +2119,7 @@ export const Example012 = {
     official: { id: 'form-file/sizes/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"normal"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Normal file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"normal"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Normal file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2136,7 +2134,7 @@ export const Example013 = {
     official: { id: 'form-file/sizes/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"medium"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Medium file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"medium"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Medium file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2151,7 +2149,7 @@ export const Example014 = {
     official: { id: 'form-file/sizes/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example014Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"large"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Large file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"large"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Large file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2166,7 +2164,7 @@ export const Example015 = {
     official: { id: 'form-file/sizes/005' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example015Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"small"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Small file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"small"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Small file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2181,7 +2179,7 @@ export const Example016 = {
     official: { id: 'form-file/sizes/006' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example016Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"normal"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Normal file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"normal"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Normal file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2196,7 +2194,7 @@ export const Example017 = {
     official: { id: 'form-file/sizes/007' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example017Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"medium"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Medium file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"medium"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Medium file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2211,7 +2209,7 @@ export const Example018 = {
     official: { id: 'form-file/sizes/008' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example018Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"large"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Large file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"large"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Large file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2226,7 +2224,7 @@ export const Example019 = {
     official: { id: 'form-file/sizes/009' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example019Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"small"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Small file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example019Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"small"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Small file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2241,7 +2239,7 @@ export const Example020 = {
     official: { id: 'form-file/sizes/010' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example020Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"normal"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Normal file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example020Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"normal"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Normal file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2256,7 +2254,7 @@ export const Example021 = {
     official: { id: 'form-file/sizes/011' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example021Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"medium"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Medium file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example021Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"medium"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Medium file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2271,7 +2269,7 @@ export const Example022 = {
     official: { id: 'form-file/sizes/012' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example022Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"large"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Large file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example022Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"large"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>}>{" Large file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2286,7 +2284,7 @@ export const Example023 = {
     official: { id: 'form-file/sizes/013' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example023Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"small"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Small file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example023Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"small"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Small file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2301,7 +2299,7 @@ export const Example024 = {
     official: { id: 'form-file/sizes/014' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example024Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"normal"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Normal file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example024Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"normal"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Normal file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2316,7 +2314,7 @@ export const Example025 = {
     official: { id: 'form-file/sizes/015' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example025Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"medium"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Medium file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example025Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"medium"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Medium file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2331,7 +2329,7 @@ export const Example026 = {
     official: { id: 'form-file/sizes/016' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example026Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"large"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Large file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example026Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} size={"large"} boxed icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Large file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2346,7 +2344,7 @@ export const Example027 = {
     official: { id: 'form-file/alignment/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example027Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} alignment={"centered"} boxed color={"success"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Centered file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example027Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} alignment={"centered"} boxed color={"success"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Centered file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2361,7 +2359,7 @@ export const Example028 = {
     official: { id: 'form-file/alignment/002' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example028Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} alignment={"right"} color={"info"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Right file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example028Demo() {\n  const [filename1, setFilename1] = useState(" Screen Shot 2017-07-29 at 15.54.25.png ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} alignment={"right"} color={"info"} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " Screen Shot 2017-07-29 at 15.54.25.png ")}>{" Right file… "}</ui.File>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2376,7 +2374,7 @@ export const Example029 = {
     official: { id: 'form-file/javascript/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example029Demo() {\n  const [filename1, setFilename1] = useState(" No file uploaded ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} wrapperProps={{ id: "file-js-example" }} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " No file uploaded ")}>{" Choose a file… "}</ui.File>{"\\n\\n"}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example029Demo() {\n  const [filename1, setFilename1] = useState(" No file uploaded ");\n  return (<>{"\\n        \\n          \\n"}<ui.File name={"resume"} wrapperProps={{ id: "file-js-example" }} icon={<>{"\\n        "}<i className={"fas fa-upload"} />{"\\n      "}</>} filename={filename1} onChange={(event) => setFilename1(event.currentTarget.files?.[0]?.name ?? " No file uploaded ")}>{" Choose a file… "}</ui.File>{"\\n\\n"}{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -1177,7 +1175,7 @@ export const Example001 = {
     official: { id: 'components-card/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardImage>{"\\n    "}<ui.Image ratio={"4by3"} src={"./official-assets/1280x960.png"} alt={"Placeholder image"} />{"\\n  "}</ui.CardImage>{"\\n  "}<ui.CardContent>{"\\n    "}<ui.Media as={"div"}>{"\\n      "}<ui.MediaLeft>{"\\n        "}<ui.Image size={48} src={"./official-assets/96x96.png"} alt={"Placeholder image"} />{"\\n      "}</ui.MediaLeft>{"\\n      "}<ui.MediaContent>{"\\n        "}<ui.Title size={4} as={"p"}>{"John Smith"}</ui.Title>{"\\n        "}<ui.Subtitle size={6} as={"p"}>{"@johnsmith"}</ui.Subtitle>{"\\n      "}</ui.MediaContent>{"\\n    "}</ui.Media>{"\\n\\n    "}<ui.Content>{"\\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec\\n      iaculis mauris. "}<a>{"@bulmaio"}</a>{". "}<a href={"#"}>{"#css"}</a>{"\\n      "}<a href={"#"}>{"#responsive"}</a>{"\\n      "}<br />{"\\n      "}<time dateTime={"2016-1-1"}>{"11:09 PM - 1 Jan 2016"}</time>{"\\n    "}</ui.Content>{"\\n  "}</ui.CardContent>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardImage>{"\\n    "}<ui.Image ratio={"4by3"} src={"./official-assets/1280x960.png"} alt={"Placeholder image"} />{"\\n  "}</ui.CardImage>{"\\n  "}<ui.CardContent>{"\\n    "}<ui.Media as={"div"}>{"\\n      "}<ui.MediaLeft>{"\\n        "}<ui.Image size={48} src={"./official-assets/96x96.png"} alt={"Placeholder image"} />{"\\n      "}</ui.MediaLeft>{"\\n      "}<ui.MediaContent>{"\\n        "}<ui.Title size={4} as={"p"}>{"John Smith"}</ui.Title>{"\\n        "}<ui.Subtitle size={6} as={"p"}>{"@johnsmith"}</ui.Subtitle>{"\\n      "}</ui.MediaContent>{"\\n    "}</ui.Media>{"\\n\\n    "}<ui.Content>{"\\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec\\n      iaculis mauris. "}<a>{"@bulmaio"}</a>{". "}<a href={"#"}>{"#css"}</a>{"\\n      "}<a href={"#"}>{"#responsive"}</a>{"\\n      "}<br />{"\\n      "}<time dateTime={"2016-1-1"}>{"11:09 PM - 1 Jan 2016"}</time>{"\\n    "}</ui.Content>{"\\n  "}</ui.CardContent>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1192,7 +1190,7 @@ export const Example002 = {
     official: { id: 'components-card/card-parts/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardHeader>{"\\n    "}<ui.CardHeaderTitle>{"Card header"}</ui.CardHeaderTitle>{"\\n    "}<ui.CardHeaderIcon aria-label={"more options"}>{"\\n      "}<ui.Icon>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-down"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.CardHeaderIcon>{"\\n  "}</ui.CardHeader>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardHeader>{"\\n    "}<ui.CardHeaderTitle>{"Card header"}</ui.CardHeaderTitle>{"\\n    "}<ui.CardHeaderIcon aria-label={"more options"}>{"\\n      "}<ui.Icon>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-down"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.CardHeaderIcon>{"\\n  "}</ui.CardHeader>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1207,7 +1205,7 @@ export const Example003 = {
     official: { id: 'components-card/card-parts/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardImage>{"\\n    "}<ui.Image ratio={"4by3"} src={"./official-assets/1280x960.png"} alt={"Placeholder image"} />{"\\n  "}</ui.CardImage>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardImage>{"\\n    "}<ui.Image ratio={"4by3"} src={"./official-assets/1280x960.png"} alt={"Placeholder image"} />{"\\n  "}</ui.CardImage>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1222,7 +1220,7 @@ export const Example004 = {
     official: { id: 'components-card/card-parts/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardContent>{"\\n    "}<ui.Content>{"\\n      Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec\\n      id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus\\n      et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis\\n      consectetur purus sit amet fermentum.\\n    "}</ui.Content>{"\\n  "}</ui.CardContent>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardContent>{"\\n    "}<ui.Content>{"\\n      Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec\\n      id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus\\n      et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis\\n      consectetur purus sit amet fermentum.\\n    "}</ui.Content>{"\\n  "}</ui.CardContent>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1237,7 +1235,7 @@ export const Example005 = {
     official: { id: 'components-card/card-parts/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardFooter>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Save"}</ui.CardFooterItem>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Edit"}</ui.CardFooterItem>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Delete"}</ui.CardFooterItem>{"\\n  "}</ui.CardFooter>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardFooter>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Save"}</ui.CardFooterItem>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Edit"}</ui.CardFooterItem>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Delete"}</ui.CardFooterItem>{"\\n  "}</ui.CardFooter>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1252,7 +1250,7 @@ export const Example006 = {
     official: { id: 'components-card/examples/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardHeader>{"\\n    "}<ui.CardHeaderTitle>{"Component"}</ui.CardHeaderTitle>{"\\n    "}<ui.CardHeaderIcon aria-label={"more options"}>{"\\n      "}<ui.Icon>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-down"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.CardHeaderIcon>{"\\n  "}</ui.CardHeader>{"\\n  "}<ui.CardContent>{"\\n    "}<ui.Content>{"\\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec\\n      iaculis mauris.\\n      "}<a href={"#"}>{"@bulmaio"}</a>{". "}<a href={"#"}>{"#css"}</a>{" "}<a href={"#"}>{"#responsive"}</a>{"\\n      "}<br />{"\\n      "}<time dateTime={"2016-1-1"}>{"11:09 PM - 1 Jan 2016"}</time>{"\\n    "}</ui.Content>{"\\n  "}</ui.CardContent>{"\\n  "}<ui.CardFooter>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Save"}</ui.CardFooterItem>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Edit"}</ui.CardFooterItem>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Delete"}</ui.CardFooterItem>{"\\n  "}</ui.CardFooter>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardHeader>{"\\n    "}<ui.CardHeaderTitle>{"Component"}</ui.CardHeaderTitle>{"\\n    "}<ui.CardHeaderIcon aria-label={"more options"}>{"\\n      "}<ui.Icon>{"\\n        "}<i aria-hidden={"true"} className={"fas fa-angle-down"} />{"\\n      "}</ui.Icon>{"\\n    "}</ui.CardHeaderIcon>{"\\n  "}</ui.CardHeader>{"\\n  "}<ui.CardContent>{"\\n    "}<ui.Content>{"\\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec\\n      iaculis mauris.\\n      "}<a href={"#"}>{"@bulmaio"}</a>{". "}<a href={"#"}>{"#css"}</a>{" "}<a href={"#"}>{"#responsive"}</a>{"\\n      "}<br />{"\\n      "}<time dateTime={"2016-1-1"}>{"11:09 PM - 1 Jan 2016"}</time>{"\\n    "}</ui.Content>{"\\n  "}</ui.CardContent>{"\\n  "}<ui.CardFooter>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Save"}</ui.CardFooterItem>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Edit"}</ui.CardFooterItem>{"\\n    "}<ui.CardFooterItem href={"#"}>{"Delete"}</ui.CardFooterItem>{"\\n  "}</ui.CardFooter>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1267,7 +1265,7 @@ export const Example007 = {
     official: { id: 'components-card/examples/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardContent>{"\\n    "}<ui.Title as={"p"}>{"\\n      “There are two hard things in computer science: cache invalidation, naming\\n      things, and off-by-one errors.”\\n    "}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Jeff Atwood"}</ui.Subtitle>{"\\n  "}</ui.CardContent>{"\\n  "}<ui.CardFooter>{"\\n    "}<ui.CardFooterItem as={"p"}>{"\\n      "}<span>{"\\n        View on\\n        "}<a href={"https://twitter.com/codinghorror/status/506010907021828096"}>{"Twitter"}</a>{"\\n      "}</span>{"\\n    "}</ui.CardFooterItem>{"\\n    "}<ui.CardFooterItem as={"p"}>{"\\n      "}<span>{" Share on "}<a href={"#"}>{"Facebook"}</a>{" "}</span>{"\\n    "}</ui.CardFooterItem>{"\\n  "}</ui.CardFooter>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardContent>{"\\n    "}<ui.Title as={"p"}>{"\\n      “There are two hard things in computer science: cache invalidation, naming\\n      things, and off-by-one errors.”\\n    "}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Jeff Atwood"}</ui.Subtitle>{"\\n  "}</ui.CardContent>{"\\n  "}<ui.CardFooter>{"\\n    "}<ui.CardFooterItem as={"p"}>{"\\n      "}<span>{"\\n        View on\\n        "}<a href={"https://twitter.com/codinghorror/status/506010907021828096"}>{"Twitter"}</a>{"\\n      "}</span>{"\\n    "}</ui.CardFooterItem>{"\\n    "}<ui.CardFooterItem as={"p"}>{"\\n      "}<span>{" Share on "}<a href={"#"}>{"Facebook"}</a>{" "}</span>{"\\n    "}</ui.CardFooterItem>{"\\n  "}</ui.CardFooter>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

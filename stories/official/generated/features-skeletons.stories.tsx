@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -1019,7 +1017,7 @@ export const Example001 = {
     official: { id: 'features-skeletons/skeleton-block/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.SkeletonBlock />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.SkeletonBlock />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1034,7 +1032,7 @@ export const Example002 = {
     official: { id: 'features-skeletons/skeleton-block/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.SkeletonBlock>{"\\n  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.\\n  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,\\n  ut fermentum massa justo sit amet risus. Donec sed odio dui.\\n  Nullam quis risus eget urna mollis ornare vel eu leo.\\n  Cum sociis natoque penatibus et magnis dis parturient montes,\\n  nascetur ridiculus mus. Nullam id dolor id\\n  nibh ultricies vehicula ut id elit.\\n"}</ui.SkeletonBlock>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.SkeletonBlock>{"\\n  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.\\n  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,\\n  ut fermentum massa justo sit amet risus. Donec sed odio dui.\\n  Nullam quis risus eget urna mollis ornare vel eu leo.\\n  Cum sociis natoque penatibus et magnis dis parturient montes,\\n  nascetur ridiculus mus. Nullam id dolor id\\n  nibh ultricies vehicula ut id elit.\\n"}</ui.SkeletonBlock>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1049,7 +1047,7 @@ export const Example003 = {
     official: { id: 'features-skeletons/skeleton-lines/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.SkeletonLines lines={5} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.SkeletonLines lines={5} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1064,7 +1062,7 @@ export const Example004 = {
     official: { id: 'features-skeletons/button/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Buttons>{"\\n  "}<ui.Button className={"rb-is-skeleton"}>{"Button"}</ui.Button>{"\\n  "}<ui.Button color={"link"} className={"rb-is-skeleton"}>{"Link"}</ui.Button>{"\\n  "}<ui.Button color={"primary"} className={"rb-is-skeleton"}>{"Primary"}</ui.Button>{"\\n  "}<ui.Button color={"success"} className={"rb-is-skeleton"}>{"Success"}</ui.Button>{"\\n  "}<ui.Button color={"info"} className={"rb-is-skeleton"}>{"Info"}</ui.Button>{"\\n  "}<ui.Button color={"warning"} className={"rb-is-skeleton"}>{"Warning"}</ui.Button>{"\\n  "}<ui.Button color={"danger"} className={"rb-is-skeleton"}>{"Danger"}</ui.Button>{"\\n"}</ui.Buttons>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Buttons>{"\\n  "}<ui.Button className={"rb-is-skeleton"}>{"Button"}</ui.Button>{"\\n  "}<ui.Button color={"link"} className={"rb-is-skeleton"}>{"Link"}</ui.Button>{"\\n  "}<ui.Button color={"primary"} className={"rb-is-skeleton"}>{"Primary"}</ui.Button>{"\\n  "}<ui.Button color={"success"} className={"rb-is-skeleton"}>{"Success"}</ui.Button>{"\\n  "}<ui.Button color={"info"} className={"rb-is-skeleton"}>{"Info"}</ui.Button>{"\\n  "}<ui.Button color={"warning"} className={"rb-is-skeleton"}>{"Warning"}</ui.Button>{"\\n  "}<ui.Button color={"danger"} className={"rb-is-skeleton"}>{"Danger"}</ui.Button>{"\\n"}</ui.Buttons>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1079,7 +1077,7 @@ export const Example005 = {
     official: { id: 'features-skeletons/icon/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Icon className={"rb-is-skeleton"}>{"\\n  "}<i className={"fas fa-reply"} />{"\\n"}</ui.Icon>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Icon className={"rb-is-skeleton"}>{"\\n  "}<i className={"fas fa-reply"} />{"\\n"}</ui.Icon>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1094,7 +1092,7 @@ export const Example006 = {
     official: { id: 'features-skeletons/image/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={16} wrapperProps={{ className: "rb-is-skeleton" }} alt={"Placeholder"} src={"https://placehold.co/16x16"} />{"\\n\\n"}<ui.Image size={32} wrapperProps={{ className: "rb-is-skeleton" }} alt={"Placeholder"} src={"https://placehold.co/32x32"} />{"\\n\\n"}<ui.Image size={64} wrapperProps={{ className: "rb-is-skeleton" }} alt={"Placeholder"} src={"https://placehold.co/64x64"} />{"\\n\\n"}<ui.Image size={128} wrapperProps={{ className: "rb-is-skeleton" }} alt={"Placeholder"} src={"https://placehold.co/128x128"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={16} wrapperProps={{ className: "rb-is-skeleton" }} alt={"Placeholder"} src={"https://placehold.co/16x16"} />{"\\n\\n"}<ui.Image size={32} wrapperProps={{ className: "rb-is-skeleton" }} alt={"Placeholder"} src={"https://placehold.co/32x32"} />{"\\n\\n"}<ui.Image size={64} wrapperProps={{ className: "rb-is-skeleton" }} alt={"Placeholder"} src={"https://placehold.co/64x64"} />{"\\n\\n"}<ui.Image size={128} wrapperProps={{ className: "rb-is-skeleton" }} alt={"Placeholder"} src={"https://placehold.co/128x128"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1109,7 +1107,7 @@ export const Example007 = {
     official: { id: 'features-skeletons/media-object/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n\\n"}<ui.Media>{"\\n  "}<ui.MediaLeft as={"figure"}>{"\\n    "}<ui.Image size={64} as={"p"} wrapperProps={{ className: "rb-is-skeleton" }} src={"https://placehold.co/128x128"} alt={"Placeholder image"} />{"\\n  "}</ui.MediaLeft>{"\\n  "}<ui.MediaContent>{"\\n    "}<ui.Content className={"rb-is-skeleton"}>{"\\n      "}<p>{"\\n        "}<strong>{"John Smith"}</strong>{" "}<small>{"@johnsmith"}</small>{" "}<small>{"31m"}</small>{"\\n        "}<br />{"\\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor\\n        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus est non commodo luctus,\\n        nisi erat porttitor ligula, eget lacinia odio sem nec elit\\n        vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    "}<ui.Level mobile>{"\\n      "}<ui.LevelLeft>{"\\n        "}<ui.LevelItem as={"a"}><ui.Icon size={"small"} className={"rb-is-skeleton"}><i className={"fas fa-reply"} /></ui.Icon></ui.LevelItem>{"\\n        "}<ui.LevelItem as={"a"}><ui.Icon size={"small"} className={"rb-is-skeleton"}><i className={"fas fa-retweet"} /></ui.Icon></ui.LevelItem>{"\\n        "}<ui.LevelItem as={"a"}><ui.Icon size={"small"} className={"rb-is-skeleton"}><i className={"fas fa-heart"} /></ui.Icon></ui.LevelItem>{"\\n      "}</ui.LevelLeft>{"\\n    "}</ui.Level>{"\\n  "}</ui.MediaContent>{"\\n  "}<ui.MediaRight>{"\\n    "}<ui.Delete aria-label={"delete"} className={"rb-is-skeleton"} />{"\\n  "}</ui.MediaRight>{"\\n"}</ui.Media>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n\\n"}<ui.Media>{"\\n  "}<ui.MediaLeft as={"figure"}>{"\\n    "}<ui.Image size={64} as={"p"} wrapperProps={{ className: "rb-is-skeleton" }} src={"https://placehold.co/128x128"} alt={"Placeholder image"} />{"\\n  "}</ui.MediaLeft>{"\\n  "}<ui.MediaContent>{"\\n    "}<ui.Content className={"rb-is-skeleton"}>{"\\n      "}<p>{"\\n        "}<strong>{"John Smith"}</strong>{" "}<small>{"@johnsmith"}</small>{" "}<small>{"31m"}</small>{"\\n        "}<br />{"\\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor\\n        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus est non commodo luctus,\\n        nisi erat porttitor ligula, eget lacinia odio sem nec elit\\n        vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    "}<ui.Level mobile>{"\\n      "}<ui.LevelLeft>{"\\n        "}<ui.LevelItem as={"a"}><ui.Icon size={"small"} className={"rb-is-skeleton"}><i className={"fas fa-reply"} /></ui.Icon></ui.LevelItem>{"\\n        "}<ui.LevelItem as={"a"}><ui.Icon size={"small"} className={"rb-is-skeleton"}><i className={"fas fa-retweet"} /></ui.Icon></ui.LevelItem>{"\\n        "}<ui.LevelItem as={"a"}><ui.Icon size={"small"} className={"rb-is-skeleton"}><i className={"fas fa-heart"} /></ui.Icon></ui.LevelItem>{"\\n      "}</ui.LevelLeft>{"\\n    "}</ui.Level>{"\\n  "}</ui.MediaContent>{"\\n  "}<ui.MediaRight>{"\\n    "}<ui.Delete aria-label={"delete"} className={"rb-is-skeleton"} />{"\\n  "}</ui.MediaRight>{"\\n"}</ui.Media>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1124,7 +1122,7 @@ export const Example008 = {
     official: { id: 'features-skeletons/media-object/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n\\n"}<ui.Media>{"\\n  "}<ui.MediaLeft as={"figure"}>{"\\n    "}<ui.Image size={64} as={"p"} wrapperProps={{ className: "rb-is-skeleton" }} src={"https://placehold.co/128x128"} alt={"Placeholder image"} />{"\\n  "}</ui.MediaLeft>{"\\n  "}<ui.MediaContent>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control as={"p"}>{"\\n        "}<ui.Textarea placeholder={"Add a comment..."} className={"rb-is-skeleton"} defaultValue={""} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n    "}<ui.Level>{"\\n      "}<ui.LevelLeft>{"\\n        "}<ui.LevelItem>{"\\n          "}<ui.LinkButton color={"info"} className={"rb-is-skeleton"}>{"Submit"}</ui.LinkButton>{"\\n        "}</ui.LevelItem>{"\\n      "}</ui.LevelLeft>{"\\n      "}<ui.LevelRight>{"\\n        "}<ui.LevelItem>{"\\n          "}<ui.Checkbox wrapperProps={{ className: "rb-is-skeleton" }}>{" Press enter to submit "}</ui.Checkbox>{"\\n        "}</ui.LevelItem>{"\\n      "}</ui.LevelRight>{"\\n    "}</ui.Level>{"\\n  "}</ui.MediaContent>{"\\n"}</ui.Media>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n\\n"}<ui.Media>{"\\n  "}<ui.MediaLeft as={"figure"}>{"\\n    "}<ui.Image size={64} as={"p"} wrapperProps={{ className: "rb-is-skeleton" }} src={"https://placehold.co/128x128"} alt={"Placeholder image"} />{"\\n  "}</ui.MediaLeft>{"\\n  "}<ui.MediaContent>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control as={"p"}>{"\\n        "}<ui.Textarea placeholder={"Add a comment..."} className={"rb-is-skeleton"} defaultValue={""} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n    "}<ui.Level>{"\\n      "}<ui.LevelLeft>{"\\n        "}<ui.LevelItem>{"\\n          "}<ui.LinkButton color={"info"} className={"rb-is-skeleton"}>{"Submit"}</ui.LinkButton>{"\\n        "}</ui.LevelItem>{"\\n      "}</ui.LevelLeft>{"\\n      "}<ui.LevelRight>{"\\n        "}<ui.LevelItem>{"\\n          "}<ui.Checkbox wrapperProps={{ className: "rb-is-skeleton" }}>{" Press enter to submit "}</ui.Checkbox>{"\\n        "}</ui.LevelItem>{"\\n      "}</ui.LevelRight>{"\\n    "}</ui.Level>{"\\n  "}</ui.MediaContent>{"\\n"}</ui.Media>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1139,7 +1137,7 @@ export const Example009 = {
     official: { id: 'features-skeletons/notification/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Notification className={"rb-is-skeleton"}>{"\\n  Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n"}</ui.Notification>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Notification className={"rb-is-skeleton"}>{"\\n  Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n"}</ui.Notification>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1154,7 +1152,7 @@ export const Example010 = {
     official: { id: 'features-skeletons/tag/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tag className={"rb-is-skeleton"}>{"Tag"}</ui.Tag>{"\\n"}<ui.Tag color={"link"} className={"rb-is-skeleton"}>{"Link"}</ui.Tag>{"\\n"}<ui.Tag color={"primary"} className={"rb-is-skeleton"}>{"Primary"}</ui.Tag>{"\\n"}<ui.Tag color={"info"} className={"rb-is-skeleton"}>{"Info"}</ui.Tag>{"\\n"}<ui.Tag color={"success"} className={"rb-is-skeleton"}>{"Success"}</ui.Tag>{"\\n"}<ui.Tag color={"warning"} className={"rb-is-skeleton"}>{"Warning"}</ui.Tag>{"\\n"}<ui.Tag color={"danger"} className={"rb-is-skeleton"}>{"Danger"}</ui.Tag>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Tag className={"rb-is-skeleton"}>{"Tag"}</ui.Tag>{"\\n"}<ui.Tag color={"link"} className={"rb-is-skeleton"}>{"Link"}</ui.Tag>{"\\n"}<ui.Tag color={"primary"} className={"rb-is-skeleton"}>{"Primary"}</ui.Tag>{"\\n"}<ui.Tag color={"info"} className={"rb-is-skeleton"}>{"Info"}</ui.Tag>{"\\n"}<ui.Tag color={"success"} className={"rb-is-skeleton"}>{"Success"}</ui.Tag>{"\\n"}<ui.Tag color={"warning"} className={"rb-is-skeleton"}>{"Warning"}</ui.Tag>{"\\n"}<ui.Tag color={"danger"} className={"rb-is-skeleton"}>{"Danger"}</ui.Tag>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1169,7 +1167,7 @@ export const Example011 = {
     official: { id: 'features-skeletons/title-and-subtitle/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Title className={"rb-is-skeleton"} level={1}>{"\\n  Title\\n"}</ui.Title>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Title className={"rb-is-skeleton"} level={1}>{"\\n  Title\\n"}</ui.Title>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1184,7 +1182,7 @@ export const Example012 = {
     official: { id: 'features-skeletons/title-and-subtitle/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Title className={"rb-has-skeleton"} level={1}>{"\\n  Title\\n"}</ui.Title>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Title className={"rb-has-skeleton"} level={1}>{"\\n  Title\\n"}</ui.Title>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1199,7 +1197,7 @@ export const Example013 = {
     official: { id: 'features-skeletons/title-and-subtitle/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Subtitle className={"rb-is-skeleton"} level={2}>{"\\n  Subtitle\\n"}</ui.Subtitle>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Subtitle className={"rb-is-skeleton"} level={2}>{"\\n  Subtitle\\n"}</ui.Subtitle>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1214,7 +1212,7 @@ export const Example014 = {
     official: { id: 'features-skeletons/title-and-subtitle/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example014Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Subtitle className={"rb-has-skeleton"} level={2}>{"\\n  Subtitle\\n"}</ui.Subtitle>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Subtitle className={"rb-has-skeleton"} level={2}>{"\\n  Subtitle\\n"}</ui.Subtitle>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1229,7 +1227,7 @@ export const Example015 = {
     official: { id: 'features-skeletons/title-and-subtitle/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example015Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Title className={"rb-is-skeleton"} level={1}>{"\\n  Title\\n"}</ui.Title>{"\\n"}<ui.Subtitle className={"rb-is-skeleton"} level={2}>{"\\n  Subtitle\\n"}</ui.Subtitle>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Title className={"rb-is-skeleton"} level={1}>{"\\n  Title\\n"}</ui.Title>{"\\n"}<ui.Subtitle className={"rb-is-skeleton"} level={2}>{"\\n  Subtitle\\n"}</ui.Subtitle>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1244,7 +1242,7 @@ export const Example016 = {
     official: { id: 'features-skeletons/title-and-subtitle/006' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example016Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Title className={"rb-has-skeleton"} level={1}>{"\\n  Title\\n"}</ui.Title>{"\\n"}<ui.Subtitle className={"rb-has-skeleton"} level={2}>{"\\n  Subtitle\\n"}</ui.Subtitle>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Title className={"rb-has-skeleton"} level={1}>{"\\n  Title\\n"}</ui.Title>{"\\n"}<ui.Subtitle className={"rb-has-skeleton"} level={2}>{"\\n  Subtitle\\n"}</ui.Subtitle>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1259,7 +1257,7 @@ export const Example017 = {
     official: { id: 'features-skeletons/form-controls/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example017Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input className={"rb-is-skeleton"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input className={"rb-is-skeleton"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1274,7 +1272,7 @@ export const Example018 = {
     official: { id: 'features-skeletons/form-controls/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example018Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea className={"rb-is-skeleton"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Textarea className={"rb-is-skeleton"} defaultValue={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

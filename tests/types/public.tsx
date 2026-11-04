@@ -1,14 +1,8 @@
 import { createRef } from 'react'
-import {
-  Button,
-  BulmaRoot,
-  createBulma,
-  helpers,
-  type Helpers,
-} from '../../src'
-import { buildStyles } from '../../src/styles'
+import { Button, BulmaRoot, helpers, type Helpers } from '../../src'
+import { buildStyles, buildUI } from '../../src/styles'
 
-const custom = createBulma({ prefix: 'my-ui-' })
+import * as custom from '../../.generated/custom-ui'
 const values: Helpers = {
   mt: 0,
   mx: 'auto',
@@ -38,7 +32,7 @@ helpers({ textAlign: 'centered' })
 // @ts-expect-error Only supported Bulma breakpoints are accepted.
 helpers({ hidden: 'phone' })
 // @ts-expect-error Prefix configuration is a string.
-createBulma({ prefix: 5 })
+buildUI({ prefix: 5 })
 // @ts-expect-error Button sizes are closed.
 ;<Button size="huge" />
 // @ts-expect-error Button always renders a native button.

@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -435,7 +433,7 @@ export const Example001 = {
     official: { id: 'columns-options/vertical-alignment/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<><ui.Columns verticallyCentered>{"\\n  "}<ui.Column width={8}>{"\\n    "}<p className={"bd-notification is-primary"}>{"First column"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      Second column with more content. This is so you can see the vertical\\n      alignment.\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns verticallyCentered>{"\\n  "}<ui.Column width={8}>{"\\n    "}<p className={"bd-notification is-primary"}>{"First column"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      Second column with more content. This is so you can see the vertical\\n      alignment.\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -450,7 +448,7 @@ export const Example002 = {
     official: { id: 'columns-options/multiline/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<><ui.Columns multiline displayFrom={"mobile"}>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-half"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns multiline displayFrom={"mobile"}>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-half"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-one-quarter"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-primary"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -465,7 +463,7 @@ export const Example003 = {
     official: { id: 'columns-options/centering-columns/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<><ui.Columns displayFrom={"mobile"} centered>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-half"}</code><br />{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns displayFrom={"mobile"} centered>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-half"}</code><br />{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -480,7 +478,7 @@ export const Example004 = {
     official: { id: 'columns-options/centering-columns/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<><ui.Columns displayFrom={"mobile"} multiline centered>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<p style={{ ...{ padding: "1.25rem 1.5rem" } }} className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-narrow"}</code><br />{"\\n      First Column\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<p style={{ ...{ padding: "1.25rem 1.5rem" } }} className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-narrow"}</code><br />{"\\n      Our Second Column\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<p style={{ ...{ padding: "1.25rem 1.5rem" } }} className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-narrow"}</code><br />{"\\n      Third Column\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<p style={{ ...{ padding: "1.25rem 1.5rem" } }} className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-narrow"}</code><br />{"\\n      The Fourth Column\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<p style={{ ...{ padding: "1.25rem 1.5rem" } }} className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-narrow"}</code><br />{"\\n      Fifth Column\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.Columns displayFrom={"mobile"} multiline centered>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<p style={{ ...{ padding: "1.25rem 1.5rem" } }} className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-narrow"}</code><br />{"\\n      First Column\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<p style={{ ...{ padding: "1.25rem 1.5rem" } }} className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-narrow"}</code><br />{"\\n      Our Second Column\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<p style={{ ...{ padding: "1.25rem 1.5rem" } }} className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-narrow"}</code><br />{"\\n      Third Column\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<p style={{ ...{ padding: "1.25rem 1.5rem" } }} className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-narrow"}</code><br />{"\\n      The Fourth Column\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<p style={{ ...{ padding: "1.25rem 1.5rem" } }} className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-narrow"}</code><br />{"\\n      Fifth Column\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

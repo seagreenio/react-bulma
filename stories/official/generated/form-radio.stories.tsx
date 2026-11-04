@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -310,7 +308,7 @@ export const Example001 = {
     official: { id: 'form-radio/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Radio name={"answer"}>{"\\n    Yes\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"answer"}>{"\\n    No\\n  "}</ui.Radio>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"answer\\" />\\n    Yes\\n  </label>\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"answer\\" />\\n    No\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Radio name={"answer"}>{"\\n    Yes\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"answer"}>{"\\n    No\\n  "}</ui.Radio>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"answer\\" />\\n    Yes\\n  </label>\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"answer\\" />\\n    No\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -325,7 +323,7 @@ export const Example002 = {
     official: { id: 'form-radio/basic/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Radio name={"foobar"}>{"\\n    Foo\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"foobar"} defaultChecked>{"\\n    Bar\\n  "}</ui.Radio>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"foobar\\" />\\n    Foo\\n  </label>\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"foobar\\" checked />\\n    Bar\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Radio name={"foobar"}>{"\\n    Foo\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"foobar"} defaultChecked>{"\\n    Bar\\n  "}</ui.Radio>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"foobar\\" />\\n    Foo\\n  </label>\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"foobar\\" checked />\\n    Bar\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -340,7 +338,7 @@ export const Example003 = {
     official: { id: 'form-radio/basic/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Not going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"} disabled wrapperProps={{ "aria-disabled": true }}>{"\\n    Maybe\\n  "}</ui.Radio>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"rsvp\\" />\\n    Going\\n  </label>\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"rsvp\\" />\\n    Not going\\n  </label>\\n  <label class=\\"radio\\" disabled>\\n    <input type=\\"radio\\" name=\\"rsvp\\" disabled />\\n    Maybe\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Not going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"} disabled wrapperProps={{ "aria-disabled": true }}>{"\\n    Maybe\\n  "}</ui.Radio>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"rsvp\\" />\\n    Going\\n  </label>\\n  <label class=\\"radio\\">\\n    <input type=\\"radio\\" name=\\"rsvp\\" />\\n    Not going\\n  </label>\\n  <label class=\\"radio\\" disabled>\\n    <input type=\\"radio\\" name=\\"rsvp\\" disabled />\\n    Maybe\\n  </label>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -355,7 +353,7 @@ export const Example004 = {
     official: { id: 'form-radio/list-of-radio-buttons/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<><ui.Block>{"\\n"}<ui.Radios>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Not going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"} disabled wrapperProps={{ "aria-disabled": true }}>{"\\n    Maybe\\n  "}</ui.Radio>{"\\n"}</ui.Radios>{"\\n"}</ui.Block></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.Block>{"\\n"}<ui.Radios>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"}>{"\\n    Not going\\n  "}</ui.Radio>{"\\n  "}<ui.Radio name={"rsvp"} disabled wrapperProps={{ "aria-disabled": true }}>{"\\n    Maybe\\n  "}</ui.Radio>{"\\n"}</ui.Radios>{"\\n"}</ui.Block></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

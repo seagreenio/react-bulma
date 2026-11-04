@@ -1,7 +1,6 @@
 import { createRef } from 'react'
-import { createBulma } from '../../src'
+import * as ui from '../../src'
 
-const ui = createBulma()
 const inputRef = createRef<HTMLInputElement>()
 const selectRef = createRef<HTMLSelectElement>()
 const textareaRef = createRef<HTMLTextAreaElement>()

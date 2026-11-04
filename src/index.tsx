@@ -1,159 +1,13 @@
-import { createElement } from 'react'
-import { resolvePrefix, type BulmaConfig } from './config'
-import { helperNames, type Helpers } from './helpers'
-import { createElements } from './elements'
-import { createForms } from './forms'
-import { createLayout } from './layout'
-import { createComponents } from './components'
-import { createInteractive } from './interactive'
-import {
-  classNames,
-  forwardRefComponent,
-  type Color,
-  type NativeProps,
-  type NativeTagProps,
-} from './shared'
-
-export type { BulmaConfig } from './config'
-export type { Helpers } from './helpers'
-export type { Color, Size, StyledProps, Style } from './shared'
-export type * from './elements'
-export type * from './forms'
-export type * from './layout'
-export type * from './components'
-export type * from './interactive'
-
-export type ButtonProps = NativeTagProps<
-  'button',
-  'input' | 'span',
-  {
-    color?: Color
-    tone?: 'light' | 'dark' | 'soft' | 'bold'
-    variant?: 'text' | 'ghost'
-    state?: 'hovered' | 'focused' | 'active'
-    selected?: boolean
-    expanded?: boolean
-    size?: 'small' | 'normal' | 'medium' | 'large'
-    outlined?: boolean
-    inverted?: boolean
-    rounded?: boolean
-    fullWidth?: boolean
-    responsive?: boolean
-    loading?: boolean
-    helpers?: Helpers
-    disabled?: boolean
-  }
->
-
-export interface BulmaRootProps extends NativeProps<'div'> {
-  theme?: 'light' | 'dark' | 'system'
-  helpers?: Helpers
-}
-
-export function createBulma(config: BulmaConfig = {}) {
-  const prefix = resolvePrefix(config)
-  const helpers = (values?: Helpers) => helperNames(prefix, values)
-
-  const Button = forwardRefComponent(function Button({
-    as,
-    color,
-    tone,
-    variant,
-    state,
-    selected,
-    expanded,
-    size,
-    outlined,
-    inverted,
-    rounded,
-    fullWidth,
-    responsive,
-    loading,
-    helpers: values,
-    className,
-    disabled,
-    'aria-busy': ariaBusy,
-    ...nativeProps
-  }: ButtonProps) {
-    const modifiers = [
-      color,
-      tone,
-      variant,
-      state,
-      selected && 'selected',
-      expanded && 'expanded',
-      size,
-      outlined && 'outlined',
-      inverted && 'inverted',
-      rounded && 'rounded',
-      fullWidth && 'fullwidth',
-      responsive && 'responsive',
-      loading && 'loading',
-    ]
-      .filter(Boolean)
-      .map((value) => `${prefix}is-${value}`)
-    return createElement(as ?? 'button', {
-      ...nativeProps,
-      type:
-        as === 'span'
-          ? undefined
-          : (('type' in nativeProps ? nativeProps.type : undefined) ??
-            'button'),
-      onClick:
-        as === 'span' && (loading || disabled)
-          ? (event: { preventDefault(): void }) => event.preventDefault()
-          : nativeProps.onClick,
-      disabled: as === 'span' ? undefined : loading || disabled,
-      'aria-disabled':
-        as === 'span'
-          ? loading || disabled || nativeProps['aria-disabled']
-          : nativeProps['aria-disabled'],
-      'aria-busy': loading || ariaBusy,
-      'data-loading-disabled': loading && !disabled ? '' : undefined,
-      className: [`${prefix}button`, ...modifiers, helpers(values), className]
-        .filter(Boolean)
-        .join(' '),
-    })
-  })
-
-  const BulmaRoot = forwardRefComponent(function BulmaRoot({
-    theme = 'light',
-    helpers: values,
-    className,
-    ...nativeProps
-  }: BulmaRootProps) {
-    return (
-      <div
-        {...nativeProps}
-        data-react-bulma-root=""
-        className={classNames(
-          prefix,
-          ['root', theme !== 'light' && `theme-${theme}`],
-          values,
-          className,
-        )}
-      />
-    )
-  })
-
-  return Object.freeze({
-    Button,
-    BulmaRoot,
-    helpers,
-    ...createElements(prefix),
-    ...createForms(prefix),
-    ...createLayout(prefix),
-    ...createComponents(prefix),
-    ...createInteractive(prefix),
-  })
-}
-
-export type Bulma = ReturnType<typeof createBulma>
-
-export const {
+export {
   Button,
   BulmaRoot,
-  helpers,
+  type ButtonProps,
+  type BulmaRootProps,
+} from './core'
+export { helpers, type Helpers } from './helpers'
+export type { BulmaConfig } from './config'
+export type { Color, Size, StyledProps, Style } from './shared'
+export {
   Block,
   Box,
   Buttons,
@@ -176,6 +30,36 @@ export const {
   Loader,
   SkeletonBlock,
   SkeletonLines,
+} from './elements'
+export type {
+  BlockProps,
+  BoxProps,
+  IconTextProps,
+  TableContainerProps,
+  LoaderProps,
+  ButtonsProps,
+  LinkButtonProps,
+  ContentProps,
+  DeleteProps,
+  IconProps,
+  ImageSize,
+  ImageRatio,
+  ImageProps,
+  NotificationProps,
+  ProgressProps,
+  TableProps,
+  TagModifiers,
+  TagProps,
+  LinkTagProps,
+  TagDeleteProps,
+  TagsProps,
+  HeadingLevel,
+  TitleProps,
+  SubtitleProps,
+  SkeletonBlockProps,
+  SkeletonLinesProps,
+} from './elements'
+export {
   Field,
   FieldLabel,
   FieldBody,
@@ -186,10 +70,28 @@ export const {
   Textarea,
   Select,
   Checkbox,
-  Checkboxes,
   Radio,
+  Checkboxes,
   Radios,
   File,
+} from './forms'
+export type {
+  FieldProps,
+  FieldLabelProps,
+  FieldBodyProps,
+  LabelProps,
+  ControlProps,
+  HelpProps,
+  InputProps,
+  TextareaProps,
+  SelectProps,
+  CheckboxProps,
+  RadioProps,
+  CheckboxesProps,
+  RadiosProps,
+  FileProps,
+} from './forms'
+export {
   Container,
   Hero,
   HeroHead,
@@ -210,6 +112,42 @@ export const {
   SmartGrid,
   FixedGrid,
   Cell,
+} from './layout'
+export type {
+  ContainerProps,
+  HeroProps,
+  HeroHeadProps,
+  HeroBodyProps,
+  HeroFootProps,
+  SectionProps,
+  FooterProps,
+  LevelProps,
+  LevelLeftProps,
+  LevelRightProps,
+  LevelItemProps,
+  MediaProps,
+  MediaLeftProps,
+  MediaRightProps,
+  MediaContentProps,
+  GridCount,
+  ColumnFraction,
+  ColumnWidth,
+  ColumnOffset,
+  ColumnBreakpoint,
+  ColumnResponsive,
+  ColumnGap,
+  GapBreakpoint,
+  ColumnsProps,
+  ColumnProps,
+  GridBreakpoint,
+  GridResponsive,
+  SmartGridProps,
+  FixedGridProps,
+  CellBreakpoint,
+  CellResponsive,
+  CellProps,
+} from './layout'
+export {
   Breadcrumb,
   BreadcrumbItem,
   Card,
@@ -239,6 +177,39 @@ export const {
   PanelTab,
   PanelBlock,
   PanelIcon,
+} from './components'
+export type {
+  BreadcrumbProps,
+  BreadcrumbItemProps,
+  CardProps,
+  CardHeaderProps,
+  CardHeaderTitleProps,
+  CardHeaderIconProps,
+  CardImageProps,
+  CardContentProps,
+  CardFooterProps,
+  CardFooterItemProps,
+  MenuProps,
+  MenuLabelProps,
+  MenuListProps,
+  MenuItemProps,
+  MessageProps,
+  MessageHeaderProps,
+  MessageBodyProps,
+  PaginationProps,
+  PaginationListProps,
+  PaginationLinkProps,
+  PaginationPreviousProps,
+  PaginationNextProps,
+  PaginationEllipsisProps,
+  PanelProps,
+  PanelHeadingProps,
+  PanelTabsProps,
+  PanelTabProps,
+  PanelBlockProps,
+  PanelIconProps,
+} from './components'
+export {
   Dropdown,
   DropdownTrigger,
   DropdownMenu,
@@ -269,4 +240,5 @@ export const {
   NavbarLink,
   NavbarDropdown,
   NavbarDivider,
-} = createBulma()
+} from './interactive'
+export type * from './interactive'

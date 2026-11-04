@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -223,7 +221,7 @@ export const Example001 = {
     official: { id: 'columns-nesting/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-info"}>{"First column"}</p>{"\\n    "}<ui.Columns displayFrom={"mobile"}>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-info"}>{"First nested column"}</p>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-info"}>{"Second nested column"}</p>{"\\n      "}</ui.Column>{"\\n    "}</ui.Columns>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-danger"}>{"Second column"}</p>{"\\n    "}<ui.Columns displayFrom={"mobile"}>{"\\n      "}<ui.Column width={"half"}>{"\\n        "}<p className={"bd-notification is-danger"}>{"50%"}</p>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-danger"}>{"Auto"}</p>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-danger"}>{"Auto"}</p>{"\\n      "}</ui.Column>{"\\n    "}</ui.Columns>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-info"}>{"First column"}</p>{"\\n    "}<ui.Columns displayFrom={"mobile"}>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-info"}>{"First nested column"}</p>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-info"}>{"Second nested column"}</p>{"\\n      "}</ui.Column>{"\\n    "}</ui.Columns>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification is-danger"}>{"Second column"}</p>{"\\n    "}<ui.Columns displayFrom={"mobile"}>{"\\n      "}<ui.Column width={"half"}>{"\\n        "}<p className={"bd-notification is-danger"}>{"50%"}</p>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-danger"}>{"Auto"}</p>{"\\n      "}</ui.Column>{"\\n      "}<ui.Column>{"\\n        "}<p className={"bd-notification is-danger"}>{"Auto"}</p>{"\\n      "}</ui.Column>{"\\n    "}</ui.Columns>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

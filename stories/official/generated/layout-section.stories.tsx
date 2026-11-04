@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -426,7 +424,7 @@ export const Example001 = {
     official: { id: 'layout-section/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Section>{"\\n  "}<ui.Title level={1}>{"Section"}</ui.Title>{"\\n  "}<ui.Subtitle level={2}>{"\\n    A simple container to divide your page into "}<strong>{"sections"}</strong>{", like\\n    the one you\'re currently reading.\\n  "}</ui.Subtitle>{"\\n"}</ui.Section>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Section>{"\\n  "}<ui.Title level={1}>{"Section"}</ui.Title>{"\\n  "}<ui.Subtitle level={2}>{"\\n    A simple container to divide your page into "}<strong>{"sections"}</strong>{", like\\n    the one you\'re currently reading.\\n  "}</ui.Subtitle>{"\\n"}</ui.Section>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -441,7 +439,7 @@ export const Example002 = {
     official: { id: 'layout-section/sizes/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Section size={"medium"}>{"\\n  "}<ui.Title level={1}>{"Medium section"}</ui.Title>{"\\n  "}<ui.Subtitle level={2}>{"\\n    A simple container to divide your page into "}<strong>{"sections"}</strong>{", like\\n    the one you\'re currently reading.\\n  "}</ui.Subtitle>{"\\n"}</ui.Section>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Section size={"medium"}>{"\\n  "}<ui.Title level={1}>{"Medium section"}</ui.Title>{"\\n  "}<ui.Subtitle level={2}>{"\\n    A simple container to divide your page into "}<strong>{"sections"}</strong>{", like\\n    the one you\'re currently reading.\\n  "}</ui.Subtitle>{"\\n"}</ui.Section>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -456,7 +454,7 @@ export const Example003 = {
     official: { id: 'layout-section/sizes/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Section size={"large"}>{"\\n  "}<ui.Title level={1}>{"Large section"}</ui.Title>{"\\n  "}<ui.Subtitle level={2}>{"\\n    A simple container to divide your page into "}<strong>{"sections"}</strong>{", like\\n    the one you\'re currently reading.\\n  "}</ui.Subtitle>{"\\n"}</ui.Section>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Section size={"large"}>{"\\n  "}<ui.Title level={1}>{"Large section"}</ui.Title>{"\\n  "}<ui.Subtitle level={2}>{"\\n    A simple container to divide your page into "}<strong>{"sections"}</strong>{", like\\n    the one you\'re currently reading.\\n  "}</ui.Subtitle>{"\\n"}</ui.Section>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

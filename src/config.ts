@@ -17,3 +17,5 @@ export function resolvePrefix(config: BulmaConfig = {}): Prefix {
   }
   return prefix as Prefix
 }
+
+export const defaultPrefix = /* @__PURE__ */ resolvePrefix()

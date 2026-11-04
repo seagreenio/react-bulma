@@ -1,5 +1,5 @@
 import { createElement, type ReactNode } from 'react'
-import type { Prefix } from './config'
+import { defaultPrefix, type Prefix } from './config'
 import {
   classNames,
   forwardRefComponent,
@@ -75,8 +75,8 @@ export type PanelBlockProps = PanelBlockStyle &
   )
 export type PanelIconProps = NativeProps<'span'>
 
-export function createComponents(prefix: Prefix) {
-  const Breadcrumb = forwardRefComponent(function Breadcrumb({
+export function createBreadcrumb(prefix: Prefix) {
+  return forwardRefComponent(function Breadcrumb({
     size,
     alignment,
     separator,
@@ -116,7 +116,12 @@ export function createComponents(prefix: Prefix) {
       </nav>
     )
   })
-  const BreadcrumbItem = forwardRefComponent(function BreadcrumbItem({
+}
+
+export const Breadcrumb = /* @__PURE__ */ createBreadcrumb(defaultPrefix)
+
+export function createBreadcrumbItem(prefix: Prefix) {
+  return forwardRefComponent(function BreadcrumbItem({
     active,
     wrapperProps,
     helpers,
@@ -139,9 +144,25 @@ export function createComponents(prefix: Prefix) {
       </li>
     )
   })
-  const Card = styledElement(prefix, 'div', 'card')
-  const CardHeader = styledElement(prefix, 'header', 'card-header')
-  const CardHeaderTitle = forwardRefComponent(function CardHeaderTitle({
+}
+
+export const BreadcrumbItem =
+  /* @__PURE__ */ createBreadcrumbItem(defaultPrefix)
+
+export function createCard(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'card')
+}
+
+export const Card = /* @__PURE__ */ createCard(defaultPrefix)
+
+export function createCardHeader(prefix: Prefix) {
+  return styledElement(prefix, 'header', 'card-header')
+}
+
+export const CardHeader = /* @__PURE__ */ createCardHeader(defaultPrefix)
+
+export function createCardHeaderTitle(prefix: Prefix) {
+  return forwardRefComponent(function CardHeaderTitle({
     centered,
     helpers,
     className,
@@ -159,7 +180,13 @@ export function createComponents(prefix: Prefix) {
       />
     )
   })
-  const CardHeaderIcon = forwardRefComponent(function CardHeaderIcon({
+}
+
+export const CardHeaderTitle =
+  /* @__PURE__ */ createCardHeaderTitle(defaultPrefix)
+
+export function createCardHeaderIcon(prefix: Prefix) {
+  return forwardRefComponent(function CardHeaderIcon({
     helpers,
     className,
     type = 'button',
@@ -173,11 +200,38 @@ export function createComponents(prefix: Prefix) {
       />
     )
   })
-  const CardImage = styledElement(prefix, 'div', 'card-image')
-  const CardContent = styledElement(prefix, 'div', 'card-content')
-  const CardFooter = styledElement(prefix, 'footer', 'card-footer')
-  const CardFooterItem = styledElement(prefix, 'a', 'card-footer-item', ['p'])
-  const Menu = forwardRefComponent(function Menu({
+}
+
+export const CardHeaderIcon =
+  /* @__PURE__ */ createCardHeaderIcon(defaultPrefix)
+
+export function createCardImage(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'card-image')
+}
+
+export const CardImage = /* @__PURE__ */ createCardImage(defaultPrefix)
+
+export function createCardContent(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'card-content')
+}
+
+export const CardContent = /* @__PURE__ */ createCardContent(defaultPrefix)
+
+export function createCardFooter(prefix: Prefix) {
+  return styledElement(prefix, 'footer', 'card-footer')
+}
+
+export const CardFooter = /* @__PURE__ */ createCardFooter(defaultPrefix)
+
+export function createCardFooterItem(prefix: Prefix) {
+  return styledElement(prefix, 'a', 'card-footer-item', ['p'])
+}
+
+export const CardFooterItem =
+  /* @__PURE__ */ createCardFooterItem(defaultPrefix)
+
+export function createMenu(prefix: Prefix) {
+  return forwardRefComponent(function Menu({
     size,
     helpers,
     className,
@@ -195,9 +249,24 @@ export function createComponents(prefix: Prefix) {
       />
     )
   })
-  const MenuLabel = styledElement(prefix, 'p', 'menu-label')
-  const MenuList = styledElement(prefix, 'ul', 'menu-list')
-  const MenuItem = forwardRefComponent(function MenuItem({
+}
+
+export const Menu = /* @__PURE__ */ createMenu(defaultPrefix)
+
+export function createMenuLabel(prefix: Prefix) {
+  return styledElement(prefix, 'p', 'menu-label')
+}
+
+export const MenuLabel = /* @__PURE__ */ createMenuLabel(defaultPrefix)
+
+export function createMenuList(prefix: Prefix) {
+  return styledElement(prefix, 'ul', 'menu-list')
+}
+
+export const MenuList = /* @__PURE__ */ createMenuList(defaultPrefix)
+
+export function createMenuItem(prefix: Prefix) {
+  return forwardRefComponent(function MenuItem({
     active,
     nested,
     wrapperProps,
@@ -224,7 +293,12 @@ export function createComponents(prefix: Prefix) {
       </li>
     )
   })
-  const Message = forwardRefComponent(function Message({
+}
+
+export const MenuItem = /* @__PURE__ */ createMenuItem(defaultPrefix)
+
+export function createMessage(prefix: Prefix) {
+  return forwardRefComponent(function Message({
     as,
     color,
     size,
@@ -242,9 +316,24 @@ export function createComponents(prefix: Prefix) {
       ),
     })
   })
-  const MessageHeader = styledElement(prefix, 'div', 'message-header')
-  const MessageBody = styledElement(prefix, 'div', 'message-body')
-  const Pagination = forwardRefComponent(function Pagination({
+}
+
+export const Message = /* @__PURE__ */ createMessage(defaultPrefix)
+
+export function createMessageHeader(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'message-header')
+}
+
+export const MessageHeader = /* @__PURE__ */ createMessageHeader(defaultPrefix)
+
+export function createMessageBody(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'message-body')
+}
+
+export const MessageBody = /* @__PURE__ */ createMessageBody(defaultPrefix)
+
+export function createPagination(prefix: Prefix) {
+  return forwardRefComponent(function Pagination({
     size,
     alignment,
     rounded,
@@ -270,8 +359,19 @@ export function createComponents(prefix: Prefix) {
       />
     )
   })
-  const PaginationList = styledElement(prefix, 'ul', 'pagination-list')
-  const PaginationLink = forwardRefComponent(function PaginationLink({
+}
+
+export const Pagination = /* @__PURE__ */ createPagination(defaultPrefix)
+
+export function createPaginationList(prefix: Prefix) {
+  return styledElement(prefix, 'ul', 'pagination-list')
+}
+
+export const PaginationList =
+  /* @__PURE__ */ createPaginationList(defaultPrefix)
+
+export function createPaginationLink(prefix: Prefix) {
+  return forwardRefComponent(function PaginationLink({
     current,
     disabled,
     wrapperProps,
@@ -312,7 +412,13 @@ export function createComponents(prefix: Prefix) {
       </li>
     )
   })
-  const PaginationPrevious = forwardRefComponent(function PaginationPrevious({
+}
+
+export const PaginationLink =
+  /* @__PURE__ */ createPaginationLink(defaultPrefix)
+
+export function createPaginationPrevious(prefix: Prefix) {
+  return forwardRefComponent(function PaginationPrevious({
     disabled,
     helpers,
     className,
@@ -348,7 +454,13 @@ export function createComponents(prefix: Prefix) {
       </a>
     )
   })
-  const PaginationNext = forwardRefComponent(function PaginationNext({
+}
+
+export const PaginationPrevious =
+  /* @__PURE__ */ createPaginationPrevious(defaultPrefix)
+
+export function createPaginationNext(prefix: Prefix) {
+  return forwardRefComponent(function PaginationNext({
     disabled,
     helpers,
     className,
@@ -384,7 +496,13 @@ export function createComponents(prefix: Prefix) {
       </a>
     )
   })
-  const PaginationEllipsis = forwardRefComponent(function PaginationEllipsis({
+}
+
+export const PaginationNext =
+  /* @__PURE__ */ createPaginationNext(defaultPrefix)
+
+export function createPaginationEllipsis(prefix: Prefix) {
+  return forwardRefComponent(function PaginationEllipsis({
     wrapperProps,
     helpers,
     className,
@@ -408,7 +526,13 @@ export function createComponents(prefix: Prefix) {
       </li>
     )
   })
-  const Panel = forwardRefComponent(function Panel({
+}
+
+export const PaginationEllipsis =
+  /* @__PURE__ */ createPaginationEllipsis(defaultPrefix)
+
+export function createPanel(prefix: Prefix) {
+  return forwardRefComponent(function Panel({
     as,
     color,
     helpers,
@@ -425,9 +549,24 @@ export function createComponents(prefix: Prefix) {
       ),
     })
   })
-  const PanelHeading = styledElement(prefix, 'p', 'panel-heading')
-  const PanelTabs = styledElement(prefix, 'p', 'panel-tabs')
-  const PanelTab = forwardRefComponent(function PanelTab({
+}
+
+export const Panel = /* @__PURE__ */ createPanel(defaultPrefix)
+
+export function createPanelHeading(prefix: Prefix) {
+  return styledElement(prefix, 'p', 'panel-heading')
+}
+
+export const PanelHeading = /* @__PURE__ */ createPanelHeading(defaultPrefix)
+
+export function createPanelTabs(prefix: Prefix) {
+  return styledElement(prefix, 'p', 'panel-tabs')
+}
+
+export const PanelTabs = /* @__PURE__ */ createPanelTabs(defaultPrefix)
+
+export function createPanelTab(prefix: Prefix) {
+  return forwardRefComponent(function PanelTab({
     active,
     helpers,
     className,
@@ -446,7 +585,12 @@ export function createComponents(prefix: Prefix) {
       />
     )
   })
-  const PanelBlock = forwardRefComponent(function PanelBlock({
+}
+
+export const PanelTab = /* @__PURE__ */ createPanelTab(defaultPrefix)
+
+export function createPanelBlock(prefix: Prefix) {
+  return forwardRefComponent(function PanelBlock({
     as = 'div',
     active,
     wrapped,
@@ -467,36 +611,12 @@ export function createComponents(prefix: Prefix) {
       ),
     })
   })
-  const PanelIcon = styledElement(prefix, 'span', 'panel-icon')
-  return {
-    Breadcrumb,
-    BreadcrumbItem,
-    Card,
-    CardHeader,
-    CardHeaderTitle,
-    CardHeaderIcon,
-    CardImage,
-    CardContent,
-    CardFooter,
-    CardFooterItem,
-    Menu,
-    MenuLabel,
-    MenuList,
-    MenuItem,
-    Message,
-    MessageHeader,
-    MessageBody,
-    Pagination,
-    PaginationList,
-    PaginationLink,
-    PaginationPrevious,
-    PaginationNext,
-    PaginationEllipsis,
-    Panel,
-    PanelHeading,
-    PanelTabs,
-    PanelTab,
-    PanelBlock,
-    PanelIcon,
-  }
 }
+
+export const PanelBlock = /* @__PURE__ */ createPanelBlock(defaultPrefix)
+
+export function createPanelIcon(prefix: Prefix) {
+  return styledElement(prefix, 'span', 'panel-icon')
+}
+
+export const PanelIcon = /* @__PURE__ */ createPanelIcon(defaultPrefix)

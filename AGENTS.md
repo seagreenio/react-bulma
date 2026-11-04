@@ -11,7 +11,7 @@ React Bulma is a React component library built on Bulma. Use `package.json` for 
 - Support React 17.0.2 and later. Development uses a newer React version, so do not assume its APIs are available to consumers.
 - Keep public types compatible with supported React typings without requiring `skipLibCheck`. Avoid exposing Base UI declarations that break this compatibility.
 - Keep the runtime entry separate from the build-time styles entry. Sass and PostCSS belong in `src/styles.ts` and build scripts.
-- Keep `createBulma` and `buildStyles` consistent. Components, helpers, roots, and generated CSS must use the same configurable prefix. Preserve isolation between separate and nested roots.
+- Keep `buildUI` and `buildStyles` consistent. Components, helpers, roots, and generated CSS must use the same configurable prefix. Preserve isolation between separate and nested roots.
 
 ## Documentation and examples
 

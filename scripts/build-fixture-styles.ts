@@ -1,3 +1,4 @@
+import './build-fixture-ui'
 import { buildStyles } from '../src/styles'
 import { customConfig } from '../tests/browser/custom-config'
 

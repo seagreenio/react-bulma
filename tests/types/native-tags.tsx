@@ -1,17 +1,16 @@
+import * as ui from '../../src'
 import {
   createRef,
   type ComponentProps,
   type ComponentPropsWithRef,
 } from 'react'
 import {
-  createBulma,
   type BoxProps,
   type ButtonProps,
   type ImageProps,
   type NavbarBurgerProps,
 } from '../../src'
 
-const ui = createBulma()
 ;<ui.Box
   as="form"
   ref={createRef<HTMLFormElement>()}

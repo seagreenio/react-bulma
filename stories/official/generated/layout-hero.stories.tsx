@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -1493,7 +1491,7 @@ export const Example001 = {
     official: { id: 'layout-hero/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Hero title"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Hero subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Hero title"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Hero subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1508,7 +1506,7 @@ export const Example002 = {
     official: { id: 'layout-hero/colors/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"link"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Link hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Link subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"link"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Link hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Link subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1523,7 +1521,7 @@ export const Example003 = {
     official: { id: 'layout-hero/colors/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"primary"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Primary hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Primary subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"primary"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Primary hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Primary subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1538,7 +1536,7 @@ export const Example004 = {
     official: { id: 'layout-hero/colors/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"info"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Info hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Info subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"info"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Info hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Info subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1553,7 +1551,7 @@ export const Example005 = {
     official: { id: 'layout-hero/colors/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"success"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Success hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Success subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"success"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Success hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Success subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1568,7 +1566,7 @@ export const Example006 = {
     official: { id: 'layout-hero/colors/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"warning"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Warning hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Warning subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"warning"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Warning hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Warning subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1583,7 +1581,7 @@ export const Example007 = {
     official: { id: 'layout-hero/colors/006' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"danger"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Danger hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Danger subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"danger"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Danger hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Danger subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1598,7 +1596,7 @@ export const Example008 = {
     official: { id: 'layout-hero/sizes/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero size={"small"} color={"primary"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Small hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Small subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero size={"small"} color={"primary"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Small hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Small subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1613,7 +1611,7 @@ export const Example009 = {
     official: { id: 'layout-hero/sizes/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero size={"medium"} color={"link"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Medium hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Medium subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero size={"medium"} color={"link"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Medium hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Medium subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1628,7 +1626,7 @@ export const Example010 = {
     official: { id: 'layout-hero/sizes/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero size={"large"} color={"info"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Large hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Large subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero size={"large"} color={"info"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Large hero"}</ui.Title>{"\\n    "}<ui.Subtitle as={"p"}>{"Large subtitle"}</ui.Subtitle>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1643,7 +1641,7 @@ export const Example011 = {
     official: { id: 'layout-hero/sizes/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"success"} height={"half"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<div>{"\\n      "}<ui.Title as={"p"}>{"Half height hero"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"Half height subtitle"}</ui.Subtitle>{"\\n    "}</div>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"success"} height={"half"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<div>{"\\n      "}<ui.Title as={"p"}>{"Half height hero"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"Half height subtitle"}</ui.Subtitle>{"\\n    "}</div>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1658,7 +1656,7 @@ export const Example012 = {
     official: { id: 'layout-hero/sizes/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"danger"} height={"full"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<div>{"\\n      "}<ui.Title as={"p"}>{"Fullheight hero"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"Fullheight subtitle"}</ui.Subtitle>{"\\n    "}</div>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"danger"} height={"full"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<div>{"\\n      "}<ui.Title as={"p"}>{"Fullheight hero"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"Fullheight subtitle"}</ui.Subtitle>{"\\n    "}</div>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1673,7 +1671,7 @@ export const Example013 = {
     official: { id: 'layout-hero/fullheight-with-navbar/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n           "}<ui.Navbar>{"\\n  "}<ui.Container>{"\\n    "}<ui.NavbarMenu id={"navMenu"}>{"\\n      "}<ui.NavbarStart>{"\\n        "}<ui.NavbarItem>{"\\n          Home\\n        "}</ui.NavbarItem>{"\\n        "}<ui.NavbarItem>{"\\n          Documentation\\n        "}</ui.NavbarItem>{"\\n      "}</ui.NavbarStart>{"\\n\\n      "}<ui.NavbarEnd>{"\\n        "}<ui.NavbarItem as={"div"}>{"\\n          "}<ui.Buttons>{"\\n            "}<ui.LinkButton color={"dark"}>{"Github"}</ui.LinkButton>{"\\n            "}<ui.LinkButton color={"link"}>{"Download"}</ui.LinkButton>{"\\n          "}</ui.Buttons>{"\\n        "}</ui.NavbarItem>{"\\n      "}</ui.NavbarEnd>{"\\n    "}</ui.NavbarMenu>{"\\n  "}</ui.Container>{"\\n"}</ui.Navbar>{"\\n\\n"}<ui.Hero color={"link"} height={"full-with-navbar"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Fullheight hero with navbar"}</ui.Title>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n           "}<ui.Navbar>{"\\n  "}<ui.Container>{"\\n    "}<ui.NavbarMenu id={"navMenu"}>{"\\n      "}<ui.NavbarStart>{"\\n        "}<ui.NavbarItem>{"\\n          Home\\n        "}</ui.NavbarItem>{"\\n        "}<ui.NavbarItem>{"\\n          Documentation\\n        "}</ui.NavbarItem>{"\\n      "}</ui.NavbarStart>{"\\n\\n      "}<ui.NavbarEnd>{"\\n        "}<ui.NavbarItem as={"div"}>{"\\n          "}<ui.Buttons>{"\\n            "}<ui.LinkButton color={"dark"}>{"Github"}</ui.LinkButton>{"\\n            "}<ui.LinkButton color={"link"}>{"Download"}</ui.LinkButton>{"\\n          "}</ui.Buttons>{"\\n        "}</ui.NavbarItem>{"\\n      "}</ui.NavbarEnd>{"\\n    "}</ui.NavbarMenu>{"\\n  "}</ui.Container>{"\\n"}</ui.Navbar>{"\\n\\n"}<ui.Hero color={"link"} height={"full-with-navbar"}>{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Title as={"p"}>{"Fullheight hero with navbar"}</ui.Title>{"\\n  "}</ui.HeroBody>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1688,7 +1686,7 @@ export const Example014 = {
     official: { id: 'layout-hero/fullheight-hero-in-3-parts/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example014Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"primary"} size={"medium"}>{"\\n  "}{"\\n  "}<ui.HeroHead>{"\\n    "}<ui.Navbar>{"\\n      "}<ui.Container>{"\\n        "}<ui.NavbarBrand>{"\\n          "}<ui.NavbarItem>{"\\n            "}<img src={"./official-assets/bulma-type-white.png"} alt={"Logo"} />{"\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarBurger data-target={"navbarMenuHeroA"} as={"span"}>{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n          "}</ui.NavbarBurger>{"\\n        "}</ui.NavbarBrand>{"\\n        "}<ui.NavbarMenu id={"navbarMenuHeroA"}>{"\\n          "}<ui.NavbarEnd>{"\\n            "}<ui.NavbarItem active>{" Home "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Examples "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Documentation "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem as={"span"}>{"\\n              "}<ui.LinkButton color={"primary"} inverted>{"\\n                "}<ui.Icon>{"\\n                  "}<i className={"fab fa-github"} />{"\\n                "}</ui.Icon>{"\\n                "}<span>{"Download"}</span>{"\\n              "}</ui.LinkButton>{"\\n            "}</ui.NavbarItem>{"\\n          "}</ui.NavbarEnd>{"\\n        "}</ui.NavbarMenu>{"\\n      "}</ui.Container>{"\\n    "}</ui.Navbar>{"\\n  "}</ui.HeroHead>{"\\n\\n  "}{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Container helpers={{"textAlign":"center"}}>{"\\n      "}<ui.Title as={"p"}>{"Title"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"Subtitle"}</ui.Subtitle>{"\\n    "}</ui.Container>{"\\n  "}</ui.HeroBody>{"\\n\\n  "}{"\\n  "}<ui.HeroFoot>{"\\n    "}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList as={"nav"} listWrapper={<ui.Container />}><ui.Tab value={"tab-1"} as={"a"}>{"Overview"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Modifiers"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Grid"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Elements"}</ui.Tab><ui.Tab value={"tab-5"} as={"a"}>{"Components"}</ui.Tab><ui.Tab value={"tab-6"} as={"a"}>{"Layout"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n  "}</ui.HeroFoot>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"primary"} size={"medium"}>{"\\n  "}{"\\n  "}<ui.HeroHead>{"\\n    "}<ui.Navbar>{"\\n      "}<ui.Container>{"\\n        "}<ui.NavbarBrand>{"\\n          "}<ui.NavbarItem>{"\\n            "}<img src={"./official-assets/bulma-type-white.png"} alt={"Logo"} />{"\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarBurger data-target={"navbarMenuHeroA"} as={"span"}>{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n          "}</ui.NavbarBurger>{"\\n        "}</ui.NavbarBrand>{"\\n        "}<ui.NavbarMenu id={"navbarMenuHeroA"}>{"\\n          "}<ui.NavbarEnd>{"\\n            "}<ui.NavbarItem active>{" Home "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Examples "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Documentation "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem as={"span"}>{"\\n              "}<ui.LinkButton color={"primary"} inverted>{"\\n                "}<ui.Icon>{"\\n                  "}<i className={"fab fa-github"} />{"\\n                "}</ui.Icon>{"\\n                "}<span>{"Download"}</span>{"\\n              "}</ui.LinkButton>{"\\n            "}</ui.NavbarItem>{"\\n          "}</ui.NavbarEnd>{"\\n        "}</ui.NavbarMenu>{"\\n      "}</ui.Container>{"\\n    "}</ui.Navbar>{"\\n  "}</ui.HeroHead>{"\\n\\n  "}{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Container helpers={{"textAlign":"center"}}>{"\\n      "}<ui.Title as={"p"}>{"Title"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"Subtitle"}</ui.Subtitle>{"\\n    "}</ui.Container>{"\\n  "}</ui.HeroBody>{"\\n\\n  "}{"\\n  "}<ui.HeroFoot>{"\\n    "}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList as={"nav"} listWrapper={<ui.Container />}><ui.Tab value={"tab-1"} as={"a"}>{"Overview"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Modifiers"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Grid"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Elements"}</ui.Tab><ui.Tab value={"tab-5"} as={"a"}>{"Components"}</ui.Tab><ui.Tab value={"tab-6"} as={"a"}>{"Layout"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n  "}</ui.HeroFoot>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1703,7 +1701,7 @@ export const Example015 = {
     official: { id: 'layout-hero/fullheight-hero-in-3-parts/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example015Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"info"} size={"large"}>{"\\n  "}<ui.HeroHead>{"\\n    "}<ui.Navbar>{"\\n      "}<ui.Container>{"\\n        "}<ui.NavbarBrand>{"\\n          "}<ui.NavbarItem>{"\\n            "}<img src={"./official-assets/bulma-type-white.png"} alt={"Logo"} />{"\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarBurger data-target={"navbarMenuHeroB"} as={"span"}>{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n          "}</ui.NavbarBurger>{"\\n        "}</ui.NavbarBrand>{"\\n        "}<ui.NavbarMenu id={"navbarMenuHeroB"}>{"\\n          "}<ui.NavbarEnd>{"\\n            "}<ui.NavbarItem active>{" Home "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Examples "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Documentation "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem as={"span"}>{"\\n              "}<ui.LinkButton color={"info"} inverted>{"\\n                "}<ui.Icon>{"\\n                  "}<i className={"fab fa-github"} />{"\\n                "}</ui.Icon>{"\\n                "}<span>{"Download"}</span>{"\\n              "}</ui.LinkButton>{"\\n            "}</ui.NavbarItem>{"\\n          "}</ui.NavbarEnd>{"\\n        "}</ui.NavbarMenu>{"\\n      "}</ui.Container>{"\\n    "}</ui.Navbar>{"\\n  "}</ui.HeroHead>{"\\n\\n  "}<ui.HeroBody>{"\\n    "}<ui.Container helpers={{"textAlign":"center"}}>{"\\n      "}<ui.Title as={"p"}>{"Title"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"Subtitle"}</ui.Subtitle>{"\\n    "}</ui.Container>{"\\n  "}</ui.HeroBody>{"\\n\\n  "}<ui.HeroFoot>{"\\n    "}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList variant={"boxed"} fullWidth as={"nav"} listWrapper={<ui.Container />}><ui.Tab value={"tab-1"} as={"a"}>{"Overview"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Modifiers"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Grid"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Elements"}</ui.Tab><ui.Tab value={"tab-5"} as={"a"}>{"Components"}</ui.Tab><ui.Tab value={"tab-6"} as={"a"}>{"Layout"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n  "}</ui.HeroFoot>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"info"} size={"large"}>{"\\n  "}<ui.HeroHead>{"\\n    "}<ui.Navbar>{"\\n      "}<ui.Container>{"\\n        "}<ui.NavbarBrand>{"\\n          "}<ui.NavbarItem>{"\\n            "}<img src={"./official-assets/bulma-type-white.png"} alt={"Logo"} />{"\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarBurger data-target={"navbarMenuHeroB"} as={"span"}>{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n          "}</ui.NavbarBurger>{"\\n        "}</ui.NavbarBrand>{"\\n        "}<ui.NavbarMenu id={"navbarMenuHeroB"}>{"\\n          "}<ui.NavbarEnd>{"\\n            "}<ui.NavbarItem active>{" Home "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Examples "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Documentation "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem as={"span"}>{"\\n              "}<ui.LinkButton color={"info"} inverted>{"\\n                "}<ui.Icon>{"\\n                  "}<i className={"fab fa-github"} />{"\\n                "}</ui.Icon>{"\\n                "}<span>{"Download"}</span>{"\\n              "}</ui.LinkButton>{"\\n            "}</ui.NavbarItem>{"\\n          "}</ui.NavbarEnd>{"\\n        "}</ui.NavbarMenu>{"\\n      "}</ui.Container>{"\\n    "}</ui.Navbar>{"\\n  "}</ui.HeroHead>{"\\n\\n  "}<ui.HeroBody>{"\\n    "}<ui.Container helpers={{"textAlign":"center"}}>{"\\n      "}<ui.Title as={"p"}>{"Title"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"Subtitle"}</ui.Subtitle>{"\\n    "}</ui.Container>{"\\n  "}</ui.HeroBody>{"\\n\\n  "}<ui.HeroFoot>{"\\n    "}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList variant={"boxed"} fullWidth as={"nav"} listWrapper={<ui.Container />}><ui.Tab value={"tab-1"} as={"a"}>{"Overview"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Modifiers"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Grid"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Elements"}</ui.Tab><ui.Tab value={"tab-5"} as={"a"}>{"Components"}</ui.Tab><ui.Tab value={"tab-6"} as={"a"}>{"Layout"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n  "}</ui.HeroFoot>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1718,7 +1716,7 @@ export const Example016 = {
     official: { id: 'layout-hero/fullheight-hero-in-3-parts/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example016Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"success"} height={"full"}>{"\\n  "}{"\\n  "}<ui.HeroHead>{"\\n    "}<ui.Navbar as={"header"}>{"\\n      "}<ui.Container>{"\\n        "}<ui.NavbarBrand>{"\\n          "}<ui.NavbarItem>{"\\n            "}<img src={"./official-assets/bulma-type-white.png"} alt={"Logo"} />{"\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarBurger data-target={"navbarMenuHeroC"} as={"span"}>{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n          "}</ui.NavbarBurger>{"\\n        "}</ui.NavbarBrand>{"\\n        "}<ui.NavbarMenu id={"navbarMenuHeroC"}>{"\\n          "}<ui.NavbarEnd>{"\\n            "}<ui.NavbarItem active>{" Home "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Examples "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Documentation "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem as={"span"}>{"\\n              "}<ui.LinkButton color={"success"} inverted>{"\\n                "}<ui.Icon>{"\\n                  "}<i className={"fab fa-github"} />{"\\n                "}</ui.Icon>{"\\n                "}<span>{"Download"}</span>{"\\n              "}</ui.LinkButton>{"\\n            "}</ui.NavbarItem>{"\\n          "}</ui.NavbarEnd>{"\\n        "}</ui.NavbarMenu>{"\\n      "}</ui.Container>{"\\n    "}</ui.Navbar>{"\\n  "}</ui.HeroHead>{"\\n\\n  "}{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Container helpers={{"textAlign":"center"}}>{"\\n      "}<ui.Title as={"p"}>{"Title"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"Subtitle"}</ui.Subtitle>{"\\n    "}</ui.Container>{"\\n  "}</ui.HeroBody>{"\\n\\n  "}{"\\n  "}<ui.HeroFoot>{"\\n    "}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList variant={"boxed"} fullWidth as={"nav"} listWrapper={<ui.Container />}><ui.Tab value={"tab-1"} as={"a"}>{"Overview"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Modifiers"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Grid"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Elements"}</ui.Tab><ui.Tab value={"tab-5"} as={"a"}>{"Components"}</ui.Tab><ui.Tab value={"tab-6"} as={"a"}>{"Layout"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n  "}</ui.HeroFoot>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Hero color={"success"} height={"full"}>{"\\n  "}{"\\n  "}<ui.HeroHead>{"\\n    "}<ui.Navbar as={"header"}>{"\\n      "}<ui.Container>{"\\n        "}<ui.NavbarBrand>{"\\n          "}<ui.NavbarItem>{"\\n            "}<img src={"./official-assets/bulma-type-white.png"} alt={"Logo"} />{"\\n          "}</ui.NavbarItem>{"\\n          "}<ui.NavbarBurger data-target={"navbarMenuHeroC"} as={"span"}>{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n            "}<span />{"\\n          "}</ui.NavbarBurger>{"\\n        "}</ui.NavbarBrand>{"\\n        "}<ui.NavbarMenu id={"navbarMenuHeroC"}>{"\\n          "}<ui.NavbarEnd>{"\\n            "}<ui.NavbarItem active>{" Home "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Examples "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem>{" Documentation "}</ui.NavbarItem>{"\\n            "}<ui.NavbarItem as={"span"}>{"\\n              "}<ui.LinkButton color={"success"} inverted>{"\\n                "}<ui.Icon>{"\\n                  "}<i className={"fab fa-github"} />{"\\n                "}</ui.Icon>{"\\n                "}<span>{"Download"}</span>{"\\n              "}</ui.LinkButton>{"\\n            "}</ui.NavbarItem>{"\\n          "}</ui.NavbarEnd>{"\\n        "}</ui.NavbarMenu>{"\\n      "}</ui.Container>{"\\n    "}</ui.Navbar>{"\\n  "}</ui.HeroHead>{"\\n\\n  "}{"\\n  "}<ui.HeroBody>{"\\n    "}<ui.Container helpers={{"textAlign":"center"}}>{"\\n      "}<ui.Title as={"p"}>{"Title"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"Subtitle"}</ui.Subtitle>{"\\n    "}</ui.Container>{"\\n  "}</ui.HeroBody>{"\\n\\n  "}{"\\n  "}<ui.HeroFoot>{"\\n    "}<ui.Tabs defaultValue={"tab-1"}><ui.TabsList variant={"boxed"} fullWidth as={"nav"} listWrapper={<ui.Container />}><ui.Tab value={"tab-1"} as={"a"}>{"Overview"}</ui.Tab><ui.Tab value={"tab-2"} as={"a"}>{"Modifiers"}</ui.Tab><ui.Tab value={"tab-3"} as={"a"}>{"Grid"}</ui.Tab><ui.Tab value={"tab-4"} as={"a"}>{"Elements"}</ui.Tab><ui.Tab value={"tab-5"} as={"a"}>{"Components"}</ui.Tab><ui.Tab value={"tab-6"} as={"a"}>{"Layout"}</ui.Tab></ui.TabsList></ui.Tabs>{"\\n  "}</ui.HeroFoot>{"\\n"}</ui.Hero>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

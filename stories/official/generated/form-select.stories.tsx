@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -1207,7 +1205,7 @@ export const Example001 = {
     official: { id: 'form-select/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1222,7 +1220,7 @@ export const Example002 = {
     official: { id: 'form-select/multiple-select/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        You can style a "}<strong>{"multiple select"}</strong>{" dropdown, by using the "}<code>{"is-multiple"}</code>{" modifier, and\\n        by using the "}<code>{"multiple"}</code>{" HTML attribute.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Select multiple htmlSize={8}>{"\\n    "}<option value={"Argentina"}>{"Argentina"}</option>{"\\n    "}<option value={"Bolivia"}>{"Bolivia"}</option>{"\\n    "}<option value={"Brazil"}>{"Brazil"}</option>{"\\n    "}<option value={"Chile"}>{"Chile"}</option>{"\\n    "}<option value={"Colombia"}>{"Colombia"}</option>{"\\n    "}<option value={"Ecuador"}>{"Ecuador"}</option>{"\\n    "}<option value={"Guyana"}>{"Guyana"}</option>{"\\n    "}<option value={"Paraguay"}>{"Paraguay"}</option>{"\\n    "}<option value={"Peru"}>{"Peru"}</option>{"\\n    "}<option value={"Suriname"}>{"Suriname"}</option>{"\\n    "}<option value={"Uruguay"}>{"Uruguay"}</option>{"\\n    "}<option value={"Venezuela"}>{"Venezuela"}</option>{"\\n  "}</ui.Select>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select is-multiple\\">\\n  <select multiple size=\\"8\\">\\n    <option value=\\"Argentina\\">Argentina</option>\\n    <option value=\\"Bolivia\\">Bolivia</option>\\n    <option value=\\"Brazil\\">Brazil</option>\\n    <option value=\\"Chile\\">Chile</option>\\n    <option value=\\"Colombia\\">Colombia</option>\\n    <option value=\\"Ecuador\\">Ecuador</option>\\n    <option value=\\"Guyana\\">Guyana</option>\\n    <option value=\\"Paraguay\\">Paraguay</option>\\n    <option value=\\"Peru\\">Peru</option>\\n    <option value=\\"Suriname\\">Suriname</option>\\n    <option value=\\"Uruguay\\">Uruguay</option>\\n    <option value=\\"Venezuela\\">Venezuela</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        You can style a "}<strong>{"multiple select"}</strong>{" dropdown, by using the "}<code>{"is-multiple"}</code>{" modifier, and\\n        by using the "}<code>{"multiple"}</code>{" HTML attribute.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Select multiple htmlSize={8}>{"\\n    "}<option value={"Argentina"}>{"Argentina"}</option>{"\\n    "}<option value={"Bolivia"}>{"Bolivia"}</option>{"\\n    "}<option value={"Brazil"}>{"Brazil"}</option>{"\\n    "}<option value={"Chile"}>{"Chile"}</option>{"\\n    "}<option value={"Colombia"}>{"Colombia"}</option>{"\\n    "}<option value={"Ecuador"}>{"Ecuador"}</option>{"\\n    "}<option value={"Guyana"}>{"Guyana"}</option>{"\\n    "}<option value={"Paraguay"}>{"Paraguay"}</option>{"\\n    "}<option value={"Peru"}>{"Peru"}</option>{"\\n    "}<option value={"Suriname"}>{"Suriname"}</option>{"\\n    "}<option value={"Uruguay"}>{"Uruguay"}</option>{"\\n    "}<option value={"Venezuela"}>{"Venezuela"}</option>{"\\n  "}</ui.Select>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select is-multiple\\">\\n  <select multiple size=\\"8\\">\\n    <option value=\\"Argentina\\">Argentina</option>\\n    <option value=\\"Bolivia\\">Bolivia</option>\\n    <option value=\\"Brazil\\">Brazil</option>\\n    <option value=\\"Chile\\">Chile</option>\\n    <option value=\\"Colombia\\">Colombia</option>\\n    <option value=\\"Ecuador\\">Ecuador</option>\\n    <option value=\\"Guyana\\">Guyana</option>\\n    <option value=\\"Paraguay\\">Paraguay</option>\\n    <option value=\\"Peru\\">Peru</option>\\n    <option value=\\"Suriname\\">Suriname</option>\\n    <option value=\\"Uruguay\\">Uruguay</option>\\n    <option value=\\"Venezuela\\">Venezuela</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1237,7 +1235,7 @@ export const Example003 = {
     official: { id: 'form-select/colors/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"link"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"link"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1252,7 +1250,7 @@ export const Example004 = {
     official: { id: 'form-select/colors/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"primary"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"primary"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1267,7 +1265,7 @@ export const Example005 = {
     official: { id: 'form-select/colors/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"info"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"info"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1282,7 +1280,7 @@ export const Example006 = {
     official: { id: 'form-select/colors/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"success"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"success"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1297,7 +1295,7 @@ export const Example007 = {
     official: { id: 'form-select/colors/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"warning"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"warning"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1312,7 +1310,7 @@ export const Example008 = {
     official: { id: 'form-select/colors/006' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"danger"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select color={"danger"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1327,7 +1325,7 @@ export const Example009 = {
     official: { id: 'form-select/styles/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example009Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select rounded>{"\\n    "}<option>{"Rounded dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select is-rounded\\">\\n  <select>\\n    <option>Rounded dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select rounded>{"\\n    "}<option>{"Rounded dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select is-rounded\\">\\n  <select>\\n    <option>Rounded dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1342,7 +1340,7 @@ export const Example010 = {
     official: { id: 'form-select/sizes/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"small"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"small"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1357,7 +1355,7 @@ export const Example011 = {
     official: { id: 'form-select/sizes/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"normal"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"normal"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1372,7 +1370,7 @@ export const Example012 = {
     official: { id: 'form-select/sizes/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"medium"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"medium"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1387,7 +1385,7 @@ export const Example013 = {
     official: { id: 'form-select/sizes/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"large"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Select size={"large"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1402,7 +1400,7 @@ export const Example014 = {
     official: { id: 'form-select/normal/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1417,7 +1415,7 @@ export const Example015 = {
     official: { id: 'form-select/hover/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example015Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select className={"rb-is-hovered"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select class=\\"is-hovered\\">\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select className={"rb-is-hovered"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select class=\\"is-hovered\\">\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1432,7 +1430,7 @@ export const Example016 = {
     official: { id: 'form-select/focus/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example016Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select className={"rb-is-focused"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select class=\\"is-focused\\">\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select className={"rb-is-focused"}>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select\\">\\n  <select class=\\"is-focused\\">\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1447,7 +1445,7 @@ export const Example017 = {
     official: { id: 'form-select/loading/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example017Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select loading>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select is-loading\\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Select loading>{"\\n    "}<option>{"Select dropdown"}</option>{"\\n    "}<option>{"With options"}</option>{"\\n  "}</ui.Select>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"select is-loading\\">\\n  <select>\\n    <option>Select dropdown</option>\\n    <option>With options</option>\\n  </select>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1462,7 +1460,7 @@ export const Example018 = {
     official: { id: 'form-select/with-icons/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example018Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"small"} className={"rb-is-left"} as={"div"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <div class=\\"icon is-small is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </div>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"small"} className={"rb-is-left"} as={"div"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <div class=\\"icon is-small is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </div>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1477,7 +1475,7 @@ export const Example019 = {
     official: { id: 'form-select/with-icons/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example019Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        If the control contains an icon, Bulma will make sure the icon remains\\n        "}<strong>{"centered"}</strong>{", no matter the size of the input "}<em>{"or"}</em>{" of the icon.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select size={"small"} defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select is-small\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-small is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example019Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        If the control contains an icon, Bulma will make sure the icon remains\\n        "}<strong>{"centered"}</strong>{", no matter the size of the input "}<em>{"or"}</em>{" of the icon.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select size={"small"} defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select is-small\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-small is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1492,7 +1490,7 @@ export const Example020 = {
     official: { id: 'form-select/with-icons/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example020Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example020Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1507,7 +1505,7 @@ export const Example021 = {
     official: { id: 'form-select/with-icons/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example021Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select size={"medium"} defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"medium"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select is-medium\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-medium is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example021Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select size={"medium"} defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"medium"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select is-medium\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-medium is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1522,7 +1520,7 @@ export const Example022 = {
     official: { id: 'form-select/with-icons/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example022Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select size={"large"} defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"large"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select is-large\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-large is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example022Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"left"}>{"\\n  "}<ui.Select size={"large"} defaultValue={"Country"}>{"\\n      "}<option>{"Country"}</option>{"\\n      "}<option>{"Select dropdown"}</option>{"\\n      "}<option>{"With options"}</option>{"\\n    "}</ui.Select>{"\\n  "}<ui.Icon size={"large"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-globe"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left\\">\\n  <div class=\\"select is-large\\">\\n    <select>\\n      <option selected>Country</option>\\n      <option>Select dropdown</option>\\n      <option>With options</option>\\n    </select>\\n  </div>\\n  <span class=\\"icon is-large is-left\\">\\n    <i class=\\"fas fa-globe\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

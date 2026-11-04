@@ -42,11 +42,25 @@
       "types": "./dist/styles.d.ts",
       "import": "./dist/styles.js"
     },
-    "./styles.css": "./dist/styles.css"
+    "./styles.css": "./dist/styles.css",
+    "./factories": {
+      "node": {
+        "types": "./dist/component-factories.d.cts",
+        "default": "./dist/component-factories.cjs"
+      },
+      "import": {
+        "types": "./dist/component-factories.d.ts",
+        "default": "./dist/component-factories.js"
+      },
+      "require": {
+        "types": "./dist/component-factories.d.cts",
+        "default": "./dist/component-factories.cjs"
+      }
+    }
   },
   "scripts": {
     "build": "tsdown && bun scripts/build-styles.ts",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "bun scripts/build-fixture-ui.ts && tsc --noEmit",
     "test": "bun test tests/unit",
     "test:browser": "bun scripts/build-fixture-styles.ts && playwright test",
     "storybook": "bun run official:generate && bun scripts/build-fixture-styles.ts && storybook dev -p 6006 --no-open",
@@ -75,6 +89,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.2.1",
     "cheerio": "^1.2.0",
+    "esbuild": "^0.28.2",
     "liquidjs": "^10.30.1",
     "marked": "^18.1.3",
     "prettier": "^3.9.10",

@@ -1,10 +1,15 @@
 import { defineConfig } from 'tsdown'
 
 export default defineConfig({
-  entry: ['src/index.tsx', 'src/styles.ts'],
+  entry: ['src/index.tsx', 'src/styles.ts', 'src/component-factories.ts'],
   format: {
-    esm: {},
-    cjs: { entry: { index: 'src/index.tsx' } },
+    esm: { unbundle: true },
+    cjs: {
+      entry: {
+        index: 'src/index.tsx',
+        'component-factories': 'src/component-factories.ts',
+      },
+    },
   },
   dts: true,
   clean: true,

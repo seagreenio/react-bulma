@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -672,7 +670,7 @@ export const Example001 = {
     official: { id: 'elements-progress/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Progress value={"15"} max={"100"}>{"15%"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Progress value={"15"} max={"100"}>{"15%"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -687,7 +685,7 @@ export const Example002 = {
     official: { id: 'elements-progress/colors/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"15"} max={"100"} color={"link"}>{"\\n  15%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"15"} max={"100"} color={"link"}>{"\\n  15%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -702,7 +700,7 @@ export const Example003 = {
     official: { id: 'elements-progress/colors/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"30"} max={"100"} color={"primary"}>{"\\n  30%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"30"} max={"100"} color={"primary"}>{"\\n  30%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -717,7 +715,7 @@ export const Example004 = {
     official: { id: 'elements-progress/colors/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"45"} max={"100"} color={"info"}>{"\\n  45%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"45"} max={"100"} color={"info"}>{"\\n  45%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -732,7 +730,7 @@ export const Example005 = {
     official: { id: 'elements-progress/colors/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"60"} max={"100"} color={"success"}>{"\\n  60%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"60"} max={"100"} color={"success"}>{"\\n  60%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -747,7 +745,7 @@ export const Example006 = {
     official: { id: 'elements-progress/colors/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"75"} max={"100"} color={"warning"}>{"\\n  75%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"75"} max={"100"} color={"warning"}>{"\\n  75%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -762,7 +760,7 @@ export const Example007 = {
     official: { id: 'elements-progress/colors/006' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"90"} max={"100"} color={"danger"}>{"\\n  90%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"90"} max={"100"} color={"danger"}>{"\\n  90%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -777,7 +775,7 @@ export const Example008 = {
     official: { id: 'elements-progress/sizes/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"20"} max={"100"} size={"small"}>{"\\n  20%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"20"} max={"100"} size={"small"}>{"\\n  20%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -792,7 +790,7 @@ export const Example009 = {
     official: { id: 'elements-progress/sizes/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"40"} max={"100"} className={"rb-is-normal"}>{"\\n  40%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"40"} max={"100"} className={"rb-is-normal"}>{"\\n  40%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -807,7 +805,7 @@ export const Example010 = {
     official: { id: 'elements-progress/sizes/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"60"} max={"100"} size={"medium"}>{"\\n  60%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"60"} max={"100"} size={"medium"}>{"\\n  60%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -822,7 +820,7 @@ export const Example011 = {
     official: { id: 'elements-progress/sizes/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"80"} max={"100"} size={"large"}>{"\\n  80%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n           \\n"}<ui.Progress value={"80"} max={"100"} size={"large"}>{"\\n  80%\\n"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -837,7 +835,7 @@ export const Example012 = {
     official: { id: 'elements-progress/indeterminate/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Progress max={"100"} size={"small"} color={"primary"}>{"15%"}</ui.Progress>{"\\n"}<ui.Progress max={"100"} color={"danger"}>{"30%"}</ui.Progress>{"\\n"}<ui.Progress max={"100"} size={"medium"} color={"dark"}>{"45%"}</ui.Progress>{"\\n"}<ui.Progress max={"100"} size={"large"} color={"info"}>{"60%"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Progress max={"100"} size={"small"} color={"primary"}>{"15%"}</ui.Progress>{"\\n"}<ui.Progress max={"100"} color={"danger"}>{"30%"}</ui.Progress>{"\\n"}<ui.Progress max={"100"} size={"medium"} color={"dark"}>{"45%"}</ui.Progress>{"\\n"}<ui.Progress max={"100"} size={"large"} color={"info"}>{"60%"}</ui.Progress>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

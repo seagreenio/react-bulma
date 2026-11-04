@@ -1492,7 +1492,7 @@ export function compilePage(
   const examples: CompiledExample[] = page.examples.map((example, index) => {
     const exportName = `Example${String(index + 1).padStart(3, '0')}`
     const { fn, ctx } = compileDemo(example, `${exportName}Demo`)
-    const source = `${ctx.states.length ? "import { useState } from 'react';\n" : ''}import { createBulma } from '@seagreenio/react-bulma';\n\nconst ui = createBulma();\n\n${fn}\n`
+    const source = `${ctx.states.length ? "import { useState } from 'react';\n" : ''}import * as ui from '@seagreenio/react-bulma';\n\n${fn}\n`
     functions.push(fn)
     stories.push(
       `export const ${exportName} = {\n  name: ${q(example.name)},\n  parameters: { official: { id: ${q(example.id)} }, docs: { source: { code: ${q(source)}, language: 'tsx', type: 'code' } } },\n  render: ${exportName}Demo,\n} satisfies StoryObj;`,
@@ -1528,7 +1528,7 @@ export function compilePage(
         )
   return {
     id: page.id,
-    source: `import type { Meta, StoryObj } from '@storybook/react-vite';\n${docs ? "import { Canvas } from '@storybook/addon-docs/blocks';\nimport { OfficialDocument } from '../document';\n" : ''}${usesState ? "import { useState } from 'react';\n" : ''}import { createBulma } from '../../../src';\nimport { officialPage } from '../support';\n\nconst ui = createBulma();\n\nconst meta = { ...officialPage(${q({ id: page.id, title: page.title, url: page.url })}${docs ? ', OfficialDocs' : ''}), tags: ['autodocs'], id: ${q('official-' + page.id)}, title: ${q(title)} } satisfies Meta;\nexport default meta;\n\n${docs}\n\n${functions.join('\n\n')}\n\n${stories.join('\n\n')}\n`,
+    source: `import type { Meta, StoryObj } from '@storybook/react-vite';\n${docs ? "import { Canvas } from '@storybook/addon-docs/blocks';\nimport { OfficialDocument } from '../document';\n" : ''}${usesState ? "import { useState } from 'react';\n" : ''}import * as ui from '../../../src';\nimport { officialPage } from '../support';\n\nconst meta = { ...officialPage(${q({ id: page.id, title: page.title, url: page.url })}${docs ? ', OfficialDocs' : ''}), tags: ['autodocs'], id: ${q('official-' + page.id)}, title: ${q(title)} } satisfies Meta;\nexport default meta;\n\n${docs}\n\n${functions.join('\n\n')}\n\n${stories.join('\n\n')}\n`,
     examples,
   }
 }

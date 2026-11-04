@@ -63,6 +63,8 @@ By default, components use the `rb-` class prefix and a light theme. Set `theme=
 
 The stylesheet uses CSS `@scope` and container queries, so your target browsers must support both. Library styles stop at nested Bulma roots, though selectors and inherited styles from your application can still affect components.
 
+Import only the components you need, and your bundler can remove unused component code through tree-shaking. This also works with the generated custom-prefix module below. CSS is compiled as a whole and is not split by component.
+
 ## Customize component styles and attributes
 
 You can set a button's color with `color` and round its corners with `rounded`. Use `helpers` for spacing, text styles, colors, display, visibility, and Flexbox layout. TypeScript suggests the available props and values. You can also add your own CSS classes with `className`:
@@ -80,7 +82,7 @@ You can set a button's color with `color` and round its corners with `rounded`. 
 
 In this example, `mt: 0` generates `rb-mt-0`, which sets the top margin to zero. Setting `hidden: false` adds no hiding class. Your `className="save-action"` is added alongside the component classes exactly as written; it does not become `rb-save-action`.
 
-For HTML elements such as `div` and `p`, call `helpers()` with the same style options and pass the returned class names to `className`. The function only generates class names; it does not change elements or insert CSS. Those names start with `rb-` by default. If you use `helpers` from a custom `BulmaUI`, they use your configured prefix:
+For HTML elements such as `div` and `p`, call `helpers()` with the same style options and pass the returned class names to `className`. The function only generates class names; it does not change elements or insert CSS. Those names start with `rb-` by default. If you import `helpers` from a generated custom-prefix module, it uses your configured prefix:
 
 ```tsx
 'use client'
@@ -123,7 +125,7 @@ To submit a form, set `type="submit"` on Button; its default is `type="button"`.
 
 ## Build styles with a custom prefix
 
-To replace the default `rb-` prefix, give `createBulma` and `buildStyles` the same configuration. The setup below uses `bui-`. Choose either Bun or Node.js to generate the CSS:
+To use your own class prefix, generate the CSS and a matching component module from the same configuration. The example below uses `bui-`. Choose either Bun or Node.js to generate both files:
 
 ```text
 bulma.config.ts
@@ -141,50 +143,38 @@ Create `bulma.config.ts` in your app root:
 export const bulmaConfig = { prefix: 'bui-' } as const
 ```
 
-Create `src/bulma-ui.ts`. Its `../bulma.config` import points to `bulma.config.ts` in your app root:
+### Generate the files with Bun
+
+Create `scripts/styles.ts`. Its `../bulma.config` import points to the root configuration:
 
 ```ts
-'use client'
-import { createBulma } from '@seagreenio/react-bulma'
-import { bulmaConfig } from '../bulma.config'
-
-export const BulmaUI = createBulma(bulmaConfig)
-
-const { BulmaRoot, Box, Button } = BulmaUI
-
-export { BulmaRoot, Box, Button }
-```
-
-### Generate CSS with Bun
-
-Create `scripts/styles.ts`. Its `../bulma.config` import also points to the root configuration:
-
-```ts
-import { buildStyles } from '@seagreenio/react-bulma/styles'
+import { buildStyles, buildUI } from '@seagreenio/react-bulma/styles'
 import { bulmaConfig } from '../bulma.config'
 
 await Bun.write('src/bulma.css', await buildStyles(bulmaConfig))
+await Bun.write('src/bulma-ui.ts', buildUI(bulmaConfig))
 ```
 
-Run this from your app root to generate `src/bulma.css`:
+Run this from your app root:
 
 ```sh
 bun scripts/styles.ts
 ```
 
-### Generate CSS with Node.js
+### Generate the files with Node.js
 
 If you use Node.js 22.18 or later, you can create `scripts/styles.mjs` instead:
 
 ```js
 import { writeFile } from 'node:fs/promises'
-import { buildStyles } from '@seagreenio/react-bulma/styles'
+import { buildStyles, buildUI } from '@seagreenio/react-bulma/styles'
 import { bulmaConfig } from '../bulma.config.ts'
 
 await writeFile('src/bulma.css', await buildStyles(bulmaConfig), 'utf8')
+await writeFile('src/bulma-ui.ts', buildUI(bulmaConfig), 'utf8')
 ```
 
-Run this from your app root to generate the same `src/bulma.css`:
+Run this from your app root:
 
 ```sh
 node scripts/styles.mjs
@@ -192,20 +182,18 @@ node scripts/styles.mjs
 
 ### Use the components in your app
 
-Run the style script before building your app. Import the generated CSS in your app entry in place of the default stylesheet. For an entry inside `src/`:
+The script creates `src/bulma.css` and `src/bulma-ui.ts`. Run it before building your app and whenever you change the configuration. Import the generated CSS in your app entry in place of the default stylesheet. For an entry inside `src/`:
 
 ```ts
 import './bulma.css'
 ```
 
-Use the components and helpers from `BulmaUI`:
+Import the components and helpers you need directly from the generated module:
 
 ```tsx
 'use client'
 
-import { BulmaUI } from './bulma-ui'
-
-const { BulmaRoot, Button, helpers } = BulmaUI
+import { BulmaRoot, Button, helpers } from './bulma-ui'
 
 export function App() {
   return (
@@ -219,7 +207,7 @@ export function App() {
 }
 ```
 
-Create `BulmaUI` outside your components so it is created once. Use its components and helpers with the matching CSS. Prefixes must start with a lowercase English letter and end with `-`. Between them, use lowercase letters and digits, with single hyphens between words, such as `bui-` or `my-bui-`. You can use different prefixes on the same page, including in nested roots.
+These imports support tree-shaking just like the default components. Edit `bulma.config.ts` and regenerate both files instead of editing `bulma-ui.ts`. Prefixes must start with a lowercase English letter and end with `-`. Between them, use lowercase letters and digits, with single hyphens between words, such as `bui-` or `my-bui-`. You can use different prefixes on the same page, including in nested roots.
 
 ## Use server-side rendering (SSR)
 
@@ -254,18 +242,16 @@ import '@seagreenio/react-bulma/styles.css'
 
 With a custom prefix, import components from the `bulma-ui` module you created earlier and load the generated CSS in your root layout.
 
-Add `'use client'` at the top of files that call `createBulma()` or `helpers()`, or use event handlers or interactive state.
+Add `'use client'` at the top of files that call `helpers()`, use event handlers, or manage interactive state.
 
 ## Compose interactive components
 
-Using `BulmaUI` from the [custom-prefix setup](#build-styles-with-a-custom-prefix), you can compose a settings dialog:
+Using the components from the [custom-prefix setup](#build-styles-with-a-custom-prefix), you can compose a settings dialog:
 
 ```tsx
 'use client'
 
-import { BulmaUI } from './bulma-ui'
-
-const {
+import {
   BulmaRoot,
   Modal,
   ModalTrigger,
@@ -276,7 +262,7 @@ const {
   ModalCardBody,
   ModalDescription,
   ModalCardFoot,
-} = BulmaUI
+} from './bulma-ui'
 
 export function Settings() {
   return (
@@ -313,14 +299,12 @@ Use NavbarBrand, NavbarBurger, NavbarMenu, NavbarStart, and NavbarEnd to build a
 
 Columns provides a 12-column layout that adapts to screen width. SmartGrid automatically fits cells using `minColumnWidth`, with gaps set in CSS length units. FixedGrid lets you choose column counts for different container widths.
 
-Using `BulmaUI` from the [custom-prefix setup](#build-styles-with-a-custom-prefix), this grid shows one, two, or three columns as its container gets wider:
+Using the components from the [custom-prefix setup](#build-styles-with-a-custom-prefix), this grid shows one, two, or three columns as its container gets wider:
 
 ```tsx
 'use client'
 
-import { BulmaUI } from './bulma-ui'
-
-const { BulmaRoot, FixedGrid, Cell, Box } = BulmaUI
+import { BulmaRoot, FixedGrid, Cell, Box } from './bulma-ui'
 
 export function Layout() {
   return (

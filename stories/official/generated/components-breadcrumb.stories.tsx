@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -918,7 +916,7 @@ export const Example001 = {
     official: { id: 'components-breadcrumb/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -933,7 +931,7 @@ export const Example002 = {
     official: { id: 'components-breadcrumb/alignment/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} alignment={"centered"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} alignment={"centered"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -948,7 +946,7 @@ export const Example003 = {
     official: { id: 'components-breadcrumb/alignment/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} alignment={"right"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} alignment={"right"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -963,7 +961,7 @@ export const Example004 = {
     official: { id: 'components-breadcrumb/icons/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"\\n        "}<ui.Icon size={"small"}>{"\\n          "}<i aria-hidden={"true"} className={"fas fa-home"} />{"\\n        "}</ui.Icon>{"\\n        "}<span>{"Bulma"}</span>{"\\n      "}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"\\n        "}<ui.Icon size={"small"}>{"\\n          "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n        "}</ui.Icon>{"\\n        "}<span>{"Documentation"}</span>{"\\n      "}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"\\n        "}<ui.Icon size={"small"}>{"\\n          "}<i aria-hidden={"true"} className={"fas fa-puzzle-piece"} />{"\\n        "}</ui.Icon>{"\\n        "}<span>{"Components"}</span>{"\\n      "}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} active>{"\\n        "}<ui.Icon size={"small"}>{"\\n          "}<i aria-hidden={"true"} className={"fas fa-thumbs-up"} />{"\\n        "}</ui.Icon>{"\\n        "}<span>{"Breadcrumb"}</span>{"\\n      "}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"\\n        "}<ui.Icon size={"small"}>{"\\n          "}<i aria-hidden={"true"} className={"fas fa-home"} />{"\\n        "}</ui.Icon>{"\\n        "}<span>{"Bulma"}</span>{"\\n      "}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"\\n        "}<ui.Icon size={"small"}>{"\\n          "}<i aria-hidden={"true"} className={"fas fa-book"} />{"\\n        "}</ui.Icon>{"\\n        "}<span>{"Documentation"}</span>{"\\n      "}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"\\n        "}<ui.Icon size={"small"}>{"\\n          "}<i aria-hidden={"true"} className={"fas fa-puzzle-piece"} />{"\\n        "}</ui.Icon>{"\\n        "}<span>{"Components"}</span>{"\\n      "}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} active>{"\\n        "}<ui.Icon size={"small"}>{"\\n          "}<i aria-hidden={"true"} className={"fas fa-thumbs-up"} />{"\\n        "}</ui.Icon>{"\\n        "}<span>{"Breadcrumb"}</span>{"\\n      "}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -978,7 +976,7 @@ export const Example005 = {
     official: { id: 'components-breadcrumb/alternative-separators/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} separator={"arrow"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} separator={"arrow"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -993,7 +991,7 @@ export const Example006 = {
     official: { id: 'components-breadcrumb/alternative-separators/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} separator={"bullet"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} separator={"bullet"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1008,7 +1006,7 @@ export const Example007 = {
     official: { id: 'components-breadcrumb/alternative-separators/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} separator={"dot"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} separator={"dot"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1023,7 +1021,7 @@ export const Example008 = {
     official: { id: 'components-breadcrumb/alternative-separators/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} separator={"succeeds"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} separator={"succeeds"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1038,7 +1036,7 @@ export const Example009 = {
     official: { id: 'components-breadcrumb/sizes/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} size={"small"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} size={"small"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1053,7 +1051,7 @@ export const Example010 = {
     official: { id: 'components-breadcrumb/sizes/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} size={"medium"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} size={"medium"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1068,7 +1066,7 @@ export const Example011 = {
     official: { id: 'components-breadcrumb/sizes/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} size={"large"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Breadcrumb aria-label={"breadcrumbs"} size={"large"}>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Bulma"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Documentation"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"}>{"Components"}</ui.BreadcrumbItem>{"\\n    "}<ui.BreadcrumbItem href={"#"} aria-current={"page"} active>{"Breadcrumb"}</ui.BreadcrumbItem>{"\\n  "}</ui.Breadcrumb>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

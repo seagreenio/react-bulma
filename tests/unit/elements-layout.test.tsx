@@ -1,9 +1,9 @@
 import { describe, expect, test } from 'bun:test'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { createBulma } from '../../src'
+import * as ui from '../../src'
+import { generateTestUI } from './configured-ui'
 
-const ui = createBulma()
-const custom = createBulma({ prefix: 'acme-' })
+const custom = await generateTestUI({ prefix: 'acme-' })
 
 describe('elements', () => {
   test('simple elements retain native content, helper zero and caller classes', () => {

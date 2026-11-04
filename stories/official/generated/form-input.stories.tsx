@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -2333,7 +2331,7 @@ export const Example001 = {
     official: { id: 'form-input/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Input type={"text"} placeholder={"Text input"} />{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<input class=\\"input\\" type=\\"text\\" placeholder=\\"Text input\\" />\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Input type={"text"} placeholder={"Text input"} />{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"} className={"bd-highlight-full"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<input class=\\"input\\" type=\\"text\\" placeholder=\\"Text input\\" />\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2348,7 +2346,7 @@ export const Example002 = {
     official: { id: 'form-input/colors/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Link input"} color={"link"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Link input"} color={"link"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2363,7 +2361,7 @@ export const Example003 = {
     official: { id: 'form-input/colors/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Primary input"} color={"primary"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Primary input"} color={"primary"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2378,7 +2376,7 @@ export const Example004 = {
     official: { id: 'form-input/colors/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Info input"} color={"info"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Info input"} color={"info"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2393,7 +2391,7 @@ export const Example005 = {
     official: { id: 'form-input/colors/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Success input"} color={"success"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Success input"} color={"success"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2408,7 +2406,7 @@ export const Example006 = {
     official: { id: 'form-input/colors/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Warning input"} color={"warning"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Warning input"} color={"warning"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2423,7 +2421,7 @@ export const Example007 = {
     official: { id: 'form-input/colors/006' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Danger input"} color={"danger"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Danger input"} color={"danger"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2438,7 +2436,7 @@ export const Example008 = {
     official: { id: 'form-input/sizes/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Small input"} size={"small"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Small input"} size={"small"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2453,7 +2451,7 @@ export const Example009 = {
     official: { id: 'form-input/sizes/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Normal input"} size={"normal"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Normal input"} size={"normal"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2468,7 +2466,7 @@ export const Example010 = {
     official: { id: 'form-input/sizes/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Medium input"} size={"medium"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Medium input"} size={"medium"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2483,7 +2481,7 @@ export const Example011 = {
     official: { id: 'form-input/sizes/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Large input"} size={"large"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Input type={"text"} placeholder={"Large input"} size={"large"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2498,7 +2496,7 @@ export const Example012 = {
     official: { id: 'form-input/styles/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example012Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Input type={"text"} placeholder={"Rounded input"} rounded />{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<input class=\\"input is-rounded\\" type=\\"text\\" placeholder=\\"Rounded input\\" />\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Input type={"text"} placeholder={"Rounded input"} rounded />{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<input class=\\"input is-rounded\\" type=\\"text\\" placeholder=\\"Rounded input\\" />\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2513,7 +2511,7 @@ export const Example013 = {
     official: { id: 'form-input/normal/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example013Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} placeholder={"Normal input"} />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <input class=\\"input\\" type=\\"text\\" placeholder=\\"Normal input\\" />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} placeholder={"Normal input"} />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <input class=\\"input\\" type=\\"text\\" placeholder=\\"Normal input\\" />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2528,7 +2526,7 @@ export const Example014 = {
     official: { id: 'form-input/hover/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} placeholder={"Hovered input"} state={"hovered"} />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <input class=\\"input is-hovered\\" type=\\"text\\" placeholder=\\"Hovered input\\" />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} placeholder={"Hovered input"} state={"hovered"} />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <input class=\\"input is-hovered\\" type=\\"text\\" placeholder=\\"Hovered input\\" />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2543,7 +2541,7 @@ export const Example015 = {
     official: { id: 'form-input/focus/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example015Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} placeholder={"Focused input"} state={"focused"} />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <input class=\\"input is-focused\\" type=\\"text\\" placeholder=\\"Focused input\\" />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} placeholder={"Focused input"} state={"focused"} />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <input class=\\"input is-focused\\" type=\\"text\\" placeholder=\\"Focused input\\" />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2558,7 +2556,7 @@ export const Example016 = {
     official: { id: 'form-input/loading/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example016Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control loading>{"\\n  "}<ui.Input type={"text"} placeholder={"Loading input"} />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control is-loading\\">\\n  <input class=\\"input\\" type=\\"text\\" placeholder=\\"Loading input\\" />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control loading>{"\\n  "}<ui.Input type={"text"} placeholder={"Loading input"} />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control is-loading\\">\\n  <input class=\\"input\\" type=\\"text\\" placeholder=\\"Loading input\\" />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2573,7 +2571,7 @@ export const Example017 = {
     official: { id: 'form-input/loading/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example017Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        You can resize the loading spinner by appending "}<code>{"is-small"}</code>{", "}<code>{"is-medium"}</code>{" or\\n        "}<code>{"is-large"}</code>{" to the "}<code>{"control"}</code>{" container.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Field>{"\\n  "}<ui.Control size={"small"} loading>{"\\n    "}<ui.Input type={"text"} placeholder={"Small loading input"} size={"small"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control loading>{"\\n    "}<ui.Input type={"text"} placeholder={"Normal loading input"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control size={"medium"} loading>{"\\n    "}<ui.Input type={"text"} placeholder={"Medium loading input"} size={"medium"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control size={"large"} loading>{"\\n    "}<ui.Input type={"text"} placeholder={"Large loading input"} size={"large"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"field\\">\\n  <div class=\\"control is-small is-loading\\">\\n    <input\\n      class=\\"input is-small\\"\\n      type=\\"text\\"\\n      placeholder=\\"Small loading input\\"\\n    />\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-loading\\">\\n    <input class=\\"input\\" type=\\"text\\" placeholder=\\"Normal loading input\\" />\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-medium is-loading\\">\\n    <input\\n      class=\\"input is-medium\\"\\n      type=\\"text\\"\\n      placeholder=\\"Medium loading input\\"\\n    />\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-large is-loading\\">\\n    <input\\n      class=\\"input is-large\\"\\n      type=\\"text\\"\\n      placeholder=\\"Large loading input\\"\\n    />\\n  </div>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        You can resize the loading spinner by appending "}<code>{"is-small"}</code>{", "}<code>{"is-medium"}</code>{" or\\n        "}<code>{"is-large"}</code>{" to the "}<code>{"control"}</code>{" container.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Field>{"\\n  "}<ui.Control size={"small"} loading>{"\\n    "}<ui.Input type={"text"} placeholder={"Small loading input"} size={"small"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control loading>{"\\n    "}<ui.Input type={"text"} placeholder={"Normal loading input"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control size={"medium"} loading>{"\\n    "}<ui.Input type={"text"} placeholder={"Medium loading input"} size={"medium"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control size={"large"} loading>{"\\n    "}<ui.Input type={"text"} placeholder={"Large loading input"} size={"large"} />{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"field\\">\\n  <div class=\\"control is-small is-loading\\">\\n    <input\\n      class=\\"input is-small\\"\\n      type=\\"text\\"\\n      placeholder=\\"Small loading input\\"\\n    />\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-loading\\">\\n    <input class=\\"input\\" type=\\"text\\" placeholder=\\"Normal loading input\\" />\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-medium is-loading\\">\\n    <input\\n      class=\\"input is-medium\\"\\n      type=\\"text\\"\\n      placeholder=\\"Medium loading input\\"\\n    />\\n  </div>\\n</div>\\n<div class=\\"field\\">\\n  <div class=\\"control is-large is-loading\\">\\n    <input\\n      class=\\"input is-large\\"\\n      type=\\"text\\"\\n      placeholder=\\"Large loading input\\"\\n    />\\n  </div>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2588,7 +2586,7 @@ export const Example018 = {
     official: { id: 'form-input/disabled/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example018Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} placeholder={"Disabled input"} disabled />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <input class=\\"input\\" type=\\"text\\" placeholder=\\"Disabled input\\" disabled />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} placeholder={"Disabled input"} disabled />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <input class=\\"input\\" type=\\"text\\" placeholder=\\"Disabled input\\" disabled />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2603,7 +2601,7 @@ export const Example019 = {
     official: { id: 'form-input/readonly-and-static-inputs/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example019Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} defaultValue={"This text is readonly"} readOnly />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <input class=\\"input\\" type=\\"text\\" value=\\"This text is readonly\\" readonly />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example019Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control>{"\\n  "}<ui.Input type={"text"} defaultValue={"This text is readonly"} readOnly />{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control\\">\\n  <input class=\\"input\\" type=\\"text\\" value=\\"This text is readonly\\" readonly />\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2618,7 +2616,7 @@ export const Example020 = {
     official: { id: 'form-input/readonly-and-static-inputs/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example020Demo() {\n  return (<><div className={"bd-example"}>{"\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"normal"}>{"\\n    "}<ui.Label>{"From"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control as={"p"}>{"\\n        "}<ui.Input type={"email"} defaultValue={"me@example.com"} readOnly static />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"normal"}>{"\\n    "}<ui.Label>{"To"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control as={"p"}>{"\\n        "}<ui.Input type={"email"} placeholder={"Recipient email"} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n"}</div></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example020Demo() {\n  return (<><div className={"bd-example"}>{"\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"normal"}>{"\\n    "}<ui.Label>{"From"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control as={"p"}>{"\\n        "}<ui.Input type={"email"} defaultValue={"me@example.com"} readOnly static />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n\\n"}<ui.Field horizontal>{"\\n  "}<ui.FieldLabel size={"normal"}>{"\\n    "}<ui.Label>{"To"}</ui.Label>{"\\n  "}</ui.FieldLabel>{"\\n  "}<ui.FieldBody>{"\\n    "}<ui.Field>{"\\n      "}<ui.Control as={"p"}>{"\\n        "}<ui.Input type={"email"} placeholder={"Recipient email"} />{"\\n      "}</ui.Control>{"\\n    "}</ui.Field>{"\\n  "}</ui.FieldBody>{"\\n"}</ui.Field>{"\\n"}</div></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2633,7 +2631,7 @@ export const Example021 = {
     official: { id: 'form-input/with-font-awesome-icons/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example021Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"both"} as={"p"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Email"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"left"} as={"p"}>{"\\n    "}<ui.Input type={"password"} placeholder={"Password"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-lock"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"field\\">\\n  <p class=\\"control has-icons-left has-icons-right\\">\\n    <input class=\\"input\\" type=\\"email\\" placeholder=\\"Email\\" />\\n    <span class=\\"icon is-small is-left\\">\\n      <i class=\\"fas fa-envelope\\"></i>\\n    </span>\\n    <span class=\\"icon is-small is-right\\">\\n      <i class=\\"fas fa-check\\"></i>\\n    </span>\\n  </p>\\n</div>\\n<div class=\\"field\\">\\n  <p class=\\"control has-icons-left\\">\\n    <input class=\\"input\\" type=\\"password\\" placeholder=\\"Password\\" />\\n    <span class=\\"icon is-small is-left\\">\\n      <i class=\\"fas fa-lock\\"></i>\\n    </span>\\n  </p>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example021Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"both"} as={"p"}>{"\\n    "}<ui.Input type={"email"} placeholder={"Email"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-envelope"} />{"\\n    "}</ui.Icon>{"\\n    "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n      "}<i className={"fas fa-check"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}<ui.Field>{"\\n  "}<ui.Control icons={"left"} as={"p"}>{"\\n    "}<ui.Input type={"password"} placeholder={"Password"} />{"\\n    "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n      "}<i className={"fas fa-lock"} />{"\\n    "}</ui.Icon>{"\\n  "}</ui.Control>{"\\n"}</ui.Field>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"field\\">\\n  <p class=\\"control has-icons-left has-icons-right\\">\\n    <input class=\\"input\\" type=\\"email\\" placeholder=\\"Email\\" />\\n    <span class=\\"icon is-small is-left\\">\\n      <i class=\\"fas fa-envelope\\"></i>\\n    </span>\\n    <span class=\\"icon is-small is-right\\">\\n      <i class=\\"fas fa-check\\"></i>\\n    </span>\\n  </p>\\n</div>\\n<div class=\\"field\\">\\n  <p class=\\"control has-icons-left\\">\\n    <input class=\\"input\\" type=\\"password\\" placeholder=\\"Password\\" />\\n    <span class=\\"icon is-small is-left\\">\\n      <i class=\\"fas fa-lock\\"></i>\\n    </span>\\n  </p>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2648,7 +2646,7 @@ export const Example022 = {
     official: { id: 'form-input/with-font-awesome-icons/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example022Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        If the control contains an icon, Bulma will make sure the icon remains\\n        "}<strong>{"centered"}</strong>{", no matter the size of the input "}<em>{"or"}</em>{" of the icon.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Control icons={"both"}>{"\\n  "}<ui.Input type={"email"} placeholder={"Email"} size={"small"} />{"\\n  "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-envelope"} />{"\\n  "}</ui.Icon>{"\\n  "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n    "}<i className={"fas fa-check"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left has-icons-right\\">\\n  <input class=\\"input is-small\\" type=\\"email\\" placeholder=\\"Email\\" />\\n  <span class=\\"icon is-small is-left\\">\\n    <i class=\\"fas fa-envelope\\"></i>\\n  </span>\\n  <span class=\\"icon is-small is-right\\">\\n    <i class=\\"fas fa-check\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example022Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<ui.Content>{"\\n      "}<p>{"\\n        If the control contains an icon, Bulma will make sure the icon remains\\n        "}<strong>{"centered"}</strong>{", no matter the size of the input "}<em>{"or"}</em>{" of the icon.\\n      "}</p>{"\\n    "}</ui.Content>{"\\n    \\n"}<ui.Control icons={"both"}>{"\\n  "}<ui.Input type={"email"} placeholder={"Email"} size={"small"} />{"\\n  "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-envelope"} />{"\\n  "}</ui.Icon>{"\\n  "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n    "}<i className={"fas fa-check"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n\\n  "}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left has-icons-right\\">\\n  <input class=\\"input is-small\\" type=\\"email\\" placeholder=\\"Email\\" />\\n  <span class=\\"icon is-small is-left\\">\\n    <i class=\\"fas fa-envelope\\"></i>\\n  </span>\\n  <span class=\\"icon is-small is-right\\">\\n    <i class=\\"fas fa-check\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2663,7 +2661,7 @@ export const Example023 = {
     official: { id: 'form-input/with-font-awesome-icons/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example023Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"both"}>{"\\n  "}<ui.Input type={"email"} placeholder={"Email"} />{"\\n  "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-envelope"} />{"\\n  "}</ui.Icon>{"\\n  "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n    "}<i className={"fas fa-check"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left has-icons-right\\">\\n  <input class=\\"input\\" type=\\"email\\" placeholder=\\"Email\\" />\\n  <span class=\\"icon is-small is-left\\">\\n    <i class=\\"fas fa-envelope\\"></i>\\n  </span>\\n  <span class=\\"icon is-small is-right\\">\\n    <i class=\\"fas fa-check\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example023Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"both"}>{"\\n  "}<ui.Input type={"email"} placeholder={"Email"} />{"\\n  "}<ui.Icon size={"small"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-envelope"} />{"\\n  "}</ui.Icon>{"\\n  "}<ui.Icon size={"small"} className={"rb-is-right"}>{"\\n    "}<i className={"fas fa-check"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left has-icons-right\\">\\n  <input class=\\"input\\" type=\\"email\\" placeholder=\\"Email\\" />\\n  <span class=\\"icon is-small is-left\\">\\n    <i class=\\"fas fa-envelope\\"></i>\\n  </span>\\n  <span class=\\"icon is-small is-right\\">\\n    <i class=\\"fas fa-check\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2678,7 +2676,7 @@ export const Example024 = {
     official: { id: 'form-input/with-font-awesome-icons/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example024Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"both"}>{"\\n  "}<ui.Input type={"email"} placeholder={"Email"} size={"medium"} />{"\\n  "}<ui.Icon className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-envelope"} />{"\\n  "}</ui.Icon>{"\\n  "}<ui.Icon className={"rb-is-right"}>{"\\n    "}<i className={"fas fa-check"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left has-icons-right\\">\\n  <input class=\\"input is-medium\\" type=\\"email\\" placeholder=\\"Email\\" />\\n  <span class=\\"icon is-left\\">\\n    <i class=\\"fas fa-envelope\\"></i>\\n  </span>\\n  <span class=\\"icon is-right\\">\\n    <i class=\\"fas fa-check\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example024Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"both"}>{"\\n  "}<ui.Input type={"email"} placeholder={"Email"} size={"medium"} />{"\\n  "}<ui.Icon className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-envelope"} />{"\\n  "}</ui.Icon>{"\\n  "}<ui.Icon className={"rb-is-right"}>{"\\n    "}<i className={"fas fa-check"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left has-icons-right\\">\\n  <input class=\\"input is-medium\\" type=\\"email\\" placeholder=\\"Email\\" />\\n  <span class=\\"icon is-left\\">\\n    <i class=\\"fas fa-envelope\\"></i>\\n  </span>\\n  <span class=\\"icon is-right\\">\\n    <i class=\\"fas fa-check\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2693,7 +2691,7 @@ export const Example025 = {
     official: { id: 'form-input/with-font-awesome-icons/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example025Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"both"}>{"\\n  "}<ui.Input type={"email"} placeholder={"Email"} size={"large"} />{"\\n  "}<ui.Icon size={"medium"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-envelope"} />{"\\n  "}</ui.Icon>{"\\n  "}<ui.Icon size={"medium"} className={"rb-is-right"}>{"\\n    "}<i className={"fas fa-check"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left has-icons-right\\">\\n  <input class=\\"input is-large\\" type=\\"email\\" placeholder=\\"Email\\" />\\n  <span class=\\"icon is-medium is-left\\">\\n    <i class=\\"fas fa-envelope\\"></i>\\n  </span>\\n  <span class=\\"icon is-medium is-right\\">\\n    <i class=\\"fas fa-check\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example025Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n"}<ui.Control icons={"both"}>{"\\n  "}<ui.Input type={"email"} placeholder={"Email"} size={"large"} />{"\\n  "}<ui.Icon size={"medium"} className={"rb-is-left"}>{"\\n    "}<i className={"fas fa-envelope"} />{"\\n  "}</ui.Icon>{"\\n  "}<ui.Icon size={"medium"} className={"rb-is-right"}>{"\\n    "}<i className={"fas fa-check"} />{"\\n  "}</ui.Icon>{"\\n"}</ui.Control>{"\\n"}</ui.Column>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<div className={"highlight"}><pre><code className={"language-html"}>{"\\n<div class=\\"control has-icons-left has-icons-right\\">\\n  <input class=\\"input is-large\\" type=\\"email\\" placeholder=\\"Email\\" />\\n  <span class=\\"icon is-medium is-left\\">\\n    <i class=\\"fas fa-envelope\\"></i>\\n  </span>\\n  <span class=\\"icon is-medium is-right\\">\\n    <i class=\\"fas fa-check\\"></i>\\n  </span>\\n</div>\\n"}</code></pre></div>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

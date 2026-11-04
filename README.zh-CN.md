@@ -63,6 +63,8 @@ export function App() {
 
 样式依赖 CSS `@scope` 和容器查询，目标浏览器必须支持这两项功能。外层组件库样式不会进入嵌套的 Bulma 根组件，但页面自身的选择器和继承样式仍可能影响组件。
 
+直接导入需要的组件，打包工具就可以通过 tree-shaking 去掉没用到的组件代码。下面生成的自定义前缀模块也支持这种用法。CSS 是整体编译的，不按单个组件划分。
+
 ## 调整组件样式和属性
 
 你可以用 `color` 设置按钮颜色，用 `rounded` 设置圆角。间距、文字样式、颜色、显示与隐藏，以及 Flex 布局都可以通过 `helpers` 设置。使用 TypeScript 时，编辑器会提示可用的属性和值。你也可以用 `className` 添加自己的 CSS 类：
@@ -80,7 +82,7 @@ export function App() {
 
 上面的 `mt: 0` 会生成 `rb-mt-0`，将上外边距设为 0。设置 `hidden: false` 时，不会添加隐藏类。你传入的 `className="save-action"` 会与组件的类名一起使用，保持原样，不会变成 `rb-save-action`。
 
-给 `div`、`p` 等 HTML 元素设置相同的样式时，可以调用 `helpers()`，再把返回的类名传给 `className`。这个函数只生成类名，不会修改元素或插入 CSS。生成的类名默认以 `rb-` 开头；如果使用自定义 `BulmaUI` 中的 `helpers`，则会使用你配置的前缀：
+给 `div`、`p` 等 HTML 元素设置相同的样式时，可以调用 `helpers()`，再把返回的类名传给 `className`。这个函数只生成类名，不会修改元素或插入 CSS。生成的类名默认以 `rb-` 开头；如果从生成的自定义前缀模块导入 `helpers`，则会使用你配置的前缀：
 
 ```tsx
 'use client'
@@ -123,7 +125,7 @@ export function Summary() {
 
 ## 自定义前缀并构建样式
 
-如果要替换默认的 `rb-` 前缀，将同一份配置传给 `createBulma` 和 `buildStyles`。下面使用 `bui-` 作为前缀，生成 CSS 时选择 Bun 或 Node.js 中的一种即可：
+如果要替换默认的 `rb-` 前缀，用同一份配置生成 CSS 和组件模块。下面使用 `bui-` 作为前缀，选择 Bun 或 Node.js 中的一种生成这两个文件：
 
 ```text
 bulma.config.ts
@@ -141,71 +143,57 @@ src/
 export const bulmaConfig = { prefix: 'bui-' } as const
 ```
 
-创建 `src/bulma-ui.ts`。其中 `../bulma.config` 指向根目录的 `bulma.config.ts`：
+### 使用 Bun 生成文件
+
+创建 `scripts/styles.ts`。其中 `../bulma.config` 指向根目录的配置文件：
 
 ```ts
-'use client'
-import { createBulma } from '@seagreenio/react-bulma'
-import { bulmaConfig } from '../bulma.config'
-
-export const BulmaUI = createBulma(bulmaConfig)
-
-const { BulmaRoot, Box, Button } = BulmaUI
-
-export { BulmaRoot, Box, Button }
-```
-
-### 使用 Bun 生成 CSS
-
-创建 `scripts/styles.ts`。其中 `../bulma.config` 同样指向根目录的配置：
-
-```ts
-import { buildStyles } from '@seagreenio/react-bulma/styles'
+import { buildStyles, buildUI } from '@seagreenio/react-bulma/styles'
 import { bulmaConfig } from '../bulma.config'
 
 await Bun.write('src/bulma.css', await buildStyles(bulmaConfig))
+await Bun.write('src/bulma-ui.ts', buildUI(bulmaConfig))
 ```
 
-在应用根目录运行，生成 `src/bulma.css`：
+在应用根目录运行：
 
 ```sh
 bun scripts/styles.ts
 ```
 
-### 使用 Node.js 生成 CSS
+### 使用 Node.js 生成文件
 
-如果使用 Node.js 22.18 或更高版本，可以改为创建 `scripts/styles.mjs`：
+如果你使用 Node.js 22.18 或更新版本，也可以创建 `scripts/styles.mjs`：
 
 ```js
 import { writeFile } from 'node:fs/promises'
-import { buildStyles } from '@seagreenio/react-bulma/styles'
+import { buildStyles, buildUI } from '@seagreenio/react-bulma/styles'
 import { bulmaConfig } from '../bulma.config.ts'
 
 await writeFile('src/bulma.css', await buildStyles(bulmaConfig), 'utf8')
+await writeFile('src/bulma-ui.ts', buildUI(bulmaConfig), 'utf8')
 ```
 
-在应用根目录运行，生成同一个 `src/bulma.css`：
+在应用根目录运行：
 
 ```sh
 node scripts/styles.mjs
 ```
 
-### 在应用中使用
+### 在应用中使用组件
 
-每次构建应用前，先运行样式脚本。在应用入口引入生成的 CSS，替换默认样式。入口文件位于 `src/` 下时：
+脚本会生成 `src/bulma.css` 和 `src/bulma-ui.ts`。构建应用之前先运行脚本，修改配置后也需要重新运行。在应用入口引入生成的 CSS，替换默认样式表。入口文件位于 `src/` 时：
 
 ```ts
 import './bulma.css'
 ```
 
-接下来使用 `BulmaUI` 中的组件和 helpers：
+从生成的模块中直接导入需要的组件和 helpers：
 
 ```tsx
 'use client'
 
-import { BulmaUI } from './bulma-ui'
-
-const { BulmaRoot, Button, helpers } = BulmaUI
+import { BulmaRoot, Button, helpers } from './bulma-ui'
 
 export function App() {
   return (
@@ -219,7 +207,7 @@ export function App() {
 }
 ```
 
-在组件外创建 `BulmaUI`，避免每次渲染时重新创建。使用其中的组件和 helpers，并引入相同前缀的 CSS。前缀以小写英文字母开头、以 `-` 结尾，中间可以使用小写字母、数字和分隔单词的单个连字符，例如 `bui-`、`my-bui-`。同一页面可以使用多个前缀，也可以嵌套使用。
+这些导入和默认组件一样支持 tree-shaking。需要调整配置时，修改 `bulma.config.ts` 并重新生成两个文件，不要直接修改 `bulma-ui.ts`。前缀以小写英文字母开头、以 `-` 结尾，中间可以使用小写字母、数字和分隔单词的单个连字符，例如 `bui-`、`my-bui-`。同一页面可以使用多个前缀，也可以嵌套使用。
 
 ## 使用服务端渲染（SSR）
 
@@ -254,18 +242,16 @@ import '@seagreenio/react-bulma/styles.css'
 
 使用自定义前缀时，从前面创建的 `bulma-ui` 模块导入组件，并在根布局中引入生成的 CSS。
 
-调用 `createBulma()`、`helpers()`，或使用事件处理函数、交互状态的文件，需要在顶部添加 `'use client'`。
+调用 `helpers()`、使用事件处理函数或交互状态的文件，需要在顶部添加 `'use client'`。
 
 ## 组合交互组件
 
-使用[自定义前缀配置](#自定义前缀并构建样式)中创建的 `BulmaUI`，可以这样组合一个设置弹窗：
+使用[自定义前缀配置](#自定义前缀并构建样式)中生成的组件，可以这样组合一个设置弹窗：
 
 ```tsx
 'use client'
 
-import { BulmaUI } from './bulma-ui'
-
-const {
+import {
   BulmaRoot,
   Modal,
   ModalTrigger,
@@ -276,7 +262,7 @@ const {
   ModalCardBody,
   ModalDescription,
   ModalCardFoot,
-} = BulmaUI
+} from './bulma-ui'
 
 export function Settings() {
   return (
@@ -313,14 +299,12 @@ Navbar 搭配 NavbarBrand、NavbarBurger、NavbarMenu、NavbarStart 和 NavbarEn
 
 Columns 提供 12 列布局，可以随屏幕宽度调整。SmartGrid 根据 `minColumnWidth` 自动排列单元格，间距可以用 CSS 长度单位设置。FixedGrid 则可以为不同的容器宽度指定列数。
 
-下面沿用[自定义前缀配置](#自定义前缀并构建样式)中的 `BulmaUI`，让网格随容器变宽，依次显示一列、两列和三列：
+下面沿用[自定义前缀配置](#自定义前缀并构建样式)中生成的组件，让网格随容器变宽，依次显示一列、两列和三列：
 
 ```tsx
 'use client'
 
-import { BulmaUI } from './bulma-ui'
-
-const { BulmaRoot, FixedGrid, Cell, Box } = BulmaUI
+import { BulmaRoot, FixedGrid, Cell, Box } from './bulma-ui'
 
 export function Layout() {
   return (

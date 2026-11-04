@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -306,7 +304,7 @@ export const Example001 = {
     official: { id: 'layout-footer/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Footer>{"\\n  "}<ui.Content helpers={{"textAlign":"center"}}>{"\\n    "}<p>{"\\n      "}<strong>{"Bulma"}</strong>{" by "}<a href={"https://jgthms.com/"}>{"Jeremy Thomas"}</a>{".\\n      The source code is licensed\\n      "}<a href={"https://opensource.org/license/mit"}>{"MIT"}</a>{". The\\n      website content is licensed\\n      "}<a href={"https://creativecommons.org/licenses/by-nc-sa/4.0//"}>{"CC BY NC SA 4.0"}</a>{".\\n    "}</p>{"\\n  "}</ui.Content>{"\\n"}</ui.Footer>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Footer>{"\\n  "}<ui.Content helpers={{"textAlign":"center"}}>{"\\n    "}<p>{"\\n      "}<strong>{"Bulma"}</strong>{" by "}<a href={"https://jgthms.com/"}>{"Jeremy Thomas"}</a>{".\\n      The source code is licensed\\n      "}<a href={"https://opensource.org/license/mit"}>{"MIT"}</a>{". The\\n      website content is licensed\\n      "}<a href={"https://creativecommons.org/licenses/by-nc-sa/4.0//"}>{"CC BY NC SA 4.0"}</a>{".\\n    "}</p>{"\\n  "}</ui.Content>{"\\n"}</ui.Footer>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

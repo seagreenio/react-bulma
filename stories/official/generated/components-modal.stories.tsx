@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -1303,7 +1301,7 @@ export const Example001 = {
     official: { id: 'components-modal/2-add-the-html-for-the-trigger/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<><ui.Block data-target={"modal-js-example"}>{"\\n  \\n"}<button data-target={"modal-js-example"} className={"js-modal-trigger"}>{"\\n  Open JS example modal\\n"}</button>{"\\n\\n"}</ui.Block><ui.Modal defaultOpen={false}><ui.ModalContent wrapperProps={{ id: "modal-js-example" }} close={<><ui.ModalClose aria-label={"close"} className={"rb-is-large"} /></>}>{"\\n    "}<ui.Box>{"\\n      "}<p>{"Modal JS example"}</p>{"\\n      "}{"\\n    "}</ui.Box>{"\\n  "}</ui.ModalContent></ui.Modal></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Block data-target={"modal-js-example"}>{"\\n  \\n"}<button data-target={"modal-js-example"} className={"js-modal-trigger"}>{"\\n  Open JS example modal\\n"}</button>{"\\n\\n"}</ui.Block><ui.Modal defaultOpen={false}><ui.ModalContent wrapperProps={{ id: "modal-js-example" }} close={<><ui.ModalClose aria-label={"close"} className={"rb-is-large"} /></>}>{"\\n    "}<ui.Box>{"\\n      "}<p>{"Modal JS example"}</p>{"\\n      "}{"\\n    "}</ui.Box>{"\\n  "}</ui.ModalContent></ui.Modal></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1318,7 +1316,7 @@ export const Example002 = {
     official: { id: 'components-modal/2-add-the-html-for-the-trigger/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<><ui.Block data-target={"modal-js-example"}>{"\\n  \\n"}<ui.Button data-target={"modal-js-example"} color={"primary"} className={"js-modal-trigger"}>{"\\n  Open JS example modal\\n"}</ui.Button>{"\\n\\n"}</ui.Block><ui.Modal defaultOpen={false}><ui.ModalContent wrapperProps={{ id: "modal-js-example" }} close={<><ui.ModalClose aria-label={"close"} className={"rb-is-large"} /></>}>{"\\n    "}<ui.Box>{"\\n      "}<p>{"Modal JS example"}</p>{"\\n      "}{"\\n    "}</ui.Box>{"\\n  "}</ui.ModalContent></ui.Modal></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Block data-target={"modal-js-example"}>{"\\n  \\n"}<ui.Button data-target={"modal-js-example"} color={"primary"} className={"js-modal-trigger"}>{"\\n  Open JS example modal\\n"}</ui.Button>{"\\n\\n"}</ui.Block><ui.Modal defaultOpen={false}><ui.ModalContent wrapperProps={{ id: "modal-js-example" }} close={<><ui.ModalClose aria-label={"close"} className={"rb-is-large"} /></>}>{"\\n    "}<ui.Box>{"\\n      "}<p>{"Modal JS example"}</p>{"\\n      "}{"\\n    "}</ui.Box>{"\\n  "}</ui.ModalContent></ui.Modal></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

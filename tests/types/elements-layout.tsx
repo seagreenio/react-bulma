@@ -1,7 +1,6 @@
 import { createRef } from 'react'
-import { createBulma } from '../../src'
+import * as ui from '../../src'
 
-const ui = createBulma()
 const imageRef = createRef<HTMLImageElement>()
 const figureRef = createRef<HTMLElement>()
 const headingRef = createRef<HTMLHeadingElement>()

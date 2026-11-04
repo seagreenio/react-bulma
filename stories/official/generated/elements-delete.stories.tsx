@@ -2,10 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
 import { useState } from 'react'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -429,7 +427,7 @@ export const Example001 = {
     official: { id: 'elements-delete/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Delete />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Delete />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -444,7 +442,7 @@ export const Example002 = {
     official: { id: 'elements-delete/sizes/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Delete size={"small"} />{"\\n"}<ui.Delete />{"\\n"}<ui.Delete size={"medium"} />{"\\n"}<ui.Delete size={"large"} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Delete size={"small"} />{"\\n"}<ui.Delete />{"\\n"}<ui.Delete size={"medium"} />{"\\n"}<ui.Delete size={"large"} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -459,7 +457,7 @@ export const Example003 = {
     official: { id: 'elements-delete/combinations/001' },
     docs: {
       source: {
-        code: 'import { useState } from \'react\';\nimport { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true);\n  const [visible2, setVisible2] = useState(true);\n  return (<>{"\\n        \\n          \\n"}<ui.Block>{"\\n  "}<ui.Tag color={"success"}>{"\\n    Hello World\\n    "}<ui.Delete size={"small"} />{"\\n  "}</ui.Tag>{"\\n"}</ui.Block>{"\\n\\n"}{visible1 && (<ui.Notification color={"danger"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit\\n  amet, consectetur adipiscing elit\\n"}</ui.Notification>)}{"\\n\\n"}{visible2 && (<ui.Message color={"info"}>{"\\n  "}<ui.MessageHeader>{"\\n    Info\\n    "}<ui.Delete onClick={() => setVisible2(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus\\n    mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit\\n    amet fringilla. Nullam gravida purus diam, et dictum felis venenatis\\n    efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu\\n    et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna\\n    a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { useState } from \'react\';\nimport * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  const [visible1, setVisible1] = useState(true);\n  const [visible2, setVisible2] = useState(true);\n  return (<>{"\\n        \\n          \\n"}<ui.Block>{"\\n  "}<ui.Tag color={"success"}>{"\\n    Hello World\\n    "}<ui.Delete size={"small"} />{"\\n  "}</ui.Tag>{"\\n"}</ui.Block>{"\\n\\n"}{visible1 && (<ui.Notification color={"danger"}>{"\\n  "}<ui.Delete onClick={() => setVisible1(false)} />{"\\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit\\n  amet, consectetur adipiscing elit\\n"}</ui.Notification>)}{"\\n\\n"}{visible2 && (<ui.Message color={"info"}>{"\\n  "}<ui.MessageHeader>{"\\n    Info\\n    "}<ui.Delete onClick={() => setVisible2(false)} />{"\\n  "}</ui.MessageHeader>{"\\n  "}<ui.MessageBody>{"\\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus\\n    mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit\\n    amet fringilla. Nullam gravida purus diam, et dictum felis venenatis\\n    efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu\\n    et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna\\n    a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.\\n  "}</ui.MessageBody>{"\\n"}</ui.Message>)}{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

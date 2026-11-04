@@ -1,8 +1,6 @@
 import { useState, type CSSProperties } from 'react'
-import { createBulma } from '../../src'
-
-const ui = createBulma()
-const custom = createBulma({ prefix: 'acme-' })
+import * as ui from '../../src'
+import * as custom from '../../.generated/custom-ui'
 
 export function InteractiveFixture() {
   const [selection, setSelection] = useState('None')

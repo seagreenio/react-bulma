@@ -1,5 +1,5 @@
 import { createElement, type ReactElement } from 'react'
-import type { Prefix } from './config'
+import { defaultPrefix, type Prefix } from './config'
 import {
   classNames,
   forwardRefComponent,
@@ -146,14 +146,39 @@ export interface SkeletonLinesProps extends Omit<
   lines?: number
 }
 
-export function createElements(prefix: Prefix) {
-  const Block = styledElement(prefix, 'div', 'block', ['p'])
-  const Box = styledElement(prefix, 'div', 'box', ['form'])
-  const IconText = styledElement(prefix, 'span', 'icon-text', ['div'])
-  const TableContainer = styledElement(prefix, 'div', 'table-container')
-  const Loader = styledElement(prefix, 'span', 'loader')
+export function createBlock(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'block', ['p'])
+}
 
-  const Buttons = forwardRefComponent(function Buttons({
+export const Block = /* @__PURE__ */ createBlock(defaultPrefix)
+
+export function createBox(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'box', ['form'])
+}
+
+export const Box = /* @__PURE__ */ createBox(defaultPrefix)
+
+export function createIconText(prefix: Prefix) {
+  return styledElement(prefix, 'span', 'icon-text', ['div'])
+}
+
+export const IconText = /* @__PURE__ */ createIconText(defaultPrefix)
+
+export function createTableContainer(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'table-container')
+}
+
+export const TableContainer =
+  /* @__PURE__ */ createTableContainer(defaultPrefix)
+
+export function createLoader(prefix: Prefix) {
+  return styledElement(prefix, 'span', 'loader')
+}
+
+export const Loader = /* @__PURE__ */ createLoader(defaultPrefix)
+
+export function createButtons(prefix: Prefix) {
+  return forwardRefComponent(function Buttons({
     as,
     size,
     align,
@@ -177,8 +202,12 @@ export function createElements(prefix: Prefix) {
       ),
     })
   })
+}
 
-  const LinkButton = forwardRefComponent(function LinkButton({
+export const Buttons = /* @__PURE__ */ createButtons(defaultPrefix)
+
+export function createLinkButton(prefix: Prefix) {
+  return forwardRefComponent(function LinkButton({
     color,
     size,
     tone,
@@ -240,8 +269,12 @@ export function createElements(prefix: Prefix) {
       />
     )
   })
+}
 
-  const Content = forwardRefComponent(function Content({
+export const LinkButton = /* @__PURE__ */ createLinkButton(defaultPrefix)
+
+export function createContent(prefix: Prefix) {
+  return forwardRefComponent(function Content({
     size,
     helpers,
     className,
@@ -259,8 +292,12 @@ export function createElements(prefix: Prefix) {
       />
     )
   })
+}
 
-  const Delete = forwardRefComponent(function Delete({
+export const Content = /* @__PURE__ */ createContent(defaultPrefix)
+
+export function createDelete(prefix: Prefix) {
+  return forwardRefComponent(function Delete({
     size,
     helpers,
     className,
@@ -282,8 +319,12 @@ export function createElements(prefix: Prefix) {
       />
     )
   })
+}
 
-  const Icon = forwardRefComponent(function Icon({
+export const Delete = /* @__PURE__ */ createDelete(defaultPrefix)
+
+export function createIcon(prefix: Prefix) {
+  return forwardRefComponent(function Icon({
     as,
     size,
     helpers,
@@ -300,8 +341,12 @@ export function createElements(prefix: Prefix) {
       ),
     })
   })
+}
 
-  const Image = forwardRefComponent(function Image({
+export const Icon = /* @__PURE__ */ createIcon(defaultPrefix)
+
+export function createImage(prefix: Prefix) {
+  return forwardRefComponent(function Image({
     as = 'figure',
     size,
     ratio,
@@ -347,8 +392,12 @@ export function createElements(prefix: Prefix) {
       ),
     })
   })
+}
 
-  const Notification = forwardRefComponent(function Notification({
+export const Image = /* @__PURE__ */ createImage(defaultPrefix)
+
+export function createNotification(prefix: Prefix) {
+  return forwardRefComponent(function Notification({
     color,
     tone,
     helpers,
@@ -367,8 +416,12 @@ export function createElements(prefix: Prefix) {
       />
     )
   })
+}
 
-  const Progress = forwardRefComponent(function Progress({
+export const Notification = /* @__PURE__ */ createNotification(defaultPrefix)
+
+export function createProgress(prefix: Prefix) {
+  return forwardRefComponent(function Progress({
     color,
     size,
     helpers,
@@ -387,8 +440,12 @@ export function createElements(prefix: Prefix) {
       />
     )
   })
+}
 
-  const Table = forwardRefComponent(function Table({
+export const Progress = /* @__PURE__ */ createProgress(defaultPrefix)
+
+export function createTable(prefix: Prefix) {
+  return forwardRefComponent(function Table({
     bordered,
     striped,
     narrow,
@@ -417,8 +474,12 @@ export function createElements(prefix: Prefix) {
       />
     )
   })
+}
 
-  const Tag = forwardRefComponent(function Tag({
+export const Table = /* @__PURE__ */ createTable(defaultPrefix)
+
+export function createTag(prefix: Prefix) {
+  return forwardRefComponent(function Tag({
     as,
     color,
     size,
@@ -444,8 +505,12 @@ export function createElements(prefix: Prefix) {
       ),
     })
   })
+}
 
-  const Tags = forwardRefComponent(function Tags({
+export const Tag = /* @__PURE__ */ createTag(defaultPrefix)
+
+export function createTags(prefix: Prefix) {
+  return forwardRefComponent(function Tags({
     size,
     align,
     addons,
@@ -470,8 +535,12 @@ export function createElements(prefix: Prefix) {
       />
     )
   })
+}
 
-  const LinkTag = forwardRefComponent(function LinkTag({
+export const Tags = /* @__PURE__ */ createTags(defaultPrefix)
+
+export function createLinkTag(prefix: Prefix) {
+  return forwardRefComponent(function LinkTag({
     color,
     size,
     light,
@@ -498,8 +567,12 @@ export function createElements(prefix: Prefix) {
       />
     )
   })
+}
 
-  const TagDelete = forwardRefComponent(function TagDelete({
+export const LinkTag = /* @__PURE__ */ createLinkTag(defaultPrefix)
+
+export function createTagDelete(prefix: Prefix) {
+  return forwardRefComponent(function TagDelete({
     as,
     color,
     size,
@@ -530,8 +603,12 @@ export function createElements(prefix: Prefix) {
       ),
     })
   })
+}
 
-  const Title = forwardRefComponent(function Title({
+export const TagDelete = /* @__PURE__ */ createTagDelete(defaultPrefix)
+
+export function createTitle(prefix: Prefix) {
+  return forwardRefComponent(function Title({
     as,
     level = 1,
     size,
@@ -550,8 +627,12 @@ export function createElements(prefix: Prefix) {
       ),
     })
   })
+}
 
-  const Subtitle = forwardRefComponent(function Subtitle({
+export const Title = /* @__PURE__ */ createTitle(defaultPrefix)
+
+export function createSubtitle(prefix: Prefix) {
+  return forwardRefComponent(function Subtitle({
     as,
     level = 2,
     size,
@@ -570,8 +651,12 @@ export function createElements(prefix: Prefix) {
       ),
     })
   })
+}
 
-  const SkeletonBlock = forwardRefComponent(function SkeletonBlock({
+export const Subtitle = /* @__PURE__ */ createSubtitle(defaultPrefix)
+
+export function createSkeletonBlock(prefix: Prefix) {
+  return forwardRefComponent(function SkeletonBlock({
     helpers,
     className,
     ...props
@@ -584,8 +669,12 @@ export function createElements(prefix: Prefix) {
       />
     )
   })
+}
 
-  const SkeletonLines = forwardRefComponent(function SkeletonLines({
+export const SkeletonBlock = /* @__PURE__ */ createSkeletonBlock(defaultPrefix)
+
+export function createSkeletonLines(prefix: Prefix) {
+  return forwardRefComponent(function SkeletonLines({
     lines = 3,
     helpers,
     className,
@@ -605,29 +694,6 @@ export function createElements(prefix: Prefix) {
       </div>
     )
   })
-
-  return {
-    Block,
-    Box,
-    Buttons,
-    LinkButton,
-    Content,
-    Delete,
-    Icon,
-    IconText,
-    Image,
-    Notification,
-    Progress,
-    Table,
-    TableContainer,
-    Tag,
-    LinkTag,
-    TagDelete,
-    Tags,
-    Title,
-    Subtitle,
-    Loader,
-    SkeletonBlock,
-    SkeletonLines,
-  }
 }
+
+export const SkeletonLines = /* @__PURE__ */ createSkeletonLines(defaultPrefix)

@@ -4,6 +4,9 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "paths": {
+      "@seagreenio/react-bulma/factories": ["./src/component-factories.ts"]
+    },
     "resolveJsonModule": true,
     "jsx": "react-jsx",
     "strict": true,

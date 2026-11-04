@@ -9,6 +9,7 @@ import { resolvePrefix, type BulmaConfig } from './config'
 import { helperClasses } from './helpers'
 
 export type { BulmaConfig } from './config'
+export { buildUI } from './build-ui'
 
 export async function buildStyles(config: BulmaConfig = {}): Promise<string> {
   const prefix = resolvePrefix(config)

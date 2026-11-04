@@ -1,9 +1,8 @@
 import { useRef, useState } from 'react'
 import * as ui from '../../src'
+import * as custom from '../../.generated/custom-ui'
+import * as reserved from '../../.generated/reserved-ui'
 import '../../.generated/reserved-prefix.css'
-
-const custom = ui.createBulma({ prefix: 'acme-' })
-const reserved = ui.createBulma({ prefix: 'is-' })
 
 const picture = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="160" height="120"><rect width="160" height="120" fill="#00d1b2"/></svg>')}`
 

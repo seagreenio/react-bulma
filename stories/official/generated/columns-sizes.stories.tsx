@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Canvas } from '@storybook/addon-docs/blocks'
 import { OfficialDocument } from '../document'
-import { createBulma } from '../../../src'
+import * as ui from '../../../src'
 import { officialPage } from '../support'
-
-const ui = createBulma()
 
 const meta = {
   ...officialPage(
@@ -1977,7 +1975,7 @@ export const Example001 = {
     official: { id: 'columns-sizes/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"full"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-full"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example001Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"full"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-full"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1992,7 +1990,7 @@ export const Example002 = {
     official: { id: 'columns-sizes/basic/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"four-fifths"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-four-fifths"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example002Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"four-fifths"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-four-fifths"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2007,7 +2005,7 @@ export const Example003 = {
     official: { id: 'columns-sizes/basic/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"three-quarters"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-three-quarters"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example003Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"three-quarters"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-three-quarters"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2022,7 +2020,7 @@ export const Example004 = {
     official: { id: 'columns-sizes/basic/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example004Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"two-thirds"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-two-thirds"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example004Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"two-thirds"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-two-thirds"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2037,7 +2035,7 @@ export const Example005 = {
     official: { id: 'columns-sizes/basic/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example005Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"three-fifths"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-three-fifths"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example005Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"three-fifths"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-three-fifths"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2052,7 +2050,7 @@ export const Example006 = {
     official: { id: 'columns-sizes/basic/006' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example006Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-half"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example006Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"half"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-half"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2067,7 +2065,7 @@ export const Example007 = {
     official: { id: 'columns-sizes/basic/007' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example007Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"two-fifths"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-two-fifths"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example007Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"two-fifths"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-two-fifths"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2082,7 +2080,7 @@ export const Example008 = {
     official: { id: 'columns-sizes/basic/008' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example008Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-third"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-one-third"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example008Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-third"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-one-third"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2097,7 +2095,7 @@ export const Example009 = {
     official: { id: 'columns-sizes/basic/009' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example009Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-one-quarter"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example009Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-one-quarter"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2112,7 +2110,7 @@ export const Example010 = {
     official: { id: 'columns-sizes/basic/010' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example010Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-fifth"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-one-fifth"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example010Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"one-fifth"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-one-fifth"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={"bd-notification"}>{"Auto"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2127,7 +2125,7 @@ export const Example011 = {
     official: { id: 'columns-sizes/12-columns-system/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example011Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={1}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-1"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example011Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={1}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-1"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2142,7 +2140,7 @@ export const Example012 = {
     official: { id: 'columns-sizes/12-columns-system/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example012Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={2}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-2"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example012Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={2}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-2"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2157,7 +2155,7 @@ export const Example013 = {
     official: { id: 'columns-sizes/12-columns-system/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example013Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={3}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-3"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example013Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={3}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-3"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2172,7 +2170,7 @@ export const Example014 = {
     official: { id: 'columns-sizes/12-columns-system/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-4"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example014Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={4}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-4"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2187,7 +2185,7 @@ export const Example015 = {
     official: { id: 'columns-sizes/12-columns-system/005' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example015Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={5}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-5"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example015Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={5}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-5"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2202,7 +2200,7 @@ export const Example016 = {
     official: { id: 'columns-sizes/12-columns-system/006' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example016Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-6"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example016Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={6}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-6"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2217,7 +2215,7 @@ export const Example017 = {
     official: { id: 'columns-sizes/12-columns-system/007' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example017Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={7}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-7"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example017Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={7}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-7"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2232,7 +2230,7 @@ export const Example018 = {
     official: { id: 'columns-sizes/12-columns-system/008' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example018Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={8}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-8"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example018Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={8}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-8"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2247,7 +2245,7 @@ export const Example019 = {
     official: { id: 'columns-sizes/12-columns-system/009' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example019Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={9}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-9"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example019Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={9}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-9"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2262,7 +2260,7 @@ export const Example020 = {
     official: { id: 'columns-sizes/12-columns-system/010' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example020Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={10}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-10"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example020Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={10}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-10"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2277,7 +2275,7 @@ export const Example021 = {
     official: { id: 'columns-sizes/12-columns-system/011' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example021Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={11}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-11"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example021Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={11}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-11"}</code></p>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<p className={[ui.helpers({"textAlign":"center"}), "bd-notification"].filter(Boolean).join(\' \')}>{"1"}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2292,7 +2290,7 @@ export const Example022 = {
     official: { id: 'columns-sizes/12-columns-system/012' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example022Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={12}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-12"}</code></p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example022Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={12}>{"\\n    "}<p className={"bd-notification is-primary"}><code>{"is-12"}</code></p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2307,7 +2305,7 @@ export const Example023 = {
     official: { id: 'columns-sizes/offset/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example023Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={"half"} offset={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-half"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-one-quarter"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example023Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={"half"} offset={"one-quarter"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-half"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-one-quarter"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2322,7 +2320,7 @@ export const Example024 = {
     official: { id: 'columns-sizes/offset/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example024Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={"three-fifths"} offset={"one-fifth"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-three-fifths"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-one-fifth"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example024Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={"three-fifths"} offset={"one-fifth"}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-three-fifths"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-one-fifth"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2337,7 +2335,7 @@ export const Example025 = {
     official: { id: 'columns-sizes/offset/003' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example025Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={4} offset={8}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-4"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-8"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example025Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={4} offset={8}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-4"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-8"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2352,7 +2350,7 @@ export const Example026 = {
     official: { id: 'columns-sizes/offset/004' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example026Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={11} offset={1}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-11"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-1"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example026Demo() {\n  return (<><ui.Columns displayFrom={"mobile"}>{"\\n  "}<ui.Column width={11} offset={1}>{"\\n    "}<p className={"bd-notification is-primary"}>{"\\n      "}<code className={"html"}>{"is-11"}</code><br />{"\\n      "}<code className={"html"}>{"is-offset-1"}</code>{"\\n    "}</p>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -2367,7 +2365,7 @@ export const Example027 = {
     official: { id: 'columns-sizes/narrow-column/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example027Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<ui.Box style={{ ...{ width: "200px" } }}>{"\\n      "}<ui.Title size={5} as={"p"}>{"Narrow column"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"This column is only 200px wide."}</ui.Subtitle>{"\\n    "}</ui.Box>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<ui.Box>{"\\n      "}<ui.Title size={5} as={"p"}>{"Flexible column"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"This column will take up the remaining space available."}</ui.Subtitle>{"\\n    "}</ui.Box>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
+        code: 'import * as ui from \'@seagreenio/react-bulma\';\n\nfunction Example027Demo() {\n  return (<><ui.Columns>{"\\n  "}<ui.Column width={"narrow"}>{"\\n    "}<ui.Box style={{ ...{ width: "200px" } }}>{"\\n      "}<ui.Title size={5} as={"p"}>{"Narrow column"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"This column is only 200px wide."}</ui.Subtitle>{"\\n    "}</ui.Box>{"\\n  "}</ui.Column>{"\\n  "}<ui.Column>{"\\n    "}<ui.Box>{"\\n      "}<ui.Title size={5} as={"p"}>{"Flexible column"}</ui.Title>{"\\n      "}<ui.Subtitle as={"p"}>{"This column will take up the remaining space available."}</ui.Subtitle>{"\\n    "}</ui.Box>{"\\n  "}</ui.Column>{"\\n"}</ui.Columns></>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

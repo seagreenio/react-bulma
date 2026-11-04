@@ -8,9 +8,8 @@ import type {
   ModalContentProps,
   TabsProps,
 } from '../../src'
-import { createBulma } from '../../src'
+import * as ui from '../../src'
 
-const ui = createBulma()
 const button = createRef<HTMLButtonElement>()
 const anchor = createRef<HTMLAnchorElement>()
 const div = createRef<HTMLDivElement>()

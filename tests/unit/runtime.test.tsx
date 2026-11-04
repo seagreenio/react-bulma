@@ -1,23 +1,24 @@
 import { describe, expect, test } from 'bun:test'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { Button, BulmaRoot, createBulma, helpers } from '../../src'
-import { buildStyles } from '../../src/styles'
+import { Button, BulmaRoot, helpers } from '../../src'
+import { buildStyles, buildUI } from '../../src/styles'
+import { generateTestUI } from './configured-ui'
 
 describe('prefix configuration', () => {
   test.each(['', 'Acme-', '1ui-', 'ui', 'my--ui-', 'my_ui-', 'a-;', 'a-\n'])(
-    'rejects %j in runtime and styles',
+    'rejects %j in generated UI and styles',
     async (prefix) => {
-      expect(() => createBulma({ prefix })).toThrow(TypeError)
+      expect(() => buildUI({ prefix })).toThrow(TypeError)
       await expect(buildStyles({ prefix })).rejects.toThrow(TypeError)
     },
   )
 
-  test('binds a copy of the prefix and freezes the public instance', () => {
+  test('generated modules capture the prefix and isolate their components', async () => {
     const config = { prefix: 'first-' }
-    const first = createBulma(config)
+    const first = await generateTestUI(config)
     config.prefix = 'second-'
-    const second = createBulma(config)
-    expect(Object.isFrozen(first)).toBe(true)
+    const second = await generateTestUI(config)
+    expect(first.Button).not.toBe(second.Button)
     expect(first.helpers({ mt: 4 })).toBe('first-mt-4')
     expect(second.helpers({ mt: 4 })).toBe('second-mt-4')
     expect(helpers({ mt: 4 })).toBe('rb-mt-4')

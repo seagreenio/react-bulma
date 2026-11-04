@@ -1,5 +1,5 @@
 import { Children, createElement, type ReactNode } from 'react'
-import type { Prefix } from './config'
+import { defaultPrefix, type Prefix } from './config'
 import {
   classNames,
   forwardRefComponent,
@@ -99,8 +99,8 @@ function checkLabel(children: ReactNode): ReactNode {
   return content
 }
 
-export function createForms(prefix: Prefix) {
-  const Field = forwardRefComponent(function Field({
+export function createField(prefix: Prefix) {
+  return forwardRefComponent(function Field({
     as,
     horizontal,
     narrow,
@@ -132,7 +132,12 @@ export function createForms(prefix: Prefix) {
       ),
     })
   })
-  const FieldLabel = forwardRefComponent(function FieldLabel({
+}
+
+export const Field = /* @__PURE__ */ createField(defaultPrefix)
+
+export function createFieldLabel(prefix: Prefix) {
+  return forwardRefComponent(function FieldLabel({
     size,
     helpers,
     className,
@@ -150,8 +155,18 @@ export function createForms(prefix: Prefix) {
       />
     )
   })
-  const FieldBody = styledElement(prefix, 'div', 'field-body')
-  const Label = forwardRefComponent(function Label({
+}
+
+export const FieldLabel = /* @__PURE__ */ createFieldLabel(defaultPrefix)
+
+export function createFieldBody(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'field-body')
+}
+
+export const FieldBody = /* @__PURE__ */ createFieldBody(defaultPrefix)
+
+export function createLabel(prefix: Prefix) {
+  return forwardRefComponent(function Label({
     size,
     helpers,
     className,
@@ -169,7 +184,12 @@ export function createForms(prefix: Prefix) {
       />
     )
   })
-  const Control = forwardRefComponent(function Control({
+}
+
+export const Label = /* @__PURE__ */ createLabel(defaultPrefix)
+
+export function createControl(prefix: Prefix) {
+  return forwardRefComponent(function Control({
     as,
     expanded,
     loading,
@@ -196,7 +216,12 @@ export function createForms(prefix: Prefix) {
       ),
     })
   })
-  const Help = forwardRefComponent(function Help({
+}
+
+export const Control = /* @__PURE__ */ createControl(defaultPrefix)
+
+export function createHelp(prefix: Prefix) {
+  return forwardRefComponent(function Help({
     color,
     helpers,
     className,
@@ -214,7 +239,12 @@ export function createForms(prefix: Prefix) {
       />
     )
   })
-  const Input = forwardRefComponent(function Input({
+}
+
+export const Help = /* @__PURE__ */ createHelp(defaultPrefix)
+
+export function createInput(prefix: Prefix) {
+  return forwardRefComponent(function Input({
     color,
     size,
     htmlSize,
@@ -249,7 +279,12 @@ export function createForms(prefix: Prefix) {
       />
     )
   })
-  const Textarea = forwardRefComponent(function Textarea({
+}
+
+export const Input = /* @__PURE__ */ createInput(defaultPrefix)
+
+export function createTextarea(prefix: Prefix) {
+  return forwardRefComponent(function Textarea({
     color,
     size,
     fixedSize,
@@ -280,7 +315,12 @@ export function createForms(prefix: Prefix) {
       />
     )
   })
-  const Select = forwardRefComponent(function Select({
+}
+
+export const Textarea = /* @__PURE__ */ createTextarea(defaultPrefix)
+
+export function createSelect(prefix: Prefix) {
+  return forwardRefComponent(function Select({
     as,
     color,
     size,
@@ -321,7 +361,12 @@ export function createForms(prefix: Prefix) {
       ),
     })
   })
-  const Checkbox = forwardRefComponent(function Checkbox({
+}
+
+export const Select = /* @__PURE__ */ createSelect(defaultPrefix)
+
+export function createCheckbox(prefix: Prefix) {
+  return forwardRefComponent(function Checkbox({
     children,
     helpers,
     wrapperProps,
@@ -342,7 +387,12 @@ export function createForms(prefix: Prefix) {
       </label>
     )
   })
-  const Radio = forwardRefComponent(function Radio({
+}
+
+export const Checkbox = /* @__PURE__ */ createCheckbox(defaultPrefix)
+
+export function createRadio(prefix: Prefix) {
+  return forwardRefComponent(function Radio({
     children,
     helpers,
     wrapperProps,
@@ -363,7 +413,12 @@ export function createForms(prefix: Prefix) {
       </label>
     )
   })
-  const Checkboxes = forwardRefComponent(function Checkboxes({
+}
+
+export const Radio = /* @__PURE__ */ createRadio(defaultPrefix)
+
+export function createCheckboxes(prefix: Prefix) {
+  return forwardRefComponent(function Checkboxes({
     helpers,
     className,
     ...props
@@ -376,7 +431,12 @@ export function createForms(prefix: Prefix) {
       />
     )
   })
-  const Radios = forwardRefComponent(function Radios({
+}
+
+export const Checkboxes = /* @__PURE__ */ createCheckboxes(defaultPrefix)
+
+export function createRadios(prefix: Prefix) {
+  return forwardRefComponent(function Radios({
     helpers,
     className,
     ...props
@@ -389,7 +449,12 @@ export function createForms(prefix: Prefix) {
       />
     )
   })
-  const File = forwardRefComponent(function File({
+}
+
+export const Radios = /* @__PURE__ */ createRadios(defaultPrefix)
+
+export function createFile(prefix: Prefix) {
+  return forwardRefComponent(function File({
     children = 'Choose a file…',
     disabled,
     color,
@@ -453,20 +518,6 @@ export function createForms(prefix: Prefix) {
       </div>
     )
   })
-  return {
-    Field,
-    FieldLabel,
-    FieldBody,
-    Label,
-    Control,
-    Help,
-    Input,
-    Textarea,
-    Select,
-    Checkbox,
-    Radio,
-    Checkboxes,
-    Radios,
-    File,
-  }
 }
+
+export const File = /* @__PURE__ */ createFile(defaultPrefix)

@@ -1,5 +1,5 @@
 import { createElement, type CSSProperties } from 'react'
-import type { Prefix } from './config'
+import { defaultPrefix, type Prefix } from './config'
 import {
   classNames,
   forwardRefComponent,
@@ -148,18 +148,62 @@ function gridStyle(
   }
 }
 
-export function createLayout(prefix: Prefix) {
-  const HeroHead = styledElement(prefix, 'div', 'hero-head')
-  const HeroBody = styledElement(prefix, 'div', 'hero-body')
-  const HeroFoot = styledElement(prefix, 'div', 'hero-foot')
-  const Footer = styledElement(prefix, 'footer', 'footer')
-  const LevelLeft = styledElement(prefix, 'div', 'level-left')
-  const LevelRight = styledElement(prefix, 'div', 'level-right')
-  const MediaLeft = styledElement(prefix, 'div', 'media-left', ['figure'])
-  const MediaRight = styledElement(prefix, 'div', 'media-right')
-  const MediaContent = styledElement(prefix, 'div', 'media-content')
+export function createHeroHead(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'hero-head')
+}
 
-  const Container = forwardRefComponent(function Container({
+export const HeroHead = /* @__PURE__ */ createHeroHead(defaultPrefix)
+
+export function createHeroBody(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'hero-body')
+}
+
+export const HeroBody = /* @__PURE__ */ createHeroBody(defaultPrefix)
+
+export function createHeroFoot(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'hero-foot')
+}
+
+export const HeroFoot = /* @__PURE__ */ createHeroFoot(defaultPrefix)
+
+export function createFooter(prefix: Prefix) {
+  return styledElement(prefix, 'footer', 'footer')
+}
+
+export const Footer = /* @__PURE__ */ createFooter(defaultPrefix)
+
+export function createLevelLeft(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'level-left')
+}
+
+export const LevelLeft = /* @__PURE__ */ createLevelLeft(defaultPrefix)
+
+export function createLevelRight(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'level-right')
+}
+
+export const LevelRight = /* @__PURE__ */ createLevelRight(defaultPrefix)
+
+export function createMediaLeft(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'media-left', ['figure'])
+}
+
+export const MediaLeft = /* @__PURE__ */ createMediaLeft(defaultPrefix)
+
+export function createMediaRight(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'media-right')
+}
+
+export const MediaRight = /* @__PURE__ */ createMediaRight(defaultPrefix)
+
+export function createMediaContent(prefix: Prefix) {
+  return styledElement(prefix, 'div', 'media-content')
+}
+
+export const MediaContent = /* @__PURE__ */ createMediaContent(defaultPrefix)
+
+export function createContainer(prefix: Prefix) {
+  return forwardRefComponent(function Container({
     width,
     maxWidth,
     helpers,
@@ -182,8 +226,12 @@ export function createLayout(prefix: Prefix) {
       />
     )
   })
+}
 
-  const Hero = forwardRefComponent(function Hero({
+export const Container = /* @__PURE__ */ createContainer(defaultPrefix)
+
+export function createHero(prefix: Prefix) {
+  return forwardRefComponent(function Hero({
     color,
     size,
     height,
@@ -215,8 +263,12 @@ export function createLayout(prefix: Prefix) {
       />
     )
   })
+}
 
-  const Section = forwardRefComponent(function Section({
+export const Hero = /* @__PURE__ */ createHero(defaultPrefix)
+
+export function createSection(prefix: Prefix) {
+  return forwardRefComponent(function Section({
     size,
     fullHeight,
     helpers,
@@ -235,8 +287,12 @@ export function createLayout(prefix: Prefix) {
       />
     )
   })
+}
 
-  const Level = forwardRefComponent(function Level({
+export const Section = /* @__PURE__ */ createSection(defaultPrefix)
+
+export function createLevel(prefix: Prefix) {
+  return forwardRefComponent(function Level({
     mobile,
     helpers,
     className,
@@ -254,8 +310,12 @@ export function createLayout(prefix: Prefix) {
       />
     )
   })
+}
 
-  const LevelItem = forwardRefComponent(function LevelItem({
+export const Level = /* @__PURE__ */ createLevel(defaultPrefix)
+
+export function createLevelItem(prefix: Prefix) {
+  return forwardRefComponent(function LevelItem({
     as,
     narrow,
     flexible,
@@ -273,8 +333,12 @@ export function createLayout(prefix: Prefix) {
       ),
     })
   })
+}
 
-  const Media = forwardRefComponent(function Media({
+export const LevelItem = /* @__PURE__ */ createLevelItem(defaultPrefix)
+
+export function createMedia(prefix: Prefix) {
+  return forwardRefComponent(function Media({
     as,
     size,
     helpers,
@@ -291,8 +355,12 @@ export function createLayout(prefix: Prefix) {
       ),
     })
   })
+}
 
-  const Columns = forwardRefComponent(function Columns({
+export const Media = /* @__PURE__ */ createMedia(defaultPrefix)
+
+export function createColumns(prefix: Prefix) {
+  return forwardRefComponent(function Columns({
     displayFrom,
     gap,
     gapless,
@@ -323,8 +391,12 @@ export function createLayout(prefix: Prefix) {
       />
     )
   })
+}
 
-  const Column = forwardRefComponent(function Column({
+export const Columns = /* @__PURE__ */ createColumns(defaultPrefix)
+
+export function createColumn(prefix: Prefix) {
+  return forwardRefComponent(function Column({
     width,
     offset,
     helpers,
@@ -347,8 +419,12 @@ export function createLayout(prefix: Prefix) {
       />
     )
   })
+}
 
-  const SmartGrid = forwardRefComponent(function SmartGrid({
+export const Column = /* @__PURE__ */ createColumn(defaultPrefix)
+
+export function createSmartGrid(prefix: Prefix) {
+  return forwardRefComponent(function SmartGrid({
     minColumnWidth,
     gap,
     columnGap,
@@ -372,8 +448,13 @@ export function createLayout(prefix: Prefix) {
       />
     )
   })
+}
 
-  const FixedGrid = forwardRefComponent(function FixedGrid({
+export const SmartGrid = /* @__PURE__ */ createSmartGrid(defaultPrefix)
+
+export function createFixedGrid(prefix: Prefix) {
+  const SmartGrid = createSmartGrid(prefix)
+  return forwardRefComponent(function FixedGrid({
     columns,
     gridProps = {},
     children,
@@ -400,8 +481,12 @@ export function createLayout(prefix: Prefix) {
       </div>
     )
   })
+}
 
-  const Cell = forwardRefComponent(function Cell({
+export const FixedGrid = /* @__PURE__ */ createFixedGrid(defaultPrefix)
+
+export function createCell(prefix: Prefix) {
+  return forwardRefComponent(function Cell({
     columnSpan,
     rowSpan,
     columnStart,
@@ -436,27 +521,6 @@ export function createLayout(prefix: Prefix) {
       />
     )
   })
-
-  return {
-    Container,
-    Hero,
-    HeroHead,
-    HeroBody,
-    HeroFoot,
-    Section,
-    Footer,
-    Level,
-    LevelLeft,
-    LevelRight,
-    LevelItem,
-    Media,
-    MediaLeft,
-    MediaRight,
-    MediaContent,
-    Columns,
-    Column,
-    SmartGrid,
-    FixedGrid,
-    Cell,
-  }
 }
+
+export const Cell = /* @__PURE__ */ createCell(defaultPrefix)

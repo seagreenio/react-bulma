@@ -1,4 +1,4 @@
-import type { Prefix } from './config'
+import { defaultPrefix, type Prefix } from './config'
 
 const spacing = {
   0: '0',
@@ -137,4 +137,12 @@ export function helperNames(prefix: Prefix, values: Helpers = {}): string {
     if (name) result.push(`${prefix}${name}`)
   }
   return result.join(' ')
+}
+
+export function helpers(values?: Helpers): string {
+  return helperNames(defaultPrefix, values)
+}
+
+export function createHelpers(prefix: Prefix) {
+  return (values?: Helpers) => helperNames(prefix, values)
 }

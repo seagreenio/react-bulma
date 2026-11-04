@@ -1,8 +1,8 @@
 import { describe, expect, test } from 'bun:test'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { createBulma } from '../../src'
+import { generateTestUI } from './configured-ui'
 
-const ui = createBulma({ prefix: 'acme-' })
+const ui = await generateTestUI({ prefix: 'acme-' })
 
 describe('native forms', () => {
   test('input native size and textarea attributes remain separate from Bulma modifiers', () => {

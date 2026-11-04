@@ -1,7 +1,7 @@
 import { beforeAll, describe, expect, test } from 'bun:test'
 import postcss, { type Root } from 'postcss'
 import selectorParser from 'postcss-selector-parser'
-import { createBulma } from '../../src'
+import { generateTestUI } from './configured-ui'
 import { helperClasses, type Helpers } from '../../src/helpers'
 import { buildStyles } from '../../src/styles'
 
@@ -79,8 +79,8 @@ describe.each(['rb-', 'my-ui-'])('%s CSS contract', (prefix) => {
   })
 
   if (prefix === 'my-ui-') {
-    test('every exposed helper variant has a selector in compiled Bulma', () => {
-      const { helpers } = createBulma({ prefix })
+    test('every exposed helper variant has a selector in compiled Bulma', async () => {
+      const { helpers } = await generateTestUI({ prefix })
       for (const [key, variants] of Object.entries(helperClasses)) {
         for (const value of Object.keys(variants)) {
           const input =
