@@ -1468,7 +1468,7 @@ export function compilePage(
   const assetPaths = new Map(
     assets.map((asset) => [
       asset.url,
-      `/official-assets/${basename(asset.file)}`,
+      `./official-assets/${basename(asset.file)}`,
     ]),
   )
   const functions: string[] = []

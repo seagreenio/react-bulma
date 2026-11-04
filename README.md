@@ -13,7 +13,7 @@ React Bulma provides React components for Bulma 1.0.4. You need React 17.0.2 or 
 
 You can use Bulma components in React, adjust their appearance with props, and switch between light and dark themes. Styles stay inside `BulmaRoot`, and you can choose your own CSS class prefix.
 
-You can start with the [default styles](#use-the-default-styles), [build styles with a custom prefix](#build-styles-with-a-custom-prefix), or go straight to [interactive components](#compose-interactive-components). If you prefer to read alongside component examples, the [Storybook usage guide](https://github.com/seagreenio/react-bulma/blob/master/stories/Guide.mdx) covers the same setup.
+You can start with the [default styles](#use-the-default-styles), [build styles with a custom prefix](#build-styles-with-a-custom-prefix), or go straight to [interactive components](#compose-interactive-components). If you prefer to read alongside component examples, the [Storybook usage guide](https://seagreenio.github.io/react-bulma/?path=/docs/react-bulma--usage-guide) covers the same setup.
 
 ## Install
 

@@ -227,7 +227,7 @@ export function compileDocument(
   const assetPaths = new Map(
     assets.map((asset) => [
       asset.url,
-      `/official-assets/${basename(asset.file)}`,
+      `./official-assets/${basename(asset.file)}`,
     ]),
   )
   const url = (value: string, node: AnyNode) => {

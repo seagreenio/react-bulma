@@ -22,10 +22,7 @@ export function rewriteSourceAssetUrls(
   base = 'https://bulma.io/',
 ): string {
   const local = new Map(
-    assets.map((asset) => [
-      asset.url,
-      `/official-assets/${basename(asset.file)}`,
-    ]),
+    assets.map((asset) => [asset.url, `./${basename(asset.file)}`]),
   )
   return css.replace(
     /url\(\s*(['"]?)([^)'"\s]+)\1\s*\)/g,

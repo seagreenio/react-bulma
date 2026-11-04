@@ -910,7 +910,7 @@ function Example001Demo() {
           {'\n    '}
           <ui.Image
             ratio={'4by3'}
-            src={'/official-assets/1280x960.png'}
+            src={'./official-assets/1280x960.png'}
             alt={'Placeholder image'}
           />
           {'\n  '}
@@ -924,7 +924,7 @@ function Example001Demo() {
               {'\n        '}
               <ui.Image
                 size={48}
-                src={'/official-assets/96x96.png'}
+                src={'./official-assets/96x96.png'}
                 alt={'Placeholder image'}
               />
               {'\n      '}
@@ -1006,7 +1006,7 @@ function Example003Demo() {
           {'\n    '}
           <ui.Image
             ratio={'4by3'}
-            src={'/official-assets/1280x960.png'}
+            src={'./official-assets/1280x960.png'}
             alt={'Placeholder image'}
           />
           {'\n  '}
@@ -1177,7 +1177,7 @@ export const Example001 = {
     official: { id: 'components-card/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardImage>{"\\n    "}<ui.Image ratio={"4by3"} src={"/official-assets/1280x960.png"} alt={"Placeholder image"} />{"\\n  "}</ui.CardImage>{"\\n  "}<ui.CardContent>{"\\n    "}<ui.Media as={"div"}>{"\\n      "}<ui.MediaLeft>{"\\n        "}<ui.Image size={48} src={"/official-assets/96x96.png"} alt={"Placeholder image"} />{"\\n      "}</ui.MediaLeft>{"\\n      "}<ui.MediaContent>{"\\n        "}<ui.Title size={4} as={"p"}>{"John Smith"}</ui.Title>{"\\n        "}<ui.Subtitle size={6} as={"p"}>{"@johnsmith"}</ui.Subtitle>{"\\n      "}</ui.MediaContent>{"\\n    "}</ui.Media>{"\\n\\n    "}<ui.Content>{"\\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec\\n      iaculis mauris. "}<a>{"@bulmaio"}</a>{". "}<a href={"#"}>{"#css"}</a>{"\\n      "}<a href={"#"}>{"#responsive"}</a>{"\\n      "}<br />{"\\n      "}<time dateTime={"2016-1-1"}>{"11:09 PM - 1 Jan 2016"}</time>{"\\n    "}</ui.Content>{"\\n  "}</ui.CardContent>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardImage>{"\\n    "}<ui.Image ratio={"4by3"} src={"./official-assets/1280x960.png"} alt={"Placeholder image"} />{"\\n  "}</ui.CardImage>{"\\n  "}<ui.CardContent>{"\\n    "}<ui.Media as={"div"}>{"\\n      "}<ui.MediaLeft>{"\\n        "}<ui.Image size={48} src={"./official-assets/96x96.png"} alt={"Placeholder image"} />{"\\n      "}</ui.MediaLeft>{"\\n      "}<ui.MediaContent>{"\\n        "}<ui.Title size={4} as={"p"}>{"John Smith"}</ui.Title>{"\\n        "}<ui.Subtitle size={6} as={"p"}>{"@johnsmith"}</ui.Subtitle>{"\\n      "}</ui.MediaContent>{"\\n    "}</ui.Media>{"\\n\\n    "}<ui.Content>{"\\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec\\n      iaculis mauris. "}<a>{"@bulmaio"}</a>{". "}<a href={"#"}>{"#css"}</a>{"\\n      "}<a href={"#"}>{"#responsive"}</a>{"\\n      "}<br />{"\\n      "}<time dateTime={"2016-1-1"}>{"11:09 PM - 1 Jan 2016"}</time>{"\\n    "}</ui.Content>{"\\n  "}</ui.CardContent>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1207,7 +1207,7 @@ export const Example003 = {
     official: { id: 'components-card/card-parts/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardImage>{"\\n    "}<ui.Image ratio={"4by3"} src={"/official-assets/1280x960.png"} alt={"Placeholder image"} />{"\\n  "}</ui.CardImage>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Card>{"\\n  "}<ui.CardImage>{"\\n    "}<ui.Image ratio={"4by3"} src={"./official-assets/1280x960.png"} alt={"Placeholder image"} />{"\\n  "}</ui.CardImage>{"\\n"}</ui.Card>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

@@ -13,7 +13,7 @@ React Bulma 提供基于 Bulma 1.0.4 的 React 组件，使用时需要 React 17
 
 你可以在 React 中使用 Bulma 组件，通过属性调整外观、切换深浅主题。组件样式只在 `BulmaRoot` 内生效，也支持自定义 CSS 类名前缀。
 
-你可以从[默认样式](#使用默认样式)开始，也可以[自定义前缀并构建样式](#自定义前缀并构建样式)，或直接了解如何[组合交互组件](#组合交互组件)。如果你更习惯结合组件示例阅读，[Storybook 使用指南](https://github.com/seagreenio/react-bulma/blob/master/stories/Guide.zh-CN.mdx)也介绍了相同的使用流程。
+你可以从[默认样式](#使用默认样式)开始，也可以[自定义前缀并构建样式](#自定义前缀并构建样式)，或直接了解如何[组合交互组件](#组合交互组件)。如果你更习惯结合组件示例阅读，[Storybook 使用指南](https://seagreenio.github.io/react-bulma/?path=/docs/react-bulma--使用指南)也介绍了相同的使用流程。
 
 ## 安装
 

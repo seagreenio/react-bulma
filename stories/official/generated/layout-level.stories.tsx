@@ -464,7 +464,7 @@ function Example003Demo() {
         <ui.LevelItem helpers={{ textAlign: 'center' }} as={'p'}>
           {'\n    '}
           <img
-            src={'/official-assets/bulma-type.png'}
+            src={'./official-assets/bulma-type.png'}
             alt={''}
             style={{ ...{ height: '30px' } }}
           />
@@ -585,7 +585,7 @@ export const Example003 = {
     official: { id: 'layout-level/centered-level/002' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Level>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Home"}</a>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Menu"}</a>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<img src={"/official-assets/bulma-type.png"} alt={""} style={{ ...{ height: "30px" } }} />{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Reservations"}</a>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Contact"}</a>{"\\n  "}</ui.LevelItem>{"\\n"}</ui.Level>{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Level>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Home"}</a>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Menu"}</a>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<img src={"./official-assets/bulma-type.png"} alt={""} style={{ ...{ height: "30px" } }} />{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Reservations"}</a>{"\\n  "}</ui.LevelItem>{"\\n  "}<ui.LevelItem helpers={{"textAlign":"center"}} as={"p"}>{"\\n    "}<a className={"link rb-is-info"}>{"Contact"}</a>{"\\n  "}</ui.LevelItem>{"\\n"}</ui.Level>{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },

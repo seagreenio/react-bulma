@@ -120,7 +120,7 @@ function OfficialDocs() {
                   {'\n            '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/16x16.png'}
+                    src={'./official-assets/16x16.png'}
                   />
                   {'\n          '}
                 </figure>
@@ -145,7 +145,7 @@ function OfficialDocs() {
                   {'\n            '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/24x24.png'}
+                    src={'./official-assets/24x24.png'}
                   />
                   {'\n          '}
                 </figure>
@@ -170,7 +170,7 @@ function OfficialDocs() {
                   {'\n            '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/32x32.png'}
+                    src={'./official-assets/32x32.png'}
                   />
                   {'\n          '}
                 </figure>
@@ -195,7 +195,7 @@ function OfficialDocs() {
                   {'\n            '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/48x48.png'}
+                    src={'./official-assets/48x48.png'}
                   />
                   {'\n          '}
                 </figure>
@@ -220,7 +220,7 @@ function OfficialDocs() {
                   {'\n            '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/64x64.png'}
+                    src={'./official-assets/64x64.png'}
                   />
                   {'\n          '}
                 </figure>
@@ -245,7 +245,7 @@ function OfficialDocs() {
                   {'\n            '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/96x96.png'}
+                    src={'./official-assets/96x96.png'}
                   />
                   {'\n          '}
                 </figure>
@@ -270,7 +270,7 @@ function OfficialDocs() {
                   {'\n            '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/128x128.png'}
+                    src={'./official-assets/128x128.png'}
                   />
                   {'\n          '}
                 </figure>
@@ -437,7 +437,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/480x480.png'}
+                    src={'./official-assets/480x480.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -463,7 +463,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/480x480.png'}
+                    src={'./official-assets/480x480.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -489,7 +489,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/600x480.png'}
+                    src={'./official-assets/600x480.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -515,7 +515,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/640x480.png'}
+                    src={'./official-assets/640x480.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -541,7 +541,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/480x320.png'}
+                    src={'./official-assets/480x320.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -567,7 +567,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/800x480.png'}
+                    src={'./official-assets/800x480.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -593,7 +593,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/640x360.png'}
+                    src={'./official-assets/640x360.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -619,7 +619,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/640x320.png'}
+                    src={'./official-assets/640x320.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -645,7 +645,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/720x240.png'}
+                    src={'./official-assets/720x240.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -671,7 +671,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/480x600.png'}
+                    src={'./official-assets/480x600.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -697,7 +697,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/480x640.png'}
+                    src={'./official-assets/480x640.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -723,7 +723,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/320x480.png'}
+                    src={'./official-assets/320x480.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -749,7 +749,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/480x800.png'}
+                    src={'./official-assets/480x800.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -775,7 +775,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/360x640.png'}
+                    src={'./official-assets/360x640.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -801,7 +801,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/320x640.png'}
+                    src={'./official-assets/320x640.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -827,7 +827,7 @@ function OfficialDocs() {
                   {'\n          '}
                   <img
                     data-official-prose=""
-                    src={'/official-assets/240x720.png'}
+                    src={'./official-assets/240x720.png'}
                   />
                   {'\n        '}
                 </figure>
@@ -1036,7 +1036,7 @@ function Example001Demo() {
   return (
     <>
       {'\n        \n          \n'}
-      <ui.Image size={128} src={'/official-assets/128x128.png'} alt={''} />
+      <ui.Image size={128} src={'./official-assets/128x128.png'} alt={''} />
       {'\n\n        \n      '}
     </>
   )
@@ -1048,7 +1048,7 @@ function Example002Demo() {
       {'\n        \n          \n'}
       <ui.Image
         size={128}
-        src={'/official-assets/128x128.png'}
+        src={'./official-assets/128x128.png'}
         alt={''}
         rounded
       />
@@ -1061,7 +1061,7 @@ function Example003Demo() {
   return (
     <>
       {'\n        \n          \n'}
-      <ui.Image size={128} src={'/official-assets/256x256.png'} alt={''} />
+      <ui.Image size={128} src={'./official-assets/256x256.png'} alt={''} />
       {'\n\n        \n      '}
     </>
   )
@@ -1092,7 +1092,7 @@ export const Example001 = {
     official: { id: 'elements-image/basic/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"/official-assets/128x128.png"} alt={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example001Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/128x128.png"} alt={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1107,7 +1107,7 @@ export const Example002 = {
     official: { id: 'elements-image/rounded-images/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"/official-assets/128x128.png"} alt={""} rounded />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example002Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/128x128.png"} alt={""} rounded />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
@@ -1122,7 +1122,7 @@ export const Example003 = {
     official: { id: 'elements-image/retina-images/001' },
     docs: {
       source: {
-        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"/official-assets/256x256.png"} alt={""} />{"\\n\\n        \\n      "}</>);\n}\n',
+        code: 'import { createBulma } from \'@seagreenio/react-bulma\';\n\nconst ui = createBulma();\n\nfunction Example003Demo() {\n  return (<>{"\\n        \\n          \\n"}<ui.Image size={128} src={"./official-assets/256x256.png"} alt={""} />{"\\n\\n        \\n      "}</>);\n}\n',
         language: 'tsx',
         type: 'code',
       },
