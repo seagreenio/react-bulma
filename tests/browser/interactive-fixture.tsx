@@ -9,6 +9,8 @@ export function InteractiveFixture() {
   const [mounted, setMounted] = useState(false)
   const [protectedOpen, setProtectedOpen] = useState(false)
   const [initialMenu, setInitialMenu] = useState(false)
+  const [nativeNavbarOpen, setNativeNavbarOpen] = useState(false)
+  const [nativeNavbarToggle, setNativeNavbarToggle] = useState('closed')
   return (
     <section aria-label="Interactive components">
       <ui.BulmaRoot helpers={{ p: 4 }}>
@@ -80,6 +82,30 @@ export function InteractiveFixture() {
             </ui.NavbarEnd>
           </ui.NavbarMenu>
         </ui.Navbar>
+        <ui.Navbar>
+          <ui.NavbarDropdown
+            open={nativeNavbarOpen}
+            hoverable
+            trigger="Native navigation toggle"
+            data-testid="native-navbar-dropdown"
+            onToggle={(event) => {
+              setNativeNavbarToggle(
+                event.currentTarget.open ? 'open' : 'closed',
+              )
+            }}
+          >
+            <ui.NavbarItem href="#native-guide">
+              Native guide link
+            </ui.NavbarItem>
+          </ui.NavbarDropdown>
+        </ui.Navbar>
+        <button
+          type="button"
+          onClick={() => setNativeNavbarOpen(!nativeNavbarOpen)}
+        >
+          Change native navigation open prop
+        </button>
+        <output data-testid="native-navbar-toggle">{nativeNavbarToggle}</output>
         <button type="button" onClick={() => setMounted(true)}>
           Mount default-open dialog
         </button>

@@ -1092,8 +1092,10 @@ export function createInteractive(prefix: Prefix) {
   const NavbarDropdown = forwardRefComponent(function NavbarDropdown(
     props: NavbarDropdownProps,
   ) {
-    const [localOpen, setLocalOpen] = useState(props.defaultOpen ?? false)
-    const open = props.open ?? localOpen
+    const [localOpen, setLocalOpen] = useState(
+      props.open ?? props.defaultOpen ?? false,
+    )
+    const open = props.as === 'div' ? (props.open ?? localOpen) : localOpen
     const triggerRef = useRef<HTMLElement | null>(null)
     const menuId = useStableId()
     const {
@@ -1147,8 +1149,8 @@ export function createInteractive(prefix: Prefix) {
           event.key === 'Escape' &&
           (details?.open ?? open)
         ) {
-          if (details && props.open === undefined) details.open = false
-          changeOpen(false)
+          if (details) details.open = false
+          else changeOpen(false)
           triggerRef.current?.focus()
           event.preventDefault()
           event.stopPropagation()
@@ -1278,12 +1280,12 @@ export function createInteractive(prefix: Prefix) {
     return (
       <details
         {...native}
-        open={open}
+        open={props.open ?? localOpen}
         className={rootClassName}
         onKeyDown={keyDown(onKeyDown)}
         onToggle={(event) => {
           onToggle?.(event)
-          changeOpen(event.currentTarget.open)
+          setLocalOpen(event.currentTarget.open)
         }}
         onPointerEnter={(event) => {
           onPointerEnter?.(event)
@@ -1292,7 +1294,7 @@ export function createInteractive(prefix: Prefix) {
             hoverable &&
             event.pointerType !== 'touch'
           )
-            changeOpen(true)
+            event.currentTarget.open = true
         }}
         onPointerLeave={(event) => {
           onPointerLeave?.(event)
@@ -1301,7 +1303,7 @@ export function createInteractive(prefix: Prefix) {
             hoverable &&
             event.pointerType !== 'touch'
           )
-            changeOpen(false)
+            event.currentTarget.open = false
         }}
       >
         <summary

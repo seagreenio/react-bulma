@@ -23,7 +23,7 @@ React Bulma is a React component library built on Bulma. Use `package.json` for 
 - Keep usage documentation in the READMEs and `stories/Guide.mdx`. Do not recreate a separate `docs/` directory.
 - Use 2-space indentation, including code examples in Markdown and MDX.
 - Use fenced code blocks in MDX. Avoid multiline template strings in `<Source code={...}>`, which can lose indentation.
-- Keep the "Another & Another" introduction. Use absolute GitHub URLs for README assets so the npm package does not need to include `assets/`.
+- Use absolute GitHub URLs for README assets so the npm package does not need to include `assets/`.
 - Reproduce official Bulma examples with this library's components. Preserve the official headings, content, and order. Do not add unrelated demonstration stories.
 - Read the upstream docs source pinned by `official/source-lock.json`. Do not scrape rendered documentation pages or commit the upstream docs tree.
 - Change example generation in `scripts/generate-official.ts` and `scripts/official/`. Regenerate stories instead of hand-editing `stories/official/generated/` or the generated `.storybook/preview.ts`.

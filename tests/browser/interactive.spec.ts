@@ -206,6 +206,39 @@ test('mobile navbar exposes disclosure relationships and Escape restoration', as
   await expect(menu).toBeVisible()
 })
 
+test('native navbar dropdown keeps its styles synchronized with summary, Escape, hover and open attributes', async ({
+  page,
+}) => {
+  const dropdown = page.getByTestId('native-navbar-dropdown')
+  const trigger = dropdown.locator('summary')
+  const toggle = page.getByTestId('native-navbar-toggle')
+  await trigger.focus()
+  await page.keyboard.press('Enter')
+  await expect(dropdown).toHaveJSProperty('open', true)
+  await expect(dropdown).toHaveClass(/rb-is-active/)
+  await expect(toggle).toHaveText('open')
+  await page.keyboard.press('Escape')
+  await expect(dropdown).toHaveJSProperty('open', false)
+  await expect(dropdown).not.toHaveClass(/rb-is-active/)
+  await expect(trigger).toBeFocused()
+  await trigger.hover()
+  await expect(dropdown).toHaveJSProperty('open', true)
+  await expect(dropdown).toHaveClass(/rb-is-active/)
+  await page.getByTestId('interactive-outside').hover()
+  await expect(dropdown).toHaveJSProperty('open', false)
+  await expect(dropdown).not.toHaveClass(/rb-is-active/)
+  await page
+    .getByRole('button', { name: 'Change native navigation open prop' })
+    .click()
+  await expect(dropdown).toHaveJSProperty('open', true)
+  await expect(dropdown).toHaveClass(/rb-is-active/)
+  await trigger.focus()
+  await page.keyboard.press('Space')
+  await expect(dropdown).toHaveJSProperty('open', false)
+  await expect(dropdown).not.toHaveClass(/rb-is-active/)
+  await expect(toggle).toHaveText('closed')
+})
+
 test('default-open custom dropdown retains its root and live theme', async ({
   page,
 }) => {

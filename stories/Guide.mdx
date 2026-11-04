@@ -22,24 +22,24 @@ A Bulma component library for modern React.
 
 React Bulma provides React components for Bulma 1.0.4. You need React 17.0.2 or later to use it.
 
-You can use component props to apply Bulma modifiers and typed helpers to share styles across your UI. `BulmaRoot` scopes those styles to your React UI and gives each root its own theme, with an optional custom prefix.
+You can use Bulma components in React, adjust their appearance with props, and switch between light and dark themes. Styles stay inside `BulmaRoot`, and you can choose your own CSS class prefix.
 
 You can start with the [default styles](#use-the-default-styles), [build styles with a custom prefix](#build-styles-with-a-custom-prefix), or go straight to [interactive components](#compose-interactive-components).
 
 ## Install
 
-Example filenames are relative to your app root, the directory containing your app's `package.json`. Run app installation and build commands from that directory.
+Run the commands below from your app root, where its `package.json` is located.
 
-You can install the release candidate with npm:
+You can install React Bulma with npm:
 
 ```sh
-npm install @seagreenio/react-bulma@1.0.0-rc.0
+npm install @seagreenio/react-bulma
 ```
 
-If you use Bun, the equivalent command is:
+Or with Bun:
 
 ```sh
-bun add @seagreenio/react-bulma@1.0.0-rc.0
+bun add @seagreenio/react-bulma
 ```
 
 ## Find the examples you need
@@ -55,12 +55,16 @@ The sidebar follows the Bulma documentation under **CSS Library** and **Features
 
 ## Use the default styles
 
-In your app's `src/App.tsx`, import the default stylesheet and place components inside `BulmaRoot`. Import the stylesheet once, without global Bulma CSS:
+Import the stylesheet once in your app entry:
+
+```ts
+import '@seagreenio/react-bulma/styles.css'
+```
+
+Then place your components inside `BulmaRoot`. You do not need to import Bulma's global stylesheet:
 
 ```tsx
-// src/App.tsx
 import { Button, BulmaRoot, Field, Input, Label } from '@seagreenio/react-bulma'
-import '@seagreenio/react-bulma/styles.css'
 
 export function App() {
   return (
@@ -77,13 +81,13 @@ export function App() {
 }
 ```
 
-`BulmaRoot` provides scoped CSS variables, typography and form normalization. It uses the `rb-` prefix and a light theme by default. You can set `theme="dark"` for a local dark theme or `theme="system"` to follow the browser color scheme. If you nest roots, each keeps its own theme and prefix.
+By default, components use the `rb-` class prefix and a light theme. Set `theme="dark"` on `BulmaRoot` for a dark theme, or `theme="system"` to follow the browser's color preference. Nested roots can each have their own theme and prefix.
 
 The stylesheet uses CSS `@scope` and container queries, so your target browsers must support both. Library styles stop at nested Bulma roots, though selectors and inherited styles from your application can still affect components.
 
-## Set helpers and native properties
+## Customize component styles and attributes
 
-In the `src/App.tsx` example above, you can replace the Save button with:
+You can set a button's color with `color` and round its corners with `rounded`. Use `helpers` for spacing, text styles, colors, display, visibility, and Flexbox layout. TypeScript suggests the available props and values. You can also add your own CSS classes with `className`:
 
 ```tsx
 <Button
@@ -96,12 +100,11 @@ In the `src/App.tsx` example above, you can replace the Save button with:
 </Button>
 ```
 
-Each component exposes its Bulma modifiers as typed properties. For spacing, text, colors, display, visibility and flex options shared across components, you use `helpers`. The pure `helpers(values)` export gives you prefixed class names for native elements too. It retains `0` values and emits no class for false visibility flags. Components append your `className` values unchanged.
+In this example, `mt: 0` generates `rb-mt-0`, which sets the top margin to zero. Setting `hidden: false` adds no hiding class. Your `className="save-action"` is added alongside the component classes exactly as written; it does not become `rb-save-action`.
 
-Native elements can use helpers too. Save this example as `src/Summary.tsx`; it uses the default stylesheet from the previous section. In `src/App.tsx`, add `import { Summary } from './Summary'` and render `<Summary />`:
+For HTML elements such as `div` and `p`, call `helpers()` with the same style options and pass the returned class names to `className`. The function only generates class names; it does not change elements or insert CSS. Those names start with `rb-` by default. If you use `helpers` from a custom `BulmaUI`, they use your configured prefix:
 
 ```tsx
-// src/Summary.tsx
 'use client'
 
 import { BulmaRoot, helpers } from '@seagreenio/react-bulma'
@@ -125,7 +128,7 @@ export function Summary() {
 }
 ```
 
-Every component exports a corresponding props type. When a component renders a single element, it forwards your native attributes, events and refs to that element. For compound controls, the target depends on the component:
+Components accept native HTML attributes, events, and refs. Each also exports a props type, such as `ButtonProps`. For components with a wrapper, use this table to see which element receives each prop:
 
 | Component       | Native attributes, className, style and ref | Helpers and wrapperProps                                                           |
 | --------------- | ------------------------------------------- | ---------------------------------------------------------------------------------- |
@@ -136,13 +139,13 @@ Every component exports a corresponding props type. When a component renders a s
 | Image           | Native img, with required alt               | Helpers and wrapperProps style the figure                                          |
 | FixedGrid       | Outer fixed-grid div                        | gridProps configures the inner grid                                                |
 
-The `size` prop controls visual size using Bulma sizes. If you need the numeric native size on Input or Select, use `htmlSize`. Select also supports native multiple selection. File keeps its native file input and accepts a `filename` that you control. You can update that value in `onChange` when needed.
+Use `size` to change a component's appearance, such as `size="small"`. On Input and Select, use `htmlSize` for the native HTML `size` attribute. Select supports `multiple`. To display the selected filename in File, update its `filename` prop in `onChange`.
 
-Button defaults to `type="button"`, so it does not submit a form unless you ask it to. A loading button is disabled and announces `aria-busy`. LinkButton renders an anchor, but its loading or disabled state removes navigation and blocks activation. Disabled pagination and dropdown links also block activation. Delete, TagDelete and NavbarBurger render native buttons with accessible default labels.
+To submit a form, set `type="submit"` on Button; its default is `type="button"`. A loading button is disabled and has `aria-busy`. LinkButton renders a link that cannot navigate while loading or disabled. Disabled pagination and dropdown links cannot be activated either. Delete, TagDelete, and NavbarBurger are buttons with default accessible labels.
 
 ## Build styles with a custom prefix
 
-This example uses the files below. The script generates `src/bulma.css`; choose either the Bun script or the Node.js script.
+To replace the default `rb-` prefix, give `createBulma` and `buildStyles` the same configuration. The setup below uses `bui-`. Choose either Bun or Node.js to generate the CSS:
 
 ```text
 bulma.config.ts
@@ -150,29 +153,26 @@ scripts/
   styles.ts
   styles.mjs
 src/
-  ui.ts
-  App.tsx
+  bulma-ui.ts
   bulma.css
 ```
 
 Create `bulma.config.ts` in your app root:
 
 ```ts
-// bulma.config.ts
-export const bulmaConfig = { prefix: 'acme-' } as const
+export const bulmaConfig = { prefix: 'bui-' } as const
 ```
 
-Create `src/ui.ts`. Its `../bulma.config` import points to `bulma.config.ts` in your app root:
+Create `src/bulma-ui.ts`. Its `../bulma.config` import points to `bulma.config.ts` in your app root:
 
 ```ts
-// src/ui.ts
 'use client'
 import { createBulma } from '@seagreenio/react-bulma'
 import { bulmaConfig } from '../bulma.config'
 
-export const ui = createBulma(bulmaConfig)
+export const BulmaUI = createBulma(bulmaConfig)
 
-const { BulmaRoot, Box, Button } = ui
+const { BulmaRoot, Box, Button } = BulmaUI
 
 export { BulmaRoot, Box, Button }
 ```
@@ -182,7 +182,6 @@ export { BulmaRoot, Box, Button }
 Create `scripts/styles.ts`. Its `../bulma.config` import also points to the root configuration:
 
 ```ts
-// scripts/styles.ts
 import { buildStyles } from '@seagreenio/react-bulma/styles'
 import { bulmaConfig } from '../bulma.config'
 
@@ -200,7 +199,6 @@ bun scripts/styles.ts
 If you use Node.js 22.18 or later, you can create `scripts/styles.mjs` instead:
 
 ```js
-// scripts/styles.mjs
 import { writeFile } from 'node:fs/promises'
 import { buildStyles } from '@seagreenio/react-bulma/styles'
 import { bulmaConfig } from '../bulma.config.ts'
@@ -216,16 +214,20 @@ node scripts/styles.mjs
 
 ### Use the components in your app
 
-Run your chosen style script before each app build. Replace the default-style `src/App.tsx` example with the code below. Here, `./ui` and `./bulma.css` point to `ui.ts` and the generated CSS in the same `src/` directory:
+Run the style script before building your app. Import the generated CSS in your app entry in place of the default stylesheet. For an entry inside `src/`:
+
+```ts
+import './bulma.css'
+```
+
+Use the components and helpers from `BulmaUI`:
 
 ```tsx
-// src/App.tsx
 'use client'
 
-import { ui } from './ui'
-import './bulma.css'
+import { BulmaUI } from './bulma-ui'
 
-const { BulmaRoot, Button, helpers } = ui
+const { BulmaRoot, Button, helpers } = BulmaUI
 
 export function App() {
   return (
@@ -239,65 +241,17 @@ export function App() {
 }
 ```
 
-Call `createBulma` once at module scope and use the same prefix configuration for roots, components, helpers, and CSS. A prefix must start with a lowercase ASCII letter, contain lowercase letters or digits separated by single hyphens, and end in a hyphen. Roots with different prefixes can coexist or nest.
+Create `BulmaUI` outside your components so it is created once. Use its components and helpers with the matching CSS. Prefixes must start with a lowercase English letter and end with `-`. Between them, use lowercase letters and digits, with single hyphens between words, such as `bui-` or `my-bui-`. You can use different prefixes on the same page, including in nested roots.
 
 ## Use server-side rendering (SSR)
 
-If your app already uses React 17, React DOM 17, and Vite, you can run this standalone SSR example. It prints a button's HTML in your terminal.
-
-Create `src/entry-server.tsx`:
-
-```tsx
-// src/entry-server.tsx
-import React from 'react'
-import { renderToString } from 'react-dom/server'
-import { BulmaRoot, Button } from '@seagreenio/react-bulma'
-
-const html = renderToString(
-  <BulmaRoot>
-    <Button color="primary">Save</Button>
-  </BulmaRoot>,
-)
-
-console.log(html)
-```
-
-Create `vite.ssr.config.ts` in your app root:
-
-```ts
-// vite.ssr.config.ts
-import { defineConfig } from 'vite'
-
-export default defineConfig({
-  ssr: {
-    noExternal: ['@seagreenio/react-bulma'],
-  },
-  build: {
-    ssr: 'src/entry-server.tsx',
-    outDir: 'dist-server',
-    rollupOptions: {
-      output: {
-        format: 'cjs',
-        entryFileNames: 'entry-server.cjs',
-      },
-    },
-  },
-})
-```
-
-Run these commands from your app root. The first creates `dist-server/entry-server.cjs`; the second executes that file:
-
-```sh
-npx vite build --config vite.ssr.config.ts
-node dist-server/entry-server.cjs
-```
+React Bulma supports server-side rendering with React 17.0.2 or later. You do not need additional build configuration.
 
 ## Use React Server Components
 
 You can import components directly in a Next.js App Router page. This page does not need a `'use client'` directive:
 
 ```tsx
-// src/app/page.tsx
 import { BulmaRoot, Box, Button } from '@seagreenio/react-bulma'
 
 export default function Page() {
@@ -312,73 +266,26 @@ export default function Page() {
 }
 ```
 
-Add the default stylesheet import at the top of your existing `src/app/layout.tsx`:
+In Next.js App Router, import the stylesheet in your root layout:
 
 ```tsx
-// src/app/layout.tsx
 import '@seagreenio/react-bulma/styles.css'
 ```
 
 ### Custom prefix
 
-Complete the [custom-prefix setup](#build-styles-with-a-custom-prefix) first to create `src/ui.ts` and generate `src/bulma.css`. Place those files and the Next.js app files as follows:
+With a custom prefix, import components from the `bulma-ui` module you created earlier and load the generated CSS in your root layout.
 
-```text
-src/
-  bulma.css
-  ui.ts
-  app/
-    layout.tsx
-    page.tsx
-```
-
-Both `layout.tsx` and `page.tsx` are in `src/app/`. Their `../bulma.css` import points to `src/bulma.css`, and `../ui` points to `src/ui.ts`.
-
-Use this `src/app/layout.tsx` root layout to import the generated CSS:
-
-```tsx
-// src/app/layout.tsx
-import type { ReactNode } from 'react'
-import '../bulma.css'
-
-export default function RootLayout({ children }: { children: ReactNode }) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  )
-}
-```
-
-In `src/app/page.tsx`, import components from `src/ui.ts`:
-
-```tsx
-// src/app/page.tsx
-import { BulmaRoot, Box, Button } from '../ui'
-
-export default function Page() {
-  return (
-    <BulmaRoot>
-      <Box>Content loaded on the server</Box>
-      <Button color="primary" helpers={{ mt: 4 }}>
-        Continue
-      </Button>
-    </BulmaRoot>
-  )
-}
-```
-
-Add `'use client'` at the top of files that call `createBulma()` or `helpers()`, or define event handlers or interactive state.
+Add `'use client'` at the top of files that call `createBulma()` or `helpers()`, or use event handlers or interactive state.
 
 ## Compose interactive components
 
-This example uses `src/ui.ts` and the CSS from the [custom-prefix setup](#build-styles-with-a-custom-prefix). Save it as `src/Settings.tsx`; its `./ui` import points to `src/ui.ts`. In that setup's `src/App.tsx`, add `import { Settings } from './Settings'` and render `<Settings />`:
+Using `BulmaUI` from the [custom-prefix setup](#build-styles-with-a-custom-prefix), you can compose a settings dialog:
 
 ```tsx
-// src/Settings.tsx
 'use client'
 
-import { ui } from './ui'
+import { BulmaUI } from './bulma-ui'
 
 const {
   BulmaRoot,
@@ -391,7 +298,7 @@ const {
   ModalCardBody,
   ModalDescription,
   ModalCardFoot,
-} = ui
+} = BulmaUI
 
 export function Settings() {
   return (
@@ -416,29 +323,28 @@ export function Settings() {
 }
 ```
 
-You can control Modal with `open` and `onOpenChange`, or give it an initial state with `defaultOpen`. It also accepts `closeOnEscape` and `closeOnOutsideClick`. Each popup needs a ModalTitle or an accessible label. The portal uses the closest matching BulmaRoot, so it keeps access to live local theme overrides. If you supply a portal container, that container must stay inside a matching BulmaRoot scope to retain the styles and theme variables.
+Use `open` and `onOpenChange` to control whether Modal is open, or `defaultOpen` to set its initial state. `closeOnEscape` and `closeOnOutsideClick` control whether Escape and clicks outside the dialog close it. Give each dialog a `ModalTitle` or an `aria-label`. Dialogs use the theme of their `BulmaRoot`. If you choose a custom mount container, keep it inside a `BulmaRoot` with the same prefix.
 
-When you compose a Dropdown, you need both DropdownMenu and DropdownContent. The menu portal stays inside its own dropdown root. Items support keyboard navigation and selection, and you can use `as="a"` for anchor semantics. Disabled items remain keyboard-focusable and cannot activate.
+Use Dropdown with both DropdownMenu and DropdownContent. The menu stays inside its dropdown root. You can navigate items with the keyboard, or set `as="a"` to make an item a link. Disabled items can receive keyboard focus but cannot be selected.
 
 You build Tabs with TabsList, Tab and TabPanel, giving each Tab and its panel the same string or number `value`. By default, users navigate with the arrow keys and activate a tab with Enter or Space. If you want automatic activation, set `activateOnFocus` on TabsList. Disabled tabs can receive keyboard focus and cannot activate.
 
-Navbar manages mobile disclosure state. You compose it with NavbarBrand, NavbarBurger, NavbarMenu, NavbarStart and NavbarEnd. You can control that state with `expanded` and `onExpandedChange`, or use `defaultExpanded` for an uncontrolled Navbar. Escape closes the mobile menu and returns focus to its burger. NavbarDropdown uses native details/summary and accepts a `trigger` node.
+Use NavbarBrand, NavbarBurger, NavbarMenu, NavbarStart, and NavbarEnd to build a Navbar. Control the mobile menu with `expanded` and `onExpandedChange`, or set its initial state with `defaultExpanded`. Escape closes the menu and returns focus to the menu button. Use `trigger` on NavbarDropdown to set the text or content that opens its dropdown.
 
 See the <a href="./?path=/docs/official-components-modal--docs" target="_top">Modal examples</a>, <a href="./?path=/docs/official-components-dropdown--docs" target="_top">Dropdown examples</a>, <a href="./?path=/docs/official-components-tabs--docs" target="_top">Tabs examples</a>, and <a href="./?path=/docs/official-components-navbar--docs" target="_top">Navbar examples</a> to choose the composition for each component.
 
 ## Choose a layout
 
-Columns divides rows into twelve units at viewport breakpoints. SmartGrid fits cells using `minColumnWidth` and CSS-length gaps. FixedGrid sets its column count from its container width.
+Columns provides a 12-column layout that adapts to screen width. SmartGrid automatically fits cells using `minColumnWidth`, with gaps set in CSS length units. FixedGrid lets you choose column counts for different container widths.
 
-This example uses the [custom-prefix setup](#build-styles-with-a-custom-prefix). Save it as `src/Layout.tsx`; its `./ui` import points to `src/ui.ts`. In that setup's `src/App.tsx`, add `import { Layout } from './Layout'` and render `<Layout />`:
+Using `BulmaUI` from the [custom-prefix setup](#build-styles-with-a-custom-prefix), this grid shows one, two, or three columns as its container gets wider:
 
 ```tsx
-// src/Layout.tsx
 'use client'
 
-import { ui } from './ui'
+import { BulmaUI } from './bulma-ui'
 
-const { BulmaRoot, FixedGrid, Cell, Box } = ui
+const { BulmaRoot, FixedGrid, Cell, Box } = BulmaUI
 
 export function Layout() {
   return (
@@ -459,7 +365,7 @@ export function Layout() {
 }
 ```
 
-Column supports predefined widths and offsets, including fractions, along with responsive configurations. Cell maps its start, end, and span props to Bulma modifiers.
+Column supports preset widths and offsets, including fractions, with different values at different screen widths. On Cell, you can set the starting position and the number of rows or columns it spans.
 
 Bulma 1.0.4 limits `offset="one-third"` to `0.3333%`. Cell's `columnEnd` and `rowEnd` do not change grid placement.
 

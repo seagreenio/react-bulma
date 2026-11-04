@@ -2,7 +2,10 @@ import { defineConfig } from 'tsdown'
 
 export default defineConfig({
   entry: ['src/index.tsx', 'src/styles.ts'],
-  format: 'esm',
+  format: {
+    esm: {},
+    cjs: { entry: { index: 'src/index.tsx' } },
+  },
   dts: true,
   clean: true,
   outputOptions: {
@@ -10,5 +13,8 @@ export default defineConfig({
       chunk.isEntry && chunk.name === 'index' ? "'use client';" : '',
   },
   deps: { neverBundle: ['react', 'react/jsx-runtime', 'sass', 'postcss'] },
-  outExtensions: () => ({ js: '.js', dts: '.d.ts' }),
+  outExtensions: ({ format }) =>
+    format === 'cjs'
+      ? { js: '.cjs', dts: '.d.cts' }
+      : { js: '.js', dts: '.d.ts' },
 })
